@@ -87,8 +87,8 @@ ds <- ds %>%
     , "year_executed_order_other"   = "`What year did you?execute orders for your current billet-? (Consider retour orders the same as a PCS set of orders.) [Other]`"
     , "billet_current"              = "`How would you describe your current billet-`"
     # , "billet_current_other"      = "`How would you describe your current billet- [Other]`"
-    , "order_lag_in_months"         = "`For your last set of orders, how many months prior to your move were your orders released-? That is, how many months did you have to prepare for your PCS-`"
-    , "order_lag_in_months_other"   = "`For your last set of orders, how many months prior to your move were your orders released-? That is, how many months did you have to prepare for your PCS- [Other]`"
+    , "order_lead_time"                   = "`For your last set of orders, how many months prior to your move were your orders released-? That is, how many months did you have to prepare for your PCS-`"
+    , "order_lead_time_other"             = "`For your last set of orders, how many months prior to your move were your orders released-? That is, how many months did you have to prepare for your PCS- [Other]`"
     , "transparency_rank"           = "`On a scale of 1 to 5, with 1 being not transparent and 5 being very transparent, how would you rate the transparency of your detailing experience for your last set of orders-`"
     , "satistfaction_rank"          = "`On a scale of 1 to 5, with 1 being unsatisfied and 5 being very satisfied, how would you rate your overall?detailing experience for your last set of orders-`"
     , "favoritism_rank"             = "`On a scale of 1 to 5, with 1 representing a significant problem and 5 being not a problem at all, how would you rank the problem of favoritism in the billet assignment process-`"
@@ -122,8 +122,8 @@ ds <- ds %>%
     year_executed_order             = dplyr::coalesce(year_executed_order, year_executed_order_other)
   ) %>%
   dplyr::mutate(
-    order_lag_in_months_other       = dplyr::recode(
-      order_lag_in_months_other,
+    order_lead_time_other       = dplyr::recode(
+      order_lead_time_other,
       `<2 months`                                             = "< 2 months",
       `1-2 months`                                            = "< 2 months",
       `1 month`                                               = "< 2 months",
@@ -136,19 +136,19 @@ ds <- ds %>%
       `Between 1-2 months`                                    = "< 2 months",
       `re-toured 2mo's before, while on deployment`           = "2-4 months"
     ),
-    order_lag_in_months             = dplyr::recode(order_lag_in_months, "< 1 month"="< 2 months", .default=order_lag_in_months),
-    order_lag_in_months             = dplyr::coalesce(order_lag_in_months, order_lag_in_months_other),
-    order_lag_in_months             = factor(order_lag_in_months, levels=c("< 1 month", "2-4 months", "> 4 months"), ordered = TRUE)
+    order_lead_time             = dplyr::recode(order_lead_time, "< 1 month"="< 2 months", .default=order_lead_time),
+    order_lead_time             = dplyr::coalesce(order_lead_time, order_lead_time_other),
+    order_lead_time             = factor(order_lead_time, levels=c("< 2 months", "2-4 months", "> 4 months"), ordered = TRUE)
 
   ) %>%
-  dplyr::select(-include_exclude, -year_executed_order_other, -order_lag_in_months_other)
+  dplyr::select(-include_exclude, -year_executed_order_other, -order_lead_time_other)
 
 
 # table(ds$year_executed_order, ds$year_executed_order_other)
-# table(ds$order_lag_in_months)
-# table(ds$order_lag_in_months_other)
-# class(ds$order_lag_in_months)
-# class(ds$order_lag_in_months_other)
+table(ds$order_lead_time)
+# table(ds$order_lead_time_other)
+# class(ds$order_lead_time)
+# class(ds$order_lead_time_other)
 
 # ---- verify-values -----------------------------------------------------------
 # Sniff out problems
@@ -158,7 +158,8 @@ checkmate::assert_character(ds$primary_specialty         , any.missing=T , patte
 checkmate::assert_character(ds$officer_rank              , any.missing=T , pattern="^.{2,12}$"    )
 checkmate::assert_integer(  ds$year_executed_order       , any.missing=T , lower=2005, upper=2016 )
 checkmate::assert_character(ds$billet_current            , any.missing=T , pattern="^.{3,28}$"    )
-checkmate::assert_factor(   ds$order_lag_in_months       , any.missing=T                          )
+checkmate::assert_factor(   ds$order_lead_time           , any.missing=T                          )
+# checkmate::assert_subset(   ds$order_lead_time           , choices = c("< 2 months", "2-4 months", "> 4 months"))
 checkmate::assert_integer(  ds$transparency_rank         , any.missing=T , lower=1, upper=5       )
 checkmate::assert_integer(  ds$satistfaction_rank        , any.missing=T , lower=1, upper=5       )
 checkmate::assert_integer(  ds$favoritism_rank           , any.missing=T , lower=1, upper=5       )
@@ -177,7 +178,7 @@ checkmate::assert_character(ds$officer_rank_preference   , any.missing=T , patte
 # dput(colnames(ds)) # Print colnames for line below.
 columns_to_write <- c(
   "response_id", "primary_specialty", "officer_rank", "year_executed_order",
-  "billet_current", "order_lag_in_months"
+  "billet_current", "order_lead_time"
   # , "transparency_rank",
   # "satistfaction_rank", "favoritism_rank", "assignment_current",
   # "geographic_preference", "career_path", "doctor_as_detailer",

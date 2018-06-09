@@ -13,7 +13,7 @@ requireNamespace("dplyr")
 # requireNamespace("RColorBrewer")
 # requireNamespace("scales") #For formating values in graphs
 # requireNamespace("mgcv) #For the Generalized Additive Model that smooths the longitudinal graphs.
-# requireNamespace("TabularManifest") # devtools::install_github("Melinae/TabularManifest")
+requireNamespace("TabularManifest") # devtools::install_github("Melinae/TabularManifest")
 
 # ---- declare-globals ---------------------------------------------------------
 options(show.signif.stars=F) #Turn off the annotations on p-values
@@ -37,13 +37,11 @@ ds <- readr::read_rds(path_input) # 'ds' stands for 'datasets'
 #   )
 
 # ---- marginals ---------------------------------------------------------------
-# Inspect continuous variables
-histogram_continuous(d_observed=ds, variable_name="quarter_mile_in_seconds", bin_width=.5, rounded_digits=1)
-histogram_continuous(d_observed=ds, variable_name="displacement_inches_cubed", bin_width=50, rounded_digits=1)
-
-# Inspect discrete/categorical variables
-histogram_discrete(d_observed=ds, variable_name="carburetor_count_f")
-histogram_discrete(d_observed=ds, variable_name="forward_gear_count_f")
+TabularManifest::histogram_discrete(d_observed=ds, variable_name="primary_specialty")
+TabularManifest::histogram_discrete(d_observed=ds, variable_name="officer_rank")
+TabularManifest::histogram_continuous(d_observed=ds, variable_name="year_executed_order", bin_width=1, rounded_digits=1)
+TabularManifest::histogram_discrete(d_observed=ds, variable_name="billet_current")
+TabularManifest::histogram_discrete(d_observed=ds, variable_name="order_lead_time")
 
 # This helps start the code for graphing each variable.
 #   - Make sure you change it to `histogram_continuous()` for the appropriate variables.
@@ -54,7 +52,7 @@ histogram_discrete(d_observed=ds, variable_name="forward_gear_count_f")
 # }
 
 # ---- scatterplots ------------------------------------------------------------
-g1 <- ggplot(ds, aes(x=gross_horsepower, y=quarter_mile_in_seconds, color=forward_gear_count_f)) +
+g1 <- ggplot(ds, aes(x=year_executed_order, y=order_lead_time))+ #, color=officer_rank)) +
   geom_smooth(method="loess", span=2) +
   geom_point(shape=1) +
   theme_light() +
