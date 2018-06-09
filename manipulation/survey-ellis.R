@@ -192,5 +192,5 @@ rm(columns_to_write)
 
 # ---- save-to-disk ------------------------------------------------------------
 # If there's no PHI, a rectangular CSV is usually adequate, and it's portable to other machines and software.
-readr::write_csv(ds, path_out_csv)
-readr::write_rds(ds, path_out_rds, compress="gz") # Save as a compressed R-binary file if it's large or has a lot of factors.
+readr::write_csv(ds_slim, path_out_csv)
+readr::write_rds(ds_slim, path_out_rds, compress="gz") # Save as a compressed R-binary file if it's large or has a lot of factors.
