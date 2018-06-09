@@ -22,8 +22,8 @@ requireNamespace("OuhscMunge"   ) # remotes::install_github(repo="OuhscBbmc/Ouhs
 # ---- declare-globals ---------------------------------------------------------
 # Constant values that won't change.
 path_in                        <- "data-public/raw/survey-response.csv"
-path_out_csv                   <- "data-public/derived/ey-response.csv"
-path_out_rds                   <- "data-public/derived/ey-response.rds"
+path_out_csv                   <- "data-public/derived/survey-response.csv"
+path_out_rds                   <- "data-public/derived/survey-response.rds"
 
 col_types <- readr::cols_only( # readr::spec_csv(path_in)
   `Response ID`                                                                                                                                                                               = readr::col_integer(),
@@ -33,16 +33,16 @@ col_types <- readr::cols_only( # readr::spec_csv(path_in)
   # `Start language`                                                                                                                                                                            = readr::col_character(),
   # `Date started`                                                                                                                                                                              = readr::col_character(),
   # `Date last action`                                                                                                                                                                          = readr::col_character(),
-  `What is your primary specialty-`                                                                                                                                                           = readr::col_character(),
+  `What is your primary?specialty-`                                                                                                                                                           = readr::col_character(),
   `What is your rank-`                                                                                                                                                                        = readr::col_character(),
-  `What year did you execute orders for your current billet-  (Consider retour orders the same as a PCS set of orders.)`                                                                      = readr::col_character(),
-  `What year did you execute orders for your current billet-  (Consider retour orders the same as a PCS set of orders.) [Other]`                                                              = readr::col_character(),
+  `What year did you?execute orders for your current billet-? (Consider retour orders the same as a PCS set of orders.)`                                                                      = readr::col_character(),
+  `What year did you?execute orders for your current billet-? (Consider retour orders the same as a PCS set of orders.) [Other]`                                                              = readr::col_character(),
   `How would you describe your current billet-`                                                                                                                                               = readr::col_character(),
   # `How would you describe your current billet- [Other]`                                                                                                                                       = readr::col_character(),
-  `For your last set of orders, how many months prior to your move were your orders released-  That is, how many months did you have to prepare for your PCS-`                                = readr::col_character(),
-  `For your last set of orders, how many months prior to your move were your orders released-  That is, how many months did you have to prepare for your PCS- [Other]`                        = readr::col_character(),
+  `For your last set of orders, how many months prior to your move were your orders released-? That is, how many months did you have to prepare for your PCS-`                                = readr::col_character(),
+  `For your last set of orders, how many months prior to your move were your orders released-? That is, how many months did you have to prepare for your PCS- [Other]`                        = readr::col_character(),
   `On a scale of 1 to 5, with 1 being not transparent and 5 being very transparent, how would you rate the transparency of your detailing experience for your last set of orders-`            = readr::col_integer(),
-  `On a scale of 1 to 5, with 1 being unsatisfied and 5 being very satisfied, how would you rate your overall detailing experience for your last set of orders-`                              = readr::col_integer(),
+  `On a scale of 1 to 5, with 1 being unsatisfied and 5 being very satisfied, how would you rate your overall?detailing experience for your last set of orders-`                              = readr::col_integer(),
   `On a scale of 1 to 5, with 1 representing a significant problem and 5 being not a problem at all, how would you rank the problem of favoritism in the billet assignment process-`          = readr::col_integer(),
   `Describe your current assignment:`                                                                                                                                                         = readr::col_character(),
   `Please rank your desired billet locations with the top level being the most desireable, and the bottom being the least desireable. [Ranking 1]`                                            = readr::col_character(),
@@ -54,20 +54,21 @@ col_types <- readr::cols_only( # readr::spec_csv(path_in)
   # `Please rank your desired billet locations with the top level being the most desireable, and the bottom being the least desireable. [Ranking 7]`                                            = readr::col_character(),
   # `Please rank your desired billet locations with the top level being the most desireable, and the bottom being the least desireable. [Ranking 8]`                                            = readr::col_character(),
   # `Please rank your desired billet locations with the top level being the most desireable, and the bottom being the least desireable. [Ranking 9]`                                            = readr::col_character(),
-  `Which career path do you want to pursue in the next 5-10  years-`                                                                                                                          = readr::col_character(),
-  # `Which career path do you want to pursue in the next 5-10  years- [Other]`                                                                                                                  = readr::col_character(),
-  `Neither the Army nor the Air Force have physicians in the detailer role.  Instead, they have nurses or medical administrators work with specialty leaders to determine assigments.  This is different from the current Navy Medical Corps billet assignment process where the detailer is a physician*.  Would you approve if the detailer position was filled by a non-physician-`                                                                                                                          = readr::col_character(),
+  `Which career path do you want to pursue in the next 5-10? years-`                                                                                                                          = readr::col_character(),
+  # `Which career path do you want to pursue in the next 5-10? years- [Other]`                                                                                                                  = readr::col_character(),
+  `Neither the Army nor the Air Force have physicians in the detailer role.? Instead, they have nurses or medical administrators work with specialty leaders to determine assigments.? This is different from the current Navy Medical Corps billet assignment process where the detailer?is a physician*.? Would you?approve if the detailer position was filled by a non-physician-`                                                                                                                          = readr::col_character(),
   `How long should an individual be allowed to remain at one command-`                                                                                                                                                                                                                                                                                                                                                                                                                                          = readr::col_character(),
-  `Do you think that there is a problem in the Medical Corps with members not moving-  That is, are there too many physicians who get to stay in one place too long-`                                                                                                                                                                                                                                                                                                                                           = readr::col_character(),
-  `Civilian medical residency positions are assigned using the National Residency Match Program where members submit a preference list, residency directors submit a preference list, and a computer algorithm optimizes a match.  This is different from the current Navy Medical Corps billet assignment process where the detailer and specialty leader take input from medical officers and then make a decision.  Of these two options, which would you prefer for your military billet assignment-`       = readr::col_character(),
-  `The later the match day, the more information one has before creating their rank list.  The earlier the match day, the sooner one can have certainty and prepare.  Assuming your were scheduled to execute new orders in July of 2017, what month would you want the match to occur in-`                                                                                                                                                                                                                     = readr::col_character(),
+  `Do you think that there is a problem in the Medical Corps with members not moving-? That is, are there too many physicians who get to stay in one place too long-`                                                                                                                                                                                                                                                                                                                                           = readr::col_character(),
+  `Civilian medical residency positions are assigned using the National Residency Match Program where members submit a preference list, residency directors submit a preference list, and a computer algorithm optimizes a match.? This is different from the current Navy Medical Corps billet assignment process where the detailer and specialty leader take input from medical officers and then make a decision.? Of these two options, which would you prefer for your military billet assignment-`       = readr::col_character(),
+
+  `The later the match day, the more information one has before creating their rank list.? The earlier the match day, the sooner one can have certainty and prepare.? Assuming your were scheduled to?execute new orders in July of 2017, what month would you want the match to occur in-`                                                                                                                                                                                                                     = readr::col_character(),
   `Do you think members who are coming from operational or OCONUS assignments should be given preference in billet assignment-`                                                                                                                                                                                                                                                                                                                                                                                 = readr::col_character(),
-  `Do you think members with more seniority (as defined by time in service or rank) should be given preference in billet assignment-`                                                                                                                                                                                                                                                                                                                                                                           = readr::col_character()
+  `Do you think members with more seniority (as defined by time in service or rank)?should be given preference in billet assignment-`                                                                                                                                                                                                                                                                                                                                                                           = readr::col_character()
 )
 
 # ---- load-data ---------------------------------------------------------------
 # Read the CSVs
-# readr::spec_csv(path_in)
+readr::spec_csv(path_in)
 ds <- readr::read_csv(path_in   , col_types=col_types)
 rm(path_in, col_types)
 
@@ -80,28 +81,28 @@ ds <- ds %>%
     # , "datetime_submitted"          = "`Date submitted`"
     # , "datetime_started"            = "`Date started`"
     # , "datetime_last_action"        = "`Date last action`"
-    , "primary_specialty"           = "`What is your primary specialty-`"
+    , "primary_specialty"           = "`What is your primary?specialty-`"
     , "officer_rank"                = "`What is your rank-`"
-    , "year_executed_order"         = "`What year did you execute orders for your current billet-  (Consider retour orders the same as a PCS set of orders.)`"
-    , "year_executed_order_other"   = "`What year did you execute orders for your current billet-  (Consider retour orders the same as a PCS set of orders.) [Other]`"
+    , "year_executed_order"         = "`What year did you?execute orders for your current billet-? (Consider retour orders the same as a PCS set of orders.)`"
+    , "year_executed_order_other"   = "`What year did you?execute orders for your current billet-? (Consider retour orders the same as a PCS set of orders.) [Other]`"
     , "billet_current"              = "`How would you describe your current billet-`"
     # , "billet_current_other"      = "`How would you describe your current billet- [Other]`"
-    , "order_lag_in_months"         = "`For your last set of orders, how many months prior to your move were your orders released-  That is, how many months did you have to prepare for your PCS-`"
-    , "order_lag_in_months_other"   = "`For your last set of orders, how many months prior to your move were your orders released-  That is, how many months did you have to prepare for your PCS- [Other]`"
+    , "order_lag_in_months"         = "`For your last set of orders, how many months prior to your move were your orders released-? That is, how many months did you have to prepare for your PCS-`"
+    , "order_lag_in_months_other"   = "`For your last set of orders, how many months prior to your move were your orders released-? That is, how many months did you have to prepare for your PCS- [Other]`"
     , "transparency_rank"           = "`On a scale of 1 to 5, with 1 being not transparent and 5 being very transparent, how would you rate the transparency of your detailing experience for your last set of orders-`"
-    , "satistfaction_rank"          = "`On a scale of 1 to 5, with 1 being unsatisfied and 5 being very satisfied, how would you rate your overall detailing experience for your last set of orders-`"
+    , "satistfaction_rank"          = "`On a scale of 1 to 5, with 1 being unsatisfied and 5 being very satisfied, how would you rate your overall?detailing experience for your last set of orders-`"
     , "favoritism_rank"             = "`On a scale of 1 to 5, with 1 representing a significant problem and 5 being not a problem at all, how would you rank the problem of favoritism in the billet assignment process-`"
     , "assignment_current"          = "`Describe your current assignment:`"
     , "geographic_preference"       = "`Please rank your desired billet locations with the top level being the most desireable, and the bottom being the least desireable. [Ranking 1]` "
-    , "career_path"                 = "`Which career path do you want to pursue in the next 5-10  years-`"
-    # , "career_path_other"         = "`Which career path do you want to pursue in the next 5-10  years- [Other]`"
-    , "doctor_as_detailer"          = "`Neither the Army nor the Air Force have physicians in the detailer role.  Instead, they have nurses or medical administrators work with specialty leaders to determine assigments.  This is different from the current Navy Medical Corps billet assignment process where the detailer is a physician*.  Would you approve if the detailer position was filled by a non-physician-`"
+    , "career_path"                 = "`Which career path do you want to pursue in the next 5-10? years-`"
+    # , "career_path_other"         = "`Which career path do you want to pursue in the next 5-10? years- [Other]`"
+    , "doctor_as_detailer"          = "`Neither the Army nor the Air Force have physicians in the detailer role.? Instead, they have nurses or medical administrators work with specialty leaders to determine assigments.? This is different from the current Navy Medical Corps billet assignment process where the detailer?is a physician*.? Would you?approve if the detailer position was filled by a non-physician-`"
     , "homestead_length_in_years"   = "`How long should an individual be allowed to remain at one command-`"
-    , "homestead_problem"           = "`Do you think that there is a problem in the Medical Corps with members not moving-  That is, are there too many physicians who get to stay in one place too long-`"
-    , "match_desirability"          = "`Civilian medical residency positions are assigned using the National Residency Match Program where members submit a preference list, residency directors submit a preference list, and a computer algorithm optimizes a match.  This is different from the current Navy Medical Corps billet assignment process where the detailer and specialty leader take input from medical officers and then make a decision.  Of these two options, which would you prefer for your military billet assignment-`"
-    , "match_month"                 = "`The later the match day, the more information one has before creating their rank list.  The earlier the match day, the sooner one can have certainty and prepare.  Assuming your were scheduled to execute new orders in July of 2017, what month would you want the match to occur in-`"
+    , "homestead_problem"           = "`Do you think that there is a problem in the Medical Corps with members not moving-? That is, are there too many physicians who get to stay in one place too long-`"
+    , "match_desirability"          = "`Civilian medical residency positions are assigned using the National Residency Match Program where members submit a preference list, residency directors submit a preference list, and a computer algorithm optimizes a match.? This is different from the current Navy Medical Corps billet assignment process where the detailer and specialty leader take input from medical officers and then make a decision.? Of these two options, which would you prefer for your military billet assignment-`"
+    , "match_month"                 = "`The later the match day, the more information one has before creating their rank list.? The earlier the match day, the sooner one can have certainty and prepare.? Assuming your were scheduled to?execute new orders in July of 2017, what month would you want the match to occur in-`"
     , "assignment_preference"       = "`Do you think members who are coming from operational or OCONUS assignments should be given preference in billet assignment-`"
-    , "officer_rank_preference"     = "`Do you think members with more seniority (as defined by time in service or rank) should be given preference in billet assignment-`"
+    , "officer_rank_preference"     = "`Do you think members with more seniority (as defined by time in service or rank)?should be given preference in billet assignment-`"
   ) %>%
   dplyr::filter(include_exclude == "I") %>%
   dplyr::mutate(
@@ -152,7 +153,7 @@ ds <- ds %>%
 # ---- verify-values -----------------------------------------------------------
 # Sniff out problems
 # OuhscMunge::verify_value_headstart(ds)
-checkmate::assert_integer(  ds$response_id               , any.missing=F , lower=15, upper=1368   )
+checkmate::assert_integer(  ds$response_id               , any.missing=F , lower=15, upper=1368   , unique=T)
 checkmate::assert_character(ds$primary_specialty         , any.missing=T , pattern="^.{5,45}$"    )
 checkmate::assert_character(ds$officer_rank              , any.missing=T , pattern="^.{2,12}$"    )
 checkmate::assert_integer(  ds$year_executed_order       , any.missing=T , lower=2005, upper=2016 )

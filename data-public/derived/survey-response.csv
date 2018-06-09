@@ -104,12 +104,13 @@ response_id,primary_specialty,officer_rank,year_executed_order,billet_current,or
 1075,Aviation Medicine (Flight Surgery GMO),LT,2015,CONUS Operational,2-4 months
 119,Allergy/Immunology,LCDR,2016,CONUS MTF,2-4 months
 120,Psychiatry,CAPT or Flag,2015,Non-Operational/Non-Clinical,2-4 months
+121,Emergency Medicine,CAPT or Flag,2016,OCONUS MTF,2-4 months
 122,Emergency Medicine,LCDR,2015,GME,> 4 months
 154,Emergency Medicine,LT,NA,NA,NA
 124,Emergency Medicine,LCDR,2015,OCONUS Operational,> 4 months
 125,Emergency Medicine,LT,2016,GME,NA
 126,Emergency Medicine,LCDR,2015,CONUS MTF,2-4 months
-17,Rheumatology (IM),CAPT or Flag,2015,CONUS MTF,> 4 months
+127,Rheumatology (IM),CAPT or Flag,2015,CONUS MTF,> 4 months
 1093,Aviation Medicine (Flight Surgery GMO),LT,2015,CONUS Operational,NA
 129,Rheumatology (IM),LT,2015,GME,2-4 months
 130,Emergency Medicine,LT,2015,CONUS MTF,2-4 months
@@ -324,11 +325,12 @@ response_id,primary_specialty,officer_rank,year_executed_order,billet_current,or
 354,Orthopedic Surgery,LCDR,2015,OCONUS MTF,2-4 months
 355,Preventive Medicine,CAPT or Flag,2015,Non-Operational/Non-Clinical,> 4 months
 356,Pediatrics,LCDR,2015,OCONUS MTF,> 4 months
+357,Orthopedic Surgery,LCDR,2015,CONUS MTF,2-4 months
 358,Family Medicine,LT,2015,OCONUS MTF,> 4 months
 359,Pediatrics,CDR,2015,CONUS MTF,> 4 months
 360,Orthopedic Surgery,LCDR,2016,CONUS MTF,2-4 months
 361,Orthopedic Surgery,LCDR,2015,CONUS MTF,2-4 months
-62,Dermatology,CDR,2016,CONUS MTF,2-4 months
+362,Dermatology,CDR,2016,CONUS MTF,2-4 months
 1360,Aviation Medicine (Flight Surgery GMO),LT,2016,OCONUS Operational,NA
 364,Family Medicine,LCDR,2014,CONUS MTF,2-4 months
 365,Pediatrics,LT,2016,OCONUS MTF,2-4 months
@@ -336,7 +338,7 @@ response_id,primary_specialty,officer_rank,year_executed_order,billet_current,or
 1361,Aviation Medicine (Flight Surgery GMO),LT,2016,OCONUS Operational,NA
 368,Family Medicine,LCDR,2015,OCONUS MTF,2-4 months
 369,Family Medicine,LT,2014,OCONUS Operational,2-4 months
-70,Pediatrics,CAPT or Flag,2014,CONUS MTF,2-4 months
+370,Pediatrics,CAPT or Flag,2014,CONUS MTF,2-4 months
 371,Dermatology,LCDR,2016,GME,2-4 months
 372,Family Medicine,LT,2016,OCONUS MTF,2-4 months
 1363,Aviation Medicine (Flight Surgery GMO),LT,2016,OCONUS Operational,NA
@@ -421,7 +423,7 @@ response_id,primary_specialty,officer_rank,year_executed_order,billet_current,or
 457,Pediatrics,LCDR,2013,CONUS MTF,> 4 months
 458,Pediatrics,LT,2013,GME,2-4 months
 459,Cardiothoracic Surgery,LCDR,2015,CONUS MTF,> 4 months
-60,Family Medicine,LT,2016,GME,2-4 months
+460,Family Medicine,LT,2016,GME,2-4 months
 461,Neonatology,LT,2016,CONUS MTF,> 4 months
 462,Pediatrics,LT,2014,CONUS MTF,NA
 464,Radiology,CDR,2013,CONUS MTF,2-4 months
@@ -473,6 +475,7 @@ response_id,primary_specialty,officer_rank,year_executed_order,billet_current,or
 512,Pediatrics,CDR,2015,OCONUS MTF,2-4 months
 513,Dermatology,LCDR,2015,GME,2-4 months
 514,Neonatology,CDR,2014,CONUS MTF,2-4 months
+515,Family Medicine,LT,2016,OCONUS MTF,2-4 months
 516,Family Medicine,LT,2015,OCONUS MTF,NA
 517,Family Medicine,LCDR,2016,OCONUS MTF,NA
 518,Nephrology (IM),LT,2016,CONUS MTF,2-4 months
@@ -647,6 +650,7 @@ response_id,primary_specialty,officer_rank,year_executed_order,billet_current,or
 704,Emergency Medicine,LT,2015,CONUS MTF,2-4 months
 705,Psychiatry,LCDR,2014,OCONUS MTF,2-4 months
 706,General Surgery,CAPT or Flag,2015,CONUS Operational,2-4 months
+707,Pediatrics,LT,2015,OCONUS MTF,2-4 months
 708,Orthopedic Surgery,LCDR,2015,CONUS MTF,2-4 months
 709,Neonatology,CDR,2014,CONUS MTF,> 4 months
 710,Cardiology (IM),LCDR,2016,CONUS MTF,> 4 months
@@ -664,6 +668,7 @@ response_id,primary_specialty,officer_rank,year_executed_order,billet_current,or
 724,Neurology,CAPT or Flag,2015,CONUS MTF,> 4 months
 725,Family Medicine,LT,2016,CONUS MTF,2-4 months
 726,Neurology,LCDR,2015,CONUS MTF,> 4 months
+727,Radiology,CDR,2015,CONUS MTF,NA
 728,Neurology,CDR,2016,CONUS MTF,NA
 729,Neurology,LCDR,2012,CONUS MTF,2-4 months
 730,Preventive Medicine,CDR,2015,CONUS MTF,2-4 months
@@ -729,6 +734,7 @@ response_id,primary_specialty,officer_rank,year_executed_order,billet_current,or
 1047,Radiology,LCDR,2014,CONUS MTF,> 4 months
 1048,Family Medicine,CAPT or Flag,2015,CONUS Operational,2-4 months
 1049,Neurology,CDR,2015,GME,2-4 months
+1050,Occupational Medicine,CAPT or Flag,2013,CONUS MTF,> 4 months
 1053,Radiology,CDR,2014,CONUS MTF,NA
 979,Resident,NA,2014,NA,NA
 240,Resident,LCDR,2015,GME,2-4 months
@@ -746,6 +752,7 @@ response_id,primary_specialty,officer_rank,year_executed_order,billet_current,or
 1074,Other,CAPT or Flag,2009,CONUS MTF,2-4 months
 373,Resident,LCDR,2015,CONUS MTF,2-4 months
 378,Resident,LT,2016,CONUS MTF,2-4 months
+1077,Family Medicine,LT,2014,GME,NA
 1078,Emergency Medicine,CAPT or Flag,2015,CONUS MTF,2-4 months
 1080,Neurology,LT,2016,GME,NA
 1083,Internal Medicine (General),CDR,2015,CONUS Operational,NA
@@ -832,11 +839,12 @@ response_id,primary_specialty,officer_rank,year_executed_order,billet_current,or
 1190,Neurosurgery,LCDR,2016,CONUS MTF,2-4 months
 577,Resident,LT,2014,GME,2-4 months
 1192,Emergency Medicine,CAPT or Flag,2015,CONUS Operational,2-4 months
+579,Resident,LCDR,2016,CONUS Operational,2-4 months
 624,Resident,LT,2015,GME,2-4 months
 642,Resident,LCDR,2015,GME,2-4 months
 1196,Psychiatry,LCDR,2013,CONUS MTF,2-4 months
 1197,Otolaryngology,CDR,2015,CONUS MTF,2-4 months
-198,Neurosurgery,LCDR,2015,CONUS MTF,2-4 months
+1198,Neurosurgery,LCDR,2015,CONUS MTF,2-4 months
 807,Resident,LCDR,2014,GME,> 4 months
 786,Resident,LT,2016,GME,> 4 months
 1202,Neurosurgery,LCDR,2014,CONUS MTF,2-4 months
@@ -853,7 +861,7 @@ response_id,primary_specialty,officer_rank,year_executed_order,billet_current,or
 1213,OB/GYN,LCDR,2014,CONUS MTF,2-4 months
 1214,OB/GYN,CAPT or Flag,2016,Non-Operational/Non-Clinical,NA
 1215,OB/GYN,CDR,2015,CONUS Operational,2-4 months
-116,OB/GYN,LT,2016,CONUS MTF,2-4 months
+1216,OB/GYN,LT,2016,CONUS MTF,2-4 months
 936,Resident,LT,2016,GME,NA
 1218,OB/GYN,CDR,2015,CONUS MTF,NA
 1219,OB/GYN,LCDR,2014,CONUS MTF,2-4 months
@@ -934,6 +942,7 @@ response_id,primary_specialty,officer_rank,year_executed_order,billet_current,or
 1304,Family Medicine,LT,2016,CONUS Operational,2-4 months
 1305,Family Medicine,CDR,2016,Non-Operational/Non-Clinical,2-4 months
 343,Undersea Medicine,LT,2015,OCONUS Operational,NA
+435,Undersea Medicine,CAPT or Flag,2015,Non-Operational/Non-Clinical,> 4 months
 1308,Endocrinology (IM),CDR,2015,CONUS MTF,2-4 months
 1309,OB/GYN,CAPT or Flag,2007,CONUS MTF,NA
 1311,Family Medicine,CDR,2014,OCONUS MTF,> 4 months
@@ -956,6 +965,7 @@ response_id,primary_specialty,officer_rank,year_executed_order,billet_current,or
 1333,Neurosurgery,CDR,2011,CONUS MTF,2-4 months
 1334,Cardiothoracic Surgery,CDR,2015,CONUS MTF,> 4 months
 1069,Undersea Medicine,LT,2014,Non-Operational/Non-Clinical,NA
+1336,Pediatrics,LT,2014,GME,2-4 months
 1337,Infectious Disease (IM),CDR,2012,CONUS MTF,2-4 months
 1338,Neurosurgery,LCDR,2012,GME,> 4 months
 1339,Family Medicine,CDR,2015,OCONUS MTF,NA
