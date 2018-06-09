@@ -43,6 +43,11 @@ TabularManifest::histogram_continuous(d_observed=ds, variable_name="year_execute
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="billet_current")
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="order_lead_time")
 
+
+TabularManifest::histogram_continuous(d_observed=ds, variable_name="transparency_rank"         , bin_width=1, rounded_digits=1)
+TabularManifest::histogram_continuous(d_observed=ds, variable_name="satistfaction_rank"        , bin_width=1, rounded_digits=1)
+TabularManifest::histogram_continuous(d_observed=ds, variable_name="favoritism_rank"           , bin_width=1, rounded_digits=1)
+TabularManifest::histogram_continuous(d_observed=ds, variable_name="assignment_current_choice" , bin_width=1, rounded_digits=1)
 # This helps start the code for graphing each variable.
 #   - Make sure you change it to `histogram_continuous()` for the appropriate variables.
 #   - Make sure the graph doesn't reveal PHI.
@@ -52,42 +57,45 @@ TabularManifest::histogram_discrete(d_observed=ds, variable_name="order_lead_tim
 # }
 
 # ---- scatterplots ------------------------------------------------------------
-g1 <- ggplot(ds, aes(x=year_executed_order, y=order_lead_time))+ #, color=officer_rank)) +
-  geom_smooth(method="loess", span=2) +
-  geom_point(shape=1) +
+g1 <- ggplot(ds[ds$year_executed_order >=2012L, ], aes(x=year_executed_order, y=transparency_rank))+ #, color=officer_rank)) +
+  geom_smooth(data=ds[ds$year_executed_order >=2014L, ], method="loess", span=2, na.rm=T) +
+  geom_point(shape=1, position = position_jitter(width=.3, height=.3), na.rm=T) +
+  coord_cartesian(ylim=c(0.5,5.5)) +
   theme_light() +
   theme(axis.ticks = element_blank())
 g1
 
-g1 %+% aes(color=cylinder_count)
-g1 %+% aes(color=factor(cylinder_count))
 
-# ---- models ------------------------------------------------------------------
-cat("============= Simple model that's just an intercept. =============")
-m0 <- lm(quarter_mile_in_seconds ~ 1, data=ds)
-summary(m0)
+g1 %+% aes(y=satistfaction_rank)
+g1 %+% aes(y=favoritism_rank)
+g1 %+% aes(y=assignment_current_choice)
 
-cat("============= Model includes one predictor. =============")
-m1 <- lm(quarter_mile_in_seconds ~ 1 + miles_per_gallon, data=ds)
-summary(m1)
-
-cat("The one predictor is significantly tighter.")
-anova(m0, m1)
-
-cat("============= Model includes two predictors. =============")
-m2 <- lm(quarter_mile_in_seconds ~ 1 + miles_per_gallon + forward_gear_count_f, data=ds)
-summary(m2)
-
-cat("The two predictor is significantly tighter.")
-anova(m1, m2)
-
-# ---- model-results-table  -----------------------------------------------
-
-summary(m2)$coef %>%
-  knitr::kable(
-    digits      = 2,
-    format      = "markdown"
-  )
+# # ---- models ------------------------------------------------------------------
+# cat("============= Simple model that's just an intercept. =============")
+# m0 <- lm(quarter_mile_in_seconds ~ 1, data=ds)
+# summary(m0)
+#
+# cat("============= Model includes one predictor. =============")
+# m1 <- lm(quarter_mile_in_seconds ~ 1 + miles_per_gallon, data=ds)
+# summary(m1)
+#
+# cat("The one predictor is significantly tighter.")
+# anova(m0, m1)
+#
+# cat("============= Model includes two predictors. =============")
+# m2 <- lm(quarter_mile_in_seconds ~ 1 + miles_per_gallon + forward_gear_count_f, data=ds)
+# summary(m2)
+#
+# cat("The two predictor is significantly tighter.")
+# anova(m1, m2)
+#
+# # ---- model-results-table  -----------------------------------------------
+#
+# summary(m2)$coef %>%
+#   knitr::kable(
+#     digits      = 2,
+#     format      = "markdown"
+#   )
 
 # Uncomment the next line for a dynamic, JavaScript [DataTables](https://datatables.net/) table.
 # DT::datatable(round(summary(m2)$coef, digits = 2), options = list(pageLength = 2))

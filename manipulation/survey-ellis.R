@@ -68,7 +68,7 @@ col_types <- readr::cols_only( # readr::spec_csv(path_in)
 
 # ---- load-data ---------------------------------------------------------------
 # Read the CSVs
-readr::spec_csv(path_in)
+# readr::spec_csv(path_in)
 ds <- readr::read_csv(path_in   , col_types=col_types)
 rm(path_in, col_types)
 
@@ -92,7 +92,7 @@ ds <- ds %>%
     , "transparency_rank"           = "`On a scale of 1 to 5, with 1 being not transparent and 5 being very transparent, how would you rate the transparency of your detailing experience for your last set of orders-`"
     , "satistfaction_rank"          = "`On a scale of 1 to 5, with 1 being unsatisfied and 5 being very satisfied, how would you rate your overall?detailing experience for your last set of orders-`"
     , "favoritism_rank"             = "`On a scale of 1 to 5, with 1 representing a significant problem and 5 being not a problem at all, how would you rank the problem of favoritism in the billet assignment process-`"
-    , "assignment_current"          = "`Describe your current assignment:`"
+    , "assignment_current_choice"   = "`Describe your current assignment:`"
     , "geographic_preference"       = "`Please rank your desired billet locations with the top level being the most desireable, and the bottom being the least desireable. [Ranking 1]` "
     , "career_path"                 = "`Which career path do you want to pursue in the next 5-10? years-`"
     # , "career_path_other"         = "`Which career path do you want to pursue in the next 5-10? years- [Other]`"
@@ -139,13 +139,23 @@ ds <- ds %>%
     order_lead_time             = dplyr::recode(order_lead_time, "< 1 month"="< 2 months", .default=order_lead_time),
     order_lead_time             = dplyr::coalesce(order_lead_time, order_lead_time_other),
     order_lead_time             = factor(order_lead_time, levels=c("< 2 months", "2-4 months", "> 4 months"), ordered = TRUE)
-
+  ) %>%
+  dplyr::mutate(
+    assignment_current_choice   = dplyr::recode(
+      assignment_current_choice,
+      "1st choice"        = 1L,
+      "2nd choice"        = 2L,
+      "3rd choice"        = 3L,
+      "4th choice"        = 4L,
+      "> 4th choice"      = 5L,
+      "Other"             = NA_integer_
+    )
   ) %>%
   dplyr::select(-include_exclude, -year_executed_order_other, -order_lead_time_other)
 
 
 # table(ds$year_executed_order, ds$year_executed_order_other)
-table(ds$order_lead_time)
+table(ds$assignment_current_choice)
 # table(ds$order_lead_time_other)
 # class(ds$order_lead_time)
 # class(ds$order_lead_time_other)
@@ -163,7 +173,7 @@ checkmate::assert_factor(   ds$order_lead_time           , any.missing=T        
 checkmate::assert_integer(  ds$transparency_rank         , any.missing=T , lower=1, upper=5       )
 checkmate::assert_integer(  ds$satistfaction_rank        , any.missing=T , lower=1, upper=5       )
 checkmate::assert_integer(  ds$favoritism_rank           , any.missing=T , lower=1, upper=5       )
-checkmate::assert_character(ds$assignment_current        , any.missing=T , pattern="^.{5,12}$"    )
+checkmate::assert_integer(  ds$assignment_current_choice , any.missing=T , lower=1, upper=5       )
 checkmate::assert_character(ds$geographic_preference     , any.missing=T , pattern="^.{6,38}$"    )
 checkmate::assert_character(ds$career_path               , any.missing=T , pattern="^.{5,24}$"    )
 checkmate::assert_character(ds$doctor_as_detailer        , any.missing=T , pattern="^.{2,11}$"    )
@@ -178,9 +188,8 @@ checkmate::assert_character(ds$officer_rank_preference   , any.missing=T , patte
 # dput(colnames(ds)) # Print colnames for line below.
 columns_to_write <- c(
   "response_id", "primary_specialty", "officer_rank", "year_executed_order",
-  "billet_current", "order_lead_time"
-  # , "transparency_rank",
-  # "satistfaction_rank", "favoritism_rank", "assignment_current",
+  "billet_current", "order_lead_time",
+  "transparency_rank", "satistfaction_rank", "favoritism_rank", "assignment_current_choice"
   # "geographic_preference", "career_path", "doctor_as_detailer",
   # "homestead_length_in_years", "homestead_problem", "match_desirability",
   # "match_month", "assignment_preference", "officer_rank_preference"
