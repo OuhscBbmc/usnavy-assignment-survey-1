@@ -19,11 +19,15 @@ requireNamespace("TabularManifest") # devtools::install_github("Melinae/TabularM
 options(show.signif.stars=F) #Turn off the annotations on p-values
 
 path_input <- "data-public/derived/survey-response.rds"
+include_year_first     <- 2012L
 
 # ---- load-data ---------------------------------------------------------------
-ds <- readr::read_rds(path_input) # 'ds' stands for 'datasets'
+ds_everyone <- readr::read_rds(path_input) # 'ds' stands for 'datasets'
 
 # ---- tweak-data --------------------------------------------------------------
+ds <- ds_everyone %>%
+  tidyr::drop_na(year_executed_order) %>%
+  dplyr::filter(year_executed_order >= include_year_first)
 # ds <- ds %>%
 #   tidyr::drop_na(infant_weight_for_gestational_age_category) %>%
 #   dplyr::mutate(
@@ -57,18 +61,21 @@ TabularManifest::histogram_continuous(d_observed=ds, variable_name="assignment_c
 # }
 
 # ---- scatterplots ------------------------------------------------------------
-g1 <- ggplot(ds[ds$year_executed_order >=2012L, ], aes(x=year_executed_order, y=transparency_rank))+ #, color=officer_rank)) +
+
+ggplot(ds, aes(x=year_executed_order, y=transparency_rank)) + #, color=officer_rank)) +
+  geom_smooth(data=ds, method="loess", span=2, na.rm=T) +
   geom_smooth(data=ds[ds$year_executed_order >=2014L, ], method="loess", span=2, na.rm=T) +
   geom_point(shape=1, position = position_jitter(width=.3, height=.3), na.rm=T) +
   coord_cartesian(ylim=c(0.5,5.5)) +
   theme_light() +
   theme(axis.ticks = element_blank())
-g1
+
+last_plot() %+% aes(y=satistfaction_rank)
+last_plot() %+% aes(y=favoritism_rank)
+last_plot() %+% aes(y=assignment_current_choice)
 
 
-g1 %+% aes(y=satistfaction_rank)
-g1 %+% aes(y=favoritism_rank)
-g1 %+% aes(y=assignment_current_choice)
+
 
 # # ---- models ------------------------------------------------------------------
 # cat("============= Simple model that's just an intercept. =============")

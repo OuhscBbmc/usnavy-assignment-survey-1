@@ -70,6 +70,7 @@ read_chunk("./analysis/survey-response-1/survey-response-1.R") #This allows knit
 
 ## Notes 
 1. The current report covers `r nrow(ds)` responses.
+1. We excluded `r sum(ds_everyone$year_executed_order < include_year_first, na.rm=T)` cases because their orders preceded the year `r include_year_first` and `r sum(is.na(ds_everyone$year_executed_order))` cases because the `year_executed_order` value was missing.
 
 ## Unanswered Questions
 

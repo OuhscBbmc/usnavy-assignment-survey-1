@@ -38,7 +38,8 @@ This report covers the survey about attitudes collected by Richard Childers, MD 
 # Summary {.tabset .tabset-fade .tabset-pills}
 
 ## Notes 
-1. The current report covers 994 responses.
+1. The current report covers 951 responses.
+1. We excluded 17 cases because their orders preceded the year 2012 and 26 cases because the `year_executed_order` value was missing.
 
 ## Unanswered Questions
 
@@ -129,6 +130,7 @@ Packages -----------------------------------------------------------------------
  stringr           1.3.1       2018-05-10 CRAN (R 3.5.0)                          
  TabularManifest   0.1-16.9003 2018-05-23 Github (Melinae/TabularManifest@c2bdddb)
  tibble            1.4.2       2018-01-22 CRAN (R 3.5.0)                          
+ tidyr             0.8.1       2018-05-18 CRAN (R 3.5.0)                          
  tidyselect        0.2.4       2018-02-26 CRAN (R 3.5.0)                          
  tools             3.5.0       2018-05-15 local                                   
  utils           * 3.5.0       2018-05-15 local                                   
@@ -139,5 +141,5 @@ Packages -----------------------------------------------------------------------
 
 
 
-Report rendered by Will at 2018-06-09, 14:43 -0500 in 5 seconds.
+Report rendered by Will at 2018-06-09, 15:01 -0500 in 5 seconds.
 
