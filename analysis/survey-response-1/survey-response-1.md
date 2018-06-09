@@ -48,14 +48,44 @@ This report covers the survey about attitudes collected by Richard Childers, MD 
 # Graphs
 
 ## Marginals
-![](figure-png/marginals-1.png)<!-- -->![](figure-png/marginals-2.png)<!-- -->![](figure-png/marginals-3.png)<!-- -->![](figure-png/marginals-4.png)<!-- -->![](figure-png/marginals-5.png)<!-- -->![](figure-png/marginals-6.png)<!-- -->![](figure-png/marginals-7.png)<!-- -->![](figure-png/marginals-8.png)<!-- -->![](figure-png/marginals-9.png)<!-- -->
+![](figure-png/marginals-1.png)<!-- -->![](figure-png/marginals-2.png)<!-- -->![](figure-png/marginals-3.png)<!-- -->![](figure-png/marginals-4.png)<!-- -->![](figure-png/marginals-5.png)<!-- -->![](figure-png/marginals-6.png)<!-- -->![](figure-png/marginals-7.png)<!-- -->![](figure-png/marginals-8.png)<!-- -->![](figure-png/marginals-9.png)<!-- -->![](figure-png/marginals-10.png)<!-- -->
 
 ## Scatterplots
-![](figure-png/scatterplots-1.png)<!-- -->![](figure-png/scatterplots-2.png)<!-- -->![](figure-png/scatterplots-3.png)<!-- -->![](figure-png/scatterplots-4.png)<!-- -->
+
+```
+Warning: Removed 79 rows containing non-finite values (stat_boxplot).
+```
+
+![](figure-png/scatterplots-1.png)<!-- -->![](figure-png/scatterplots-2.png)<!-- -->![](figure-png/scatterplots-3.png)<!-- -->![](figure-png/scatterplots-4.png)<!-- -->![](figure-png/scatterplots-5.png)<!-- -->![](figure-png/scatterplots-6.png)<!-- -->
 
 # Models
 ## Model Exploration
 
+```
+============= Model includes one predictor. =============
+```
+
+```
+
+Call:
+lm(formula = satistfaction_rank ~ 1 + officer_rate_f, data = ds)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.1296 -0.9315  0.4091  1.0685  1.8639 
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)
+(Intercept)      3.13615    0.09033  34.720  < 2e-16
+officer_rate_f4  0.45476    0.11587   3.925 9.37e-05
+officer_rate_f5  0.79536    0.12686   6.269 5.71e-10
+officer_rate_f6  0.99348    0.15572   6.380 2.89e-10
+
+Residual standard error: 1.318 on 866 degrees of freedom
+  (81 observations deleted due to missingness)
+Multiple R-squared:  0.06191,	Adjusted R-squared:  0.05866 
+F-statistic: 19.05 on 3 and 866 DF,  p-value: 5.713e-12
+```
 
 ## Final Model
 
@@ -141,5 +171,5 @@ Packages -----------------------------------------------------------------------
 
 
 
-Report rendered by Will at 2018-06-09, 15:01 -0500 in 5 seconds.
+Report rendered by Will at 2018-06-09, 15:28 -0500 in 8 seconds.
 

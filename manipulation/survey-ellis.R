@@ -122,6 +122,18 @@ ds <- ds %>%
     year_executed_order             = dplyr::coalesce(year_executed_order, year_executed_order_other)
   ) %>%
   dplyr::mutate(
+    officer_rank                    = dplyr::coalesce(officer_rank, "Unknown"),
+    officer_rank                    = factor(officer_rank, levels=c("LT", "LCDR", "CDR", "CAPT or Flag", "Unknown"), ordered = T),
+    officer_rate                    = dplyr::recode(
+      officer_rank,
+      "LT"                = 3L,
+      "LCDR"              = 4L,
+      "CDR"               = 5L,
+      "CAPT or Flag"      = 6L,
+      "Unknown"           = NA_integer_
+    )
+  ) %>%
+  dplyr::mutate(
     order_lead_time_other       = dplyr::recode(
       order_lead_time_other,
       `<2 months`                                             = "< 2 months",
@@ -155,7 +167,9 @@ ds <- ds %>%
 
 
 # table(ds$year_executed_order, ds$year_executed_order_other)
-table(ds$assignment_current_choice)
+# table(dplyr::na_if(ds$officer_rank, "Unknown"), useNA = "always")
+# table(dplyr::coalesce(ds$officer_rank, "Unknown"), useNA = "always")
+table(ds$officer_rank, useNA = "always")
 # table(ds$order_lead_time_other)
 # class(ds$order_lead_time)
 # class(ds$order_lead_time_other)
@@ -165,7 +179,8 @@ table(ds$assignment_current_choice)
 # OuhscMunge::verify_value_headstart(ds)
 checkmate::assert_integer(  ds$response_id               , any.missing=F , lower=15, upper=1368   , unique=T)
 checkmate::assert_character(ds$primary_specialty         , any.missing=T , pattern="^.{5,45}$"    )
-checkmate::assert_character(ds$officer_rank              , any.missing=T , pattern="^.{2,12}$"    )
+checkmate::assert_factor(   ds$officer_rank              , any.missing=T                          )
+checkmate::assert_integer(  ds$officer_rate              , any.missing=T , lower=3, upper=6       )
 checkmate::assert_integer(  ds$year_executed_order       , any.missing=T , lower=2005, upper=2016 )
 checkmate::assert_character(ds$billet_current            , any.missing=T , pattern="^.{3,28}$"    )
 checkmate::assert_factor(   ds$order_lead_time           , any.missing=T                          )
@@ -187,7 +202,9 @@ checkmate::assert_character(ds$officer_rank_preference   , any.missing=T , patte
 # ---- specify-columns-to-upload -----------------------------------------------
 # dput(colnames(ds)) # Print colnames for line below.
 columns_to_write <- c(
-  "response_id", "primary_specialty", "officer_rank", "year_executed_order",
+  "response_id", "primary_specialty",
+  "officer_rank", "officer_rate",
+  "year_executed_order",
   "billet_current", "order_lead_time",
   "transparency_rank", "satistfaction_rank", "favoritism_rank", "assignment_current_choice"
   # "geographic_preference", "career_path", "doctor_as_detailer",

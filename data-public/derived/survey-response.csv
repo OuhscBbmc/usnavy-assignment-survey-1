@@ -1,995 +1,995 @@
-response_id,primary_specialty,officer_rank,year_executed_order,billet_current,order_lead_time,transparency_rank,satistfaction_rank,favoritism_rank,assignment_current_choice
-15,Emergency Medicine,CDR,2015,Non-Operational/Non-Clinical,2-4 months,3,4,3,1
-20,Allergy/Immunology,CDR,NA,CONUS MTF,2-4 months,5,5,5,2
-21,NA,NA,NA,NA,NA,2,NA,NA,NA
-18,OB/GYN,CAPT or Flag,2016,Non-Operational/Non-Clinical,2-4 months,NA,2,1,5
-19,Emergency Medicine,CDR,2016,CONUS MTF,> 4 months,5,5,4,1
-33,Emergency Medicine,LCDR,NA,NA,2-4 months,3,3,2,2
-38,Ophthalmology,LCDR,NA,CONUS MTF,NA,4,4,3,NA
-45,Anesthesiology,LCDR,NA,CONUS MTF,> 4 months,3,4,2,1
-23,Family Medicine,LT,2016,OCONUS MTF,< 2 months,2,3,4,1
-24,Pathology,CDR,2015,CONUS MTF,2-4 months,4,5,4,1
-25,Aviation Medicine (Flight Surgery GMO),LT,2015,CONUS Operational,< 2 months,4,3,3,1
-26,Pathology,CDR,2015,OCONUS MTF,2-4 months,2,3,3,1
-27,Emergency Medicine,LCDR,2015,GME,2-4 months,4,4,1,2
-28,Family Medicine,LCDR,2014,CONUS Operational,> 4 months,4,5,4,1
-57,Aviation Medicine (Flight Surgery GMO),LCDR,2014,Non-Operational/Non-Clinical,< 2 months,2,1,NA,5
-30,Family Medicine,LCDR,2014,CONUS MTF,2-4 months,4,4,NA,1
-49,Family Medicine,CDR,NA,CONUS MTF,> 4 months,5,5,5,NA
-32,Pediatrics,LT,2016,CONUS MTF,< 2 months,NA,NA,NA,NA
-34,Pediatrics,LCDR,2013,CONUS MTF,2-4 months,4,5,5,1
-35,Anesthesiology,LT,2016,GME,2-4 months,1,3,2,2
-100,Family Medicine,LCDR,NA,OCONUS MTF,2-4 months,3,3,2,2
-153,Emergency Medicine,LT,NA,GME,2-4 months,2,3,4,1
-277,Dermatology,LCDR,NA,CONUS MTF,< 2 months,5,5,1,1
-39,Emergency Medicine,LCDR,2015,CONUS MTF,> 4 months,5,3,5,2
-40,Anesthesiology,LCDR,2016,CONUS MTF,2-4 months,1,1,1,5
-41,Ophthalmology,LT,2015,CONUS MTF,2-4 months,2,3,4,3
-42,Internal Medicine (General),CDR,2015,GME,> 4 months,4,5,3,1
-43,Emergency Medicine,LCDR,2015,OCONUS MTF,2-4 months,5,1,1,NA
-44,Otolaryngology,LCDR,2016,CONUS MTF,2-4 months,2,2,1,3
-560,Family Medicine,NA,NA,CONUS MTF,2-4 months,3,3,4,NA
-46,Emergency Medicine,LCDR,2015,CONUS MTF,2-4 months,5,5,NA,1
-47,Family Medicine,CDR,2014,GME,2-4 months,2,2,1,1
-66,Aviation Medicine (Flight Surgery GMO),LT,2016,CONUS Operational,< 2 months,NA,NA,NA,NA
-681,Occupational Medicine,LCDR,NA,OCONUS MTF,> 4 months,1,1,1,5
-50,Family Medicine,CDR,2014,Non-Operational/Non-Clinical,< 2 months,1,1,1,1
-51,Family Medicine,LCDR,2015,OCONUS Operational,< 2 months,2,3,NA,1
-52,Emergency Medicine,CAPT or Flag,2015,OCONUS MTF,2-4 months,5,5,4,1
-79,Aviation Medicine (Flight Surgery GMO),LT,2014,CONUS Operational,< 2 months,2,1,NA,5
-54,Ophthalmology,LCDR,2015,CONUS MTF,> 4 months,5,5,5,NA
-55,Internal Medicine (General),LT,2016,CONUS MTF,2-4 months,4,5,4,3
-56,Anesthesiology,CDR,2014,CONUS MTF,NA,5,4,3,1
-101,Aviation Medicine (Flight Surgery GMO),LT,2016,CONUS Operational,< 2 months,1,1,2,5
-58,Aerospace Medicine (Residency Trained Flight),CAPT or Flag,2015,CONUS Operational,< 2 months,2,1,2,NA
-59,Anesthesiology,LCDR,2016,GME,< 2 months,4,4,2,2
-107,Aviation Medicine (Flight Surgery GMO),LCDR,2015,CONUS Operational,< 2 months,1,1,NA,NA
-61,Preventive Medicine,LCDR,2015,Non-Operational/Non-Clinical,< 2 months,3,1,1,5
-62,Preventive Medicine,LCDR,2015,CONUS Operational,> 4 months,5,5,3,1
-63,Emergency Medicine,CDR,2012,CONUS MTF,> 4 months,5,5,4,1
-887,NA,NA,NA,NA,NA,2,2,3,NA
-65,Family Medicine,LT,2016,CONUS Operational,< 2 months,1,2,2,5
-148,Aviation Medicine (Flight Surgery GMO),LT,2016,CONUS Operational,< 2 months,1,2,4,1
-157,Aviation Medicine (Flight Surgery GMO),LT,2016,CONUS Operational,< 2 months,1,1,1,5
-68,Aerospace Medicine (Residency Trained Flight),CDR,2015,GME,> 4 months,5,5,1,1
-226,Aviation Medicine (Flight Surgery GMO),LT,2016,CONUS MTF,2-4 months,1,1,1,NA
-70,Emergency Medicine,CDR,2015,CONUS Operational,2-4 months,1,1,1,4
-71,OB/GYN,LCDR,2014,CONUS MTF,> 4 months,4,3,3,4
-72,Pathology,CDR,2016,CONUS MTF,> 4 months,5,5,2,1
-246,Aviation Medicine (Flight Surgery GMO),LT,2015,CONUS Operational,2-4 months,3,2,2,4
-1005,Emergency Medicine,LT,NA,NA,NA,NA,NA,NA,NA
-75,Family Medicine,LCDR,2015,OCONUS MTF,< 2 months,2,1,3,NA
-1028,Other,LT,NA,NA,NA,NA,NA,NA,NA
-77,Neurology,LCDR,2015,CONUS MTF,2-4 months,5,5,5,1
-78,Family Medicine,LCDR,2016,CONUS MTF,< 2 months,3,2,3,1
-255,Aviation Medicine (Flight Surgery GMO),LT,2016,CONUS Operational,2-4 months,2,4,4,1
-80,Internal Medicine (General),LT,2016,CONUS MTF,2-4 months,2,2,3,3
-81,Family Medicine,LCDR,2016,CONUS MTF,2-4 months,2,2,2,2
-82,Psychiatry,LCDR,2016,CONUS MTF,< 2 months,2,5,5,NA
-83,Pathology,LCDR,2015,CONUS MTF,2-4 months,4,5,4,1
-662,Aviation Medicine (Flight Surgery GMO),LT,2015,CONUS Operational,< 2 months,2,2,3,5
-85,OB/GYN,CAPT or Flag,2016,OCONUS MTF,2-4 months,5,5,1,1
-86,Emergency Medicine,LCDR,2013,CONUS MTF,< 2 months,4,4,4,1
-87,Aerospace Medicine (Residency Trained Flight),LT,2015,GME,> 4 months,3,2,1,1
-88,Family Medicine,LCDR,2016,CONUS MTF,< 2 months,5,5,1,NA
-89,Neurology,CDR,2013,CONUS MTF,2-4 months,3,3,NA,1
-90,Otolaryngology,LCDR,2014,CONUS MTF,2-4 months,4,4,2,2
-91,Preventive Medicine,CDR,2016,OCONUS Operational,NA,5,5,5,1
-92,Aerospace Medicine (Residency Trained Flight),LCDR,2016,GME,< 2 months,5,2,1,1
-93,Internal Medicine (General),CAPT or Flag,2014,Non-Operational/Non-Clinical,2-4 months,5,5,5,1
-1033,General Surgery,LT,NA,GME,NA,NA,NA,NA,NA
-95,Family Medicine,LCDR,2016,CONUS MTF,2-4 months,4,4,3,1
-96,Emergency Medicine,LCDR,2015,CONUS MTF,2-4 months,3,4,NA,1
-666,Aviation Medicine (Flight Surgery GMO),LCDR,2016,CONUS Operational,< 2 months,1,1,1,NA
-98,Pediatrics,CDR,2014,OCONUS MTF,2-4 months,3,3,2,5
-99,General Surgery,LCDR,2014,OCONUS Operational,2-4 months,2,1,5,NA
-1294,Family Medicine,NA,NA,NA,NA,NA,NA,NA,NA
-695,Aviation Medicine (Flight Surgery GMO),LT,2016,CONUS Operational,< 2 months,3,5,4,1
-102,Occupational Medicine,CDR,2014,CONUS MTF,2-4 months,2,2,1,5
-701,Aviation Medicine (Flight Surgery GMO),LT,2015,CONUS Operational,< 2 months,1,2,NA,NA
-104,Neonatology,LCDR,2016,CONUS MTF,< 2 months,1,1,1,NA
-105,Pediatrics,CAPT or Flag,2008,GME,> 4 months,5,5,5,1
-106,Cardiology (IM),CDR,2016,CONUS Operational,< 2 months,1,3,2,5
-719,Aviation Medicine (Flight Surgery GMO),LT,2016,CONUS Operational,< 2 months,NA,NA,NA,NA
-108,Plastic Surgery,CDR,2016,CONUS MTF,2-4 months,5,5,2,1
-109,Psychiatry,LCDR,2013,CONUS Operational,2-4 months,5,4,4,3
-110,Anesthesiology,LCDR,2016,CONUS MTF,< 2 months,3,4,NA,2
-996,Aviation Medicine (Flight Surgery GMO),LT,2016,CONUS Operational,< 2 months,5,5,5,1
-112,Family Medicine,CDR,2016,OCONUS MTF,2-4 months,4,2,3,1
-1040,Aviation Medicine (Flight Surgery GMO),LT,2016,OCONUS Operational,< 2 months,1,1,NA,1
-1065,Aviation Medicine (Flight Surgery GMO),LT,2015,CONUS Operational,< 2 months,2,3,3,1
-115,Urology,CDR,2014,CONUS MTF,2-4 months,5,3,5,1
-116,Radiology,LCDR,2013,CONUS MTF,< 2 months,1,1,1,NA
-117,Allergy/Immunology,CDR,2015,CONUS MTF,> 4 months,1,1,1,NA
-1075,Aviation Medicine (Flight Surgery GMO),LT,2015,CONUS Operational,2-4 months,5,5,4,1
-119,Allergy/Immunology,LCDR,2016,CONUS MTF,2-4 months,4,4,3,1
-120,Psychiatry,CAPT or Flag,2015,Non-Operational/Non-Clinical,2-4 months,4,4,2,2
-121,Emergency Medicine,CAPT or Flag,2016,OCONUS MTF,2-4 months,5,NA,5,1
-122,Emergency Medicine,LCDR,2015,GME,> 4 months,4,4,2,1
-154,Emergency Medicine,LT,NA,NA,NA,NA,NA,NA,NA
-124,Emergency Medicine,LCDR,2015,OCONUS Operational,> 4 months,5,5,5,3
-125,Emergency Medicine,LT,2016,GME,< 2 months,5,5,3,1
-126,Emergency Medicine,LCDR,2015,CONUS MTF,2-4 months,1,2,4,1
-127,Rheumatology (IM),CAPT or Flag,2015,CONUS MTF,> 4 months,5,5,4,1
-1093,Aviation Medicine (Flight Surgery GMO),LT,2015,CONUS Operational,< 2 months,2,2,2,3
-129,Rheumatology (IM),LT,2015,GME,2-4 months,3,3,NA,1
-130,Emergency Medicine,LT,2015,CONUS MTF,2-4 months,4,5,NA,1
-131,Emergency Medicine,CDR,2014,OCONUS MTF,> 4 months,5,5,5,1
-132,Emergency Medicine,LT,2013,CONUS MTF,> 4 months,4,4,3,1
-133,Allergy/Immunology,LCDR,2014,CONUS MTF,2-4 months,2,2,NA,NA
-691,Otolaryngology,LT,2015,NA,2-4 months,4,5,5,1
-136,Emergency Medicine,LCDR,2014,GME,2-4 months,5,NA,3,1
-137,Pediatrics,CDR,2013,CONUS MTF,> 4 months,3,5,4,1
-1094,Aviation Medicine (Flight Surgery GMO),LT,2013,CONUS Operational,2-4 months,4,4,NA,1
-934,Orthopedic Surgery,LT,2016,NA,NA,NA,NA,NA,NA
-140,Emergency Medicine,CAPT or Flag,2015,CONUS MTF,> 4 months,4,5,5,1
-141,Emergency Medicine,CDR,2016,Non-Operational/Non-Clinical,< 2 months,4,4,3,1
-142,Emergency Medicine,CDR,2015,CONUS MTF,> 4 months,5,5,1,1
-143,Preventive Medicine,CAPT or Flag,2015,GME,2-4 months,5,5,1,1
-144,Endocrinology (IM),CAPT or Flag,2014,CONUS MTF,< 2 months,5,5,5,1
-145,Physical Medicine and Rehabilitation,LCDR,2014,CONUS MTF,2-4 months,5,5,5,1
-1105,Aviation Medicine (Flight Surgery GMO),LCDR,2016,OCONUS Operational,2-4 months,5,5,3,1
-1191,Aviation Medicine (Flight Surgery GMO),LCDR,2016,CONUS MTF,2-4 months,1,1,2,NA
-1194,Aviation Medicine (Flight Surgery GMO),LT,2014,CONUS Operational,2-4 months,1,2,2,1
-149,Emergency Medicine,LT,2016,GME,< 2 months,1,1,NA,2
-150,Emergency Medicine,LCDR,2015,CONUS MTF,2-4 months,4,1,1,5
-151,Emergency Medicine,LCDR,2014,CONUS MTF,2-4 months,3,4,2,1
-152,Emergency Medicine,LT,2014,GME,2-4 months,5,5,5,1
-155,Emergency Medicine,CDR,2016,CONUS MTF,NA,5,5,NA,2
-156,Psychiatry,LT,2015,CONUS MTF,2-4 months,4,5,5,5
-1195,Aviation Medicine (Flight Surgery GMO),LT,2014,CONUS Operational,2-4 months,3,3,3,1
-158,Emergency Medicine,LT,2015,CONUS MTF,2-4 months,5,5,5,1
-159,Emergency Medicine,CDR,2015,CONUS MTF,> 4 months,1,1,NA,NA
-160,Emergency Medicine,LCDR,2016,GME,2-4 months,5,4,4,1
-161,Emergency Medicine,LCDR,2016,CONUS MTF,< 2 months,5,4,5,5
-163,Radiology,CAPT or Flag,2016,OCONUS Operational,2-4 months,4,4,3,NA
-164,Emergency Medicine,CDR,2015,OCONUS MTF,2-4 months,2,4,5,1
-165,Emergency Medicine,CDR,2016,CONUS MTF,2-4 months,4,5,3,1
-166,Rheumatology (IM),CDR,2016,CONUS MTF,> 4 months,5,NA,5,1
-167,Radiology,CDR,2014,OCONUS MTF,2-4 months,5,5,5,2
-168,Radiology,LCDR,2015,CONUS MTF,< 2 months,2,3,1,NA
-169,Radiology,CDR,2016,OCONUS MTF,2-4 months,5,5,5,2
-170,Radiology,LCDR,2015,CONUS MTF,2-4 months,4,5,4,1
-171,Radiology,CDR,2016,Non-Operational/Non-Clinical,< 2 months,5,5,5,1
-172,Radiology,LCDR,2016,CONUS Operational,2-4 months,1,1,5,NA
-173,Radiology,CDR,2016,OCONUS Operational,> 4 months,5,5,4,1
-174,Radiology,LCDR,2014,CONUS MTF,2-4 months,2,3,3,NA
-175,Radiology,LCDR,2016,CONUS MTF,2-4 months,4,4,4,3
-176,Radiology,CAPT or Flag,2011,GME,2-4 months,NA,NA,NA,NA
-177,Radiology,LCDR,2015,CONUS MTF,> 4 months,1,3,2,1
-178,Family Medicine,CAPT or Flag,2016,CONUS MTF,NA,3,4,4,1
-179,Emergency Medicine,LCDR,2015,OCONUS MTF,2-4 months,2,3,4,NA
-180,Family Medicine,LT,2014,CONUS MTF,2-4 months,2,3,3,4
-181,Family Medicine,LCDR,2015,OCONUS MTF,< 2 months,1,1,5,NA
-182,Family Medicine,LCDR,2016,CONUS MTF,2-4 months,2,3,3,1
-183,Family Medicine,CAPT or Flag,2012,GME,2-4 months,5,5,4,1
-184,Family Medicine,LCDR,2014,CONUS MTF,2-4 months,4,5,2,1
-185,Family Medicine,LCDR,2015,CONUS MTF,2-4 months,4,5,5,1
-186,Family Medicine,LT,2016,CONUS MTF,2-4 months,3,4,3,4
-187,Family Medicine,LCDR,2014,GME,2-4 months,4,4,2,1
-188,Family Medicine,LT,2012,CONUS Operational,> 4 months,3,4,3,2
-189,Family Medicine,CDR,2015,CONUS MTF,NA,2,3,2,2
-190,Family Medicine,LCDR,2014,CONUS MTF,2-4 months,4,4,1,1
-191,Family Medicine,LT,2016,CONUS MTF,> 4 months,1,1,2,1
-192,Family Medicine,CDR,2015,CONUS MTF,2-4 months,4,4,4,2
-193,Family Medicine,CDR,2015,OCONUS MTF,2-4 months,4,4,2,NA
-194,Family Medicine,CDR,2016,CONUS MTF,2-4 months,4,4,3,1
-195,Family Medicine,CDR,2013,CONUS MTF,2-4 months,4,4,4,1
-196,Family Medicine,LT,2015,CONUS MTF,2-4 months,3,2,3,1
-197,Aerospace Medicine (Residency Trained Flight),CAPT or Flag,2016,CONUS Operational,2-4 months,4,4,3,1
-198,Family Medicine,LCDR,2015,CONUS MTF,2-4 months,3,4,4,1
-199,Family Medicine,CAPT or Flag,2012,CONUS MTF,> 4 months,3,3,3,1
-200,Radiology,CDR,2014,CONUS MTF,> 4 months,5,5,2,2
-201,Family Medicine,LCDR,2014,CONUS MTF,2-4 months,5,5,5,1
-202,Family Medicine,CDR,2014,CONUS MTF,NA,5,5,4,1
-203,Family Medicine,LT,2014,CONUS Operational,2-4 months,3,5,NA,1
-204,Family Medicine,CDR,2014,CONUS MTF,2-4 months,4,4,4,1
-205,Family Medicine,LCDR,2014,CONUS Operational,2-4 months,3,4,3,1
-206,Family Medicine,CAPT or Flag,2013,CONUS MTF,> 4 months,4,4,3,1
-207,Family Medicine,LCDR,2014,CONUS MTF,NA,4,3,3,2
-208,Family Medicine,CAPT or Flag,2016,CONUS MTF,2-4 months,1,1,1,NA
-209,Family Medicine,CAPT or Flag,2016,Non-Operational/Non-Clinical,> 4 months,4,5,2,1
-210,Family Medicine,LCDR,2016,GME,2-4 months,2,1,1,NA
-211,Family Medicine,CDR,2014,CONUS Operational,> 4 months,5,5,5,1
-212,Family Medicine,LT,2016,OCONUS Operational,2-4 months,1,1,NA,NA
-213,Family Medicine,LCDR,2016,CONUS MTF,> 4 months,3,3,2,2
-214,Family Medicine,CDR,2015,CONUS MTF,2-4 months,5,5,5,1
-215,Family Medicine,LT,2014,GME,NA,4,NA,4,1
-216,Family Medicine,LT,2016,CONUS MTF,2-4 months,1,1,2,5
-217,Family Medicine,CDR,2016,CONUS Operational,2-4 months,2,4,2,1
-218,Family Medicine,CAPT or Flag,2014,CONUS MTF,2-4 months,4,4,4,NA
-219,Family Medicine,CAPT or Flag,2015,CONUS Operational,2-4 months,1,3,1,5
-220,Family Medicine,CDR,2016,CONUS MTF,< 2 months,5,4,5,1
-221,Anesthesiology,CDR,2016,OCONUS MTF,2-4 months,4,5,4,NA
-222,Radiology,LCDR,2016,CONUS MTF,2-4 months,5,5,1,1
-223,Dermatology,LCDR,2014,CONUS MTF,2-4 months,3,5,4,1
-224,Family Medicine,CDR,2013,Non-Operational/Non-Clinical,> 4 months,5,5,5,1
-225,Radiology,CDR,2014,CONUS MTF,2-4 months,3,3,2,1
-1199,Aviation Medicine (Flight Surgery GMO),LT,2014,CONUS Operational,< 2 months,4,4,4,2
-228,Ophthalmology,CAPT or Flag,2014,CONUS Operational,< 2 months,4,4,5,1
-230,Family Medicine,CDR,2015,CONUS MTF,2-4 months,5,5,5,1
-231,Family Medicine,CDR,2016,OCONUS MTF,< 2 months,4,5,5,1
-232,Dermatology,CDR,2015,GME,2-4 months,4,5,4,1
-233,Radiology,CDR,2013,CONUS MTF,2-4 months,3,4,3,2
-234,Family Medicine,LCDR,2015,GME,2-4 months,5,5,1,1
-235,Radiology,LCDR,2015,CONUS MTF,2-4 months,1,2,2,2
-236,Family Medicine,CDR,2016,CONUS Operational,2-4 months,1,1,1,1
-237,Family Medicine,LCDR,2016,CONUS MTF,< 2 months,4,4,3,1
-238,Family Medicine,CDR,2015,CONUS Operational,< 2 months,3,3,2,3
-1201,Aviation Medicine (Flight Surgery GMO),LT,2014,CONUS Operational,< 2 months,1,2,4,2
-1235,Aviation Medicine (Flight Surgery GMO),LT,2015,CONUS Operational,< 2 months,1,2,1,4
-241,Family Medicine,LCDR,2015,CONUS MTF,2-4 months,2,3,2,3
-242,Family Medicine,CAPT or Flag,2016,Non-Operational/Non-Clinical,2-4 months,5,5,1,1
-243,Family Medicine,CDR,2014,Non-Operational/Non-Clinical,NA,3,4,NA,2
-244,Family Medicine,LCDR,2014,CONUS Operational,2-4 months,2,2,2,2
-245,Pathology,CAPT or Flag,2015,CONUS MTF,2-4 months,NA,NA,NA,NA
-1247,Aviation Medicine (Flight Surgery GMO),LT,2016,CONUS Operational,< 2 months,1,1,NA,5
-247,Family Medicine,CAPT or Flag,2016,CONUS MTF,2-4 months,4,5,5,1
-248,Pathology,CDR,2016,CONUS MTF,2-4 months,4,5,3,1
-249,Infectious Disease (IM),CAPT or Flag,2015,OCONUS Operational,2-4 months,3,3,3,2
-250,Radiology,CDR,2015,CONUS MTF,2-4 months,4,4,5,1
-251,Family Medicine,LCDR,2015,CONUS MTF,< 2 months,NA,NA,NA,NA
-253,Pathology,CDR,2015,CONUS MTF,< 2 months,5,5,1,1
-254,Family Medicine,CDR,2016,OCONUS Operational,< 2 months,2,1,1,NA
-1253,Aviation Medicine (Flight Surgery GMO),LT,2015,CONUS Operational,2-4 months,2,4,4,1
-256,Pathology,LCDR,2014,CONUS MTF,2-4 months,1,1,3,NA
-257,Pathology,LCDR,2015,CONUS MTF,2-4 months,5,5,5,1
-258,Pathology,CDR,2014,CONUS MTF,2-4 months,1,1,1,NA
-259,Radiology,LCDR,2015,CONUS MTF,> 4 months,5,5,2,1
-260,Family Medicine,LT,2016,OCONUS Operational,2-4 months,2,3,NA,NA
-261,NA,NA,2014,Non-Operational/Non-Clinical,< 2 months,3,4,2,2
-262,Pathology,LCDR,2014,CONUS MTF,2-4 months,4,5,5,1
-263,Pathology,CDR,2015,CONUS MTF,2-4 months,2,4,5,1
-264,Family Medicine,CAPT or Flag,2014,OCONUS Operational,2-4 months,3,4,NA,2
-265,Radiology,LCDR,2016,CONUS MTF,> 4 months,4,4,3,2
-266,Pathology,CAPT or Flag,2016,CONUS MTF,2-4 months,5,4,5,1
-1263,Aviation Medicine (Flight Surgery GMO),LT,2014,CONUS Operational,< 2 months,1,1,1,3
-268,Family Medicine,CAPT or Flag,2015,Other,> 4 months,3,5,2,1
-269,Pathology,CDR,2012,CONUS MTF,2-4 months,4,4,3,1
-270,Pathology,CAPT or Flag,2016,CONUS MTF,NA,5,5,3,1
-271,Occupational Medicine,CDR,2016,GME,2-4 months,5,5,3,1
-1264,Aviation Medicine (Flight Surgery GMO),LT,2015,CONUS Operational,2-4 months,5,4,NA,2
-274,Dermatology,LT,2015,CONUS MTF,2-4 months,3,3,3,NA
-275,Dermatology,LCDR,2016,CONUS MTF,2-4 months,4,3,4,2
-276,Pathology,LT,2013,GME,2-4 months,NA,NA,NA,NA
-278,Pathology,CAPT or Flag,2015,CONUS MTF,2-4 months,5,5,4,1
-279,Family Medicine,CDR,2015,OCONUS MTF,2-4 months,4,4,5,NA
-280,Dermatology,LCDR,2016,CONUS MTF,2-4 months,1,3,NA,1
-281,Family Medicine,CDR,2016,Other,< 2 months,5,5,5,NA
-282,Family Medicine,LCDR,2013,CONUS MTF,< 2 months,1,1,NA,1
-283,Dermatology,CDR,2014,CONUS MTF,2-4 months,5,5,5,1
-284,Family Medicine,LCDR,2015,CONUS MTF,2-4 months,4,4,3,2
-285,General Surgery,LCDR,2015,CONUS Operational,< 2 months,1,1,NA,1
-1265,Aviation Medicine (Flight Surgery GMO),LT,2014,CONUS MTF,2-4 months,3,4,2,2
-287,Dermatology,LCDR,2016,CONUS MTF,2-4 months,5,3,4,NA
-288,Dermatology,CDR,2016,CONUS MTF,2-4 months,1,1,5,1
-289,Pathology,LCDR,2015,CONUS MTF,2-4 months,4,4,NA,1
-290,Radiology,LCDR,2015,CONUS MTF,2-4 months,4,4,4,3
-291,Dermatology,CDR,2016,CONUS MTF,2-4 months,5,4,5,1
-292,Pathology,CAPT or Flag,2015,Non-Operational/Non-Clinical,< 2 months,3,1,NA,NA
-293,Dermatology,LCDR,2016,CONUS MTF,< 2 months,2,3,5,3
-294,OB/GYN,CAPT or Flag,2015,CONUS Operational,2-4 months,4,5,5,1
-295,Family Medicine,CAPT or Flag,2015,CONUS MTF,2-4 months,4,4,4,1
-296,Radiology,CDR,2014,CONUS MTF,2-4 months,3,3,3,1
-297,Pathology,CDR,2015,CONUS MTF,2-4 months,3,3,3,1
-298,Pathology,CAPT or Flag,2015,CONUS MTF,2-4 months,5,5,4,1
-299,Family Medicine,LT,2015,CONUS MTF,> 4 months,5,5,NA,1
-303,Dermatology,LCDR,2014,CONUS MTF,2-4 months,3,3,4,2
-304,Pediatrics,CDR,2010,CONUS MTF,> 4 months,5,5,5,2
-305,Family Medicine,CDR,2016,CONUS Operational,< 2 months,1,1,1,4
-306,Psychiatry,CAPT or Flag,2015,GME,< 2 months,5,5,5,NA
-307,Pathology,CDR,2016,CONUS MTF,2-4 months,4,4,4,1
-308,Occupational Medicine,CDR,2015,Non-Operational/Non-Clinical,< 2 months,5,5,5,1
-309,Pediatrics,LCDR,2012,CONUS MTF,< 2 months,1,1,1,NA
-310,Dermatology,LCDR,2014,Other,> 4 months,5,5,5,1
-1269,Aviation Medicine (Flight Surgery GMO),LT,2015,CONUS Operational,< 2 months,3,3,2,3
-1275,Aviation Medicine (Flight Surgery GMO),LT,2016,CONUS Operational,< 2 months,1,1,3,NA
-313,Pediatrics,LCDR,2013,CONUS MTF,2-4 months,NA,NA,NA,NA
-314,Pediatrics,LT,2016,GME,2-4 months,2,3,NA,1
-315,Pediatrics,LT,2015,CONUS MTF,> 4 months,3,3,5,5
-316,Pediatrics,LT,2016,CONUS MTF,< 2 months,2,3,4,1
-317,Pediatrics,LT,2015,CONUS MTF,2-4 months,1,1,3,5
-318,Dermatology,LCDR,2016,OCONUS MTF,2-4 months,4,5,5,2
-319,Family Medicine,LCDR,2015,CONUS Operational,> 4 months,5,5,NA,1
-320,Family Medicine,CAPT or Flag,2015,CONUS Operational,2-4 months,4,5,4,1
-321,Family Medicine,LT,2015,CONUS MTF,< 2 months,5,5,4,NA
-322,Pediatrics,CAPT or Flag,2016,Non-Operational/Non-Clinical,2-4 months,5,5,5,1
-323,Pediatrics,LT,2014,CONUS MTF,> 4 months,NA,NA,NA,NA
-324,Pediatrics,LT,2015,CONUS MTF,2-4 months,5,5,3,1
-325,Pediatrics,LCDR,2015,CONUS MTF,2-4 months,NA,NA,NA,NA
-326,Radiology,LCDR,2016,GME,2-4 months,5,4,4,1
-327,Preventive Medicine,CDR,2016,Non-Operational/Non-Clinical,2-4 months,4,4,4,1
-329,Pediatrics,LCDR,2015,CONUS MTF,> 4 months,5,4,3,1
-331,Dermatology,LCDR,2015,CONUS MTF,2-4 months,3,4,1,3
-332,Pediatrics,LCDR,2014,CONUS MTF,> 4 months,5,5,4,1
-333,Pediatrics,LCDR,2013,CONUS MTF,2-4 months,4,4,3,1
-1285,Aviation Medicine (Flight Surgery GMO),LT,2016,CONUS Operational,< 2 months,1,1,1,NA
-336,Preventive Medicine,CAPT or Flag,2005,Non-Operational/Non-Clinical,2-4 months,5,5,4,1
-337,Pediatrics,LCDR,2014,CONUS MTF,2-4 months,4,5,3,1
-338,Pediatrics,LCDR,2014,CONUS MTF,2-4 months,4,5,2,1
-339,Pediatrics,CDR,2014,CONUS MTF,2-4 months,5,4,2,1
-340,Pediatrics,CDR,2015,CONUS MTF,> 4 months,4,5,4,1
-341,Pediatrics,LT,2016,CONUS MTF,2-4 months,4,4,1,1
-342,Neonatology,LCDR,2016,CONUS MTF,2-4 months,4,4,2,2
-1307,Aviation Medicine (Flight Surgery GMO),LT,2016,CONUS Operational,2-4 months,1,1,NA,NA
-344,Pediatrics,CDR,2015,CONUS MTF,> 4 months,1,2,1,2
-345,Pathology,CAPT or Flag,2015,OCONUS MTF,2-4 months,4,4,3,3
-346,Family Medicine,CAPT or Flag,2016,CONUS MTF,> 4 months,2,2,3,1
-347,Pediatrics,LT,2016,GME,2-4 months,5,3,NA,1
-348,Pediatrics,CAPT or Flag,2015,CONUS MTF,2-4 months,4,5,3,1
-349,Family Medicine,CDR,2015,CONUS MTF,2-4 months,5,3,3,1
-350,Neonatology,LT,2014,GME,2-4 months,5,4,5,1
-351,Orthopedic Surgery,CDR,2015,CONUS MTF,2-4 months,4,4,3,2
-352,Pediatrics,CDR,2015,CONUS MTF,> 4 months,5,5,5,1
-353,Dermatology,LCDR,2016,OCONUS MTF,> 4 months,4,5,5,1
-354,Orthopedic Surgery,LCDR,2015,OCONUS MTF,2-4 months,2,3,2,1
-355,Preventive Medicine,CAPT or Flag,2015,Non-Operational/Non-Clinical,> 4 months,2,2,1,5
-356,Pediatrics,LCDR,2015,OCONUS MTF,> 4 months,2,2,3,NA
-357,Orthopedic Surgery,LCDR,2015,CONUS MTF,2-4 months,1,2,3,3
-358,Family Medicine,LT,2015,OCONUS MTF,> 4 months,1,2,3,3
-359,Pediatrics,CDR,2015,CONUS MTF,> 4 months,4,5,5,1
-360,Orthopedic Surgery,LCDR,2016,CONUS MTF,2-4 months,5,5,4,1
-361,Orthopedic Surgery,LCDR,2015,CONUS MTF,2-4 months,4,4,3,3
-362,Dermatology,CDR,2016,CONUS MTF,2-4 months,4,4,4,2
-1360,Aviation Medicine (Flight Surgery GMO),LT,2016,OCONUS Operational,< 2 months,1,1,1,3
-364,Family Medicine,LCDR,2014,CONUS MTF,2-4 months,NA,NA,3,1
-365,Pediatrics,LT,2016,OCONUS MTF,2-4 months,5,4,2,1
-366,Family Medicine,LT,2014,CONUS MTF,2-4 months,4,3,4,1
-1361,Aviation Medicine (Flight Surgery GMO),LT,2016,OCONUS Operational,< 2 months,1,1,1,5
-368,Family Medicine,LCDR,2015,OCONUS MTF,2-4 months,5,5,3,1
-369,Family Medicine,LT,2014,OCONUS Operational,2-4 months,1,1,1,5
-370,Pediatrics,CAPT or Flag,2014,CONUS MTF,2-4 months,4,5,2,1
-371,Dermatology,LCDR,2016,GME,2-4 months,5,4,5,1
-372,Family Medicine,LT,2016,OCONUS MTF,2-4 months,2,1,4,3
-1363,Aviation Medicine (Flight Surgery GMO),LT,2016,OCONUS Operational,< 2 months,1,1,1,NA
-374,Family Medicine,LT,2015,Non-Operational/Non-Clinical,2-4 months,NA,NA,NA,NA
-375,Family Medicine,CAPT or Flag,2016,CONUS MTF,NA,3,3,3,3
-376,Orthopedic Surgery,LCDR,2013,CONUS MTF,2-4 months,4,4,3,1
-377,Pediatrics,CDR,2012,CONUS MTF,2-4 months,NA,NA,NA,NA
-67,General Medical Officer,LCDR,2014,CONUS MTF,2-4 months,3,5,3,NA
-380,Family Medicine,LCDR,2016,OCONUS MTF,2-4 months,1,1,1,5
-381,Dermatology,LCDR,2014,GME,2-4 months,5,5,1,1
-382,Orthopedic Surgery,LCDR,2016,OCONUS MTF,2-4 months,1,2,1,5
-383,Pathology,LCDR,2015,OCONUS MTF,> 4 months,1,2,3,NA
-384,Pathology,LCDR,2016,OCONUS MTF,> 4 months,5,5,5,1
-385,Preventive Medicine,CDR,2014,Non-Operational/Non-Clinical,2-4 months,4,4,3,1
-386,Family Medicine,LT,2016,OCONUS MTF,< 2 months,2,2,NA,1
-69,General Medical Officer,LT,2014,CONUS Operational,2-4 months,2,2,2,1
-388,Preventive Medicine,CDR,2014,CONUS MTF,2-4 months,1,1,2,NA
-389,Orthopedic Surgery,LCDR,2016,OCONUS MTF,2-4 months,1,1,2,5
-390,Family Medicine,LCDR,2015,OCONUS MTF,NA,2,1,4,NA
-391,Family Medicine,LT,2015,OCONUS Operational,< 2 months,3,3,NA,1
-392,Pediatrics,LT,2014,CONUS MTF,2-4 months,2,2,2,5
-394,Radiology,CDR,2015,CONUS MTF,> 4 months,3,4,4,1
-395,Pathology,CAPT or Flag,2014,OCONUS MTF,< 2 months,1,5,4,1
-396,Radiology,CAPT or Flag,2015,CONUS MTF,> 4 months,4,5,2,1
-397,Radiology,CDR,2016,OCONUS MTF,2-4 months,1,1,1,5
-398,Radiology,LCDR,2016,CONUS MTF,2-4 months,4,4,NA,2
-399,Radiology,CDR,2012,CONUS MTF,2-4 months,3,4,4,2
-400,Dermatology,LCDR,2015,CONUS MTF,> 4 months,2,4,5,1
-401,Emergency Medicine,CDR,2016,OCONUS Operational,2-4 months,2,2,NA,2
-402,Neonatology,CAPT or Flag,2016,CONUS MTF,NA,5,5,5,1
-403,Family Medicine,LT,2014,GME,2-4 months,NA,NA,NA,NA
-405,Dermatology,LT,2016,CONUS MTF,> 4 months,NA,5,3,1
-406,Family Medicine,LT,2014,OCONUS MTF,2-4 months,3,4,3,1
-407,Radiology,LCDR,2016,Non-Operational/Non-Clinical,> 4 months,3,3,1,1
-73,General Medical Officer,LCDR,2013,OCONUS MTF,< 2 months,5,5,5,1
-111,General Medical Officer,LT,2016,Non-Operational/Non-Clinical,2-4 months,4,5,4,1
-410,Orthopedic Surgery,LCDR,2016,CONUS MTF,2-4 months,5,5,3,1
-411,Pediatrics,LT,2016,OCONUS MTF,2-4 months,4,4,3,3
-412,Internal Medicine (General),LT,2015,CONUS MTF,< 2 months,5,1,3,4
-413,Emergency Medicine,LCDR,2016,OCONUS MTF,> 4 months,2,1,3,NA
-414,Pathology,CAPT or Flag,2015,OCONUS MTF,2-4 months,5,5,5,1
-415,Dermatology,LT,2014,GME,2-4 months,5,5,4,2
-416,Family Medicine,LCDR,2015,OCONUS MTF,2-4 months,4,3,4,1
-113,General Medical Officer,LT,2013,OCONUS Operational,2-4 months,1,1,1,3
-419,Radiology,LCDR,2016,OCONUS MTF,2-4 months,2,4,3,NA
-420,Family Medicine,LCDR,2016,OCONUS MTF,< 2 months,2,2,2,5
-421,Pediatrics,CAPT or Flag,2014,OCONUS MTF,> 4 months,5,5,5,1
-422,Family Medicine,LT,2014,OCONUS MTF,2-4 months,2,3,3,1
-423,Pediatrics,LCDR,2016,OCONUS MTF,2-4 months,4,5,4,2
-424,Family Medicine,LT,2014,OCONUS MTF,2-4 months,1,1,3,NA
-425,Family Medicine,CAPT or Flag,2016,OCONUS MTF,2-4 months,4,3,2,5
-426,Family Medicine,CDR,2016,OCONUS Operational,< 2 months,1,1,2,NA
-427,Family Medicine,LCDR,2014,OCONUS MTF,> 4 months,5,5,3,1
-114,General Medical Officer,LT,2015,CONUS Operational,< 2 months,2,2,1,2
-429,Radiology,CAPT or Flag,2015,OCONUS MTF,2-4 months,4,4,4,1
-430,Radiology,LCDR,2016,OCONUS MTF,2-4 months,3,3,2,5
-431,Family Medicine,LCDR,2015,OCONUS MTF,2-4 months,1,3,4,1
-432,Family Medicine,LCDR,2014,OCONUS MTF,> 4 months,5,4,3,1
-433,Pathology,CDR,2015,OCONUS MTF,2-4 months,3,3,2,1
-312,General Medical Officer,LT,2015,CONUS MTF,2-4 months,1,1,1,NA
-418,General Medical Officer,LT,2015,OCONUS Operational,2-4 months,5,4,NA,2
-436,Orthopedic Surgery,LCDR,2012,CONUS MTF,> 4 months,4,5,4,2
-437,Pediatrics,CDR,2016,CONUS MTF,> 4 months,5,5,1,1
-428,General Medical Officer,LT,2016,OCONUS Operational,2-4 months,2,2,3,NA
-439,Pediatrics,LCDR,2009,CONUS MTF,NA,NA,NA,NA,NA
-440,Orthopedic Surgery,LCDR,2016,CONUS MTF,2-4 months,5,4,5,1
-441,Preventive Medicine,CAPT or Flag,2016,CONUS MTF,2-4 months,NA,NA,NA,NA
-442,Dermatology,CDR,2015,CONUS MTF,> 4 months,5,5,5,NA
-443,Pediatrics,CDR,2015,CONUS MTF,NA,4,5,4,1
-444,Family Medicine,CAPT or Flag,2014,CONUS MTF,2-4 months,5,5,5,2
-445,Pediatrics,CDR,2011,CONUS MTF,> 4 months,4,4,4,2
-446,Preventive Medicine,CDR,2016,GME,2-4 months,4,2,3,4
-447,Family Medicine,CDR,2015,OCONUS MTF,2-4 months,5,5,3,1
-448,Pediatrics,CAPT or Flag,2016,CONUS MTF,< 2 months,4,4,3,1
-449,Preventive Medicine,CAPT or Flag,2013,Non-Operational/Non-Clinical,2-4 months,5,5,4,1
-450,Pediatrics,LCDR,2016,CONUS MTF,NA,4,4,3,NA
-451,Orthopedic Surgery,CDR,2014,CONUS MTF,2-4 months,1,3,2,NA
-453,Radiology,CDR,2015,CONUS MTF,2-4 months,4,4,2,1
-454,Pediatrics,CAPT or Flag,2016,CONUS Operational,> 4 months,5,5,NA,1
-455,Occupational Medicine,LCDR,2014,CONUS MTF,2-4 months,4,4,3,1
-456,Family Medicine,CAPT or Flag,2014,CONUS Operational,2-4 months,4,4,2,1
-457,Pediatrics,LCDR,2013,CONUS MTF,> 4 months,5,5,5,1
-458,Pediatrics,LT,2013,GME,2-4 months,2,2,NA,1
-459,Cardiothoracic Surgery,LCDR,2015,CONUS MTF,> 4 months,5,2,4,3
-460,Family Medicine,LT,2016,GME,2-4 months,4,4,3,1
-461,Neonatology,LT,2016,CONUS MTF,> 4 months,3,4,2,1
-462,Pediatrics,LT,2014,CONUS MTF,< 2 months,2,3,3,2
-464,Radiology,CDR,2013,CONUS MTF,2-4 months,4,4,5,1
-465,Neonatology,LT,2015,GME,> 4 months,3,5,2,1
-466,Orthopedic Surgery,LCDR,2014,CONUS MTF,2-4 months,1,1,1,2
-467,Pediatrics,LCDR,2016,CONUS MTF,2-4 months,5,5,5,1
-468,Preventive Medicine,LCDR,2014,CONUS MTF,NA,4,5,2,1
-469,Pediatrics,LT,2014,CONUS MTF,2-4 months,4,4,3,1
-470,Family Medicine,LT,2016,OCONUS Operational,< 2 months,3,2,3,NA
-471,Preventive Medicine,CDR,2016,CONUS Operational,2-4 months,5,5,3,2
-472,Pediatrics,CDR,2014,CONUS MTF,> 4 months,1,3,3,2
-473,Preventive Medicine,LCDR,2015,GME,< 2 months,2,3,NA,2
-434,General Medical Officer,LT,2015,CONUS Operational,> 4 months,5,1,5,2
-475,Family Medicine,LT,2014,CONUS MTF,2-4 months,1,1,1,1
-476,Heme/Onc (IM),LCDR,2014,CONUS MTF,2-4 months,4,4,3,1
-477,Radiology,CDR,2014,CONUS MTF,> 4 months,5,5,2,1
-478,Pediatrics,LCDR,2014,CONUS MTF,2-4 months,4,4,NA,2
-479,Heme/Onc (IM),CDR,2015,CONUS MTF,NA,3,5,5,1
-480,Preventive Medicine,LCDR,2016,CONUS MTF,2-4 months,2,4,2,2
-481,Orthopedic Surgery,CDR,2014,CONUS MTF,2-4 months,5,5,2,2
-482,OB/GYN,CDR,2014,CONUS MTF,2-4 months,5,5,3,1
-483,Neonatology,CDR,2016,CONUS MTF,NA,5,5,5,1
-484,Family Medicine,LT,2015,GME,2-4 months,2,2,NA,1
-485,Radiology,LCDR,2016,CONUS MTF,2-4 months,1,1,1,4
-486,Emergency Medicine,LCDR,2014,CONUS MTF,NA,4,3,4,1
-487,Pediatrics,LT,2015,CONUS MTF,< 2 months,4,4,4,1
-488,Heme/Onc (IM),LCDR,2015,CONUS MTF,> 4 months,1,NA,NA,NA
-489,General Medical Officer,LT,2016,CONUS MTF,2-4 months,2,3,NA,1
-490,Pediatrics,LT,2015,CONUS MTF,2-4 months,3,3,3,3
-492,Family Medicine,LT,2016,GME,2-4 months,NA,NA,NA,NA
-494,Nephrology (IM),CDR,2016,CONUS MTF,2-4 months,4,4,4,1
-495,Pathology,CAPT or Flag,2010,CONUS MTF,2-4 months,1,1,1,1
-496,Heme/Onc (IM),LCDR,2016,CONUS MTF,2-4 months,5,5,4,2
-497,Pediatrics,CDR,2014,CONUS MTF,2-4 months,5,4,4,2
-498,Family Medicine,CDR,2014,CONUS MTF,> 4 months,5,5,NA,1
-499,Dermatology,LCDR,2015,CONUS MTF,2-4 months,4,5,5,2
-500,Pediatrics,LT,2016,CONUS MTF,NA,5,4,NA,1
-1103,General Medical Officer,LT,2014,Non-Operational/Non-Clinical,> 4 months,3,3,2,3
-502,Preventive Medicine,CDR,2016,CONUS Operational,2-4 months,5,5,3,1
-503,Emergency Medicine,CDR,2015,CONUS Operational,2-4 months,3,3,3,3
-504,Allergy/Immunology,CDR,2015,CONUS MTF,> 4 months,4,NA,2,2
-505,Radiology,CDR,2012,CONUS MTF,2-4 months,5,5,5,NA
-506,Nephrology (IM),LCDR,2014,CONUS MTF,2-4 months,4,4,3,2
-507,Dermatology,CDR,2016,Non-Operational/Non-Clinical,2-4 months,5,5,5,1
-508,Pediatrics,LT,2014,GME,2-4 months,NA,NA,NA,NA
-509,General Surgery,LCDR,2015,CONUS MTF,2-4 months,5,3,5,1
-510,Emergency Medicine,LCDR,2016,CONUS Operational,> 4 months,4,4,4,2
-511,Family Medicine,LT,2013,GME,2-4 months,NA,NA,4,1
-512,Pediatrics,CDR,2015,OCONUS MTF,2-4 months,4,4,4,1
-513,Dermatology,LCDR,2015,GME,2-4 months,5,5,NA,1
-514,Neonatology,CDR,2014,CONUS MTF,2-4 months,4,4,1,NA
-515,Family Medicine,LT,2016,OCONUS MTF,2-4 months,2,1,NA,5
-516,Family Medicine,LT,2015,OCONUS MTF,< 2 months,1,1,1,NA
-517,Family Medicine,LCDR,2016,OCONUS MTF,< 2 months,3,1,4,NA
-518,Nephrology (IM),LT,2016,CONUS MTF,2-4 months,4,4,3,2
-519,Pediatrics,LCDR,2014,GME,2-4 months,3,4,2,1
-520,Psychiatry,LCDR,2015,CONUS MTF,NA,2,1,1,4
-521,Allergy/Immunology,CDR,2016,CONUS MTF,> 4 months,5,5,3,1
-522,Nephrology (IM),LCDR,2015,CONUS MTF,2-4 months,5,5,4,1
-523,Pediatrics,LT,2014,CONUS MTF,2-4 months,3,2,4,1
-524,Preventive Medicine,CDR,2015,Non-Operational/Non-Clinical,> 4 months,5,5,2,1
-525,Radiology,LCDR,2012,CONUS MTF,2-4 months,NA,NA,NA,NA
-526,Nephrology (IM),LCDR,2016,CONUS MTF,2-4 months,5,5,5,1
-528,Radiology,CDR,2013,CONUS MTF,> 4 months,5,4,4,1
-529,Pathology,CDR,2016,CONUS MTF,2-4 months,4,4,4,1
-530,Family Medicine,LT,2016,OCONUS Operational,> 4 months,1,1,NA,5
-1171,General Medical Officer,LT,2015,CONUS MTF,2-4 months,1,1,NA,NA
-532,Family Medicine,CAPT or Flag,2015,CONUS MTF,> 4 months,4,5,4,1
-533,Psychiatry,LCDR,2013,GME,2-4 months,NA,NA,2,1
-534,Preventive Medicine,LCDR,2016,CONUS Operational,2-4 months,2,2,4,5
-536,Pediatrics,LCDR,2013,CONUS MTF,> 4 months,4,5,2,1
-537,Psychiatry,LCDR,2013,GME,2-4 months,3,5,3,1
-538,Pathology,LCDR,2016,CONUS MTF,> 4 months,5,5,5,1
-1193,General Medical Officer,LT,2015,CONUS Operational,2-4 months,2,2,1,NA
-1212,General Medical Officer,LT,2016,CONUS Operational,< 2 months,3,2,5,1
-541,Radiology,CDR,2013,CONUS MTF,> 4 months,4,4,3,1
-542,Pediatrics,CDR,2016,GME,2-4 months,3,5,3,1
-543,Family Medicine,CAPT or Flag,2015,CONUS MTF,> 4 months,4,4,3,1
-544,Family Medicine,LCDR,2016,CONUS MTF,2-4 months,4,5,5,NA
-545,Family Medicine,LCDR,2016,GME,> 4 months,3,3,3,1
-546,Pediatrics,CDR,2014,OCONUS MTF,2-4 months,4,3,5,5
-549,Cardiology (IM),CDR,2014,CONUS MTF,2-4 months,5,5,4,2
-550,Preventive Medicine,LCDR,2015,OCONUS Operational,2-4 months,4,3,3,1
-551,Pediatrics,LT,2014,CONUS MTF,2-4 months,NA,NA,NA,1
-552,Emergency Medicine,LCDR,2015,OCONUS Operational,< 2 months,2,1,3,1
-553,Cardiology (IM),CDR,2015,CONUS MTF,> 4 months,3,4,3,1
-554,Cardiology (IM),LCDR,2016,CONUS MTF,2-4 months,5,5,4,1
-555,Family Medicine,CDR,2016,OCONUS Operational,2-4 months,1,1,NA,NA
-556,Family Medicine,CDR,2016,CONUS MTF,2-4 months,5,3,3,3
-557,Cardiology (IM),CDR,2014,CONUS MTF,2-4 months,3,4,4,NA
-558,Cardiology (IM),LCDR,2016,CONUS MTF,2-4 months,2,3,2,1
-559,Pediatrics,LCDR,2013,CONUS MTF,2-4 months,4,3,NA,1
-561,Cardiology (IM),CDR,2014,CONUS MTF,2-4 months,NA,3,3,1
-562,Cardiology (IM),LCDR,2015,CONUS MTF,2-4 months,4,4,NA,1
-563,Family Medicine,LT,2016,CONUS MTF,2-4 months,4,4,NA,1
-565,Cardiology (IM),CAPT or Flag,2014,CONUS MTF,< 2 months,NA,NA,NA,NA
-567,Psychiatry,CAPT or Flag,2015,CONUS MTF,> 4 months,4,4,3,1
-568,Psychiatry,LT,2014,GME,2-4 months,3,4,NA,2
-569,Psychiatry,LT,2015,GME,2-4 months,4,4,NA,1
-570,Cardiology (IM),CDR,2015,CONUS MTF,2-4 months,5,5,5,1
-571,Cardiology (IM),CAPT or Flag,2015,CONUS MTF,> 4 months,3,2,2,1
-572,Psychiatry,LCDR,2012,CONUS MTF,2-4 months,5,4,4,2
-573,Physical Medicine and Rehabilitation,CDR,2014,CONUS MTF,2-4 months,5,5,5,1
-1220,General Medical Officer,LT,2015,CONUS Operational,2-4 months,2,2,3,3
-575,Psychiatry,LT,2015,CONUS MTF,> 4 months,5,5,5,1
-576,Psychiatry,CDR,2016,Non-Operational/Non-Clinical,< 2 months,2,2,5,2
-1222,General Medical Officer,LT,2016,CONUS Operational,2-4 months,4,4,5,1
-578,Pediatrics,LT,2014,CONUS MTF,2-4 months,5,5,NA,1
-1270,General Medical Officer,LT,2016,CONUS Operational,< 2 months,2,4,NA,1
-580,Cardiology (IM),CDR,2013,CONUS MTF,< 2 months,5,3,5,2
-581,Psychiatry,CDR,2014,OCONUS MTF,2-4 months,5,5,4,1
-582,Cardiology (IM),CDR,2016,CONUS MTF,2-4 months,5,5,5,1
-583,Cardiology (IM),LCDR,2016,CONUS MTF,> 4 months,4,5,5,1
-584,Psychiatry,LCDR,2015,CONUS Operational,< 2 months,5,5,5,1
-585,Psychiatry,LT,2013,GME,2-4 months,5,5,5,1
-586,Psychiatry,CDR,2016,Non-Operational/Non-Clinical,2-4 months,5,5,2,1
-587,Psychiatry,LT,2013,CONUS MTF,> 4 months,NA,NA,NA,NA
-588,Orthopedic Surgery,LCDR,2016,CONUS MTF,2-4 months,4,4,5,1
-589,Psychiatry,LCDR,2014,CONUS MTF,< 2 months,2,5,3,1
-590,Psychiatry,LCDR,2016,CONUS Operational,2-4 months,2,2,1,3
-591,Cardiology (IM),LCDR,2016,CONUS MTF,2-4 months,5,5,5,1
-592,Family Medicine,CDR,2014,CONUS MTF,2-4 months,3,3,3,1
-593,Infectious Disease (IM),CDR,2014,CONUS MTF,2-4 months,3,2,4,1
-594,Pediatrics,LT,2016,OCONUS MTF,2-4 months,2,2,3,3
-595,Internal Medicine (General),CAPT or Flag,2014,Non-Operational/Non-Clinical,2-4 months,2,3,3,2
-596,Psychiatry,LT,2016,OCONUS Operational,< 2 months,2,3,NA,1
-597,Cardiology (IM),CDR,2015,CONUS MTF,2-4 months,4,4,3,1
-599,Family Medicine,CDR,2015,GME,2-4 months,5,5,3,1
-600,Infectious Disease (IM),LCDR,2016,Non-Operational/Non-Clinical,2-4 months,3,3,3,2
-601,Cardiology (IM),CDR,2015,CONUS MTF,< 2 months,5,5,5,1
-602,Orthopedic Surgery,LCDR,2015,CONUS MTF,< 2 months,2,1,4,1
-604,Pediatrics,LT,2016,CONUS MTF,2-4 months,5,5,NA,1
-605,Cardiology (IM),LCDR,2015,CONUS MTF,< 2 months,NA,NA,3,NA
-606,Endocrinology (IM),LCDR,2014,CONUS MTF,> 4 months,4,4,4,1
-607,Psychiatry,LT,2014,CONUS MTF,< 2 months,NA,NA,NA,NA
-608,Emergency Medicine,LCDR,2015,CONUS MTF,2-4 months,3,3,3,3
-609,Family Medicine,LCDR,2015,GME,> 4 months,5,4,3,1
-610,Family Medicine,LCDR,2015,OCONUS Operational,< 2 months,1,1,2,NA
-611,Infectious Disease (IM),CAPT or Flag,2015,OCONUS Operational,2-4 months,NA,NA,NA,NA
-612,Family Medicine,LT,2015,CONUS MTF,2-4 months,NA,NA,NA,1
-613,Dermatology,LCDR,2014,GME,2-4 months,5,5,5,1
-614,Psychiatry,LCDR,2015,OCONUS MTF,2-4 months,3,3,NA,NA
-615,Family Medicine,LCDR,2015,CONUS MTF,2-4 months,5,5,NA,1
-616,Neonatology,LCDR,2016,CONUS MTF,2-4 months,5,4,5,1
-617,Cardiology (IM),CDR,2016,CONUS MTF,> 4 months,4,4,4,1
-618,Family Medicine,LCDR,2015,GME,2-4 months,5,5,NA,1
-619,Family Medicine,LT,2014,GME,> 4 months,3,4,4,4
-620,Family Medicine,CAPT or Flag,2015,OCONUS Operational,2-4 months,2,2,5,2
-621,Emergency Medicine,CDR,2013,CONUS MTF,> 4 months,5,5,5,1
-622,Family Medicine,LT,2014,GME,2-4 months,4,3,3,1
-623,Family Medicine,LT,2015,CONUS MTF,2-4 months,3,3,3,1
-1277,General Medical Officer,LT,2016,CONUS Operational,NA,2,1,2,4
-625,Family Medicine,LCDR,2015,CONUS MTF,2-4 months,4,4,4,1
-626,Family Medicine,LT,2014,CONUS MTF,2-4 months,3,NA,NA,NA
-627,Family Medicine,LCDR,2015,CONUS MTF,2-4 months,1,1,1,5
-628,Psychiatry,LT,2013,GME,2-4 months,5,5,4,1
-629,Family Medicine,LT,2014,GME,> 4 months,5,5,5,1
-630,Family Medicine,LT,2016,GME,2-4 months,4,5,NA,1
-631,Gastroenterology (IM),CAPT or Flag,2013,CONUS MTF,> 4 months,5,5,4,1
-632,Internal Medicine (General),CDR,2016,CONUS MTF,2-4 months,3,4,4,1
-633,Pulmonary Critical Care (IM),CDR,2014,CONUS Operational,2-4 months,4,5,4,1
-634,Pulmonary Critical Care (IM),LT,2016,CONUS MTF,> 4 months,2,4,NA,NA
-635,Pulmonary Critical Care (IM),LCDR,2016,OCONUS MTF,2-4 months,5,5,4,1
-636,Pulmonary Critical Care (IM),CAPT or Flag,2016,CONUS MTF,< 2 months,5,NA,5,1
-637,Family Medicine,LCDR,2014,CONUS MTF,> 4 months,3,4,5,1
-638,Aerospace Medicine (Residency Trained Flight),LCDR,2014,GME,2-4 months,4,4,3,1
-639,Heme/Onc (IM),LCDR,2012,CONUS MTF,2-4 months,4,4,3,1
-640,Occupational Medicine,LCDR,2016,CONUS MTF,2-4 months,3,4,3,2
-1280,General Medical Officer,LT,2016,CONUS Operational,2-4 months,2,4,3,2
-643,Occupational Medicine,CDR,2016,CONUS MTF,2-4 months,3,3,NA,3
-644,Internal Medicine (General),LCDR,2012,CONUS MTF,2-4 months,2,2,3,2
-645,Occupational Medicine,LCDR,2016,CONUS MTF,> 4 months,1,2,5,3
-646,Occupational Medicine,NA,2016,CONUS MTF,2-4 months,2,1,2,3
-647,NA,LCDR,2016,Other,2-4 months,1,1,1,1
-648,Occupational Medicine,CAPT or Flag,2015,Non-Operational/Non-Clinical,2-4 months,5,5,5,1
-649,Internal Medicine (General),LT,2016,CONUS MTF,NA,3,4,NA,2
-650,Occupational Medicine,LCDR,2015,CONUS MTF,2-4 months,2,2,2,NA
-651,Gastroenterology (IM),LCDR,2014,CONUS MTF,2-4 months,4,4,3,1
-652,Psychiatry,CDR,2016,CONUS MTF,> 4 months,1,4,1,1
-653,Pulmonary Critical Care (IM),CDR,2016,CONUS MTF,2-4 months,2,3,4,2
-654,Cardiology (IM),LCDR,2015,CONUS MTF,2-4 months,NA,NA,NA,2
-655,Family Medicine,LCDR,2014,Non-Operational/Non-Clinical,NA,5,5,4,1
-656,Family Medicine,LCDR,2015,GME,2-4 months,5,5,5,1
-657,Occupational Medicine,LCDR,2015,Non-Operational/Non-Clinical,2-4 months,1,1,1,NA
-658,Gastroenterology (IM),CDR,2014,Other,2-4 months,1,2,1,NA
-659,Occupational Medicine,CAPT or Flag,2015,CONUS MTF,< 2 months,1,1,1,NA
-660,Aerospace Medicine (Residency Trained Flight),CAPT or Flag,2014,CONUS Operational,2-4 months,5,5,4,1
-661,Family Medicine,CAPT or Flag,2016,Non-Operational/Non-Clinical,2-4 months,5,5,5,1
-1290,General Medical Officer,LT,2014,CONUS Operational,2-4 months,5,3,NA,1
-663,Family Medicine,LT,2016,GME,> 4 months,3,4,NA,NA
-664,Pulmonary Critical Care (IM),CDR,2015,CONUS Operational,< 2 months,2,2,NA,1
-665,Other,LT,2015,CONUS Operational,< 2 months,1,2,NA,NA
-1306,General Medical Officer,LT,2016,CONUS Operational,2-4 months,2,2,1,NA
-668,Radiology,CDR,2015,CONUS MTF,2-4 months,4,4,4,2
-669,Internal Medicine (General),LCDR,2016,CONUS MTF,< 2 months,3,5,3,1
-670,Family Medicine,CDR,2012,GME,> 4 months,5,5,3,1
-672,Pulmonary Critical Care (IM),CDR,2014,CONUS MTF,> 4 months,5,5,5,1
-673,Occupational Medicine,LCDR,2015,Non-Operational/Non-Clinical,2-4 months,1,4,NA,NA
-674,Occupational Medicine,LT,2015,CONUS Operational,< 2 months,3,4,3,3
-675,Occupational Medicine,CDR,2015,CONUS MTF,> 4 months,5,5,3,1
-676,Cardiology (IM),CDR,2015,CONUS MTF,> 4 months,5,5,5,1
-677,Cardiology (IM),CDR,2015,CONUS MTF,NA,5,5,5,1
-678,Physical Medicine and Rehabilitation,LCDR,2014,CONUS MTF,> 4 months,5,5,5,1
-679,Aerospace Medicine (Residency Trained Flight),LCDR,2015,CONUS Operational,< 2 months,5,3,3,1
-680,Occupational Medicine,CDR,2014,Non-Operational/Non-Clinical,2-4 months,3,4,3,1
-682,Dermatology,LCDR,2013,CONUS MTF,2-4 months,5,5,3,1
-683,Cardiology (IM),CDR,2012,CONUS MTF,2-4 months,3,3,3,1
-684,Occupational Medicine,CDR,2013,CONUS Operational,2-4 months,4,4,4,1
-686,Pediatrics,LT,2014,OCONUS MTF,2-4 months,3,3,1,3
-687,Pulmonary Critical Care (IM),LCDR,2013,CONUS MTF,2-4 months,5,3,4,1
-690,Radiology,CDR,2014,CONUS MTF,2-4 months,5,5,5,1
-692,Other,CAPT or Flag,2015,CONUS MTF,< 2 months,5,5,5,1
-693,Family Medicine,LCDR,2011,GME,2-4 months,1,4,4,1
-694,Gastroenterology (IM),LCDR,2015,CONUS MTF,2-4 months,3,3,NA,NA
-1313,General Medical Officer,LT,2015,CONUS Operational,> 4 months,3,2,2,NA
-696,Family Medicine,LT,2016,GME,> 4 months,4,4,NA,2
-697,Gastroenterology (IM),CDR,2016,CONUS MTF,2-4 months,3,2,3,NA
-698,Internal Medicine (General),LCDR,2014,CONUS MTF,< 2 months,2,2,2,5
-699,Gastroenterology (IM),CDR,2015,CONUS MTF,> 4 months,5,5,3,1
-700,Gastroenterology (IM),LCDR,2016,CONUS MTF,2-4 months,NA,NA,NA,NA
-1330,General Medical Officer,LCDR,2012,CONUS Operational,< 2 months,5,5,NA,1
-702,Cardiology (IM),LT,2014,CONUS MTF,2-4 months,NA,NA,NA,1
-703,Anesthesiology,LCDR,2014,CONUS MTF,2-4 months,2,3,2,5
-704,Emergency Medicine,LT,2015,CONUS MTF,2-4 months,4,5,3,1
-705,Psychiatry,LCDR,2014,OCONUS MTF,2-4 months,2,1,1,5
-706,General Surgery,CAPT or Flag,2015,CONUS Operational,2-4 months,5,5,5,1
-707,Pediatrics,LT,2015,OCONUS MTF,2-4 months,4,4,5,1
-708,Orthopedic Surgery,LCDR,2015,CONUS MTF,2-4 months,2,2,1,2
-709,Neonatology,CDR,2014,CONUS MTF,> 4 months,4,4,1,1
-710,Cardiology (IM),LCDR,2016,CONUS MTF,> 4 months,4,4,4,1
-711,Family Medicine,LT,2015,GME,2-4 months,4,4,4,1
-712,Internal Medicine (General),LCDR,2014,CONUS MTF,> 4 months,5,5,4,1
-713,Neonatology,LCDR,2015,CONUS MTF,> 4 months,1,3,4,1
-714,Dermatology,LCDR,2014,CONUS MTF,2-4 months,4,5,NA,1
-715,Family Medicine,LT,2016,GME,2-4 months,3,3,NA,1
-717,Orthopedic Surgery,LCDR,2016,GME,2-4 months,1,1,1,1
-718,Physical Medicine and Rehabilitation,LCDR,2014,CONUS MTF,> 4 months,5,5,NA,1
-1335,General Medical Officer,LT,2014,CONUS Operational,2-4 months,3,3,NA,NA
-720,Pulmonary Critical Care (IM),LCDR,2016,CONUS MTF,< 2 months,5,5,5,1
-721,Neonatology,LCDR,2014,CONUS MTF,2-4 months,NA,NA,NA,NA
-723,Psychiatry,LCDR,2016,CONUS Operational,< 2 months,3,1,NA,5
-724,Neurology,CAPT or Flag,2015,CONUS MTF,> 4 months,5,5,5,1
-725,Family Medicine,LT,2016,CONUS MTF,2-4 months,3,3,3,1
-726,Neurology,LCDR,2015,CONUS MTF,> 4 months,4,4,3,1
-727,Radiology,CDR,2015,CONUS MTF,< 2 months,5,5,3,1
-728,Neurology,CDR,2016,CONUS MTF,< 2 months,5,5,4,1
-729,Neurology,LCDR,2012,CONUS MTF,2-4 months,1,2,4,2
-730,Preventive Medicine,CDR,2015,CONUS MTF,2-4 months,5,4,NA,NA
-731,General Surgery,LT,NA,GME,NA,5,5,NA,2
-29,Resident,LCDR,2013,NA,> 4 months,2,3,5,1
-782,Emergency Medicine,LT,2016,CONUS MTF,2-4 months,3,4,4,1
-48,Resident,LT,2016,CONUS MTF,2-4 months,2,4,4,2
-792,Internal Medicine (General),LT,2016,CONUS MTF,NA,NA,NA,NA,NA
-804,Neurology,LCDR,2014,CONUS MTF,2-4 months,4,5,4,NA
-1155,Infectious Disease (IM),CAPT or Flag,2014,Other,< 2 months,5,5,3,1
-802,Neurology,CDR,2014,CONUS MTF,2-4 months,4,5,3,1
-811,Orthopedic Surgery,LT,NA,GME,NA,3,NA,NA,3
-757,Resident,LT,NA,NA,NA,NA,NA,NA,NA
-833,Neurology,CAPT or Flag,2015,CONUS MTF,2-4 months,4,5,4,1
-838,Gastroenterology (IM),CDR,2014,CONUS MTF,2-4 months,5,5,5,1
-845,Pediatrics,LT,2016,GME,2-4 months,NA,NA,NA,NA
-1175,Other,CDR,2016,Other,> 4 months,5,5,5,1
-863,Family Medicine,LT,2015,CONUS MTF,2-4 months,3,3,NA,1
-873,Family Medicine,LT,2014,GME,< 2 months,NA,1,NA,2
-877,Family Medicine,LT,2016,GME,NA,NA,NA,NA,NA
-888,Anesthesiology,LT,2014,GME,NA,NA,NA,NA,NA
-892,Neurology,LCDR,2014,OCONUS MTF,> 4 months,3,5,3,2
-893,Psychiatry,CDR,2015,CONUS MTF,2-4 months,4,4,3,2
-896,Internal Medicine (General),LT,2016,GME,2-4 months,NA,NA,NA,NA
-898,Psychiatry,LT,2016,GME,< 2 months,NA,NA,NA,NA
-906,Urology,LCDR,2012,GME,> 4 months,3,3,3,1
-908,Orthopedic Surgery,LCDR,2012,GME,NA,3,3,3,1
-909,Infectious Disease (IM),CDR,2014,CONUS MTF,2-4 months,4,4,NA,1
-910,General Surgery,LT,2014,GME,< 2 months,NA,NA,NA,NA
-60,Resident,LT,2016,GME,NA,3,4,4,1
-929,Emergency Medicine,LT,2016,CONUS MTF,< 2 months,NA,NA,NA,NA
-84,Resident,LCDR,2014,GME,2-4 months,NA,NA,NA,1
-944,Neurology,LCDR,2015,CONUS MTF,2-4 months,5,5,5,2
-950,Neurology,CDR,2013,CONUS MTF,2-4 months,4,5,5,1
-958,Family Medicine,LCDR,2015,CONUS Operational,2-4 months,5,1,1,NA
-959,Psychiatry,CAPT or Flag,2016,Non-Operational/Non-Clinical,> 4 months,5,5,4,1
-961,Neurology,LT,2015,GME,2-4 months,5,5,NA,1
-118,Resident,LCDR,2014,GME,2-4 months,3,3,4,2
-971,General Surgery,LT,2015,GME,2-4 months,1,2,NA,3
-980,Psychiatry,LT,2016,GME,> 4 months,3,5,5,1
-981,Neurology,LCDR,2015,CONUS MTF,2-4 months,5,5,5,2
-983,Neurology,CDR,2013,CONUS MTF,2-4 months,4,4,3,1
-986,General Surgery,LCDR,NA,CONUS Operational,NA,NA,NA,NA,NA
-992,Aerospace Medicine (Residency Trained Flight),LCDR,2016,CONUS MTF,2-4 months,4,4,4,1
-128,Resident,LT,2016,GME,< 2 months,5,3,NA,1
-1002,Pulmonary Critical Care (IM),LT,2016,CONUS MTF,< 2 months,3,3,5,1
-138,Resident,LT,NA,GME,NA,NA,NA,NA,NA
-1013,Family Medicine,LCDR,NA,GME,NA,NA,NA,NA,NA
-1017,Family Medicine,LT,2014,CONUS MTF,2-4 months,3,4,3,NA
-1020,Neurology,LT,2016,GME,2-4 months,4,4,5,1
-1025,Internal Medicine (General),LCDR,2015,CONUS MTF,2-4 months,4,5,NA,1
-1027,OB/GYN,CAPT or Flag,2016,OCONUS MTF,2-4 months,5,4,5,NA
-1029,Ophthalmology,CDR,2015,CONUS MTF,< 2 months,1,5,2,1
-1031,Gastroenterology (IM),LCDR,2016,GME,> 4 months,3,4,3,1
-1032,OB/GYN,CDR,2016,OCONUS MTF,2-4 months,4,4,3,3
-1035,Family Medicine,LCDR,2015,CONUS MTF,> 4 months,5,5,5,1
-1038,Family Medicine,LT,2016,CONUS Operational,2-4 months,1,3,NA,NA
-1039,Internal Medicine (General),LT,2015,OCONUS MTF,< 2 months,4,3,5,1
-146,Resident,LT,2015,CONUS MTF,2-4 months,3,4,5,1
-1041,Pediatrics,LT,2016,GME,2-4 months,4,5,NA,NA
-1042,Cardiology (IM),CDR,2016,CONUS Operational,< 2 months,NA,NA,NA,NA
-1043,Preventive Medicine,LCDR,2015,OCONUS MTF,> 4 months,4,5,4,2
-1047,Radiology,LCDR,2014,CONUS MTF,> 4 months,4,5,1,1
-1048,Family Medicine,CAPT or Flag,2015,CONUS Operational,2-4 months,4,4,4,1
-1049,Neurology,CDR,2015,GME,2-4 months,3,3,5,1
-1050,Occupational Medicine,CAPT or Flag,2013,CONUS MTF,> 4 months,5,5,4,1
-1053,Radiology,CDR,2014,CONUS MTF,NA,5,5,2,1
-979,Resident,NA,2014,NA,NA,NA,NA,NA,NA
-240,Resident,LCDR,2015,GME,2-4 months,3,4,2,2
-267,Resident,LCDR,2013,CONUS MTF,> 4 months,NA,NA,NA,NA
-1062,Emergency Medicine,LCDR,2014,CONUS MTF,2-4 months,1,1,1,1
-273,Resident,LCDR,2013,CONUS MTF,2-4 months,1,1,1,1
-286,Resident,LT,2016,GME,2-4 months,3,3,5,1
-311,Resident,LT,2016,GME,< 2 months,3,2,NA,1
-1066,Gastroenterology (IM),LCDR,2014,CONUS MTF,NA,3,4,3,1
-334,Resident,LT,2015,GME,2-4 months,5,5,5,1
-1068,Emergency Medicine,CAPT or Flag,2016,CONUS Operational,2-4 months,5,5,5,1
-363,Resident,LCDR,2014,GME,< 2 months,NA,NA,1,1
-367,Resident,LCDR,2015,GME,2-4 months,3,3,2,1
-1072,Family Medicine,LCDR,2016,CONUS MTF,> 4 months,5,5,4,1
-1074,Other,CAPT or Flag,2009,CONUS MTF,2-4 months,5,5,5,2
-373,Resident,LCDR,2015,CONUS MTF,2-4 months,2,2,3,1
-378,Resident,LT,2016,CONUS MTF,2-4 months,3,3,4,1
-1077,Family Medicine,LT,2014,GME,NA,NA,NA,NA,NA
-1078,Emergency Medicine,CAPT or Flag,2015,CONUS MTF,2-4 months,4,5,2,1
-1080,Neurology,LT,2016,GME,< 2 months,NA,3,NA,1
-1083,Internal Medicine (General),CDR,2015,CONUS Operational,< 2 months,2,4,3,2
-1086,Cardiology (IM),LCDR,2015,CONUS MTF,2-4 months,5,5,4,2
-1089,Pediatrics,CDR,2014,CONUS MTF,> 4 months,4,4,2,1
-1092,Neurology,LT,2015,CONUS MTF,2-4 months,5,5,4,1
-387,Resident,LCDR,2015,GME,2-4 months,3,3,3,2
-408,Resident,LT,2015,GME,2-4 months,4,4,NA,1
-1096,Pediatrics,LCDR,2016,CONUS MTF,< 2 months,4,3,5,1
-1097,Radiology,CDR,2015,CONUS MTF,> 4 months,5,5,5,1
-1099,Psychiatry,LT,2014,GME,2-4 months,3,5,NA,1
-1100,Pediatrics,LCDR,2016,CONUS MTF,< 2 months,4,4,5,1
-1101,Psychiatry,LCDR,2014,GME,> 4 months,5,5,5,1
-409,Resident,LT,2016,GME,< 2 months,1,1,NA,1
-438,Resident,LT,2015,CONUS MTF,2-4 months,2,3,NA,3
-474,Resident,LCDR,2015,GME,2-4 months,5,5,5,1
-1108,Internal Medicine (General),LCDR,2015,OCONUS MTF,< 2 months,5,3,4,NA
-1112,Ophthalmology,LT,2016,GME,> 4 months,2,2,NA,NA
-1113,Infectious Disease (IM),CAPT or Flag,2016,Non-Operational/Non-Clinical,2-4 months,4,5,4,1
-1114,Radiation Oncology,CAPT or Flag,NA,CONUS MTF,2-4 months,5,5,5,1
-1115,Endocrinology (IM),CDR,2013,CONUS MTF,2-4 months,4,5,2,1
-1116,Endocrinology (IM),CDR,2015,CONUS MTF,< 2 months,5,5,5,1
-1117,Otolaryngology,LCDR,2014,CONUS MTF,2-4 months,2,5,NA,1
-1118,Otolaryngology,LCDR,2014,CONUS MTF,2-4 months,4,4,2,2
-1119,Otolaryngology,CDR,2011,CONUS MTF,2-4 months,5,5,5,1
-1120,Radiation Oncology,LCDR,2015,CONUS MTF,< 2 months,3,3,3,1
-1121,Otolaryngology,LCDR,2016,CONUS MTF,< 2 months,5,5,3,1
-1122,Otolaryngology,LCDR,2014,CONUS MTF,2-4 months,5,4,5,NA
-1123,Otolaryngology,CAPT or Flag,2014,CONUS MTF,> 4 months,5,5,3,1
-1124,Otolaryngology,LCDR,2016,CONUS MTF,2-4 months,4,4,2,1
-1125,Radiation Oncology,LCDR,2015,CONUS MTF,> 4 months,4,4,5,2
-1126,Ophthalmology,CAPT or Flag,2014,CONUS MTF,NA,5,5,5,1
-501,Resident,LT,2016,GME,2-4 months,NA,NA,NA,NA
-1128,Ophthalmology,CAPT or Flag,2010,CONUS MTF,2-4 months,5,5,4,1
-1129,Ophthalmology,CDR,2014,GME,< 2 months,2,1,3,1
-1130,Endocrinology (IM),LCDR,2016,OCONUS Operational,> 4 months,5,5,5,1
-1131,Heme/Onc (IM),LCDR,2012,CONUS MTF,2-4 months,4,4,5,1
-1132,Ophthalmology,CDR,2015,OCONUS MTF,2-4 months,4,4,3,1
-1133,Otolaryngology,CAPT or Flag,2013,CONUS MTF,< 2 months,5,5,5,1
-1134,Emergency Medicine,LT,2013,GME,2-4 months,5,5,5,1
-1135,Emergency Medicine,LCDR,2016,CONUS MTF,2-4 months,4,4,2,2
-1136,Otolaryngology,CDR,2015,CONUS MTF,2-4 months,5,5,3,1
-1137,Radiation Oncology,LCDR,2015,CONUS MTF,> 4 months,5,5,5,1
-1138,Ophthalmology,CDR,2011,CONUS MTF,2-4 months,4,4,4,1
-1139,Otolaryngology,LCDR,2015,CONUS MTF,> 4 months,5,5,5,1
-531,Resident,LT,2015,CONUS MTF,< 2 months,3,4,3,1
-1142,Otolaryngology,LCDR,2015,CONUS MTF,> 4 months,5,5,4,1
-1143,Otolaryngology,CAPT or Flag,2014,CONUS MTF,NA,5,5,5,1
-1144,Emergency Medicine,LCDR,2014,CONUS MTF,2-4 months,1,2,2,2
-1145,Otolaryngology,CDR,2011,CONUS MTF,2-4 months,3,3,4,NA
-1146,Ophthalmology,CDR,2014,CONUS MTF,2-4 months,5,5,3,1
-1147,Otolaryngology,LCDR,2015,CONUS MTF,2-4 months,2,4,3,2
-1148,Endocrinology (IM),LCDR,2015,CONUS MTF,2-4 months,5,5,NA,1
-1150,Neurosurgery,LCDR,2014,CONUS MTF,NA,5,5,5,1
-1151,Neurosurgery,LCDR,2015,CONUS MTF,2-4 months,3,3,5,1
-1153,Infectious Disease (IM),CAPT or Flag,2015,GME,2-4 months,1,1,3,2
-1156,Emergency Medicine,CAPT or Flag,2015,CONUS MTF,2-4 months,NA,NA,NA,NA
-1157,Radiation Oncology,LCDR,2014,GME,2-4 months,5,5,5,1
-539,Resident,LT,2014,GME,2-4 months,1,NA,2,1
-1159,Emergency Medicine,LCDR,2014,CONUS MTF,2-4 months,NA,NA,NA,NA
-1160,Neurosurgery,LCDR,2015,OCONUS MTF,2-4 months,5,5,4,3
-1163,Neurosurgery,LCDR,2013,CONUS MTF,< 2 months,NA,NA,NA,1
-1164,Otolaryngology,CDR,2016,OCONUS MTF,2-4 months,5,4,5,1
-1166,Neurosurgery,CAPT or Flag,2014,GME,2-4 months,5,5,1,1
-1167,Psychiatry,CAPT or Flag,2016,CONUS MTF,2-4 months,5,5,NA,1
-1168,OB/GYN,LCDR,2015,OCONUS MTF,2-4 months,5,5,5,1
-1169,Infectious Disease (IM),CAPT or Flag,2014,CONUS MTF,2-4 months,4,5,1,1
-1170,Emergency Medicine,LCDR,2016,CONUS Operational,2-4 months,5,5,5,1
-540,Resident,LT,2016,CONUS MTF,2-4 months,NA,NA,NA,NA
-1172,Otolaryngology,CAPT or Flag,2015,CONUS MTF,> 4 months,4,4,1,1
-1173,Pediatrics,LT,2016,CONUS MTF,2-4 months,2,3,1,1
-1174,Infectious Disease (IM),CAPT or Flag,2016,Non-Operational/Non-Clinical,< 2 months,2,4,2,1
-574,Resident,LT,2014,GME,2-4 months,4,4,NA,1
-1180,Ophthalmology,LCDR,2015,OCONUS MTF,2-4 months,1,1,1,5
-1181,Family Medicine,CAPT or Flag,2016,OCONUS Operational,2-4 months,2,3,3,NA
-1182,Heme/Onc (IM),CAPT or Flag,2006,CONUS MTF,< 2 months,5,5,1,1
-1183,Family Medicine,CAPT or Flag,2016,OCONUS MTF,2-4 months,NA,NA,NA,NA
-1184,OB/GYN,LCDR,2016,OCONUS MTF,2-4 months,5,4,5,1
-1185,Family Medicine,LCDR,2014,OCONUS MTF,> 4 months,3,5,2,2
-1186,Infectious Disease (IM),LCDR,2016,Non-Operational/Non-Clinical,> 4 months,4,3,4,2
-1187,Otolaryngology,CDR,2012,CONUS MTF,> 4 months,4,4,3,1
-1188,Family Medicine,LCDR,2013,OCONUS MTF,2-4 months,5,5,5,1
-1189,Neurosurgery,LCDR,2015,CONUS MTF,< 2 months,4,2,2,1
-1190,Neurosurgery,LCDR,2016,CONUS MTF,2-4 months,3,2,3,NA
-577,Resident,LT,2014,GME,2-4 months,5,5,3,1
-1192,Emergency Medicine,CAPT or Flag,2015,CONUS Operational,2-4 months,5,3,5,1
-579,Resident,LCDR,2016,CONUS Operational,2-4 months,5,5,5,1
-624,Resident,LT,2015,GME,2-4 months,5,5,4,1
-642,Resident,LCDR,2015,GME,2-4 months,4,NA,3,NA
-1196,Psychiatry,LCDR,2013,CONUS MTF,2-4 months,4,4,4,NA
-1197,Otolaryngology,CDR,2015,CONUS MTF,2-4 months,5,5,4,2
-1198,Neurosurgery,LCDR,2015,CONUS MTF,2-4 months,3,4,5,1
-807,Resident,LCDR,2014,GME,> 4 months,4,4,4,NA
-786,Resident,LT,2016,GME,> 4 months,1,2,3,2
-1202,Neurosurgery,LCDR,2014,CONUS MTF,2-4 months,1,3,1,3
-1203,OB/GYN,CAPT or Flag,2015,CONUS MTF,2-4 months,5,5,4,1
-1204,OB/GYN,LCDR,2016,CONUS MTF,2-4 months,4,4,4,3
-822,Resident,LT,2014,GME,2-4 months,4,4,4,1
-1206,OB/GYN,CDR,2014,CONUS MTF,2-4 months,5,5,5,1
-1207,OB/GYN,CDR,2016,CONUS MTF,2-4 months,4,4,3,2
-1208,OB/GYN,LT,2014,GME,> 4 months,5,4,NA,1
-1209,OB/GYN,CDR,2014,CONUS MTF,2-4 months,5,4,1,1
-1210,OB/GYN,CDR,NA,CONUS MTF,< 2 months,5,5,5,2
-1211,OB/GYN,CDR,2016,CONUS MTF,< 2 months,3,4,3,1
-917,Resident,LT,2014,Non-Operational/Non-Clinical,NA,NA,NA,NA,NA
-1213,OB/GYN,LCDR,2014,CONUS MTF,2-4 months,5,5,3,1
-1214,OB/GYN,CAPT or Flag,2016,Non-Operational/Non-Clinical,< 2 months,5,4,3,NA
-1215,OB/GYN,CDR,2015,CONUS Operational,2-4 months,5,5,3,1
-1216,OB/GYN,LT,2016,CONUS MTF,2-4 months,4,2,NA,5
-936,Resident,LT,2016,GME,NA,NA,NA,NA,4
-1218,OB/GYN,CDR,2015,CONUS MTF,< 2 months,2,4,3,1
-1219,OB/GYN,LCDR,2014,CONUS MTF,2-4 months,5,5,5,1
-966,Resident,LT,2016,GME,NA,NA,NA,NA,NA
-1221,OB/GYN,LCDR,2015,CONUS MTF,> 4 months,5,5,5,5
-1010,Resident,LT,2016,GME,2-4 months,NA,NA,NA,NA
-1223,OB/GYN,CAPT or Flag,2014,Non-Operational/Non-Clinical,< 2 months,NA,4,2,3
-1224,OB/GYN,LT,2016,GME,2-4 months,2,4,NA,1
-1225,OB/GYN,LT,2013,CONUS MTF,2-4 months,4,3,3,1
-1226,Infectious Disease (IM),CAPT or Flag,2013,Non-Operational/Non-Clinical,2-4 months,5,5,3,1
-1227,OB/GYN,LCDR,2016,CONUS MTF,< 2 months,2,1,4,1
-1228,OB/GYN,CAPT or Flag,2013,CONUS MTF,2-4 months,1,1,4,1
-1229,OB/GYN,LT,2014,GME,> 4 months,5,5,1,1
-1230,Neurosurgery,LCDR,2014,CONUS MTF,2-4 months,3,3,3,1
-1231,OB/GYN,LCDR,2016,CONUS MTF,2-4 months,5,5,5,1
-1232,Otolaryngology,LCDR,2015,CONUS MTF,2-4 months,2,3,5,1
-1233,Neurosurgery,CDR,2015,CONUS MTF,2-4 months,5,5,5,1
-1058,Resident,LT,2013,GME,2-4 months,NA,NA,NA,NA
-1060,Resident,LT,NA,GME,NA,NA,NA,NA,NA
-1236,OB/GYN,CAPT or Flag,2011,CONUS MTF,NA,5,5,5,1
-1237,OB/GYN,LT,2014,CONUS MTF,> 4 months,NA,NA,NA,NA
-1238,OB/GYN,CDR,2016,CONUS MTF,< 2 months,3,3,3,2
-1239,OB/GYN,CDR,2016,OCONUS MTF,2-4 months,2,1,2,5
-1240,Dermatology,CDR,2014,CONUS MTF,> 4 months,5,5,4,1
-1241,OB/GYN,CDR,2016,CONUS MTF,< 2 months,5,5,NA,1
-1242,OB/GYN,CDR,2015,CONUS Operational,2-4 months,5,1,2,5
-1243,Otolaryngology,CDR,2015,CONUS MTF,2-4 months,4,5,5,1
-1245,OB/GYN,LT,2016,CONUS MTF,> 4 months,3,4,5,1
-1246,OB/GYN,LCDR,2015,OCONUS MTF,> 4 months,4,4,4,1
-1061,Resident,LT,2012,GME,> 4 months,NA,NA,NA,1
-1248,OB/GYN,LT,2016,GME,2-4 months,NA,NA,NA,NA
-1249,Internal Medicine (General),LT,2016,GME,2-4 months,4,4,NA,1
-1250,OB/GYN,CDR,2016,OCONUS Operational,< 2 months,5,3,1,1
-1252,Pathology,CAPT or Flag,2015,CONUS Operational,2-4 months,5,5,4,1
-1102,Resident,LCDR,2014,CONUS MTF,2-4 months,4,5,4,1
-1254,Otolaryngology,LCDR,2014,OCONUS MTF,2-4 months,2,3,4,NA
-1255,OB/GYN,LCDR,2015,OCONUS MTF,2-4 months,5,4,5,4
-1257,OB/GYN,LCDR,2014,CONUS MTF,2-4 months,2,2,3,5
-1258,Pulmonary Critical Care (IM),LCDR,2016,OCONUS MTF,2-4 months,4,4,NA,1
-1259,Emergency Medicine,LCDR,2014,CONUS MTF,2-4 months,5,5,NA,1
-1260,OB/GYN,LCDR,2016,OCONUS MTF,2-4 months,3,3,3,4
-1261,OB/GYN,LCDR,2016,CONUS MTF,NA,4,3,4,1
-1127,Resident,LT,2015,CONUS MTF,2-4 months,NA,NA,NA,1
-1141,Resident,LT,2015,GME,2-4 months,5,5,NA,1
-1158,Resident,LCDR,2014,CONUS MTF,2-4 months,2,3,5,2
-1266,Aerospace Medicine (Residency Trained Flight),CAPT or Flag,2013,Non-Operational/Non-Clinical,2-4 months,5,5,5,1
-1267,OB/GYN,LCDR,2015,CONUS MTF,2-4 months,5,5,5,2
-1268,Ophthalmology,CDR,2016,OCONUS MTF,2-4 months,5,5,3,1
-1179,Resident,LT,2016,GME,> 4 months,3,3,NA,1
-1205,Resident,LT,2016,CONUS MTF,< 2 months,2,NA,NA,1
-1271,Occupational Medicine,LCDR,2016,OCONUS MTF,2-4 months,2,3,NA,1
-1217,Resident,LT,2016,GME,2-4 months,2,3,2,1
-1273,Aerospace Medicine (Residency Trained Flight),CAPT or Flag,2015,CONUS Operational,2-4 months,5,5,3,1
-1274,OB/GYN,LT,2015,CONUS MTF,2-4 months,5,5,5,2
-1234,Resident,LT,2014,CONUS MTF,2-4 months,NA,NA,NA,NA
-1276,Neurosurgery,CAPT or Flag,2013,CONUS MTF,> 4 months,5,5,5,1
-1320,Resident,LCDR,2014,GME,2-4 months,3,4,5,1
-1279,Psychiatry,LCDR,2016,CONUS Operational,2-4 months,4,3,4,2
-97,Undersea Medicine,LT,2016,OCONUS Operational,< 2 months,2,2,NA,2
-1282,OB/GYN,CDR,2015,CONUS MTF,NA,5,5,5,1
-1283,OB/GYN,LT,2015,GME,2-4 months,4,5,3,1
-1284,OB/GYN,LCDR,2015,CONUS MTF,2-4 months,5,5,4,1
-103,Undersea Medicine,LT,2015,CONUS Operational,< 2 months,2,5,4,1
-1287,Family Medicine,CAPT or Flag,2016,OCONUS Operational,< 2 months,1,5,1,2
-1288,OB/GYN,LT,2016,GME,2-4 months,4,4,3,2
-1289,Family Medicine,CAPT or Flag,2015,CONUS Operational,2-4 months,3,3,3,2
-239,Undersea Medicine,CAPT or Flag,2014,OCONUS Operational,2-4 months,2,2,2,NA
-1292,OB/GYN,LCDR,2014,CONUS MTF,2-4 months,2,3,2,3
-1293,Neurosurgery,CDR,2016,CONUS MTF,2-4 months,5,5,5,1
-1295,Otolaryngology,CDR,2016,CONUS MTF,2-4 months,4,4,2,2
-1296,Other,CAPT or Flag,2013,OCONUS Operational,> 4 months,NA,NA,NA,NA
-1297,Radiology,CAPT or Flag,2015,CONUS Operational,< 2 months,3,3,3,1
-1298,OB/GYN,CAPT or Flag,2014,CONUS MTF,> 4 months,3,3,NA,1
-1300,Cardiology (IM),CDR,2014,CONUS MTF,NA,1,3,4,1
-1301,Psychiatry,LT,2016,CONUS MTF,> 4 months,2,1,2,NA
-1302,Family Medicine,CDR,2016,OCONUS Operational,2-4 months,4,3,3,NA
-1303,Aerospace Medicine (Residency Trained Flight),LCDR,2016,OCONUS Operational,2-4 months,1,1,1,NA
-1304,Family Medicine,LT,2016,CONUS Operational,2-4 months,2,3,NA,NA
-1305,Family Medicine,CDR,2016,Non-Operational/Non-Clinical,2-4 months,2,2,3,1
-343,Undersea Medicine,LT,2015,OCONUS Operational,< 2 months,2,2,4,1
-435,Undersea Medicine,CAPT or Flag,2015,Non-Operational/Non-Clinical,> 4 months,3,2,4,1
-1308,Endocrinology (IM),CDR,2015,CONUS MTF,2-4 months,4,5,5,1
-1309,OB/GYN,CAPT or Flag,2007,CONUS MTF,NA,5,5,NA,1
-1311,Family Medicine,CDR,2014,OCONUS MTF,> 4 months,4,5,3,1
-1063,Undersea Medicine,LCDR,2014,CONUS Operational,> 4 months,5,5,5,1
-1314,OB/GYN,LCDR,2015,CONUS MTF,2-4 months,4,5,5,1
-1315,Internal Medicine (General),LT,2015,OCONUS MTF,< 2 months,2,4,3,NA
-1316,Internal Medicine (General),LT,2014,OCONUS MTF,2-4 months,3,4,2,1
-1317,Psychiatry,LCDR,2015,CONUS MTF,2-4 months,4,3,4,1
-1318,Cardiothoracic Surgery,CDR,2013,CONUS MTF,> 4 months,3,4,5,1
-1064,Undersea Medicine,LT,2015,CONUS Operational,< 2 months,NA,NA,NA,NA
-1321,Otolaryngology,LCDR,2016,CONUS MTF,2-4 months,5,4,3,2
-1322,Otolaryngology,LCDR,2016,CONUS MTF,2-4 months,3,3,3,2
-1323,Otolaryngology,LCDR,2016,OCONUS MTF,2-4 months,3,3,3,1
-1325,Family Medicine,LT,2016,GME,2-4 months,4,4,NA,1
-1326,Anesthesiology,CDR,2013,Non-Operational/Non-Clinical,2-4 months,1,1,1,NA
-1327,Otolaryngology,LCDR,2016,CONUS MTF,2-4 months,4,4,3,1
-1067,Undersea Medicine,LT,2015,CONUS MTF,< 2 months,1,1,3,NA
-1331,Family Medicine,LT,2016,CONUS Operational,> 4 months,NA,NA,NA,NA
-1332,Emergency Medicine,LCDR,2015,CONUS MTF,2-4 months,4,5,2,NA
-1333,Neurosurgery,CDR,2011,CONUS MTF,2-4 months,3,3,4,1
-1334,Cardiothoracic Surgery,CDR,2015,CONUS MTF,> 4 months,1,3,2,1
-1069,Undersea Medicine,LT,2014,Non-Operational/Non-Clinical,< 2 months,1,1,4,5
-1336,Pediatrics,LT,2014,GME,2-4 months,2,4,NA,1
-1337,Infectious Disease (IM),CDR,2012,CONUS MTF,2-4 months,3,3,5,1
-1338,Neurosurgery,LCDR,2012,GME,> 4 months,NA,NA,NA,1
-1339,Family Medicine,CDR,2015,OCONUS MTF,< 2 months,1,1,NA,NA
-1340,Emergency Medicine,LCDR,2016,OCONUS MTF,2-4 months,4,5,3,1
-1341,Family Medicine,LCDR,2013,CONUS Operational,2-4 months,4,4,4,1
-1342,Gastroenterology (IM),CDR,2015,CONUS MTF,> 4 months,NA,3,1,1
-1343,Ophthalmology,CAPT or Flag,2016,CONUS Operational,< 2 months,1,1,1,5
-1344,OB/GYN,LCDR,2014,OCONUS MTF,2-4 months,1,3,3,NA
-1345,Otolaryngology,LCDR,2015,OCONUS MTF,2-4 months,2,2,3,5
-1346,Infectious Disease (IM),CDR,2015,CONUS MTF,> 4 months,5,4,5,2
-1348,OB/GYN,LCDR,2015,GME,2-4 months,NA,NA,NA,NA
-1350,Ophthalmology,CAPT or Flag,2015,OCONUS MTF,2-4 months,2,5,3,5
-1352,Cardiothoracic Surgery,CDR,2013,CONUS MTF,2-4 months,5,5,5,2
-1353,Otolaryngology,LT,2016,CONUS MTF,2-4 months,5,4,5,1
-1354,Physical Medicine and Rehabilitation,LCDR,2015,CONUS MTF,> 4 months,5,5,5,1
-1356,General Surgery,CAPT or Flag,2014,CONUS Operational,2-4 months,4,4,3,2
-1357,Family Medicine,LCDR,2014,GME,< 2 months,4,3,2,1
-1358,OB/GYN,LCDR,2014,CONUS Operational,2-4 months,5,3,4,5
-1359,General Surgery,CDR,2016,CONUS Operational,2-4 months,2,3,2,1
-1070,Undersea Medicine,LT,2015,CONUS Operational,< 2 months,NA,NA,NA,NA
-1076,Undersea Medicine,CAPT or Flag,2015,CONUS Operational,2-4 months,4,5,4,1
-1362,Pediatrics,LT,2014,CONUS MTF,> 4 months,2,3,2,5
-1272,Undersea Medicine,LT,2016,CONUS Operational,< 2 months,3,5,NA,1
-1364,Internal Medicine (General),LCDR,2016,CONUS MTF,< 2 months,1,2,1,2
-1365,Pathology,LCDR,2014,CONUS MTF,2-4 months,4,NA,5,1
-1366,OB/GYN,LCDR,2014,CONUS MTF,2-4 months,4,5,5,1
-1368,General Surgery,LCDR,2016,OCONUS MTF,2-4 months,5,5,NA,1
+response_id,primary_specialty,officer_rank,officer_rate,year_executed_order,billet_current,order_lead_time,transparency_rank,satistfaction_rank,favoritism_rank,assignment_current_choice
+15,Emergency Medicine,CDR,5,2015,Non-Operational/Non-Clinical,2-4 months,3,4,3,1
+20,Allergy/Immunology,CDR,5,NA,CONUS MTF,2-4 months,5,5,5,2
+21,NA,Unknown,NA,NA,NA,NA,2,NA,NA,NA
+18,OB/GYN,CAPT or Flag,6,2016,Non-Operational/Non-Clinical,2-4 months,NA,2,1,5
+19,Emergency Medicine,CDR,5,2016,CONUS MTF,> 4 months,5,5,4,1
+33,Emergency Medicine,LCDR,4,NA,NA,2-4 months,3,3,2,2
+38,Ophthalmology,LCDR,4,NA,CONUS MTF,NA,4,4,3,NA
+45,Anesthesiology,LCDR,4,NA,CONUS MTF,> 4 months,3,4,2,1
+23,Family Medicine,LT,3,2016,OCONUS MTF,< 2 months,2,3,4,1
+24,Pathology,CDR,5,2015,CONUS MTF,2-4 months,4,5,4,1
+25,Aviation Medicine (Flight Surgery GMO),LT,3,2015,CONUS Operational,< 2 months,4,3,3,1
+26,Pathology,CDR,5,2015,OCONUS MTF,2-4 months,2,3,3,1
+27,Emergency Medicine,LCDR,4,2015,GME,2-4 months,4,4,1,2
+28,Family Medicine,LCDR,4,2014,CONUS Operational,> 4 months,4,5,4,1
+57,Aviation Medicine (Flight Surgery GMO),LCDR,4,2014,Non-Operational/Non-Clinical,< 2 months,2,1,NA,5
+30,Family Medicine,LCDR,4,2014,CONUS MTF,2-4 months,4,4,NA,1
+49,Family Medicine,CDR,5,NA,CONUS MTF,> 4 months,5,5,5,NA
+32,Pediatrics,LT,3,2016,CONUS MTF,< 2 months,NA,NA,NA,NA
+34,Pediatrics,LCDR,4,2013,CONUS MTF,2-4 months,4,5,5,1
+35,Anesthesiology,LT,3,2016,GME,2-4 months,1,3,2,2
+100,Family Medicine,LCDR,4,NA,OCONUS MTF,2-4 months,3,3,2,2
+153,Emergency Medicine,LT,3,NA,GME,2-4 months,2,3,4,1
+277,Dermatology,LCDR,4,NA,CONUS MTF,< 2 months,5,5,1,1
+39,Emergency Medicine,LCDR,4,2015,CONUS MTF,> 4 months,5,3,5,2
+40,Anesthesiology,LCDR,4,2016,CONUS MTF,2-4 months,1,1,1,5
+41,Ophthalmology,LT,3,2015,CONUS MTF,2-4 months,2,3,4,3
+42,Internal Medicine (General),CDR,5,2015,GME,> 4 months,4,5,3,1
+43,Emergency Medicine,LCDR,4,2015,OCONUS MTF,2-4 months,5,1,1,NA
+44,Otolaryngology,LCDR,4,2016,CONUS MTF,2-4 months,2,2,1,3
+560,Family Medicine,Unknown,NA,NA,CONUS MTF,2-4 months,3,3,4,NA
+46,Emergency Medicine,LCDR,4,2015,CONUS MTF,2-4 months,5,5,NA,1
+47,Family Medicine,CDR,5,2014,GME,2-4 months,2,2,1,1
+66,Aviation Medicine (Flight Surgery GMO),LT,3,2016,CONUS Operational,< 2 months,NA,NA,NA,NA
+681,Occupational Medicine,LCDR,4,NA,OCONUS MTF,> 4 months,1,1,1,5
+50,Family Medicine,CDR,5,2014,Non-Operational/Non-Clinical,< 2 months,1,1,1,1
+51,Family Medicine,LCDR,4,2015,OCONUS Operational,< 2 months,2,3,NA,1
+52,Emergency Medicine,CAPT or Flag,6,2015,OCONUS MTF,2-4 months,5,5,4,1
+79,Aviation Medicine (Flight Surgery GMO),LT,3,2014,CONUS Operational,< 2 months,2,1,NA,5
+54,Ophthalmology,LCDR,4,2015,CONUS MTF,> 4 months,5,5,5,NA
+55,Internal Medicine (General),LT,3,2016,CONUS MTF,2-4 months,4,5,4,3
+56,Anesthesiology,CDR,5,2014,CONUS MTF,NA,5,4,3,1
+101,Aviation Medicine (Flight Surgery GMO),LT,3,2016,CONUS Operational,< 2 months,1,1,2,5
+58,Aerospace Medicine (Residency Trained Flight),CAPT or Flag,6,2015,CONUS Operational,< 2 months,2,1,2,NA
+59,Anesthesiology,LCDR,4,2016,GME,< 2 months,4,4,2,2
+107,Aviation Medicine (Flight Surgery GMO),LCDR,4,2015,CONUS Operational,< 2 months,1,1,NA,NA
+61,Preventive Medicine,LCDR,4,2015,Non-Operational/Non-Clinical,< 2 months,3,1,1,5
+62,Preventive Medicine,LCDR,4,2015,CONUS Operational,> 4 months,5,5,3,1
+63,Emergency Medicine,CDR,5,2012,CONUS MTF,> 4 months,5,5,4,1
+887,NA,Unknown,NA,NA,NA,NA,2,2,3,NA
+65,Family Medicine,LT,3,2016,CONUS Operational,< 2 months,1,2,2,5
+148,Aviation Medicine (Flight Surgery GMO),LT,3,2016,CONUS Operational,< 2 months,1,2,4,1
+157,Aviation Medicine (Flight Surgery GMO),LT,3,2016,CONUS Operational,< 2 months,1,1,1,5
+68,Aerospace Medicine (Residency Trained Flight),CDR,5,2015,GME,> 4 months,5,5,1,1
+226,Aviation Medicine (Flight Surgery GMO),LT,3,2016,CONUS MTF,2-4 months,1,1,1,NA
+70,Emergency Medicine,CDR,5,2015,CONUS Operational,2-4 months,1,1,1,4
+71,OB/GYN,LCDR,4,2014,CONUS MTF,> 4 months,4,3,3,4
+72,Pathology,CDR,5,2016,CONUS MTF,> 4 months,5,5,2,1
+246,Aviation Medicine (Flight Surgery GMO),LT,3,2015,CONUS Operational,2-4 months,3,2,2,4
+1005,Emergency Medicine,LT,3,NA,NA,NA,NA,NA,NA,NA
+75,Family Medicine,LCDR,4,2015,OCONUS MTF,< 2 months,2,1,3,NA
+1028,Other,LT,3,NA,NA,NA,NA,NA,NA,NA
+77,Neurology,LCDR,4,2015,CONUS MTF,2-4 months,5,5,5,1
+78,Family Medicine,LCDR,4,2016,CONUS MTF,< 2 months,3,2,3,1
+255,Aviation Medicine (Flight Surgery GMO),LT,3,2016,CONUS Operational,2-4 months,2,4,4,1
+80,Internal Medicine (General),LT,3,2016,CONUS MTF,2-4 months,2,2,3,3
+81,Family Medicine,LCDR,4,2016,CONUS MTF,2-4 months,2,2,2,2
+82,Psychiatry,LCDR,4,2016,CONUS MTF,< 2 months,2,5,5,NA
+83,Pathology,LCDR,4,2015,CONUS MTF,2-4 months,4,5,4,1
+662,Aviation Medicine (Flight Surgery GMO),LT,3,2015,CONUS Operational,< 2 months,2,2,3,5
+85,OB/GYN,CAPT or Flag,6,2016,OCONUS MTF,2-4 months,5,5,1,1
+86,Emergency Medicine,LCDR,4,2013,CONUS MTF,< 2 months,4,4,4,1
+87,Aerospace Medicine (Residency Trained Flight),LT,3,2015,GME,> 4 months,3,2,1,1
+88,Family Medicine,LCDR,4,2016,CONUS MTF,< 2 months,5,5,1,NA
+89,Neurology,CDR,5,2013,CONUS MTF,2-4 months,3,3,NA,1
+90,Otolaryngology,LCDR,4,2014,CONUS MTF,2-4 months,4,4,2,2
+91,Preventive Medicine,CDR,5,2016,OCONUS Operational,NA,5,5,5,1
+92,Aerospace Medicine (Residency Trained Flight),LCDR,4,2016,GME,< 2 months,5,2,1,1
+93,Internal Medicine (General),CAPT or Flag,6,2014,Non-Operational/Non-Clinical,2-4 months,5,5,5,1
+1033,General Surgery,LT,3,NA,GME,NA,NA,NA,NA,NA
+95,Family Medicine,LCDR,4,2016,CONUS MTF,2-4 months,4,4,3,1
+96,Emergency Medicine,LCDR,4,2015,CONUS MTF,2-4 months,3,4,NA,1
+666,Aviation Medicine (Flight Surgery GMO),LCDR,4,2016,CONUS Operational,< 2 months,1,1,1,NA
+98,Pediatrics,CDR,5,2014,OCONUS MTF,2-4 months,3,3,2,5
+99,General Surgery,LCDR,4,2014,OCONUS Operational,2-4 months,2,1,5,NA
+1294,Family Medicine,Unknown,NA,NA,NA,NA,NA,NA,NA,NA
+695,Aviation Medicine (Flight Surgery GMO),LT,3,2016,CONUS Operational,< 2 months,3,5,4,1
+102,Occupational Medicine,CDR,5,2014,CONUS MTF,2-4 months,2,2,1,5
+701,Aviation Medicine (Flight Surgery GMO),LT,3,2015,CONUS Operational,< 2 months,1,2,NA,NA
+104,Neonatology,LCDR,4,2016,CONUS MTF,< 2 months,1,1,1,NA
+105,Pediatrics,CAPT or Flag,6,2008,GME,> 4 months,5,5,5,1
+106,Cardiology (IM),CDR,5,2016,CONUS Operational,< 2 months,1,3,2,5
+719,Aviation Medicine (Flight Surgery GMO),LT,3,2016,CONUS Operational,< 2 months,NA,NA,NA,NA
+108,Plastic Surgery,CDR,5,2016,CONUS MTF,2-4 months,5,5,2,1
+109,Psychiatry,LCDR,4,2013,CONUS Operational,2-4 months,5,4,4,3
+110,Anesthesiology,LCDR,4,2016,CONUS MTF,< 2 months,3,4,NA,2
+996,Aviation Medicine (Flight Surgery GMO),LT,3,2016,CONUS Operational,< 2 months,5,5,5,1
+112,Family Medicine,CDR,5,2016,OCONUS MTF,2-4 months,4,2,3,1
+1040,Aviation Medicine (Flight Surgery GMO),LT,3,2016,OCONUS Operational,< 2 months,1,1,NA,1
+1065,Aviation Medicine (Flight Surgery GMO),LT,3,2015,CONUS Operational,< 2 months,2,3,3,1
+115,Urology,CDR,5,2014,CONUS MTF,2-4 months,5,3,5,1
+116,Radiology,LCDR,4,2013,CONUS MTF,< 2 months,1,1,1,NA
+117,Allergy/Immunology,CDR,5,2015,CONUS MTF,> 4 months,1,1,1,NA
+1075,Aviation Medicine (Flight Surgery GMO),LT,3,2015,CONUS Operational,2-4 months,5,5,4,1
+119,Allergy/Immunology,LCDR,4,2016,CONUS MTF,2-4 months,4,4,3,1
+120,Psychiatry,CAPT or Flag,6,2015,Non-Operational/Non-Clinical,2-4 months,4,4,2,2
+121,Emergency Medicine,CAPT or Flag,6,2016,OCONUS MTF,2-4 months,5,NA,5,1
+122,Emergency Medicine,LCDR,4,2015,GME,> 4 months,4,4,2,1
+154,Emergency Medicine,LT,3,NA,NA,NA,NA,NA,NA,NA
+124,Emergency Medicine,LCDR,4,2015,OCONUS Operational,> 4 months,5,5,5,3
+125,Emergency Medicine,LT,3,2016,GME,< 2 months,5,5,3,1
+126,Emergency Medicine,LCDR,4,2015,CONUS MTF,2-4 months,1,2,4,1
+127,Rheumatology (IM),CAPT or Flag,6,2015,CONUS MTF,> 4 months,5,5,4,1
+1093,Aviation Medicine (Flight Surgery GMO),LT,3,2015,CONUS Operational,< 2 months,2,2,2,3
+129,Rheumatology (IM),LT,3,2015,GME,2-4 months,3,3,NA,1
+130,Emergency Medicine,LT,3,2015,CONUS MTF,2-4 months,4,5,NA,1
+131,Emergency Medicine,CDR,5,2014,OCONUS MTF,> 4 months,5,5,5,1
+132,Emergency Medicine,LT,3,2013,CONUS MTF,> 4 months,4,4,3,1
+133,Allergy/Immunology,LCDR,4,2014,CONUS MTF,2-4 months,2,2,NA,NA
+691,Otolaryngology,LT,3,2015,NA,2-4 months,4,5,5,1
+136,Emergency Medicine,LCDR,4,2014,GME,2-4 months,5,NA,3,1
+137,Pediatrics,CDR,5,2013,CONUS MTF,> 4 months,3,5,4,1
+1094,Aviation Medicine (Flight Surgery GMO),LT,3,2013,CONUS Operational,2-4 months,4,4,NA,1
+934,Orthopedic Surgery,LT,3,2016,NA,NA,NA,NA,NA,NA
+140,Emergency Medicine,CAPT or Flag,6,2015,CONUS MTF,> 4 months,4,5,5,1
+141,Emergency Medicine,CDR,5,2016,Non-Operational/Non-Clinical,< 2 months,4,4,3,1
+142,Emergency Medicine,CDR,5,2015,CONUS MTF,> 4 months,5,5,1,1
+143,Preventive Medicine,CAPT or Flag,6,2015,GME,2-4 months,5,5,1,1
+144,Endocrinology (IM),CAPT or Flag,6,2014,CONUS MTF,< 2 months,5,5,5,1
+145,Physical Medicine and Rehabilitation,LCDR,4,2014,CONUS MTF,2-4 months,5,5,5,1
+1105,Aviation Medicine (Flight Surgery GMO),LCDR,4,2016,OCONUS Operational,2-4 months,5,5,3,1
+1191,Aviation Medicine (Flight Surgery GMO),LCDR,4,2016,CONUS MTF,2-4 months,1,1,2,NA
+1194,Aviation Medicine (Flight Surgery GMO),LT,3,2014,CONUS Operational,2-4 months,1,2,2,1
+149,Emergency Medicine,LT,3,2016,GME,< 2 months,1,1,NA,2
+150,Emergency Medicine,LCDR,4,2015,CONUS MTF,2-4 months,4,1,1,5
+151,Emergency Medicine,LCDR,4,2014,CONUS MTF,2-4 months,3,4,2,1
+152,Emergency Medicine,LT,3,2014,GME,2-4 months,5,5,5,1
+155,Emergency Medicine,CDR,5,2016,CONUS MTF,NA,5,5,NA,2
+156,Psychiatry,LT,3,2015,CONUS MTF,2-4 months,4,5,5,5
+1195,Aviation Medicine (Flight Surgery GMO),LT,3,2014,CONUS Operational,2-4 months,3,3,3,1
+158,Emergency Medicine,LT,3,2015,CONUS MTF,2-4 months,5,5,5,1
+159,Emergency Medicine,CDR,5,2015,CONUS MTF,> 4 months,1,1,NA,NA
+160,Emergency Medicine,LCDR,4,2016,GME,2-4 months,5,4,4,1
+161,Emergency Medicine,LCDR,4,2016,CONUS MTF,< 2 months,5,4,5,5
+163,Radiology,CAPT or Flag,6,2016,OCONUS Operational,2-4 months,4,4,3,NA
+164,Emergency Medicine,CDR,5,2015,OCONUS MTF,2-4 months,2,4,5,1
+165,Emergency Medicine,CDR,5,2016,CONUS MTF,2-4 months,4,5,3,1
+166,Rheumatology (IM),CDR,5,2016,CONUS MTF,> 4 months,5,NA,5,1
+167,Radiology,CDR,5,2014,OCONUS MTF,2-4 months,5,5,5,2
+168,Radiology,LCDR,4,2015,CONUS MTF,< 2 months,2,3,1,NA
+169,Radiology,CDR,5,2016,OCONUS MTF,2-4 months,5,5,5,2
+170,Radiology,LCDR,4,2015,CONUS MTF,2-4 months,4,5,4,1
+171,Radiology,CDR,5,2016,Non-Operational/Non-Clinical,< 2 months,5,5,5,1
+172,Radiology,LCDR,4,2016,CONUS Operational,2-4 months,1,1,5,NA
+173,Radiology,CDR,5,2016,OCONUS Operational,> 4 months,5,5,4,1
+174,Radiology,LCDR,4,2014,CONUS MTF,2-4 months,2,3,3,NA
+175,Radiology,LCDR,4,2016,CONUS MTF,2-4 months,4,4,4,3
+176,Radiology,CAPT or Flag,6,2011,GME,2-4 months,NA,NA,NA,NA
+177,Radiology,LCDR,4,2015,CONUS MTF,> 4 months,1,3,2,1
+178,Family Medicine,CAPT or Flag,6,2016,CONUS MTF,NA,3,4,4,1
+179,Emergency Medicine,LCDR,4,2015,OCONUS MTF,2-4 months,2,3,4,NA
+180,Family Medicine,LT,3,2014,CONUS MTF,2-4 months,2,3,3,4
+181,Family Medicine,LCDR,4,2015,OCONUS MTF,< 2 months,1,1,5,NA
+182,Family Medicine,LCDR,4,2016,CONUS MTF,2-4 months,2,3,3,1
+183,Family Medicine,CAPT or Flag,6,2012,GME,2-4 months,5,5,4,1
+184,Family Medicine,LCDR,4,2014,CONUS MTF,2-4 months,4,5,2,1
+185,Family Medicine,LCDR,4,2015,CONUS MTF,2-4 months,4,5,5,1
+186,Family Medicine,LT,3,2016,CONUS MTF,2-4 months,3,4,3,4
+187,Family Medicine,LCDR,4,2014,GME,2-4 months,4,4,2,1
+188,Family Medicine,LT,3,2012,CONUS Operational,> 4 months,3,4,3,2
+189,Family Medicine,CDR,5,2015,CONUS MTF,NA,2,3,2,2
+190,Family Medicine,LCDR,4,2014,CONUS MTF,2-4 months,4,4,1,1
+191,Family Medicine,LT,3,2016,CONUS MTF,> 4 months,1,1,2,1
+192,Family Medicine,CDR,5,2015,CONUS MTF,2-4 months,4,4,4,2
+193,Family Medicine,CDR,5,2015,OCONUS MTF,2-4 months,4,4,2,NA
+194,Family Medicine,CDR,5,2016,CONUS MTF,2-4 months,4,4,3,1
+195,Family Medicine,CDR,5,2013,CONUS MTF,2-4 months,4,4,4,1
+196,Family Medicine,LT,3,2015,CONUS MTF,2-4 months,3,2,3,1
+197,Aerospace Medicine (Residency Trained Flight),CAPT or Flag,6,2016,CONUS Operational,2-4 months,4,4,3,1
+198,Family Medicine,LCDR,4,2015,CONUS MTF,2-4 months,3,4,4,1
+199,Family Medicine,CAPT or Flag,6,2012,CONUS MTF,> 4 months,3,3,3,1
+200,Radiology,CDR,5,2014,CONUS MTF,> 4 months,5,5,2,2
+201,Family Medicine,LCDR,4,2014,CONUS MTF,2-4 months,5,5,5,1
+202,Family Medicine,CDR,5,2014,CONUS MTF,NA,5,5,4,1
+203,Family Medicine,LT,3,2014,CONUS Operational,2-4 months,3,5,NA,1
+204,Family Medicine,CDR,5,2014,CONUS MTF,2-4 months,4,4,4,1
+205,Family Medicine,LCDR,4,2014,CONUS Operational,2-4 months,3,4,3,1
+206,Family Medicine,CAPT or Flag,6,2013,CONUS MTF,> 4 months,4,4,3,1
+207,Family Medicine,LCDR,4,2014,CONUS MTF,NA,4,3,3,2
+208,Family Medicine,CAPT or Flag,6,2016,CONUS MTF,2-4 months,1,1,1,NA
+209,Family Medicine,CAPT or Flag,6,2016,Non-Operational/Non-Clinical,> 4 months,4,5,2,1
+210,Family Medicine,LCDR,4,2016,GME,2-4 months,2,1,1,NA
+211,Family Medicine,CDR,5,2014,CONUS Operational,> 4 months,5,5,5,1
+212,Family Medicine,LT,3,2016,OCONUS Operational,2-4 months,1,1,NA,NA
+213,Family Medicine,LCDR,4,2016,CONUS MTF,> 4 months,3,3,2,2
+214,Family Medicine,CDR,5,2015,CONUS MTF,2-4 months,5,5,5,1
+215,Family Medicine,LT,3,2014,GME,NA,4,NA,4,1
+216,Family Medicine,LT,3,2016,CONUS MTF,2-4 months,1,1,2,5
+217,Family Medicine,CDR,5,2016,CONUS Operational,2-4 months,2,4,2,1
+218,Family Medicine,CAPT or Flag,6,2014,CONUS MTF,2-4 months,4,4,4,NA
+219,Family Medicine,CAPT or Flag,6,2015,CONUS Operational,2-4 months,1,3,1,5
+220,Family Medicine,CDR,5,2016,CONUS MTF,< 2 months,5,4,5,1
+221,Anesthesiology,CDR,5,2016,OCONUS MTF,2-4 months,4,5,4,NA
+222,Radiology,LCDR,4,2016,CONUS MTF,2-4 months,5,5,1,1
+223,Dermatology,LCDR,4,2014,CONUS MTF,2-4 months,3,5,4,1
+224,Family Medicine,CDR,5,2013,Non-Operational/Non-Clinical,> 4 months,5,5,5,1
+225,Radiology,CDR,5,2014,CONUS MTF,2-4 months,3,3,2,1
+1199,Aviation Medicine (Flight Surgery GMO),LT,3,2014,CONUS Operational,< 2 months,4,4,4,2
+228,Ophthalmology,CAPT or Flag,6,2014,CONUS Operational,< 2 months,4,4,5,1
+230,Family Medicine,CDR,5,2015,CONUS MTF,2-4 months,5,5,5,1
+231,Family Medicine,CDR,5,2016,OCONUS MTF,< 2 months,4,5,5,1
+232,Dermatology,CDR,5,2015,GME,2-4 months,4,5,4,1
+233,Radiology,CDR,5,2013,CONUS MTF,2-4 months,3,4,3,2
+234,Family Medicine,LCDR,4,2015,GME,2-4 months,5,5,1,1
+235,Radiology,LCDR,4,2015,CONUS MTF,2-4 months,1,2,2,2
+236,Family Medicine,CDR,5,2016,CONUS Operational,2-4 months,1,1,1,1
+237,Family Medicine,LCDR,4,2016,CONUS MTF,< 2 months,4,4,3,1
+238,Family Medicine,CDR,5,2015,CONUS Operational,< 2 months,3,3,2,3
+1201,Aviation Medicine (Flight Surgery GMO),LT,3,2014,CONUS Operational,< 2 months,1,2,4,2
+1235,Aviation Medicine (Flight Surgery GMO),LT,3,2015,CONUS Operational,< 2 months,1,2,1,4
+241,Family Medicine,LCDR,4,2015,CONUS MTF,2-4 months,2,3,2,3
+242,Family Medicine,CAPT or Flag,6,2016,Non-Operational/Non-Clinical,2-4 months,5,5,1,1
+243,Family Medicine,CDR,5,2014,Non-Operational/Non-Clinical,NA,3,4,NA,2
+244,Family Medicine,LCDR,4,2014,CONUS Operational,2-4 months,2,2,2,2
+245,Pathology,CAPT or Flag,6,2015,CONUS MTF,2-4 months,NA,NA,NA,NA
+1247,Aviation Medicine (Flight Surgery GMO),LT,3,2016,CONUS Operational,< 2 months,1,1,NA,5
+247,Family Medicine,CAPT or Flag,6,2016,CONUS MTF,2-4 months,4,5,5,1
+248,Pathology,CDR,5,2016,CONUS MTF,2-4 months,4,5,3,1
+249,Infectious Disease (IM),CAPT or Flag,6,2015,OCONUS Operational,2-4 months,3,3,3,2
+250,Radiology,CDR,5,2015,CONUS MTF,2-4 months,4,4,5,1
+251,Family Medicine,LCDR,4,2015,CONUS MTF,< 2 months,NA,NA,NA,NA
+253,Pathology,CDR,5,2015,CONUS MTF,< 2 months,5,5,1,1
+254,Family Medicine,CDR,5,2016,OCONUS Operational,< 2 months,2,1,1,NA
+1253,Aviation Medicine (Flight Surgery GMO),LT,3,2015,CONUS Operational,2-4 months,2,4,4,1
+256,Pathology,LCDR,4,2014,CONUS MTF,2-4 months,1,1,3,NA
+257,Pathology,LCDR,4,2015,CONUS MTF,2-4 months,5,5,5,1
+258,Pathology,CDR,5,2014,CONUS MTF,2-4 months,1,1,1,NA
+259,Radiology,LCDR,4,2015,CONUS MTF,> 4 months,5,5,2,1
+260,Family Medicine,LT,3,2016,OCONUS Operational,2-4 months,2,3,NA,NA
+261,NA,Unknown,NA,2014,Non-Operational/Non-Clinical,< 2 months,3,4,2,2
+262,Pathology,LCDR,4,2014,CONUS MTF,2-4 months,4,5,5,1
+263,Pathology,CDR,5,2015,CONUS MTF,2-4 months,2,4,5,1
+264,Family Medicine,CAPT or Flag,6,2014,OCONUS Operational,2-4 months,3,4,NA,2
+265,Radiology,LCDR,4,2016,CONUS MTF,> 4 months,4,4,3,2
+266,Pathology,CAPT or Flag,6,2016,CONUS MTF,2-4 months,5,4,5,1
+1263,Aviation Medicine (Flight Surgery GMO),LT,3,2014,CONUS Operational,< 2 months,1,1,1,3
+268,Family Medicine,CAPT or Flag,6,2015,Other,> 4 months,3,5,2,1
+269,Pathology,CDR,5,2012,CONUS MTF,2-4 months,4,4,3,1
+270,Pathology,CAPT or Flag,6,2016,CONUS MTF,NA,5,5,3,1
+271,Occupational Medicine,CDR,5,2016,GME,2-4 months,5,5,3,1
+1264,Aviation Medicine (Flight Surgery GMO),LT,3,2015,CONUS Operational,2-4 months,5,4,NA,2
+274,Dermatology,LT,3,2015,CONUS MTF,2-4 months,3,3,3,NA
+275,Dermatology,LCDR,4,2016,CONUS MTF,2-4 months,4,3,4,2
+276,Pathology,LT,3,2013,GME,2-4 months,NA,NA,NA,NA
+278,Pathology,CAPT or Flag,6,2015,CONUS MTF,2-4 months,5,5,4,1
+279,Family Medicine,CDR,5,2015,OCONUS MTF,2-4 months,4,4,5,NA
+280,Dermatology,LCDR,4,2016,CONUS MTF,2-4 months,1,3,NA,1
+281,Family Medicine,CDR,5,2016,Other,< 2 months,5,5,5,NA
+282,Family Medicine,LCDR,4,2013,CONUS MTF,< 2 months,1,1,NA,1
+283,Dermatology,CDR,5,2014,CONUS MTF,2-4 months,5,5,5,1
+284,Family Medicine,LCDR,4,2015,CONUS MTF,2-4 months,4,4,3,2
+285,General Surgery,LCDR,4,2015,CONUS Operational,< 2 months,1,1,NA,1
+1265,Aviation Medicine (Flight Surgery GMO),LT,3,2014,CONUS MTF,2-4 months,3,4,2,2
+287,Dermatology,LCDR,4,2016,CONUS MTF,2-4 months,5,3,4,NA
+288,Dermatology,CDR,5,2016,CONUS MTF,2-4 months,1,1,5,1
+289,Pathology,LCDR,4,2015,CONUS MTF,2-4 months,4,4,NA,1
+290,Radiology,LCDR,4,2015,CONUS MTF,2-4 months,4,4,4,3
+291,Dermatology,CDR,5,2016,CONUS MTF,2-4 months,5,4,5,1
+292,Pathology,CAPT or Flag,6,2015,Non-Operational/Non-Clinical,< 2 months,3,1,NA,NA
+293,Dermatology,LCDR,4,2016,CONUS MTF,< 2 months,2,3,5,3
+294,OB/GYN,CAPT or Flag,6,2015,CONUS Operational,2-4 months,4,5,5,1
+295,Family Medicine,CAPT or Flag,6,2015,CONUS MTF,2-4 months,4,4,4,1
+296,Radiology,CDR,5,2014,CONUS MTF,2-4 months,3,3,3,1
+297,Pathology,CDR,5,2015,CONUS MTF,2-4 months,3,3,3,1
+298,Pathology,CAPT or Flag,6,2015,CONUS MTF,2-4 months,5,5,4,1
+299,Family Medicine,LT,3,2015,CONUS MTF,> 4 months,5,5,NA,1
+303,Dermatology,LCDR,4,2014,CONUS MTF,2-4 months,3,3,4,2
+304,Pediatrics,CDR,5,2010,CONUS MTF,> 4 months,5,5,5,2
+305,Family Medicine,CDR,5,2016,CONUS Operational,< 2 months,1,1,1,4
+306,Psychiatry,CAPT or Flag,6,2015,GME,< 2 months,5,5,5,NA
+307,Pathology,CDR,5,2016,CONUS MTF,2-4 months,4,4,4,1
+308,Occupational Medicine,CDR,5,2015,Non-Operational/Non-Clinical,< 2 months,5,5,5,1
+309,Pediatrics,LCDR,4,2012,CONUS MTF,< 2 months,1,1,1,NA
+310,Dermatology,LCDR,4,2014,Other,> 4 months,5,5,5,1
+1269,Aviation Medicine (Flight Surgery GMO),LT,3,2015,CONUS Operational,< 2 months,3,3,2,3
+1275,Aviation Medicine (Flight Surgery GMO),LT,3,2016,CONUS Operational,< 2 months,1,1,3,NA
+313,Pediatrics,LCDR,4,2013,CONUS MTF,2-4 months,NA,NA,NA,NA
+314,Pediatrics,LT,3,2016,GME,2-4 months,2,3,NA,1
+315,Pediatrics,LT,3,2015,CONUS MTF,> 4 months,3,3,5,5
+316,Pediatrics,LT,3,2016,CONUS MTF,< 2 months,2,3,4,1
+317,Pediatrics,LT,3,2015,CONUS MTF,2-4 months,1,1,3,5
+318,Dermatology,LCDR,4,2016,OCONUS MTF,2-4 months,4,5,5,2
+319,Family Medicine,LCDR,4,2015,CONUS Operational,> 4 months,5,5,NA,1
+320,Family Medicine,CAPT or Flag,6,2015,CONUS Operational,2-4 months,4,5,4,1
+321,Family Medicine,LT,3,2015,CONUS MTF,< 2 months,5,5,4,NA
+322,Pediatrics,CAPT or Flag,6,2016,Non-Operational/Non-Clinical,2-4 months,5,5,5,1
+323,Pediatrics,LT,3,2014,CONUS MTF,> 4 months,NA,NA,NA,NA
+324,Pediatrics,LT,3,2015,CONUS MTF,2-4 months,5,5,3,1
+325,Pediatrics,LCDR,4,2015,CONUS MTF,2-4 months,NA,NA,NA,NA
+326,Radiology,LCDR,4,2016,GME,2-4 months,5,4,4,1
+327,Preventive Medicine,CDR,5,2016,Non-Operational/Non-Clinical,2-4 months,4,4,4,1
+329,Pediatrics,LCDR,4,2015,CONUS MTF,> 4 months,5,4,3,1
+331,Dermatology,LCDR,4,2015,CONUS MTF,2-4 months,3,4,1,3
+332,Pediatrics,LCDR,4,2014,CONUS MTF,> 4 months,5,5,4,1
+333,Pediatrics,LCDR,4,2013,CONUS MTF,2-4 months,4,4,3,1
+1285,Aviation Medicine (Flight Surgery GMO),LT,3,2016,CONUS Operational,< 2 months,1,1,1,NA
+336,Preventive Medicine,CAPT or Flag,6,2005,Non-Operational/Non-Clinical,2-4 months,5,5,4,1
+337,Pediatrics,LCDR,4,2014,CONUS MTF,2-4 months,4,5,3,1
+338,Pediatrics,LCDR,4,2014,CONUS MTF,2-4 months,4,5,2,1
+339,Pediatrics,CDR,5,2014,CONUS MTF,2-4 months,5,4,2,1
+340,Pediatrics,CDR,5,2015,CONUS MTF,> 4 months,4,5,4,1
+341,Pediatrics,LT,3,2016,CONUS MTF,2-4 months,4,4,1,1
+342,Neonatology,LCDR,4,2016,CONUS MTF,2-4 months,4,4,2,2
+1307,Aviation Medicine (Flight Surgery GMO),LT,3,2016,CONUS Operational,2-4 months,1,1,NA,NA
+344,Pediatrics,CDR,5,2015,CONUS MTF,> 4 months,1,2,1,2
+345,Pathology,CAPT or Flag,6,2015,OCONUS MTF,2-4 months,4,4,3,3
+346,Family Medicine,CAPT or Flag,6,2016,CONUS MTF,> 4 months,2,2,3,1
+347,Pediatrics,LT,3,2016,GME,2-4 months,5,3,NA,1
+348,Pediatrics,CAPT or Flag,6,2015,CONUS MTF,2-4 months,4,5,3,1
+349,Family Medicine,CDR,5,2015,CONUS MTF,2-4 months,5,3,3,1
+350,Neonatology,LT,3,2014,GME,2-4 months,5,4,5,1
+351,Orthopedic Surgery,CDR,5,2015,CONUS MTF,2-4 months,4,4,3,2
+352,Pediatrics,CDR,5,2015,CONUS MTF,> 4 months,5,5,5,1
+353,Dermatology,LCDR,4,2016,OCONUS MTF,> 4 months,4,5,5,1
+354,Orthopedic Surgery,LCDR,4,2015,OCONUS MTF,2-4 months,2,3,2,1
+355,Preventive Medicine,CAPT or Flag,6,2015,Non-Operational/Non-Clinical,> 4 months,2,2,1,5
+356,Pediatrics,LCDR,4,2015,OCONUS MTF,> 4 months,2,2,3,NA
+357,Orthopedic Surgery,LCDR,4,2015,CONUS MTF,2-4 months,1,2,3,3
+358,Family Medicine,LT,3,2015,OCONUS MTF,> 4 months,1,2,3,3
+359,Pediatrics,CDR,5,2015,CONUS MTF,> 4 months,4,5,5,1
+360,Orthopedic Surgery,LCDR,4,2016,CONUS MTF,2-4 months,5,5,4,1
+361,Orthopedic Surgery,LCDR,4,2015,CONUS MTF,2-4 months,4,4,3,3
+362,Dermatology,CDR,5,2016,CONUS MTF,2-4 months,4,4,4,2
+1360,Aviation Medicine (Flight Surgery GMO),LT,3,2016,OCONUS Operational,< 2 months,1,1,1,3
+364,Family Medicine,LCDR,4,2014,CONUS MTF,2-4 months,NA,NA,3,1
+365,Pediatrics,LT,3,2016,OCONUS MTF,2-4 months,5,4,2,1
+366,Family Medicine,LT,3,2014,CONUS MTF,2-4 months,4,3,4,1
+1361,Aviation Medicine (Flight Surgery GMO),LT,3,2016,OCONUS Operational,< 2 months,1,1,1,5
+368,Family Medicine,LCDR,4,2015,OCONUS MTF,2-4 months,5,5,3,1
+369,Family Medicine,LT,3,2014,OCONUS Operational,2-4 months,1,1,1,5
+370,Pediatrics,CAPT or Flag,6,2014,CONUS MTF,2-4 months,4,5,2,1
+371,Dermatology,LCDR,4,2016,GME,2-4 months,5,4,5,1
+372,Family Medicine,LT,3,2016,OCONUS MTF,2-4 months,2,1,4,3
+1363,Aviation Medicine (Flight Surgery GMO),LT,3,2016,OCONUS Operational,< 2 months,1,1,1,NA
+374,Family Medicine,LT,3,2015,Non-Operational/Non-Clinical,2-4 months,NA,NA,NA,NA
+375,Family Medicine,CAPT or Flag,6,2016,CONUS MTF,NA,3,3,3,3
+376,Orthopedic Surgery,LCDR,4,2013,CONUS MTF,2-4 months,4,4,3,1
+377,Pediatrics,CDR,5,2012,CONUS MTF,2-4 months,NA,NA,NA,NA
+67,General Medical Officer,LCDR,4,2014,CONUS MTF,2-4 months,3,5,3,NA
+380,Family Medicine,LCDR,4,2016,OCONUS MTF,2-4 months,1,1,1,5
+381,Dermatology,LCDR,4,2014,GME,2-4 months,5,5,1,1
+382,Orthopedic Surgery,LCDR,4,2016,OCONUS MTF,2-4 months,1,2,1,5
+383,Pathology,LCDR,4,2015,OCONUS MTF,> 4 months,1,2,3,NA
+384,Pathology,LCDR,4,2016,OCONUS MTF,> 4 months,5,5,5,1
+385,Preventive Medicine,CDR,5,2014,Non-Operational/Non-Clinical,2-4 months,4,4,3,1
+386,Family Medicine,LT,3,2016,OCONUS MTF,< 2 months,2,2,NA,1
+69,General Medical Officer,LT,3,2014,CONUS Operational,2-4 months,2,2,2,1
+388,Preventive Medicine,CDR,5,2014,CONUS MTF,2-4 months,1,1,2,NA
+389,Orthopedic Surgery,LCDR,4,2016,OCONUS MTF,2-4 months,1,1,2,5
+390,Family Medicine,LCDR,4,2015,OCONUS MTF,NA,2,1,4,NA
+391,Family Medicine,LT,3,2015,OCONUS Operational,< 2 months,3,3,NA,1
+392,Pediatrics,LT,3,2014,CONUS MTF,2-4 months,2,2,2,5
+394,Radiology,CDR,5,2015,CONUS MTF,> 4 months,3,4,4,1
+395,Pathology,CAPT or Flag,6,2014,OCONUS MTF,< 2 months,1,5,4,1
+396,Radiology,CAPT or Flag,6,2015,CONUS MTF,> 4 months,4,5,2,1
+397,Radiology,CDR,5,2016,OCONUS MTF,2-4 months,1,1,1,5
+398,Radiology,LCDR,4,2016,CONUS MTF,2-4 months,4,4,NA,2
+399,Radiology,CDR,5,2012,CONUS MTF,2-4 months,3,4,4,2
+400,Dermatology,LCDR,4,2015,CONUS MTF,> 4 months,2,4,5,1
+401,Emergency Medicine,CDR,5,2016,OCONUS Operational,2-4 months,2,2,NA,2
+402,Neonatology,CAPT or Flag,6,2016,CONUS MTF,NA,5,5,5,1
+403,Family Medicine,LT,3,2014,GME,2-4 months,NA,NA,NA,NA
+405,Dermatology,LT,3,2016,CONUS MTF,> 4 months,NA,5,3,1
+406,Family Medicine,LT,3,2014,OCONUS MTF,2-4 months,3,4,3,1
+407,Radiology,LCDR,4,2016,Non-Operational/Non-Clinical,> 4 months,3,3,1,1
+73,General Medical Officer,LCDR,4,2013,OCONUS MTF,< 2 months,5,5,5,1
+111,General Medical Officer,LT,3,2016,Non-Operational/Non-Clinical,2-4 months,4,5,4,1
+410,Orthopedic Surgery,LCDR,4,2016,CONUS MTF,2-4 months,5,5,3,1
+411,Pediatrics,LT,3,2016,OCONUS MTF,2-4 months,4,4,3,3
+412,Internal Medicine (General),LT,3,2015,CONUS MTF,< 2 months,5,1,3,4
+413,Emergency Medicine,LCDR,4,2016,OCONUS MTF,> 4 months,2,1,3,NA
+414,Pathology,CAPT or Flag,6,2015,OCONUS MTF,2-4 months,5,5,5,1
+415,Dermatology,LT,3,2014,GME,2-4 months,5,5,4,2
+416,Family Medicine,LCDR,4,2015,OCONUS MTF,2-4 months,4,3,4,1
+113,General Medical Officer,LT,3,2013,OCONUS Operational,2-4 months,1,1,1,3
+419,Radiology,LCDR,4,2016,OCONUS MTF,2-4 months,2,4,3,NA
+420,Family Medicine,LCDR,4,2016,OCONUS MTF,< 2 months,2,2,2,5
+421,Pediatrics,CAPT or Flag,6,2014,OCONUS MTF,> 4 months,5,5,5,1
+422,Family Medicine,LT,3,2014,OCONUS MTF,2-4 months,2,3,3,1
+423,Pediatrics,LCDR,4,2016,OCONUS MTF,2-4 months,4,5,4,2
+424,Family Medicine,LT,3,2014,OCONUS MTF,2-4 months,1,1,3,NA
+425,Family Medicine,CAPT or Flag,6,2016,OCONUS MTF,2-4 months,4,3,2,5
+426,Family Medicine,CDR,5,2016,OCONUS Operational,< 2 months,1,1,2,NA
+427,Family Medicine,LCDR,4,2014,OCONUS MTF,> 4 months,5,5,3,1
+114,General Medical Officer,LT,3,2015,CONUS Operational,< 2 months,2,2,1,2
+429,Radiology,CAPT or Flag,6,2015,OCONUS MTF,2-4 months,4,4,4,1
+430,Radiology,LCDR,4,2016,OCONUS MTF,2-4 months,3,3,2,5
+431,Family Medicine,LCDR,4,2015,OCONUS MTF,2-4 months,1,3,4,1
+432,Family Medicine,LCDR,4,2014,OCONUS MTF,> 4 months,5,4,3,1
+433,Pathology,CDR,5,2015,OCONUS MTF,2-4 months,3,3,2,1
+312,General Medical Officer,LT,3,2015,CONUS MTF,2-4 months,1,1,1,NA
+418,General Medical Officer,LT,3,2015,OCONUS Operational,2-4 months,5,4,NA,2
+436,Orthopedic Surgery,LCDR,4,2012,CONUS MTF,> 4 months,4,5,4,2
+437,Pediatrics,CDR,5,2016,CONUS MTF,> 4 months,5,5,1,1
+428,General Medical Officer,LT,3,2016,OCONUS Operational,2-4 months,2,2,3,NA
+439,Pediatrics,LCDR,4,2009,CONUS MTF,NA,NA,NA,NA,NA
+440,Orthopedic Surgery,LCDR,4,2016,CONUS MTF,2-4 months,5,4,5,1
+441,Preventive Medicine,CAPT or Flag,6,2016,CONUS MTF,2-4 months,NA,NA,NA,NA
+442,Dermatology,CDR,5,2015,CONUS MTF,> 4 months,5,5,5,NA
+443,Pediatrics,CDR,5,2015,CONUS MTF,NA,4,5,4,1
+444,Family Medicine,CAPT or Flag,6,2014,CONUS MTF,2-4 months,5,5,5,2
+445,Pediatrics,CDR,5,2011,CONUS MTF,> 4 months,4,4,4,2
+446,Preventive Medicine,CDR,5,2016,GME,2-4 months,4,2,3,4
+447,Family Medicine,CDR,5,2015,OCONUS MTF,2-4 months,5,5,3,1
+448,Pediatrics,CAPT or Flag,6,2016,CONUS MTF,< 2 months,4,4,3,1
+449,Preventive Medicine,CAPT or Flag,6,2013,Non-Operational/Non-Clinical,2-4 months,5,5,4,1
+450,Pediatrics,LCDR,4,2016,CONUS MTF,NA,4,4,3,NA
+451,Orthopedic Surgery,CDR,5,2014,CONUS MTF,2-4 months,1,3,2,NA
+453,Radiology,CDR,5,2015,CONUS MTF,2-4 months,4,4,2,1
+454,Pediatrics,CAPT or Flag,6,2016,CONUS Operational,> 4 months,5,5,NA,1
+455,Occupational Medicine,LCDR,4,2014,CONUS MTF,2-4 months,4,4,3,1
+456,Family Medicine,CAPT or Flag,6,2014,CONUS Operational,2-4 months,4,4,2,1
+457,Pediatrics,LCDR,4,2013,CONUS MTF,> 4 months,5,5,5,1
+458,Pediatrics,LT,3,2013,GME,2-4 months,2,2,NA,1
+459,Cardiothoracic Surgery,LCDR,4,2015,CONUS MTF,> 4 months,5,2,4,3
+460,Family Medicine,LT,3,2016,GME,2-4 months,4,4,3,1
+461,Neonatology,LT,3,2016,CONUS MTF,> 4 months,3,4,2,1
+462,Pediatrics,LT,3,2014,CONUS MTF,< 2 months,2,3,3,2
+464,Radiology,CDR,5,2013,CONUS MTF,2-4 months,4,4,5,1
+465,Neonatology,LT,3,2015,GME,> 4 months,3,5,2,1
+466,Orthopedic Surgery,LCDR,4,2014,CONUS MTF,2-4 months,1,1,1,2
+467,Pediatrics,LCDR,4,2016,CONUS MTF,2-4 months,5,5,5,1
+468,Preventive Medicine,LCDR,4,2014,CONUS MTF,NA,4,5,2,1
+469,Pediatrics,LT,3,2014,CONUS MTF,2-4 months,4,4,3,1
+470,Family Medicine,LT,3,2016,OCONUS Operational,< 2 months,3,2,3,NA
+471,Preventive Medicine,CDR,5,2016,CONUS Operational,2-4 months,5,5,3,2
+472,Pediatrics,CDR,5,2014,CONUS MTF,> 4 months,1,3,3,2
+473,Preventive Medicine,LCDR,4,2015,GME,< 2 months,2,3,NA,2
+434,General Medical Officer,LT,3,2015,CONUS Operational,> 4 months,5,1,5,2
+475,Family Medicine,LT,3,2014,CONUS MTF,2-4 months,1,1,1,1
+476,Heme/Onc (IM),LCDR,4,2014,CONUS MTF,2-4 months,4,4,3,1
+477,Radiology,CDR,5,2014,CONUS MTF,> 4 months,5,5,2,1
+478,Pediatrics,LCDR,4,2014,CONUS MTF,2-4 months,4,4,NA,2
+479,Heme/Onc (IM),CDR,5,2015,CONUS MTF,NA,3,5,5,1
+480,Preventive Medicine,LCDR,4,2016,CONUS MTF,2-4 months,2,4,2,2
+481,Orthopedic Surgery,CDR,5,2014,CONUS MTF,2-4 months,5,5,2,2
+482,OB/GYN,CDR,5,2014,CONUS MTF,2-4 months,5,5,3,1
+483,Neonatology,CDR,5,2016,CONUS MTF,NA,5,5,5,1
+484,Family Medicine,LT,3,2015,GME,2-4 months,2,2,NA,1
+485,Radiology,LCDR,4,2016,CONUS MTF,2-4 months,1,1,1,4
+486,Emergency Medicine,LCDR,4,2014,CONUS MTF,NA,4,3,4,1
+487,Pediatrics,LT,3,2015,CONUS MTF,< 2 months,4,4,4,1
+488,Heme/Onc (IM),LCDR,4,2015,CONUS MTF,> 4 months,1,NA,NA,NA
+489,General Medical Officer,LT,3,2016,CONUS MTF,2-4 months,2,3,NA,1
+490,Pediatrics,LT,3,2015,CONUS MTF,2-4 months,3,3,3,3
+492,Family Medicine,LT,3,2016,GME,2-4 months,NA,NA,NA,NA
+494,Nephrology (IM),CDR,5,2016,CONUS MTF,2-4 months,4,4,4,1
+495,Pathology,CAPT or Flag,6,2010,CONUS MTF,2-4 months,1,1,1,1
+496,Heme/Onc (IM),LCDR,4,2016,CONUS MTF,2-4 months,5,5,4,2
+497,Pediatrics,CDR,5,2014,CONUS MTF,2-4 months,5,4,4,2
+498,Family Medicine,CDR,5,2014,CONUS MTF,> 4 months,5,5,NA,1
+499,Dermatology,LCDR,4,2015,CONUS MTF,2-4 months,4,5,5,2
+500,Pediatrics,LT,3,2016,CONUS MTF,NA,5,4,NA,1
+1103,General Medical Officer,LT,3,2014,Non-Operational/Non-Clinical,> 4 months,3,3,2,3
+502,Preventive Medicine,CDR,5,2016,CONUS Operational,2-4 months,5,5,3,1
+503,Emergency Medicine,CDR,5,2015,CONUS Operational,2-4 months,3,3,3,3
+504,Allergy/Immunology,CDR,5,2015,CONUS MTF,> 4 months,4,NA,2,2
+505,Radiology,CDR,5,2012,CONUS MTF,2-4 months,5,5,5,NA
+506,Nephrology (IM),LCDR,4,2014,CONUS MTF,2-4 months,4,4,3,2
+507,Dermatology,CDR,5,2016,Non-Operational/Non-Clinical,2-4 months,5,5,5,1
+508,Pediatrics,LT,3,2014,GME,2-4 months,NA,NA,NA,NA
+509,General Surgery,LCDR,4,2015,CONUS MTF,2-4 months,5,3,5,1
+510,Emergency Medicine,LCDR,4,2016,CONUS Operational,> 4 months,4,4,4,2
+511,Family Medicine,LT,3,2013,GME,2-4 months,NA,NA,4,1
+512,Pediatrics,CDR,5,2015,OCONUS MTF,2-4 months,4,4,4,1
+513,Dermatology,LCDR,4,2015,GME,2-4 months,5,5,NA,1
+514,Neonatology,CDR,5,2014,CONUS MTF,2-4 months,4,4,1,NA
+515,Family Medicine,LT,3,2016,OCONUS MTF,2-4 months,2,1,NA,5
+516,Family Medicine,LT,3,2015,OCONUS MTF,< 2 months,1,1,1,NA
+517,Family Medicine,LCDR,4,2016,OCONUS MTF,< 2 months,3,1,4,NA
+518,Nephrology (IM),LT,3,2016,CONUS MTF,2-4 months,4,4,3,2
+519,Pediatrics,LCDR,4,2014,GME,2-4 months,3,4,2,1
+520,Psychiatry,LCDR,4,2015,CONUS MTF,NA,2,1,1,4
+521,Allergy/Immunology,CDR,5,2016,CONUS MTF,> 4 months,5,5,3,1
+522,Nephrology (IM),LCDR,4,2015,CONUS MTF,2-4 months,5,5,4,1
+523,Pediatrics,LT,3,2014,CONUS MTF,2-4 months,3,2,4,1
+524,Preventive Medicine,CDR,5,2015,Non-Operational/Non-Clinical,> 4 months,5,5,2,1
+525,Radiology,LCDR,4,2012,CONUS MTF,2-4 months,NA,NA,NA,NA
+526,Nephrology (IM),LCDR,4,2016,CONUS MTF,2-4 months,5,5,5,1
+528,Radiology,CDR,5,2013,CONUS MTF,> 4 months,5,4,4,1
+529,Pathology,CDR,5,2016,CONUS MTF,2-4 months,4,4,4,1
+530,Family Medicine,LT,3,2016,OCONUS Operational,> 4 months,1,1,NA,5
+1171,General Medical Officer,LT,3,2015,CONUS MTF,2-4 months,1,1,NA,NA
+532,Family Medicine,CAPT or Flag,6,2015,CONUS MTF,> 4 months,4,5,4,1
+533,Psychiatry,LCDR,4,2013,GME,2-4 months,NA,NA,2,1
+534,Preventive Medicine,LCDR,4,2016,CONUS Operational,2-4 months,2,2,4,5
+536,Pediatrics,LCDR,4,2013,CONUS MTF,> 4 months,4,5,2,1
+537,Psychiatry,LCDR,4,2013,GME,2-4 months,3,5,3,1
+538,Pathology,LCDR,4,2016,CONUS MTF,> 4 months,5,5,5,1
+1193,General Medical Officer,LT,3,2015,CONUS Operational,2-4 months,2,2,1,NA
+1212,General Medical Officer,LT,3,2016,CONUS Operational,< 2 months,3,2,5,1
+541,Radiology,CDR,5,2013,CONUS MTF,> 4 months,4,4,3,1
+542,Pediatrics,CDR,5,2016,GME,2-4 months,3,5,3,1
+543,Family Medicine,CAPT or Flag,6,2015,CONUS MTF,> 4 months,4,4,3,1
+544,Family Medicine,LCDR,4,2016,CONUS MTF,2-4 months,4,5,5,NA
+545,Family Medicine,LCDR,4,2016,GME,> 4 months,3,3,3,1
+546,Pediatrics,CDR,5,2014,OCONUS MTF,2-4 months,4,3,5,5
+549,Cardiology (IM),CDR,5,2014,CONUS MTF,2-4 months,5,5,4,2
+550,Preventive Medicine,LCDR,4,2015,OCONUS Operational,2-4 months,4,3,3,1
+551,Pediatrics,LT,3,2014,CONUS MTF,2-4 months,NA,NA,NA,1
+552,Emergency Medicine,LCDR,4,2015,OCONUS Operational,< 2 months,2,1,3,1
+553,Cardiology (IM),CDR,5,2015,CONUS MTF,> 4 months,3,4,3,1
+554,Cardiology (IM),LCDR,4,2016,CONUS MTF,2-4 months,5,5,4,1
+555,Family Medicine,CDR,5,2016,OCONUS Operational,2-4 months,1,1,NA,NA
+556,Family Medicine,CDR,5,2016,CONUS MTF,2-4 months,5,3,3,3
+557,Cardiology (IM),CDR,5,2014,CONUS MTF,2-4 months,3,4,4,NA
+558,Cardiology (IM),LCDR,4,2016,CONUS MTF,2-4 months,2,3,2,1
+559,Pediatrics,LCDR,4,2013,CONUS MTF,2-4 months,4,3,NA,1
+561,Cardiology (IM),CDR,5,2014,CONUS MTF,2-4 months,NA,3,3,1
+562,Cardiology (IM),LCDR,4,2015,CONUS MTF,2-4 months,4,4,NA,1
+563,Family Medicine,LT,3,2016,CONUS MTF,2-4 months,4,4,NA,1
+565,Cardiology (IM),CAPT or Flag,6,2014,CONUS MTF,< 2 months,NA,NA,NA,NA
+567,Psychiatry,CAPT or Flag,6,2015,CONUS MTF,> 4 months,4,4,3,1
+568,Psychiatry,LT,3,2014,GME,2-4 months,3,4,NA,2
+569,Psychiatry,LT,3,2015,GME,2-4 months,4,4,NA,1
+570,Cardiology (IM),CDR,5,2015,CONUS MTF,2-4 months,5,5,5,1
+571,Cardiology (IM),CAPT or Flag,6,2015,CONUS MTF,> 4 months,3,2,2,1
+572,Psychiatry,LCDR,4,2012,CONUS MTF,2-4 months,5,4,4,2
+573,Physical Medicine and Rehabilitation,CDR,5,2014,CONUS MTF,2-4 months,5,5,5,1
+1220,General Medical Officer,LT,3,2015,CONUS Operational,2-4 months,2,2,3,3
+575,Psychiatry,LT,3,2015,CONUS MTF,> 4 months,5,5,5,1
+576,Psychiatry,CDR,5,2016,Non-Operational/Non-Clinical,< 2 months,2,2,5,2
+1222,General Medical Officer,LT,3,2016,CONUS Operational,2-4 months,4,4,5,1
+578,Pediatrics,LT,3,2014,CONUS MTF,2-4 months,5,5,NA,1
+1270,General Medical Officer,LT,3,2016,CONUS Operational,< 2 months,2,4,NA,1
+580,Cardiology (IM),CDR,5,2013,CONUS MTF,< 2 months,5,3,5,2
+581,Psychiatry,CDR,5,2014,OCONUS MTF,2-4 months,5,5,4,1
+582,Cardiology (IM),CDR,5,2016,CONUS MTF,2-4 months,5,5,5,1
+583,Cardiology (IM),LCDR,4,2016,CONUS MTF,> 4 months,4,5,5,1
+584,Psychiatry,LCDR,4,2015,CONUS Operational,< 2 months,5,5,5,1
+585,Psychiatry,LT,3,2013,GME,2-4 months,5,5,5,1
+586,Psychiatry,CDR,5,2016,Non-Operational/Non-Clinical,2-4 months,5,5,2,1
+587,Psychiatry,LT,3,2013,CONUS MTF,> 4 months,NA,NA,NA,NA
+588,Orthopedic Surgery,LCDR,4,2016,CONUS MTF,2-4 months,4,4,5,1
+589,Psychiatry,LCDR,4,2014,CONUS MTF,< 2 months,2,5,3,1
+590,Psychiatry,LCDR,4,2016,CONUS Operational,2-4 months,2,2,1,3
+591,Cardiology (IM),LCDR,4,2016,CONUS MTF,2-4 months,5,5,5,1
+592,Family Medicine,CDR,5,2014,CONUS MTF,2-4 months,3,3,3,1
+593,Infectious Disease (IM),CDR,5,2014,CONUS MTF,2-4 months,3,2,4,1
+594,Pediatrics,LT,3,2016,OCONUS MTF,2-4 months,2,2,3,3
+595,Internal Medicine (General),CAPT or Flag,6,2014,Non-Operational/Non-Clinical,2-4 months,2,3,3,2
+596,Psychiatry,LT,3,2016,OCONUS Operational,< 2 months,2,3,NA,1
+597,Cardiology (IM),CDR,5,2015,CONUS MTF,2-4 months,4,4,3,1
+599,Family Medicine,CDR,5,2015,GME,2-4 months,5,5,3,1
+600,Infectious Disease (IM),LCDR,4,2016,Non-Operational/Non-Clinical,2-4 months,3,3,3,2
+601,Cardiology (IM),CDR,5,2015,CONUS MTF,< 2 months,5,5,5,1
+602,Orthopedic Surgery,LCDR,4,2015,CONUS MTF,< 2 months,2,1,4,1
+604,Pediatrics,LT,3,2016,CONUS MTF,2-4 months,5,5,NA,1
+605,Cardiology (IM),LCDR,4,2015,CONUS MTF,< 2 months,NA,NA,3,NA
+606,Endocrinology (IM),LCDR,4,2014,CONUS MTF,> 4 months,4,4,4,1
+607,Psychiatry,LT,3,2014,CONUS MTF,< 2 months,NA,NA,NA,NA
+608,Emergency Medicine,LCDR,4,2015,CONUS MTF,2-4 months,3,3,3,3
+609,Family Medicine,LCDR,4,2015,GME,> 4 months,5,4,3,1
+610,Family Medicine,LCDR,4,2015,OCONUS Operational,< 2 months,1,1,2,NA
+611,Infectious Disease (IM),CAPT or Flag,6,2015,OCONUS Operational,2-4 months,NA,NA,NA,NA
+612,Family Medicine,LT,3,2015,CONUS MTF,2-4 months,NA,NA,NA,1
+613,Dermatology,LCDR,4,2014,GME,2-4 months,5,5,5,1
+614,Psychiatry,LCDR,4,2015,OCONUS MTF,2-4 months,3,3,NA,NA
+615,Family Medicine,LCDR,4,2015,CONUS MTF,2-4 months,5,5,NA,1
+616,Neonatology,LCDR,4,2016,CONUS MTF,2-4 months,5,4,5,1
+617,Cardiology (IM),CDR,5,2016,CONUS MTF,> 4 months,4,4,4,1
+618,Family Medicine,LCDR,4,2015,GME,2-4 months,5,5,NA,1
+619,Family Medicine,LT,3,2014,GME,> 4 months,3,4,4,4
+620,Family Medicine,CAPT or Flag,6,2015,OCONUS Operational,2-4 months,2,2,5,2
+621,Emergency Medicine,CDR,5,2013,CONUS MTF,> 4 months,5,5,5,1
+622,Family Medicine,LT,3,2014,GME,2-4 months,4,3,3,1
+623,Family Medicine,LT,3,2015,CONUS MTF,2-4 months,3,3,3,1
+1277,General Medical Officer,LT,3,2016,CONUS Operational,NA,2,1,2,4
+625,Family Medicine,LCDR,4,2015,CONUS MTF,2-4 months,4,4,4,1
+626,Family Medicine,LT,3,2014,CONUS MTF,2-4 months,3,NA,NA,NA
+627,Family Medicine,LCDR,4,2015,CONUS MTF,2-4 months,1,1,1,5
+628,Psychiatry,LT,3,2013,GME,2-4 months,5,5,4,1
+629,Family Medicine,LT,3,2014,GME,> 4 months,5,5,5,1
+630,Family Medicine,LT,3,2016,GME,2-4 months,4,5,NA,1
+631,Gastroenterology (IM),CAPT or Flag,6,2013,CONUS MTF,> 4 months,5,5,4,1
+632,Internal Medicine (General),CDR,5,2016,CONUS MTF,2-4 months,3,4,4,1
+633,Pulmonary Critical Care (IM),CDR,5,2014,CONUS Operational,2-4 months,4,5,4,1
+634,Pulmonary Critical Care (IM),LT,3,2016,CONUS MTF,> 4 months,2,4,NA,NA
+635,Pulmonary Critical Care (IM),LCDR,4,2016,OCONUS MTF,2-4 months,5,5,4,1
+636,Pulmonary Critical Care (IM),CAPT or Flag,6,2016,CONUS MTF,< 2 months,5,NA,5,1
+637,Family Medicine,LCDR,4,2014,CONUS MTF,> 4 months,3,4,5,1
+638,Aerospace Medicine (Residency Trained Flight),LCDR,4,2014,GME,2-4 months,4,4,3,1
+639,Heme/Onc (IM),LCDR,4,2012,CONUS MTF,2-4 months,4,4,3,1
+640,Occupational Medicine,LCDR,4,2016,CONUS MTF,2-4 months,3,4,3,2
+1280,General Medical Officer,LT,3,2016,CONUS Operational,2-4 months,2,4,3,2
+643,Occupational Medicine,CDR,5,2016,CONUS MTF,2-4 months,3,3,NA,3
+644,Internal Medicine (General),LCDR,4,2012,CONUS MTF,2-4 months,2,2,3,2
+645,Occupational Medicine,LCDR,4,2016,CONUS MTF,> 4 months,1,2,5,3
+646,Occupational Medicine,Unknown,NA,2016,CONUS MTF,2-4 months,2,1,2,3
+647,NA,LCDR,4,2016,Other,2-4 months,1,1,1,1
+648,Occupational Medicine,CAPT or Flag,6,2015,Non-Operational/Non-Clinical,2-4 months,5,5,5,1
+649,Internal Medicine (General),LT,3,2016,CONUS MTF,NA,3,4,NA,2
+650,Occupational Medicine,LCDR,4,2015,CONUS MTF,2-4 months,2,2,2,NA
+651,Gastroenterology (IM),LCDR,4,2014,CONUS MTF,2-4 months,4,4,3,1
+652,Psychiatry,CDR,5,2016,CONUS MTF,> 4 months,1,4,1,1
+653,Pulmonary Critical Care (IM),CDR,5,2016,CONUS MTF,2-4 months,2,3,4,2
+654,Cardiology (IM),LCDR,4,2015,CONUS MTF,2-4 months,NA,NA,NA,2
+655,Family Medicine,LCDR,4,2014,Non-Operational/Non-Clinical,NA,5,5,4,1
+656,Family Medicine,LCDR,4,2015,GME,2-4 months,5,5,5,1
+657,Occupational Medicine,LCDR,4,2015,Non-Operational/Non-Clinical,2-4 months,1,1,1,NA
+658,Gastroenterology (IM),CDR,5,2014,Other,2-4 months,1,2,1,NA
+659,Occupational Medicine,CAPT or Flag,6,2015,CONUS MTF,< 2 months,1,1,1,NA
+660,Aerospace Medicine (Residency Trained Flight),CAPT or Flag,6,2014,CONUS Operational,2-4 months,5,5,4,1
+661,Family Medicine,CAPT or Flag,6,2016,Non-Operational/Non-Clinical,2-4 months,5,5,5,1
+1290,General Medical Officer,LT,3,2014,CONUS Operational,2-4 months,5,3,NA,1
+663,Family Medicine,LT,3,2016,GME,> 4 months,3,4,NA,NA
+664,Pulmonary Critical Care (IM),CDR,5,2015,CONUS Operational,< 2 months,2,2,NA,1
+665,Other,LT,3,2015,CONUS Operational,< 2 months,1,2,NA,NA
+1306,General Medical Officer,LT,3,2016,CONUS Operational,2-4 months,2,2,1,NA
+668,Radiology,CDR,5,2015,CONUS MTF,2-4 months,4,4,4,2
+669,Internal Medicine (General),LCDR,4,2016,CONUS MTF,< 2 months,3,5,3,1
+670,Family Medicine,CDR,5,2012,GME,> 4 months,5,5,3,1
+672,Pulmonary Critical Care (IM),CDR,5,2014,CONUS MTF,> 4 months,5,5,5,1
+673,Occupational Medicine,LCDR,4,2015,Non-Operational/Non-Clinical,2-4 months,1,4,NA,NA
+674,Occupational Medicine,LT,3,2015,CONUS Operational,< 2 months,3,4,3,3
+675,Occupational Medicine,CDR,5,2015,CONUS MTF,> 4 months,5,5,3,1
+676,Cardiology (IM),CDR,5,2015,CONUS MTF,> 4 months,5,5,5,1
+677,Cardiology (IM),CDR,5,2015,CONUS MTF,NA,5,5,5,1
+678,Physical Medicine and Rehabilitation,LCDR,4,2014,CONUS MTF,> 4 months,5,5,5,1
+679,Aerospace Medicine (Residency Trained Flight),LCDR,4,2015,CONUS Operational,< 2 months,5,3,3,1
+680,Occupational Medicine,CDR,5,2014,Non-Operational/Non-Clinical,2-4 months,3,4,3,1
+682,Dermatology,LCDR,4,2013,CONUS MTF,2-4 months,5,5,3,1
+683,Cardiology (IM),CDR,5,2012,CONUS MTF,2-4 months,3,3,3,1
+684,Occupational Medicine,CDR,5,2013,CONUS Operational,2-4 months,4,4,4,1
+686,Pediatrics,LT,3,2014,OCONUS MTF,2-4 months,3,3,1,3
+687,Pulmonary Critical Care (IM),LCDR,4,2013,CONUS MTF,2-4 months,5,3,4,1
+690,Radiology,CDR,5,2014,CONUS MTF,2-4 months,5,5,5,1
+692,Other,CAPT or Flag,6,2015,CONUS MTF,< 2 months,5,5,5,1
+693,Family Medicine,LCDR,4,2011,GME,2-4 months,1,4,4,1
+694,Gastroenterology (IM),LCDR,4,2015,CONUS MTF,2-4 months,3,3,NA,NA
+1313,General Medical Officer,LT,3,2015,CONUS Operational,> 4 months,3,2,2,NA
+696,Family Medicine,LT,3,2016,GME,> 4 months,4,4,NA,2
+697,Gastroenterology (IM),CDR,5,2016,CONUS MTF,2-4 months,3,2,3,NA
+698,Internal Medicine (General),LCDR,4,2014,CONUS MTF,< 2 months,2,2,2,5
+699,Gastroenterology (IM),CDR,5,2015,CONUS MTF,> 4 months,5,5,3,1
+700,Gastroenterology (IM),LCDR,4,2016,CONUS MTF,2-4 months,NA,NA,NA,NA
+1330,General Medical Officer,LCDR,4,2012,CONUS Operational,< 2 months,5,5,NA,1
+702,Cardiology (IM),LT,3,2014,CONUS MTF,2-4 months,NA,NA,NA,1
+703,Anesthesiology,LCDR,4,2014,CONUS MTF,2-4 months,2,3,2,5
+704,Emergency Medicine,LT,3,2015,CONUS MTF,2-4 months,4,5,3,1
+705,Psychiatry,LCDR,4,2014,OCONUS MTF,2-4 months,2,1,1,5
+706,General Surgery,CAPT or Flag,6,2015,CONUS Operational,2-4 months,5,5,5,1
+707,Pediatrics,LT,3,2015,OCONUS MTF,2-4 months,4,4,5,1
+708,Orthopedic Surgery,LCDR,4,2015,CONUS MTF,2-4 months,2,2,1,2
+709,Neonatology,CDR,5,2014,CONUS MTF,> 4 months,4,4,1,1
+710,Cardiology (IM),LCDR,4,2016,CONUS MTF,> 4 months,4,4,4,1
+711,Family Medicine,LT,3,2015,GME,2-4 months,4,4,4,1
+712,Internal Medicine (General),LCDR,4,2014,CONUS MTF,> 4 months,5,5,4,1
+713,Neonatology,LCDR,4,2015,CONUS MTF,> 4 months,1,3,4,1
+714,Dermatology,LCDR,4,2014,CONUS MTF,2-4 months,4,5,NA,1
+715,Family Medicine,LT,3,2016,GME,2-4 months,3,3,NA,1
+717,Orthopedic Surgery,LCDR,4,2016,GME,2-4 months,1,1,1,1
+718,Physical Medicine and Rehabilitation,LCDR,4,2014,CONUS MTF,> 4 months,5,5,NA,1
+1335,General Medical Officer,LT,3,2014,CONUS Operational,2-4 months,3,3,NA,NA
+720,Pulmonary Critical Care (IM),LCDR,4,2016,CONUS MTF,< 2 months,5,5,5,1
+721,Neonatology,LCDR,4,2014,CONUS MTF,2-4 months,NA,NA,NA,NA
+723,Psychiatry,LCDR,4,2016,CONUS Operational,< 2 months,3,1,NA,5
+724,Neurology,CAPT or Flag,6,2015,CONUS MTF,> 4 months,5,5,5,1
+725,Family Medicine,LT,3,2016,CONUS MTF,2-4 months,3,3,3,1
+726,Neurology,LCDR,4,2015,CONUS MTF,> 4 months,4,4,3,1
+727,Radiology,CDR,5,2015,CONUS MTF,< 2 months,5,5,3,1
+728,Neurology,CDR,5,2016,CONUS MTF,< 2 months,5,5,4,1
+729,Neurology,LCDR,4,2012,CONUS MTF,2-4 months,1,2,4,2
+730,Preventive Medicine,CDR,5,2015,CONUS MTF,2-4 months,5,4,NA,NA
+731,General Surgery,LT,3,NA,GME,NA,5,5,NA,2
+29,Resident,LCDR,4,2013,NA,> 4 months,2,3,5,1
+782,Emergency Medicine,LT,3,2016,CONUS MTF,2-4 months,3,4,4,1
+48,Resident,LT,3,2016,CONUS MTF,2-4 months,2,4,4,2
+792,Internal Medicine (General),LT,3,2016,CONUS MTF,NA,NA,NA,NA,NA
+804,Neurology,LCDR,4,2014,CONUS MTF,2-4 months,4,5,4,NA
+1155,Infectious Disease (IM),CAPT or Flag,6,2014,Other,< 2 months,5,5,3,1
+802,Neurology,CDR,5,2014,CONUS MTF,2-4 months,4,5,3,1
+811,Orthopedic Surgery,LT,3,NA,GME,NA,3,NA,NA,3
+757,Resident,LT,3,NA,NA,NA,NA,NA,NA,NA
+833,Neurology,CAPT or Flag,6,2015,CONUS MTF,2-4 months,4,5,4,1
+838,Gastroenterology (IM),CDR,5,2014,CONUS MTF,2-4 months,5,5,5,1
+845,Pediatrics,LT,3,2016,GME,2-4 months,NA,NA,NA,NA
+1175,Other,CDR,5,2016,Other,> 4 months,5,5,5,1
+863,Family Medicine,LT,3,2015,CONUS MTF,2-4 months,3,3,NA,1
+873,Family Medicine,LT,3,2014,GME,< 2 months,NA,1,NA,2
+877,Family Medicine,LT,3,2016,GME,NA,NA,NA,NA,NA
+888,Anesthesiology,LT,3,2014,GME,NA,NA,NA,NA,NA
+892,Neurology,LCDR,4,2014,OCONUS MTF,> 4 months,3,5,3,2
+893,Psychiatry,CDR,5,2015,CONUS MTF,2-4 months,4,4,3,2
+896,Internal Medicine (General),LT,3,2016,GME,2-4 months,NA,NA,NA,NA
+898,Psychiatry,LT,3,2016,GME,< 2 months,NA,NA,NA,NA
+906,Urology,LCDR,4,2012,GME,> 4 months,3,3,3,1
+908,Orthopedic Surgery,LCDR,4,2012,GME,NA,3,3,3,1
+909,Infectious Disease (IM),CDR,5,2014,CONUS MTF,2-4 months,4,4,NA,1
+910,General Surgery,LT,3,2014,GME,< 2 months,NA,NA,NA,NA
+60,Resident,LT,3,2016,GME,NA,3,4,4,1
+929,Emergency Medicine,LT,3,2016,CONUS MTF,< 2 months,NA,NA,NA,NA
+84,Resident,LCDR,4,2014,GME,2-4 months,NA,NA,NA,1
+944,Neurology,LCDR,4,2015,CONUS MTF,2-4 months,5,5,5,2
+950,Neurology,CDR,5,2013,CONUS MTF,2-4 months,4,5,5,1
+958,Family Medicine,LCDR,4,2015,CONUS Operational,2-4 months,5,1,1,NA
+959,Psychiatry,CAPT or Flag,6,2016,Non-Operational/Non-Clinical,> 4 months,5,5,4,1
+961,Neurology,LT,3,2015,GME,2-4 months,5,5,NA,1
+118,Resident,LCDR,4,2014,GME,2-4 months,3,3,4,2
+971,General Surgery,LT,3,2015,GME,2-4 months,1,2,NA,3
+980,Psychiatry,LT,3,2016,GME,> 4 months,3,5,5,1
+981,Neurology,LCDR,4,2015,CONUS MTF,2-4 months,5,5,5,2
+983,Neurology,CDR,5,2013,CONUS MTF,2-4 months,4,4,3,1
+986,General Surgery,LCDR,4,NA,CONUS Operational,NA,NA,NA,NA,NA
+992,Aerospace Medicine (Residency Trained Flight),LCDR,4,2016,CONUS MTF,2-4 months,4,4,4,1
+128,Resident,LT,3,2016,GME,< 2 months,5,3,NA,1
+1002,Pulmonary Critical Care (IM),LT,3,2016,CONUS MTF,< 2 months,3,3,5,1
+138,Resident,LT,3,NA,GME,NA,NA,NA,NA,NA
+1013,Family Medicine,LCDR,4,NA,GME,NA,NA,NA,NA,NA
+1017,Family Medicine,LT,3,2014,CONUS MTF,2-4 months,3,4,3,NA
+1020,Neurology,LT,3,2016,GME,2-4 months,4,4,5,1
+1025,Internal Medicine (General),LCDR,4,2015,CONUS MTF,2-4 months,4,5,NA,1
+1027,OB/GYN,CAPT or Flag,6,2016,OCONUS MTF,2-4 months,5,4,5,NA
+1029,Ophthalmology,CDR,5,2015,CONUS MTF,< 2 months,1,5,2,1
+1031,Gastroenterology (IM),LCDR,4,2016,GME,> 4 months,3,4,3,1
+1032,OB/GYN,CDR,5,2016,OCONUS MTF,2-4 months,4,4,3,3
+1035,Family Medicine,LCDR,4,2015,CONUS MTF,> 4 months,5,5,5,1
+1038,Family Medicine,LT,3,2016,CONUS Operational,2-4 months,1,3,NA,NA
+1039,Internal Medicine (General),LT,3,2015,OCONUS MTF,< 2 months,4,3,5,1
+146,Resident,LT,3,2015,CONUS MTF,2-4 months,3,4,5,1
+1041,Pediatrics,LT,3,2016,GME,2-4 months,4,5,NA,NA
+1042,Cardiology (IM),CDR,5,2016,CONUS Operational,< 2 months,NA,NA,NA,NA
+1043,Preventive Medicine,LCDR,4,2015,OCONUS MTF,> 4 months,4,5,4,2
+1047,Radiology,LCDR,4,2014,CONUS MTF,> 4 months,4,5,1,1
+1048,Family Medicine,CAPT or Flag,6,2015,CONUS Operational,2-4 months,4,4,4,1
+1049,Neurology,CDR,5,2015,GME,2-4 months,3,3,5,1
+1050,Occupational Medicine,CAPT or Flag,6,2013,CONUS MTF,> 4 months,5,5,4,1
+1053,Radiology,CDR,5,2014,CONUS MTF,NA,5,5,2,1
+979,Resident,Unknown,NA,2014,NA,NA,NA,NA,NA,NA
+240,Resident,LCDR,4,2015,GME,2-4 months,3,4,2,2
+267,Resident,LCDR,4,2013,CONUS MTF,> 4 months,NA,NA,NA,NA
+1062,Emergency Medicine,LCDR,4,2014,CONUS MTF,2-4 months,1,1,1,1
+273,Resident,LCDR,4,2013,CONUS MTF,2-4 months,1,1,1,1
+286,Resident,LT,3,2016,GME,2-4 months,3,3,5,1
+311,Resident,LT,3,2016,GME,< 2 months,3,2,NA,1
+1066,Gastroenterology (IM),LCDR,4,2014,CONUS MTF,NA,3,4,3,1
+334,Resident,LT,3,2015,GME,2-4 months,5,5,5,1
+1068,Emergency Medicine,CAPT or Flag,6,2016,CONUS Operational,2-4 months,5,5,5,1
+363,Resident,LCDR,4,2014,GME,< 2 months,NA,NA,1,1
+367,Resident,LCDR,4,2015,GME,2-4 months,3,3,2,1
+1072,Family Medicine,LCDR,4,2016,CONUS MTF,> 4 months,5,5,4,1
+1074,Other,CAPT or Flag,6,2009,CONUS MTF,2-4 months,5,5,5,2
+373,Resident,LCDR,4,2015,CONUS MTF,2-4 months,2,2,3,1
+378,Resident,LT,3,2016,CONUS MTF,2-4 months,3,3,4,1
+1077,Family Medicine,LT,3,2014,GME,NA,NA,NA,NA,NA
+1078,Emergency Medicine,CAPT or Flag,6,2015,CONUS MTF,2-4 months,4,5,2,1
+1080,Neurology,LT,3,2016,GME,< 2 months,NA,3,NA,1
+1083,Internal Medicine (General),CDR,5,2015,CONUS Operational,< 2 months,2,4,3,2
+1086,Cardiology (IM),LCDR,4,2015,CONUS MTF,2-4 months,5,5,4,2
+1089,Pediatrics,CDR,5,2014,CONUS MTF,> 4 months,4,4,2,1
+1092,Neurology,LT,3,2015,CONUS MTF,2-4 months,5,5,4,1
+387,Resident,LCDR,4,2015,GME,2-4 months,3,3,3,2
+408,Resident,LT,3,2015,GME,2-4 months,4,4,NA,1
+1096,Pediatrics,LCDR,4,2016,CONUS MTF,< 2 months,4,3,5,1
+1097,Radiology,CDR,5,2015,CONUS MTF,> 4 months,5,5,5,1
+1099,Psychiatry,LT,3,2014,GME,2-4 months,3,5,NA,1
+1100,Pediatrics,LCDR,4,2016,CONUS MTF,< 2 months,4,4,5,1
+1101,Psychiatry,LCDR,4,2014,GME,> 4 months,5,5,5,1
+409,Resident,LT,3,2016,GME,< 2 months,1,1,NA,1
+438,Resident,LT,3,2015,CONUS MTF,2-4 months,2,3,NA,3
+474,Resident,LCDR,4,2015,GME,2-4 months,5,5,5,1
+1108,Internal Medicine (General),LCDR,4,2015,OCONUS MTF,< 2 months,5,3,4,NA
+1112,Ophthalmology,LT,3,2016,GME,> 4 months,2,2,NA,NA
+1113,Infectious Disease (IM),CAPT or Flag,6,2016,Non-Operational/Non-Clinical,2-4 months,4,5,4,1
+1114,Radiation Oncology,CAPT or Flag,6,NA,CONUS MTF,2-4 months,5,5,5,1
+1115,Endocrinology (IM),CDR,5,2013,CONUS MTF,2-4 months,4,5,2,1
+1116,Endocrinology (IM),CDR,5,2015,CONUS MTF,< 2 months,5,5,5,1
+1117,Otolaryngology,LCDR,4,2014,CONUS MTF,2-4 months,2,5,NA,1
+1118,Otolaryngology,LCDR,4,2014,CONUS MTF,2-4 months,4,4,2,2
+1119,Otolaryngology,CDR,5,2011,CONUS MTF,2-4 months,5,5,5,1
+1120,Radiation Oncology,LCDR,4,2015,CONUS MTF,< 2 months,3,3,3,1
+1121,Otolaryngology,LCDR,4,2016,CONUS MTF,< 2 months,5,5,3,1
+1122,Otolaryngology,LCDR,4,2014,CONUS MTF,2-4 months,5,4,5,NA
+1123,Otolaryngology,CAPT or Flag,6,2014,CONUS MTF,> 4 months,5,5,3,1
+1124,Otolaryngology,LCDR,4,2016,CONUS MTF,2-4 months,4,4,2,1
+1125,Radiation Oncology,LCDR,4,2015,CONUS MTF,> 4 months,4,4,5,2
+1126,Ophthalmology,CAPT or Flag,6,2014,CONUS MTF,NA,5,5,5,1
+501,Resident,LT,3,2016,GME,2-4 months,NA,NA,NA,NA
+1128,Ophthalmology,CAPT or Flag,6,2010,CONUS MTF,2-4 months,5,5,4,1
+1129,Ophthalmology,CDR,5,2014,GME,< 2 months,2,1,3,1
+1130,Endocrinology (IM),LCDR,4,2016,OCONUS Operational,> 4 months,5,5,5,1
+1131,Heme/Onc (IM),LCDR,4,2012,CONUS MTF,2-4 months,4,4,5,1
+1132,Ophthalmology,CDR,5,2015,OCONUS MTF,2-4 months,4,4,3,1
+1133,Otolaryngology,CAPT or Flag,6,2013,CONUS MTF,< 2 months,5,5,5,1
+1134,Emergency Medicine,LT,3,2013,GME,2-4 months,5,5,5,1
+1135,Emergency Medicine,LCDR,4,2016,CONUS MTF,2-4 months,4,4,2,2
+1136,Otolaryngology,CDR,5,2015,CONUS MTF,2-4 months,5,5,3,1
+1137,Radiation Oncology,LCDR,4,2015,CONUS MTF,> 4 months,5,5,5,1
+1138,Ophthalmology,CDR,5,2011,CONUS MTF,2-4 months,4,4,4,1
+1139,Otolaryngology,LCDR,4,2015,CONUS MTF,> 4 months,5,5,5,1
+531,Resident,LT,3,2015,CONUS MTF,< 2 months,3,4,3,1
+1142,Otolaryngology,LCDR,4,2015,CONUS MTF,> 4 months,5,5,4,1
+1143,Otolaryngology,CAPT or Flag,6,2014,CONUS MTF,NA,5,5,5,1
+1144,Emergency Medicine,LCDR,4,2014,CONUS MTF,2-4 months,1,2,2,2
+1145,Otolaryngology,CDR,5,2011,CONUS MTF,2-4 months,3,3,4,NA
+1146,Ophthalmology,CDR,5,2014,CONUS MTF,2-4 months,5,5,3,1
+1147,Otolaryngology,LCDR,4,2015,CONUS MTF,2-4 months,2,4,3,2
+1148,Endocrinology (IM),LCDR,4,2015,CONUS MTF,2-4 months,5,5,NA,1
+1150,Neurosurgery,LCDR,4,2014,CONUS MTF,NA,5,5,5,1
+1151,Neurosurgery,LCDR,4,2015,CONUS MTF,2-4 months,3,3,5,1
+1153,Infectious Disease (IM),CAPT or Flag,6,2015,GME,2-4 months,1,1,3,2
+1156,Emergency Medicine,CAPT or Flag,6,2015,CONUS MTF,2-4 months,NA,NA,NA,NA
+1157,Radiation Oncology,LCDR,4,2014,GME,2-4 months,5,5,5,1
+539,Resident,LT,3,2014,GME,2-4 months,1,NA,2,1
+1159,Emergency Medicine,LCDR,4,2014,CONUS MTF,2-4 months,NA,NA,NA,NA
+1160,Neurosurgery,LCDR,4,2015,OCONUS MTF,2-4 months,5,5,4,3
+1163,Neurosurgery,LCDR,4,2013,CONUS MTF,< 2 months,NA,NA,NA,1
+1164,Otolaryngology,CDR,5,2016,OCONUS MTF,2-4 months,5,4,5,1
+1166,Neurosurgery,CAPT or Flag,6,2014,GME,2-4 months,5,5,1,1
+1167,Psychiatry,CAPT or Flag,6,2016,CONUS MTF,2-4 months,5,5,NA,1
+1168,OB/GYN,LCDR,4,2015,OCONUS MTF,2-4 months,5,5,5,1
+1169,Infectious Disease (IM),CAPT or Flag,6,2014,CONUS MTF,2-4 months,4,5,1,1
+1170,Emergency Medicine,LCDR,4,2016,CONUS Operational,2-4 months,5,5,5,1
+540,Resident,LT,3,2016,CONUS MTF,2-4 months,NA,NA,NA,NA
+1172,Otolaryngology,CAPT or Flag,6,2015,CONUS MTF,> 4 months,4,4,1,1
+1173,Pediatrics,LT,3,2016,CONUS MTF,2-4 months,2,3,1,1
+1174,Infectious Disease (IM),CAPT or Flag,6,2016,Non-Operational/Non-Clinical,< 2 months,2,4,2,1
+574,Resident,LT,3,2014,GME,2-4 months,4,4,NA,1
+1180,Ophthalmology,LCDR,4,2015,OCONUS MTF,2-4 months,1,1,1,5
+1181,Family Medicine,CAPT or Flag,6,2016,OCONUS Operational,2-4 months,2,3,3,NA
+1182,Heme/Onc (IM),CAPT or Flag,6,2006,CONUS MTF,< 2 months,5,5,1,1
+1183,Family Medicine,CAPT or Flag,6,2016,OCONUS MTF,2-4 months,NA,NA,NA,NA
+1184,OB/GYN,LCDR,4,2016,OCONUS MTF,2-4 months,5,4,5,1
+1185,Family Medicine,LCDR,4,2014,OCONUS MTF,> 4 months,3,5,2,2
+1186,Infectious Disease (IM),LCDR,4,2016,Non-Operational/Non-Clinical,> 4 months,4,3,4,2
+1187,Otolaryngology,CDR,5,2012,CONUS MTF,> 4 months,4,4,3,1
+1188,Family Medicine,LCDR,4,2013,OCONUS MTF,2-4 months,5,5,5,1
+1189,Neurosurgery,LCDR,4,2015,CONUS MTF,< 2 months,4,2,2,1
+1190,Neurosurgery,LCDR,4,2016,CONUS MTF,2-4 months,3,2,3,NA
+577,Resident,LT,3,2014,GME,2-4 months,5,5,3,1
+1192,Emergency Medicine,CAPT or Flag,6,2015,CONUS Operational,2-4 months,5,3,5,1
+579,Resident,LCDR,4,2016,CONUS Operational,2-4 months,5,5,5,1
+624,Resident,LT,3,2015,GME,2-4 months,5,5,4,1
+642,Resident,LCDR,4,2015,GME,2-4 months,4,NA,3,NA
+1196,Psychiatry,LCDR,4,2013,CONUS MTF,2-4 months,4,4,4,NA
+1197,Otolaryngology,CDR,5,2015,CONUS MTF,2-4 months,5,5,4,2
+1198,Neurosurgery,LCDR,4,2015,CONUS MTF,2-4 months,3,4,5,1
+807,Resident,LCDR,4,2014,GME,> 4 months,4,4,4,NA
+786,Resident,LT,3,2016,GME,> 4 months,1,2,3,2
+1202,Neurosurgery,LCDR,4,2014,CONUS MTF,2-4 months,1,3,1,3
+1203,OB/GYN,CAPT or Flag,6,2015,CONUS MTF,2-4 months,5,5,4,1
+1204,OB/GYN,LCDR,4,2016,CONUS MTF,2-4 months,4,4,4,3
+822,Resident,LT,3,2014,GME,2-4 months,4,4,4,1
+1206,OB/GYN,CDR,5,2014,CONUS MTF,2-4 months,5,5,5,1
+1207,OB/GYN,CDR,5,2016,CONUS MTF,2-4 months,4,4,3,2
+1208,OB/GYN,LT,3,2014,GME,> 4 months,5,4,NA,1
+1209,OB/GYN,CDR,5,2014,CONUS MTF,2-4 months,5,4,1,1
+1210,OB/GYN,CDR,5,NA,CONUS MTF,< 2 months,5,5,5,2
+1211,OB/GYN,CDR,5,2016,CONUS MTF,< 2 months,3,4,3,1
+917,Resident,LT,3,2014,Non-Operational/Non-Clinical,NA,NA,NA,NA,NA
+1213,OB/GYN,LCDR,4,2014,CONUS MTF,2-4 months,5,5,3,1
+1214,OB/GYN,CAPT or Flag,6,2016,Non-Operational/Non-Clinical,< 2 months,5,4,3,NA
+1215,OB/GYN,CDR,5,2015,CONUS Operational,2-4 months,5,5,3,1
+1216,OB/GYN,LT,3,2016,CONUS MTF,2-4 months,4,2,NA,5
+936,Resident,LT,3,2016,GME,NA,NA,NA,NA,4
+1218,OB/GYN,CDR,5,2015,CONUS MTF,< 2 months,2,4,3,1
+1219,OB/GYN,LCDR,4,2014,CONUS MTF,2-4 months,5,5,5,1
+966,Resident,LT,3,2016,GME,NA,NA,NA,NA,NA
+1221,OB/GYN,LCDR,4,2015,CONUS MTF,> 4 months,5,5,5,5
+1010,Resident,LT,3,2016,GME,2-4 months,NA,NA,NA,NA
+1223,OB/GYN,CAPT or Flag,6,2014,Non-Operational/Non-Clinical,< 2 months,NA,4,2,3
+1224,OB/GYN,LT,3,2016,GME,2-4 months,2,4,NA,1
+1225,OB/GYN,LT,3,2013,CONUS MTF,2-4 months,4,3,3,1
+1226,Infectious Disease (IM),CAPT or Flag,6,2013,Non-Operational/Non-Clinical,2-4 months,5,5,3,1
+1227,OB/GYN,LCDR,4,2016,CONUS MTF,< 2 months,2,1,4,1
+1228,OB/GYN,CAPT or Flag,6,2013,CONUS MTF,2-4 months,1,1,4,1
+1229,OB/GYN,LT,3,2014,GME,> 4 months,5,5,1,1
+1230,Neurosurgery,LCDR,4,2014,CONUS MTF,2-4 months,3,3,3,1
+1231,OB/GYN,LCDR,4,2016,CONUS MTF,2-4 months,5,5,5,1
+1232,Otolaryngology,LCDR,4,2015,CONUS MTF,2-4 months,2,3,5,1
+1233,Neurosurgery,CDR,5,2015,CONUS MTF,2-4 months,5,5,5,1
+1058,Resident,LT,3,2013,GME,2-4 months,NA,NA,NA,NA
+1060,Resident,LT,3,NA,GME,NA,NA,NA,NA,NA
+1236,OB/GYN,CAPT or Flag,6,2011,CONUS MTF,NA,5,5,5,1
+1237,OB/GYN,LT,3,2014,CONUS MTF,> 4 months,NA,NA,NA,NA
+1238,OB/GYN,CDR,5,2016,CONUS MTF,< 2 months,3,3,3,2
+1239,OB/GYN,CDR,5,2016,OCONUS MTF,2-4 months,2,1,2,5
+1240,Dermatology,CDR,5,2014,CONUS MTF,> 4 months,5,5,4,1
+1241,OB/GYN,CDR,5,2016,CONUS MTF,< 2 months,5,5,NA,1
+1242,OB/GYN,CDR,5,2015,CONUS Operational,2-4 months,5,1,2,5
+1243,Otolaryngology,CDR,5,2015,CONUS MTF,2-4 months,4,5,5,1
+1245,OB/GYN,LT,3,2016,CONUS MTF,> 4 months,3,4,5,1
+1246,OB/GYN,LCDR,4,2015,OCONUS MTF,> 4 months,4,4,4,1
+1061,Resident,LT,3,2012,GME,> 4 months,NA,NA,NA,1
+1248,OB/GYN,LT,3,2016,GME,2-4 months,NA,NA,NA,NA
+1249,Internal Medicine (General),LT,3,2016,GME,2-4 months,4,4,NA,1
+1250,OB/GYN,CDR,5,2016,OCONUS Operational,< 2 months,5,3,1,1
+1252,Pathology,CAPT or Flag,6,2015,CONUS Operational,2-4 months,5,5,4,1
+1102,Resident,LCDR,4,2014,CONUS MTF,2-4 months,4,5,4,1
+1254,Otolaryngology,LCDR,4,2014,OCONUS MTF,2-4 months,2,3,4,NA
+1255,OB/GYN,LCDR,4,2015,OCONUS MTF,2-4 months,5,4,5,4
+1257,OB/GYN,LCDR,4,2014,CONUS MTF,2-4 months,2,2,3,5
+1258,Pulmonary Critical Care (IM),LCDR,4,2016,OCONUS MTF,2-4 months,4,4,NA,1
+1259,Emergency Medicine,LCDR,4,2014,CONUS MTF,2-4 months,5,5,NA,1
+1260,OB/GYN,LCDR,4,2016,OCONUS MTF,2-4 months,3,3,3,4
+1261,OB/GYN,LCDR,4,2016,CONUS MTF,NA,4,3,4,1
+1127,Resident,LT,3,2015,CONUS MTF,2-4 months,NA,NA,NA,1
+1141,Resident,LT,3,2015,GME,2-4 months,5,5,NA,1
+1158,Resident,LCDR,4,2014,CONUS MTF,2-4 months,2,3,5,2
+1266,Aerospace Medicine (Residency Trained Flight),CAPT or Flag,6,2013,Non-Operational/Non-Clinical,2-4 months,5,5,5,1
+1267,OB/GYN,LCDR,4,2015,CONUS MTF,2-4 months,5,5,5,2
+1268,Ophthalmology,CDR,5,2016,OCONUS MTF,2-4 months,5,5,3,1
+1179,Resident,LT,3,2016,GME,> 4 months,3,3,NA,1
+1205,Resident,LT,3,2016,CONUS MTF,< 2 months,2,NA,NA,1
+1271,Occupational Medicine,LCDR,4,2016,OCONUS MTF,2-4 months,2,3,NA,1
+1217,Resident,LT,3,2016,GME,2-4 months,2,3,2,1
+1273,Aerospace Medicine (Residency Trained Flight),CAPT or Flag,6,2015,CONUS Operational,2-4 months,5,5,3,1
+1274,OB/GYN,LT,3,2015,CONUS MTF,2-4 months,5,5,5,2
+1234,Resident,LT,3,2014,CONUS MTF,2-4 months,NA,NA,NA,NA
+1276,Neurosurgery,CAPT or Flag,6,2013,CONUS MTF,> 4 months,5,5,5,1
+1320,Resident,LCDR,4,2014,GME,2-4 months,3,4,5,1
+1279,Psychiatry,LCDR,4,2016,CONUS Operational,2-4 months,4,3,4,2
+97,Undersea Medicine,LT,3,2016,OCONUS Operational,< 2 months,2,2,NA,2
+1282,OB/GYN,CDR,5,2015,CONUS MTF,NA,5,5,5,1
+1283,OB/GYN,LT,3,2015,GME,2-4 months,4,5,3,1
+1284,OB/GYN,LCDR,4,2015,CONUS MTF,2-4 months,5,5,4,1
+103,Undersea Medicine,LT,3,2015,CONUS Operational,< 2 months,2,5,4,1
+1287,Family Medicine,CAPT or Flag,6,2016,OCONUS Operational,< 2 months,1,5,1,2
+1288,OB/GYN,LT,3,2016,GME,2-4 months,4,4,3,2
+1289,Family Medicine,CAPT or Flag,6,2015,CONUS Operational,2-4 months,3,3,3,2
+239,Undersea Medicine,CAPT or Flag,6,2014,OCONUS Operational,2-4 months,2,2,2,NA
+1292,OB/GYN,LCDR,4,2014,CONUS MTF,2-4 months,2,3,2,3
+1293,Neurosurgery,CDR,5,2016,CONUS MTF,2-4 months,5,5,5,1
+1295,Otolaryngology,CDR,5,2016,CONUS MTF,2-4 months,4,4,2,2
+1296,Other,CAPT or Flag,6,2013,OCONUS Operational,> 4 months,NA,NA,NA,NA
+1297,Radiology,CAPT or Flag,6,2015,CONUS Operational,< 2 months,3,3,3,1
+1298,OB/GYN,CAPT or Flag,6,2014,CONUS MTF,> 4 months,3,3,NA,1
+1300,Cardiology (IM),CDR,5,2014,CONUS MTF,NA,1,3,4,1
+1301,Psychiatry,LT,3,2016,CONUS MTF,> 4 months,2,1,2,NA
+1302,Family Medicine,CDR,5,2016,OCONUS Operational,2-4 months,4,3,3,NA
+1303,Aerospace Medicine (Residency Trained Flight),LCDR,4,2016,OCONUS Operational,2-4 months,1,1,1,NA
+1304,Family Medicine,LT,3,2016,CONUS Operational,2-4 months,2,3,NA,NA
+1305,Family Medicine,CDR,5,2016,Non-Operational/Non-Clinical,2-4 months,2,2,3,1
+343,Undersea Medicine,LT,3,2015,OCONUS Operational,< 2 months,2,2,4,1
+435,Undersea Medicine,CAPT or Flag,6,2015,Non-Operational/Non-Clinical,> 4 months,3,2,4,1
+1308,Endocrinology (IM),CDR,5,2015,CONUS MTF,2-4 months,4,5,5,1
+1309,OB/GYN,CAPT or Flag,6,2007,CONUS MTF,NA,5,5,NA,1
+1311,Family Medicine,CDR,5,2014,OCONUS MTF,> 4 months,4,5,3,1
+1063,Undersea Medicine,LCDR,4,2014,CONUS Operational,> 4 months,5,5,5,1
+1314,OB/GYN,LCDR,4,2015,CONUS MTF,2-4 months,4,5,5,1
+1315,Internal Medicine (General),LT,3,2015,OCONUS MTF,< 2 months,2,4,3,NA
+1316,Internal Medicine (General),LT,3,2014,OCONUS MTF,2-4 months,3,4,2,1
+1317,Psychiatry,LCDR,4,2015,CONUS MTF,2-4 months,4,3,4,1
+1318,Cardiothoracic Surgery,CDR,5,2013,CONUS MTF,> 4 months,3,4,5,1
+1064,Undersea Medicine,LT,3,2015,CONUS Operational,< 2 months,NA,NA,NA,NA
+1321,Otolaryngology,LCDR,4,2016,CONUS MTF,2-4 months,5,4,3,2
+1322,Otolaryngology,LCDR,4,2016,CONUS MTF,2-4 months,3,3,3,2
+1323,Otolaryngology,LCDR,4,2016,OCONUS MTF,2-4 months,3,3,3,1
+1325,Family Medicine,LT,3,2016,GME,2-4 months,4,4,NA,1
+1326,Anesthesiology,CDR,5,2013,Non-Operational/Non-Clinical,2-4 months,1,1,1,NA
+1327,Otolaryngology,LCDR,4,2016,CONUS MTF,2-4 months,4,4,3,1
+1067,Undersea Medicine,LT,3,2015,CONUS MTF,< 2 months,1,1,3,NA
+1331,Family Medicine,LT,3,2016,CONUS Operational,> 4 months,NA,NA,NA,NA
+1332,Emergency Medicine,LCDR,4,2015,CONUS MTF,2-4 months,4,5,2,NA
+1333,Neurosurgery,CDR,5,2011,CONUS MTF,2-4 months,3,3,4,1
+1334,Cardiothoracic Surgery,CDR,5,2015,CONUS MTF,> 4 months,1,3,2,1
+1069,Undersea Medicine,LT,3,2014,Non-Operational/Non-Clinical,< 2 months,1,1,4,5
+1336,Pediatrics,LT,3,2014,GME,2-4 months,2,4,NA,1
+1337,Infectious Disease (IM),CDR,5,2012,CONUS MTF,2-4 months,3,3,5,1
+1338,Neurosurgery,LCDR,4,2012,GME,> 4 months,NA,NA,NA,1
+1339,Family Medicine,CDR,5,2015,OCONUS MTF,< 2 months,1,1,NA,NA
+1340,Emergency Medicine,LCDR,4,2016,OCONUS MTF,2-4 months,4,5,3,1
+1341,Family Medicine,LCDR,4,2013,CONUS Operational,2-4 months,4,4,4,1
+1342,Gastroenterology (IM),CDR,5,2015,CONUS MTF,> 4 months,NA,3,1,1
+1343,Ophthalmology,CAPT or Flag,6,2016,CONUS Operational,< 2 months,1,1,1,5
+1344,OB/GYN,LCDR,4,2014,OCONUS MTF,2-4 months,1,3,3,NA
+1345,Otolaryngology,LCDR,4,2015,OCONUS MTF,2-4 months,2,2,3,5
+1346,Infectious Disease (IM),CDR,5,2015,CONUS MTF,> 4 months,5,4,5,2
+1348,OB/GYN,LCDR,4,2015,GME,2-4 months,NA,NA,NA,NA
+1350,Ophthalmology,CAPT or Flag,6,2015,OCONUS MTF,2-4 months,2,5,3,5
+1352,Cardiothoracic Surgery,CDR,5,2013,CONUS MTF,2-4 months,5,5,5,2
+1353,Otolaryngology,LT,3,2016,CONUS MTF,2-4 months,5,4,5,1
+1354,Physical Medicine and Rehabilitation,LCDR,4,2015,CONUS MTF,> 4 months,5,5,5,1
+1356,General Surgery,CAPT or Flag,6,2014,CONUS Operational,2-4 months,4,4,3,2
+1357,Family Medicine,LCDR,4,2014,GME,< 2 months,4,3,2,1
+1358,OB/GYN,LCDR,4,2014,CONUS Operational,2-4 months,5,3,4,5
+1359,General Surgery,CDR,5,2016,CONUS Operational,2-4 months,2,3,2,1
+1070,Undersea Medicine,LT,3,2015,CONUS Operational,< 2 months,NA,NA,NA,NA
+1076,Undersea Medicine,CAPT or Flag,6,2015,CONUS Operational,2-4 months,4,5,4,1
+1362,Pediatrics,LT,3,2014,CONUS MTF,> 4 months,2,3,2,5
+1272,Undersea Medicine,LT,3,2016,CONUS Operational,< 2 months,3,5,NA,1
+1364,Internal Medicine (General),LCDR,4,2016,CONUS MTF,< 2 months,1,2,1,2
+1365,Pathology,LCDR,4,2014,CONUS MTF,2-4 months,4,NA,5,1
+1366,OB/GYN,LCDR,4,2014,CONUS MTF,2-4 months,4,5,5,1
+1368,General Surgery,LCDR,4,2016,OCONUS MTF,2-4 months,5,5,NA,1
