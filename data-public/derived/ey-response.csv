@@ -1,0 +1,985 @@
+response_id,primary_specialty,officer_rank,year_executed_order,billet_current,order_lag_in_months,transparency_rank,satistfaction_rank,favoritism_rank,assignment_current,geographic_preference,career_path,doctor_as_detailer,homestead_length_in_years,homestead_problem,match_desirability,match_month,assignment_preference,officer_rank_preference
+15,Emergency Medicine,CDR,2015,Non-Operational/Non-Clinical,2-4 months,3,4,3,1st choice,Southern California,Academic Medicine,Yes,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,No
+20,Allergy/Immunology,CDR,NA,CONUS MTF,2-4 months,5,5,5,2nd choice,Southern California,Executive Medicine,Do not care,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Feb-17,No,Yes
+21,NA,NA,NA,NA,NA,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+18,OB/GYN,CAPT or Flag,2016,Non-Operational/Non-Clinical,2-4 months,NA,2,1,> 4th choice,Europe,Executive Medicine,No,2 tours (~6 years),No,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+19,Emergency Medicine,CDR,2016,CONUS MTF,> 4 months,5,5,4,1st choice,Northeast,Executive Medicine,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+33,Emergency Medicine,LCDR,NA,NA,2-4 months,3,3,2,2nd choice,Southern California,NA,No,2 tours (~6 years),Yes,NA,Jan-17,Yes,Yes
+38,Ophthalmology,LCDR,NA,CONUS MTF,NA,4,4,3,Other,"Southeast (North Carolina, Florida)",Executive Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,NA,No
+45,Anesthesiology,LCDR,NA,CONUS MTF,> 4 months,3,4,2,1st choice,Southern California,Academic Medicine,Do not care,Other,Other,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,NA
+23,Family Medicine,LT,2016,OCONUS MTF,NA,2,3,4,1st choice,"Southeast (North Carolina, Florida)",Mixed,Do not care,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+24,Pathology,CDR,2015,CONUS MTF,2-4 months,4,5,4,1st choice,Europe,Academic Medicine,Do not care,2 tours (~6 years),Other,Status Quo: Detailer and Specialty Leader decide,Jan-17,No,Yes
+25,Aviation Medicine (Flight Surgery GMO),LT,2015,CONUS Operational,NA,4,3,3,1st choice,Pacific Northwest,Academic Medicine,Do not care,4 tours (~12 years),No,Something similar to the National Residency Match Program,Aug-16,No,No
+26,Pathology,CDR,2015,OCONUS MTF,2-4 months,2,3,3,1st choice,Europe,Mixed,No,4 tours (~12 years),Other,Something similar to the National Residency Match Program,Dec-16,NA,NA
+27,Emergency Medicine,LCDR,2015,GME,2-4 months,4,4,1,2nd choice,Europe,Operational Medicine,No,1 tour (~3 years),Yes,Other,Jan-17,Yes,Yes
+28,Family Medicine,LCDR,2014,CONUS Operational,> 4 months,4,5,4,1st choice,Europe,Executive Medicine,No,1 tour (~3 years),Yes,Status Quo: Detailer and Specialty Leader decide,Oct-16,Yes,Yes
+57,Aviation Medicine (Flight Surgery GMO),LCDR,2014,Non-Operational/Non-Clinical,NA,2,1,NA,> 4th choice,"Pacific (Hawaii, Guam, Japan)",Operational Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,No
+30,Family Medicine,LCDR,2014,CONUS MTF,2-4 months,4,4,NA,1st choice,"Southeast (North Carolina, Florida)",Mixed,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+49,Family Medicine,CDR,NA,CONUS MTF,> 4 months,5,5,5,Other,Southern California,Mixed,Yes,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+32,Pediatrics,LT,2016,CONUS MTF,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+34,Pediatrics,LCDR,2013,CONUS MTF,2-4 months,4,5,5,1st choice,Southern California,Executive Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+35,Anesthesiology,LT,2016,GME,2-4 months,1,3,2,2nd choice,Southern California,Mixed,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+100,Family Medicine,LCDR,NA,OCONUS MTF,2-4 months,3,3,2,2nd choice,NA,Resign/Retire,Do not care,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+153,Emergency Medicine,LT,NA,GME,2-4 months,2,3,4,1st choice,Southern California,Mixed,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,No
+277,Dermatology,LCDR,NA,CONUS MTF,NA,5,5,1,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,NA,NA
+39,Emergency Medicine,LCDR,2015,CONUS MTF,> 4 months,5,3,5,2nd choice,Southern California,Academic Medicine,Yes,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Jul-16,No,No
+40,Anesthesiology,LCDR,2016,CONUS MTF,2-4 months,1,1,1,> 4th choice,Europe,Clinical Medicine,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Dec-16,No,No
+41,Ophthalmology,LT,2015,CONUS MTF,2-4 months,2,3,4,3rd choice,"Southeast (North Carolina, Florida)",Mixed,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,No
+42,Internal Medicine (General),CDR,2015,GME,> 4 months,4,5,3,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Operational Medicine,No,1 tour (~3 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+43,Emergency Medicine,LCDR,2015,OCONUS MTF,2-4 months,5,1,1,Other,"Pacific (Hawaii, Guam, Japan)",Clinical Medicine,Yes,1 tour (~3 years),Yes,Status Quo: Detailer and Specialty Leader decide,Other,Yes,No
+44,Otolaryngology,LCDR,2016,CONUS MTF,2-4 months,2,2,1,3rd choice,Southern California,Clinical Medicine,NA,NA,Yes,Other,Jan-17,Yes,No
+560,Family Medicine,NA,NA,CONUS MTF,2-4 months,3,3,4,Other,Europe,Academic Medicine,Yes,2 tours (~6 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,No
+46,Emergency Medicine,LCDR,2015,CONUS MTF,2-4 months,5,5,NA,1st choice,Northeast,Executive Medicine,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,No,No
+47,Family Medicine,CDR,2014,GME,2-4 months,2,2,1,1st choice,National Capital Region,Executive Medicine,No,2 tours (~6 years),Other,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+66,Aviation Medicine (Flight Surgery GMO),LT,2016,CONUS Operational,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+681,Occupational Medicine,LCDR,NA,OCONUS MTF,> 4 months,1,1,1,> 4th choice,National Capital Region,Executive Medicine,Do not care,1 tour (~3 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+50,Family Medicine,CDR,2014,Non-Operational/Non-Clinical,NA,1,1,1,1st choice,National Capital Region,Executive Medicine,Yes,1 tour (~3 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,No
+51,Family Medicine,LCDR,2015,OCONUS Operational,NA,2,3,NA,1st choice,Europe,Undecided,No,1 tour (~3 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+52,Emergency Medicine,CAPT or Flag,2015,OCONUS MTF,2-4 months,5,5,4,1st choice,Southern California,Academic Medicine,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Feb-17,Yes,Yes
+79,Aviation Medicine (Flight Surgery GMO),LT,2014,CONUS Operational,NA,2,1,NA,> 4th choice,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,Do not care,2 tours (~6 years),No,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+54,Ophthalmology,LCDR,2015,CONUS MTF,> 4 months,5,5,5,Other,Southern California,Academic Medicine,Other,Other,No,Other,Other,NA,NA
+55,Internal Medicine (General),LT,2016,CONUS MTF,2-4 months,4,5,4,3rd choice,National Capital Region,Academic Medicine,Do not care,4 tours (~12 years),No,Something similar to the National Residency Match Program,Mar-17,No,No
+56,Anesthesiology,CDR,2014,CONUS MTF,NA,5,4,3,1st choice,Southern California,Clinical Medicine,Do not care,Other,No,Something similar to the National Residency Match Program,Sep-16,Yes,Yes
+101,Aviation Medicine (Flight Surgery GMO),LT,2016,CONUS Operational,NA,1,1,2,> 4th choice,Southern California,Clinical Medicine,Yes,2 tours (~6 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,No
+58,Aerospace Medicine (Residency Trained Flight),CAPT or Flag,2015,CONUS Operational,NA,2,1,2,Other,Europe,Executive Medicine,Other,2 tours (~6 years),Other,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,No
+59,Anesthesiology,LCDR,2016,GME,NA,4,4,2,2nd choice,Europe,Executive Medicine,Do not care,Other,No,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,Yes
+107,Aviation Medicine (Flight Surgery GMO),LCDR,2015,CONUS Operational,NA,1,1,NA,Other,Europe,Operational Medicine,Other,Other,Other,Other,Jan-17,Yes,Yes
+61,Preventive Medicine,LCDR,2015,Non-Operational/Non-Clinical,NA,3,1,1,> 4th choice,Southern California,Operational Medicine,No,2 tours (~6 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+62,Preventive Medicine,LCDR,2015,CONUS Operational,> 4 months,5,5,3,1st choice,"Pacific (Hawaii, Guam, Japan)",Mixed,No,1 tour (~3 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+63,Emergency Medicine,CDR,2012,CONUS MTF,> 4 months,5,5,4,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,No,4 tours (~12 years),Other,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+887,NA,NA,NA,NA,NA,2,2,3,NA,"Southeast (North Carolina, Florida)",Operational Medicine,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Feb-17,Yes,No
+65,Family Medicine,LT,2016,CONUS Operational,NA,1,2,2,> 4th choice,"Southeast (North Carolina, Florida)",Undecided,Yes,3 tours (~9 years),Yes,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+148,Aviation Medicine (Flight Surgery GMO),LT,2016,CONUS Operational,NA,1,2,4,1st choice,Southern California,Undecided,Yes,3 tours (~9 years),No,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+157,Aviation Medicine (Flight Surgery GMO),LT,2016,CONUS Operational,NA,1,1,1,> 4th choice,NA,Clinical Medicine,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Feb-17,Yes,Yes
+68,Aerospace Medicine (Residency Trained Flight),CDR,2015,GME,> 4 months,5,5,1,1st choice,"Southeast (North Carolina, Florida)",Resign/Retire,Yes,4 tours (~12 years),No,Something similar to the National Residency Match Program,Jul-16,Yes,Yes
+226,Aviation Medicine (Flight Surgery GMO),LT,2016,CONUS MTF,2-4 months,1,1,1,Other,"Southeast (North Carolina, Florida)",Clinical Medicine,Yes,2 tours (~6 years),No,Something similar to the National Residency Match Program,Jan-17,No,NA
+70,Emergency Medicine,CDR,2015,CONUS Operational,2-4 months,1,1,1,4th choice,Europe,Executive Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Mar-17,No,Yes
+71,OB/GYN,LCDR,2014,CONUS MTF,> 4 months,4,3,3,4th choice,"Southeast (North Carolina, Florida)",Mixed,Other,2 tours (~6 years),Yes,Other,Feb-17,Yes,Yes
+72,Pathology,CDR,2016,CONUS MTF,> 4 months,5,5,2,1st choice,Southern California,Mixed,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+246,Aviation Medicine (Flight Surgery GMO),LT,2015,CONUS Operational,2-4 months,3,2,2,4th choice,Southern California,Clinical Medicine,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,No
+1005,Emergency Medicine,LT,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+75,Family Medicine,LCDR,2015,OCONUS MTF,NA,2,1,3,Other,National Capital Region,Mixed,Yes,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,Yes
+1028,Other,LT,NA,NA,NA,NA,NA,NA,NA,NA,Undecided,NA,NA,NA,NA,NA,NA,NA
+77,Neurology,LCDR,2015,CONUS MTF,2-4 months,5,5,5,1st choice,National Capital Region,Academic Medicine,No,2 tours (~6 years),No,NA,Feb-17,Yes,Yes
+78,Family Medicine,LCDR,2016,CONUS MTF,NA,3,2,3,1st choice,National Capital Region,Operational Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+255,Aviation Medicine (Flight Surgery GMO),LT,2016,CONUS Operational,2-4 months,2,4,4,1st choice,"Southeast (North Carolina, Florida)",Operational Medicine,Do not care,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+80,Internal Medicine (General),LT,2016,CONUS MTF,2-4 months,2,2,3,3rd choice,Southern California,Mixed,No,2 tours (~6 years),Yes,Other,Feb-17,No,No
+81,Family Medicine,LCDR,2016,CONUS MTF,2-4 months,2,2,2,2nd choice,Southern California,Resign/Retire,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+82,Psychiatry,LCDR,2016,CONUS MTF,NA,2,5,5,Other,Southern California,Mixed,Yes,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+83,Pathology,LCDR,2015,CONUS MTF,2-4 months,4,5,4,1st choice,"Pacific (Hawaii, Guam, Japan)",Mixed,Do not care,4 tours (~12 years),Other,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+662,Aviation Medicine (Flight Surgery GMO),LT,2015,CONUS Operational,NA,2,2,3,> 4th choice,National Capital Region,Academic Medicine,Do not care,4 tours (~12 years),No,Something similar to the National Residency Match Program,Nov-16,Yes,Yes
+85,OB/GYN,CAPT or Flag,2016,OCONUS MTF,2-4 months,5,5,1,1st choice,"Pacific (Hawaii, Guam, Japan)",Clinical Medicine,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Nov-16,Yes,No
+86,Emergency Medicine,LCDR,2013,CONUS MTF,NA,4,4,4,1st choice,"Pacific (Hawaii, Guam, Japan)",Mixed,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+87,Aerospace Medicine (Residency Trained Flight),LT,2015,GME,> 4 months,3,2,1,1st choice,Southern California,Operational Medicine,No,1 tour (~3 years),Yes,Something similar to the National Residency Match Program,Nov-16,No,No
+88,Family Medicine,LCDR,2016,CONUS MTF,NA,5,5,1,Other,"Pacific (Hawaii, Guam, Japan)",Mixed,No,1 tour (~3 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+89,Neurology,CDR,2013,CONUS MTF,2-4 months,3,3,NA,1st choice,Pacific Northwest,Executive Medicine,No,2 tours (~6 years),No,Something similar to the National Residency Match Program,Feb-17,Yes,No
+90,Otolaryngology,LCDR,2014,CONUS MTF,2-4 months,4,4,2,2nd choice,"Southeast (North Carolina, Florida)",Resign/Retire,Do not care,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Jun-16,Yes,Yes
+91,Preventive Medicine,CDR,2016,OCONUS Operational,NA,5,5,5,1st choice,"Pacific (Hawaii, Guam, Japan)",Operational Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,No,No
+92,Aerospace Medicine (Residency Trained Flight),LCDR,2016,GME,NA,5,2,1,1st choice,NA,Operational Medicine,No,1 tour (~3 years),Yes,NA,NA,NA,NA
+93,Internal Medicine (General),CAPT or Flag,2014,Non-Operational/Non-Clinical,2-4 months,5,5,5,1st choice,Northeast,Executive Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+1033,General Surgery,LT,NA,GME,NA,NA,NA,NA,Other,Northeast,Clinical Medicine,Other,Other,Other,Other,Dec-16,NA,NA
+95,Family Medicine,LCDR,2016,CONUS MTF,2-4 months,4,4,3,1st choice,Southern California,Mixed,No,Other,Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+96,Emergency Medicine,LCDR,2015,CONUS MTF,2-4 months,3,4,NA,1st choice,"Pacific (Hawaii, Guam, Japan)",Clinical Medicine,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,No
+666,Aviation Medicine (Flight Surgery GMO),LCDR,2016,CONUS Operational,NA,1,1,1,Other,"Tidewater Region (Portsmouth, Norfolk)",Executive Medicine,Yes,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,No,Yes
+98,Pediatrics,CDR,2014,OCONUS MTF,2-4 months,3,3,2,> 4th choice,Europe,Clinical Medicine,No,Other,Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+99,General Surgery,LCDR,2014,OCONUS Operational,2-4 months,2,1,5,Other,"Pacific (Hawaii, Guam, Japan)",Clinical Medicine,Do not care,2 tours (~6 years),Yes,Other,Sep-16,Yes,No
+1294,Family Medicine,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+695,Aviation Medicine (Flight Surgery GMO),LT,2016,CONUS Operational,NA,3,5,4,1st choice,"Southeast (North Carolina, Florida)",Operational Medicine,Do not care,Other,No,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+102,Occupational Medicine,CDR,2014,CONUS MTF,2-4 months,2,2,1,> 4th choice,"Pacific (Hawaii, Guam, Japan)",Executive Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+701,Aviation Medicine (Flight Surgery GMO),LT,2015,CONUS Operational,NA,1,2,NA,Other,Europe,Clinical Medicine,No,3 tours (~9 years),No,Something similar to the National Residency Match Program,Dec-16,No,Yes
+104,Neonatology,LCDR,2016,CONUS MTF,NA,1,1,1,Other,National Capital Region,Mixed,Yes,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+105,Pediatrics,CAPT or Flag,2008,GME,> 4 months,5,5,5,1st choice,National Capital Region,Executive Medicine,NA,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,Yes
+106,Cardiology (IM),CDR,2016,CONUS Operational,NA,1,3,2,> 4th choice,Southern California,Executive Medicine,Yes,2 tours (~6 years),Yes,NA,NA,NA,NA
+719,Aviation Medicine (Flight Surgery GMO),LT,2016,CONUS Operational,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+108,Plastic Surgery,CDR,2016,CONUS MTF,2-4 months,5,5,2,1st choice,Southern California,Academic Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+109,Psychiatry,LCDR,2013,CONUS Operational,2-4 months,5,4,4,3rd choice,Europe,Mixed,Do not care,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+110,Anesthesiology,LCDR,2016,CONUS MTF,NA,3,4,NA,2nd choice,Europe,Mixed,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Mar-17,Yes,No
+996,Aviation Medicine (Flight Surgery GMO),LT,2016,CONUS Operational,NA,5,5,5,1st choice,Pacific Northwest,Clinical Medicine,Do not care,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Other,Yes,Yes
+112,Family Medicine,CDR,2016,OCONUS MTF,2-4 months,4,2,3,1st choice,Europe,Resign/Retire,Do not care,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1040,Aviation Medicine (Flight Surgery GMO),LT,2016,OCONUS Operational,NA,1,1,NA,1st choice,Southern California,Operational Medicine,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Feb-17,Yes,Yes
+1065,Aviation Medicine (Flight Surgery GMO),LT,2015,CONUS Operational,NA,2,3,3,1st choice,Pacific Northwest,Academic Medicine,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Mar-17,Yes,Yes
+115,Urology,CDR,2014,CONUS MTF,2-4 months,5,3,5,1st choice,Pacific Northwest,Resign/Retire,Yes,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,No,Yes
+116,Radiology,LCDR,2013,CONUS MTF,NA,1,1,1,Other,Southern California,Resign/Retire,Do not care,2 tours (~6 years),Other,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+117,Allergy/Immunology,CDR,2015,CONUS MTF,> 4 months,1,1,1,Other,Southern California,Resign/Retire,No,2 tours (~6 years),Yes,Other,Dec-16,No,Yes
+1075,Aviation Medicine (Flight Surgery GMO),LT,2015,CONUS Operational,2-4 months,5,5,4,1st choice,Pacific Northwest,Academic Medicine,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+119,Allergy/Immunology,LCDR,2016,CONUS MTF,2-4 months,4,4,3,1st choice,Southern California,Clinical Medicine,Yes,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Oct-16,Yes,Yes
+120,Psychiatry,CAPT or Flag,2015,Non-Operational/Non-Clinical,2-4 months,4,4,2,2nd choice,Europe,Resign/Retire,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Mar-17,Yes,Yes
+122,Emergency Medicine,LCDR,2015,GME,> 4 months,4,4,2,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Other,Yes,3 tours (~9 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+154,Emergency Medicine,LT,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+124,Emergency Medicine,LCDR,2015,OCONUS Operational,> 4 months,5,5,5,3rd choice,"Pacific (Hawaii, Guam, Japan)",Other,NA,1 tour (~3 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+125,Emergency Medicine,LT,2016,GME,NA,5,5,3,1st choice,Southern California,Mixed,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Mar-17,Yes,No
+126,Emergency Medicine,LCDR,2015,CONUS MTF,2-4 months,1,2,4,1st choice,Europe,Academic Medicine,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Jan-17,No,No
+17,Rheumatology (IM),CAPT or Flag,2015,CONUS MTF,> 4 months,5,5,4,1st choice,National Capital Region,Resign/Retire,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,NA,Yes
+1093,Aviation Medicine (Flight Surgery GMO),LT,2015,CONUS Operational,NA,2,2,2,3rd choice,National Capital Region,Academic Medicine,Yes,4 tours (~12 years),No,Something similar to the National Residency Match Program,Nov-16,Yes,Yes
+129,Rheumatology (IM),LT,2015,GME,2-4 months,3,3,NA,1st choice,NA,Mixed,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+130,Emergency Medicine,LT,2015,CONUS MTF,2-4 months,4,5,NA,1st choice,Pacific Northwest,Clinical Medicine,No,Other,No,Status Quo: Detailer and Specialty Leader decide,17-Feb,No,No
+131,Emergency Medicine,CDR,2014,OCONUS MTF,> 4 months,5,5,5,1st choice,"Pacific (Hawaii, Guam, Japan)",Clinical Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Nov-16,Yes,Yes
+132,Emergency Medicine,LT,2013,CONUS MTF,> 4 months,4,4,3,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Operational Medicine,No,1 tour (~3 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+133,Allergy/Immunology,LCDR,2014,CONUS MTF,2-4 months,2,2,NA,Other,"Southeast (North Carolina, Florida)",Executive Medicine,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+691,Otolaryngology,LT,2015,NA,2-4 months,4,5,5,1st choice,Europe,Clinical Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,No,Yes
+136,Emergency Medicine,LCDR,2014,GME,2-4 months,5,NA,3,1st choice,"Southeast (North Carolina, Florida)",Undecided,Yes,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+137,Pediatrics,CDR,2013,CONUS MTF,> 4 months,3,5,4,1st choice,Southern California,Academic Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1094,Aviation Medicine (Flight Surgery GMO),LT,2013,CONUS Operational,2-4 months,4,4,NA,1st choice,"Southeast (North Carolina, Florida)",Resign/Retire,Yes,4 tours (~12 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+934,Orthopedic Surgery,LT,2016,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+140,Emergency Medicine,CAPT or Flag,2015,CONUS MTF,> 4 months,4,5,5,1st choice,"Southeast (North Carolina, Florida)",Clinical Medicine,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+141,Emergency Medicine,CDR,2016,Non-Operational/Non-Clinical,NA,4,4,3,1st choice,Europe,Operational Medicine,Yes,4 tours (~12 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+142,Emergency Medicine,CDR,2015,CONUS MTF,> 4 months,5,5,1,1st choice,Southern California,Academic Medicine,Do not care,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+143,Preventive Medicine,CAPT or Flag,2015,GME,2-4 months,5,5,1,1st choice,National Capital Region,Academic Medicine,No,2 tours (~6 years),Other,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+144,Endocrinology (IM),CAPT or Flag,2014,CONUS MTF,NA,5,5,5,1st choice,Southern California,Resign/Retire,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Nov-16,Yes,NA
+145,Physical Medicine and Rehabilitation,LCDR,2014,CONUS MTF,2-4 months,5,5,5,1st choice,National Capital Region,Mixed,Yes,2 tours (~6 years),Other,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+1105,Aviation Medicine (Flight Surgery GMO),LCDR,2016,OCONUS Operational,2-4 months,5,5,3,1st choice,Southern California,Operational Medicine,No,1 tour (~3 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,NA
+1191,Aviation Medicine (Flight Surgery GMO),LCDR,2016,CONUS MTF,2-4 months,1,1,2,Other,"Southeast (North Carolina, Florida)",Operational Medicine,Other,Other,Other,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+1194,Aviation Medicine (Flight Surgery GMO),LT,2014,CONUS Operational,2-4 months,1,2,2,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,No,2 tours (~6 years),No,Something similar to the National Residency Match Program,Dec-16,No,Yes
+149,Emergency Medicine,LT,2016,GME,NA,1,1,NA,2nd choice,NA,Executive Medicine,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Mar-17,No,No
+150,Emergency Medicine,LCDR,2015,CONUS MTF,2-4 months,4,1,1,> 4th choice,Europe,Academic Medicine,Do not care,2 tours (~6 years),No,Something similar to the National Residency Match Program,Jan-17,No,No
+151,Emergency Medicine,LCDR,2014,CONUS MTF,2-4 months,3,4,2,1st choice,Pacific Northwest,Academic Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+152,Emergency Medicine,LT,2014,GME,2-4 months,5,5,5,1st choice,Southern California,Clinical Medicine,No,2 tours (~6 years),No,NA,NA,NA,NA
+155,Emergency Medicine,CDR,2016,CONUS MTF,NA,5,5,NA,2nd choice,Europe,Operational Medicine,No,Other,Other,Something similar to the National Residency Match Program,Jan-17,No,No
+156,Psychiatry,LT,2015,CONUS MTF,2-4 months,4,5,5,> 4th choice,Europe,Clinical Medicine,Other,2 tours (~6 years),Other,Status Quo: Detailer and Specialty Leader decide,Jan-17,No,Yes
+1195,Aviation Medicine (Flight Surgery GMO),LT,2014,CONUS Operational,2-4 months,3,3,3,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Operational Medicine,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,No
+158,Emergency Medicine,LT,2015,CONUS MTF,2-4 months,5,5,5,1st choice,Europe,Academic Medicine,No,2 tours (~6 years),No,NA,NA,NA,NA
+159,Emergency Medicine,CDR,2015,CONUS MTF,> 4 months,1,1,NA,Other,"Southeast (North Carolina, Florida)",Clinical Medicine,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Oct-16,No,No
+160,Emergency Medicine,LCDR,2016,GME,2-4 months,5,4,4,1st choice,Southern California,Operational Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+161,Emergency Medicine,LCDR,2016,CONUS MTF,NA,5,4,5,> 4th choice,Europe,Global Health Engagement,Yes,2 tours (~6 years),No,Something similar to the National Residency Match Program,Feb-17,Yes,No
+163,Radiology,CAPT or Flag,2016,OCONUS Operational,2-4 months,4,4,3,Other,"Pacific (Hawaii, Guam, Japan)",Clinical Medicine,No,2 tours (~6 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+164,Emergency Medicine,CDR,2015,OCONUS MTF,2-4 months,2,4,5,1st choice,"Southeast (North Carolina, Florida)",Mixed,Do not care,3 tours (~9 years),Other,Status Quo: Detailer and Specialty Leader decide,Sep-16,Yes,Yes
+165,Emergency Medicine,CDR,2016,CONUS MTF,2-4 months,4,5,3,1st choice,Southern California,Mixed,No,Other,No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+166,Rheumatology (IM),CDR,2016,CONUS MTF,> 4 months,5,NA,5,1st choice,Northeast,Resign/Retire,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jun-16,No,Yes
+167,Radiology,CDR,2014,OCONUS MTF,2-4 months,5,5,5,2nd choice,"Pacific (Hawaii, Guam, Japan)",Mixed,No,Other,Other,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+168,Radiology,LCDR,2015,CONUS MTF,NA,2,3,1,Other,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Dec-16,NA,NA
+169,Radiology,CDR,2016,OCONUS MTF,2-4 months,5,5,5,2nd choice,Europe,Mixed,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,Yes
+170,Radiology,LCDR,2015,CONUS MTF,2-4 months,4,5,4,1st choice,Northeast,Mixed,Do not care,3 tours (~9 years),No,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+171,Radiology,CDR,2016,Non-Operational/Non-Clinical,NA,5,5,5,1st choice,Europe,Global Health Engagement,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+172,Radiology,LCDR,2016,CONUS Operational,2-4 months,1,1,5,Other,Europe,Resign/Retire,Other,Other,Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+173,Radiology,CDR,2016,OCONUS Operational,> 4 months,5,5,4,1st choice,National Capital Region,Academic Medicine,No,Other,Other,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,NA
+174,Radiology,LCDR,2014,CONUS MTF,2-4 months,2,3,3,Other,Northeast,Resign/Retire,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+175,Radiology,LCDR,2016,CONUS MTF,2-4 months,4,4,4,3rd choice,Northeast,Mixed,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+176,Radiology,CAPT or Flag,2011,GME,2-4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+177,Radiology,LCDR,2015,CONUS MTF,> 4 months,1,3,2,1st choice,"Southeast (North Carolina, Florida)",Clinical Medicine,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+178,Family Medicine,CAPT or Flag,2016,CONUS MTF,NA,3,4,4,1st choice,Europe,Resign/Retire,Yes,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+179,Emergency Medicine,LCDR,2015,OCONUS MTF,2-4 months,2,3,4,Other,Southern California,Clinical Medicine,No,2 tours (~6 years),No,Other,Jan-17,Yes,Yes
+180,Family Medicine,LT,2014,CONUS MTF,2-4 months,2,3,3,4th choice,"Pacific (Hawaii, Guam, Japan)",Academic Medicine,Do not care,2 tours (~6 years),No,Something similar to the National Residency Match Program,Dec-16,No,No
+181,Family Medicine,LCDR,2015,OCONUS MTF,NA,1,1,5,Other,"Pacific (Hawaii, Guam, Japan)",Undecided,No,1 tour (~3 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jul-16,Yes,Yes
+182,Family Medicine,LCDR,2016,CONUS MTF,2-4 months,2,3,3,1st choice,"Southeast (North Carolina, Florida)",Mixed,Yes,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,No,Yes
+183,Family Medicine,CAPT or Flag,2012,GME,2-4 months,5,5,4,1st choice,Southern California,Resign/Retire,Yes,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,No
+184,Family Medicine,LCDR,2014,CONUS MTF,2-4 months,4,5,2,1st choice,Southern California,Executive Medicine,Yes,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,No,Yes
+185,Family Medicine,LCDR,2015,CONUS MTF,2-4 months,4,5,5,1st choice,Middle East or Africa,Operational Medicine,No,1 tour (~3 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+186,Family Medicine,LT,2016,CONUS MTF,2-4 months,3,4,3,4th choice,Pacific Northwest,Mixed,No,1 tour (~3 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,No,Yes
+187,Family Medicine,LCDR,2014,GME,2-4 months,4,4,2,1st choice,"Southeast (North Carolina, Florida)",Academic Medicine,Do not care,4 tours (~12 years),No,Other,Jan-17,Yes,Yes
+188,Family Medicine,LT,2012,CONUS Operational,> 4 months,3,4,3,2nd choice,Pacific Northwest,Resign/Retire,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,No
+189,Family Medicine,CDR,2015,CONUS MTF,NA,2,3,2,2nd choice,"Tidewater Region (Portsmouth, Norfolk)",Mixed,Do not care,2 tours (~6 years),Other,Other,Jul-16,Yes,NA
+190,Family Medicine,LCDR,2014,CONUS MTF,2-4 months,4,4,1,1st choice,Pacific Northwest,Other,Do not care,2 tours (~6 years),Yes,Other,Jan-17,Yes,Yes
+191,Family Medicine,LT,2016,CONUS MTF,> 4 months,1,1,2,1st choice,"Southeast (North Carolina, Florida)",Academic Medicine,Do not care,Other,No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+192,Family Medicine,CDR,2015,CONUS MTF,2-4 months,4,4,4,2nd choice,Europe,Undecided,Do not care,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jun-16,Yes,Yes
+193,Family Medicine,CDR,2015,OCONUS MTF,2-4 months,4,4,2,Other,"Tidewater Region (Portsmouth, Norfolk)",Executive Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+194,Family Medicine,CDR,2016,CONUS MTF,2-4 months,4,4,3,1st choice,"Pacific (Hawaii, Guam, Japan)",Undecided,Yes,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,NA
+195,Family Medicine,CDR,2013,CONUS MTF,2-4 months,4,4,4,1st choice,"Southeast (North Carolina, Florida)",Academic Medicine,No,Other,Other,Something similar to the National Residency Match Program,Oct-16,Yes,Yes
+196,Family Medicine,LT,2015,CONUS MTF,2-4 months,3,2,3,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+197,Aerospace Medicine (Residency Trained Flight),CAPT or Flag,2016,CONUS Operational,2-4 months,4,4,3,1st choice,Europe,Mixed,Do not care,2 tours (~6 years),No,Something similar to the National Residency Match Program,Dec-16,Yes,No
+198,Family Medicine,LCDR,2015,CONUS MTF,2-4 months,3,4,4,1st choice,Southern California,Resign/Retire,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+199,Family Medicine,CAPT or Flag,2012,CONUS MTF,> 4 months,3,3,3,1st choice,National Capital Region,Resign/Retire,Do not care,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jul-16,Yes,Yes
+200,Radiology,CDR,2014,CONUS MTF,> 4 months,5,5,2,2nd choice,Southern California,Academic Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,No,Yes
+201,Family Medicine,LCDR,2014,CONUS MTF,2-4 months,5,5,5,1st choice,Pacific Northwest,Executive Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jul-16,No,Yes
+202,Family Medicine,CDR,2014,CONUS MTF,NA,5,5,4,1st choice,Pacific Northwest,Executive Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jul-16,Yes,Yes
+203,Family Medicine,LT,2014,CONUS Operational,2-4 months,3,5,NA,1st choice,"Pacific (Hawaii, Guam, Japan)",Clinical Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+204,Family Medicine,CDR,2014,CONUS MTF,2-4 months,4,4,4,1st choice,Northeast,Clinical Medicine,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Sep-16,Yes,Yes
+205,Family Medicine,LCDR,2014,CONUS Operational,2-4 months,3,4,3,1st choice,Southern California,Mixed,No,2 tours (~6 years),Other,Something similar to the National Residency Match Program,Feb-17,Yes,Yes
+206,Family Medicine,CAPT or Flag,2013,CONUS MTF,> 4 months,4,4,3,1st choice,Pacific Northwest,Resign/Retire,Yes,1 tour (~3 years),No,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+207,Family Medicine,LCDR,2014,CONUS MTF,NA,4,3,3,2nd choice,Southern California,Executive Medicine,No,1 tour (~3 years),Yes,Other,Jan-17,Yes,Yes
+208,Family Medicine,CAPT or Flag,2016,CONUS MTF,2-4 months,1,1,1,Other,Northeast,Mixed,No,2 tours (~6 years),Other,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+209,Family Medicine,CAPT or Flag,2016,Non-Operational/Non-Clinical,> 4 months,4,5,2,1st choice,"Southeast (North Carolina, Florida)",Resign/Retire,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,No
+210,Family Medicine,LCDR,2016,GME,2-4 months,2,1,1,Other,Southern California,Undecided,No,1 tour (~3 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+211,Family Medicine,CDR,2014,CONUS Operational,> 4 months,5,5,5,1st choice,"Pacific (Hawaii, Guam, Japan)",Mixed,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+212,Family Medicine,LT,2016,OCONUS Operational,2-4 months,1,1,NA,Other,National Capital Region,Undecided,Yes,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+213,Family Medicine,LCDR,2016,CONUS MTF,> 4 months,3,3,2,2nd choice,Southern California,Mixed,No,1 tour (~3 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+214,Family Medicine,CDR,2015,CONUS MTF,2-4 months,5,5,5,1st choice,"Southeast (North Carolina, Florida)",Academic Medicine,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+215,Family Medicine,LT,2014,GME,NA,4,NA,4,1st choice,Europe,Clinical Medicine,No,1 tour (~3 years),Yes,Something similar to the National Residency Match Program,Nov-16,Yes,Yes
+216,Family Medicine,LT,2016,CONUS MTF,2-4 months,1,1,2,> 4th choice,Pacific Northwest,Academic Medicine,No,Other,No,Other,Dec-16,NA,NA
+217,Family Medicine,CDR,2016,CONUS Operational,2-4 months,2,4,2,1st choice,National Capital Region,Executive Medicine,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+218,Family Medicine,CAPT or Flag,2014,CONUS MTF,2-4 months,4,4,4,Other,National Capital Region,Executive Medicine,Yes,Other,Other,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+219,Family Medicine,CAPT or Flag,2015,CONUS Operational,2-4 months,1,3,1,> 4th choice,"Pacific (Hawaii, Guam, Japan)",Resign/Retire,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Feb-17,Yes,Yes
+220,Family Medicine,CDR,2016,CONUS MTF,NA,5,4,5,1st choice,"Southeast (North Carolina, Florida)",Resign/Retire,No,2 tours (~6 years),Yes,Other,Jan-17,Yes,Yes
+221,Anesthesiology,CDR,2016,OCONUS MTF,2-4 months,4,5,4,Other,Pacific Northwest,Mixed,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+222,Radiology,LCDR,2016,CONUS MTF,2-4 months,5,5,1,1st choice,Southern California,Clinical Medicine,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Jun-16,No,Yes
+223,Dermatology,LCDR,2014,CONUS MTF,2-4 months,3,5,4,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Resign/Retire,Do not care,3 tours (~9 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,No
+224,Family Medicine,CDR,2013,Non-Operational/Non-Clinical,> 4 months,5,5,5,1st choice,"Southeast (North Carolina, Florida)",Undecided,No,4 tours (~12 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+225,Radiology,CDR,2014,CONUS MTF,2-4 months,3,3,2,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Executive Medicine,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Jul-16,Yes,NA
+1199,Aviation Medicine (Flight Surgery GMO),LT,2014,CONUS Operational,NA,4,4,4,2nd choice,Southern California,Clinical Medicine,No,1 tour (~3 years),No,Something similar to the National Residency Match Program,Mar-17,NA,Yes
+228,Ophthalmology,CAPT or Flag,2014,CONUS Operational,NA,4,4,5,1st choice,"Southeast (North Carolina, Florida)",Clinical Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Nov-16,Yes,Yes
+230,Family Medicine,CDR,2015,CONUS MTF,2-4 months,5,5,5,1st choice,National Capital Region,Clinical Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+231,Family Medicine,CDR,2016,OCONUS MTF,NA,4,5,5,1st choice,Europe,Executive Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jul-16,Yes,Yes
+232,Dermatology,CDR,2015,GME,2-4 months,4,5,4,1st choice,"Pacific (Hawaii, Guam, Japan)",Academic Medicine,Do not care,3 tours (~9 years),Other,Status Quo: Detailer and Specialty Leader decide,Jan-17,No,Yes
+233,Radiology,CDR,2013,CONUS MTF,2-4 months,3,4,3,2nd choice,Southern California,Academic Medicine,Yes,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jun-16,Yes,Yes
+234,Family Medicine,LCDR,2015,GME,2-4 months,5,5,1,1st choice,Europe,Operational Medicine,Yes,2 tours (~6 years),No,Something similar to the National Residency Match Program,Dec-16,Yes,No
+235,Radiology,LCDR,2015,CONUS MTF,2-4 months,1,2,2,2nd choice,Northeast,Clinical Medicine,Do not care,4 tours (~12 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+236,Family Medicine,CDR,2016,CONUS Operational,2-4 months,1,1,1,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Operational Medicine,No,1 tour (~3 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+237,Family Medicine,LCDR,2016,CONUS MTF,NA,4,4,3,1st choice,Southern California,Academic Medicine,Yes,2 tours (~6 years),No,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+238,Family Medicine,CDR,2015,CONUS Operational,NA,3,3,2,3rd choice,Pacific Northwest,Operational Medicine,Yes,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jul-16,Yes,Yes
+1201,Aviation Medicine (Flight Surgery GMO),LT,2014,CONUS Operational,NA,1,2,4,2nd choice,Pacific Northwest,Resign/Retire,Do not care,3 tours (~9 years),No,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+1235,Aviation Medicine (Flight Surgery GMO),LT,2015,CONUS Operational,NA,1,2,1,4th choice,Europe,Clinical Medicine,No,Other,Other,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+241,Family Medicine,LCDR,2015,CONUS MTF,2-4 months,2,3,2,3rd choice,Southern California,Clinical Medicine,Yes,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+242,Family Medicine,CAPT or Flag,2016,Non-Operational/Non-Clinical,2-4 months,5,5,1,1st choice,Europe,Executive Medicine,Yes,1 tour (~3 years),Yes,Other,Other,Yes,No
+243,Family Medicine,CDR,2014,Non-Operational/Non-Clinical,NA,3,4,NA,2nd choice,National Capital Region,Undecided,No,Other,Other,NA,NA,NA,NA
+244,Family Medicine,LCDR,2014,CONUS Operational,2-4 months,2,2,2,2nd choice,Europe,Mixed,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+245,Pathology,CAPT or Flag,2015,CONUS MTF,2-4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1247,Aviation Medicine (Flight Surgery GMO),LT,2016,CONUS Operational,NA,1,1,NA,> 4th choice,Southern California,Clinical Medicine,Yes,2 tours (~6 years),Other,NA,NA,Yes,Yes
+247,Family Medicine,CAPT or Flag,2016,CONUS MTF,2-4 months,4,5,5,1st choice,"Southeast (North Carolina, Florida)",Resign/Retire,Yes,4 tours (~12 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+248,Pathology,CDR,2016,CONUS MTF,2-4 months,4,5,3,1st choice,"Southeast (North Carolina, Florida)",Mixed,Do not care,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,No,No
+249,Infectious Disease (IM),CAPT or Flag,2015,OCONUS Operational,2-4 months,3,3,3,2nd choice,Southern California,Research,Do not care,1 tour (~3 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+250,Radiology,CDR,2015,CONUS MTF,2-4 months,4,4,5,1st choice,National Capital Region,Mixed,Yes,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+251,Family Medicine,LCDR,2015,CONUS MTF,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+253,Pathology,CDR,2015,CONUS MTF,NA,5,5,1,1st choice,Pacific Northwest,Resign/Retire,No,4 tours (~12 years),Other,Status Quo: Detailer and Specialty Leader decide,Other,NA,Yes
+254,Family Medicine,CDR,2016,OCONUS Operational,NA,2,1,1,Other,National Capital Region,Executive Medicine,No,Other,Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1253,Aviation Medicine (Flight Surgery GMO),LT,2015,CONUS Operational,2-4 months,2,4,4,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,Do not care,2 tours (~6 years),No,Something similar to the National Residency Match Program,Mar-17,Yes,Yes
+256,Pathology,LCDR,2014,CONUS MTF,2-4 months,1,1,3,Other,Europe,Academic Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+257,Pathology,LCDR,2015,CONUS MTF,2-4 months,5,5,5,1st choice,Europe,Undecided,Other,Other,No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,No
+258,Pathology,CDR,2014,CONUS MTF,2-4 months,1,1,1,Other,Europe,Resign/Retire,No,1 tour (~3 years),Yes,Other,Other,Yes,Yes
+259,Radiology,LCDR,2015,CONUS MTF,> 4 months,5,5,2,1st choice,Southern California,Clinical Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+260,Family Medicine,LT,2016,OCONUS Operational,2-4 months,2,3,NA,Other,"Pacific (Hawaii, Guam, Japan)",Mixed,Do not care,2 tours (~6 years),Yes,Other,Feb-17,Yes,Yes
+261,NA,NA,2014,Non-Operational/Non-Clinical,NA,3,4,2,2nd choice,Europe,Mixed,No,1 tour (~3 years),Yes,NA,Oct-16,No,No
+262,Pathology,LCDR,2014,CONUS MTF,2-4 months,4,5,5,1st choice,"Southeast (North Carolina, Florida)",Undecided,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+263,Pathology,CDR,2015,CONUS MTF,2-4 months,2,4,5,1st choice,"Pacific (Hawaii, Guam, Japan)",Clinical Medicine,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+264,Family Medicine,CAPT or Flag,2014,OCONUS Operational,2-4 months,3,4,NA,2nd choice,"Southeast (North Carolina, Florida)",Executive Medicine,No,1 tour (~3 years),Yes,Something similar to the National Residency Match Program,Dec-16,Yes,No
+265,Radiology,LCDR,2016,CONUS MTF,> 4 months,4,4,3,2nd choice,"Pacific (Hawaii, Guam, Japan)",Mixed,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Jul-16,Yes,Yes
+266,Pathology,CAPT or Flag,2016,CONUS MTF,2-4 months,5,4,5,1st choice,Southern California,Resign/Retire,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Sep-16,Yes,Yes
+1263,Aviation Medicine (Flight Surgery GMO),LT,2014,CONUS Operational,NA,1,1,1,3rd choice,"Pacific (Hawaii, Guam, Japan)",Clinical Medicine,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Mar-17,Yes,Yes
+268,Family Medicine,CAPT or Flag,2015,Other,> 4 months,3,5,2,1st choice,"Southeast (North Carolina, Florida)",Resign/Retire,No,NA,No,Something similar to the National Residency Match Program,Jan-17,No,Yes
+269,Pathology,CDR,2012,CONUS MTF,2-4 months,4,4,3,1st choice,Southern California,Resign/Retire,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,No
+270,Pathology,CAPT or Flag,2016,CONUS MTF,NA,5,5,3,1st choice,National Capital Region,Resign/Retire,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+271,Occupational Medicine,CDR,2016,GME,2-4 months,5,5,3,1st choice,Europe,Undecided,NA,1 tour (~3 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,NA
+1264,Aviation Medicine (Flight Surgery GMO),LT,2015,CONUS Operational,2-4 months,5,4,NA,2nd choice,National Capital Region,Executive Medicine,Do not care,Other,Other,Other,Dec-16,NA,NA
+274,Dermatology,LT,2015,CONUS MTF,2-4 months,3,3,3,Other,National Capital Region,Resign/Retire,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Dec-16,No,No
+275,Dermatology,LCDR,2016,CONUS MTF,2-4 months,4,3,4,2nd choice,Europe,Mixed,No,Other,No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+276,Pathology,LT,2013,GME,2-4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+278,Pathology,CAPT or Flag,2015,CONUS MTF,2-4 months,5,5,4,1st choice,National Capital Region,Resign/Retire,Yes,Other,Other,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+279,Family Medicine,CDR,2015,OCONUS MTF,2-4 months,4,4,5,Other,"Pacific (Hawaii, Guam, Japan)",Executive Medicine,No,1 tour (~3 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+280,Dermatology,LCDR,2016,CONUS MTF,2-4 months,1,3,NA,1st choice,Southern California,Clinical Medicine,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+281,Family Medicine,CDR,2016,Other,NA,5,5,5,NA,National Capital Region,Executive Medicine,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+282,Family Medicine,LCDR,2013,CONUS MTF,NA,1,1,NA,1st choice,"Pacific (Hawaii, Guam, Japan)",Executive Medicine,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+283,Dermatology,CDR,2014,CONUS MTF,2-4 months,5,5,5,1st choice,Southern California,Academic Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Feb-17,NA,NA
+284,Family Medicine,LCDR,2015,CONUS MTF,2-4 months,4,4,3,2nd choice,Europe,Clinical Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Oct-16,Yes,Yes
+285,General Surgery,LCDR,2015,CONUS Operational,NA,1,1,NA,1st choice,National Capital Region,Clinical Medicine,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Dec-16,NA,NA
+1265,Aviation Medicine (Flight Surgery GMO),LT,2014,CONUS MTF,2-4 months,3,4,2,2nd choice,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,No,1 tour (~3 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,No,Yes
+287,Dermatology,LCDR,2016,CONUS MTF,2-4 months,5,3,4,Other,"Southeast (North Carolina, Florida)",Undecided,Do not care,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,NA,Yes
+288,Dermatology,CDR,2016,CONUS MTF,2-4 months,1,1,5,1st choice,Europe,Clinical Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+289,Pathology,LCDR,2015,CONUS MTF,2-4 months,4,4,NA,1st choice,Southern California,Other,No,2 tours (~6 years),Other,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+290,Radiology,LCDR,2015,CONUS MTF,2-4 months,4,4,4,3rd choice,"Southeast (North Carolina, Florida)",Clinical Medicine,Yes,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Mar-17,NA,NA
+291,Dermatology,CDR,2016,CONUS MTF,2-4 months,5,4,5,1st choice,National Capital Region,Resign/Retire,Do not care,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,No,Yes
+292,Pathology,CAPT or Flag,2015,Non-Operational/Non-Clinical,NA,3,1,NA,Other,"Southeast (North Carolina, Florida)",Resign/Retire,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+293,Dermatology,LCDR,2016,CONUS MTF,NA,2,3,5,3rd choice,Southern California,Clinical Medicine,No,3 tours (~9 years),No,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+294,OB/GYN,CAPT or Flag,2015,CONUS Operational,2-4 months,4,5,5,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Resign/Retire,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,No
+295,Family Medicine,CAPT or Flag,2015,CONUS MTF,2-4 months,4,4,4,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Executive Medicine,Do not care,Other,No,Status Quo: Detailer and Specialty Leader decide,Nov-16,Yes,No
+296,Radiology,CDR,2014,CONUS MTF,2-4 months,3,3,3,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Executive Medicine,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Jul-16,Yes,Yes
+297,Pathology,CDR,2015,CONUS MTF,2-4 months,3,3,3,1st choice,Southern California,Clinical Medicine,Do not care,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+298,Pathology,CAPT or Flag,2015,CONUS MTF,2-4 months,5,5,4,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Resign/Retire,No,Other,Other,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,NA
+299,Family Medicine,LT,2015,CONUS MTF,> 4 months,5,5,NA,1st choice,"Pacific (Hawaii, Guam, Japan)",Mixed,Yes,1 tour (~3 years),Yes,Something similar to the National Residency Match Program,Jul-16,Yes,No
+303,Dermatology,LCDR,2014,CONUS MTF,2-4 months,3,3,4,2nd choice,Southern California,Clinical Medicine,No,2 tours (~6 years),Yes,Other,Jan-17,Yes,Yes
+304,Pediatrics,CDR,2010,CONUS MTF,> 4 months,5,5,5,2nd choice,Southern California,Resign/Retire,Yes,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,No,Yes
+305,Family Medicine,CDR,2016,CONUS Operational,NA,1,1,1,4th choice,Southern California,Clinical Medicine,Do not care,1 tour (~3 years),Yes,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,No
+306,Psychiatry,CAPT or Flag,2015,GME,NA,5,5,5,Other,National Capital Region,Global Health Engagement,Do not care,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+307,Pathology,CDR,2016,CONUS MTF,2-4 months,4,4,4,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Executive Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+308,Occupational Medicine,CDR,2015,Non-Operational/Non-Clinical,NA,5,5,5,1st choice,"Pacific (Hawaii, Guam, Japan)",Mixed,No,1 tour (~3 years),Yes,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+309,Pediatrics,LCDR,2012,CONUS MTF,NA,1,1,1,Other,Southern California,Clinical Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,No,Yes
+310,Dermatology,LCDR,2014,Other,> 4 months,5,5,5,1st choice,Southern California,Undecided,No,Other,No,Something similar to the National Residency Match Program,Nov-16,NA,Yes
+1269,Aviation Medicine (Flight Surgery GMO),LT,2015,CONUS Operational,NA,3,3,2,3rd choice,Southern California,Academic Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+1275,Aviation Medicine (Flight Surgery GMO),LT,2016,CONUS Operational,NA,1,1,3,Other,National Capital Region,Academic Medicine,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+313,Pediatrics,LCDR,2013,CONUS MTF,2-4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+314,Pediatrics,LT,2016,GME,2-4 months,2,3,NA,1st choice,Pacific Northwest,Clinical Medicine,No,2 tours (~6 years),No,Something similar to the National Residency Match Program,Feb-17,Yes,Yes
+315,Pediatrics,LT,2015,CONUS MTF,> 4 months,3,3,5,> 4th choice,National Capital Region,Mixed,No,Other,No,Other,Dec-16,Yes,Yes
+316,Pediatrics,LT,2016,CONUS MTF,NA,2,3,4,1st choice,Middle East or Africa,NA,NA,NA,NA,NA,NA,NA,NA
+317,Pediatrics,LT,2015,CONUS MTF,2-4 months,1,1,3,> 4th choice,Europe,Clinical Medicine,No,2 tours (~6 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+318,Dermatology,LCDR,2016,OCONUS MTF,2-4 months,4,5,5,2nd choice,Southern California,Undecided,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,NA,Yes
+319,Family Medicine,LCDR,2015,CONUS Operational,> 4 months,5,5,NA,1st choice,Southern California,Resign/Retire,Do not care,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+320,Family Medicine,CAPT or Flag,2015,CONUS Operational,2-4 months,4,5,4,1st choice,"Southeast (North Carolina, Florida)",Research,Other,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Mar-17,NA,NA
+321,Family Medicine,LT,2015,CONUS MTF,NA,5,5,4,Other,"Pacific (Hawaii, Guam, Japan)",Clinical Medicine,No,2 tours (~6 years),Other,Other,Dec-16,NA,No
+322,Pediatrics,CAPT or Flag,2016,Non-Operational/Non-Clinical,2-4 months,5,5,5,1st choice,Southern California,Resign/Retire,Yes,2 tours (~6 years),Other,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+323,Pediatrics,LT,2014,CONUS MTF,> 4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+324,Pediatrics,LT,2015,CONUS MTF,2-4 months,5,5,3,1st choice,Europe,Academic Medicine,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,NA,Yes
+325,Pediatrics,LCDR,2015,CONUS MTF,2-4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+326,Radiology,LCDR,2016,GME,2-4 months,5,4,4,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Academic Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,Yes
+327,Preventive Medicine,CDR,2016,Non-Operational/Non-Clinical,2-4 months,4,4,4,1st choice,National Capital Region,Global Health Engagement,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+329,Pediatrics,LCDR,2015,CONUS MTF,> 4 months,5,4,3,1st choice,Southern California,Clinical Medicine,Do not care,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,No
+331,Dermatology,LCDR,2015,CONUS MTF,2-4 months,3,4,1,3rd choice,Europe,Clinical Medicine,No,2 tours (~6 years),Other,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+332,Pediatrics,LCDR,2014,CONUS MTF,> 4 months,5,5,4,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Academic Medicine,No,3 tours (~9 years),No,Other,Dec-16,Yes,Yes
+333,Pediatrics,LCDR,2013,CONUS MTF,2-4 months,4,4,3,1st choice,"Southeast (North Carolina, Florida)",Resign/Retire,Yes,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,No
+1285,Aviation Medicine (Flight Surgery GMO),LT,2016,CONUS Operational,NA,1,1,1,Other,"Pacific (Hawaii, Guam, Japan)",Resign/Retire,Other,Other,Other,Status Quo: Detailer and Specialty Leader decide,Nov-16,Yes,NA
+336,Preventive Medicine,CAPT or Flag,2005,Non-Operational/Non-Clinical,2-4 months,5,5,4,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Resign/Retire,Yes,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,Yes
+337,Pediatrics,LCDR,2014,CONUS MTF,2-4 months,4,5,3,1st choice,National Capital Region,Academic Medicine,Yes,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+338,Pediatrics,LCDR,2014,CONUS MTF,2-4 months,4,5,2,1st choice,Southern California,Academic Medicine,Do not care,3 tours (~9 years),No,Something similar to the National Residency Match Program,Feb-17,No,Yes
+339,Pediatrics,CDR,2014,CONUS MTF,2-4 months,5,4,2,1st choice,NA,Academic Medicine,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Feb-17,No,No
+340,Pediatrics,CDR,2015,CONUS MTF,> 4 months,4,5,4,1st choice,NA,Mixed,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,Yes
+341,Pediatrics,LT,2016,CONUS MTF,2-4 months,4,4,1,1st choice,Southern California,Mixed,No,2 tours (~6 years),No,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+342,Neonatology,LCDR,2016,CONUS MTF,2-4 months,4,4,2,2nd choice,National Capital Region,Academic Medicine,No,2 tours (~6 years),Yes,Other,Jan-17,NA,No
+1307,Aviation Medicine (Flight Surgery GMO),LT,2016,CONUS Operational,2-4 months,1,1,NA,Other,"Pacific (Hawaii, Guam, Japan)",Operational Medicine,Yes,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+344,Pediatrics,CDR,2015,CONUS MTF,> 4 months,1,2,1,2nd choice,Pacific Northwest,Academic Medicine,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,No
+345,Pathology,CAPT or Flag,2015,OCONUS MTF,2-4 months,4,4,3,3rd choice,Europe,Resign/Retire,Yes,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+346,Family Medicine,CAPT or Flag,2016,CONUS MTF,> 4 months,2,2,3,1st choice,Southern California,Resign/Retire,Do not care,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Oct-16,Yes,No
+347,Pediatrics,LT,2016,GME,2-4 months,5,3,NA,1st choice,Europe,Clinical Medicine,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+348,Pediatrics,CAPT or Flag,2015,CONUS MTF,2-4 months,4,5,3,1st choice,"Southeast (North Carolina, Florida)",Resign/Retire,Do not care,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+349,Family Medicine,CDR,2015,CONUS MTF,2-4 months,5,3,3,1st choice,Europe,Academic Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+350,Neonatology,LT,2014,GME,2-4 months,5,4,5,1st choice,Southern California,Academic Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,No,Yes
+351,Orthopedic Surgery,CDR,2015,CONUS MTF,2-4 months,4,4,3,2nd choice,Southern California,Clinical Medicine,Yes,4 tours (~12 years),Other,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,No
+352,Pediatrics,CDR,2015,CONUS MTF,> 4 months,5,5,5,1st choice,Europe,Mixed,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+353,Dermatology,LCDR,2016,OCONUS MTF,> 4 months,4,5,5,1st choice,"Pacific (Hawaii, Guam, Japan)",Clinical Medicine,Yes,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+354,Orthopedic Surgery,LCDR,2015,OCONUS MTF,2-4 months,2,3,2,1st choice,National Capital Region,Academic Medicine,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Feb-17,Yes,NA
+355,Preventive Medicine,CAPT or Flag,2015,Non-Operational/Non-Clinical,> 4 months,2,2,1,> 4th choice,"Pacific (Hawaii, Guam, Japan)",Executive Medicine,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Feb-17,Yes,Yes
+356,Pediatrics,LCDR,2015,OCONUS MTF,> 4 months,2,2,3,Other,Europe,Mixed,Do not care,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,No
+358,Family Medicine,LT,2015,OCONUS MTF,> 4 months,1,2,3,3rd choice,Pacific Northwest,Clinical Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+359,Pediatrics,CDR,2015,CONUS MTF,> 4 months,4,5,5,1st choice,Southern California,Academic Medicine,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+360,Orthopedic Surgery,LCDR,2016,CONUS MTF,2-4 months,5,5,4,1st choice,Southern California,Academic Medicine,Do not care,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Feb-17,No,Yes
+361,Orthopedic Surgery,LCDR,2015,CONUS MTF,2-4 months,4,4,3,3rd choice,Southern California,Clinical Medicine,No,Other,Other,Other,Jan-17,No,Yes
+62,Dermatology,CDR,2016,CONUS MTF,2-4 months,4,4,4,2nd choice,"Southeast (North Carolina, Florida)",Mixed,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+1360,Aviation Medicine (Flight Surgery GMO),LT,2016,OCONUS Operational,NA,1,1,1,3rd choice,Europe,Undecided,Yes,3 tours (~9 years),No,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+364,Family Medicine,LCDR,2014,CONUS MTF,2-4 months,NA,NA,3,1st choice,Europe,Clinical Medicine,Do not care,1 tour (~3 years),Yes,Something similar to the National Residency Match Program,Feb-17,No,Yes
+365,Pediatrics,LT,2016,OCONUS MTF,2-4 months,5,4,2,1st choice,"Pacific (Hawaii, Guam, Japan)",Clinical Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+366,Family Medicine,LT,2014,CONUS MTF,2-4 months,4,3,4,1st choice,Europe,Clinical Medicine,Yes,2 tours (~6 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+1361,Aviation Medicine (Flight Surgery GMO),LT,2016,OCONUS Operational,NA,1,1,1,> 4th choice,Pacific Northwest,Other,Yes,2 tours (~6 years),Other,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+368,Family Medicine,LCDR,2015,OCONUS MTF,2-4 months,5,5,3,1st choice,"Pacific (Hawaii, Guam, Japan)",Academic Medicine,Do not care,2 tours (~6 years),No,Something similar to the National Residency Match Program,Jan-17,No,Yes
+369,Family Medicine,LT,2014,OCONUS Operational,2-4 months,1,1,1,> 4th choice,Pacific Northwest,Clinical Medicine,Do not care,2 tours (~6 years),No,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+70,Pediatrics,CAPT or Flag,2014,CONUS MTF,2-4 months,4,5,2,1st choice,Southern California,Resign/Retire,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+371,Dermatology,LCDR,2016,GME,2-4 months,5,4,5,1st choice,Europe,Undecided,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+372,Family Medicine,LT,2016,OCONUS MTF,2-4 months,2,1,4,3rd choice,"Southeast (North Carolina, Florida)",Mixed,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1363,Aviation Medicine (Flight Surgery GMO),LT,2016,OCONUS Operational,NA,1,1,1,Other,Southern California,Undecided,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Sep-16,Yes,Yes
+374,Family Medicine,LT,2015,Non-Operational/Non-Clinical,2-4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+375,Family Medicine,CAPT or Flag,2016,CONUS MTF,NA,3,3,3,3rd choice,Pacific Northwest,Executive Medicine,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+376,Orthopedic Surgery,LCDR,2013,CONUS MTF,2-4 months,4,4,3,1st choice,Southern California,Resign/Retire,No,2 tours (~6 years),Yes,Other,Dec-16,NA,Yes
+377,Pediatrics,CDR,2012,CONUS MTF,2-4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+67,General Medical Officer,LCDR,2014,CONUS MTF,2-4 months,3,5,3,Other,National Capital Region,Operational Medicine,Do not care,1 tour (~3 years),Other,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+380,Family Medicine,LCDR,2016,OCONUS MTF,2-4 months,1,1,1,> 4th choice,Southern California,Resign/Retire,No,4 tours (~12 years),Other,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+381,Dermatology,LCDR,2014,GME,2-4 months,5,5,1,1st choice,Southern California,Clinical Medicine,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,No,Yes
+382,Orthopedic Surgery,LCDR,2016,OCONUS MTF,2-4 months,1,2,1,> 4th choice,Pacific Northwest,Academic Medicine,No,2 tours (~6 years),Yes,Other,Jan-17,Yes,Yes
+383,Pathology,LCDR,2015,OCONUS MTF,> 4 months,1,2,3,Other,Southern California,Resign/Retire,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,No
+384,Pathology,LCDR,2016,OCONUS MTF,> 4 months,5,5,5,1st choice,Pacific Northwest,Mixed,Do not care,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+385,Preventive Medicine,CDR,2014,Non-Operational/Non-Clinical,2-4 months,4,4,3,1st choice,Europe,Research,Do not care,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+386,Family Medicine,LT,2016,OCONUS MTF,NA,2,2,NA,1st choice,Europe,Mixed,Other,2 tours (~6 years),Other,Other,Feb-17,Yes,NA
+69,General Medical Officer,LT,2014,CONUS Operational,2-4 months,2,2,2,1st choice,Europe,Research,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+388,Preventive Medicine,CDR,2014,CONUS MTF,2-4 months,1,1,2,Other,National Capital Region,Undecided,No,1 tour (~3 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,NA,NA
+389,Orthopedic Surgery,LCDR,2016,OCONUS MTF,2-4 months,1,1,2,> 4th choice,"Southeast (North Carolina, Florida)",Mixed,Do not care,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+390,Family Medicine,LCDR,2015,OCONUS MTF,NA,2,1,4,Other,National Capital Region,Executive Medicine,Do not care,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+391,Family Medicine,LT,2015,OCONUS Operational,NA,3,3,NA,1st choice,Southern California,Mixed,Yes,2 tours (~6 years),No,Something similar to the National Residency Match Program,Nov-16,Yes,Yes
+392,Pediatrics,LT,2014,CONUS MTF,2-4 months,2,2,2,> 4th choice,Northeast,Resign/Retire,Do not care,Other,No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+394,Radiology,CDR,2015,CONUS MTF,> 4 months,3,4,4,1st choice,Pacific Northwest,Executive Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+395,Pathology,CAPT or Flag,2014,OCONUS MTF,NA,1,5,4,1st choice,"Pacific (Hawaii, Guam, Japan)",Clinical Medicine,No,2 tours (~6 years),Other,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,NA
+396,Radiology,CAPT or Flag,2015,CONUS MTF,> 4 months,4,5,2,1st choice,Europe,Executive Medicine,No,3 tours (~9 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+397,Radiology,CDR,2016,OCONUS MTF,2-4 months,1,1,1,> 4th choice,Southern California,Resign/Retire,No,3 tours (~9 years),No,Something similar to the National Residency Match Program,Feb-17,Yes,Yes
+398,Radiology,LCDR,2016,CONUS MTF,2-4 months,4,4,NA,2nd choice,Southern California,Undecided,No,Other,Other,Other,Mar-17,Yes,NA
+399,Radiology,CDR,2012,CONUS MTF,2-4 months,3,4,4,2nd choice,"Pacific (Hawaii, Guam, Japan)",Resign/Retire,Yes,3 tours (~9 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+400,Dermatology,LCDR,2015,CONUS MTF,> 4 months,2,4,5,1st choice,Southern California,Mixed,No,Other,Other,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+401,Emergency Medicine,CDR,2016,OCONUS Operational,2-4 months,2,2,NA,2nd choice,Middle East or Africa,Resign/Retire,Yes,Other,Other,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+402,Neonatology,CAPT or Flag,2016,CONUS MTF,NA,5,5,5,1st choice,Southern California,Resign/Retire,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Sep-16,Yes,No
+403,Family Medicine,LT,2014,GME,2-4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+405,Dermatology,LT,2016,CONUS MTF,> 4 months,NA,5,3,1st choice,Southern California,Clinical Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Aug-16,Yes,Yes
+406,Family Medicine,LT,2014,OCONUS MTF,2-4 months,3,4,3,1st choice,"Southeast (North Carolina, Florida)",Academic Medicine,Do not care,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,No
+407,Radiology,LCDR,2016,Non-Operational/Non-Clinical,> 4 months,3,3,1,1st choice,Europe,Clinical Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+73,General Medical Officer,LCDR,2013,OCONUS MTF,NA,5,5,5,1st choice,Europe,Clinical Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Sep-16,Yes,No
+111,General Medical Officer,LT,2016,Non-Operational/Non-Clinical,2-4 months,4,5,4,1st choice,Southern California,Mixed,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Mar-17,Yes,No
+410,Orthopedic Surgery,LCDR,2016,CONUS MTF,2-4 months,5,5,3,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Operational Medicine,Yes,3 tours (~9 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+411,Pediatrics,LT,2016,OCONUS MTF,2-4 months,4,4,3,3rd choice,Europe,Clinical Medicine,No,1 tour (~3 years),Yes,Other,Nov-16,Yes,Yes
+412,Internal Medicine (General),LT,2015,CONUS MTF,NA,5,1,3,4th choice,"Tidewater Region (Portsmouth, Norfolk)",Academic Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,No,Yes
+413,Emergency Medicine,LCDR,2016,OCONUS MTF,> 4 months,2,1,3,Other,Southern California,Resign/Retire,Do not care,Other,Other,Something similar to the National Residency Match Program,Dec-16,Yes,No
+414,Pathology,CAPT or Flag,2015,OCONUS MTF,2-4 months,5,5,5,1st choice,"Pacific (Hawaii, Guam, Japan)",Resign/Retire,No,2 tours (~6 years),No,Other,Feb-17,Yes,No
+415,Dermatology,LT,2014,GME,2-4 months,5,5,4,2nd choice,Southern California,Clinical Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+416,Family Medicine,LCDR,2015,OCONUS MTF,2-4 months,4,3,4,1st choice,"Southeast (North Carolina, Florida)",Mixed,Do not care,2 tours (~6 years),No,NA,NA,NA,NA
+113,General Medical Officer,LT,2013,OCONUS Operational,2-4 months,1,1,1,3rd choice,Pacific Northwest,Academic Medicine,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Feb-17,Yes,Yes
+419,Radiology,LCDR,2016,OCONUS MTF,2-4 months,2,4,3,Other,NA,Resign/Retire,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Mar-17,Yes,Yes
+420,Family Medicine,LCDR,2016,OCONUS MTF,NA,2,2,2,> 4th choice,"Southeast (North Carolina, Florida)",Mixed,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+421,Pediatrics,CAPT or Flag,2014,OCONUS MTF,> 4 months,5,5,5,1st choice,Pacific Northwest,Resign/Retire,No,2 tours (~6 years),Other,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+422,Family Medicine,LT,2014,OCONUS MTF,2-4 months,2,3,3,1st choice,National Capital Region,Academic Medicine,Do not care,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+423,Pediatrics,LCDR,2016,OCONUS MTF,2-4 months,4,5,4,2nd choice,Europe,Mixed,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+424,Family Medicine,LT,2014,OCONUS MTF,2-4 months,1,1,3,Other,Europe,Resign/Retire,Other,Other,Yes,Other,Other,Yes,No
+425,Family Medicine,CAPT or Flag,2016,OCONUS MTF,2-4 months,4,3,2,> 4th choice,Pacific Northwest,Academic Medicine,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,No
+426,Family Medicine,CDR,2016,OCONUS Operational,NA,1,1,2,Other,"Southeast (North Carolina, Florida)",Executive Medicine,Do not care,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+427,Family Medicine,LCDR,2014,OCONUS MTF,> 4 months,5,5,3,1st choice,Southern California,Undecided,Do not care,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Oct-16,Yes,Yes
+114,General Medical Officer,LT,2015,CONUS Operational,NA,2,2,1,2nd choice,Southern California,Research,No,2 tours (~6 years),No,Something similar to the National Residency Match Program,Nov-16,Yes,No
+429,Radiology,CAPT or Flag,2015,OCONUS MTF,2-4 months,4,4,4,1st choice,Europe,Clinical Medicine,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+430,Radiology,LCDR,2016,OCONUS MTF,2-4 months,3,3,2,> 4th choice,Europe,Resign/Retire,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+431,Family Medicine,LCDR,2015,OCONUS MTF,2-4 months,1,3,4,1st choice,Europe,Executive Medicine,Yes,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,No
+432,Family Medicine,LCDR,2014,OCONUS MTF,> 4 months,5,4,3,1st choice,National Capital Region,Academic Medicine,Do not care,2 tours (~6 years),No,Something similar to the National Residency Match Program,Nov-16,Yes,Yes
+433,Pathology,CDR,2015,OCONUS MTF,2-4 months,3,3,2,1st choice,Europe,Global Health Engagement,No,3 tours (~9 years),Other,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+312,General Medical Officer,LT,2015,CONUS MTF,2-4 months,1,1,1,Other,Southern California,Clinical Medicine,Other,Other,Other,Something similar to the National Residency Match Program,Mar-17,No,No
+418,General Medical Officer,LT,2015,OCONUS Operational,2-4 months,5,4,NA,2nd choice,"Pacific (Hawaii, Guam, Japan)",Clinical Medicine,No,2 tours (~6 years),Other,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+436,Orthopedic Surgery,LCDR,2012,CONUS MTF,> 4 months,4,5,4,2nd choice,"Southeast (North Carolina, Florida)",Clinical Medicine,Do not care,Other,No,Status Quo: Detailer and Specialty Leader decide,Other,Yes,Yes
+437,Pediatrics,CDR,2016,CONUS MTF,> 4 months,5,5,1,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Academic Medicine,Yes,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jul-16,Yes,No
+428,General Medical Officer,LT,2016,OCONUS Operational,2-4 months,2,2,3,Other,"Tidewater Region (Portsmouth, Norfolk)",Mixed,Yes,3 tours (~9 years),Other,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+439,Pediatrics,LCDR,2009,CONUS MTF,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+440,Orthopedic Surgery,LCDR,2016,CONUS MTF,2-4 months,5,4,5,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Academic Medicine,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Nov-16,Yes,Yes
+441,Preventive Medicine,CAPT or Flag,2016,CONUS MTF,2-4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+442,Dermatology,CDR,2015,CONUS MTF,> 4 months,5,5,5,Other,Pacific Northwest,Mixed,Yes,2 tours (~6 years),Other,Status Quo: Detailer and Specialty Leader decide,Jan-17,No,Yes
+443,Pediatrics,CDR,2015,CONUS MTF,NA,4,5,4,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Mixed,Do not care,3 tours (~9 years),No,Other,Mar-17,Yes,Yes
+444,Family Medicine,CAPT or Flag,2014,CONUS MTF,2-4 months,5,5,5,2nd choice,"Pacific (Hawaii, Guam, Japan)",Operational Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jun-16,Yes,Yes
+445,Pediatrics,CDR,2011,CONUS MTF,> 4 months,4,4,4,2nd choice,National Capital Region,Clinical Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+446,Preventive Medicine,CDR,2016,GME,2-4 months,4,2,3,4th choice,Pacific Northwest,Executive Medicine,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+447,Family Medicine,CDR,2015,OCONUS MTF,2-4 months,5,5,3,1st choice,Europe,Clinical Medicine,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+448,Pediatrics,CAPT or Flag,2016,CONUS MTF,NA,4,4,3,1st choice,National Capital Region,Academic Medicine,No,2 tours (~6 years),Yes,Other,Dec-16,Yes,Yes
+449,Preventive Medicine,CAPT or Flag,2013,Non-Operational/Non-Clinical,2-4 months,5,5,4,1st choice,National Capital Region,Resign/Retire,Do not care,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+450,Pediatrics,LCDR,2016,CONUS MTF,NA,4,4,3,Other,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,Yes,3 tours (~9 years),No,Something similar to the National Residency Match Program,Jan-17,No,No
+451,Orthopedic Surgery,CDR,2014,CONUS MTF,2-4 months,1,3,2,Other,"Southeast (North Carolina, Florida)",Clinical Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Oct-16,Yes,Yes
+453,Radiology,CDR,2015,CONUS MTF,2-4 months,4,4,2,1st choice,National Capital Region,Executive Medicine,Yes,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+454,Pediatrics,CAPT or Flag,2016,CONUS Operational,> 4 months,5,5,NA,1st choice,"Southeast (North Carolina, Florida)",Resign/Retire,No,2 tours (~6 years),Other,Other,Jan-17,Yes,No
+455,Occupational Medicine,LCDR,2014,CONUS MTF,2-4 months,4,4,3,1st choice,National Capital Region,Resign/Retire,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Sep-16,No,No
+456,Family Medicine,CAPT or Flag,2014,CONUS Operational,2-4 months,4,4,2,1st choice,"Southeast (North Carolina, Florida)",Resign/Retire,No,1 tour (~3 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,No
+457,Pediatrics,LCDR,2013,CONUS MTF,> 4 months,5,5,5,1st choice,Pacific Northwest,Executive Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+458,Pediatrics,LT,2013,GME,2-4 months,2,2,NA,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+459,Cardiothoracic Surgery,LCDR,2015,CONUS MTF,> 4 months,5,2,4,3rd choice,Pacific Northwest,Resign/Retire,Do not care,Other,No,Status Quo: Detailer and Specialty Leader decide,Aug-16,Yes,Yes
+60,Family Medicine,LT,2016,GME,2-4 months,4,4,3,1st choice,Southern California,Clinical Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,NA,Yes
+461,Neonatology,LT,2016,CONUS MTF,> 4 months,3,4,2,1st choice,National Capital Region,Academic Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Oct-16,Yes,Yes
+462,Pediatrics,LT,2014,CONUS MTF,NA,2,3,3,2nd choice,Pacific Northwest,Clinical Medicine,Yes,3 tours (~9 years),No,Something similar to the National Residency Match Program,Jun-16,No,No
+464,Radiology,CDR,2013,CONUS MTF,2-4 months,4,4,5,1st choice,Pacific Northwest,Clinical Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+465,Neonatology,LT,2015,GME,> 4 months,3,5,2,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+466,Orthopedic Surgery,LCDR,2014,CONUS MTF,2-4 months,1,1,1,2nd choice,Southern California,Resign/Retire,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+467,Pediatrics,LCDR,2016,CONUS MTF,2-4 months,5,5,5,1st choice,"Southeast (North Carolina, Florida)",Academic Medicine,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Jul-16,No,Yes
+468,Preventive Medicine,LCDR,2014,CONUS MTF,NA,4,5,2,1st choice,Southern California,Executive Medicine,No,1 tour (~3 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,NA
+469,Pediatrics,LT,2014,CONUS MTF,2-4 months,4,4,3,1st choice,"Southeast (North Carolina, Florida)",Clinical Medicine,Do not care,3 tours (~9 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+470,Family Medicine,LT,2016,OCONUS Operational,NA,3,2,3,Other,"Pacific (Hawaii, Guam, Japan)",Global Health Engagement,Yes,Other,Other,Something similar to the National Residency Match Program,Feb-17,Yes,No
+471,Preventive Medicine,CDR,2016,CONUS Operational,2-4 months,5,5,3,2nd choice,Europe,Executive Medicine,No,1 tour (~3 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+472,Pediatrics,CDR,2014,CONUS MTF,> 4 months,1,3,3,2nd choice,"Southeast (North Carolina, Florida)",Mixed,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+473,Preventive Medicine,LCDR,2015,GME,NA,2,3,NA,2nd choice,Pacific Northwest,Mixed,Yes,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,No,No
+434,General Medical Officer,LT,2015,CONUS Operational,> 4 months,5,1,5,2nd choice,National Capital Region,Academic Medicine,Yes,4 tours (~12 years),No,Something similar to the National Residency Match Program,Jan-17,No,No
+475,Family Medicine,LT,2014,CONUS MTF,2-4 months,1,1,1,1st choice,Southern California,Clinical Medicine,Yes,4 tours (~12 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+476,Heme/Onc (IM),LCDR,2014,CONUS MTF,2-4 months,4,4,3,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Academic Medicine,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,No
+477,Radiology,CDR,2014,CONUS MTF,> 4 months,5,5,2,1st choice,Southern California,Undecided,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+478,Pediatrics,LCDR,2014,CONUS MTF,2-4 months,4,4,NA,2nd choice,Southern California,Resign/Retire,No,2 tours (~6 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+479,Heme/Onc (IM),CDR,2015,CONUS MTF,NA,3,5,5,1st choice,Southern California,Executive Medicine,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Dec-16,NA,NA
+480,Preventive Medicine,LCDR,2016,CONUS MTF,2-4 months,2,4,2,2nd choice,"Southeast (North Carolina, Florida)",Executive Medicine,No,1 tour (~3 years),Yes,NA,NA,NA,NA
+481,Orthopedic Surgery,CDR,2014,CONUS MTF,2-4 months,5,5,2,2nd choice,National Capital Region,Resign/Retire,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,No
+482,OB/GYN,CDR,2014,CONUS MTF,2-4 months,5,5,3,1st choice,National Capital Region,Clinical Medicine,Yes,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,NA,Yes
+483,Neonatology,CDR,2016,CONUS MTF,NA,5,5,5,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Executive Medicine,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,Yes
+484,Family Medicine,LT,2015,GME,2-4 months,2,2,NA,1st choice,Europe,Academic Medicine,Do not care,Other,No,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,Yes
+485,Radiology,LCDR,2016,CONUS MTF,2-4 months,1,1,1,4th choice,National Capital Region,Academic Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Mar-17,No,Yes
+486,Emergency Medicine,LCDR,2014,CONUS MTF,NA,4,3,4,1st choice,Southern California,Resign/Retire,No,2 tours (~6 years),Yes,Other,Mar-17,Yes,Yes
+487,Pediatrics,LT,2015,CONUS MTF,NA,4,4,4,1st choice,Pacific Northwest,Clinical Medicine,Do not care,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+488,Heme/Onc (IM),LCDR,2015,CONUS MTF,> 4 months,1,NA,NA,Other,Northeast,Clinical Medicine,Yes,Other,No,Status Quo: Detailer and Specialty Leader decide,Jul-16,No,Yes
+489,General Medical Officer,LT,2016,CONUS MTF,2-4 months,2,3,NA,1st choice,National Capital Region,Academic Medicine,Other,3 tours (~9 years),No,Something similar to the National Residency Match Program,Feb-17,Yes,Yes
+490,Pediatrics,LT,2015,CONUS MTF,2-4 months,3,3,3,3rd choice,Southern California,Other,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,No,No
+492,Family Medicine,LT,2016,GME,2-4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+494,Nephrology (IM),CDR,2016,CONUS MTF,2-4 months,4,4,4,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Mixed,Yes,4 tours (~12 years),Other,Other,Jan-17,Yes,Yes
+495,Pathology,CAPT or Flag,2010,CONUS MTF,2-4 months,1,1,1,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Resign/Retire,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+496,Heme/Onc (IM),LCDR,2016,CONUS MTF,2-4 months,5,5,4,2nd choice,Southern California,Academic Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Nov-16,Yes,Yes
+497,Pediatrics,CDR,2014,CONUS MTF,2-4 months,5,4,4,2nd choice,Northeast,Resign/Retire,Do not care,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,Yes
+498,Family Medicine,CDR,2014,CONUS MTF,> 4 months,5,5,NA,1st choice,Pacific Northwest,Resign/Retire,Do not care,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+499,Dermatology,LCDR,2015,CONUS MTF,2-4 months,4,5,5,2nd choice,"Southeast (North Carolina, Florida)",Clinical Medicine,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Other,Yes,Yes
+500,Pediatrics,LT,2016,CONUS MTF,NA,5,4,NA,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Academic Medicine,No,4 tours (~12 years),Other,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+1103,General Medical Officer,LT,2014,Non-Operational/Non-Clinical,> 4 months,3,3,2,3rd choice,Pacific Northwest,Mixed,Do not care,2 tours (~6 years),Other,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+502,Preventive Medicine,CDR,2016,CONUS Operational,2-4 months,5,5,3,1st choice,Europe,Executive Medicine,No,1 tour (~3 years),Yes,Other,Dec-16,Yes,Yes
+503,Emergency Medicine,CDR,2015,CONUS Operational,2-4 months,3,3,3,3rd choice,Europe,Clinical Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jun-16,Yes,Yes
+504,Allergy/Immunology,CDR,2015,CONUS MTF,> 4 months,4,NA,2,2nd choice,Southern California,Academic Medicine,Do not care,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+505,Radiology,CDR,2012,CONUS MTF,2-4 months,5,5,5,Other,National Capital Region,Resign/Retire,Do not care,Other,Other,Other,Sep-16,Yes,Yes
+506,Nephrology (IM),LCDR,2014,CONUS MTF,2-4 months,4,4,3,2nd choice,National Capital Region,Executive Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+507,Dermatology,CDR,2016,Non-Operational/Non-Clinical,2-4 months,5,5,5,1st choice,National Capital Region,Executive Medicine,Do not care,2 tours (~6 years),Other,Status Quo: Detailer and Specialty Leader decide,Feb-17,No,Yes
+508,Pediatrics,LT,2014,GME,2-4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+509,General Surgery,LCDR,2015,CONUS MTF,2-4 months,5,3,5,1st choice,National Capital Region,Resign/Retire,Do not care,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+510,Emergency Medicine,LCDR,2016,CONUS Operational,> 4 months,4,4,4,2nd choice,Southern California,Operational Medicine,Yes,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+511,Family Medicine,LT,2013,GME,2-4 months,NA,NA,4,1st choice,Europe,Global Health Engagement,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Jan-17,No,No
+512,Pediatrics,CDR,2015,OCONUS MTF,2-4 months,4,4,4,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Executive Medicine,No,2 tours (~6 years),Other,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+513,Dermatology,LCDR,2015,GME,2-4 months,5,5,NA,1st choice,Southern California,Clinical Medicine,No,1 tour (~3 years),Yes,Status Quo: Detailer and Specialty Leader decide,Nov-16,NA,No
+514,Neonatology,CDR,2014,CONUS MTF,2-4 months,4,4,1,Other,National Capital Region,Mixed,No,2 tours (~6 years),Yes,Other,Jan-17,Yes,Yes
+516,Family Medicine,LT,2015,OCONUS MTF,NA,1,1,1,Other,Middle East or Africa,Global Health Engagement,No,4 tours (~12 years),No,Other,Mar-17,Yes,Yes
+517,Family Medicine,LCDR,2016,OCONUS MTF,NA,3,1,4,Other,Pacific Northwest,Resign/Retire,Yes,2 tours (~6 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,No
+518,Nephrology (IM),LT,2016,CONUS MTF,2-4 months,4,4,3,2nd choice,Southern California,Undecided,Do not care,3 tours (~9 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,NA,No
+519,Pediatrics,LCDR,2014,GME,2-4 months,3,4,2,1st choice,Europe,Mixed,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,NA
+520,Psychiatry,LCDR,2015,CONUS MTF,NA,2,1,1,4th choice,Southern California,Mixed,Do not care,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+521,Allergy/Immunology,CDR,2016,CONUS MTF,> 4 months,5,5,3,1st choice,National Capital Region,Executive Medicine,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+522,Nephrology (IM),LCDR,2015,CONUS MTF,2-4 months,5,5,4,1st choice,Southern California,Clinical Medicine,No,4 tours (~12 years),Other,Status Quo: Detailer and Specialty Leader decide,Jan-17,No,No
+523,Pediatrics,LT,2014,CONUS MTF,2-4 months,3,2,4,1st choice,Southern California,Clinical Medicine,Do not care,2 tours (~6 years),No,Something similar to the National Residency Match Program,Dec-16,No,No
+524,Preventive Medicine,CDR,2015,Non-Operational/Non-Clinical,> 4 months,5,5,2,1st choice,National Capital Region,Academic Medicine,Yes,4 tours (~12 years),Other,Something similar to the National Residency Match Program,Jun-16,Yes,Yes
+525,Radiology,LCDR,2012,CONUS MTF,2-4 months,NA,NA,NA,Other,Europe,Mixed,Other,2 tours (~6 years),Yes,Other,Dec-16,Yes,Yes
+526,Nephrology (IM),LCDR,2016,CONUS MTF,2-4 months,5,5,5,1st choice,Southern California,Mixed,Yes,Other,No,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,Yes
+528,Radiology,CDR,2013,CONUS MTF,> 4 months,5,4,4,1st choice,Pacific Northwest,Executive Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,NA,Yes
+529,Pathology,CDR,2016,CONUS MTF,2-4 months,4,4,4,1st choice,Southern California,Resign/Retire,No,2 tours (~6 years),Other,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+530,Family Medicine,LT,2016,OCONUS Operational,> 4 months,1,1,NA,> 4th choice,Southern California,Clinical Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jun-16,Yes,Yes
+1171,General Medical Officer,LT,2015,CONUS MTF,2-4 months,1,1,NA,Other,"Southeast (North Carolina, Florida)",Clinical Medicine,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+532,Family Medicine,CAPT or Flag,2015,CONUS MTF,> 4 months,4,5,4,1st choice,Southern California,Resign/Retire,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Nov-16,Yes,Yes
+533,Psychiatry,LCDR,2013,GME,2-4 months,NA,NA,2,1st choice,"Pacific (Hawaii, Guam, Japan)",Mixed,No,Other,Other,Other,Feb-17,NA,NA
+534,Preventive Medicine,LCDR,2016,CONUS Operational,2-4 months,2,2,4,> 4th choice,"Tidewater Region (Portsmouth, Norfolk)",Global Health Engagement,No,Other,Other,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+536,Pediatrics,LCDR,2013,CONUS MTF,> 4 months,4,5,2,1st choice,Southern California,Global Health Engagement,Other,Other,Other,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+537,Psychiatry,LCDR,2013,GME,2-4 months,3,5,3,1st choice,"Pacific (Hawaii, Guam, Japan)",Mixed,No,Other,Other,Other,Feb-17,NA,NA
+538,Pathology,LCDR,2016,CONUS MTF,> 4 months,5,5,5,1st choice,Southern California,Resign/Retire,Yes,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jul-16,Yes,Yes
+1193,General Medical Officer,LT,2015,CONUS Operational,2-4 months,2,2,1,Other,NA,Clinical Medicine,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Nov-16,Yes,Yes
+1212,General Medical Officer,LT,2016,CONUS Operational,NA,3,2,5,1st choice,"Southeast (North Carolina, Florida)",Undecided,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Feb-17,Yes,No
+541,Radiology,CDR,2013,CONUS MTF,> 4 months,4,4,3,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Resign/Retire,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+542,Pediatrics,CDR,2016,GME,2-4 months,3,5,3,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,Do not care,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+543,Family Medicine,CAPT or Flag,2015,CONUS MTF,> 4 months,4,4,3,1st choice,NA,Executive Medicine,Yes,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Nov-16,Yes,Yes
+544,Family Medicine,LCDR,2016,CONUS MTF,2-4 months,4,5,5,Other,Southern California,Global Health Engagement,Do not care,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+545,Family Medicine,LCDR,2016,GME,> 4 months,3,3,3,1st choice,"Pacific (Hawaii, Guam, Japan)",Clinical Medicine,Yes,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,No
+546,Pediatrics,CDR,2014,OCONUS MTF,2-4 months,4,3,5,> 4th choice,Southern California,Resign/Retire,No,Other,Other,Status Quo: Detailer and Specialty Leader decide,Sep-16,Yes,Yes
+549,Cardiology (IM),CDR,2014,CONUS MTF,2-4 months,5,5,4,2nd choice,"Tidewater Region (Portsmouth, Norfolk)",Resign/Retire,Do not care,3 tours (~9 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+550,Preventive Medicine,LCDR,2015,OCONUS Operational,2-4 months,4,3,3,1st choice,Northeast,Mixed,Yes,2 tours (~6 years),Yes,Other,Jan-17,Yes,Yes
+551,Pediatrics,LT,2014,CONUS MTF,2-4 months,NA,NA,NA,1st choice,Northeast,Clinical Medicine,No,2 tours (~6 years),No,Something similar to the National Residency Match Program,Feb-17,Yes,Yes
+552,Emergency Medicine,LCDR,2015,OCONUS Operational,NA,2,1,3,1st choice,Southern California,Mixed,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+553,Cardiology (IM),CDR,2015,CONUS MTF,> 4 months,3,4,3,1st choice,National Capital Region,Academic Medicine,Do not care,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,NA,No
+554,Cardiology (IM),LCDR,2016,CONUS MTF,2-4 months,5,5,4,1st choice,National Capital Region,Clinical Medicine,Yes,NA,Yes,Something similar to the National Residency Match Program,Jan-17,Yes,No
+555,Family Medicine,CDR,2016,OCONUS Operational,2-4 months,1,1,NA,Other,"Southeast (North Carolina, Florida)",Mixed,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+556,Family Medicine,CDR,2016,CONUS MTF,2-4 months,5,3,3,3rd choice,National Capital Region,Resign/Retire,No,1 tour (~3 years),Yes,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,No
+557,Cardiology (IM),CDR,2014,CONUS MTF,2-4 months,3,4,4,Other,"Southeast (North Carolina, Florida)",Resign/Retire,No,Other,Other,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+558,Cardiology (IM),LCDR,2016,CONUS MTF,2-4 months,2,3,2,1st choice,Southern California,Clinical Medicine,Yes,4 tours (~12 years),No,Something similar to the National Residency Match Program,Jan-17,No,No
+559,Pediatrics,LCDR,2013,CONUS MTF,2-4 months,4,3,NA,1st choice,Southern California,Clinical Medicine,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,No
+561,Cardiology (IM),CDR,2014,CONUS MTF,2-4 months,NA,3,3,1st choice,Southern California,Academic Medicine,No,Other,Other,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+562,Cardiology (IM),LCDR,2015,CONUS MTF,2-4 months,4,4,NA,1st choice,National Capital Region,Clinical Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,No,Yes
+563,Family Medicine,LT,2016,CONUS MTF,2-4 months,4,4,NA,1st choice,Southern California,Clinical Medicine,No,2 tours (~6 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+565,Cardiology (IM),CAPT or Flag,2014,CONUS MTF,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+567,Psychiatry,CAPT or Flag,2015,CONUS MTF,> 4 months,4,4,3,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,Yes,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+568,Psychiatry,LT,2014,GME,2-4 months,3,4,NA,2nd choice,Pacific Northwest,Clinical Medicine,Yes,2 tours (~6 years),Other,Status Quo: Detailer and Specialty Leader decide,Dec-16,No,Yes
+569,Psychiatry,LT,2015,GME,2-4 months,4,4,NA,1st choice,Southern California,Executive Medicine,Do not care,Other,No,Something similar to the National Residency Match Program,Jan-17,Yes,No
+570,Cardiology (IM),CDR,2015,CONUS MTF,2-4 months,5,5,5,1st choice,National Capital Region,Clinical Medicine,Yes,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+571,Cardiology (IM),CAPT or Flag,2015,CONUS MTF,> 4 months,3,2,2,1st choice,Northeast,Resign/Retire,Yes,Other,No,Status Quo: Detailer and Specialty Leader decide,Jan-17,No,No
+572,Psychiatry,LCDR,2012,CONUS MTF,2-4 months,5,4,4,2nd choice,"Pacific (Hawaii, Guam, Japan)",Clinical Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,No,No
+573,Physical Medicine and Rehabilitation,CDR,2014,CONUS MTF,2-4 months,5,5,5,1st choice,National Capital Region,Clinical Medicine,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+1220,General Medical Officer,LT,2015,CONUS Operational,2-4 months,2,2,3,3rd choice,Southern California,Mixed,Do not care,2 tours (~6 years),No,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+575,Psychiatry,LT,2015,CONUS MTF,> 4 months,5,5,5,1st choice,Northeast,Undecided,Yes,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+576,Psychiatry,CDR,2016,Non-Operational/Non-Clinical,NA,2,2,5,2nd choice,Southern California,Executive Medicine,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1222,General Medical Officer,LT,2016,CONUS Operational,2-4 months,4,4,5,1st choice,"Southeast (North Carolina, Florida)",Clinical Medicine,Do not care,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+578,Pediatrics,LT,2014,CONUS MTF,2-4 months,5,5,NA,1st choice,Southern California,Undecided,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+1270,General Medical Officer,LT,2016,CONUS Operational,NA,2,4,NA,1st choice,Southern California,Operational Medicine,Other,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+580,Cardiology (IM),CDR,2013,CONUS MTF,NA,5,3,5,2nd choice,Southern California,Resign/Retire,Yes,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,No
+581,Psychiatry,CDR,2014,OCONUS MTF,2-4 months,5,5,4,1st choice,Southern California,Mixed,Do not care,Other,Other,Other,Jan-17,No,No
+582,Cardiology (IM),CDR,2016,CONUS MTF,2-4 months,5,5,5,1st choice,National Capital Region,Clinical Medicine,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Dec-16,NA,Yes
+583,Cardiology (IM),LCDR,2016,CONUS MTF,> 4 months,4,5,5,1st choice,National Capital Region,Academic Medicine,Do not care,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jun-16,No,No
+584,Psychiatry,LCDR,2015,CONUS Operational,NA,5,5,5,1st choice,NA,Operational Medicine,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+585,Psychiatry,LT,2013,GME,2-4 months,5,5,5,1st choice,"Pacific (Hawaii, Guam, Japan)",Mixed,Yes,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+586,Psychiatry,CDR,2016,Non-Operational/Non-Clinical,2-4 months,5,5,2,1st choice,Southern California,Mixed,Yes,Other,No,Status Quo: Detailer and Specialty Leader decide,Other,No,Yes
+587,Psychiatry,LT,2013,CONUS MTF,> 4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+588,Orthopedic Surgery,LCDR,2016,CONUS MTF,2-4 months,4,4,5,1st choice,Southern California,Academic Medicine,Do not care,Other,No,Something similar to the National Residency Match Program,Dec-16,Yes,NA
+589,Psychiatry,LCDR,2014,CONUS MTF,NA,2,5,3,1st choice,Europe,Global Health Engagement,No,3 tours (~9 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+590,Psychiatry,LCDR,2016,CONUS Operational,2-4 months,2,2,1,3rd choice,Northeast,Clinical Medicine,Yes,1 tour (~3 years),Yes,Something similar to the National Residency Match Program,Dec-16,Yes,No
+591,Cardiology (IM),LCDR,2016,CONUS MTF,2-4 months,5,5,5,1st choice,Southern California,Clinical Medicine,Do not care,Other,Other,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+592,Family Medicine,CDR,2014,CONUS MTF,2-4 months,3,3,3,1st choice,Southern California,Academic Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+593,Infectious Disease (IM),CDR,2014,CONUS MTF,2-4 months,3,2,4,1st choice,Southern California,Mixed,Yes,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,No,No
+594,Pediatrics,LT,2016,OCONUS MTF,2-4 months,2,2,3,3rd choice,Europe,Mixed,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+595,Internal Medicine (General),CAPT or Flag,2014,Non-Operational/Non-Clinical,2-4 months,2,3,3,2nd choice,"Pacific (Hawaii, Guam, Japan)",Executive Medicine,No,1 tour (~3 years),Yes,Something similar to the National Residency Match Program,Jan-17,No,No
+596,Psychiatry,LT,2016,OCONUS Operational,NA,2,3,NA,1st choice,"Pacific (Hawaii, Guam, Japan)",Executive Medicine,Do not care,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+597,Cardiology (IM),CDR,2015,CONUS MTF,2-4 months,4,4,3,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,Do not care,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+599,Family Medicine,CDR,2015,GME,2-4 months,5,5,3,1st choice,"Southeast (North Carolina, Florida)",Global Health Engagement,Yes,4 tours (~12 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,No
+600,Infectious Disease (IM),LCDR,2016,Non-Operational/Non-Clinical,2-4 months,3,3,3,2nd choice,National Capital Region,Undecided,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Nov-16,Yes,Yes
+601,Cardiology (IM),CDR,2015,CONUS MTF,NA,5,5,5,1st choice,"Pacific (Hawaii, Guam, Japan)",Executive Medicine,Yes,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+602,Orthopedic Surgery,LCDR,2015,CONUS MTF,NA,2,1,4,1st choice,Southern California,Academic Medicine,Yes,4 tours (~12 years),No,Something similar to the National Residency Match Program,Dec-16,NA,Yes
+604,Pediatrics,LT,2016,CONUS MTF,2-4 months,5,5,NA,1st choice,Southern California,Academic Medicine,Do not care,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,NA,NA
+605,Cardiology (IM),LCDR,2015,CONUS MTF,NA,NA,NA,3,Other,National Capital Region,Mixed,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Oct-16,NA,NA
+606,Endocrinology (IM),LCDR,2014,CONUS MTF,> 4 months,4,4,4,1st choice,National Capital Region,Mixed,Yes,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+607,Psychiatry,LT,2014,CONUS MTF,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+608,Emergency Medicine,LCDR,2015,CONUS MTF,2-4 months,3,3,3,3rd choice,Southern California,Resign/Retire,Do not care,2 tours (~6 years),Other,Something similar to the National Residency Match Program,Jan-17,Yes,No
+609,Family Medicine,LCDR,2015,GME,> 4 months,5,4,3,1st choice,Europe,Operational Medicine,Yes,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+610,Family Medicine,LCDR,2015,OCONUS Operational,NA,1,1,2,Other,Southern California,Operational Medicine,Other,2 tours (~6 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,No
+611,Infectious Disease (IM),CAPT or Flag,2015,OCONUS Operational,2-4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+612,Family Medicine,LT,2015,CONUS MTF,2-4 months,NA,NA,NA,1st choice,Europe,Mixed,Do not care,3 tours (~9 years),No,Something similar to the National Residency Match Program,Dec-16,NA,NA
+613,Dermatology,LCDR,2014,GME,2-4 months,5,5,5,1st choice,Southern California,Mixed,No,1 tour (~3 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,NA
+614,Psychiatry,LCDR,2015,OCONUS MTF,2-4 months,3,3,NA,Other,Europe,Undecided,Yes,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+615,Family Medicine,LCDR,2015,CONUS MTF,2-4 months,5,5,NA,1st choice,"Southeast (North Carolina, Florida)",Operational Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,No,No
+616,Neonatology,LCDR,2016,CONUS MTF,2-4 months,5,4,5,1st choice,Southern California,Clinical Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Aug-16,Yes,Yes
+617,Cardiology (IM),CDR,2016,CONUS MTF,> 4 months,4,4,4,1st choice,National Capital Region,Academic Medicine,Do not care,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jun-16,No,Yes
+618,Family Medicine,LCDR,2015,GME,2-4 months,5,5,NA,1st choice,"Pacific (Hawaii, Guam, Japan)",Executive Medicine,Do not care,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,Yes
+619,Family Medicine,LT,2014,GME,> 4 months,3,4,4,4th choice,"Southeast (North Carolina, Florida)",Clinical Medicine,Do not care,2 tours (~6 years),No,NA,NA,NA,NA
+620,Family Medicine,CAPT or Flag,2015,OCONUS Operational,2-4 months,2,2,5,2nd choice,Pacific Northwest,Executive Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+621,Emergency Medicine,CDR,2013,CONUS MTF,> 4 months,5,5,5,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Academic Medicine,Yes,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Feb-17,No,No
+622,Family Medicine,LT,2014,GME,2-4 months,4,3,3,1st choice,National Capital Region,Clinical Medicine,No,2 tours (~6 years),No,Something similar to the National Residency Match Program,Jan-17,No,No
+623,Family Medicine,LT,2015,CONUS MTF,2-4 months,3,3,3,1st choice,Europe,Clinical Medicine,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Dec-16,NA,NA
+1277,General Medical Officer,LT,2016,CONUS Operational,NA,2,1,2,4th choice,Southern California,Clinical Medicine,Yes,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+625,Family Medicine,LCDR,2015,CONUS MTF,2-4 months,4,4,4,1st choice,Europe,Mixed,No,3 tours (~9 years),No,Other,Dec-16,NA,NA
+626,Family Medicine,LT,2014,CONUS MTF,2-4 months,3,NA,NA,Other,"Pacific (Hawaii, Guam, Japan)",Operational Medicine,Yes,2 tours (~6 years),No,Something similar to the National Residency Match Program,Dec-16,No,Yes
+627,Family Medicine,LCDR,2015,CONUS MTF,2-4 months,1,1,1,> 4th choice,Southern California,Other,Do not care,4 tours (~12 years),Other,Something similar to the National Residency Match Program,Dec-16,Yes,No
+628,Psychiatry,LT,2013,GME,2-4 months,5,5,4,1st choice,Pacific Northwest,Clinical Medicine,Do not care,3 tours (~9 years),No,Something similar to the National Residency Match Program,Feb-17,Yes,Yes
+629,Family Medicine,LT,2014,GME,> 4 months,5,5,5,1st choice,"Southeast (North Carolina, Florida)",Mixed,Other,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+630,Family Medicine,LT,2016,GME,2-4 months,4,5,NA,1st choice,"Southeast (North Carolina, Florida)",Operational Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Nov-16,Yes,Yes
+631,Gastroenterology (IM),CAPT or Flag,2013,CONUS MTF,> 4 months,5,5,4,1st choice,National Capital Region,Resign/Retire,No,2 tours (~6 years),No,Something similar to the National Residency Match Program,Jan-17,NA,Yes
+632,Internal Medicine (General),CDR,2016,CONUS MTF,2-4 months,3,4,4,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+633,Pulmonary Critical Care (IM),CDR,2014,CONUS Operational,2-4 months,4,5,4,1st choice,"Pacific (Hawaii, Guam, Japan)",Operational Medicine,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,No,Yes
+634,Pulmonary Critical Care (IM),LT,2016,CONUS MTF,> 4 months,2,4,NA,Other,Pacific Northwest,Academic Medicine,Do not care,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+635,Pulmonary Critical Care (IM),LCDR,2016,OCONUS MTF,2-4 months,5,5,4,1st choice,Europe,Clinical Medicine,Do not care,Other,Other,Something similar to the National Residency Match Program,Dec-16,No,Yes
+636,Pulmonary Critical Care (IM),CAPT or Flag,2016,CONUS MTF,NA,5,NA,5,1st choice,NA,Clinical Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jul-16,Yes,Yes
+637,Family Medicine,LCDR,2014,CONUS MTF,> 4 months,3,4,5,1st choice,Europe,Academic Medicine,Do not care,4 tours (~12 years),Other,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+638,Aerospace Medicine (Residency Trained Flight),LCDR,2014,GME,2-4 months,4,4,3,1st choice,Pacific Northwest,Operational Medicine,No,2 tours (~6 years),Other,Other,Jan-17,Yes,Yes
+639,Heme/Onc (IM),LCDR,2012,CONUS MTF,2-4 months,4,4,3,1st choice,National Capital Region,Mixed,Yes,NA,No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+640,Occupational Medicine,LCDR,2016,CONUS MTF,2-4 months,3,4,3,2nd choice,Pacific Northwest,Resign/Retire,Yes,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Feb-17,No,No
+1280,General Medical Officer,LT,2016,CONUS Operational,2-4 months,2,4,3,2nd choice,Southern California,Clinical Medicine,No,3 tours (~9 years),No,Something similar to the National Residency Match Program,Nov-16,Yes,Yes
+643,Occupational Medicine,CDR,2016,CONUS MTF,2-4 months,3,3,NA,3rd choice,"Southeast (North Carolina, Florida)",Resign/Retire,Yes,2 tours (~6 years),No,Something similar to the National Residency Match Program,Feb-17,Yes,Yes
+644,Internal Medicine (General),LCDR,2012,CONUS MTF,2-4 months,2,2,3,2nd choice,Southern California,Clinical Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,No
+645,Occupational Medicine,LCDR,2016,CONUS MTF,> 4 months,1,2,5,3rd choice,Southern California,Executive Medicine,No,1 tour (~3 years),Yes,Something similar to the National Residency Match Program,Jun-16,Yes,NA
+646,Occupational Medicine,NA,2016,CONUS MTF,2-4 months,2,1,2,3rd choice,Pacific Northwest,Executive Medicine,Yes,2 tours (~6 years),No,Something similar to the National Residency Match Program,Jul-16,No,Yes
+647,NA,LCDR,2016,Other,2-4 months,1,1,1,1st choice,Pacific Northwest,Mixed,No,Other,Yes,Other,Jan-17,NA,No
+648,Occupational Medicine,CAPT or Flag,2015,Non-Operational/Non-Clinical,2-4 months,5,5,5,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Resign/Retire,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+649,Internal Medicine (General),LT,2016,CONUS MTF,NA,3,4,NA,2nd choice,"Southeast (North Carolina, Florida)",Resign/Retire,No,2 tours (~6 years),Other,Something similar to the National Residency Match Program,Jan-17,No,No
+650,Occupational Medicine,LCDR,2015,CONUS MTF,2-4 months,2,2,2,Other,Europe,Executive Medicine,Do not care,Other,Yes,Something similar to the National Residency Match Program,Dec-16,NA,Yes
+651,Gastroenterology (IM),LCDR,2014,CONUS MTF,2-4 months,4,4,3,1st choice,Southern California,Clinical Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,NA,NA
+652,Psychiatry,CDR,2016,CONUS MTF,> 4 months,1,4,1,1st choice,Southern California,Executive Medicine,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Dec-16,Yes,NA
+653,Pulmonary Critical Care (IM),CDR,2016,CONUS MTF,2-4 months,2,3,4,2nd choice,Southern California,Mixed,Yes,Other,No,Something similar to the National Residency Match Program,Feb-17,Yes,Yes
+654,Cardiology (IM),LCDR,2015,CONUS MTF,2-4 months,NA,NA,NA,2nd choice,Southern California,Academic Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Other,No,No
+655,Family Medicine,LCDR,2014,Non-Operational/Non-Clinical,NA,5,5,4,1st choice,Pacific Northwest,Resign/Retire,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+656,Family Medicine,LCDR,2015,GME,2-4 months,5,5,5,1st choice,"Southeast (North Carolina, Florida)",Operational Medicine,Do not care,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+657,Occupational Medicine,LCDR,2015,Non-Operational/Non-Clinical,2-4 months,1,1,1,Other,Southern California,Resign/Retire,Do not care,1 tour (~3 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,No
+658,Gastroenterology (IM),CDR,2014,Other,2-4 months,1,2,1,Other,Southern California,Resign/Retire,Yes,2 tours (~6 years),Yes,Other,Jul-16,Yes,Yes
+659,Occupational Medicine,CAPT or Flag,2015,CONUS MTF,NA,1,1,1,Other,Northeast,Resign/Retire,No,2 tours (~6 years),Yes,Other,Jan-17,No,Yes
+660,Aerospace Medicine (Residency Trained Flight),CAPT or Flag,2014,CONUS Operational,2-4 months,5,5,4,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Executive Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+661,Family Medicine,CAPT or Flag,2016,Non-Operational/Non-Clinical,2-4 months,5,5,5,1st choice,Pacific Northwest,Executive Medicine,No,1 tour (~3 years),Yes,Status Quo: Detailer and Specialty Leader decide,Oct-16,Yes,No
+1290,General Medical Officer,LT,2014,CONUS Operational,2-4 months,5,3,NA,1st choice,National Capital Region,Operational Medicine,Do not care,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,NA
+663,Family Medicine,LT,2016,GME,> 4 months,3,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+664,Pulmonary Critical Care (IM),CDR,2015,CONUS Operational,NA,2,2,NA,1st choice,Southern California,Clinical Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,Yes
+665,Other,LT,2015,CONUS Operational,NA,1,2,NA,Other,"Southeast (North Carolina, Florida)",Clinical Medicine,Yes,4 tours (~12 years),No,Something similar to the National Residency Match Program,Feb-17,No,No
+1306,General Medical Officer,LT,2016,CONUS Operational,2-4 months,2,2,1,Other,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,No,3 tours (~9 years),No,Something similar to the National Residency Match Program,Mar-17,Yes,Yes
+668,Radiology,CDR,2015,CONUS MTF,2-4 months,4,4,4,2nd choice,Southern California,Undecided,No,2 tours (~6 years),Other,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+669,Internal Medicine (General),LCDR,2016,CONUS MTF,NA,3,5,3,1st choice,National Capital Region,Clinical Medicine,Yes,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+670,Family Medicine,CDR,2012,GME,> 4 months,5,5,3,1st choice,Europe,Academic Medicine,No,2 tours (~6 years),No,Other,Oct-16,Yes,Yes
+672,Pulmonary Critical Care (IM),CDR,2014,CONUS MTF,> 4 months,5,5,5,1st choice,Southern California,Academic Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+673,Occupational Medicine,LCDR,2015,Non-Operational/Non-Clinical,2-4 months,1,4,NA,Other,"Tidewater Region (Portsmouth, Norfolk)",Mixed,Other,Other,Other,Other,Dec-16,Yes,Yes
+674,Occupational Medicine,LT,2015,CONUS Operational,NA,3,4,3,3rd choice,Pacific Northwest,Mixed,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jul-16,Yes,Yes
+675,Occupational Medicine,CDR,2015,CONUS MTF,> 4 months,5,5,3,1st choice,Southern California,Resign/Retire,Do not care,1 tour (~3 years),Yes,Something similar to the National Residency Match Program,Nov-16,Yes,Yes
+676,Cardiology (IM),CDR,2015,CONUS MTF,> 4 months,5,5,5,1st choice,Southern California,Clinical Medicine,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+677,Cardiology (IM),CDR,2015,CONUS MTF,NA,5,5,5,1st choice,Southern California,Mixed,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,Yes
+678,Physical Medicine and Rehabilitation,LCDR,2014,CONUS MTF,> 4 months,5,5,5,1st choice,Southern California,Executive Medicine,Do not care,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,NA,NA
+679,Aerospace Medicine (Residency Trained Flight),LCDR,2015,CONUS Operational,NA,5,3,3,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Executive Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+680,Occupational Medicine,CDR,2014,Non-Operational/Non-Clinical,2-4 months,3,4,3,1st choice,Southern California,Executive Medicine,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+682,Dermatology,LCDR,2013,CONUS MTF,2-4 months,5,5,3,1st choice,Southern California,Clinical Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+683,Cardiology (IM),CDR,2012,CONUS MTF,2-4 months,3,3,3,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+684,Occupational Medicine,CDR,2013,CONUS Operational,2-4 months,4,4,4,1st choice,Southern California,Mixed,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Feb-17,No,NA
+686,Pediatrics,LT,2014,OCONUS MTF,2-4 months,3,3,1,3rd choice,National Capital Region,Mixed,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,No
+687,Pulmonary Critical Care (IM),LCDR,2013,CONUS MTF,2-4 months,5,3,4,1st choice,"Southeast (North Carolina, Florida)",Resign/Retire,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,No
+690,Radiology,CDR,2014,CONUS MTF,2-4 months,5,5,5,1st choice,Southern California,Clinical Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+692,Other,CAPT or Flag,2015,CONUS MTF,NA,5,5,5,1st choice,"Pacific (Hawaii, Guam, Japan)",Executive Medicine,Do not care,Other,No,Status Quo: Detailer and Specialty Leader decide,Dec-16,No,NA
+693,Family Medicine,LCDR,2011,GME,2-4 months,1,4,4,1st choice,Pacific Northwest,Resign/Retire,Do not care,3 tours (~9 years),Yes,Something similar to the National Residency Match Program,Feb-17,No,Yes
+694,Gastroenterology (IM),LCDR,2015,CONUS MTF,2-4 months,3,3,NA,Other,"Southeast (North Carolina, Florida)",Clinical Medicine,No,Other,No,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+1313,General Medical Officer,LT,2015,CONUS Operational,> 4 months,3,2,2,NA,Europe,Academic Medicine,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+696,Family Medicine,LT,2016,GME,> 4 months,4,4,NA,2nd choice,Pacific Northwest,Mixed,Yes,Other,No,Status Quo: Detailer and Specialty Leader decide,Dec-16,NA,NA
+697,Gastroenterology (IM),CDR,2016,CONUS MTF,2-4 months,3,2,3,Other,Southern California,Resign/Retire,No,Other,Yes,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,No
+698,Internal Medicine (General),LCDR,2014,CONUS MTF,NA,2,2,2,> 4th choice,Southern California,Undecided,Do not care,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+699,Gastroenterology (IM),CDR,2015,CONUS MTF,> 4 months,5,5,3,1st choice,"Southeast (North Carolina, Florida)",Clinical Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Oct-16,Yes,Yes
+700,Gastroenterology (IM),LCDR,2016,CONUS MTF,2-4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1330,General Medical Officer,LCDR,2012,CONUS Operational,NA,5,5,NA,1st choice,Southern California,Clinical Medicine,Yes,Other,Other,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,No
+702,Cardiology (IM),LT,2014,CONUS MTF,2-4 months,NA,NA,NA,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,Do not care,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+703,Anesthesiology,LCDR,2014,CONUS MTF,2-4 months,2,3,2,> 4th choice,Pacific Northwest,Resign/Retire,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Dec-16,Yes,No
+704,Emergency Medicine,LT,2015,CONUS MTF,2-4 months,4,5,3,1st choice,Southern California,Academic Medicine,No,2 tours (~6 years),No,Something similar to the National Residency Match Program,Jan-17,No,No
+705,Psychiatry,LCDR,2014,OCONUS MTF,2-4 months,2,1,1,> 4th choice,Europe,Resign/Retire,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+706,General Surgery,CAPT or Flag,2015,CONUS Operational,2-4 months,5,5,5,1st choice,"Southeast (North Carolina, Florida)",Resign/Retire,Yes,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jul-16,Yes,Yes
+708,Orthopedic Surgery,LCDR,2015,CONUS MTF,2-4 months,2,2,1,2nd choice,Northeast,Resign/Retire,No,Other,Other,Other,Jan-17,Yes,Yes
+709,Neonatology,CDR,2014,CONUS MTF,> 4 months,4,4,1,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Resign/Retire,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,No,Yes
+710,Cardiology (IM),LCDR,2016,CONUS MTF,> 4 months,4,4,4,1st choice,National Capital Region,Mixed,Do not care,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jun-16,No,No
+711,Family Medicine,LT,2015,GME,2-4 months,4,4,4,1st choice,"Southeast (North Carolina, Florida)",Mixed,Do not care,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+712,Internal Medicine (General),LCDR,2014,CONUS MTF,> 4 months,5,5,4,1st choice,Southern California,Academic Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+713,Neonatology,LCDR,2015,CONUS MTF,> 4 months,1,3,4,1st choice,National Capital Region,Resign/Retire,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+714,Dermatology,LCDR,2014,CONUS MTF,2-4 months,4,5,NA,1st choice,National Capital Region,Academic Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+715,Family Medicine,LT,2016,GME,2-4 months,3,3,NA,1st choice,Europe,Mixed,Yes,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+717,Orthopedic Surgery,LCDR,2016,GME,2-4 months,1,1,1,1st choice,Southern California,Academic Medicine,Do not care,4 tours (~12 years),No,Something similar to the National Residency Match Program,Jul-16,Yes,Yes
+718,Physical Medicine and Rehabilitation,LCDR,2014,CONUS MTF,> 4 months,5,5,NA,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Resign/Retire,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Mar-17,NA,NA
+1335,General Medical Officer,LT,2014,CONUS Operational,2-4 months,3,3,NA,Other,Southern California,Mixed,Do not care,Other,Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+720,Pulmonary Critical Care (IM),LCDR,2016,CONUS MTF,NA,5,5,5,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,Do not care,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jun-16,Yes,Yes
+721,Neonatology,LCDR,2014,CONUS MTF,2-4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+723,Psychiatry,LCDR,2016,CONUS Operational,NA,3,1,NA,> 4th choice,National Capital Region,Resign/Retire,No,4 tours (~12 years),Other,Something similar to the National Residency Match Program,Feb-17,Yes,Yes
+724,Neurology,CAPT or Flag,2015,CONUS MTF,> 4 months,5,5,5,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Resign/Retire,Yes,Other,No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+725,Family Medicine,LT,2016,CONUS MTF,2-4 months,3,3,3,1st choice,Southern California,Undecided,No,3 tours (~9 years),No,Something similar to the National Residency Match Program,Dec-16,NA,NA
+726,Neurology,LCDR,2015,CONUS MTF,> 4 months,4,4,3,1st choice,National Capital Region,Mixed,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+728,Neurology,CDR,2016,CONUS MTF,NA,5,5,4,1st choice,Southern California,Executive Medicine,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+729,Neurology,LCDR,2012,CONUS MTF,2-4 months,1,2,4,2nd choice,Southern California,Clinical Medicine,Yes,3 tours (~9 years),No,Something similar to the National Residency Match Program,Jul-16,Yes,No
+730,Preventive Medicine,CDR,2015,CONUS MTF,2-4 months,5,4,NA,Other,Europe,Global Health Engagement,No,1 tour (~3 years),Other,Other,Feb-17,No,Yes
+731,General Surgery,LT,NA,GME,NA,5,5,NA,2nd choice,Pacific Northwest,Academic Medicine,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Nov-16,Yes,Yes
+29,Resident,LCDR,2013,NA,> 4 months,2,3,5,1st choice,Southern California,Mixed,Yes,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,No,Yes
+782,Emergency Medicine,LT,2016,CONUS MTF,2-4 months,3,4,4,1st choice,Southern California,Operational Medicine,Do not care,4 tours (~12 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+48,Resident,LT,2016,CONUS MTF,2-4 months,2,4,4,2nd choice,Northeast,Mixed,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+792,Internal Medicine (General),LT,2016,CONUS MTF,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+804,Neurology,LCDR,2014,CONUS MTF,2-4 months,4,5,4,Other,"Tidewater Region (Portsmouth, Norfolk)",Undecided,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,No,No
+1155,Infectious Disease (IM),CAPT or Flag,2014,Other,NA,5,5,3,1st choice,National Capital Region,Mixed,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,No,Yes
+802,Neurology,CDR,2014,CONUS MTF,2-4 months,4,5,3,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,Yes,Other,No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+811,Orthopedic Surgery,LT,NA,GME,NA,3,NA,NA,3rd choice,Southern California,Clinical Medicine,No,2 tours (~6 years),Other,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+757,Resident,LT,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+833,Neurology,CAPT or Flag,2015,CONUS MTF,2-4 months,4,5,4,1st choice,"Southeast (North Carolina, Florida)",Resign/Retire,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Other,NA,NA
+838,Gastroenterology (IM),CDR,2014,CONUS MTF,2-4 months,5,5,5,1st choice,Europe,Clinical Medicine,Do not care,3 tours (~9 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,No
+845,Pediatrics,LT,2016,GME,2-4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1175,Other,CDR,2016,Other,> 4 months,5,5,5,1st choice,National Capital Region,Academic Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+863,Family Medicine,LT,2015,CONUS MTF,2-4 months,3,3,NA,1st choice,Pacific Northwest,Academic Medicine,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+873,Family Medicine,LT,2014,GME,NA,NA,1,NA,2nd choice,Europe,Clinical Medicine,No,1 tour (~3 years),Other,Something similar to the National Residency Match Program,Mar-17,No,Yes
+877,Family Medicine,LT,2016,GME,NA,NA,NA,NA,Other,Southern California,Undecided,No,3 tours (~9 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+888,Anesthesiology,LT,2014,GME,NA,NA,NA,NA,Other,"Pacific (Hawaii, Guam, Japan)",Academic Medicine,No,Other,Other,Something similar to the National Residency Match Program,Jan-17,NA,NA
+892,Neurology,LCDR,2014,OCONUS MTF,> 4 months,3,5,3,2nd choice,NA,Research,No,1 tour (~3 years),Yes,Something similar to the National Residency Match Program,Aug-16,Yes,No
+893,Psychiatry,CDR,2015,CONUS MTF,2-4 months,4,4,3,2nd choice,Pacific Northwest,Undecided,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Other,NA,Yes
+896,Internal Medicine (General),LT,2016,GME,2-4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+898,Psychiatry,LT,2016,GME,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+906,Urology,LCDR,2012,GME,> 4 months,3,3,3,1st choice,Southern California,Operational Medicine,No,2 tours (~6 years),Other,Something similar to the National Residency Match Program,Jul-16,Yes,Yes
+908,Orthopedic Surgery,LCDR,2012,GME,NA,3,3,3,1st choice,Europe,Academic Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+909,Infectious Disease (IM),CDR,2014,CONUS MTF,2-4 months,4,4,NA,1st choice,Southern California,Resign/Retire,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+910,General Surgery,LT,2014,GME,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+60,Resident,LT,2016,GME,NA,3,4,4,1st choice,"Southeast (North Carolina, Florida)",Executive Medicine,Yes,2 tours (~6 years),Other,Something similar to the National Residency Match Program,Jul-16,Yes,No
+929,Emergency Medicine,LT,2016,CONUS MTF,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+84,Resident,LCDR,2014,GME,2-4 months,NA,NA,NA,1st choice,Europe,Operational Medicine,Yes,2 tours (~6 years),No,Something similar to the National Residency Match Program,Dec-16,Yes,No
+944,Neurology,LCDR,2015,CONUS MTF,2-4 months,5,5,5,2nd choice,Southern California,Academic Medicine,Do not care,4 tours (~12 years),No,Something similar to the National Residency Match Program,Nov-16,Yes,NA
+950,Neurology,CDR,2013,CONUS MTF,2-4 months,4,5,5,1st choice,Southern California,Mixed,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+958,Family Medicine,LCDR,2015,CONUS Operational,2-4 months,5,1,1,Other,"Tidewater Region (Portsmouth, Norfolk)",Resign/Retire,No,1 tour (~3 years),Yes,Something similar to the National Residency Match Program,Jan-17,No,No
+959,Psychiatry,CAPT or Flag,2016,Non-Operational/Non-Clinical,> 4 months,5,5,4,1st choice,National Capital Region,Academic Medicine,Yes,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+961,Neurology,LT,2015,GME,2-4 months,5,5,NA,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Undecided,No,4 tours (~12 years),Other,Status Quo: Detailer and Specialty Leader decide,NA,NA,NA
+118,Resident,LCDR,2014,GME,2-4 months,3,3,4,2nd choice,"Southeast (North Carolina, Florida)",Mixed,Do not care,4 tours (~12 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+971,General Surgery,LT,2015,GME,2-4 months,1,2,NA,3rd choice,NA,Clinical Medicine,Do not care,4 tours (~12 years),No,Something similar to the National Residency Match Program,Sep-16,No,Yes
+980,Psychiatry,LT,2016,GME,> 4 months,3,5,5,1st choice,"Pacific (Hawaii, Guam, Japan)",Clinical Medicine,No,2 tours (~6 years),No,Something similar to the National Residency Match Program,Mar-17,No,Yes
+981,Neurology,LCDR,2015,CONUS MTF,2-4 months,5,5,5,2nd choice,Southern California,Undecided,No,Other,No,Something similar to the National Residency Match Program,Dec-16,No,Yes
+983,Neurology,CDR,2013,CONUS MTF,2-4 months,4,4,3,1st choice,Southern California,Resign/Retire,No,3 tours (~9 years),Yes,Status Quo: Detailer and Specialty Leader decide,Nov-16,Yes,Yes
+986,General Surgery,LCDR,NA,CONUS Operational,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+992,Aerospace Medicine (Residency Trained Flight),LCDR,2016,CONUS MTF,2-4 months,4,4,4,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Executive Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+128,Resident,LT,2016,GME,NA,5,3,NA,1st choice,"Pacific (Hawaii, Guam, Japan)",Clinical Medicine,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+1002,Pulmonary Critical Care (IM),LT,2016,CONUS MTF,NA,3,3,5,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,Do not care,2 tours (~6 years),No,Something similar to the National Residency Match Program,Mar-17,No,Yes
+138,Resident,LT,NA,GME,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1013,Family Medicine,LCDR,NA,GME,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1017,Family Medicine,LT,2014,CONUS MTF,2-4 months,3,4,3,Other,National Capital Region,Academic Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1020,Neurology,LT,2016,GME,2-4 months,4,4,5,1st choice,Southern California,Mixed,Yes,4 tours (~12 years),No,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+1025,Internal Medicine (General),LCDR,2015,CONUS MTF,2-4 months,4,5,NA,1st choice,Southern California,Clinical Medicine,Yes,Other,No,Status Quo: Detailer and Specialty Leader decide,Mar-17,NA,No
+1027,OB/GYN,CAPT or Flag,2016,OCONUS MTF,2-4 months,5,4,5,NA,"Pacific (Hawaii, Guam, Japan)",Executive Medicine,Do not care,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+1029,Ophthalmology,CDR,2015,CONUS MTF,NA,1,5,2,1st choice,Southern California,Mixed,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+1031,Gastroenterology (IM),LCDR,2016,GME,> 4 months,3,4,3,1st choice,Southern California,Mixed,No,4 tours (~12 years),No,Other,Jan-17,Yes,Yes
+1032,OB/GYN,CDR,2016,OCONUS MTF,2-4 months,4,4,3,3rd choice,"Southeast (North Carolina, Florida)",Executive Medicine,Do not care,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1035,Family Medicine,LCDR,2015,CONUS MTF,> 4 months,5,5,5,1st choice,Europe,Mixed,No,2 tours (~6 years),Yes,Other,Feb-17,Yes,Yes
+1038,Family Medicine,LT,2016,CONUS Operational,2-4 months,1,3,NA,Other,Europe,Mixed,Other,3 tours (~9 years),Other,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+1039,Internal Medicine (General),LT,2015,OCONUS MTF,NA,4,3,5,1st choice,"Pacific (Hawaii, Guam, Japan)",Clinical Medicine,No,2 tours (~6 years),No,NA,NA,NA,NA
+146,Resident,LT,2015,CONUS MTF,2-4 months,3,4,5,1st choice,Southern California,Operational Medicine,No,1 tour (~3 years),Yes,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+1041,Pediatrics,LT,2016,GME,2-4 months,4,5,NA,Other,National Capital Region,Clinical Medicine,Do not care,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,NA
+1042,Cardiology (IM),CDR,2016,CONUS Operational,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1043,Preventive Medicine,LCDR,2015,OCONUS MTF,> 4 months,4,5,4,2nd choice,Southern California,Operational Medicine,Yes,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,No,Yes
+1047,Radiology,LCDR,2014,CONUS MTF,> 4 months,4,5,1,1st choice,Southern California,Clinical Medicine,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+1048,Family Medicine,CAPT or Flag,2015,CONUS Operational,2-4 months,4,4,4,1st choice,Europe,Undecided,No,1 tour (~3 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+1049,Neurology,CDR,2015,GME,2-4 months,3,3,5,1st choice,"Southeast (North Carolina, Florida)",Resign/Retire,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+1053,Radiology,CDR,2014,CONUS MTF,NA,5,5,2,1st choice,Southern California,Academic Medicine,No,4 tours (~12 years),No,Other,Jan-17,Yes,Yes
+979,Resident,NA,2014,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+240,Resident,LCDR,2015,GME,2-4 months,3,4,2,2nd choice,"Pacific (Hawaii, Guam, Japan)",Operational Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,No,No
+267,Resident,LCDR,2013,CONUS MTF,> 4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1062,Emergency Medicine,LCDR,2014,CONUS MTF,2-4 months,1,1,1,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Academic Medicine,No,3 tours (~9 years),Yes,Other,Dec-16,Yes,No
+273,Resident,LCDR,2013,CONUS MTF,2-4 months,1,1,1,1st choice,Southern California,Research,Yes,Other,No,Other,Jan-17,Yes,Yes
+286,Resident,LT,2016,GME,2-4 months,3,3,5,1st choice,Southern California,Undecided,Do not care,4 tours (~12 years),No,Other,Mar-17,Yes,No
+311,Resident,LT,2016,GME,NA,3,2,NA,1st choice,Northeast,Academic Medicine,Yes,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Aug-16,NA,NA
+1066,Gastroenterology (IM),LCDR,2014,CONUS MTF,NA,3,4,3,1st choice,Southern California,Clinical Medicine,Do not care,4 tours (~12 years),No,NA,NA,NA,NA
+334,Resident,LT,2015,GME,2-4 months,5,5,5,1st choice,Europe,Mixed,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1068,Emergency Medicine,CAPT or Flag,2016,CONUS Operational,2-4 months,5,5,5,1st choice,Southern California,Mixed,Other,Other,Other,Other,Jan-17,Yes,Yes
+363,Resident,LCDR,2014,GME,NA,NA,NA,1,1st choice,"Southeast (North Carolina, Florida)",Operational Medicine,Yes,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+367,Resident,LCDR,2015,GME,2-4 months,3,3,2,1st choice,Europe,Mixed,Other,2 tours (~6 years),No,NA,NA,NA,NA
+1072,Family Medicine,LCDR,2016,CONUS MTF,> 4 months,5,5,4,1st choice,Southern California,Undecided,Do not care,1 tour (~3 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+1074,Other,CAPT or Flag,2009,CONUS MTF,2-4 months,5,5,5,2nd choice,"Tidewater Region (Portsmouth, Norfolk)",Academic Medicine,No,1 tour (~3 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+373,Resident,LCDR,2015,CONUS MTF,2-4 months,2,2,3,1st choice,Southern California,Operational Medicine,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Oct-16,Yes,Yes
+378,Resident,LT,2016,CONUS MTF,2-4 months,3,3,4,1st choice,Southern California,Clinical Medicine,Yes,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Feb-17,No,No
+1078,Emergency Medicine,CAPT or Flag,2015,CONUS MTF,2-4 months,4,5,2,1st choice,"Southeast (North Carolina, Florida)",Resign/Retire,Yes,Other,Yes,Status Quo: Detailer and Specialty Leader decide,Oct-16,No,Yes
+1080,Neurology,LT,2016,GME,NA,NA,3,NA,1st choice,Southern California,Mixed,Do not care,4 tours (~12 years),No,Something similar to the National Residency Match Program,Dec-16,NA,NA
+1083,Internal Medicine (General),CDR,2015,CONUS Operational,NA,2,4,3,2nd choice,"Tidewater Region (Portsmouth, Norfolk)",Operational Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Mar-17,No,Yes
+1086,Cardiology (IM),LCDR,2015,CONUS MTF,2-4 months,5,5,4,2nd choice,"Southeast (North Carolina, Florida)",Clinical Medicine,No,3 tours (~9 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jul-16,Yes,Yes
+1089,Pediatrics,CDR,2014,CONUS MTF,> 4 months,4,4,2,1st choice,Europe,Undecided,No,1 tour (~3 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+1092,Neurology,LT,2015,CONUS MTF,2-4 months,5,5,4,1st choice,National Capital Region,Clinical Medicine,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+387,Resident,LCDR,2015,GME,2-4 months,3,3,3,2nd choice,Europe,Mixed,Other,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+408,Resident,LT,2015,GME,2-4 months,4,4,NA,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Operational Medicine,No,2 tours (~6 years),Other,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+1096,Pediatrics,LCDR,2016,CONUS MTF,NA,4,3,5,1st choice,Southern California,Other,Other,4 tours (~12 years),No,NA,NA,NA,NA
+1097,Radiology,CDR,2015,CONUS MTF,> 4 months,5,5,5,1st choice,Southern California,Academic Medicine,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Jul-16,No,Yes
+1099,Psychiatry,LT,2014,GME,2-4 months,3,5,NA,1st choice,Southern California,Mixed,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1100,Pediatrics,LCDR,2016,CONUS MTF,NA,4,4,5,1st choice,Southern California,Other,Other,Other,No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+1101,Psychiatry,LCDR,2014,GME,> 4 months,5,5,5,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Operational Medicine,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Jul-16,Yes,Yes
+409,Resident,LT,2016,GME,NA,1,1,NA,1st choice,Northeast,Clinical Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+438,Resident,LT,2015,CONUS MTF,2-4 months,2,3,NA,3rd choice,Europe,Mixed,No,2 tours (~6 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+474,Resident,LCDR,2015,GME,2-4 months,5,5,5,1st choice,Southern California,Mixed,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jun-16,Yes,Yes
+1108,Internal Medicine (General),LCDR,2015,OCONUS MTF,NA,5,3,4,Other,Southern California,Operational Medicine,Do not care,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,No
+1112,Ophthalmology,LT,2016,GME,> 4 months,2,2,NA,Other,Europe,Clinical Medicine,Do not care,3 tours (~9 years),NA,Something similar to the National Residency Match Program,Nov-16,No,Yes
+1113,Infectious Disease (IM),CAPT or Flag,2016,Non-Operational/Non-Clinical,2-4 months,4,5,4,1st choice,National Capital Region,Research,Do not care,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,No
+1114,Radiation Oncology,CAPT or Flag,NA,CONUS MTF,2-4 months,5,5,5,1st choice,Southern California,Clinical Medicine,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,No
+1115,Endocrinology (IM),CDR,2013,CONUS MTF,2-4 months,4,5,2,1st choice,Southern California,Mixed,Do not care,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,No,Yes
+1116,Endocrinology (IM),CDR,2015,CONUS MTF,NA,5,5,5,1st choice,National Capital Region,Executive Medicine,No,3 tours (~9 years),No,Something similar to the National Residency Match Program,Feb-17,Yes,Yes
+1117,Otolaryngology,LCDR,2014,CONUS MTF,2-4 months,2,5,NA,1st choice,"Southeast (North Carolina, Florida)",Clinical Medicine,Do not care,Other,No,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,No
+1118,Otolaryngology,LCDR,2014,CONUS MTF,2-4 months,4,4,2,2nd choice,"Southeast (North Carolina, Florida)",Resign/Retire,Do not care,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+1119,Otolaryngology,CDR,2011,CONUS MTF,2-4 months,5,5,5,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Resign/Retire,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Mar-17,No,Yes
+1120,Radiation Oncology,LCDR,2015,CONUS MTF,NA,3,3,3,1st choice,Southern California,Clinical Medicine,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Nov-16,No,Yes
+1121,Otolaryngology,LCDR,2016,CONUS MTF,NA,5,5,3,1st choice,Southern California,Global Health Engagement,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,NA
+1122,Otolaryngology,LCDR,2014,CONUS MTF,2-4 months,5,4,5,Other,Pacific Northwest,Resign/Retire,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1123,Otolaryngology,CAPT or Flag,2014,CONUS MTF,> 4 months,5,5,3,1st choice,Southern California,Resign/Retire,Do not care,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,NA,Yes,Yes
+1124,Otolaryngology,LCDR,2016,CONUS MTF,2-4 months,4,4,2,1st choice,"Southeast (North Carolina, Florida)",Executive Medicine,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Mar-17,Yes,No
+1125,Radiation Oncology,LCDR,2015,CONUS MTF,> 4 months,4,4,5,2nd choice,Southern California,Mixed,Do not care,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Other,Yes,Yes
+1126,Ophthalmology,CAPT or Flag,2014,CONUS MTF,NA,5,5,5,1st choice,Southern California,Clinical Medicine,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,NA
+501,Resident,LT,2016,GME,2-4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1128,Ophthalmology,CAPT or Flag,2010,CONUS MTF,2-4 months,5,5,4,1st choice,Europe,Other,Yes,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+1129,Ophthalmology,CDR,2014,GME,NA,2,1,3,1st choice,"Southeast (North Carolina, Florida)",Academic Medicine,Yes,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,Yes
+1130,Endocrinology (IM),LCDR,2016,OCONUS Operational,> 4 months,5,5,5,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Academic Medicine,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,No
+1131,Heme/Onc (IM),LCDR,2012,CONUS MTF,2-4 months,4,4,5,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Resign/Retire,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Dec-16,No,Yes
+1132,Ophthalmology,CDR,2015,OCONUS MTF,2-4 months,4,4,3,1st choice,Southern California,Clinical Medicine,Do not care,3 tours (~9 years),No,Other,Jan-17,Yes,Yes
+1133,Otolaryngology,CAPT or Flag,2013,CONUS MTF,NA,5,5,5,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Academic Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1134,Emergency Medicine,LT,2013,GME,2-4 months,5,5,5,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Academic Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1135,Emergency Medicine,LCDR,2016,CONUS MTF,2-4 months,4,4,2,2nd choice,Europe,Mixed,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1136,Otolaryngology,CDR,2015,CONUS MTF,2-4 months,5,5,3,1st choice,Southern California,Academic Medicine,No,4 tours (~12 years),Other,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1137,Radiation Oncology,LCDR,2015,CONUS MTF,> 4 months,5,5,5,1st choice,Southern California,Clinical Medicine,Yes,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jun-16,No,Yes
+1138,Ophthalmology,CDR,2011,CONUS MTF,2-4 months,4,4,4,1st choice,"Southeast (North Carolina, Florida)",Other,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,No,Yes
+1139,Otolaryngology,LCDR,2015,CONUS MTF,> 4 months,5,5,5,1st choice,Southern California,Academic Medicine,Yes,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+531,Resident,LT,2015,CONUS MTF,NA,3,4,3,1st choice,Southern California,Clinical Medicine,Do not care,4 tours (~12 years),No,NA,NA,NA,NA
+1142,Otolaryngology,LCDR,2015,CONUS MTF,> 4 months,5,5,4,1st choice,Southern California,Academic Medicine,Do not care,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+1143,Otolaryngology,CAPT or Flag,2014,CONUS MTF,NA,5,5,5,1st choice,Southern California,Operational Medicine,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Jan-17,No,Yes
+1144,Emergency Medicine,LCDR,2014,CONUS MTF,2-4 months,1,2,2,2nd choice,NA,Resign/Retire,Do not care,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+1145,Otolaryngology,CDR,2011,CONUS MTF,2-4 months,3,3,4,Other,"Pacific (Hawaii, Guam, Japan)",Undecided,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+1146,Ophthalmology,CDR,2014,CONUS MTF,2-4 months,5,5,3,1st choice,"Pacific (Hawaii, Guam, Japan)",Operational Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1147,Otolaryngology,LCDR,2015,CONUS MTF,2-4 months,2,4,3,2nd choice,Southern California,Clinical Medicine,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Jan-17,No,Yes
+1148,Endocrinology (IM),LCDR,2015,CONUS MTF,2-4 months,5,5,NA,1st choice,Southern California,Undecided,Do not care,4 tours (~12 years),No,Something similar to the National Residency Match Program,Oct-16,NA,NA
+1150,Neurosurgery,LCDR,2014,CONUS MTF,NA,5,5,5,1st choice,Southern California,Clinical Medicine,Do not care,Other,No,Status Quo: Detailer and Specialty Leader decide,Jan-17,No,Yes
+1151,Neurosurgery,LCDR,2015,CONUS MTF,2-4 months,3,3,5,1st choice,Southern California,Academic Medicine,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Jan-17,No,No
+1153,Infectious Disease (IM),CAPT or Flag,2015,GME,2-4 months,1,1,3,2nd choice,National Capital Region,Resign/Retire,Yes,2 tours (~6 years),No,Something similar to the National Residency Match Program,Nov-16,Yes,Yes
+1156,Emergency Medicine,CAPT or Flag,2015,CONUS MTF,2-4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1157,Radiation Oncology,LCDR,2014,GME,2-4 months,5,5,5,1st choice,Southern California,Clinical Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,No,Yes
+539,Resident,LT,2014,GME,2-4 months,1,NA,2,1st choice,"Pacific (Hawaii, Guam, Japan)",Resign/Retire,Do not care,4 tours (~12 years),No,Something similar to the National Residency Match Program,Jan-17,No,No
+1159,Emergency Medicine,LCDR,2014,CONUS MTF,2-4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1160,Neurosurgery,LCDR,2015,OCONUS MTF,2-4 months,5,5,4,3rd choice,Europe,Clinical Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1163,Neurosurgery,LCDR,2013,CONUS MTF,NA,NA,NA,NA,1st choice,NA,Clinical Medicine,No,4 tours (~12 years),Other,Status Quo: Detailer and Specialty Leader decide,Mar-17,NA,NA
+1164,Otolaryngology,CDR,2016,OCONUS MTF,2-4 months,5,4,5,1st choice,Pacific Northwest,Executive Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,Yes
+1166,Neurosurgery,CAPT or Flag,2014,GME,2-4 months,5,5,1,1st choice,National Capital Region,Resign/Retire,Do not care,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,No,No
+1167,Psychiatry,CAPT or Flag,2016,CONUS MTF,2-4 months,5,5,NA,1st choice,Southern California,Mixed,No,4 tours (~12 years),No,Other,Nov-16,Yes,Yes
+1168,OB/GYN,LCDR,2015,OCONUS MTF,2-4 months,5,5,5,1st choice,Europe,Executive Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1169,Infectious Disease (IM),CAPT or Flag,2014,CONUS MTF,2-4 months,4,5,1,1st choice,National Capital Region,Clinical Medicine,Do not care,4 tours (~12 years),No,Something similar to the National Residency Match Program,Jul-16,Yes,No
+1170,Emergency Medicine,LCDR,2016,CONUS Operational,2-4 months,5,5,5,1st choice,Southern California,Academic Medicine,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+540,Resident,LT,2016,CONUS MTF,2-4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1172,Otolaryngology,CAPT or Flag,2015,CONUS MTF,> 4 months,4,4,1,1st choice,"Southeast (North Carolina, Florida)",Clinical Medicine,Do not care,4 tours (~12 years),Other,Something similar to the National Residency Match Program,Mar-17,Yes,Yes
+1173,Pediatrics,LT,2016,CONUS MTF,2-4 months,2,3,1,1st choice,Pacific Northwest,Clinical Medicine,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+1174,Infectious Disease (IM),CAPT or Flag,2016,Non-Operational/Non-Clinical,NA,2,4,2,1st choice,Europe,Resign/Retire,No,3 tours (~9 years),No,Something similar to the National Residency Match Program,Sep-16,No,No
+574,Resident,LT,2014,GME,2-4 months,4,4,NA,1st choice,Southern California,Mixed,No,3 tours (~9 years),Other,NA,Jul-16,No,No
+1180,Ophthalmology,LCDR,2015,OCONUS MTF,2-4 months,1,1,1,> 4th choice,National Capital Region,Global Health Engagement,Yes,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,No
+1181,Family Medicine,CAPT or Flag,2016,OCONUS Operational,2-4 months,2,3,3,Other,"Southeast (North Carolina, Florida)",Executive Medicine,Other,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+1182,Heme/Onc (IM),CAPT or Flag,2006,CONUS MTF,NA,5,5,1,1st choice,National Capital Region,Academic Medicine,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1183,Family Medicine,CAPT or Flag,2016,OCONUS MTF,2-4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1184,OB/GYN,LCDR,2016,OCONUS MTF,2-4 months,5,4,5,1st choice,"Southeast (North Carolina, Florida)",Clinical Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1185,Family Medicine,LCDR,2014,OCONUS MTF,> 4 months,3,5,2,2nd choice,Europe,Mixed,No,2 tours (~6 years),No,Other,Dec-16,No,No
+1186,Infectious Disease (IM),LCDR,2016,Non-Operational/Non-Clinical,> 4 months,4,3,4,2nd choice,Europe,Executive Medicine,Yes,3 tours (~9 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,No
+1187,Otolaryngology,CDR,2012,CONUS MTF,> 4 months,4,4,3,1st choice,Southern California,Resign/Retire,No,2 tours (~6 years),Other,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+1188,Family Medicine,LCDR,2013,OCONUS MTF,2-4 months,5,5,5,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,No,2 tours (~6 years),No,Something similar to the National Residency Match Program,Jul-16,No,Yes
+1189,Neurosurgery,LCDR,2015,CONUS MTF,NA,4,2,2,1st choice,Southern California,Clinical Medicine,Yes,3 tours (~9 years),No,Something similar to the National Residency Match Program,Feb-17,Yes,Yes
+1190,Neurosurgery,LCDR,2016,CONUS MTF,2-4 months,3,2,3,Other,National Capital Region,Clinical Medicine,Do not care,2 tours (~6 years),Other,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+577,Resident,LT,2014,GME,2-4 months,5,5,3,1st choice,Europe,Mixed,Do not care,2 tours (~6 years),No,Something similar to the National Residency Match Program,Oct-16,Yes,Yes
+1192,Emergency Medicine,CAPT or Flag,2015,CONUS Operational,2-4 months,5,3,5,1st choice,Europe,Undecided,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+624,Resident,LT,2015,GME,2-4 months,5,5,4,1st choice,"Southeast (North Carolina, Florida)",Mixed,Yes,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,No,Yes
+642,Resident,LCDR,2015,GME,2-4 months,4,NA,3,Other,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1196,Psychiatry,LCDR,2013,CONUS MTF,2-4 months,4,4,4,Other,"Tidewater Region (Portsmouth, Norfolk)",Executive Medicine,Do not care,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Nov-16,Yes,Yes
+1197,Otolaryngology,CDR,2015,CONUS MTF,2-4 months,5,5,4,2nd choice,Pacific Northwest,Clinical Medicine,No,Other,Other,Status Quo: Detailer and Specialty Leader decide,Jan-17,No,Yes
+198,Neurosurgery,LCDR,2015,CONUS MTF,2-4 months,3,4,5,1st choice,Southern California,Mixed,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+807,Resident,LCDR,2014,GME,> 4 months,4,4,4,Other,Europe,Clinical Medicine,No,2 tours (~6 years),Other,Other,Dec-16,NA,NA
+786,Resident,LT,2016,GME,> 4 months,1,2,3,2nd choice,NA,Clinical Medicine,No,4 tours (~12 years),No,NA,NA,NA,NA
+1202,Neurosurgery,LCDR,2014,CONUS MTF,2-4 months,1,3,1,3rd choice,Southern California,Resign/Retire,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Mar-17,Yes,No
+1203,OB/GYN,CAPT or Flag,2015,CONUS MTF,2-4 months,5,5,4,1st choice,Southern California,Academic Medicine,No,Other,Other,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+1204,OB/GYN,LCDR,2016,CONUS MTF,2-4 months,4,4,4,3rd choice,Southern California,Executive Medicine,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Dec-16,Yes,NA
+822,Resident,LT,2014,GME,2-4 months,4,4,4,1st choice,Southern California,Operational Medicine,No,3 tours (~9 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+1206,OB/GYN,CDR,2014,CONUS MTF,2-4 months,5,5,5,1st choice,Southern California,Mixed,No,Other,Yes,Other,Jan-17,No,No
+1207,OB/GYN,CDR,2016,CONUS MTF,2-4 months,4,4,3,2nd choice,Southern California,Undecided,Other,Other,Yes,Other,Dec-16,Yes,Yes
+1208,OB/GYN,LT,2014,GME,> 4 months,5,4,NA,1st choice,Europe,Clinical Medicine,No,1 tour (~3 years),Other,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1209,OB/GYN,CDR,2014,CONUS MTF,2-4 months,5,4,1,1st choice,National Capital Region,Clinical Medicine,Yes,Other,No,Something similar to the National Residency Match Program,Nov-16,Yes,Yes
+1210,OB/GYN,CDR,NA,CONUS MTF,NA,5,5,5,2nd choice,"Southeast (North Carolina, Florida)",Clinical Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Nov-16,No,Yes
+1211,OB/GYN,CDR,2016,CONUS MTF,NA,3,4,3,1st choice,Southern California,Resign/Retire,No,3 tours (~9 years),Yes,Something similar to the National Residency Match Program,Nov-16,Yes,Yes
+917,Resident,LT,2014,Non-Operational/Non-Clinical,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1213,OB/GYN,LCDR,2014,CONUS MTF,2-4 months,5,5,3,1st choice,Southern California,Academic Medicine,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+1214,OB/GYN,CAPT or Flag,2016,Non-Operational/Non-Clinical,NA,5,4,3,Other,National Capital Region,Executive Medicine,Do not care,Other,Other,Other,NA,NA,NA
+1215,OB/GYN,CDR,2015,CONUS Operational,2-4 months,5,5,3,1st choice,Europe,Mixed,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Feb-17,Yes,No
+116,OB/GYN,LT,2016,CONUS MTF,2-4 months,4,2,NA,> 4th choice,Pacific Northwest,Undecided,Do not care,Other,No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+936,Resident,LT,2016,GME,NA,NA,NA,NA,4th choice,Southern California,Operational Medicine,Do not care,4 tours (~12 years),No,Something similar to the National Residency Match Program,Nov-16,Yes,Yes
+1218,OB/GYN,CDR,2015,CONUS MTF,NA,2,4,3,1st choice,Southern California,Mixed,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Dec-16,Yes,No
+1219,OB/GYN,LCDR,2014,CONUS MTF,2-4 months,5,5,5,1st choice,Europe,Clinical Medicine,Do not care,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,Yes
+966,Resident,LT,2016,GME,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1221,OB/GYN,LCDR,2015,CONUS MTF,> 4 months,5,5,5,> 4th choice,Southern California,Clinical Medicine,Yes,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+1010,Resident,LT,2016,GME,2-4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1223,OB/GYN,CAPT or Flag,2014,Non-Operational/Non-Clinical,NA,NA,4,2,3rd choice,Pacific Northwest,Resign/Retire,Yes,3 tours (~9 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,No,Yes
+1224,OB/GYN,LT,2016,GME,2-4 months,2,4,NA,1st choice,Southern California,Clinical Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jun-16,Yes,Yes
+1225,OB/GYN,LT,2013,CONUS MTF,2-4 months,4,3,3,1st choice,"Pacific (Hawaii, Guam, Japan)",Clinical Medicine,Yes,4 tours (~12 years),No,Something similar to the National Residency Match Program,Mar-17,Yes,Yes
+1226,Infectious Disease (IM),CAPT or Flag,2013,Non-Operational/Non-Clinical,2-4 months,5,5,3,1st choice,National Capital Region,Academic Medicine,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+1227,OB/GYN,LCDR,2016,CONUS MTF,NA,2,1,4,1st choice,"Pacific (Hawaii, Guam, Japan)",Resign/Retire,Do not care,4 tours (~12 years),No,Something similar to the National Residency Match Program,Dec-16,No,Yes
+1228,OB/GYN,CAPT or Flag,2013,CONUS MTF,2-4 months,1,1,4,1st choice,Southern California,Resign/Retire,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,No
+1229,OB/GYN,LT,2014,GME,> 4 months,5,5,1,1st choice,National Capital Region,Academic Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1230,Neurosurgery,LCDR,2014,CONUS MTF,2-4 months,3,3,3,1st choice,National Capital Region,Academic Medicine,No,2 tours (~6 years),No,Something similar to the National Residency Match Program,Jun-16,NA,NA
+1231,OB/GYN,LCDR,2016,CONUS MTF,2-4 months,5,5,5,1st choice,Southern California,Clinical Medicine,Yes,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,NA,NA
+1232,Otolaryngology,LCDR,2015,CONUS MTF,2-4 months,2,3,5,1st choice,Southern California,Clinical Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1233,Neurosurgery,CDR,2015,CONUS MTF,2-4 months,5,5,5,1st choice,Southern California,Academic Medicine,No,Other,No,Something similar to the National Residency Match Program,Jan-17,No,Yes
+1058,Resident,LT,2013,GME,2-4 months,NA,NA,NA,Other,Europe,Mixed,No,3 tours (~9 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,No
+1060,Resident,LT,NA,GME,NA,NA,NA,NA,Other,"Pacific (Hawaii, Guam, Japan)",Operational Medicine,No,4 tours (~12 years),Other,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+1236,OB/GYN,CAPT or Flag,2011,CONUS MTF,NA,5,5,5,1st choice,National Capital Region,Clinical Medicine,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1237,OB/GYN,LT,2014,CONUS MTF,> 4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1238,OB/GYN,CDR,2016,CONUS MTF,NA,3,3,3,2nd choice,National Capital Region,Resign/Retire,Yes,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1239,OB/GYN,CDR,2016,OCONUS MTF,2-4 months,2,1,2,> 4th choice,"Tidewater Region (Portsmouth, Norfolk)",Academic Medicine,Do not care,4 tours (~12 years),No,Other,Feb-17,No,Yes
+1240,Dermatology,CDR,2014,CONUS MTF,> 4 months,5,5,4,1st choice,Southern California,Clinical Medicine,Yes,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,Yes
+1241,OB/GYN,CDR,2016,CONUS MTF,NA,5,5,NA,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,Yes,Other,Other,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1242,OB/GYN,CDR,2015,CONUS Operational,2-4 months,5,1,2,> 4th choice,Southern California,Resign/Retire,Yes,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+1243,Otolaryngology,CDR,2015,CONUS MTF,2-4 months,4,5,5,1st choice,Southern California,Academic Medicine,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Jul-16,NA,Yes
+1245,OB/GYN,LT,2016,CONUS MTF,> 4 months,3,4,5,1st choice,National Capital Region,Academic Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,No,Yes
+1246,OB/GYN,LCDR,2015,OCONUS MTF,> 4 months,4,4,4,1st choice,Pacific Northwest,Clinical Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1061,Resident,LT,2012,GME,> 4 months,NA,NA,NA,1st choice,Southern California,Clinical Medicine,Do not care,2 tours (~6 years),No,Something similar to the National Residency Match Program,Dec-16,No,Yes
+1248,OB/GYN,LT,2016,GME,2-4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1249,Internal Medicine (General),LT,2016,GME,2-4 months,4,4,NA,1st choice,National Capital Region,Academic Medicine,No,Other,No,Something similar to the National Residency Match Program,Jan-17,Yes,No
+1250,OB/GYN,CDR,2016,OCONUS Operational,NA,5,3,1,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,Yes,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1252,Pathology,CAPT or Flag,2015,CONUS Operational,2-4 months,5,5,4,1st choice,Southern California,Clinical Medicine,No,2 tours (~6 years),Yes,NA,NA,NA,NA
+1102,Resident,LCDR,2014,CONUS MTF,2-4 months,4,5,4,1st choice,Southern California,Operational Medicine,No,2 tours (~6 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+1254,Otolaryngology,LCDR,2014,OCONUS MTF,2-4 months,2,3,4,Other,NA,Clinical Medicine,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Dec-16,Yes,No
+1255,OB/GYN,LCDR,2015,OCONUS MTF,2-4 months,5,4,5,4th choice,Southern California,Academic Medicine,No,2 tours (~6 years),No,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+1257,OB/GYN,LCDR,2014,CONUS MTF,2-4 months,2,2,3,> 4th choice,Pacific Northwest,Undecided,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,No,Yes
+1258,Pulmonary Critical Care (IM),LCDR,2016,OCONUS MTF,2-4 months,4,4,NA,1st choice,"Pacific (Hawaii, Guam, Japan)",Clinical Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,No,No
+1259,Emergency Medicine,LCDR,2014,CONUS MTF,2-4 months,5,5,NA,1st choice,Southern California,Other,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,No
+1260,OB/GYN,LCDR,2016,OCONUS MTF,2-4 months,3,3,3,4th choice,Europe,Resign/Retire,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,No
+1261,OB/GYN,LCDR,2016,CONUS MTF,NA,4,3,4,1st choice,"Southeast (North Carolina, Florida)",Undecided,Yes,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+1127,Resident,LT,2015,CONUS MTF,2-4 months,NA,NA,NA,1st choice,National Capital Region,Mixed,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Nov-16,Yes,No
+1141,Resident,LT,2015,GME,2-4 months,5,5,NA,1st choice,National Capital Region,Clinical Medicine,Yes,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Mar-17,No,Yes
+1158,Resident,LCDR,2014,CONUS MTF,2-4 months,2,3,5,2nd choice,Southern California,Operational Medicine,No,2 tours (~6 years),Other,Something similar to the National Residency Match Program,Jan-17,Yes,No
+1266,Aerospace Medicine (Residency Trained Flight),CAPT or Flag,2013,Non-Operational/Non-Clinical,2-4 months,5,5,5,1st choice,National Capital Region,Resign/Retire,Other,Other,No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+1267,OB/GYN,LCDR,2015,CONUS MTF,2-4 months,5,5,5,2nd choice,Southern California,Academic Medicine,No,3 tours (~9 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+1268,Ophthalmology,CDR,2016,OCONUS MTF,2-4 months,5,5,3,1st choice,Pacific Northwest,Mixed,No,2 tours (~6 years),Yes,Other,Jan-17,Yes,No
+1179,Resident,LT,2016,GME,> 4 months,3,3,NA,1st choice,"Pacific (Hawaii, Guam, Japan)",Mixed,Yes,Other,No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1205,Resident,LT,2016,CONUS MTF,NA,2,NA,NA,1st choice,Southern California,Mixed,Do not care,3 tours (~9 years),No,Other,Feb-17,NA,NA
+1271,Occupational Medicine,LCDR,2016,OCONUS MTF,2-4 months,2,3,NA,1st choice,NA,Executive Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Mar-17,Yes,Yes
+1217,Resident,LT,2016,GME,2-4 months,2,3,2,1st choice,National Capital Region,Academic Medicine,No,2 tours (~6 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+1273,Aerospace Medicine (Residency Trained Flight),CAPT or Flag,2015,CONUS Operational,2-4 months,5,5,3,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Executive Medicine,Yes,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,NA
+1274,OB/GYN,LT,2015,CONUS MTF,2-4 months,5,5,5,2nd choice,Southern California,Clinical Medicine,No,2 tours (~6 years),No,Something similar to the National Residency Match Program,Feb-17,Yes,No
+1234,Resident,LT,2014,CONUS MTF,2-4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1276,Neurosurgery,CAPT or Flag,2013,CONUS MTF,> 4 months,5,5,5,1st choice,Southern California,Resign/Retire,No,Other,Other,Other,Other,NA,No
+1320,Resident,LCDR,2014,GME,2-4 months,3,4,5,1st choice,"Pacific (Hawaii, Guam, Japan)",Clinical Medicine,Yes,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Nov-16,Yes,Yes
+1279,Psychiatry,LCDR,2016,CONUS Operational,2-4 months,4,3,4,2nd choice,"Pacific (Hawaii, Guam, Japan)",Undecided,Yes,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+97,Undersea Medicine,LT,2016,OCONUS Operational,NA,2,2,NA,2nd choice,"Pacific (Hawaii, Guam, Japan)",Undecided,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Feb-17,Yes,No
+1282,OB/GYN,CDR,2015,CONUS MTF,NA,5,5,5,1st choice,Southern California,Clinical Medicine,Do not care,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1283,OB/GYN,LT,2015,GME,2-4 months,4,5,3,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,Do not care,4 tours (~12 years),No,NA,NA,NA,NA
+1284,OB/GYN,LCDR,2015,CONUS MTF,2-4 months,5,5,4,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Mar-17,No,No
+103,Undersea Medicine,LT,2015,CONUS Operational,NA,2,5,4,1st choice,Northeast,Clinical Medicine,Do not care,4 tours (~12 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+1287,Family Medicine,CAPT or Flag,2016,OCONUS Operational,NA,1,5,1,2nd choice,"Pacific (Hawaii, Guam, Japan)",Executive Medicine,Yes,1 tour (~3 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+1288,OB/GYN,LT,2016,GME,2-4 months,4,4,3,2nd choice,Southern California,Clinical Medicine,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Mar-17,Yes,Yes
+1289,Family Medicine,CAPT or Flag,2015,CONUS Operational,2-4 months,3,3,3,2nd choice,Southern California,Executive Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+239,Undersea Medicine,CAPT or Flag,2014,OCONUS Operational,2-4 months,2,2,2,Other,Europe,Operational Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Feb-17,No,No
+1292,OB/GYN,LCDR,2014,CONUS MTF,2-4 months,2,3,2,3rd choice,"Southeast (North Carolina, Florida)",Undecided,Do not care,3 tours (~9 years),Other,Status Quo: Detailer and Specialty Leader decide,Jan-17,NA,NA
+1293,Neurosurgery,CDR,2016,CONUS MTF,2-4 months,5,5,5,1st choice,National Capital Region,Clinical Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1295,Otolaryngology,CDR,2016,CONUS MTF,2-4 months,4,4,2,2nd choice,Southern California,Academic Medicine,Yes,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1296,Other,CAPT or Flag,2013,OCONUS Operational,> 4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1297,Radiology,CAPT or Flag,2015,CONUS Operational,NA,3,3,3,1st choice,Southern California,Resign/Retire,No,2 tours (~6 years),Other,Other,Dec-16,Yes,Yes
+1298,OB/GYN,CAPT or Flag,2014,CONUS MTF,> 4 months,3,3,NA,1st choice,Europe,Executive Medicine,Yes,Other,Yes,Something similar to the National Residency Match Program,Dec-16,Yes,No
+1300,Cardiology (IM),CDR,2014,CONUS MTF,NA,1,3,4,1st choice,Southern California,Clinical Medicine,Yes,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Jun-16,Yes,Yes
+1301,Psychiatry,LT,2016,CONUS MTF,> 4 months,2,1,2,Other,Europe,Undecided,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Dec-16,Yes,No
+1302,Family Medicine,CDR,2016,OCONUS Operational,2-4 months,4,3,3,Other,"Pacific (Hawaii, Guam, Japan)",Clinical Medicine,Do not care,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,NA
+1303,Aerospace Medicine (Residency Trained Flight),LCDR,2016,OCONUS Operational,2-4 months,1,1,1,Other,"Southeast (North Carolina, Florida)",Resign/Retire,Yes,1 tour (~3 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1304,Family Medicine,LT,2016,CONUS Operational,2-4 months,2,3,NA,Other,Europe,Mixed,Other,3 tours (~9 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+1305,Family Medicine,CDR,2016,Non-Operational/Non-Clinical,2-4 months,2,2,3,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Undecided,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Sep-16,Yes,Yes
+343,Undersea Medicine,LT,2015,OCONUS Operational,NA,2,2,4,1st choice,Middle East or Africa,Mixed,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+1308,Endocrinology (IM),CDR,2015,CONUS MTF,2-4 months,4,5,5,1st choice,Europe,Resign/Retire,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Nov-16,Yes,Yes
+1309,OB/GYN,CAPT or Flag,2007,CONUS MTF,NA,5,5,NA,1st choice,Southern California,Academic Medicine,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Jul-16,Yes,Yes
+1311,Family Medicine,CDR,2014,OCONUS MTF,> 4 months,4,5,3,1st choice,Europe,Undecided,Do not care,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+1063,Undersea Medicine,LCDR,2014,CONUS Operational,> 4 months,5,5,5,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Clinical Medicine,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1314,OB/GYN,LCDR,2015,CONUS MTF,2-4 months,4,5,5,1st choice,Southern California,Undecided,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Dec-16,Yes,No
+1315,Internal Medicine (General),LT,2015,OCONUS MTF,NA,2,4,3,Other,Pacific Northwest,Clinical Medicine,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Oct-16,Yes,Yes
+1316,Internal Medicine (General),LT,2014,OCONUS MTF,2-4 months,3,4,2,1st choice,"Pacific (Hawaii, Guam, Japan)",Clinical Medicine,Other,3 tours (~9 years),No,Something similar to the National Residency Match Program,Feb-17,Yes,Yes
+1317,Psychiatry,LCDR,2015,CONUS MTF,2-4 months,4,3,4,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Resign/Retire,Do not care,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+1318,Cardiothoracic Surgery,CDR,2013,CONUS MTF,> 4 months,3,4,5,1st choice,"Tidewater Region (Portsmouth, Norfolk)",Operational Medicine,Do not care,4 tours (~12 years),No,Something similar to the National Residency Match Program,Feb-17,NA,NA
+1064,Undersea Medicine,LT,2015,CONUS Operational,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1321,Otolaryngology,LCDR,2016,CONUS MTF,2-4 months,5,4,3,2nd choice,"Tidewater Region (Portsmouth, Norfolk)",Academic Medicine,No,2 tours (~6 years),Other,Other,Feb-17,NA,NA
+1322,Otolaryngology,LCDR,2016,CONUS MTF,2-4 months,3,3,3,2nd choice,"Pacific (Hawaii, Guam, Japan)",Academic Medicine,No,1 tour (~3 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+1323,Otolaryngology,LCDR,2016,OCONUS MTF,2-4 months,3,3,3,1st choice,Europe,Academic Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1325,Family Medicine,LT,2016,GME,2-4 months,4,4,NA,1st choice,NA,Mixed,Do not care,2 tours (~6 years),No,Something similar to the National Residency Match Program,Jan-17,No,Yes
+1326,Anesthesiology,CDR,2013,Non-Operational/Non-Clinical,2-4 months,1,1,1,Other,NA,Undecided,Yes,1 tour (~3 years),Yes,NA,NA,NA,NA
+1327,Otolaryngology,LCDR,2016,CONUS MTF,2-4 months,4,4,3,1st choice,Southern California,Clinical Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,No,Yes
+1067,Undersea Medicine,LT,2015,CONUS MTF,NA,1,1,3,Other,Europe,Mixed,Do not care,2 tours (~6 years),Other,Something similar to the National Residency Match Program,Feb-17,Yes,Yes
+1331,Family Medicine,LT,2016,CONUS Operational,> 4 months,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1332,Emergency Medicine,LCDR,2015,CONUS MTF,2-4 months,4,5,2,Other,Europe,Mixed,No,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Feb-17,Yes,Yes
+1333,Neurosurgery,CDR,2011,CONUS MTF,2-4 months,3,3,4,1st choice,National Capital Region,Academic Medicine,No,Other,No,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,Yes
+1334,Cardiothoracic Surgery,CDR,2015,CONUS MTF,> 4 months,1,3,2,1st choice,Southern California,Resign/Retire,No,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,NA
+1069,Undersea Medicine,LT,2014,Non-Operational/Non-Clinical,NA,1,1,4,> 4th choice,Europe,Operational Medicine,Do not care,1 tour (~3 years),Yes,Other,Dec-16,Yes,Yes
+1337,Infectious Disease (IM),CDR,2012,CONUS MTF,2-4 months,3,3,5,1st choice,Southern California,Resign/Retire,Do not care,Other,No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,NA
+1338,Neurosurgery,LCDR,2012,GME,> 4 months,NA,NA,NA,1st choice,Southern California,Academic Medicine,No,2 tours (~6 years),No,Something similar to the National Residency Match Program,Mar-17,Yes,Yes
+1339,Family Medicine,CDR,2015,OCONUS MTF,NA,1,1,NA,Other,Pacific Northwest,Resign/Retire,Yes,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+1340,Emergency Medicine,LCDR,2016,OCONUS MTF,2-4 months,4,5,3,1st choice,Southern California,Mixed,No,2 tours (~6 years),Other,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,No
+1341,Family Medicine,LCDR,2013,CONUS Operational,2-4 months,4,4,4,1st choice,"Southeast (North Carolina, Florida)",Operational Medicine,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+1342,Gastroenterology (IM),CDR,2015,CONUS MTF,> 4 months,NA,3,1,1st choice,National Capital Region,Resign/Retire,Do not care,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,NA,Yes,Yes
+1343,Ophthalmology,CAPT or Flag,2016,CONUS Operational,NA,1,1,1,> 4th choice,"Southeast (North Carolina, Florida)",Resign/Retire,Yes,4 tours (~12 years),No,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+1344,OB/GYN,LCDR,2014,OCONUS MTF,2-4 months,1,3,3,Other,Southern California,Undecided,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+1345,Otolaryngology,LCDR,2015,OCONUS MTF,2-4 months,2,2,3,> 4th choice,"Southeast (North Carolina, Florida)",Clinical Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+1346,Infectious Disease (IM),CDR,2015,CONUS MTF,> 4 months,5,4,5,2nd choice,National Capital Region,Clinical Medicine,No,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1348,OB/GYN,LCDR,2015,GME,2-4 months,NA,NA,NA,Other,Pacific Northwest,Mixed,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,NA
+1350,Ophthalmology,CAPT or Flag,2015,OCONUS MTF,2-4 months,2,5,3,> 4th choice,"Pacific (Hawaii, Guam, Japan)",Executive Medicine,No,Other,Other,NA,NA,NA,NA
+1352,Cardiothoracic Surgery,CDR,2013,CONUS MTF,2-4 months,5,5,5,2nd choice,Southern California,Clinical Medicine,No,3 tours (~9 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,No,Yes
+1353,Otolaryngology,LT,2016,CONUS MTF,2-4 months,5,4,5,1st choice,"Southeast (North Carolina, Florida)",Academic Medicine,No,Other,No,Something similar to the National Residency Match Program,Feb-17,Yes,Yes
+1354,Physical Medicine and Rehabilitation,LCDR,2015,CONUS MTF,> 4 months,5,5,5,1st choice,Southern California,Resign/Retire,No,4 tours (~12 years),Other,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+1356,General Surgery,CAPT or Flag,2014,CONUS Operational,2-4 months,4,4,3,2nd choice,Southern California,Clinical Medicine,Yes,2 tours (~6 years),Yes,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+1357,Family Medicine,LCDR,2014,GME,NA,4,3,2,1st choice,"Southeast (North Carolina, Florida)",Operational Medicine,No,3 tours (~9 years),No,Something similar to the National Residency Match Program,Dec-16,No,Yes
+1358,OB/GYN,LCDR,2014,CONUS Operational,2-4 months,5,3,4,> 4th choice,Southern California,Mixed,Yes,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,No
+1359,General Surgery,CDR,2016,CONUS Operational,2-4 months,2,3,2,1st choice,Southern California,Resign/Retire,No,2 tours (~6 years),No,Something similar to the National Residency Match Program,Jan-17,Yes,Yes
+1070,Undersea Medicine,LT,2015,CONUS Operational,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1076,Undersea Medicine,CAPT or Flag,2015,CONUS Operational,2-4 months,4,5,4,1st choice,NA,Research,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Feb-17,Yes,Yes
+1362,Pediatrics,LT,2014,CONUS MTF,> 4 months,2,3,2,> 4th choice,Northeast,Undecided,No,2 tours (~6 years),No,Status Quo: Detailer and Specialty Leader decide,Jan-17,No,No
+1272,Undersea Medicine,LT,2016,CONUS Operational,NA,3,5,NA,1st choice,Pacific Northwest,Clinical Medicine,Do not care,2 tours (~6 years),Yes,Status Quo: Detailer and Specialty Leader decide,Dec-16,Yes,Yes
+1364,Internal Medicine (General),LCDR,2016,CONUS MTF,NA,1,2,1,2nd choice,"Tidewater Region (Portsmouth, Norfolk)",Other,No,4 tours (~12 years),No,Something similar to the National Residency Match Program,Dec-16,Yes,Yes
+1365,Pathology,LCDR,2014,CONUS MTF,2-4 months,4,NA,5,1st choice,Southern California,Clinical Medicine,Do not care,4 tours (~12 years),No,Status Quo: Detailer and Specialty Leader decide,Sep-16,Yes,Yes
+1366,OB/GYN,LCDR,2014,CONUS MTF,2-4 months,4,5,5,1st choice,Europe,Undecided,Yes,1 tour (~3 years),Other,Status Quo: Detailer and Specialty Leader decide,Jan-17,Yes,Yes
+1368,General Surgery,LCDR,2016,OCONUS MTF,2-4 months,5,5,NA,1st choice,Europe,Clinical Medicine,No,Other,Yes,Something similar to the National Residency Match Program,Mar-17,Yes,Yes
