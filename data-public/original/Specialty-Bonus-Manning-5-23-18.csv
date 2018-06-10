@@ -1,39 +1,40 @@
-Specialty,Bonus pay,2013 Absolute Net Manning,2013 Manning %,2014 Absolute,2014 Manning %,2015 Absolute,2015 Manning %,2016 Absolute,2016 Manning %,critical war
-Aerospace Medicine (Residency Trained Flight),"$20,000.00 ",-18,71.00%,-23,62.30%,-21,65.60%,-22,63.90%,No
-Allergy/Immunology,"$23,000.00 ",23,109.10%,27,110.70%,37,114.60%,36,114.10%,no
-Anesthesiology,"$36,000.00 ",39,129.10%,33,124.80%,19,114.20%,-10,93.30%,yes
-Aviation Medicine (Flight Surgery GMO),$0.00 ,-2,99.10%,-6,97.40%,2,100.90%,-7,96.90%, no
-Cardiology (IM),"$36,000.00 ",23,109.10%,27,110.70%,37,114.60%,36,114.10%,no
-Cardiothoracic Surgery,"$36,000.00 ",-23,88.60%,-31,84.70%,-34,83.10%,-35,82.40%, no
-Dermatology,"$20,000.00 ",5,114.70%,-1,97.10%,-3,91.40%,-3,91.40%,no
-Emergency Medicine,"$26,000.00 ",20,114.40%,16,111.30%,23,116.40%,-6,96.10%,yes
-Endocrinology (IM),"$20,000.00 ",23,109.10%,27,110.70%,37,114.60%,36,114.10%,no
-Family Medicine,"$20,000.00 ",-44,89.10%,-39,90.20%,-41,89.70%,-52,87.10%,no
-Gastroenterology (IM),"$26,000.00 ",23,109.10%,27,110.70%,37,114.60%,36,114.10%,no
-General Medical Officer,$0.00 ,-3,98.60%,72,136.00%,44,124.40%,50,126.30%,no
-General Surgery,"$29,000.00 ",-23,88.60%,-31,84.70%,-34,83.10%,-35,82.40%,yes
-Heme/Onc (IM),"$23,000.00 ",23,109.10%,27,110.70%,37,114.60%,36,114.10%,no
-Infectious Disease (IM),"$20,000.00 ",23,109.10%,27,110.70%,37,114.60%,36,114.10%,no
-Internal Medicine (General),"$20,000.00 ",23,109.10%,27,110.70%,37,114.60%,36,114.10%,no
-Neonatology,"$23,000.00 ",6,104.00%,11,108.70%,21,116.50%,29,122.80%,no
-Nephrology (IM),"$23,000.00 ",23,109.10%,27,110.70%,37,114.60%,36,114.10%,no
-Neurology,"$20,000.00 ",-1,96.00%,-2,91.70%,-3,88.00%,-1,96.00%,no
-Neurosurgery,"$36,000.00 ",4,126.70%,3,120.00%,7,146.70%,6,140.00%,no
-OB/GYN,"$31,000.00 ",8,107.50%,5,104.80%,8,107.80%,5,104.00%,no
-Occupational Medicine,"$20,000.00 ",-6,85.00%,-1,97.50%,0,100.00%,-4,89.70%,no
-Ophthalmology,"$28,000.00 ",3,107.00%,4,109.50%,3,107.10%,2,104.80%,no
-Orthopedic Surgery,"$36,000.00 ",19,115.10%,14,111.30%,5,104.00%,-12,90.60%,yes
-Other,"$26,000.00 ",,,,,,,,,
-Otolaryngology,"$30,000.00 ",5,110.90%,4,108.90%,0,100.00%,7,115.90%,no
-Pathology,"$20,000.00 ",-3,95.20%,1,101.70%,-1,98.30%,2,103.40%,no
-Pediatrics,"$20,000.00 ",6,104.60%,11,108.70%,21,116.50%,29,122.80%,no
-Physical Medicine and Rehabilitation,"$20,000.00 ",2,166.70%,3,200.00%,6,300.00%,5,266.70%,no
-Plastic Surgery,"$36,000.00 ",-23,88.60%,-31,84.70%,-34,83.10%,-35,82.40%,no
-Preventive Medicine,"$20,000.00 ",-1,9810.00%,0,100.00%,-3,94.40%,-4,92.60%,no
-Psychiatry,"$20,000.00 ",-13,89.20%,-10,91.60%,-20,84.50%,-16,87.20%, yes
-Pulmonary Critical Care (IM),"$23,000.00 ",23,109.10%,27,110.70%,37,114.60%,36,114.10%,yes
-Radiation Oncology,"$36,000.00 ",-4,60.00%,-1,90.00%,-2,80.00%,-2,80.00%,no
-Radiology,"$36,000.00 ",27,129.30%,32,134.40%,34,136.20%,42,144.70%,no
-Rheumatology (IM),"$20,000.00 ",23,109.10%,27,110.70%,37,114.60%,36,114.10%,no
-Undersea Medicine,$0.00 ,-20,80.00%,-15,84.80%,-11,88.90%,-3,97.00%, no
-Urology,"$28,000.00 ",-2,93.30%,-2,93.50%,-2,93.50%,0,100.00%,no
+specialty,bonus_pay,net_manning_2013,manning_percent_2013,net_manning_2014,manning_percent_2014,net_manning_2015,manning_percent_2015,net_manning_2016,manning_percent_2016,critical_war,specialty_type
+Aerospace Medicine (Residency Trained Flight),20000,-18,0.71,-23,0.62,-21,0.66,-22,0.64,FALSE,operational
+Allergy/Immunology,23000,23,1.09,27,1.11,37,1.15,36,1.14,FALSE,nonsurgical
+Anesthesiology,36000,39,1.29,33,1.25,19,1.14,-10,0.93,TRUE,surgical
+Aviation Medicine (Flight Surgery GMO),0,-2,0.99,-6,0.97,2,1.01,-7,0.97,FALSE,operational
+Cardiology (IM),36000,23,1.09,27,1.11,37,1.15,36,1.14,FALSE,nonsurgical
+Cardiothoracic Surgery,36000,-23,0.89,-31,0.85,-34,0.83,-35,0.82,FALSE,surgical
+Dermatology,20000,5,1.15,-1,0.97,-3,0.91,-3,0.91,FALSE,nonsurgical
+Emergency Medicine,26000,20,1.14,16,1.11,23,1.16,-6,0.96,TRUE,nonsurgical
+Endocrinology (IM),20000,23,1.09,27,1.11,37,1.15,36,1.14,FALSE,nonsurgical
+Family Medicine,20000,-44,0.89,-39,0.9,-41,0.9,-52,0.87,FALSE,family
+Gastroenterology (IM),26000,23,1.09,27,1.11,37,1.15,36,1.14,FALSE,nonsurgical
+General Medical Officer,0,-3,0.99,72,1.36,44,1.24,50,1.26,FALSE,operational
+General Surgery,29000,-23,0.89,-31,0.85,-34,0.83,-35,0.82,TRUE,surgical
+Heme/Onc (IM),23000,23,1.09,27,1.11,37,1.15,36,1.14,FALSE,nonsurgical
+Infectious Disease (IM),20000,23,1.09,27,1.11,37,1.15,36,1.14,FALSE,nonsurgical
+Internal Medicine (General),20000,23,1.09,27,1.11,37,1.15,36,1.14,FALSE,nonsurgical
+Neonatology,23000,6,1.04,11,1.09,21,1.17,29,1.23,FALSE,nonsurgical
+Nephrology (IM),23000,23,1.09,27,1.11,37,1.15,36,1.14,FALSE,nonsurgical
+Neurology,20000,-1,0.96,-2,0.92,-3,0.88,-1,0.96,FALSE,nonsurgical
+Neurosurgery,36000,4,1.27,3,1.2,7,1.47,6,1.4,FALSE,surgical
+OB/GYN,31000,8,1.08,5,1.05,8,1.08,5,1.04,FALSE,surgical
+Occupational Medicine,20000,-6,0.85,-1,0.98,0,1,-4,0.9,FALSE,nonsurgical
+Ophthalmology,28000,3,1.07,4,1.1,3,1.07,2,1.05,FALSE,surgical
+Orthopedic Surgery,36000,19,1.15,14,1.11,5,1.04,-12,0.91,TRUE,surgical
+Other,26000,,,,,,,,,,
+Otolaryngology,30000,5,1.11,4,1.09,0,1,7,1.16,FALSE,surgical
+Pathology,20000,-3,0.95,1,1.02,-1,0.98,2,1.03,FALSE,nonsurgical
+Pediatrics,20000,6,1.05,11,1.09,21,1.17,29,1.23,FALSE,nonsurgical
+Physical Medicine and Rehabilitation,20000,2,1.67,3,2,6,3,5,2.67,FALSE,nonsurgical
+Plastic Surgery,36000,-23,0.89,-31,0.85,-34,0.83,-35,0.82,FALSE,surgical
+Preventive Medicine,20000,-1,98.1,0,1,-3,0.94,-4,0.93,FALSE,nonsurgical
+Psychiatry,20000,-13,0.89,-10,0.92,-20,0.85,-16,0.87,TRUE,nonsurgical
+Pulmonary Critical Care (IM),23000,23,1.09,27,1.11,37,1.15,36,1.14,TRUE,nonsurgical
+Radiation Oncology,36000,-4,0.6,-1,0.9,-2,0.8,-2,0.8,FALSE,nonsurgical
+Radiology,36000,27,1.29,32,1.34,34,1.36,42,1.45,FALSE,nonsurgical
+Resident,,,,,,,,,,,resident
+Rheumatology (IM),20000,23,1.09,27,1.11,37,1.15,36,1.14,FALSE,nonsurgical
+Undersea Medicine,0,-20,0.8,-15,0.85,-11,0.89,-3,0.97,FALSE,operational
+Urology,28000,-2,0.93,-2,0.94,-2,0.94,0,1,FALSE,surgical

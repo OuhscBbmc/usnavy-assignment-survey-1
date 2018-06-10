@@ -22,6 +22,7 @@ requireNamespace("OuhscMunge"   ) # remotes::install_github(repo="OuhscBbmc/Ouhs
 # ---- declare-globals ---------------------------------------------------------
 # Constant values that won't change.
 path_in                        <- "data-public/raw/survey-response.csv"
+path_in_lu_specialty           <- "data-public/raw/specialty-bonus-manning.csv"
 path_out_csv                   <- "data-public/derived/survey-response.csv"
 path_out_rds                   <- "data-public/derived/survey-response.rds"
 
@@ -66,14 +67,48 @@ col_types <- readr::cols_only( # readr::spec_csv(path_in)
   `Do you think members with more seniority (as defined by time in service or rank)?should be given preference in billet assignment-`                                                                                                                                                                                                                                                                                                                                                                           = readr::col_character()
 )
 
+col_types_lu_specialty  <- readr::cols_only(
+  specialty                 = readr::col_character(),
+  bonus_pay                 = readr::col_double(),
+  net_manning_2013          = readr::col_integer(),
+  manning_percent_2013      = readr::col_double(),
+  net_manning_2014          = readr::col_integer(),
+  manning_percent_2014      = readr::col_double(),
+  net_manning_2015          = readr::col_integer(),
+  manning_percent_2015      = readr::col_double(),
+  net_manning_2016          = readr::col_integer(),
+  manning_percent_2016      = readr::col_double(),
+  critical_war              = readr::col_logical(),
+  specialty_type            = readr::col_character()
+)
+
 # ---- load-data ---------------------------------------------------------------
 # Read the CSVs
 # readr::spec_csv(path_in)
+# readr::spec_csv(path_in_lu_specialty)
 ds <- readr::read_csv(path_in   , col_types=col_types)
+ds_lu_specialty <- readr::read_csv(path_in_lu_specialty   , col_types=col_types_lu_specialty)
 rm(path_in, col_types)
 
 # ---- tweak-data --------------------------------------------------------------
-# OuhscMunge::column_rename_headstart(ds) #Spit out columns to help write call ato `dplyr::rename()`.
+# OuhscMunge::column_rename_headstart(ds_lu_specialty) #Spit out columns to help write call ato `dplyr::rename()`.
+
+ds_lu_specialty <- ds_lu_specialty %>%
+  dplyr::select(
+    "specialty"
+    , "bonus_pay"
+    # , "manning_net_2013"              = "net_manning_2013"
+    # , "manning_proportion_2013"       = "manning_percent_2013"
+    # , "manning_net_2014"              = "net_manning_2014"
+    # , "manning_proportion_2014"       = "manning_percent_2014"
+    # , "manning_net_2015"              = "net_manning_2015"
+    # , "manning_proportion_2015"       = "manning_percent_2015"
+    # , "manning_net_2016"              = "net_manning_2016"
+    # , "manning_proportion_2016"       = "manning_percent_2016"
+    , "critical_war"
+    , "specialty_type"
+  )
+
 ds <- ds %>%
   dplyr::select_( #`select()` implicitly drops the other columns not mentioned.
     "response_id"                   = "`Response ID`"
@@ -105,6 +140,9 @@ ds <- ds %>%
     , "officer_rank_preference"     = "`Do you think members with more seniority (as defined by time in service or rank)?should be given preference in billet assignment-`"
   ) %>%
   dplyr::filter(include_exclude == "I") %>%
+  dplyr::mutate(
+    primary_specialty   = dplyr::coalesce(primary_specialty, "Unknown")
+  ) %>%
   dplyr::mutate(
     year_executed_order_other       = dplyr::recode(
       year_executed_order_other,
@@ -174,11 +212,25 @@ table(ds$officer_rank, useNA = "always")
 # class(ds$order_lead_time)
 # class(ds$order_lead_time_other)
 
+# ---- join-with-specialty -----------------------------------------------------
+
+
+ds <- ds %>%
+  dplyr::left_join(
+    ds_lu_specialty,
+    by = c("primary_specialty" = "specialty")
+  )
+
+ds2 %>%
+  dplyr::filter(is.na(critical_war)) %>%
+  dplyr::count(primary_specialty)
+
+
 # ---- verify-values -----------------------------------------------------------
 # Sniff out problems
 # OuhscMunge::verify_value_headstart(ds)
 checkmate::assert_integer(  ds$response_id               , any.missing=F , lower=15, upper=1368   , unique=T)
-checkmate::assert_character(ds$primary_specialty         , any.missing=T , pattern="^.{5,45}$"    )
+checkmate::assert_character(ds$primary_specialty         , any.missing=F , pattern="^.{5,45}$"    )
 checkmate::assert_factor(   ds$officer_rank              , any.missing=T                          )
 checkmate::assert_integer(  ds$officer_rate              , any.missing=T , lower=3, upper=6       )
 checkmate::assert_integer(  ds$year_executed_order       , any.missing=T , lower=2005, upper=2016 )
@@ -199,6 +251,10 @@ checkmate::assert_character(ds$match_month               , any.missing=T , patte
 checkmate::assert_character(ds$assignment_preference     , any.missing=T , pattern="^.{2,3}$"     )
 checkmate::assert_character(ds$officer_rank_preference   , any.missing=T , pattern="^.{2,3}$"     )
 
+checkmate::assert_numeric(  ds$bonus_pay                 , any.missing=F , lower=0, upper=36000   )
+checkmate::assert_logical(  ds$critical_war              , any.missing=F                          )
+checkmate::assert_character(ds$specialty_type            , any.missing=F , pattern="^.{6,11}$"    )
+
 # ---- specify-columns-to-upload -----------------------------------------------
 # dput(colnames(ds)) # Print colnames for line below.
 columns_to_write <- c(
@@ -206,7 +262,8 @@ columns_to_write <- c(
   "officer_rank", "officer_rate",
   "year_executed_order",
   "billet_current", "order_lead_time",
-  "transparency_rank", "satistfaction_rank", "favoritism_rank", "assignment_current_choice"
+  "transparency_rank", "satistfaction_rank", "favoritism_rank", "assignment_current_choice",
+  "bonus_pay", "critical_war", "specialty_type"
   # "geographic_preference", "career_path", "doctor_as_detailer",
   # "homestead_length_in_years", "homestead_problem", "match_desirability",
   # "match_month", "assignment_preference", "officer_rank_preference"

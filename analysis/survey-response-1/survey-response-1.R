@@ -65,6 +65,10 @@ TabularManifest::histogram_continuous(d_observed=ds, variable_name="transparency
 TabularManifest::histogram_continuous(d_observed=ds, variable_name="satistfaction_rank"        , bin_width=1, rounded_digits=1)
 TabularManifest::histogram_continuous(d_observed=ds, variable_name="favoritism_rank"           , bin_width=1, rounded_digits=1)
 TabularManifest::histogram_continuous(d_observed=ds, variable_name="assignment_current_choice" , bin_width=1, rounded_digits=1)
+
+TabularManifest::histogram_continuous(d_observed=ds, variable_name="bonus_pay" , bin_width=1000, rounded_digits=1)
+TabularManifest::histogram_discrete(d_observed=ds, variable_name="critical_war")
+TabularManifest::histogram_discrete(d_observed=ds, variable_name="specialty_type")
 # This helps start the code for graphing each variable.
 #   - Make sure you change it to `histogram_continuous()` for the appropriate variables.
 #   - Make sure the graph doesn't reveal PHI.
