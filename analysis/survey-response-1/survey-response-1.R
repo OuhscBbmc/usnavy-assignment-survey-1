@@ -81,7 +81,10 @@ TabularManifest::histogram_discrete(d_observed=ds, variable_name="specialty_type
 
 cat("### satistfaction_rank\n\n")
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
-ggplot(ds, aes(x=officer_rank, y=satistfaction_rank, fill=officer_rank, color=officer_rank)) +
+ds %>%
+  tidyr::drop_na(officer_rank) %>%
+  dplyr::filter(officer_rank != "Unknown") %>%
+  ggplot(aes(x=officer_rank, y=satistfaction_rank, fill=officer_rank, color=officer_rank)) +
   geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA) +
   stat_summary(fun.y="mean", geom="point", shape=23, size=10, fill="white", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
   # stat_summary(fun.data=TukeyBoxplot, geom='boxplot', na.rm=T, outlier.shape=NULL, outlier.colour=NA) +
@@ -92,6 +95,7 @@ ggplot(ds, aes(x=officer_rank, y=satistfaction_rank, fill=officer_rank, color=of
   theme_report +
   theme(legend.position="none") +
   labs(x=NULL) #y="Satisfaction"
+
 
 summary(lm(satistfaction_rank ~ 1 + officer_rate_f, data=ds))
 
