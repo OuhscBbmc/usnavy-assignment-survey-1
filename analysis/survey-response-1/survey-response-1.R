@@ -96,7 +96,6 @@ ds %>%
   theme(legend.position="none") +
   labs(x=NULL) #y="Satisfaction"
 
-
 summary(lm(satistfaction_rank ~ 1 + officer_rate_f, data=ds))
 
 
@@ -113,6 +112,83 @@ cat("### assignment_current_choice\n\n")
 last_plot() %+% aes(y=assignment_current_choice) +
   scale_y_reverse()
 summary(lm(assignment_current_choice ~ 1 + officer_rate_f, data=ds))
+
+# ---- by-specialty-type ------------------------------------------------------------
+
+cat("### satistfaction_rank\n\n")
+set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
+ds %>%
+  tidyr::drop_na(specialty_type) %>%
+  dplyr::filter(specialty_type != "unknown") %>%
+  ggplot(aes(x=specialty_type, y=satistfaction_rank, fill=specialty_type, color=specialty_type)) +
+  geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA) +
+  stat_summary(fun.y="mean", geom="point", shape=23, size=10, fill="white", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
+  # stat_summary(fun.data=TukeyBoxplot, geom='boxplot', na.rm=T, outlier.shape=NULL, outlier.colour=NA) +
+  geom_point(position=position_jitter(w = 0.4, h = .2), size=2, shape=1, na.rm=T) +
+  # scale_color_manual(values=PalettePregancyGroup) +
+  # scale_fill_manual(values=PalettePregancyGroupLight) +
+  # coord_flip(ylim = c(0, 1.05*max(dsPregnancy$T1Lifts, na.rm=T))) +
+  theme_report +
+  theme(legend.position="none") +
+  labs(x=NULL) #y="Satisfaction"
+
+summary(lm(satistfaction_rank ~ 1 + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
+
+
+
+cat("### transparency_rank\n\n")
+last_plot() %+% aes(y=transparency_rank)
+summary(lm(transparency_rank ~ 1 + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
+
+cat("### favoritism_rank\n\n")
+last_plot() %+% aes(y=favoritism_rank)
+summary(lm(favoritism_rank ~ 1 + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
+
+cat("### assignment_current_choice\n\n")
+last_plot() %+% aes(y=assignment_current_choice) +
+  scale_y_reverse()
+summary(lm(assignment_current_choice ~ 1 + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
+
+# ---- by-rank-specialty-type ------------------------------------------------------------
+
+cat("### satistfaction_rank\n\n")
+set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
+ds %>%
+  tidyr::drop_na(specialty_type) %>%
+  tidyr::drop_na(officer_rank) %>%
+  dplyr::filter(specialty_type != "unknown") %>%
+  dplyr::filter(officer_rank != "Unknown") %>%
+  ggplot(aes(x=specialty_type, y=satistfaction_rank, fill=officer_rank, color=officer_rank)) +
+  geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA) +
+  stat_summary(fun.y="mean", geom="point", position = position_dodge(width=.75), shape=23, size=10, fill="white", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
+  # stat_summary(fun.data=TukeyBoxplot, geom='boxplot', na.rm=T, outlier.shape=NULL, outlier.colour=NA) +
+  geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), size=2, shape=1, na.rm=T) +
+  # scale_color_manual(values=PalettePregancyGroup) +
+  # scale_fill_manual(values=PalettePregancyGroupLight) +
+  # coord_flip(ylim = c(0, 1.05*max(dsPregnancy$T1Lifts, na.rm=T))) +
+  theme_report +
+  # theme(legend.position="none") +
+  labs(x=NULL) #y="Satisfaction"
+
+summary(lm(satistfaction_rank ~ 1 + officer_rate_f * specialty_type, data=ds[ds$specialty_type != "unknown", ]))
+summary(lm(satistfaction_rank ~ 1 + officer_rate_f + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
+
+cat("TODO: examine if the interaction term significantly improves fit.")
+
+
+
+cat("### transparency_rank\n\n")
+last_plot() %+% aes(y=transparency_rank)
+summary(lm(transparency_rank ~ 1 + specialty_type, data=ds))
+
+cat("### favoritism_rank\n\n")
+last_plot() %+% aes(y=favoritism_rank)
+summary(lm(favoritism_rank ~ 1 + specialty_type, data=ds))
+
+cat("### assignment_current_choice\n\n")
+last_plot() %+% aes(y=assignment_current_choice) +
+  scale_y_reverse()
+summary(lm(assignment_current_choice ~ 1 + specialty_type, data=ds))
 
 
 # ---- by-year ------------------------------------------------------------

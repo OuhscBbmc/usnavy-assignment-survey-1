@@ -92,7 +92,6 @@ rm(path_in, col_types)
 
 # ---- tweak-data --------------------------------------------------------------
 # OuhscMunge::column_rename_headstart(ds_lu_specialty) #Spit out columns to help write call ato `dplyr::rename()`.
-
 ds_lu_specialty <- ds_lu_specialty %>%
   dplyr::select(
     "specialty"
@@ -107,6 +106,9 @@ ds_lu_specialty <- ds_lu_specialty %>%
     # , "manning_proportion_2016"       = "manning_percent_2016"
     , "critical_war"
     , "specialty_type"
+  ) %>%
+  dplyr::mutate(
+    specialty_type   = factor(specialty_type, levels=c("nonsurgical", "surgical", "family", "operational",  "resident", "unknown"))
   )
 
 ds <- ds %>%
@@ -221,9 +223,9 @@ ds <- ds %>%
     by = c("primary_specialty" = "specialty")
   )
 
-ds2 %>%
-  dplyr::filter(is.na(critical_war)) %>%
-  dplyr::count(primary_specialty)
+# ds %>%
+#   dplyr::filter(is.na(critical_war)) %>%
+#   dplyr::count(primary_specialty)
 
 
 # ---- verify-values -----------------------------------------------------------
@@ -253,7 +255,8 @@ checkmate::assert_character(ds$officer_rank_preference   , any.missing=T , patte
 
 checkmate::assert_numeric(  ds$bonus_pay                 , any.missing=F , lower=0, upper=36000   )
 checkmate::assert_logical(  ds$critical_war              , any.missing=F                          )
-checkmate::assert_character(ds$specialty_type            , any.missing=F , pattern="^.{6,11}$"    )
+checkmate::assert_factor(   ds$specialty_type            , any.missing=F)# , pattern="^.{6,11}$"    )
+
 
 # ---- specify-columns-to-upload -----------------------------------------------
 # dput(colnames(ds)) # Print colnames for line below.
