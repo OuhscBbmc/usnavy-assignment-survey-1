@@ -1,6 +1,6 @@
 ---
 title: Attitudes Regarding the Assignment Process Among Navy Medical Corps Officers
-date: "Date: 2018-06-09"
+date: "Date: 2018-06-10"
 output:
   html_document:
     keep_md: yes
@@ -48,22 +48,23 @@ This report covers the survey about attitudes collected by Richard Childers, MD 
 # Graphs
 
 ## Marginals
-![](figure-png/marginals-1.png)<!-- -->![](figure-png/marginals-2.png)<!-- -->![](figure-png/marginals-3.png)<!-- -->![](figure-png/marginals-4.png)<!-- -->![](figure-png/marginals-5.png)<!-- -->![](figure-png/marginals-6.png)<!-- -->![](figure-png/marginals-7.png)<!-- -->![](figure-png/marginals-8.png)<!-- -->![](figure-png/marginals-9.png)<!-- -->![](figure-png/marginals-10.png)<!-- -->
+![](figure-png/marginals-1.png)<!-- -->![](figure-png/marginals-2.png)<!-- -->![](figure-png/marginals-3.png)<!-- -->![](figure-png/marginals-4.png)<!-- -->![](figure-png/marginals-5.png)<!-- -->![](figure-png/marginals-6.png)<!-- -->![](figure-png/marginals-7.png)<!-- -->![](figure-png/marginals-8.png)<!-- -->![](figure-png/marginals-9.png)<!-- -->![](figure-png/marginals-10.png)<!-- -->![](figure-png/marginals-11.png)<!-- -->![](figure-png/marginals-12.png)<!-- -->![](figure-png/marginals-13.png)<!-- -->
 
 ## Scatterplots
 
+
+Analyses
+============================================
+
+By Rank
+-----------------------------------
+
+
 ```
-Warning: Removed 79 rows containing non-finite values (stat_boxplot).
+### satistfaction_rank
 ```
 
-![](figure-png/scatterplots-1.png)<!-- -->![](figure-png/scatterplots-2.png)<!-- -->![](figure-png/scatterplots-3.png)<!-- -->![](figure-png/scatterplots-4.png)<!-- -->![](figure-png/scatterplots-5.png)<!-- -->![](figure-png/scatterplots-6.png)<!-- -->
-
-# Models
-## Model Exploration
-
-```
-============= Model includes one predictor. =============
-```
+![](figure-png/by-rank-1.png)<!-- -->
 
 ```
 
@@ -87,7 +88,100 @@ Multiple R-squared:  0.06191,	Adjusted R-squared:  0.05866
 F-statistic: 19.05 on 3 and 866 DF,  p-value: 5.713e-12
 ```
 
-## Final Model
+```
+### transparency_rank
+```
+
+![](figure-png/by-rank-2.png)<!-- -->
+
+```
+
+Call:
+lm(formula = transparency_rank ~ 1 + officer_rate_f, data = ds)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.9444 -0.9019  0.2009  1.2009  2.0981 
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)
+(Intercept)       2.9019     0.0924  31.407  < 2e-16
+officer_rate_f4   0.5921     0.1183   5.003 6.82e-07
+officer_rate_f5   0.8972     0.1299   6.906 9.61e-12
+officer_rate_f6   1.0426     0.1595   6.535 1.08e-10
+
+Residual standard error: 1.352 on 871 degrees of freedom
+  (76 observations deleted due to missingness)
+Multiple R-squared:  0.06859,	Adjusted R-squared:  0.06538 
+F-statistic: 21.38 on 3 and 871 DF,  p-value: 2.278e-13
+```
+
+```
+### favoritism_rank
+```
+
+![](figure-png/by-rank-3.png)<!-- -->
+
+```
+
+Call:
+lm(formula = favoritism_rank ~ 1 + officer_rate_f, data = ds)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.4190 -1.1216 -0.1216  1.2297  1.8784 
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)
+(Intercept)       3.1216     0.1092  28.575   <2e-16
+officer_rate_f4   0.2029     0.1334   1.521   0.1286
+officer_rate_f5   0.2582     0.1429   1.807   0.0712
+officer_rate_f6   0.2974     0.1696   1.754   0.0798
+
+Residual standard error: 1.329 on 759 degrees of freedom
+  (188 observations deleted due to missingness)
+Multiple R-squared:  0.005615,	Adjusted R-squared:  0.001685 
+F-statistic: 1.429 on 3 and 759 DF,  p-value: 0.2331
+```
+
+```
+### assignment_current_choice
+```
+
+![](figure-png/by-rank-4.png)<!-- -->
+
+```
+
+Call:
+lm(formula = assignment_current_choice ~ 1 + officer_rate_f, 
+    data = ds)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.8177 -0.6507 -0.4040  0.3493  3.6080 
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)
+(Intercept)      1.81771    0.08084  22.484  < 2e-16
+officer_rate_f4 -0.16702    0.10408  -1.605 0.108957
+officer_rate_f5 -0.42575    0.11332  -3.757 0.000185
+officer_rate_f6 -0.41367    0.13860  -2.985 0.002929
+
+Residual standard error: 1.12 on 778 degrees of freedom
+  (169 observations deleted due to missingness)
+Multiple R-squared:  0.02228,	Adjusted R-squared:  0.01851 
+F-statistic: 5.908 on 3 and 778 DF,  p-value: 0.0005478
+```
+
+By Year
+-----------------------------------
+
+
+```
+### satistfaction_rank
+```
+
+![](figure-png/by-year-1.png)<!-- -->
 
 
 # Session Information
@@ -108,7 +202,7 @@ Session info -------------------------------------------------------------------
  language (EN)                                       
  collate  English_United States.1252                 
  tz       America/Chicago                            
- date     2018-06-09                                 
+ date     2018-06-10                                 
 ```
 
 ```
@@ -171,5 +265,5 @@ Packages -----------------------------------------------------------------------
 
 
 
-Report rendered by Will at 2018-06-09, 15:28 -0500 in 8 seconds.
+Report rendered by Will at 2018-06-10, 13:24 -0500 in 7 seconds.
 

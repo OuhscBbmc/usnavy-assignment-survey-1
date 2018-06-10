@@ -77,19 +77,13 @@ TabularManifest::histogram_discrete(d_observed=ds, variable_name="specialty_type
 #   cat('TabularManifest::histogram_discrete(ds, variable_name="', column,'")\n', sep="")
 # }
 
-# ---- scatterplots ------------------------------------------------------------
+# ---- by-rank ------------------------------------------------------------
 
-ggplot(ds, aes(x=officer_rank, y=satistfaction_rank)) + #, color=officer_rank)) +
-  geom_boxplot() +
-  geom_point(shape=1, position = position_jitter(width=.3, height=.3), na.rm=T) +
-  coord_cartesian(ylim=c(0.5,5.5)) +
-  theme_light() +
-  theme(axis.ticks = element_blank())
-
+cat("### satistfaction_rank\n\n")
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
 ggplot(ds, aes(x=officer_rank, y=satistfaction_rank, fill=officer_rank, color=officer_rank)) +
-  stat_summary(fun.y="mean", geom="point", shape=23, size=10, fill="white", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
   geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA) +
+  stat_summary(fun.y="mean", geom="point", shape=23, size=10, fill="white", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
   # stat_summary(fun.data=TukeyBoxplot, geom='boxplot', na.rm=T, outlier.shape=NULL, outlier.colour=NA) +
   geom_point(position=position_jitter(w = 0.4, h = .2), size=2, shape=1, na.rm=T) +
   # scale_color_manual(values=PalettePregancyGroup) +
@@ -97,10 +91,29 @@ ggplot(ds, aes(x=officer_rank, y=satistfaction_rank, fill=officer_rank, color=of
   # coord_flip(ylim = c(0, 1.05*max(dsPregnancy$T1Lifts, na.rm=T))) +
   theme_report +
   theme(legend.position="none") +
-  labs(x=NULL, y="Satisfaction")
+  labs(x=NULL) #y="Satisfaction"
+
+summary(lm(satistfaction_rank ~ 1 + officer_rate_f, data=ds))
 
 
 
+cat("### transparency_rank\n\n")
+last_plot() %+% aes(y=transparency_rank)
+summary(lm(transparency_rank ~ 1 + officer_rate_f, data=ds))
+
+cat("### favoritism_rank\n\n")
+last_plot() %+% aes(y=favoritism_rank)
+summary(lm(favoritism_rank ~ 1 + officer_rate_f, data=ds))
+
+cat("### assignment_current_choice\n\n")
+last_plot() %+% aes(y=assignment_current_choice) +
+  scale_y_reverse()
+summary(lm(assignment_current_choice ~ 1 + officer_rate_f, data=ds))
+
+
+# ---- by-year ------------------------------------------------------------
+cat("### satistfaction_rank\n\n")
+set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
 ggplot(ds, aes(x=year_executed_order, y=transparency_rank)) + #, color=officer_rank)) +
   geom_smooth(method="loess", span=2, na.rm=T) +
   geom_smooth(data=ds[ds$year_executed_order >=2014L, ], method="loess", span=2, na.rm=T) +
@@ -109,10 +122,6 @@ ggplot(ds, aes(x=year_executed_order, y=transparency_rank)) + #, color=officer_r
   theme_light() +
   theme(axis.ticks = element_blank())
 
-last_plot() %+% aes(y=satistfaction_rank)
-last_plot() %+% aes(y=favoritism_rank)
-last_plot() %+% aes(y=assignment_current_choice)
-
 
 
 
@@ -120,8 +129,6 @@ last_plot() %+% aes(y=assignment_current_choice)
 
 cat("============= Model includes one predictor. =============")
 # m1 <- lm(satistfaction_rank ~ 1 + officer_rank, data=ds)
-m1 <- lm(satistfaction_rank ~ 1 + officer_rate_f, data=ds)
-summary(m1)
 
 
 # m2 <- lm(satistfaction_rank ~ 1 + primary_specialty, data=ds)
