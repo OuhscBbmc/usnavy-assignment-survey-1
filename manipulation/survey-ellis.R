@@ -30,6 +30,7 @@ col_types <- readr::cols_only( # readr::spec_csv(path_in)
   `Response ID`                                                                                                                                                                               = readr::col_integer(),
   `Include/Exclude`                                                                                                                                                                           = readr::col_character(),
   # `Date submitted`                                                                                                                                                                            = readr::col_character(),
+  `Date submitted`                                                                                                                                                                            = readr::col_datetime("%m/%d/%y %H:%M"),
   # `Last page`                                                                                                                                                                                 = readr::col_double(),
   # `Start language`                                                                                                                                                                            = readr::col_character(),
   # `Date started`                                                                                                                                                                              = readr::col_character(),
@@ -115,7 +116,7 @@ ds <- ds %>%
   dplyr::select_( #`select()` implicitly drops the other columns not mentioned.
     "response_id"                   = "`Response ID`"
     , "include_exclude"             = "`Include/Exclude`"
-    # , "datetime_submitted"          = "`Date submitted`"
+    , "datetime_submitted"          = "`Date submitted`"
     # , "datetime_started"            = "`Date started`"
     # , "datetime_last_action"        = "`Date last action`"
     , "primary_specialty"           = "`What is your primary?specialty-`"
@@ -174,6 +175,11 @@ ds <- ds %>%
     )
   ) %>%
   dplyr::mutate(
+    datetime_submitted        = as.Date(datetime_submitted),
+
+    survey_lag                = as.numeric(difftime(datetime_submitted, as.Date(ISOdate(year_executed_order, 7, 15)), units = "days") / 365.25)
+  ) %>%
+  dplyr::mutate(
     order_lead_time_other       = dplyr::recode(
       order_lead_time_other,
       `<2 months`                                             = "< 2 months",
@@ -205,6 +211,15 @@ ds <- ds %>%
   ) %>%
   dplyr::select(-include_exclude, -year_executed_order_other, -order_lead_time_other)
 
+summary(ds$survey_lag)
+# as.Date(ISOdate(ds$year_executed_order, 7, 15))
+# strptime(ds$year_executed_order, "%Y-07-15")
+
+
+# as.Date(ds$datetime_submitted)
+# strftime("9/20/16 11:17", "%m/%d/%y %H:%M")
+# strftime("9/20/16 11:17", "%m/%d/%y %H:%M")
+# strptime(ds$datetime_submitted, "%m/%d/%y %H:%M")
 
 # table(ds$year_executed_order, ds$year_executed_order_other)
 # table(dplyr::na_if(ds$officer_rank, "Unknown"), useNA = "always")
@@ -221,7 +236,32 @@ ds <- ds %>%
   dplyr::left_join(
     ds_lu_specialty,
     by = c("primary_specialty" = "specialty")
+  ) %>%
+  dplyr::mutate(
+    bonus_pay_cut3 = cut(
+      x               = bonus_pay,
+      breaks          = c(-Inf, 16000,    24000,       Inf),
+      labels          = c(   "$0", "$20-24k", "$24k+"),
+      include.lowest  = TRUE,
+      right           = FALSE
+    )
+  ) %>%
+  dplyr::mutate(
+    bonus_pay_cut4 = cut(
+      x               = bonus_pay,
+      breaks          = c(-Inf, 16000,    24000,    32000,   Inf),
+      labels          = c(   "$0", "$20-24k", "$24-32k", "32k+"),
+      include.lowest  = TRUE,
+      right           = FALSE
+    )
   )
+
+# table(ds$bonus_pay_cut3)
+TabularManifest::histogram_continuous(d_observed=ds, variable_name="bonus_pay" , bin_width=2000, rounded_digits=1) +
+  geom_vline(xintercept = 16000, size=3) +
+  geom_vline(xintercept = 24000, size=3) +
+  geom_vline(xintercept = 32000, size=3)
+
 
 # ds %>%
 #   dplyr::filter(is.na(critical_war)) %>%
@@ -236,6 +276,7 @@ checkmate::assert_character(ds$primary_specialty         , any.missing=F , patte
 checkmate::assert_factor(   ds$officer_rank              , any.missing=T                          )
 checkmate::assert_integer(  ds$officer_rate              , any.missing=T , lower=3, upper=6       )
 checkmate::assert_integer(  ds$year_executed_order       , any.missing=T , lower=2005, upper=2016 )
+checkmate::assert_double(  ds$survey_lag                , any.missing=T , lower=0, upper=12                                        )
 checkmate::assert_character(ds$billet_current            , any.missing=T , pattern="^.{3,28}$"    )
 checkmate::assert_factor(   ds$order_lead_time           , any.missing=T                          )
 # checkmate::assert_subset(   ds$order_lead_time           , choices = c("< 2 months", "2-4 months", "> 4 months"))
@@ -254,6 +295,8 @@ checkmate::assert_character(ds$assignment_preference     , any.missing=T , patte
 checkmate::assert_character(ds$officer_rank_preference   , any.missing=T , pattern="^.{2,3}$"     )
 
 checkmate::assert_numeric(  ds$bonus_pay                 , any.missing=F , lower=0, upper=36000   )
+checkmate::assert_factor(   ds$bonus_pay_cut3            , any.missing=F                          )
+checkmate::assert_factor(   ds$bonus_pay_cut4            , any.missing=F                          )
 checkmate::assert_logical(  ds$critical_war              , any.missing=F                          )
 checkmate::assert_factor(   ds$specialty_type            , any.missing=F)# , pattern="^.{6,11}$"    )
 
@@ -263,10 +306,11 @@ checkmate::assert_factor(   ds$specialty_type            , any.missing=F)# , pat
 columns_to_write <- c(
   "response_id", "primary_specialty",
   "officer_rank", "officer_rate",
-  "year_executed_order",
+  "year_executed_order", "survey_lag",
   "billet_current", "order_lead_time",
   "transparency_rank", "satistfaction_rank", "favoritism_rank", "assignment_current_choice",
-  "bonus_pay", "critical_war", "specialty_type"
+  "bonus_pay", "bonus_pay_cut3", "bonus_pay_cut4",
+  "critical_war", "specialty_type"
   # "geographic_preference", "career_path", "doctor_as_detailer",
   # "homestead_length_in_years", "homestead_problem", "match_desirability",
   # "match_month", "assignment_preference", "officer_rank_preference"

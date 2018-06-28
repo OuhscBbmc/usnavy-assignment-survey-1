@@ -57,6 +57,8 @@ TabularManifest::histogram_discrete(d_observed=ds, variable_name="primary_specia
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="officer_rank")
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="officer_rate")
 TabularManifest::histogram_continuous(d_observed=ds, variable_name="year_executed_order", bin_width=1, rounded_digits=1)
+
+TabularManifest::histogram_continuous(d_observed=ds, variable_name="survey_lag", bin_width = .5,  rounded_digits = 1)
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="billet_current")
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="order_lead_time")
 
@@ -66,7 +68,9 @@ TabularManifest::histogram_continuous(d_observed=ds, variable_name="satistfactio
 TabularManifest::histogram_continuous(d_observed=ds, variable_name="favoritism_rank"           , bin_width=1, rounded_digits=1)
 TabularManifest::histogram_continuous(d_observed=ds, variable_name="assignment_current_choice" , bin_width=1, rounded_digits=1)
 
-TabularManifest::histogram_continuous(d_observed=ds, variable_name="bonus_pay" , bin_width=1000, rounded_digits=1)
+TabularManifest::histogram_continuous(d_observed=ds, variable_name="bonus_pay" , bin_width=5000, rounded_digits=1)
+TabularManifest::histogram_discrete(d_observed=ds, variable_name="bonus_pay_cut3")
+TabularManifest::histogram_discrete(d_observed=ds, variable_name="bonus_pay_cut4")
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="critical_war")
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="specialty_type")
 # This helps start the code for graphing each variable.
@@ -113,6 +117,8 @@ last_plot() %+% aes(y=assignment_current_choice) +
   scale_y_reverse()
 summary(lm(assignment_current_choice ~ 1 + officer_rate_f, data=ds))
 
+
+
 # ---- by-specialty-type ------------------------------------------------------------
 
 cat("### satistfaction_rank\n\n")
@@ -149,6 +155,42 @@ last_plot() %+% aes(y=assignment_current_choice) +
   scale_y_reverse()
 summary(lm(assignment_current_choice ~ 1 + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
 
+
+# ---- by-bonus-pay ------------------------------------------------------------
+cat("### satistfaction_rank\n\n")
+set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
+ds %>%
+  tidyr::drop_na(bonus_pay_cut4) %>%
+  dplyr::filter(bonus_pay_cut4 != "unknown") %>%
+  ggplot(aes(x=bonus_pay_cut4, y=satistfaction_rank, fill=bonus_pay_cut4, color=bonus_pay_cut4)) +
+  geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA) +
+  stat_summary(fun.y="mean", geom="point", shape=23, size=10, fill="white", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
+  # stat_summary(fun.data=TukeyBoxplot, geom='boxplot', na.rm=T, outlier.shape=NULL, outlier.colour=NA) +
+  geom_point(position=position_jitter(w = 0.4, h = .2), size=2, shape=1, na.rm=T) +
+  # scale_color_manual(values=PalettePregancyGroup) +
+  # scale_fill_manual(values=PalettePregancyGroupLight) +
+  # coord_flip(ylim = c(0, 1.05*max(dsPregnancy$T1Lifts, na.rm=T))) +
+  theme_report +
+  theme(legend.position="none") +
+  labs(x=NULL) #y="Satisfaction"
+
+summary(lm(satistfaction_rank ~ 1 + bonus_pay_cut4, data=ds))
+
+
+
+cat("### transparency_rank\n\n")
+last_plot() %+% aes(y=transparency_rank)
+summary(lm(transparency_rank ~ 1 + bonus_pay_cut4, data=ds))
+
+cat("### favoritism_rank\n\n")
+last_plot() %+% aes(y=favoritism_rank)
+summary(lm(favoritism_rank ~ 1 + bonus_pay_cut4, data=ds))
+
+cat("### assignment_current_choice\n\n")
+last_plot() %+% aes(y=assignment_current_choice) +
+  scale_y_reverse()
+summary(lm(assignment_current_choice ~ 1 + bonus_pay_cut4, data=ds))
+
 # ---- by-assignment-current-choice ------------------------------------------------------------
 
 cat("### satistfaction_rank\n\n")
@@ -177,9 +219,20 @@ summary(lm(favoritism_rank ~ 1 + assignment_current_choice, data=ds))
 # ---- by-year ------------------------------------------------------------
 cat("### satistfaction_rank\n\n")
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
-ggplot(ds, aes(x=year_executed_order, y=transparency_rank)) + #, color=officer_rank)) +
+ggplot(ds, aes(x=year_executed_order, y=satistfaction_rank)) + #, color=officer_rank)) +
   geom_smooth(method="loess", span=2, na.rm=T) +
   geom_smooth(data=ds[ds$year_executed_order >=2014L, ], method="loess", span=2, na.rm=T) +
+  geom_point(shape=1, position = position_jitter(width=.3, height=.3), na.rm=T) +
+  coord_cartesian(ylim=c(0.5,5.5)) +
+  theme_light() +
+  theme(axis.ticks = element_blank())
+
+# ---- by-survey_lag ------------------------------------------------------------
+cat("### satistfaction_rank\n\n")
+set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
+ggplot(ds, aes(x=survey_lag, y=satistfaction_rank)) + #, color=officer_rank)) +
+  geom_smooth(method="loess", span=2, na.rm=T) +
+  geom_smooth(data=ds[ds$survey_lag >=2014L, ], method="loess", span=2, na.rm=T) +
   geom_point(shape=1, position = position_jitter(width=.3, height=.3), na.rm=T) +
   coord_cartesian(ylim=c(0.5,5.5)) +
   theme_light() +
@@ -245,12 +298,16 @@ ds %>%
   # scale_fill_manual(values=PalettePregancyGroupLight) +
   # coord_flip(ylim = c(0, 1.05*max(dsPregnancy$T1Lifts, na.rm=T))) +
   theme_report# +
-  # theme(legend.position="none") +
-  # labs(x=NULL) #y="Satisfaction"
+# theme(legend.position="none") +
+# labs(x=NULL) #y="Satisfaction"
 
 summary(lm(satistfaction_rank ~ 1 + officer_rate_f + assignment_current_choice, data=ds))
 summary(lm(satistfaction_rank ~ 1 + officer_rate_f * assignment_current_choice, data=ds))
 
+anova(
+  lm(satistfaction_rank ~ 1 + officer_rate_f + assignment_current_choice, data=ds),
+  lm(satistfaction_rank ~ 1 + officer_rate_f * assignment_current_choice, data=ds)
+)
 
 
 cat("### transparency_rank\n\n")
@@ -260,6 +317,41 @@ summary(lm(transparency_rank ~ 1 + officer_rate_f * assignment_current_choice, d
 cat("### favoritism_rank\n\n")
 last_plot() %+% aes(y=favoritism_rank)
 summary(lm(favoritism_rank ~ 1 + officer_rate_f * assignment_current_choice, data=ds))
+
+
+
+
+
+# ---- by-rank-and-bonus_pay ------------------------------------------------------------
+cat("### satistfaction_rank\n\n")
+set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
+ds %>%
+  tidyr::drop_na(bonus_pay) %>%
+  tidyr::drop_na(officer_rank) %>%
+  dplyr::filter(officer_rank != "Unknown") %>%
+  ggplot(aes(x=bonus_pay, y=satistfaction_rank, fill=officer_rank, color=officer_rank)) +
+  geom_smooth(method="loess", span=2, alpha=.2, na.rm=T) +
+  geom_point(position=position_jitter(w = 0.3, h = .2), size=2, shape=1, na.rm=T) +
+  theme_report# +
+# theme(legend.position="none") +
+# labs(x=NULL) #y="Satisfaction"
+
+summary(lm(satistfaction_rank ~ 1 + officer_rate_f + bonus_pay, data=ds))
+summary(lm(satistfaction_rank ~ 1 + officer_rate_f * bonus_pay, data=ds))
+
+anova(
+  lm(satistfaction_rank ~ 1 + officer_rate_f + bonus_pay, data=ds),
+  lm(satistfaction_rank ~ 1 + officer_rate_f * bonus_pay, data=ds)
+)
+
+
+cat("### transparency_rank\n\n")
+last_plot() %+% aes(y=transparency_rank)
+summary(lm(transparency_rank ~ 1 + officer_rate_f * bonus_pay, data=ds))
+
+cat("### favoritism_rank\n\n")
+last_plot() %+% aes(y=favoritism_rank)
+summary(lm(favoritism_rank ~ 1 + officer_rate_f * bonus_pay, data=ds))
 
 
 

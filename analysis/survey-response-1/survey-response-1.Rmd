@@ -101,6 +101,12 @@ By Specialty Type
 ```{r by-specialty-type, echo=echo_chunks, message=message_chunks}
 ```
 
+By Bonus Pay
+-----------------------------------
+
+```{r by-bonus-pay, echo=echo_chunks, message=message_chunks}
+```
+
 By Assignment Current Choice
 -----------------------------------
 
@@ -113,6 +119,15 @@ By Year
 
 ```{r by-year, echo=echo_chunks, message=message_chunks}
 ```
+
+
+By Survey Lag
+-----------------------------------
+
+```{r by-survey_lag, echo=echo_chunks, message=message_chunks}
+```
+
+
 
 Analyses - 2 Predictors
 ============================================
@@ -128,6 +143,12 @@ By Rank and Assignment Current Choice
 -----------------------------------
 
 ```{r by-rank-and-assignment-current-choice, echo=echo_chunks, message=message_chunks}
+```
+
+By Rank and Bonus Pay
+-----------------------------------
+
+```{r by-rank-and-bonus_pay, echo=echo_chunks, message=message_chunks}
 ```
 
 

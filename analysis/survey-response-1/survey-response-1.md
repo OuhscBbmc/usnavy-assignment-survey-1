@@ -1,6 +1,6 @@
 ---
 title: Attitudes Regarding the Assignment Process Among Navy Medical Corps Officers
-date: "Date: 2018-06-27"
+date: "Date: 2018-06-28"
 output:
   html_document:
     keep_md: yes
@@ -48,7 +48,7 @@ This report covers the survey about attitudes collected by Richard Childers, MD 
 # Graphs
 
 ## Marginals
-![](figure-png/marginals-1.png)<!-- -->![](figure-png/marginals-2.png)<!-- -->![](figure-png/marginals-3.png)<!-- -->![](figure-png/marginals-4.png)<!-- -->![](figure-png/marginals-5.png)<!-- -->![](figure-png/marginals-6.png)<!-- -->![](figure-png/marginals-7.png)<!-- -->![](figure-png/marginals-8.png)<!-- -->![](figure-png/marginals-9.png)<!-- -->![](figure-png/marginals-10.png)<!-- -->![](figure-png/marginals-11.png)<!-- -->![](figure-png/marginals-12.png)<!-- -->![](figure-png/marginals-13.png)<!-- -->
+![](figure-png/marginals-1.png)<!-- -->![](figure-png/marginals-2.png)<!-- -->![](figure-png/marginals-3.png)<!-- -->![](figure-png/marginals-4.png)<!-- -->![](figure-png/marginals-5.png)<!-- -->![](figure-png/marginals-6.png)<!-- -->![](figure-png/marginals-7.png)<!-- -->![](figure-png/marginals-8.png)<!-- -->![](figure-png/marginals-9.png)<!-- -->![](figure-png/marginals-10.png)<!-- -->![](figure-png/marginals-11.png)<!-- -->![](figure-png/marginals-12.png)<!-- -->![](figure-png/marginals-13.png)<!-- -->![](figure-png/marginals-14.png)<!-- -->![](figure-png/marginals-15.png)<!-- -->![](figure-png/marginals-16.png)<!-- -->
 
 ## Scatterplots
 
@@ -297,6 +297,123 @@ Multiple R-squared:  0.0255,	Adjusted R-squared:  0.02047
 F-statistic:  5.07 on 4 and 775 DF,  p-value: 0.0004894
 ```
 
+By Bonus Pay
+-----------------------------------
+
+
+```
+### satistfaction_rank
+```
+
+![](figure-png/by-bonus-pay-1.png)<!-- -->
+
+```
+
+Call:
+lm(formula = satistfaction_rank ~ 1 + bonus_pay_cut4, data = ds)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.7701 -0.7521  0.2743  1.2479  2.1589 
+
+Coefficients:
+                      Estimate Std. Error t value Pr(>|t|)
+(Intercept)             2.8411     0.1286  22.098  < 2e-16
+bonus_pay_cut4$20-24k   0.8846     0.1423   6.215 7.98e-10
+bonus_pay_cut4$24-32k   0.9290     0.1634   5.686 1.78e-08
+bonus_pay_cut432k+      0.9110     0.1779   5.121 3.74e-07
+
+Residual standard error: 1.33 on 868 degrees of freedom
+  (79 observations deleted due to missingness)
+Multiple R-squared:  0.04722,	Adjusted R-squared:  0.04393 
+F-statistic: 14.34 on 3 and 868 DF,  p-value: 3.984e-09
+```
+
+```
+### transparency_rank
+```
+
+![](figure-png/by-bonus-pay-2.png)<!-- -->
+
+```
+
+Call:
+lm(formula = transparency_rank ~ 1 + bonus_pay_cut4, data = ds)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.7688 -0.7688  0.4483  1.2312  2.3636 
+
+Coefficients:
+                      Estimate Std. Error t value Pr(>|t|)
+(Intercept)             2.6364     0.1297  20.328  < 2e-16
+bonus_pay_cut4$20-24k   0.9138     0.1438   6.353 3.39e-10
+bonus_pay_cut4$24-32k   1.1324     0.1659   6.827 1.62e-11
+bonus_pay_cut432k+      0.9154     0.1810   5.057 5.20e-07
+
+Residual standard error: 1.36 on 873 degrees of freedom
+  (74 observations deleted due to missingness)
+Multiple R-squared:  0.05592,	Adjusted R-squared:  0.05267 
+F-statistic: 17.24 on 3 and 873 DF,  p-value: 7.02e-11
+```
+
+```
+### favoritism_rank
+```
+
+![](figure-png/by-bonus-pay-3.png)<!-- -->
+
+```
+
+Call:
+lm(formula = favoritism_rank ~ 1 + bonus_pay_cut4, data = ds)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.4231 -1.0119 -0.2609  0.9881  1.9881 
+
+Coefficients:
+                      Estimate Std. Error t value Pr(>|t|)
+(Intercept)             3.0119     0.1449  20.792   <2e-16
+bonus_pay_cut4$20-24k   0.3296     0.1590   2.073   0.0385
+bonus_pay_cut4$24-32k   0.4112     0.1797   2.288   0.0224
+bonus_pay_cut432k+      0.2490     0.1906   1.306   0.1918
+
+Residual standard error: 1.328 on 761 degrees of freedom
+  (186 observations deleted due to missingness)
+Multiple R-squared:  0.007504,	Adjusted R-squared:  0.003592 
+F-statistic: 1.918 on 3 and 761 DF,  p-value: 0.1252
+```
+
+```
+### assignment_current_choice
+```
+
+![](figure-png/by-bonus-pay-4.png)<!-- -->
+
+```
+
+Call:
+lm(formula = assignment_current_choice ~ 1 + bonus_pay_cut4, 
+    data = ds)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.7979 -0.6239 -0.5190  0.3761  3.4810 
+
+Coefficients:
+                      Estimate Std. Error t value Pr(>|t|)
+(Intercept)             1.7979     0.1164  15.446   <2e-16
+bonus_pay_cut4$20-24k  -0.2789     0.1287  -2.167   0.0305
+bonus_pay_cut4$24-32k  -0.1312     0.1468  -0.894   0.3718
+bonus_pay_cut432k+     -0.1740     0.1589  -1.095   0.2736
+
+Residual standard error: 1.129 on 780 degrees of freedom
+  (167 observations deleted due to missingness)
+Multiple R-squared:  0.007209,	Adjusted R-squared:  0.00339 
+F-statistic: 1.888 on 3 and 780 DF,  p-value: 0.1301
+```
+
 By Assignment Current Choice
 -----------------------------------
 
@@ -392,6 +509,19 @@ By Year
 ```
 
 ![](figure-png/by-year-1.png)<!-- -->
+
+
+By Survey Lag
+-----------------------------------
+
+
+```
+### satistfaction_rank
+```
+
+![](figure-png/by-survey_lag-1.png)<!-- -->
+
+
 
 Analyses - 2 Predictors
 ============================================
@@ -630,6 +760,16 @@ F-statistic: 47.28 on 7 and 751 DF,  p-value: < 2.2e-16
 ```
 
 ```
+Analysis of Variance Table
+
+Model 1: satistfaction_rank ~ 1 + officer_rate_f + assignment_current_choice
+Model 2: satistfaction_rank ~ 1 + officer_rate_f * assignment_current_choice
+  Res.Df    RSS Df Sum of Sq      F Pr(>F)
+1    754 828.44                           
+2    751 827.64  3   0.80396 0.2432 0.8662
+```
+
+```
 ### transparency_rank
 ```
 
@@ -695,6 +835,143 @@ Multiple R-squared:  0.1082,	Adjusted R-squared:  0.09883
 F-statistic: 11.53 on 7 and 665 DF,  p-value: 7.273e-14
 ```
 
+By Rank and Bonus Pay
+-----------------------------------
+
+
+```
+### satistfaction_rank
+```
+
+![](figure-png/by-rank-and-bonus_pay-1.png)<!-- -->
+
+```
+
+Call:
+lm(formula = satistfaction_rank ~ 1 + officer_rate_f + bonus_pay, 
+    data = ds)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.2614 -0.8433  0.2141  1.0756  2.0756 
+
+Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)
+(Intercept)     2.924e+00  1.133e-01  25.818  < 2e-16
+officer_rate_f4 2.934e-01  1.267e-01   2.316  0.02081
+officer_rate_f5 6.033e-01  1.409e-01   4.282 2.06e-05
+officer_rate_f6 8.478e-01  1.621e-01   5.231 2.11e-07
+bonus_pay       1.578e-05  5.137e-06   3.072  0.00219
+
+Residual standard error: 1.312 on 865 degrees of freedom
+  (81 observations deleted due to missingness)
+Multiple R-squared:  0.07203,	Adjusted R-squared:  0.06774 
+F-statistic: 16.79 on 4 and 865 DF,  p-value: 2.919e-13
+```
+
+```
+
+Call:
+lm(formula = satistfaction_rank ~ 1 + officer_rate_f * bonus_pay, 
+    data = ds)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.2319 -0.6738  0.3982  1.1132  2.3262 
+
+Coefficients:
+                            Estimate Std. Error t value Pr(>|t|)
+(Intercept)                2.674e+00  1.412e-01  18.934  < 2e-16
+officer_rate_f4            9.877e-01  2.499e-01   3.953 8.36e-05
+officer_rate_f5            8.154e-01  3.806e-01   2.142  0.03245
+officer_rate_f6            1.178e+00  4.843e-01   2.433  0.01516
+bonus_pay                  3.446e-05  8.141e-06   4.232 2.56e-05
+officer_rate_f4:bonus_pay -3.744e-05  1.154e-05  -3.246  0.00122
+officer_rate_f5:bonus_pay -1.717e-05  1.566e-05  -1.097  0.27309
+officer_rate_f6:bonus_pay -2.221e-05  2.130e-05  -1.042  0.29750
+
+Residual standard error: 1.306 on 862 degrees of freedom
+  (81 observations deleted due to missingness)
+Multiple R-squared:  0.08328,	Adjusted R-squared:  0.07584 
+F-statistic: 11.19 on 7 and 862 DF,  p-value: 1.323e-13
+```
+
+```
+Analysis of Variance Table
+
+Model 1: satistfaction_rank ~ 1 + officer_rate_f + bonus_pay
+Model 2: satistfaction_rank ~ 1 + officer_rate_f * bonus_pay
+  Res.Df    RSS Df Sum of Sq      F  Pr(>F)
+1    865 1488.7                            
+2    862 1470.7  3    18.052 3.5268 0.01461
+```
+
+```
+### transparency_rank
+```
+
+![](figure-png/by-rank-and-bonus_pay-2.png)<!-- -->
+
+```
+
+Call:
+lm(formula = transparency_rank ~ 1 + officer_rate_f * bonus_pay, 
+    data = ds)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.1906 -1.1164  0.3004  1.1290  2.5204 
+
+Coefficients:
+                            Estimate Std. Error t value Pr(>|t|)
+(Intercept)                2.480e+00  1.433e-01  17.305  < 2e-16
+officer_rate_f4            1.008e+00  2.532e-01   3.979 7.49e-05
+officer_rate_f5            8.585e-01  3.902e-01   2.200 0.028052
+officer_rate_f6            8.102e-01  5.006e-01   1.618 0.105942
+bonus_pay                  3.184e-05  8.306e-06   3.834 0.000135
+officer_rate_f4:bonus_pay -3.155e-05  1.174e-05  -2.688 0.007329
+officer_rate_f5:bonus_pay -1.376e-05  1.609e-05  -0.855 0.392553
+officer_rate_f6:bonus_pay -2.782e-06  2.213e-05  -0.126 0.899981
+
+Residual standard error: 1.341 on 867 degrees of freedom
+  (76 observations deleted due to missingness)
+Multiple R-squared:  0.08798,	Adjusted R-squared:  0.08061 
+F-statistic: 11.95 on 7 and 867 DF,  p-value: 1.334e-14
+```
+
+```
+### favoritism_rank
+```
+
+![](figure-png/by-rank-and-bonus_pay-3.png)<!-- -->
+
+```
+
+Call:
+lm(formula = favoritism_rank ~ 1 + officer_rate_f * bonus_pay, 
+    data = ds)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.5064 -1.2309 -0.2692  1.3236  2.1537 
+
+Coefficients:
+                            Estimate Std. Error t value Pr(>|t|)
+(Intercept)                2.846e+00  1.679e-01  16.954   <2e-16
+officer_rate_f4            6.601e-01  2.737e-01   2.412   0.0161
+officer_rate_f5            2.419e-01  4.030e-01   0.600   0.5484
+officer_rate_f6            6.359e-01  5.053e-01   1.258   0.2086
+bonus_pay                  2.114e-05  9.801e-06   2.157   0.0313
+officer_rate_f4:bonus_pay -2.880e-05  1.298e-05  -2.219   0.0268
+officer_rate_f5:bonus_pay -9.820e-06  1.691e-05  -0.581   0.5615
+officer_rate_f6:bonus_pay -2.393e-05  2.245e-05  -1.066   0.2869
+
+Residual standard error: 1.327 on 755 degrees of freedom
+  (188 observations deleted due to missingness)
+Multiple R-squared:  0.01366,	Adjusted R-squared:  0.004515 
+F-statistic: 1.494 on 7 and 755 DF,  p-value: 0.1661
+```
+
 
 # Session Information
 For the sake of documentation and reproducibility, the current report was rendered in the following environment.  Click the line below to expand.
@@ -714,7 +991,7 @@ Session info -------------------------------------------------------------------
  language (EN)                        
  collate  en_US.UTF-8                 
  tz       America/Chicago             
- date     2018-06-27                  
+ date     2018-06-28                  
 ```
 
 ```
@@ -778,5 +1055,5 @@ Packages -----------------------------------------------------------------------
 
 
 
-Report rendered by wibeasley at 2018-06-27, 23:38 -0500 in 32 seconds.
+Report rendered by wibeasley at 2018-06-28, 01:21 -0500 in 38 seconds.
 
