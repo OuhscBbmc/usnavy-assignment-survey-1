@@ -1,6 +1,6 @@
 ---
 title: Attitudes Regarding the Assignment Process Among Navy Medical Corps Officers
-date: "Date: 2018-06-29"
+date: "Date: 2018-06-30"
 output:
   html_document:
     keep_md: yes
@@ -35,22 +35,34 @@ This report covers the survey about attitudes collected by Richard Childers, MD 
 <!-- Tweak the datasets.   -->
 
 
-# Summary {.tabset .tabset-fade .tabset-pills}
+Summary {.tabset .tabset-fade .tabset-pills}
+============================================
 
-## Notes 
+Notes 
+-----------------------------------
+
 1. The current report covers 951 responses.
 1. We excluded 17 cases because their orders preceded the year 2012 and 26 cases because the `year_executed_order` value was missing.
 
-## Unanswered Questions
+Unanswered Questions
+-----------------------------------
 
-## Answered Questions
+Answered Questions
+-----------------------------------
 
-# Graphs
+Graphs
+============================================
 
-## Marginals
+Marginals
+
+
+-----------------------------------
+
 ![](figure-png/marginals-1.png)<!-- -->![](figure-png/marginals-2.png)<!-- -->![](figure-png/marginals-3.png)<!-- -->![](figure-png/marginals-4.png)<!-- -->![](figure-png/marginals-5.png)<!-- -->![](figure-png/marginals-6.png)<!-- -->![](figure-png/marginals-7.png)<!-- -->![](figure-png/marginals-8.png)<!-- -->![](figure-png/marginals-9.png)<!-- -->![](figure-png/marginals-10.png)<!-- -->![](figure-png/marginals-11.png)<!-- -->![](figure-png/marginals-12.png)<!-- -->![](figure-png/marginals-13.png)<!-- -->![](figure-png/marginals-14.png)<!-- -->![](figure-png/marginals-15.png)<!-- -->![](figure-png/marginals-16.png)<!-- -->![](figure-png/marginals-17.png)<!-- -->![](figure-png/marginals-18.png)<!-- -->![](figure-png/marginals-19.png)<!-- -->![](figure-png/marginals-20.png)<!-- -->
 
-## Scatterplots
+Scatterplots
+-----------------------------------
+
 
 
 Relationships between Outcomes
@@ -583,8 +595,6 @@ F-statistic: 11.41 on 6 and 865 DF,  p-value: 2.681e-12
 ```
 
 
-
-
 Analyses - 2 Predictors
 ============================================
 
@@ -1035,10 +1045,6 @@ F-statistic: 1.494 on 7 and 755 DF,  p-value: 0.1661
 ```
 
 
-
-
-
-
 Session Information
 ============================================
 
@@ -1059,7 +1065,7 @@ Session info -------------------------------------------------------------------
  language (EN)                        
  collate  en_US.UTF-8                 
  tz       America/Chicago             
- date     2018-06-29                  
+ date     2018-06-30                  
 ```
 
 ```
@@ -1124,5 +1130,4 @@ Packages -----------------------------------------------------------------------
 
 
 
-Report rendered by wibeasley at 2018-06-29, 23:06 -0500 in 33 seconds.
-
+Report rendered by wibeasley at 2018-06-30, 12:21 -0500 in 33 seconds.

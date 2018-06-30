@@ -66,23 +66,35 @@ read_chunk("./analysis/survey-response-1/survey-response-1.R") #This allows knit
 ```{r tweak-data, echo=echo_chunks, results='show', message=message_chunks}
 ```
 
-# Summary {.tabset .tabset-fade .tabset-pills}
+Summary {.tabset .tabset-fade .tabset-pills}
+============================================
 
-## Notes 
+Notes 
+-----------------------------------
+
 1. The current report covers `r nrow(ds)` responses.
 1. We excluded `r sum(ds_everyone$year_executed_order < include_year_first, na.rm=T)` cases because their orders preceded the year `r include_year_first` and `r sum(is.na(ds_everyone$year_executed_order))` cases because the `year_executed_order` value was missing.
 
-## Unanswered Questions
+Unanswered Questions
+-----------------------------------
 
-## Answered Questions
+Answered Questions
+-----------------------------------
 
-# Graphs
+Graphs
+============================================
 
-## Marginals
+Marginals
+
+
+-----------------------------------
+
 ```{r marginals, echo=echo_chunks, message=message_chunks}
 ```
 
-## Scatterplots
+Scatterplots
+-----------------------------------
+
 ```{r scatterplots, echo=echo_chunks, message=message_chunks, fig.width=7}
 ```
 
@@ -155,8 +167,6 @@ By Billet Current
 ```
 
 
-
-
 Analyses - 2 Predictors
 ============================================
 
@@ -180,10 +190,6 @@ By Rank and Bonus Pay
 ```
 
 
-
-
-
-
 Session Information
 ============================================
 
@@ -205,4 +211,3 @@ report_render_duration_in_seconds <- round(as.numeric(difftime(Sys.time(), repor
 ```
 
 Report rendered by `r Sys.info()["user"]` at `r strftime(Sys.time(), "%Y-%m-%d, %H:%M %z")` in `r report_render_duration_in_seconds` seconds.
-
