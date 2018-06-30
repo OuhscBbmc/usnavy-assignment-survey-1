@@ -1,6 +1,6 @@
 ---
 title: Attitudes Regarding the Assignment Process Among Navy Medical Corps Officers
-date: "Date: 2018-06-28"
+date: "Date: 2018-06-29"
 output:
   html_document:
     keep_md: yes
@@ -991,7 +991,7 @@ Session info -------------------------------------------------------------------
  language (EN)                        
  collate  en_US.UTF-8                 
  tz       America/Chicago             
- date     2018-06-28                  
+ date     2018-06-29                  
 ```
 
 ```
@@ -1012,7 +1012,7 @@ Packages -----------------------------------------------------------------------
  digest            0.6.15      2018-01-28 CRAN (R 3.4.3)                          
  dplyr             0.7.5       2018-05-19 CRAN (R 3.4.4)                          
  evaluate          0.10.1      2017-06-24 CRAN (R 3.4.3)                          
- ggplot2         * 2.2.1.9000  2018-03-29 Github (tidyverse/ggplot2@3c9c504)      
+ ggplot2         * 2.2.1       2016-12-30 CRAN (R 3.4.4)                          
  glue              1.2.0       2017-10-29 cran (@1.2.0)                           
  graphics        * 3.4.4       2018-04-21 local                                   
  grDevices       * 3.4.4       2018-04-21 local                                   
@@ -1047,7 +1047,6 @@ Packages -----------------------------------------------------------------------
  tidyselect        0.2.4       2018-02-26 CRAN (R 3.4.3)                          
  tools             3.4.4       2018-04-21 local                                   
  utils           * 3.4.4       2018-04-21 local                                   
- viridisLite       0.3.0       2018-02-01 CRAN (R 3.4.3)                          
  withr             2.1.2       2018-03-29 Github (jimhester/withr@79d7b0d)        
  yaml              2.1.19      2018-05-01 CRAN (R 3.4.4)                          
 ```
@@ -1055,5 +1054,5 @@ Packages -----------------------------------------------------------------------
 
 
 
-Report rendered by wibeasley at 2018-06-28, 01:21 -0500 in 38 seconds.
+Report rendered by wibeasley at 2018-06-29, 21:22 -0500 in 49 seconds.
 
