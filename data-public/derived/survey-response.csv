@@ -1,10 +1,10 @@
 response_id,primary_specialty,officer_rank,officer_rate,year_executed_order,survey_lag,billet_current,order_lead_time,transparency_rank,satistfaction_rank,favoritism_rank,assignment_current_choice,bonus_pay,bonus_pay_cut3,bonus_pay_cut4,critical_war,specialty_type,manning_proportion,manning_proportion_cut3
 15,Emergency Medicine,CDR,5,2015,1.0951403148528405,Non-Operational/Non-Clinical,2-4 months,3,4,3,1,26e3,$24k+,$24-32k,High Deployer,nonsurgical,1.125,Over
 20,Allergy/Immunology,CDR,5,NA,NA,CONUS MTF,2-4 months,5,5,5,2,23e3,$20-24k,$20-24k,Low Deployer,nonsurgical,1.125,Over
-21,Unknown,Unknown,NA,NA,NA,NA,NA,2,NA,NA,NA,26e3,$24k+,$24-32k,Low Deployer,unknown,1,Balanced
+21,Unknown,Unknown,NA,NA,NA,Other,NA,2,NA,NA,NA,26e3,$24k+,$24-32k,Low Deployer,unknown,1,Balanced
 18,OB/GYN,CAPT or Flag,6,2016,0.09582477754962354,Non-Operational/Non-Clinical,2-4 months,NA,2,1,5,31e3,$24k+,$24-32k,Low Deployer,surgical,1.065,Balanced
 19,Emergency Medicine,CDR,5,2016,0.09582477754962354,CONUS MTF,> 4 months,5,5,4,1,26e3,$24k+,$24-32k,High Deployer,nonsurgical,1.125,Over
-33,Emergency Medicine,LCDR,4,NA,NA,NA,2-4 months,3,3,2,2,26e3,$24k+,$24-32k,High Deployer,nonsurgical,1.125,Over
+33,Emergency Medicine,LCDR,4,NA,NA,Other,2-4 months,3,3,2,2,26e3,$24k+,$24-32k,High Deployer,nonsurgical,1.125,Over
 38,Ophthalmology,LCDR,4,NA,NA,CONUS MTF,NA,4,4,3,NA,28e3,$24k+,$24-32k,Low Deployer,surgical,1.07,Balanced
 45,Anesthesiology,LCDR,4,NA,NA,CONUS MTF,> 4 months,3,4,2,1,36e3,$24k+,32k+,High Deployer,surgical,1.1949999999999998,Over
 23,Family Medicine,LT,3,2016,0.09856262833675565,OCONUS MTF,< 2 months,2,3,4,1,2e4,$20-24k,$20-24k,Low Deployer,family,0.895,Under
@@ -47,7 +47,7 @@ response_id,primary_specialty,officer_rank,officer_rate,year_executed_order,surv
 61,Preventive Medicine,LCDR,4,2015,1.1006160164271048,Non-Operational/Non-Clinical,< 2 months,3,1,1,5,2e4,$20-24k,$20-24k,Low Deployer,nonsurgical,0.9604999999999999,Balanced
 62,Preventive Medicine,LCDR,4,2015,1.1006160164271048,CONUS Operational,> 4 months,5,5,3,1,2e4,$20-24k,$20-24k,Low Deployer,nonsurgical,0.9604999999999999,Balanced
 63,Emergency Medicine,CDR,5,2012,4.098562628336755,CONUS MTF,> 4 months,5,5,4,1,26e3,$24k+,$24-32k,High Deployer,nonsurgical,1.125,Over
-887,Unknown,Unknown,NA,NA,NA,NA,NA,2,2,3,NA,26e3,$24k+,$24-32k,Low Deployer,unknown,1,Balanced
+887,Unknown,Unknown,NA,NA,NA,Other,NA,2,2,3,NA,26e3,$24k+,$24-32k,Low Deployer,unknown,1,Balanced
 65,Family Medicine,LT,3,2016,0.09856262833675565,CONUS Operational,< 2 months,1,2,2,5,2e4,$20-24k,$20-24k,Low Deployer,family,0.895,Under
 148,Aviation Medicine (Flight Surgery GMO),LT,3,2016,0.10403832991101986,CONUS Operational,< 2 months,1,2,4,1,0,$0,$0,Low Deployer,operational,0.98,Balanced
 157,Aviation Medicine (Flight Surgery GMO),LT,3,2016,0.10403832991101986,CONUS Operational,< 2 months,1,1,1,5,0,$0,$0,Low Deployer,operational,0.98,Balanced
@@ -57,9 +57,9 @@ response_id,primary_specialty,officer_rank,officer_rate,year_executed_order,surv
 71,OB/GYN,LCDR,4,2014,2.099931553730322,CONUS MTF,> 4 months,4,3,3,4,31e3,$24k+,$24-32k,Low Deployer,surgical,1.065,Balanced
 72,Pathology,CDR,5,2016,0.09856262833675565,CONUS MTF,> 4 months,5,5,2,1,2e4,$20-24k,$20-24k,Low Deployer,nonsurgical,1,Balanced
 246,Aviation Medicine (Flight Surgery GMO),LT,3,2015,1.108829568788501,CONUS Operational,2-4 months,3,2,2,4,0,$0,$0,Low Deployer,operational,0.98,Balanced
-1005,Emergency Medicine,LT,3,NA,NA,NA,NA,NA,NA,NA,NA,26e3,$24k+,$24-32k,High Deployer,nonsurgical,1.125,Over
+1005,Emergency Medicine,LT,3,NA,NA,Other,NA,NA,NA,NA,NA,26e3,$24k+,$24-32k,High Deployer,nonsurgical,1.125,Over
 75,Family Medicine,LCDR,4,2015,1.1006160164271048,OCONUS MTF,< 2 months,2,1,3,NA,2e4,$20-24k,$20-24k,Low Deployer,family,0.895,Under
-1028,Other,LT,3,NA,NA,NA,NA,NA,NA,NA,NA,26e3,$24k+,$24-32k,Low Deployer,unknown,1,Balanced
+1028,Other,LT,3,NA,NA,Other,NA,NA,NA,NA,NA,26e3,$24k+,$24-32k,Low Deployer,unknown,1,Balanced
 77,Neurology,LCDR,4,2015,1.1006160164271048,CONUS MTF,2-4 months,5,5,5,1,2e4,$20-24k,$20-24k,Low Deployer,nonsurgical,0.94,Balanced
 78,Family Medicine,LCDR,4,2016,0.09856262833675565,CONUS MTF,< 2 months,3,2,3,1,2e4,$20-24k,$20-24k,Low Deployer,family,0.895,Under
 255,Aviation Medicine (Flight Surgery GMO),LT,3,2016,0.10677618069815195,CONUS Operational,2-4 months,2,4,4,1,0,$0,$0,Low Deployer,operational,0.98,Balanced
@@ -83,7 +83,7 @@ response_id,primary_specialty,officer_rank,officer_rate,year_executed_order,surv
 666,Aviation Medicine (Flight Surgery GMO),LCDR,4,2016,0.12320328542094455,CONUS Operational,< 2 months,1,1,1,NA,0,$0,$0,Low Deployer,operational,0.98,Balanced
 98,Pediatrics,CDR,5,2014,2.102669404517454,OCONUS MTF,2-4 months,3,3,2,5,2e4,$20-24k,$20-24k,Low Deployer,nonsurgical,1.13,Over
 99,General Surgery,LCDR,4,2014,2.102669404517454,OCONUS Operational,2-4 months,2,1,5,NA,29e3,$24k+,$24-32k,High Deployer,surgical,0.84,Under
-1294,Family Medicine,Unknown,NA,NA,NA,NA,NA,NA,NA,NA,NA,2e4,$20-24k,$20-24k,Low Deployer,family,0.895,Under
+1294,Family Medicine,Unknown,NA,NA,NA,Other,NA,NA,NA,NA,NA,2e4,$20-24k,$20-24k,Low Deployer,family,0.895,Under
 695,Aviation Medicine (Flight Surgery GMO),LT,3,2016,0.12594113620807665,CONUS Operational,< 2 months,3,5,4,1,0,$0,$0,Low Deployer,operational,0.98,Balanced
 102,Occupational Medicine,CDR,5,2014,2.102669404517454,CONUS MTF,2-4 months,2,2,1,5,2e4,$20-24k,$20-24k,Low Deployer,nonsurgical,0.94,Balanced
 701,Aviation Medicine (Flight Surgery GMO),LT,3,2015,1.1279945242984257,CONUS Operational,< 2 months,1,2,NA,NA,0,$0,$0,Low Deployer,operational,0.98,Balanced
@@ -106,7 +106,7 @@ response_id,primary_specialty,officer_rank,officer_rate,year_executed_order,surv
 120,Psychiatry,CAPT or Flag,6,2015,1.106091718001369,Non-Operational/Non-Clinical,2-4 months,4,4,2,2,2e4,$20-24k,$20-24k,High Deployer,nonsurgical,0.88,Under
 121,Emergency Medicine,CAPT or Flag,6,2016,0.10403832991101986,OCONUS MTF,2-4 months,5,NA,5,1,26e3,$24k+,$24-32k,High Deployer,nonsurgical,1.125,Over
 122,Emergency Medicine,LCDR,4,2015,1.106091718001369,GME,> 4 months,4,4,2,1,26e3,$24k+,$24-32k,High Deployer,nonsurgical,1.125,Over
-154,Emergency Medicine,LT,3,NA,NA,NA,NA,NA,NA,NA,NA,26e3,$24k+,$24-32k,High Deployer,nonsurgical,1.125,Over
+154,Emergency Medicine,LT,3,NA,NA,Other,NA,NA,NA,NA,NA,26e3,$24k+,$24-32k,High Deployer,nonsurgical,1.125,Over
 124,Emergency Medicine,LCDR,4,2015,1.106091718001369,OCONUS Operational,> 4 months,5,5,5,3,26e3,$24k+,$24-32k,High Deployer,nonsurgical,1.125,Over
 125,Emergency Medicine,LT,3,2016,0.10403832991101986,GME,< 2 months,5,5,3,1,26e3,$24k+,$24-32k,High Deployer,nonsurgical,1.125,Over
 126,Emergency Medicine,LCDR,4,2015,1.106091718001369,CONUS MTF,2-4 months,1,2,4,1,26e3,$24k+,$24-32k,High Deployer,nonsurgical,1.125,Over
@@ -117,11 +117,11 @@ response_id,primary_specialty,officer_rank,officer_rate,year_executed_order,surv
 131,Emergency Medicine,CDR,5,2014,2.105407255304586,OCONUS MTF,> 4 months,5,5,5,1,26e3,$24k+,$24-32k,High Deployer,nonsurgical,1.125,Over
 132,Emergency Medicine,LT,3,2013,3.1047227926078027,CONUS MTF,> 4 months,4,4,3,1,26e3,$24k+,$24-32k,High Deployer,nonsurgical,1.125,Over
 133,Allergy/Immunology,LCDR,4,2014,2.105407255304586,CONUS MTF,2-4 months,2,2,NA,NA,23e3,$20-24k,$20-24k,Low Deployer,nonsurgical,1.125,Over
-691,Otolaryngology,LT,3,2015,1.1279945242984257,NA,2-4 months,4,5,5,1,3e4,$24k+,$24-32k,Low Deployer,surgical,1.1,Over
+691,Otolaryngology,LT,3,2015,1.1279945242984257,Other,2-4 months,4,5,5,1,3e4,$24k+,$24-32k,Low Deployer,surgical,1.1,Over
 136,Emergency Medicine,LCDR,4,2014,2.105407255304586,GME,2-4 months,5,NA,3,1,26e3,$24k+,$24-32k,High Deployer,nonsurgical,1.125,Over
 137,Pediatrics,CDR,5,2013,3.1047227926078027,CONUS MTF,> 4 months,3,5,4,1,2e4,$20-24k,$20-24k,Low Deployer,nonsurgical,1.13,Over
 1094,Aviation Medicine (Flight Surgery GMO),LT,3,2013,3.1512662559890487,CONUS Operational,2-4 months,4,4,NA,1,0,$0,$0,Low Deployer,operational,0.98,Balanced
-934,Orthopedic Surgery,LT,3,2016,NA,NA,NA,NA,NA,NA,NA,36e3,$24k+,32k+,High Deployer,surgical,1.0750000000000002,Balanced
+934,Orthopedic Surgery,LT,3,2016,NA,Other,NA,NA,NA,NA,NA,36e3,$24k+,32k+,High Deployer,surgical,1.0750000000000002,Balanced
 140,Emergency Medicine,CAPT or Flag,6,2015,1.106091718001369,CONUS MTF,> 4 months,4,5,5,1,26e3,$24k+,$24-32k,High Deployer,nonsurgical,1.125,Over
 141,Emergency Medicine,CDR,5,2016,0.10403832991101986,Non-Operational/Non-Clinical,< 2 months,4,4,3,1,26e3,$24k+,$24-32k,High Deployer,nonsurgical,1.125,Over
 142,Emergency Medicine,CDR,5,2015,1.106091718001369,CONUS MTF,> 4 months,5,5,1,1,26e3,$24k+,$24-32k,High Deployer,nonsurgical,1.125,Over
@@ -673,7 +673,7 @@ response_id,primary_specialty,officer_rank,officer_rate,year_executed_order,surv
 729,Neurology,LCDR,4,2012,4.131416837782341,CONUS MTF,2-4 months,1,2,4,2,2e4,$20-24k,$20-24k,Low Deployer,nonsurgical,0.94,Balanced
 730,Preventive Medicine,CDR,5,2015,1.1334702258726899,CONUS MTF,2-4 months,5,4,NA,NA,2e4,$20-24k,$20-24k,Low Deployer,nonsurgical,0.9604999999999999,Balanced
 731,General Surgery,LT,3,NA,NA,GME,NA,5,5,NA,2,29e3,$24k+,$24-32k,High Deployer,surgical,0.84,Under
-29,Resident,LCDR,4,2013,3.0992470910335386,NA,> 4 months,2,3,5,1,0,$0,$0,Low Deployer,resident,1,Balanced
+29,Resident,LCDR,4,2013,3.0992470910335386,Other,> 4 months,2,3,5,1,0,$0,$0,Low Deployer,resident,1,Balanced
 782,Emergency Medicine,LT,3,2016,0.13141683778234087,CONUS MTF,2-4 months,3,4,4,1,26e3,$24k+,$24-32k,High Deployer,nonsurgical,1.125,Over
 48,Resident,LT,3,2016,0.09856262833675565,CONUS MTF,2-4 months,2,4,4,2,0,$0,$0,Low Deployer,resident,1,Balanced
 792,Internal Medicine (General),LT,3,2016,NA,CONUS MTF,NA,NA,NA,NA,NA,2e4,$20-24k,$20-24k,Low Deployer,nonsurgical,1.125,Over
@@ -681,7 +681,7 @@ response_id,primary_specialty,officer_rank,officer_rate,year_executed_order,surv
 1155,Infectious Disease (IM),CAPT or Flag,6,2014,2.1546885694729636,Other,< 2 months,5,5,3,1,2e4,$20-24k,$20-24k,Low Deployer,nonsurgical,1.125,Over
 802,Neurology,CDR,5,2014,2.132785763175907,CONUS MTF,2-4 months,4,5,3,1,2e4,$20-24k,$20-24k,Low Deployer,nonsurgical,0.94,Balanced
 811,Orthopedic Surgery,LT,3,NA,NA,GME,NA,3,NA,NA,3,36e3,$24k+,32k+,High Deployer,surgical,1.0750000000000002,Balanced
-757,Resident,LT,3,NA,NA,NA,NA,NA,NA,NA,NA,0,$0,$0,Low Deployer,resident,1,Balanced
+757,Resident,LT,3,NA,NA,Other,NA,NA,NA,NA,NA,0,$0,$0,Low Deployer,resident,1,Balanced
 833,Neurology,CAPT or Flag,6,2015,1.1334702258726899,CONUS MTF,2-4 months,4,5,4,1,2e4,$20-24k,$20-24k,Low Deployer,nonsurgical,0.94,Balanced
 838,Gastroenterology (IM),CDR,5,2014,2.132785763175907,CONUS MTF,2-4 months,5,5,5,1,26e3,$24k+,$24-32k,Low Deployer,nonsurgical,1.125,Over
 845,Pediatrics,LT,3,2016,NA,GME,2-4 months,NA,NA,NA,NA,2e4,$20-24k,$20-24k,Low Deployer,nonsurgical,1.13,Over
@@ -736,7 +736,7 @@ response_id,primary_specialty,officer_rank,officer_rate,year_executed_order,surv
 1049,Neurology,CDR,5,2015,1.1471594798083504,GME,2-4 months,3,3,5,1,2e4,$20-24k,$20-24k,Low Deployer,nonsurgical,0.94,Balanced
 1050,Occupational Medicine,CAPT or Flag,6,2013,3.1457905544147846,CONUS MTF,> 4 months,5,5,4,1,2e4,$20-24k,$20-24k,Low Deployer,nonsurgical,0.94,Balanced
 1053,Radiology,CDR,5,2014,2.1464750171115674,CONUS MTF,NA,5,5,2,1,36e3,$24k+,32k+,Low Deployer,nonsurgical,1.35,Over
-979,Resident,Unknown,NA,2014,NA,NA,NA,NA,NA,NA,NA,0,$0,$0,Low Deployer,resident,1,Balanced
+979,Resident,Unknown,NA,2014,NA,Other,NA,NA,NA,NA,NA,0,$0,$0,Low Deployer,resident,1,Balanced
 240,Resident,LCDR,4,2015,1.108829568788501,GME,2-4 months,3,4,2,2,0,$0,$0,Low Deployer,resident,1,Balanced
 267,Resident,LCDR,4,2013,NA,CONUS MTF,> 4 months,NA,NA,NA,NA,0,$0,$0,Low Deployer,resident,1,Balanced
 1062,Emergency Medicine,LCDR,4,2014,2.1464750171115674,CONUS MTF,2-4 months,1,1,1,1,26e3,$24k+,$24-32k,High Deployer,nonsurgical,1.125,Over

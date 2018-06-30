@@ -213,6 +213,17 @@ ds <- ds %>%
       "Other"             = NA_integer_
     )
   ) %>%
+  dplyr::mutate(
+    billet_current  = dplyr::coalesce(billet_current, "Other"),
+    billet_current  = factor(
+      billet_current,
+      levels = c(
+        "CONUS MTF", "GME", "Non-Operational/Non-Clinical", "OCONUS MTF",
+        "CONUS Operational",
+        "OCONUS Operational", "Other"
+      )
+    )
+  ) %>%
   dplyr::select(-include_exclude, -year_executed_order_other, -order_lead_time_other)
 
 summary(ds$survey_lag)
@@ -288,7 +299,8 @@ checkmate::assert_factor(   ds$officer_rank              , any.missing=T        
 checkmate::assert_integer(  ds$officer_rate              , any.missing=T , lower=3, upper=6       )
 checkmate::assert_integer(  ds$year_executed_order       , any.missing=T , lower=2005, upper=2016 )
 checkmate::assert_double(  ds$survey_lag                , any.missing=T , lower=0, upper=12                                        )
-checkmate::assert_character(ds$billet_current            , any.missing=T , pattern="^.{3,28}$"    )
+# checkmate::assert_character(ds$billet_current            , any.missing=T , pattern="^.{3,28}$"    )
+checkmate::assert_factor(   ds$billet_current            , any.missing=T                          )
 checkmate::assert_factor(   ds$order_lead_time           , any.missing=T                          )
 # checkmate::assert_subset(   ds$order_lead_time           , choices = c("< 2 months", "2-4 months", "> 4 months"))
 checkmate::assert_integer(  ds$transparency_rank         , any.missing=T , lower=1, upper=5       )

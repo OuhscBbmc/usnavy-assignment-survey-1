@@ -77,6 +77,7 @@ TabularManifest::histogram_discrete(d_observed=ds, variable_name="specialty_type
 TabularManifest::histogram_continuous(d_observed=ds, variable_name="manning_proportion" , bin_width=.05, rounded_digits=2)
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="manning_proportion_cut3")
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="critical_war")
+TabularManifest::histogram_discrete(d_observed=ds, variable_name="billet_current")
 
 
 # This helps start the code for graphing each variable.
@@ -86,6 +87,15 @@ TabularManifest::histogram_discrete(d_observed=ds, variable_name="critical_war")
 # for(column in colnames(ds)) {
 #   cat('TabularManifest::histogram_discrete(ds, variable_name="', column,'")\n', sep="")
 # }
+
+######## Outcome Relationships ##########################################################
+
+
+# ---- outcome-correlations ----------------------------------------------------
+outcomes <- c("satistfaction_rank", "transparency_rank", "favoritism_rank", "assignment_current_choice")
+knitr::kable(corHyp1 <- cor(ds[, outcomes], use = "pairwise.complete.obs"))
+corrplot::corrplot(corHyp1, method="ellipse", addCoef.col="gray30", tl.col="gray20", diag=F, order="AOE")
+pairs(x=ds[, outcomes], lower.panel=panel.smooth, upper.panel=panel.smooth)
 
 ######## Univariate ##########################################################
 
@@ -278,6 +288,24 @@ ggplot(ds, aes(x=critical_war, y=satistfaction_rank, color=critical_war)) +
   theme(axis.ticks = element_blank()) +
   theme(legend.position = "none")
 
+# ---- by-billet_current ------------------------------------------------------------
+set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
+# billet_current = forcats::fct_reorder(billet_current, satistfaction_rank, .fun=mean)
+
+ggplot(ds, aes(x=billet_current, y=satistfaction_rank, color=billet_current)) +
+  geom_boxplot(na.rm=T) +
+  stat_summary(fun.y="mean", geom="point", position = position_dodge(width=.75), shape=23, size=10, fill="gray80", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
+  geom_point(shape=1, position = position_jitter(width=.3, height=.25), na.rm=T) +
+  scale_x_discrete(limits = rev(levels(ds$billet_current))) +
+  coord_flip(ylim=c(0.5,5.5)) +
+  theme_light() +
+  theme(axis.ticks = element_blank()) +
+  theme(legend.position = "none")
+
+# forcats::fct_reorder(ds$billet_current, ds$satistfaction_rank, .fun=mean)
+summary(lm(satistfaction_rank ~ 1 + billet_current, data=ds))
+
+
 
 ######## Multivariate ##########################################################
 
@@ -396,29 +424,6 @@ cat("### favoritism_rank\n\n")
 last_plot() %+% aes(y=favoritism_rank)
 summary(lm(favoritism_rank ~ 1 + officer_rate_f * bonus_pay, data=ds))
 
-
-
-
-
-# ---- models ------------------------------------------------------------------
-
-cat("============= Model includes one predictor. =============")
-# m1 <- lm(satistfaction_rank ~ 1 + officer_rank, data=ds)
-
-
-# m2 <- lm(satistfaction_rank ~ 1 + primary_specialty, data=ds)
-# summary(m2)
-#
-# cat("The one predictor is significantly tighter.")
-# anova(m0, m1)
-#
-# cat("============= Model includes two predictors. =============")
-# m2 <- lm(quarter_mile_in_seconds ~ 1 + miles_per_gallon + forward_gear_count_f, data=ds)
-# summary(m2)
-#
-# cat("The two predictor is significantly tighter.")
-# anova(m1, m2)
-#
 # # ---- model-results-table  -----------------------------------------------
 #
 # summary(m2)$coef %>%

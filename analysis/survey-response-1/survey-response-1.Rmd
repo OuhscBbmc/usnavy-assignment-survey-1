@@ -86,6 +86,13 @@ read_chunk("./analysis/survey-response-1/survey-response-1.R") #This allows knit
 ```{r scatterplots, echo=echo_chunks, message=message_chunks, fig.width=7}
 ```
 
+Relationships between Outcomes
+============================================
+
+```{r outcome-correlations, echo=echo_chunks, message=message_chunks}
+```
+
+
 Analyses - 1 Predictor
 ============================================
 
@@ -141,6 +148,12 @@ By Crtical War
 ```{r by-critical_war, echo=echo_chunks, message=message_chunks}
 ```
 
+By Billet Current
+-----------------------------------
+
+```{r by-billet_current, echo=echo_chunks, message=message_chunks}
+```
+
 
 
 
@@ -167,7 +180,13 @@ By Rank and Bonus Pay
 ```
 
 
-# Session Information
+
+
+
+
+Session Information
+============================================
+
 For the sake of documentation and reproducibility, the current report was rendered in the following environment.  Click the line below to expand.
 
 <details>

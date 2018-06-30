@@ -48,9 +48,23 @@ This report covers the survey about attitudes collected by Richard Childers, MD 
 # Graphs
 
 ## Marginals
-![](figure-png/marginals-1.png)<!-- -->![](figure-png/marginals-2.png)<!-- -->![](figure-png/marginals-3.png)<!-- -->![](figure-png/marginals-4.png)<!-- -->![](figure-png/marginals-5.png)<!-- -->![](figure-png/marginals-6.png)<!-- -->![](figure-png/marginals-7.png)<!-- -->![](figure-png/marginals-8.png)<!-- -->![](figure-png/marginals-9.png)<!-- -->![](figure-png/marginals-10.png)<!-- -->![](figure-png/marginals-11.png)<!-- -->![](figure-png/marginals-12.png)<!-- -->![](figure-png/marginals-13.png)<!-- -->![](figure-png/marginals-14.png)<!-- -->![](figure-png/marginals-15.png)<!-- -->![](figure-png/marginals-16.png)<!-- -->![](figure-png/marginals-17.png)<!-- -->![](figure-png/marginals-18.png)<!-- -->![](figure-png/marginals-19.png)<!-- -->
+![](figure-png/marginals-1.png)<!-- -->![](figure-png/marginals-2.png)<!-- -->![](figure-png/marginals-3.png)<!-- -->![](figure-png/marginals-4.png)<!-- -->![](figure-png/marginals-5.png)<!-- -->![](figure-png/marginals-6.png)<!-- -->![](figure-png/marginals-7.png)<!-- -->![](figure-png/marginals-8.png)<!-- -->![](figure-png/marginals-9.png)<!-- -->![](figure-png/marginals-10.png)<!-- -->![](figure-png/marginals-11.png)<!-- -->![](figure-png/marginals-12.png)<!-- -->![](figure-png/marginals-13.png)<!-- -->![](figure-png/marginals-14.png)<!-- -->![](figure-png/marginals-15.png)<!-- -->![](figure-png/marginals-16.png)<!-- -->![](figure-png/marginals-17.png)<!-- -->![](figure-png/marginals-18.png)<!-- -->![](figure-png/marginals-19.png)<!-- -->![](figure-png/marginals-20.png)<!-- -->
 
 ## Scatterplots
+
+
+Relationships between Outcomes
+============================================
+
+
+                             satistfaction_rank   transparency_rank   favoritism_rank   assignment_current_choice
+--------------------------  -------------------  ------------------  ----------------  --------------------------
+satistfaction_rank                    1.0000000           0.7711209         0.4859620                  -0.5189457
+transparency_rank                     0.7711209           1.0000000         0.4877154                  -0.4053583
+favoritism_rank                       0.4859620           0.4877154         1.0000000                  -0.3245715
+assignment_current_choice            -0.5189457          -0.4053583        -0.3245715                   1.0000000
+
+![](figure-png/outcome-correlations-1.png)<!-- -->![](figure-png/outcome-correlations-2.png)<!-- -->
 
 
 Analyses - 1 Predictor
@@ -538,6 +552,36 @@ By Crtical War
 
 ![](figure-png/by-critical_war-1.png)<!-- -->
 
+By Billet Current
+-----------------------------------
+
+![](figure-png/by-billet_current-1.png)<!-- -->
+
+```
+
+Call:
+lm(formula = satistfaction_rank ~ 1 + billet_current, data = ds)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.0000 -0.8565  0.1435  1.1435  2.5500 
+
+Coefficients:
+                                           Estimate Std. Error t value Pr(>|t|)
+(Intercept)                                 3.85651    0.06173  62.473  < 2e-16
+billet_currentGME                          -0.04742    0.13966  -0.340  0.73427
+billet_currentNon-Operational/Non-Clinical -0.21068    0.19944  -1.056  0.29109
+billet_currentOCONUS MTF                   -0.44651    0.14517  -3.076  0.00217
+billet_currentCONUS Operational            -0.74044    0.13865  -5.340 1.19e-07
+billet_currentOCONUS Operational           -1.40651    0.21672  -6.490 1.44e-10
+billet_currentOther                         0.14349    0.44229   0.324  0.74570
+
+Residual standard error: 1.314 on 865 degrees of freedom
+  (79 observations deleted due to missingness)
+Multiple R-squared:  0.07331,	Adjusted R-squared:  0.06688 
+F-statistic: 11.41 on 6 and 865 DF,  p-value: 2.681e-12
+```
+
 
 
 
@@ -991,7 +1035,13 @@ F-statistic: 1.494 on 7 and 755 DF,  p-value: 0.1661
 ```
 
 
-# Session Information
+
+
+
+
+Session Information
+============================================
+
 For the sake of documentation and reproducibility, the current report was rendered in the following environment.  Click the line below to expand.
 
 <details>
@@ -1025,6 +1075,7 @@ Packages -----------------------------------------------------------------------
  bindrcpp        * 0.2.2       2018-03-29 CRAN (R 3.4.3)                          
  colorspace        1.3-2       2016-12-14 CRAN (R 3.4.3)                          
  compiler          3.4.4       2018-04-21 local                                   
+ corrplot          0.84        2017-10-16 CRAN (R 3.4.3)                          
  datasets        * 3.4.4       2018-04-21 local                                   
  devtools          1.13.5      2018-02-18 CRAN (R 3.4.3)                          
  digest            0.6.15      2018-01-28 CRAN (R 3.4.3)                          
@@ -1036,6 +1087,7 @@ Packages -----------------------------------------------------------------------
  grDevices       * 3.4.4       2018-04-21 local                                   
  grid              3.4.4       2018-04-21 local                                   
  gtable            0.2.0       2016-02-26 CRAN (R 3.4.3)                          
+ highr             0.7         2018-06-09 CRAN (R 3.4.4)                          
  hms               0.4.2.9000  2018-05-26 Github (tidyverse/hms@14e74ab)          
  htmltools         0.3.6       2017-04-28 CRAN (R 3.4.3)                          
  knitr           * 1.20        2018-02-20 CRAN (R 3.4.3)                          
@@ -1072,5 +1124,5 @@ Packages -----------------------------------------------------------------------
 
 
 
-Report rendered by wibeasley at 2018-06-29, 22:11 -0500 in 49 seconds.
+Report rendered by wibeasley at 2018-06-29, 23:06 -0500 in 33 seconds.
 
