@@ -97,20 +97,24 @@ ds_lu_specialty <- ds_lu_specialty %>%
   dplyr::select(
     "specialty"
     , "bonus_pay"
-    # , "manning_net_2013"              = "net_manning_2013"
-    # , "manning_proportion_2013"       = "manning_percent_2013"
-    # , "manning_net_2014"              = "net_manning_2014"
-    # , "manning_proportion_2014"       = "manning_percent_2014"
-    # , "manning_net_2015"              = "net_manning_2015"
-    # , "manning_proportion_2015"       = "manning_percent_2015"
-    # , "manning_net_2016"              = "net_manning_2016"
-    # , "manning_proportion_2016"       = "manning_percent_2016"
+    , "manning_proportion_2013"       = "manning_percent_2013"
+    , "manning_proportion_2014"       = "manning_percent_2014"
+    , "manning_proportion_2015"       = "manning_percent_2015"
+    , "manning_proportion_2016"       = "manning_percent_2016"
     , "critical_war"
     , "specialty_type"
   ) %>%
   dplyr::mutate(
-    specialty_type   = factor(specialty_type, levels=c("nonsurgical", "surgical", "family", "operational",  "resident", "unknown"))
-  )
+    specialty_type      = factor(specialty_type, levels=c("nonsurgical", "surgical", "family", "operational",  "resident", "unknown")),
+    critical_war        = dplyr::recode(as.character(critical_war), "TRUE"="High Deployer", "FALSE"="Low Deployer", .missing=NA_character_, .default=NA_character_)
+  ) %>%
+  dplyr::group_by(specialty) %>%
+  dplyr::mutate(
+    manning_proportion  = median(c(manning_proportion_2013, manning_proportion_2014, manning_proportion_2015, manning_proportion_2016), na.rm=T),
+    manning_proportion  = dplyr::coalesce(manning_proportion, 1.00)
+  ) %>%
+  dplyr::ungroup() %>%
+  dplyr::select(-manning_proportion_2013, -manning_proportion_2014, -manning_proportion_2015, -manning_proportion_2016)
 
 ds <- ds %>%
   dplyr::select_( #`select()` implicitly drops the other columns not mentioned.
@@ -254,14 +258,21 @@ ds <- ds %>%
       include.lowest  = TRUE,
       right           = FALSE
     )
+  ) %>%
+  dplyr::mutate(
+    manning_proportion_cut3 = cut(
+      x               = manning_proportion,
+      breaks          = c(-Inf, .9,    1.1,      Inf),
+      labels          = c(   "Under", "Balanced", "Over"),
+      include.lowest  = TRUE,
+      right           = FALSE
+    )
   )
 
 # table(ds$bonus_pay_cut3)
-TabularManifest::histogram_continuous(d_observed=ds, variable_name="bonus_pay" , bin_width=2000, rounded_digits=1) +
-  geom_vline(xintercept = 16000, size=3) +
-  geom_vline(xintercept = 24000, size=3) +
-  geom_vline(xintercept = 32000, size=3)
-
+# TabularManifest::histogram_continuous(d_observed=ds, variable_name="manning_proportion" , bin_width=.05, rounded_digits=2) +
+#   geom_vline(xintercept = .9, size=3) +
+#   geom_vline(xintercept = 1.1, size=3)
 
 # ds %>%
 #   dplyr::filter(is.na(critical_war)) %>%
@@ -297,8 +308,11 @@ checkmate::assert_character(ds$officer_rank_preference   , any.missing=T , patte
 checkmate::assert_numeric(  ds$bonus_pay                 , any.missing=F , lower=0, upper=36000   )
 checkmate::assert_factor(   ds$bonus_pay_cut3            , any.missing=F                          )
 checkmate::assert_factor(   ds$bonus_pay_cut4            , any.missing=F                          )
-checkmate::assert_logical(  ds$critical_war              , any.missing=F                          )
+# checkmate::assert_logical(  ds$critical_war              , any.missing=F                          )
+checkmate::assert_character(ds$critical_war              , any.missing=F                          )
 checkmate::assert_factor(   ds$specialty_type            , any.missing=F)# , pattern="^.{6,11}$"    )
+checkmate::assert_numeric(  ds$manning_proportion        , any.missing=F , lower=0, upper=3      )
+checkmate::assert_factor(   ds$manning_proportion_cut3   , any.missing=F                                                            )
 
 
 # ---- specify-columns-to-upload -----------------------------------------------
@@ -310,7 +324,7 @@ columns_to_write <- c(
   "billet_current", "order_lead_time",
   "transparency_rank", "satistfaction_rank", "favoritism_rank", "assignment_current_choice",
   "bonus_pay", "bonus_pay_cut3", "bonus_pay_cut4",
-  "critical_war", "specialty_type"
+  "critical_war", "specialty_type", "manning_proportion", "manning_proportion_cut3"
   # "geographic_preference", "career_path", "doctor_as_detailer",
   # "homestead_length_in_years", "homestead_problem", "match_desirability",
   # "match_month", "assignment_preference", "officer_rank_preference"

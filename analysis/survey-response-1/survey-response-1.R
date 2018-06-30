@@ -73,6 +73,12 @@ TabularManifest::histogram_discrete(d_observed=ds, variable_name="bonus_pay_cut3
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="bonus_pay_cut4")
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="critical_war")
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="specialty_type")
+
+TabularManifest::histogram_continuous(d_observed=ds, variable_name="manning_proportion" , bin_width=.05, rounded_digits=2)
+TabularManifest::histogram_discrete(d_observed=ds, variable_name="manning_proportion_cut3")
+TabularManifest::histogram_discrete(d_observed=ds, variable_name="critical_war")
+
+
 # This helps start the code for graphing each variable.
 #   - Make sure you change it to `histogram_continuous()` for the appropriate variables.
 #   - Make sure the graph doesn't reveal PHI.
@@ -80,6 +86,8 @@ TabularManifest::histogram_discrete(d_observed=ds, variable_name="specialty_type
 # for(column in colnames(ds)) {
 #   cat('TabularManifest::histogram_discrete(ds, variable_name="', column,'")\n', sep="")
 # }
+
+######## Univariate ##########################################################
 
 # ---- by-rank ------------------------------------------------------------
 
@@ -237,6 +245,41 @@ ggplot(ds, aes(x=survey_lag, y=satistfaction_rank)) + #, color=officer_rank)) +
   coord_cartesian(ylim=c(0.5,5.5)) +
   theme_light() +
   theme(axis.ticks = element_blank())
+
+# ---- by-manning_proportion ------------------------------------------------------------
+cat("### manning_proportion\n\n")
+set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
+ggplot(ds, aes(x=manning_proportion, y=satistfaction_rank)) + #, color=officer_rank)) +
+  geom_smooth(method="loess", span=2, na.rm=T) +
+  geom_smooth(data=ds[ds$survey_lag >=2014L, ], method="loess", span=2, na.rm=T) +
+  geom_point(shape=1, position = position_jitter(width=.3, height=.3), na.rm=T) +
+  coord_cartesian(ylim=c(0.5,5.5)) +
+  theme_light() +
+  theme(axis.ticks = element_blank())
+
+set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
+ggplot(ds, aes(x=manning_proportion_cut3, y=satistfaction_rank, color=manning_proportion_cut3)) +
+  geom_boxplot(na.rm=T) +
+  stat_summary(fun.y="mean", geom="point", position = position_dodge(width=.75), shape=23, size=10, fill="gray80", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
+  geom_point(shape=1, position = position_jitter(width=.3, height=.25), na.rm=T) +
+  coord_cartesian(ylim=c(0.5,5.5)) +
+  theme_light() +
+  theme(axis.ticks = element_blank()) +
+  theme(legend.position = "none")
+
+# ---- by-critical_war ------------------------------------------------------------
+set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
+ggplot(ds, aes(x=critical_war, y=satistfaction_rank, color=critical_war)) +
+  geom_boxplot(na.rm=T) +
+  stat_summary(fun.y="mean", geom="point", position = position_dodge(width=.75), shape=23, size=10, fill="gray80", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
+  geom_point(shape=1, position = position_jitter(width=.3, height=.25), na.rm=T) +
+  coord_cartesian(ylim=c(0.5,5.5)) +
+  theme_light() +
+  theme(axis.ticks = element_blank()) +
+  theme(legend.position = "none")
+
+
+######## Multivariate ##########################################################
 
 # ---- by-rank-and-specialty-type ------------------------------------------------------------
 
