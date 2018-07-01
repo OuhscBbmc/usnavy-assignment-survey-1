@@ -422,6 +422,25 @@ cat("### favoritism_rank\n\n")
 last_plot() %+% aes(y=favoritism_rank)
 summary(lm(favoritism_rank ~ 1 + officer_rate_f * bonus_pay, data=ds))
 
+
+# ---- by-billet_current-and-critical_war ------------------------------------------------------------
+cat("### satistfaction_rank\n\n")
+set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
+ds %>%
+  ggplot(aes(x=billet_current, y=satistfaction_rank, fill=critical_war, color=critical_war)) +
+  geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA) +
+  stat_summary(fun.y="mean", geom="point", position = position_dodge(width=.75), shape=23, size=10, fill="white", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
+  geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), size=2, shape=1, na.rm=T) +
+  # scale_color_manual(values=PalettePregancyGroup) +
+  # scale_fill_manual(values=PalettePregancyGroupLight) +
+  # coord_flip(ylim = c(0, 1.05*max(dsPregnancy$T1Lifts, na.rm=T))) +
+  theme_report +
+  # theme(legend.position="none") +
+  labs(x=NULL) #y="Satisfaction"
+
+# summary(lm(satistfaction_rank ~ 1 + billet_current * critical_war, data=ds))
+summary(lm(satistfaction_rank ~ 1 + billet_current + critical_war, data=ds))
+
 # # ---- model-results-table  -----------------------------------------------
 #
 # summary(m2)$coef %>%

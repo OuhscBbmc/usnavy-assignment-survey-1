@@ -1045,6 +1045,44 @@ F-statistic: 1.494 on 7 and 755 DF,  p-value: 0.1661
 ```
 
 
+By Billet Current and Critical War
+-----------------------------------
+
+
+```
+### satistfaction_rank
+```
+
+![](figure-png/by-billet_current-and-critical_war-1.png)<!-- -->
+
+```
+
+Call:
+lm(formula = satistfaction_rank ~ 1 + billet_current + critical_war, 
+    data = ds)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.0000 -0.8579  0.1421  1.1421  2.5585 
+
+Coefficients:
+                                           Estimate Std. Error t value Pr(>|t|)
+(Intercept)                                 3.84828    0.12216  31.502  < 2e-16
+billet_currentGME                          -0.04701    0.13984  -0.336  0.73684
+billet_currentNon-Operational/Non-Clinical -0.21070    0.19955  -1.056  0.29133
+billet_currentOCONUS MTF                   -0.44630    0.14528  -3.072  0.00219
+billet_currentCONUS Operational            -0.74040    0.13873  -5.337 1.21e-07
+billet_currentOCONUS Operational           -1.40673    0.21686  -6.487 1.48e-10
+billet_currentOther                         0.14206    0.44292   0.321  0.74849
+critical_warLow Deployer                    0.00966    0.12369   0.078  0.93777
+
+Residual standard error: 1.315 on 864 degrees of freedom
+  (79 observations deleted due to missingness)
+Multiple R-squared:  0.07332,	Adjusted R-squared:  0.06581 
+F-statistic: 9.766 on 7 and 864 DF,  p-value: 9.558e-12
+```
+
+
 Session Information
 ============================================
 
@@ -1130,4 +1168,4 @@ Packages -----------------------------------------------------------------------
 
 
 
-Report rendered by wibeasley at 2018-06-30, 22:03 -0500 in 52 seconds.
+Report rendered by wibeasley at 2018-06-30, 22:12 -0500 in 61 seconds.

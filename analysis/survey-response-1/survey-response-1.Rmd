@@ -190,6 +190,13 @@ By Rank and Bonus Pay
 ```
 
 
+By Billet Current and Critical War
+-----------------------------------
+
+```{r by-billet_current-and-critical_war, echo=echo_chunks, message=message_chunks}
+```
+
+
 Session Information
 ============================================
 
