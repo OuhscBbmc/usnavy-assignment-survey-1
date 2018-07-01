@@ -166,6 +166,13 @@ By Billet Current
 ```{r by-billet_current, echo=echo_chunks, message=message_chunks}
 ```
 
+By Geographic Preference
+-----------------------------------
+
+```{r by-geographic_preference, echo=echo_chunks, message=message_chunks}
+```
+
+
 
 Analyses - 2 Predictors
 ============================================

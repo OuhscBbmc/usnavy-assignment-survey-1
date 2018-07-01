@@ -58,7 +58,7 @@ Marginals
 
 -----------------------------------
 
-![](figure-png/marginals-1.png)<!-- -->![](figure-png/marginals-2.png)<!-- -->![](figure-png/marginals-3.png)<!-- -->![](figure-png/marginals-4.png)<!-- -->![](figure-png/marginals-5.png)<!-- -->![](figure-png/marginals-6.png)<!-- -->![](figure-png/marginals-7.png)<!-- -->![](figure-png/marginals-8.png)<!-- -->![](figure-png/marginals-9.png)<!-- -->![](figure-png/marginals-10.png)<!-- -->![](figure-png/marginals-11.png)<!-- -->![](figure-png/marginals-12.png)<!-- -->![](figure-png/marginals-13.png)<!-- -->![](figure-png/marginals-14.png)<!-- -->![](figure-png/marginals-15.png)<!-- -->![](figure-png/marginals-16.png)<!-- -->![](figure-png/marginals-17.png)<!-- -->![](figure-png/marginals-18.png)<!-- -->
+![](figure-png/marginals-1.png)<!-- -->![](figure-png/marginals-2.png)<!-- -->![](figure-png/marginals-3.png)<!-- -->![](figure-png/marginals-4.png)<!-- -->![](figure-png/marginals-5.png)<!-- -->![](figure-png/marginals-6.png)<!-- -->![](figure-png/marginals-7.png)<!-- -->![](figure-png/marginals-8.png)<!-- -->![](figure-png/marginals-9.png)<!-- -->![](figure-png/marginals-10.png)<!-- -->![](figure-png/marginals-11.png)<!-- -->![](figure-png/marginals-12.png)<!-- -->![](figure-png/marginals-13.png)<!-- -->![](figure-png/marginals-14.png)<!-- -->![](figure-png/marginals-15.png)<!-- -->![](figure-png/marginals-16.png)<!-- -->![](figure-png/marginals-17.png)<!-- -->![](figure-png/marginals-18.png)<!-- -->![](figure-png/marginals-19.png)<!-- -->
 
 Scatterplots
 -----------------------------------
@@ -593,6 +593,41 @@ Residual standard error: 1.314 on 865 degrees of freedom
 Multiple R-squared:  0.07331,	Adjusted R-squared:  0.06688 
 F-statistic: 11.41 on 6 and 865 DF,  p-value: 2.681e-12
 ```
+
+By Geographic Preference
+-----------------------------------
+
+![](figure-png/by-geographic_preference-1.png)<!-- -->
+
+```
+
+Call:
+lm(formula = satistfaction_rank ~ 1 + geographic_preference, 
+    data = ds)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.8161 -0.7481  0.2676  1.2519  2.4000 
+
+Coefficients:
+                                                            Estimate Std. Error t value Pr(>|t|)
+(Intercept)                                                  3.45238    0.12066  28.613   <2e-16
+geographic_preferenceMiddle East or Africa                  -0.85238    0.61759  -1.380   0.1679
+geographic_preferenceNational Capital Region                 0.27659    0.17805   1.553   0.1207
+geographic_preferenceNortheast                              -0.23499    0.30710  -0.765   0.4444
+geographic_preferencePacific (Hawaii, Guam, Japan)           0.28001    0.20098   1.393   0.1639
+geographic_preferencePacific Northwest                      -0.01576    0.20098  -0.078   0.9375
+geographic_preferenceSoutheast (North Carolina, Florida)     0.13095    0.18348   0.714   0.4756
+geographic_preferenceSouthern California                     0.29574    0.14647   2.019   0.0438
+geographic_preferenceTidewater Region (Portsmouth, Norfolk)  0.36371    0.18879   1.927   0.0544
+geographic_preferenceUnknown                                -0.35238    0.32599  -1.081   0.2800
+
+Residual standard error: 1.354 on 862 degrees of freedom
+  (79 observations deleted due to missingness)
+Multiple R-squared:  0.01874,	Adjusted R-squared:  0.008493 
+F-statistic: 1.829 on 9 and 862 DF,  p-value: 0.05951
+```
+
 
 
 Analyses - 2 Predictors
@@ -1244,4 +1279,4 @@ Packages -----------------------------------------------------------------------
 
 
 
-Report rendered by wibeasley at 2018-06-30, 22:27 -0500 in 56 seconds.
+Report rendered by wibeasley at 2018-06-30, 22:37 -0500 in 57 seconds.

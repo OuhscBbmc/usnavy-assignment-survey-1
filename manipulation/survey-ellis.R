@@ -129,8 +129,8 @@ ds <- ds %>%
     , "year_executed_order_other"   = "`What year did you?execute orders for your current billet-? (Consider retour orders the same as a PCS set of orders.) [Other]`"
     , "billet_current"              = "`How would you describe your current billet-`"
     # , "billet_current_other"      = "`How would you describe your current billet- [Other]`"
-    , "order_lead_time"                   = "`For your last set of orders, how many months prior to your move were your orders released-? That is, how many months did you have to prepare for your PCS-`"
-    , "order_lead_time_other"             = "`For your last set of orders, how many months prior to your move were your orders released-? That is, how many months did you have to prepare for your PCS- [Other]`"
+    , "order_lead_time"             = "`For your last set of orders, how many months prior to your move were your orders released-? That is, how many months did you have to prepare for your PCS-`"
+    , "order_lead_time_other"       = "`For your last set of orders, how many months prior to your move were your orders released-? That is, how many months did you have to prepare for your PCS- [Other]`"
     , "transparency_rank"           = "`On a scale of 1 to 5, with 1 being not transparent and 5 being very transparent, how would you rate the transparency of your detailing experience for your last set of orders-`"
     , "satistfaction_rank"          = "`On a scale of 1 to 5, with 1 being unsatisfied and 5 being very satisfied, how would you rate your overall?detailing experience for your last set of orders-`"
     , "favoritism_rank"             = "`On a scale of 1 to 5, with 1 representing a significant problem and 5 being not a problem at all, how would you rank the problem of favoritism in the billet assignment process-`"
@@ -278,6 +278,9 @@ ds <- ds %>%
       include.lowest  = TRUE,
       right           = FALSE
     )
+  ) %>%
+  dplyr::mutate(
+    geographic_preference = dplyr::coalesce(geographic_preference, "Unknown")
   )
 
 # table(ds$bonus_pay_cut3)
@@ -307,7 +310,7 @@ checkmate::assert_integer(  ds$transparency_rank         , any.missing=T , lower
 checkmate::assert_integer(  ds$satistfaction_rank        , any.missing=T , lower=1, upper=5       )
 checkmate::assert_integer(  ds$favoritism_rank           , any.missing=T , lower=1, upper=5       )
 checkmate::assert_integer(  ds$assignment_current_choice , any.missing=T , lower=1, upper=5       )
-checkmate::assert_character(ds$geographic_preference     , any.missing=T , pattern="^.{6,38}$"    )
+checkmate::assert_character(ds$geographic_preference     , any.missing=F , pattern="^.{6,38}$"    )
 checkmate::assert_character(ds$career_path               , any.missing=T , pattern="^.{5,24}$"    )
 checkmate::assert_character(ds$doctor_as_detailer        , any.missing=T , pattern="^.{2,11}$"    )
 checkmate::assert_character(ds$homestead_length_in_years , any.missing=T , pattern="^.{5,19}$"    )
@@ -336,8 +339,9 @@ columns_to_write <- c(
   "billet_current", "order_lead_time",
   "transparency_rank", "satistfaction_rank", "favoritism_rank", "assignment_current_choice",
   "bonus_pay", "bonus_pay_cut3", "bonus_pay_cut4",
-  "critical_war", "specialty_type", "manning_proportion", "manning_proportion_cut3"
-  # "geographic_preference", "career_path", "doctor_as_detailer",
+  "critical_war", "specialty_type", "manning_proportion", "manning_proportion_cut3",
+  "geographic_preference"
+  #"career_path", "doctor_as_detailer",
   # "homestead_length_in_years", "homestead_problem", "match_desirability",
   # "match_month", "assignment_preference", "officer_rank_preference"
 )

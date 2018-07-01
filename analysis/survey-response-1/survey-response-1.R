@@ -77,6 +77,8 @@ TabularManifest::histogram_discrete(d_observed=ds, variable_name="specialty_type
 TabularManifest::histogram_continuous(d_observed=ds, variable_name="manning_proportion" , bin_width=.05, rounded_digits=2)
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="manning_proportion_cut3")
 
+TabularManifest::histogram_discrete(d_observed=ds, variable_name="geographic_preference")
+
 
 # This helps start the code for graphing each variable.
 #   - Make sure you change it to `histogram_continuous()` for the appropriate variables.
@@ -302,6 +304,24 @@ ggplot(ds, aes(x=billet_current, y=satistfaction_rank, color=billet_current)) +
 
 # forcats::fct_reorder(ds$billet_current, ds$satistfaction_rank, .fun=mean)
 summary(lm(satistfaction_rank ~ 1 + billet_current, data=ds))
+
+
+# ---- by-geographic_preference ------------------------------------------------------------
+set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
+# billet_current = forcats::fct_reorder(billet_current, satistfaction_rank, .fun=mean)
+
+ggplot(ds, aes(x=geographic_preference, y=satistfaction_rank, color=geographic_preference)) +
+  geom_boxplot(na.rm=T) +
+  stat_summary(fun.y="mean", geom="point", position = position_dodge(width=.75), shape=23, size=10, fill="gray80", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
+  geom_point(shape=1, position = position_jitter(width=.3, height=.25), na.rm=T) +
+  # scale_x_discrete(limits = rev(levels(ds$geographic_preference))) +
+  coord_flip(ylim=c(0.5,5.5)) +
+  theme_light() +
+  theme(axis.ticks = element_blank()) +
+  theme(legend.position = "none")
+
+# forcats::fct_reorder(ds$billet_current, ds$satistfaction_rank, .fun=mean)
+summary(lm(satistfaction_rank ~ 1 + geographic_preference, data=ds))
 
 
 
