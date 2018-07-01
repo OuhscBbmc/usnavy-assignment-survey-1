@@ -441,6 +441,43 @@ ds %>%
 # summary(lm(satistfaction_rank ~ 1 + billet_current * critical_war, data=ds))
 summary(lm(satistfaction_rank ~ 1 + billet_current + critical_war, data=ds))
 
+# ---- by-bonus_pay-and-manning_proportion ------------------------------------------------------------
+cat("### satistfaction_rank\n\n")
+set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
+ds %>%
+  ggplot(aes(x=manning_proportion_cut3, y=satistfaction_rank, fill=bonus_pay_cut3, color=bonus_pay_cut3)) +
+  geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA) +
+  stat_summary(fun.y="mean", geom="point", position = position_dodge(width=.75), shape=23, size=10, fill="white", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
+  geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), size=2, shape=1, na.rm=T) +
+  # scale_color_manual(values=PalettePregancyGroup) +
+  # scale_fill_manual(values=PalettePregancyGroupLight) +
+  # coord_flip(ylim = c(0, 1.05*max(dsPregnancy$T1Lifts, na.rm=T))) +
+  theme_report +
+  # theme(legend.position="none") +
+  labs(x=NULL) #y="Satisfaction"
+
+  # summary(lm(satistfaction_rank ~ 1 + manning_proportion_cut3 * bonus_pay_cut3, data=ds))
+  summary(lm(satistfaction_rank ~ 1 + manning_proportion_cut3 + bonus_pay_cut3, data=ds))
+
+  cat("No interaction between manning_proportion_cut3 & bonus_pay_cut3")
+  anova(
+    lm(satistfaction_rank ~ 1 + manning_proportion_cut3 * bonus_pay_cut3, data=ds),
+    lm(satistfaction_rank ~ 1 + manning_proportion_cut3 + bonus_pay_cut3, data=ds)
+    # lm(satistfaction_rank ~ 1 + manning_proportion * bonus_pay, data=ds),
+    # lm(satistfaction_rank ~ 1 + manning_proportion + bonus_pay, data=ds)
+  )
+
+  #ggplot(aes(x=manning_proportion, y=satistfaction_rank, fill=bonus_pay_cut4, color=bonus_pay_cut4)) +
+  # geom_smooth(method="loess", span=2, alpha=.2, na.rm=T) +
+  # # geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA) +
+  # # stat_summary(fun.y="mean", geom="point", shape=23, size=10, fill="white", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
+  # # stat_summary(fun.data=TukeyBoxplot, geom='boxplot', na.rm=T, outlier.shape=NULL, outlier.colour=NA) +
+  # geom_point(position=position_jitter(w = 0.3, h = .2), size=2, shape=1, na.rm=T) +
+  # theme_report
+
+# summary(lm(satistfaction_rank ~ 1 + billet_current * critical_war, data=ds))
+summary(lm(satistfaction_rank ~ 1 + billet_current + critical_war, data=ds))
+
 # # ---- model-results-table  -----------------------------------------------
 #
 # summary(m2)$coef %>%

@@ -196,6 +196,13 @@ By Billet Current and Critical War
 ```{r by-billet_current-and-critical_war, echo=echo_chunks, message=message_chunks}
 ```
 
+By Bonus_pay and Manning_proportion
+-----------------------------------
+
+```{r by-bonus_pay-and-manning_proportion, echo=echo_chunks, message=message_chunks}
+```
+
+
 
 Session Information
 ============================================

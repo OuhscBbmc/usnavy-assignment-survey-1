@@ -1082,6 +1082,82 @@ Multiple R-squared:  0.07332,	Adjusted R-squared:  0.06581
 F-statistic: 9.766 on 7 and 864 DF,  p-value: 9.558e-12
 ```
 
+By Bonus_pay and Manning_proportion
+-----------------------------------
+
+
+```
+### satistfaction_rank
+```
+
+![](figure-png/by-bonus_pay-and-manning_proportion-1.png)<!-- -->
+
+```
+
+Call:
+lm(formula = satistfaction_rank ~ 1 + manning_proportion_cut3 + 
+    bonus_pay_cut3, data = ds)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.9505 -0.8609  0.1871  1.1218  2.5319 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                       2.4681     0.1648  14.977  < 2e-16
+manning_proportion_cut3Balanced   0.3929     0.1260   3.118  0.00188
+manning_proportion_cut3Over       0.4651     0.1210   3.844  0.00013
+bonus_pay_cut3$20-24k             1.0173     0.1494   6.810 1.82e-11
+bonus_pay_cut3$24k+               0.8797     0.1546   5.690 1.74e-08
+
+Residual standard error: 1.319 on 867 degrees of freedom
+  (79 observations deleted due to missingness)
+Multiple R-squared:  0.0642,	Adjusted R-squared:  0.05988 
+F-statistic: 14.87 on 4 and 867 DF,  p-value: 9.281e-12
+```
+
+```
+No interaction between manning_proportion_cut3 & bonus_pay_cut3
+```
+
+```
+Analysis of Variance Table
+
+Model 1: satistfaction_rank ~ 1 + manning_proportion_cut3 * bonus_pay_cut3
+Model 2: satistfaction_rank ~ 1 + manning_proportion_cut3 + bonus_pay_cut3
+  Res.Df    RSS Df Sum of Sq      F Pr(>F)
+1    863 1499.7                           
+2    867 1507.9 -4   -8.1779 1.1765 0.3197
+```
+
+```
+
+Call:
+lm(formula = satistfaction_rank ~ 1 + billet_current + critical_war, 
+    data = ds)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.0000 -0.8579  0.1421  1.1421  2.5585 
+
+Coefficients:
+                                           Estimate Std. Error t value Pr(>|t|)
+(Intercept)                                 3.84828    0.12216  31.502  < 2e-16
+billet_currentGME                          -0.04701    0.13984  -0.336  0.73684
+billet_currentNon-Operational/Non-Clinical -0.21070    0.19955  -1.056  0.29133
+billet_currentOCONUS MTF                   -0.44630    0.14528  -3.072  0.00219
+billet_currentCONUS Operational            -0.74040    0.13873  -5.337 1.21e-07
+billet_currentOCONUS Operational           -1.40673    0.21686  -6.487 1.48e-10
+billet_currentOther                         0.14206    0.44292   0.321  0.74849
+critical_warLow Deployer                    0.00966    0.12369   0.078  0.93777
+
+Residual standard error: 1.315 on 864 degrees of freedom
+  (79 observations deleted due to missingness)
+Multiple R-squared:  0.07332,	Adjusted R-squared:  0.06581 
+F-statistic: 9.766 on 7 and 864 DF,  p-value: 9.558e-12
+```
+
+
 
 Session Information
 ============================================
@@ -1168,4 +1244,4 @@ Packages -----------------------------------------------------------------------
 
 
 
-Report rendered by wibeasley at 2018-06-30, 22:12 -0500 in 61 seconds.
+Report rendered by wibeasley at 2018-06-30, 22:27 -0500 in 56 seconds.
