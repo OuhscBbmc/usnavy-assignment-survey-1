@@ -88,7 +88,6 @@ TabularManifest::histogram_continuous(d_observed=ds, variable_name="survey_lag",
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="billet_current")
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="order_lead_time")
 
-
 TabularManifest::histogram_continuous(d_observed=ds, variable_name="transparency_rank"         , bin_width=1, rounded_digits=1)
 TabularManifest::histogram_continuous(d_observed=ds, variable_name="satisfaction_rank"        , bin_width=1, rounded_digits=1)
 TabularManifest::histogram_continuous(d_observed=ds, variable_name="favoritism_rank"           , bin_width=1, rounded_digits=1)
@@ -106,7 +105,6 @@ TabularManifest::histogram_discrete(d_observed=ds, variable_name="manning_propor
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="geographic_preference")
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="homestead_length_in_years")
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="homestead_problem")
-
 
 # This helps start the code for graphing each variable.
 #   - Make sure you change it to `histogram_continuous()` for the appropriate variables.
@@ -214,7 +212,6 @@ pairs(x=ds[, outcomes], lower.panel=panel.smooth, upper.panel=panel.smooth)
 ######## Univariate ##########################################################
 
 # ---- by-rank ------------------------------------------------------------
-
 cat("### satisfaction_rank\n\n")
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
 ds %>%
@@ -258,10 +255,7 @@ last_plot() %+% aes(y=assignment_current_choice) +
   scale_y_reverse()
 prettify_lm(lm(assignment_current_choice ~ 1 + officer_rate_f, data=ds))
 
-
-
 # ---- by-specialty-type ------------------------------------------------------------
-
 cat("### satisfaction_rank\n\n")
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
 ds %>%
@@ -278,8 +272,6 @@ ds %>%
   theme_report +
   theme(legend.position="none") +
   labs(x=NULL) #y="Satisfaction"
-
-
 prettify_lm(lm(satisfaction_rank ~ 1 + specialty_type, data=ds[ds$specialty_type != "unknown", ]) )
 
 
@@ -287,9 +279,11 @@ cat("### transparency_rank\n\n")
 last_plot() %+% aes(y=transparency_rank)
 prettify_lm(lm(transparency_rank ~ 1 + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
 
+
 cat("### favoritism_rank\n\n")
 last_plot() %+% aes(y=favoritism_rank)
 prettify_lm(lm(favoritism_rank ~ 1 + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
+
 
 cat("### assignment_current_choice\n\n")
 last_plot() %+% aes(y=assignment_current_choice) +
@@ -317,8 +311,6 @@ ds %>%
 
 prettify_lm(lm(satisfaction_rank ~ 1 + bonus_pay_cut4, data=ds))
 
-
-
 cat("### transparency_rank\n\n")
 last_plot() %+% aes(y=transparency_rank)
 prettify_lm(lm(transparency_rank ~ 1 + bonus_pay_cut4, data=ds))
@@ -333,7 +325,6 @@ last_plot() %+% aes(y=assignment_current_choice) +
 prettify_lm(lm(assignment_current_choice ~ 1 + bonus_pay_cut4, data=ds))
 
 # ---- by-assignment-current-choice ------------------------------------------------------------
-
 cat("### satisfaction_rank\n\n")
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
 ds %>%
@@ -343,8 +334,7 @@ ds %>%
   ggplot(aes(x=assignment_current_choice, y=satisfaction_rank)) +
   geom_smooth(method="loess", span=2, alpha=.2, na.rm=T) +
   geom_point(position=position_jitter(w = 0.3, h = .2), size=2, shape=1, na.rm=T) +
-  theme_report# +
-
+  theme_report
 prettify_lm(lm(satisfaction_rank ~ 1 + assignment_current_choice, data=ds))
 
 
@@ -355,7 +345,6 @@ prettify_lm(lm(transparency_rank ~ 1 + assignment_current_choice, data=ds))
 cat("### favoritism_rank\n\n")
 last_plot() %+% aes(y=favoritism_rank)
 prettify_lm(lm(favoritism_rank ~ 1 + assignment_current_choice, data=ds))
-
 
 # ---- by-year ------------------------------------------------------------
 cat("### satisfaction_rank\n\n")
@@ -424,10 +413,8 @@ ggplot(ds, aes(x=billet_current, y=satisfaction_rank, color=billet_current)) +
   theme_light() +
   theme(axis.ticks = element_blank()) +
   theme(legend.position = "none")
-
-# forcats::fct_reorder(ds$billet_current, ds$satisfaction_rank, .fun=mean)
 prettify_lm(lm(satisfaction_rank ~ 1 + billet_current, data=ds))
-
+# forcats::fct_reorder(ds$billet_current, ds$satisfaction_rank, .fun=mean)
 
 # ---- by-geographic_preference ------------------------------------------------------------
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
@@ -447,12 +434,9 @@ ggplot(ds, aes(x=geographic_preference, y=satisfaction_rank, color=geographic_pr
 prettify_lm(lm(satisfaction_rank ~ 1 + geographic_preference, data=ds))
 
 
-
-
 ######## Multivariate ##########################################################
 
 # ---- by-rank-and-specialty-type ------------------------------------------------------------
-
 cat("### satisfaction_rank\n\n")
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
 ds %>%
@@ -475,10 +459,6 @@ ds %>%
 prettify_lm(lm(satisfaction_rank ~ 1 + officer_rate_f * specialty_type, data=ds[ds$specialty_type != "unknown", ]))
 prettify_lm(lm(satisfaction_rank ~ 1 + officer_rate_f + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
 
-cat("TODO: examine if the interaction term significantly improves fit.")
-
-
-
 cat("### transparency_rank\n\n")
 last_plot() %+% aes(y=transparency_rank)
 prettify_lm(lm(transparency_rank ~ 1 + specialty_type, data=ds))
@@ -494,7 +474,6 @@ prettify_lm(lm(assignment_current_choice ~ 1 + specialty_type, data=ds))
 
 
 # ---- by-rank-and-assignment-current-choice ------------------------------------------------------------
-
 cat("### satisfaction_rank\n\n")
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
 ds %>%
@@ -532,9 +511,6 @@ last_plot() %+% aes(y=favoritism_rank)
 prettify_lm(lm(favoritism_rank ~ 1 + officer_rate_f * assignment_current_choice, data=ds))
 
 
-
-
-
 # ---- by-rank-and-bonus_pay ------------------------------------------------------------
 cat("### satisfaction_rank\n\n")
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
@@ -557,7 +533,6 @@ anova(
   lm(satisfaction_rank ~ 1 + officer_rate_f * bonus_pay, data=ds)
 )
 
-
 cat("### transparency_rank\n\n")
 last_plot() %+% aes(y=transparency_rank)
 prettify_lm(lm(transparency_rank ~ 1 + officer_rate_f * bonus_pay, data=ds))
@@ -565,7 +540,6 @@ prettify_lm(lm(transparency_rank ~ 1 + officer_rate_f * bonus_pay, data=ds))
 cat("### favoritism_rank\n\n")
 last_plot() %+% aes(y=favoritism_rank)
 prettify_lm(lm(favoritism_rank ~ 1 + officer_rate_f * bonus_pay, data=ds))
-
 
 # ---- by-billet_current-and-critical_war ------------------------------------------------------------
 cat("### satisfaction_rank\n\n")

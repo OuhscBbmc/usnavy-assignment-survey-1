@@ -55,36 +55,30 @@ Histograms
 
 Univariate
 -----------------------------------
-
 ![](figure-png/marginals-1.png)<!-- -->![](figure-png/marginals-2.png)<!-- -->![](figure-png/marginals-3.png)<!-- -->![](figure-png/marginals-4.png)<!-- -->![](figure-png/marginals-5.png)<!-- -->![](figure-png/marginals-6.png)<!-- -->![](figure-png/marginals-7.png)<!-- -->![](figure-png/marginals-8.png)<!-- -->![](figure-png/marginals-9.png)<!-- -->![](figure-png/marginals-10.png)<!-- -->![](figure-png/marginals-11.png)<!-- -->![](figure-png/marginals-12.png)<!-- -->![](figure-png/marginals-13.png)<!-- -->![](figure-png/marginals-14.png)<!-- -->![](figure-png/marginals-15.png)<!-- -->![](figure-png/marginals-16.png)<!-- -->![](figure-png/marginals-17.png)<!-- -->![](figure-png/marginals-18.png)<!-- -->![](figure-png/marginals-19.png)<!-- -->![](figure-png/marginals-20.png)<!-- -->![](figure-png/marginals-21.png)<!-- -->
 
 Frequency: homestead_length_in_years by officer_rank
 -----------------------------------
-
 ![](figure-png/freq-homestead_length_in_years-by-officer_rank-1.png)<!-- -->
 
 Frequency: homestead_length_in_years by specialty_type
 -----------------------------------
-
 ![](figure-png/freq-homestead_length_in_years-by-specialty_type-1.png)<!-- -->
+
 Frequency: homestead_problem by officer_rank
 -----------------------------------
-
 ![](figure-png/freq-homestead_problem-by-officer_rank-1.png)<!-- -->
 
 Frequency: homestead_problem by specialty_type
 -----------------------------------
-
 ![](figure-png/freq-homestead_problem-by-specialty_type-1.png)<!-- -->
 
 Multivariate
 -----------------------------------
-
 ![](figure-png/freq-homestead_length_in_years-by-officer_rank-1.png)<!-- -->
 
 Relationships between Outcomes
 ============================================
-
 
                              satisfaction rank   transparency rank   favoritism rank   assignment current choice
 --------------------------  ------------------  ------------------  ----------------  --------------------------
@@ -101,7 +95,6 @@ Analyses - 1 Predictor
 
 By Rank
 -----------------------------------
-
 ### satisfaction_rank
 
 ![](figure-png/by-rank-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
@@ -413,7 +406,6 @@ By Rank
 
 By Specialty Type
 -----------------------------------
-
 ### satisfaction_rank
 
 ![](figure-png/by-specialty-type-1.png)<!-- --><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ satisfaction_rank 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
@@ -753,7 +745,6 @@ By Specialty Type
 
 By Bonus Pay
 -----------------------------------
-
 ### satisfaction_rank
 
 ![](figure-png/by-bonus-pay-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + bonus_pay_cut4 </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
@@ -1065,7 +1056,6 @@ By Bonus Pay
 
 By Assignment Current Choice
 -----------------------------------
-
 ### satisfaction_rank
 
 ![](figure-png/by-assignment-current-choice-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + assignment_current_choice </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
@@ -1256,18 +1246,14 @@ By Assignment Current Choice
 </tbody>
 </table>
 
-
 By Year
 -----------------------------------
-
 ### satisfaction_rank
 
 ![](figure-png/by-year-1.png)<!-- -->
 
-
 By Survey Lag
 -----------------------------------
-
 ### satisfaction_rank
 
 ![](figure-png/by-survey_lag-1.png)<!-- -->
@@ -1275,20 +1261,16 @@ By Survey Lag
 
 By Manning Proportion
 -----------------------------------
-
 ### manning_proportion
 
 ![](figure-png/by-manning_proportion-1.png)<!-- -->![](figure-png/by-manning_proportion-2.png)<!-- -->
 
-
 By Crtical War
 -----------------------------------
-
 ![](figure-png/by-critical_war-1.png)<!-- -->
 
 By Billet Current
 -----------------------------------
-
 ![](figure-png/by-billet_current-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
@@ -1388,7 +1370,6 @@ By Billet Current
 
 By Geographic Preference
 -----------------------------------
-
 ![](figure-png/by-geographic_preference-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + geographic_preference </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
@@ -1515,7 +1496,6 @@ Analyses - 2 Predictors
 
 By Rank and Specialty Type
 -----------------------------------
-
 ### satisfaction_rank
 
 ![](figure-png/by-rank-and-specialty-type-1.png)<!-- --><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f * specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
@@ -1794,7 +1774,7 @@ By Rank and Specialty Type
   </tr>
 </tbody>
 </table>
-TODO: examine if the interaction term significantly improves fit.### transparency_rank
+### transparency_rank
 
 ![](figure-png/by-rank-and-specialty-type-2.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ transparency_rank 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
@@ -2070,7 +2050,6 @@ TODO: examine if the interaction term significantly improves fit.### transparenc
 
 By Rank and Assignment Current Choice
 -----------------------------------
-
 ### satisfaction_rank
 
 ![](figure-png/by-rank-and-assignment-current-choice-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f + assignment_current_choice </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
@@ -2478,7 +2457,6 @@ Model 2: satisfaction_rank ~ 1 + officer_rate_f * assignment_current_choice
 
 By Rank and Bonus Pay
 -----------------------------------
-
 ### satisfaction_rank
 
 ![](figure-png/by-rank-and-bonus_pay-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f + bonus_pay </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
@@ -2884,10 +2862,8 @@ Model 2: satisfaction_rank ~ 1 + officer_rate_f * bonus_pay
 </tbody>
 </table>
 
-
 By Billet Current and Critical War
 -----------------------------------
-
 ### satisfaction_rank
 
 ![](figure-png/by-billet_current-and-critical_war-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current + critical_war </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
@@ -2996,7 +2972,6 @@ By Billet Current and Critical War
 
 By Bonus_pay and Manning_proportion
 -----------------------------------
-
 ### satisfaction_rank
 
 ![](figure-png/by-bonus_pay-and-manning_proportion-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + manning_proportion_cut3 + bonus_pay_cut3 </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
@@ -3193,7 +3168,6 @@ Model 2: satisfaction_rank ~ 1 + manning_proportion_cut3 + bonus_pay_cut3
 </table>
 
 
-
 Session Information
 ============================================
 
@@ -3293,4 +3267,4 @@ Packages -----------------------------------------------------------------------
 
 
 
-Report rendered by wibeasley at 2018-07-01, 01:05 -0500 in 39 seconds.
+Report rendered by wibeasley at 2018-07-01, 01:14 -0500 in 40 seconds.

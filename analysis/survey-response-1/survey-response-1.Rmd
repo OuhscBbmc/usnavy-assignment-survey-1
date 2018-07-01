@@ -86,42 +86,36 @@ Histograms
 
 Univariate
 -----------------------------------
-
 ```{r marginals, echo=echo_chunks, message=message_chunks}
 ```
 
 Frequency: homestead_length_in_years by officer_rank
 -----------------------------------
-
 ```{r freq-homestead_length_in_years-by-officer_rank, echo=echo_chunks, message=message_chunks}
 ```
 
 Frequency: homestead_length_in_years by specialty_type
 -----------------------------------
-
 ```{r freq-homestead_length_in_years-by-specialty_type, echo=echo_chunks, message=message_chunks}
 ```
+
 Frequency: homestead_problem by officer_rank
 -----------------------------------
-
 ```{r freq-homestead_problem-by-officer_rank, echo=echo_chunks, message=message_chunks}
 ```
 
 Frequency: homestead_problem by specialty_type
 -----------------------------------
-
 ```{r freq-homestead_problem-by-specialty_type, echo=echo_chunks, message=message_chunks}
 ```
 
 Multivariate
 -----------------------------------
-
 ```{r freq-homestead_length_in_years-by-officer_rank, echo=echo_chunks, message=message_chunks}
 ```
 
 Relationships between Outcomes
 ============================================
-
 ```{r outcome-correlations, echo=echo_chunks, message=message_chunks}
 ```
 
@@ -131,65 +125,52 @@ Analyses - 1 Predictor
 
 By Rank
 -----------------------------------
-
 ```{r by-rank, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
 
 By Specialty Type
 -----------------------------------
-
 ```{r by-specialty-type, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
 
 By Bonus Pay
 -----------------------------------
-
 ```{r by-bonus-pay, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
 
 By Assignment Current Choice
 -----------------------------------
-
 ```{r by-assignment-current-choice, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
 
-
 By Year
 -----------------------------------
-
 ```{r by-year, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
 
-
 By Survey Lag
 -----------------------------------
-
 ```{r by-survey_lag, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
 
 
 By Manning Proportion
 -----------------------------------
-
 ```{r by-manning_proportion, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
 
-
 By Crtical War
 -----------------------------------
-
 ```{r by-critical_war, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
 
 By Billet Current
 -----------------------------------
-
 ```{r by-billet_current, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
 
 By Geographic Preference
 -----------------------------------
-
 ```{r by-geographic_preference, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
 
@@ -201,35 +182,28 @@ Analyses - 2 Predictors
 
 By Rank and Specialty Type
 -----------------------------------
-
 ```{r by-rank-and-specialty-type, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
 
 By Rank and Assignment Current Choice
 -----------------------------------
-
 ```{r by-rank-and-assignment-current-choice, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
 
 By Rank and Bonus Pay
 -----------------------------------
-
 ```{r by-rank-and-bonus_pay, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
 
-
 By Billet Current and Critical War
 -----------------------------------
-
 ```{r by-billet_current-and-critical_war, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
 
 By Bonus_pay and Manning_proportion
 -----------------------------------
-
 ```{r by-bonus_pay-and-manning_proportion, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
-
 
 
 Session Information
