@@ -28,6 +28,28 @@ theme_report <- theme_bw() +
   theme(panel.border          = element_rect(colour="gray80")) +
   theme(axis.ticks            = element_line(colour="gray80"))
 
+prettify_lm <- function( x ) {
+  broom::tidy(x) %>%
+    knitr::kable(
+      format = "html"
+    ) %>%
+    kableExtra::kable_styling(
+      bootstrap_options  = c("striped", "hover", "condensed", "responsive"),
+      full_width         = F,
+      position           = "left"
+    ) %>%
+    print()
+  cat("\n\n")
+  broom::glance(x) %>%
+    knitr::kable() %>%
+    kableExtra::kable_styling(
+      bootstrap_options  = c("striped", "hover", "condensed", "responsive"),
+      full_width         = F,
+      position           = "left"
+    ) %>%
+    print()
+}
+
 # ---- load-data ---------------------------------------------------------------
 ds_everyone <- readr::read_rds(path_input) # 'ds' stands for 'datasets'
 
@@ -206,22 +228,22 @@ ds %>%
   theme(legend.position="none") +
   labs(x=NULL) #y="Satisfaction"
 
-summary(lm(satisfaction_rank ~ 1 + officer_rate_f, data=ds))
+prettify_lm(lm(satisfaction_rank ~ 1 + officer_rate_f, data=ds))
 
 
 
 cat("### transparency_rank\n\n")
 last_plot() %+% aes(y=transparency_rank)
-summary(lm(transparency_rank ~ 1 + officer_rate_f, data=ds))
+prettify_lm(lm(transparency_rank ~ 1 + officer_rate_f, data=ds))
 
 cat("### favoritism_rank\n\n")
 last_plot() %+% aes(y=favoritism_rank)
-summary(lm(favoritism_rank ~ 1 + officer_rate_f, data=ds))
+prettify_lm(lm(favoritism_rank ~ 1 + officer_rate_f, data=ds))
 
 cat("### assignment_current_choice\n\n")
 last_plot() %+% aes(y=assignment_current_choice) +
   scale_y_reverse()
-summary(lm(assignment_current_choice ~ 1 + officer_rate_f, data=ds))
+prettify_lm(lm(assignment_current_choice ~ 1 + officer_rate_f, data=ds))
 
 
 
@@ -244,22 +266,22 @@ ds %>%
   theme(legend.position="none") +
   labs(x=NULL) #y="Satisfaction"
 
-summary(lm(satisfaction_rank ~ 1 + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
 
+prettify_lm(lm(satisfaction_rank ~ 1 + specialty_type, data=ds[ds$specialty_type != "unknown", ]) )
 
 
 cat("### transparency_rank\n\n")
 last_plot() %+% aes(y=transparency_rank)
-summary(lm(transparency_rank ~ 1 + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
+prettify_lm(lm(transparency_rank ~ 1 + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
 
 cat("### favoritism_rank\n\n")
 last_plot() %+% aes(y=favoritism_rank)
-summary(lm(favoritism_rank ~ 1 + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
+prettify_lm(lm(favoritism_rank ~ 1 + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
 
 cat("### assignment_current_choice\n\n")
 last_plot() %+% aes(y=assignment_current_choice) +
   scale_y_reverse()
-summary(lm(assignment_current_choice ~ 1 + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
+prettify_lm(lm(assignment_current_choice ~ 1 + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
 
 
 # ---- by-bonus-pay ------------------------------------------------------------
@@ -280,22 +302,22 @@ ds %>%
   theme(legend.position="none") +
   labs(x=NULL) #y="Satisfaction"
 
-summary(lm(satisfaction_rank ~ 1 + bonus_pay_cut4, data=ds))
+prettify_lm(lm(satisfaction_rank ~ 1 + bonus_pay_cut4, data=ds))
 
 
 
 cat("### transparency_rank\n\n")
 last_plot() %+% aes(y=transparency_rank)
-summary(lm(transparency_rank ~ 1 + bonus_pay_cut4, data=ds))
+prettify_lm(lm(transparency_rank ~ 1 + bonus_pay_cut4, data=ds))
 
 cat("### favoritism_rank\n\n")
 last_plot() %+% aes(y=favoritism_rank)
-summary(lm(favoritism_rank ~ 1 + bonus_pay_cut4, data=ds))
+prettify_lm(lm(favoritism_rank ~ 1 + bonus_pay_cut4, data=ds))
 
 cat("### assignment_current_choice\n\n")
 last_plot() %+% aes(y=assignment_current_choice) +
   scale_y_reverse()
-summary(lm(assignment_current_choice ~ 1 + bonus_pay_cut4, data=ds))
+prettify_lm(lm(assignment_current_choice ~ 1 + bonus_pay_cut4, data=ds))
 
 # ---- by-assignment-current-choice ------------------------------------------------------------
 
@@ -310,16 +332,16 @@ ds %>%
   geom_point(position=position_jitter(w = 0.3, h = .2), size=2, shape=1, na.rm=T) +
   theme_report# +
 
-summary(lm(satisfaction_rank ~ 1 + assignment_current_choice, data=ds))
+prettify_lm(lm(satisfaction_rank ~ 1 + assignment_current_choice, data=ds))
 
 
 cat("### transparency_rank\n\n")
 last_plot() %+% aes(y=transparency_rank)
-summary(lm(transparency_rank ~ 1 + assignment_current_choice, data=ds))
+prettify_lm(lm(transparency_rank ~ 1 + assignment_current_choice, data=ds))
 
 cat("### favoritism_rank\n\n")
 last_plot() %+% aes(y=favoritism_rank)
-summary(lm(favoritism_rank ~ 1 + assignment_current_choice, data=ds))
+prettify_lm(lm(favoritism_rank ~ 1 + assignment_current_choice, data=ds))
 
 
 # ---- by-year ------------------------------------------------------------
@@ -391,7 +413,7 @@ ggplot(ds, aes(x=billet_current, y=satisfaction_rank, color=billet_current)) +
   theme(legend.position = "none")
 
 # forcats::fct_reorder(ds$billet_current, ds$satisfaction_rank, .fun=mean)
-summary(lm(satisfaction_rank ~ 1 + billet_current, data=ds))
+prettify_lm(lm(satisfaction_rank ~ 1 + billet_current, data=ds))
 
 
 # ---- by-geographic_preference ------------------------------------------------------------
@@ -409,7 +431,7 @@ ggplot(ds, aes(x=geographic_preference, y=satisfaction_rank, color=geographic_pr
   theme(legend.position = "none")
 
 # forcats::fct_reorder(ds$billet_current, ds$satisfaction_rank, .fun=mean)
-summary(lm(satisfaction_rank ~ 1 + geographic_preference, data=ds))
+prettify_lm(lm(satisfaction_rank ~ 1 + geographic_preference, data=ds))
 
 
 
@@ -437,8 +459,8 @@ ds %>%
   # theme(legend.position="none") +
   labs(x=NULL) #y="Satisfaction"
 
-summary(lm(satisfaction_rank ~ 1 + officer_rate_f * specialty_type, data=ds[ds$specialty_type != "unknown", ]))
-summary(lm(satisfaction_rank ~ 1 + officer_rate_f + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
+prettify_lm(lm(satisfaction_rank ~ 1 + officer_rate_f * specialty_type, data=ds[ds$specialty_type != "unknown", ]))
+prettify_lm(lm(satisfaction_rank ~ 1 + officer_rate_f + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
 
 cat("TODO: examine if the interaction term significantly improves fit.")
 
@@ -446,16 +468,16 @@ cat("TODO: examine if the interaction term significantly improves fit.")
 
 cat("### transparency_rank\n\n")
 last_plot() %+% aes(y=transparency_rank)
-summary(lm(transparency_rank ~ 1 + specialty_type, data=ds))
+prettify_lm(lm(transparency_rank ~ 1 + specialty_type, data=ds))
 
 cat("### favoritism_rank\n\n")
 last_plot() %+% aes(y=favoritism_rank)
-summary(lm(favoritism_rank ~ 1 + specialty_type, data=ds))
+prettify_lm(lm(favoritism_rank ~ 1 + specialty_type, data=ds))
 
 cat("### assignment_current_choice\n\n")
 last_plot() %+% aes(y=assignment_current_choice) +
   scale_y_reverse()
-summary(lm(assignment_current_choice ~ 1 + specialty_type, data=ds))
+prettify_lm(lm(assignment_current_choice ~ 1 + specialty_type, data=ds))
 
 
 # ---- by-rank-and-assignment-current-choice ------------------------------------------------------------
@@ -479,8 +501,8 @@ ds %>%
 # theme(legend.position="none") +
 # labs(x=NULL) #y="Satisfaction"
 
-summary(lm(satisfaction_rank ~ 1 + officer_rate_f + assignment_current_choice, data=ds))
-summary(lm(satisfaction_rank ~ 1 + officer_rate_f * assignment_current_choice, data=ds))
+prettify_lm(lm(satisfaction_rank ~ 1 + officer_rate_f + assignment_current_choice, data=ds))
+prettify_lm(lm(satisfaction_rank ~ 1 + officer_rate_f * assignment_current_choice, data=ds))
 
 anova(
   lm(satisfaction_rank ~ 1 + officer_rate_f + assignment_current_choice, data=ds),
@@ -490,11 +512,11 @@ anova(
 
 cat("### transparency_rank\n\n")
 last_plot() %+% aes(y=transparency_rank)
-summary(lm(transparency_rank ~ 1 + officer_rate_f * assignment_current_choice, data=ds))
+prettify_lm(lm(transparency_rank ~ 1 + officer_rate_f * assignment_current_choice, data=ds))
 
 cat("### favoritism_rank\n\n")
 last_plot() %+% aes(y=favoritism_rank)
-summary(lm(favoritism_rank ~ 1 + officer_rate_f * assignment_current_choice, data=ds))
+prettify_lm(lm(favoritism_rank ~ 1 + officer_rate_f * assignment_current_choice, data=ds))
 
 
 
@@ -514,8 +536,8 @@ ds %>%
 # theme(legend.position="none") +
 # labs(x=NULL) #y="Satisfaction"
 
-summary(lm(satisfaction_rank ~ 1 + officer_rate_f + bonus_pay, data=ds))
-summary(lm(satisfaction_rank ~ 1 + officer_rate_f * bonus_pay, data=ds))
+prettify_lm(lm(satisfaction_rank ~ 1 + officer_rate_f + bonus_pay, data=ds))
+prettify_lm(lm(satisfaction_rank ~ 1 + officer_rate_f * bonus_pay, data=ds))
 
 anova(
   lm(satisfaction_rank ~ 1 + officer_rate_f + bonus_pay, data=ds),
@@ -525,11 +547,11 @@ anova(
 
 cat("### transparency_rank\n\n")
 last_plot() %+% aes(y=transparency_rank)
-summary(lm(transparency_rank ~ 1 + officer_rate_f * bonus_pay, data=ds))
+prettify_lm(lm(transparency_rank ~ 1 + officer_rate_f * bonus_pay, data=ds))
 
 cat("### favoritism_rank\n\n")
 last_plot() %+% aes(y=favoritism_rank)
-summary(lm(favoritism_rank ~ 1 + officer_rate_f * bonus_pay, data=ds))
+prettify_lm(lm(favoritism_rank ~ 1 + officer_rate_f * bonus_pay, data=ds))
 
 
 # ---- by-billet_current-and-critical_war ------------------------------------------------------------
@@ -547,8 +569,8 @@ ds %>%
   # theme(legend.position="none") +
   labs(x=NULL) #y="Satisfaction"
 
-# summary(lm(satisfaction_rank ~ 1 + billet_current * critical_war, data=ds))
-summary(lm(satisfaction_rank ~ 1 + billet_current + critical_war, data=ds))
+# prettify_lm(lm(satisfaction_rank ~ 1 + billet_current * critical_war, data=ds))
+prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + critical_war, data=ds))
 
 # ---- by-bonus_pay-and-manning_proportion ------------------------------------------------------------
 cat("### satisfaction_rank\n\n")
@@ -565,8 +587,8 @@ ds %>%
   # theme(legend.position="none") +
   labs(x=NULL) #y="Satisfaction"
 
-  # summary(lm(satisfaction_rank ~ 1 + manning_proportion_cut3 * bonus_pay_cut3, data=ds))
-  summary(lm(satisfaction_rank ~ 1 + manning_proportion_cut3 + bonus_pay_cut3, data=ds))
+  # prettify_lm(lm(satisfaction_rank ~ 1 + manning_proportion_cut3 * bonus_pay_cut3, data=ds))
+  prettify_lm(lm(satisfaction_rank ~ 1 + manning_proportion_cut3 + bonus_pay_cut3, data=ds))
 
   cat("No interaction between manning_proportion_cut3 & bonus_pay_cut3")
   anova(
@@ -584,8 +606,8 @@ ds %>%
   # geom_point(position=position_jitter(w = 0.3, h = .2), size=2, shape=1, na.rm=T) +
   # theme_report
 
-# summary(lm(satisfaction_rank ~ 1 + billet_current * critical_war, data=ds))
-summary(lm(satisfaction_rank ~ 1 + billet_current + critical_war, data=ds))
+# prettify_lm(lm(satisfaction_rank ~ 1 + billet_current * critical_war, data=ds))
+prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + critical_war, data=ds))
 
 # # ---- model-results-table  -----------------------------------------------
 #
