@@ -132,7 +132,7 @@ ds <- ds %>%
     , "order_lead_time"             = "`For your last set of orders, how many months prior to your move were your orders released-? That is, how many months did you have to prepare for your PCS-`"
     , "order_lead_time_other"       = "`For your last set of orders, how many months prior to your move were your orders released-? That is, how many months did you have to prepare for your PCS- [Other]`"
     , "transparency_rank"           = "`On a scale of 1 to 5, with 1 being not transparent and 5 being very transparent, how would you rate the transparency of your detailing experience for your last set of orders-`"
-    , "satistfaction_rank"          = "`On a scale of 1 to 5, with 1 being unsatisfied and 5 being very satisfied, how would you rate your overall?detailing experience for your last set of orders-`"
+    , "satisfaction_rank"          = "`On a scale of 1 to 5, with 1 being unsatisfied and 5 being very satisfied, how would you rate your overall?detailing experience for your last set of orders-`"
     , "favoritism_rank"             = "`On a scale of 1 to 5, with 1 representing a significant problem and 5 being not a problem at all, how would you rank the problem of favoritism in the billet assignment process-`"
     , "assignment_current_choice"   = "`Describe your current assignment:`"
     , "geographic_preference"       = "`Please rank your desired billet locations with the top level being the most desireable, and the bottom being the least desireable. [Ranking 1]` "
@@ -307,7 +307,7 @@ checkmate::assert_factor(   ds$billet_current            , any.missing=T        
 checkmate::assert_factor(   ds$order_lead_time           , any.missing=T                          )
 # checkmate::assert_subset(   ds$order_lead_time           , choices = c("< 2 months", "2-4 months", "> 4 months"))
 checkmate::assert_integer(  ds$transparency_rank         , any.missing=T , lower=1, upper=5       )
-checkmate::assert_integer(  ds$satistfaction_rank        , any.missing=T , lower=1, upper=5       )
+checkmate::assert_integer(  ds$satisfaction_rank        , any.missing=T , lower=1, upper=5       )
 checkmate::assert_integer(  ds$favoritism_rank           , any.missing=T , lower=1, upper=5       )
 checkmate::assert_integer(  ds$assignment_current_choice , any.missing=T , lower=1, upper=5       )
 checkmate::assert_character(ds$geographic_preference     , any.missing=F , pattern="^.{6,38}$"    )
@@ -337,7 +337,7 @@ columns_to_write <- c(
   "officer_rank", "officer_rate",
   "year_executed_order", "survey_lag",
   "billet_current", "order_lead_time",
-  "transparency_rank", "satistfaction_rank", "favoritism_rank", "assignment_current_choice",
+  "transparency_rank", "satisfaction_rank", "favoritism_rank", "assignment_current_choice",
   "bonus_pay", "bonus_pay_cut3", "bonus_pay_cut4",
   "critical_war", "specialty_type", "manning_proportion", "manning_proportion_cut3",
   "geographic_preference"

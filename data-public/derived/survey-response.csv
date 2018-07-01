@@ -1,4 +1,4 @@
-response_id,primary_specialty,officer_rank,officer_rate,year_executed_order,survey_lag,billet_current,order_lead_time,transparency_rank,satistfaction_rank,favoritism_rank,assignment_current_choice,bonus_pay,bonus_pay_cut3,bonus_pay_cut4,critical_war,specialty_type,manning_proportion,manning_proportion_cut3,geographic_preference
+response_id,primary_specialty,officer_rank,officer_rate,year_executed_order,survey_lag,billet_current,order_lead_time,transparency_rank,satisfaction_rank,favoritism_rank,assignment_current_choice,bonus_pay,bonus_pay_cut3,bonus_pay_cut4,critical_war,specialty_type,manning_proportion,manning_proportion_cut3,geographic_preference
 15,Emergency Medicine,CDR,5,2015,1.0951403148528405,Non-Operational/Non-Clinical,2-4 months,3,4,3,1,26e3,$24k+,$24-32k,High Deployer,nonsurgical,1.125,Over,Southern California
 20,Allergy/Immunology,CDR,5,NA,NA,CONUS MTF,2-4 months,5,5,5,2,23e3,$20-24k,$20-24k,Low Deployer,nonsurgical,1.125,Over,Southern California
 21,Unknown,Unknown,NA,NA,NA,Other,NA,2,NA,NA,NA,26e3,$24k+,$24-32k,Low Deployer,unknown,1,Balanced,Unknown

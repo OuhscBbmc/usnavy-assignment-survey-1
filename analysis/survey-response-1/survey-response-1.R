@@ -64,7 +64,7 @@ TabularManifest::histogram_discrete(d_observed=ds, variable_name="order_lead_tim
 
 
 TabularManifest::histogram_continuous(d_observed=ds, variable_name="transparency_rank"         , bin_width=1, rounded_digits=1)
-TabularManifest::histogram_continuous(d_observed=ds, variable_name="satistfaction_rank"        , bin_width=1, rounded_digits=1)
+TabularManifest::histogram_continuous(d_observed=ds, variable_name="satisfaction_rank"        , bin_width=1, rounded_digits=1)
 TabularManifest::histogram_continuous(d_observed=ds, variable_name="favoritism_rank"           , bin_width=1, rounded_digits=1)
 TabularManifest::histogram_continuous(d_observed=ds, variable_name="assignment_current_choice" , bin_width=1, rounded_digits=1)
 
@@ -92,7 +92,7 @@ TabularManifest::histogram_discrete(d_observed=ds, variable_name="geographic_pre
 
 
 # ---- outcome-correlations ----------------------------------------------------
-outcomes <- c("satistfaction_rank", "transparency_rank", "favoritism_rank", "assignment_current_choice")
+outcomes <- c("satisfaction_rank", "transparency_rank", "favoritism_rank", "assignment_current_choice")
 knitr::kable(corHyp1 <- cor(ds[, outcomes], use = "pairwise.complete.obs"))
 corrplot::corrplot(corHyp1, method="ellipse", addCoef.col="gray30", tl.col="gray20", diag=F, order="AOE")
 pairs(x=ds[, outcomes], lower.panel=panel.smooth, upper.panel=panel.smooth)
@@ -101,12 +101,12 @@ pairs(x=ds[, outcomes], lower.panel=panel.smooth, upper.panel=panel.smooth)
 
 # ---- by-rank ------------------------------------------------------------
 
-cat("### satistfaction_rank\n\n")
+cat("### satisfaction_rank\n\n")
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
 ds %>%
   tidyr::drop_na(officer_rank) %>%
   dplyr::filter(officer_rank != "Unknown") %>%
-  ggplot(aes(x=officer_rank, y=satistfaction_rank, fill=officer_rank, color=officer_rank)) +
+  ggplot(aes(x=officer_rank, y=satisfaction_rank, fill=officer_rank, color=officer_rank)) +
   geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA) +
   stat_summary(fun.y="mean", geom="point", shape=23, size=10, fill="white", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
   # stat_summary(fun.data=TukeyBoxplot, geom='boxplot', na.rm=T, outlier.shape=NULL, outlier.colour=NA) +
@@ -118,7 +118,7 @@ ds %>%
   theme(legend.position="none") +
   labs(x=NULL) #y="Satisfaction"
 
-summary(lm(satistfaction_rank ~ 1 + officer_rate_f, data=ds))
+summary(lm(satisfaction_rank ~ 1 + officer_rate_f, data=ds))
 
 
 
@@ -139,12 +139,12 @@ summary(lm(assignment_current_choice ~ 1 + officer_rate_f, data=ds))
 
 # ---- by-specialty-type ------------------------------------------------------------
 
-cat("### satistfaction_rank\n\n")
+cat("### satisfaction_rank\n\n")
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
 ds %>%
   tidyr::drop_na(specialty_type) %>%
   dplyr::filter(specialty_type != "unknown") %>%
-  ggplot(aes(x=specialty_type, y=satistfaction_rank, fill=specialty_type, color=specialty_type)) +
+  ggplot(aes(x=specialty_type, y=satisfaction_rank, fill=specialty_type, color=specialty_type)) +
   geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA) +
   stat_summary(fun.y="mean", geom="point", shape=23, size=10, fill="white", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
   # stat_summary(fun.data=TukeyBoxplot, geom='boxplot', na.rm=T, outlier.shape=NULL, outlier.colour=NA) +
@@ -156,7 +156,7 @@ ds %>%
   theme(legend.position="none") +
   labs(x=NULL) #y="Satisfaction"
 
-summary(lm(satistfaction_rank ~ 1 + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
+summary(lm(satisfaction_rank ~ 1 + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
 
 
 
@@ -175,12 +175,12 @@ summary(lm(assignment_current_choice ~ 1 + specialty_type, data=ds[ds$specialty_
 
 
 # ---- by-bonus-pay ------------------------------------------------------------
-cat("### satistfaction_rank\n\n")
+cat("### satisfaction_rank\n\n")
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
 ds %>%
   tidyr::drop_na(bonus_pay_cut4) %>%
   dplyr::filter(bonus_pay_cut4 != "unknown") %>%
-  ggplot(aes(x=bonus_pay_cut4, y=satistfaction_rank, fill=bonus_pay_cut4, color=bonus_pay_cut4)) +
+  ggplot(aes(x=bonus_pay_cut4, y=satisfaction_rank, fill=bonus_pay_cut4, color=bonus_pay_cut4)) +
   geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA) +
   stat_summary(fun.y="mean", geom="point", shape=23, size=10, fill="white", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
   # stat_summary(fun.data=TukeyBoxplot, geom='boxplot', na.rm=T, outlier.shape=NULL, outlier.colour=NA) +
@@ -192,7 +192,7 @@ ds %>%
   theme(legend.position="none") +
   labs(x=NULL) #y="Satisfaction"
 
-summary(lm(satistfaction_rank ~ 1 + bonus_pay_cut4, data=ds))
+summary(lm(satisfaction_rank ~ 1 + bonus_pay_cut4, data=ds))
 
 
 
@@ -211,18 +211,18 @@ summary(lm(assignment_current_choice ~ 1 + bonus_pay_cut4, data=ds))
 
 # ---- by-assignment-current-choice ------------------------------------------------------------
 
-cat("### satistfaction_rank\n\n")
+cat("### satisfaction_rank\n\n")
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
 ds %>%
   tidyr::drop_na(assignment_current_choice) %>%
   tidyr::drop_na(officer_rank) %>%
   dplyr::filter(officer_rank != "Unknown") %>%
-  ggplot(aes(x=assignment_current_choice, y=satistfaction_rank)) +
+  ggplot(aes(x=assignment_current_choice, y=satisfaction_rank)) +
   geom_smooth(method="loess", span=2, alpha=.2, na.rm=T) +
   geom_point(position=position_jitter(w = 0.3, h = .2), size=2, shape=1, na.rm=T) +
   theme_report# +
 
-summary(lm(satistfaction_rank ~ 1 + assignment_current_choice, data=ds))
+summary(lm(satisfaction_rank ~ 1 + assignment_current_choice, data=ds))
 
 
 cat("### transparency_rank\n\n")
@@ -235,9 +235,9 @@ summary(lm(favoritism_rank ~ 1 + assignment_current_choice, data=ds))
 
 
 # ---- by-year ------------------------------------------------------------
-cat("### satistfaction_rank\n\n")
+cat("### satisfaction_rank\n\n")
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
-ggplot(ds, aes(x=year_executed_order, y=satistfaction_rank)) + #, color=officer_rank)) +
+ggplot(ds, aes(x=year_executed_order, y=satisfaction_rank)) + #, color=officer_rank)) +
   geom_smooth(method="loess", span=2, na.rm=T) +
   geom_smooth(data=ds[ds$year_executed_order >=2014L, ], method="loess", span=2, na.rm=T) +
   geom_point(shape=1, position = position_jitter(width=.3, height=.3), na.rm=T) +
@@ -246,9 +246,9 @@ ggplot(ds, aes(x=year_executed_order, y=satistfaction_rank)) + #, color=officer_
   theme(axis.ticks = element_blank())
 
 # ---- by-survey_lag ------------------------------------------------------------
-cat("### satistfaction_rank\n\n")
+cat("### satisfaction_rank\n\n")
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
-ggplot(ds, aes(x=survey_lag, y=satistfaction_rank)) + #, color=officer_rank)) +
+ggplot(ds, aes(x=survey_lag, y=satisfaction_rank)) + #, color=officer_rank)) +
   geom_smooth(method="loess", span=2, na.rm=T) +
   geom_smooth(data=ds[ds$survey_lag >=2014L, ], method="loess", span=2, na.rm=T) +
   geom_point(shape=1, position = position_jitter(width=.3, height=.3), na.rm=T) +
@@ -259,7 +259,7 @@ ggplot(ds, aes(x=survey_lag, y=satistfaction_rank)) + #, color=officer_rank)) +
 # ---- by-manning_proportion ------------------------------------------------------------
 cat("### manning_proportion\n\n")
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
-ggplot(ds, aes(x=manning_proportion, y=satistfaction_rank)) + #, color=officer_rank)) +
+ggplot(ds, aes(x=manning_proportion, y=satisfaction_rank)) + #, color=officer_rank)) +
   geom_smooth(method="loess", span=2, na.rm=T) +
   geom_smooth(data=ds[ds$survey_lag >=2014L, ], method="loess", span=2, na.rm=T) +
   geom_point(shape=1, position = position_jitter(width=.3, height=.3), na.rm=T) +
@@ -268,7 +268,7 @@ ggplot(ds, aes(x=manning_proportion, y=satistfaction_rank)) + #, color=officer_r
   theme(axis.ticks = element_blank())
 
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
-ggplot(ds, aes(x=manning_proportion_cut3, y=satistfaction_rank, color=manning_proportion_cut3)) +
+ggplot(ds, aes(x=manning_proportion_cut3, y=satisfaction_rank, color=manning_proportion_cut3)) +
   geom_boxplot(na.rm=T) +
   stat_summary(fun.y="mean", geom="point", position = position_dodge(width=.75), shape=23, size=10, fill="gray80", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
   geom_point(shape=1, position = position_jitter(width=.3, height=.25), na.rm=T) +
@@ -279,7 +279,7 @@ ggplot(ds, aes(x=manning_proportion_cut3, y=satistfaction_rank, color=manning_pr
 
 # ---- by-critical_war ------------------------------------------------------------
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
-ggplot(ds, aes(x=critical_war, y=satistfaction_rank, color=critical_war)) +
+ggplot(ds, aes(x=critical_war, y=satisfaction_rank, color=critical_war)) +
   geom_boxplot(na.rm=T) +
   stat_summary(fun.y="mean", geom="point", position = position_dodge(width=.75), shape=23, size=10, fill="gray80", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
   geom_point(shape=1, position = position_jitter(width=.3, height=.25), na.rm=T) +
@@ -290,9 +290,9 @@ ggplot(ds, aes(x=critical_war, y=satistfaction_rank, color=critical_war)) +
 
 # ---- by-billet_current ------------------------------------------------------------
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
-# billet_current = forcats::fct_reorder(billet_current, satistfaction_rank, .fun=mean)
+# billet_current = forcats::fct_reorder(billet_current, satisfaction_rank, .fun=mean)
 
-ggplot(ds, aes(x=billet_current, y=satistfaction_rank, color=billet_current)) +
+ggplot(ds, aes(x=billet_current, y=satisfaction_rank, color=billet_current)) +
   geom_boxplot(na.rm=T) +
   stat_summary(fun.y="mean", geom="point", position = position_dodge(width=.75), shape=23, size=10, fill="gray80", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
   geom_point(shape=1, position = position_jitter(width=.3, height=.25), na.rm=T) +
@@ -302,15 +302,15 @@ ggplot(ds, aes(x=billet_current, y=satistfaction_rank, color=billet_current)) +
   theme(axis.ticks = element_blank()) +
   theme(legend.position = "none")
 
-# forcats::fct_reorder(ds$billet_current, ds$satistfaction_rank, .fun=mean)
-summary(lm(satistfaction_rank ~ 1 + billet_current, data=ds))
+# forcats::fct_reorder(ds$billet_current, ds$satisfaction_rank, .fun=mean)
+summary(lm(satisfaction_rank ~ 1 + billet_current, data=ds))
 
 
 # ---- by-geographic_preference ------------------------------------------------------------
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
-# billet_current = forcats::fct_reorder(billet_current, satistfaction_rank, .fun=mean)
+# billet_current = forcats::fct_reorder(billet_current, satisfaction_rank, .fun=mean)
 
-ggplot(ds, aes(x=geographic_preference, y=satistfaction_rank, color=geographic_preference)) +
+ggplot(ds, aes(x=geographic_preference, y=satisfaction_rank, color=geographic_preference)) +
   geom_boxplot(na.rm=T) +
   stat_summary(fun.y="mean", geom="point", position = position_dodge(width=.75), shape=23, size=10, fill="gray80", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
   geom_point(shape=1, position = position_jitter(width=.3, height=.25), na.rm=T) +
@@ -320,8 +320,8 @@ ggplot(ds, aes(x=geographic_preference, y=satistfaction_rank, color=geographic_p
   theme(axis.ticks = element_blank()) +
   theme(legend.position = "none")
 
-# forcats::fct_reorder(ds$billet_current, ds$satistfaction_rank, .fun=mean)
-summary(lm(satistfaction_rank ~ 1 + geographic_preference, data=ds))
+# forcats::fct_reorder(ds$billet_current, ds$satisfaction_rank, .fun=mean)
+summary(lm(satisfaction_rank ~ 1 + geographic_preference, data=ds))
 
 
 
@@ -329,14 +329,14 @@ summary(lm(satistfaction_rank ~ 1 + geographic_preference, data=ds))
 
 # ---- by-rank-and-specialty-type ------------------------------------------------------------
 
-cat("### satistfaction_rank\n\n")
+cat("### satisfaction_rank\n\n")
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
 ds %>%
   tidyr::drop_na(specialty_type) %>%
   tidyr::drop_na(officer_rank) %>%
   dplyr::filter(specialty_type != "unknown") %>%
   dplyr::filter(officer_rank != "Unknown") %>%
-  ggplot(aes(x=specialty_type, y=satistfaction_rank, fill=officer_rank, color=officer_rank)) +
+  ggplot(aes(x=specialty_type, y=satisfaction_rank, fill=officer_rank, color=officer_rank)) +
   geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA) +
   stat_summary(fun.y="mean", geom="point", position = position_dodge(width=.75), shape=23, size=10, fill="white", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
   # stat_summary(fun.data=TukeyBoxplot, geom='boxplot', na.rm=T, outlier.shape=NULL, outlier.colour=NA) +
@@ -348,8 +348,8 @@ ds %>%
   # theme(legend.position="none") +
   labs(x=NULL) #y="Satisfaction"
 
-summary(lm(satistfaction_rank ~ 1 + officer_rate_f * specialty_type, data=ds[ds$specialty_type != "unknown", ]))
-summary(lm(satistfaction_rank ~ 1 + officer_rate_f + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
+summary(lm(satisfaction_rank ~ 1 + officer_rate_f * specialty_type, data=ds[ds$specialty_type != "unknown", ]))
+summary(lm(satisfaction_rank ~ 1 + officer_rate_f + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
 
 cat("TODO: examine if the interaction term significantly improves fit.")
 
@@ -371,13 +371,13 @@ summary(lm(assignment_current_choice ~ 1 + specialty_type, data=ds))
 
 # ---- by-rank-and-assignment-current-choice ------------------------------------------------------------
 
-cat("### satistfaction_rank\n\n")
+cat("### satisfaction_rank\n\n")
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
 ds %>%
   tidyr::drop_na(assignment_current_choice) %>%
   tidyr::drop_na(officer_rank) %>%
   dplyr::filter(officer_rank != "Unknown") %>%
-  ggplot(aes(x=assignment_current_choice, y=satistfaction_rank, fill=officer_rank, color=officer_rank)) +
+  ggplot(aes(x=assignment_current_choice, y=satisfaction_rank, fill=officer_rank, color=officer_rank)) +
   geom_smooth(method="loess", span=2, alpha=.2, na.rm=T) +
   # geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA) +
   # stat_summary(fun.y="mean", geom="point", shape=23, size=10, fill="white", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
@@ -390,12 +390,12 @@ ds %>%
 # theme(legend.position="none") +
 # labs(x=NULL) #y="Satisfaction"
 
-summary(lm(satistfaction_rank ~ 1 + officer_rate_f + assignment_current_choice, data=ds))
-summary(lm(satistfaction_rank ~ 1 + officer_rate_f * assignment_current_choice, data=ds))
+summary(lm(satisfaction_rank ~ 1 + officer_rate_f + assignment_current_choice, data=ds))
+summary(lm(satisfaction_rank ~ 1 + officer_rate_f * assignment_current_choice, data=ds))
 
 anova(
-  lm(satistfaction_rank ~ 1 + officer_rate_f + assignment_current_choice, data=ds),
-  lm(satistfaction_rank ~ 1 + officer_rate_f * assignment_current_choice, data=ds)
+  lm(satisfaction_rank ~ 1 + officer_rate_f + assignment_current_choice, data=ds),
+  lm(satisfaction_rank ~ 1 + officer_rate_f * assignment_current_choice, data=ds)
 )
 
 
@@ -412,25 +412,25 @@ summary(lm(favoritism_rank ~ 1 + officer_rate_f * assignment_current_choice, dat
 
 
 # ---- by-rank-and-bonus_pay ------------------------------------------------------------
-cat("### satistfaction_rank\n\n")
+cat("### satisfaction_rank\n\n")
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
 ds %>%
   tidyr::drop_na(bonus_pay) %>%
   tidyr::drop_na(officer_rank) %>%
   dplyr::filter(officer_rank != "Unknown") %>%
-  ggplot(aes(x=bonus_pay, y=satistfaction_rank, fill=officer_rank, color=officer_rank)) +
+  ggplot(aes(x=bonus_pay, y=satisfaction_rank, fill=officer_rank, color=officer_rank)) +
   geom_smooth(method="loess", span=2, alpha=.2, na.rm=T) +
   geom_point(position=position_jitter(w = 0.3, h = .2), size=2, shape=1, na.rm=T) +
   theme_report# +
 # theme(legend.position="none") +
 # labs(x=NULL) #y="Satisfaction"
 
-summary(lm(satistfaction_rank ~ 1 + officer_rate_f + bonus_pay, data=ds))
-summary(lm(satistfaction_rank ~ 1 + officer_rate_f * bonus_pay, data=ds))
+summary(lm(satisfaction_rank ~ 1 + officer_rate_f + bonus_pay, data=ds))
+summary(lm(satisfaction_rank ~ 1 + officer_rate_f * bonus_pay, data=ds))
 
 anova(
-  lm(satistfaction_rank ~ 1 + officer_rate_f + bonus_pay, data=ds),
-  lm(satistfaction_rank ~ 1 + officer_rate_f * bonus_pay, data=ds)
+  lm(satisfaction_rank ~ 1 + officer_rate_f + bonus_pay, data=ds),
+  lm(satisfaction_rank ~ 1 + officer_rate_f * bonus_pay, data=ds)
 )
 
 
@@ -444,10 +444,10 @@ summary(lm(favoritism_rank ~ 1 + officer_rate_f * bonus_pay, data=ds))
 
 
 # ---- by-billet_current-and-critical_war ------------------------------------------------------------
-cat("### satistfaction_rank\n\n")
+cat("### satisfaction_rank\n\n")
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
 ds %>%
-  ggplot(aes(x=billet_current, y=satistfaction_rank, fill=critical_war, color=critical_war)) +
+  ggplot(aes(x=billet_current, y=satisfaction_rank, fill=critical_war, color=critical_war)) +
   geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA) +
   stat_summary(fun.y="mean", geom="point", position = position_dodge(width=.75), shape=23, size=10, fill="white", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
   geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), size=2, shape=1, na.rm=T) +
@@ -458,14 +458,14 @@ ds %>%
   # theme(legend.position="none") +
   labs(x=NULL) #y="Satisfaction"
 
-# summary(lm(satistfaction_rank ~ 1 + billet_current * critical_war, data=ds))
-summary(lm(satistfaction_rank ~ 1 + billet_current + critical_war, data=ds))
+# summary(lm(satisfaction_rank ~ 1 + billet_current * critical_war, data=ds))
+summary(lm(satisfaction_rank ~ 1 + billet_current + critical_war, data=ds))
 
 # ---- by-bonus_pay-and-manning_proportion ------------------------------------------------------------
-cat("### satistfaction_rank\n\n")
+cat("### satisfaction_rank\n\n")
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
 ds %>%
-  ggplot(aes(x=manning_proportion_cut3, y=satistfaction_rank, fill=bonus_pay_cut3, color=bonus_pay_cut3)) +
+  ggplot(aes(x=manning_proportion_cut3, y=satisfaction_rank, fill=bonus_pay_cut3, color=bonus_pay_cut3)) +
   geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA) +
   stat_summary(fun.y="mean", geom="point", position = position_dodge(width=.75), shape=23, size=10, fill="white", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
   geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), size=2, shape=1, na.rm=T) +
@@ -476,18 +476,18 @@ ds %>%
   # theme(legend.position="none") +
   labs(x=NULL) #y="Satisfaction"
 
-  # summary(lm(satistfaction_rank ~ 1 + manning_proportion_cut3 * bonus_pay_cut3, data=ds))
-  summary(lm(satistfaction_rank ~ 1 + manning_proportion_cut3 + bonus_pay_cut3, data=ds))
+  # summary(lm(satisfaction_rank ~ 1 + manning_proportion_cut3 * bonus_pay_cut3, data=ds))
+  summary(lm(satisfaction_rank ~ 1 + manning_proportion_cut3 + bonus_pay_cut3, data=ds))
 
   cat("No interaction between manning_proportion_cut3 & bonus_pay_cut3")
   anova(
-    lm(satistfaction_rank ~ 1 + manning_proportion_cut3 * bonus_pay_cut3, data=ds),
-    lm(satistfaction_rank ~ 1 + manning_proportion_cut3 + bonus_pay_cut3, data=ds)
-    # lm(satistfaction_rank ~ 1 + manning_proportion * bonus_pay, data=ds),
-    # lm(satistfaction_rank ~ 1 + manning_proportion + bonus_pay, data=ds)
+    lm(satisfaction_rank ~ 1 + manning_proportion_cut3 * bonus_pay_cut3, data=ds),
+    lm(satisfaction_rank ~ 1 + manning_proportion_cut3 + bonus_pay_cut3, data=ds)
+    # lm(satisfaction_rank ~ 1 + manning_proportion * bonus_pay, data=ds),
+    # lm(satisfaction_rank ~ 1 + manning_proportion + bonus_pay, data=ds)
   )
 
-  #ggplot(aes(x=manning_proportion, y=satistfaction_rank, fill=bonus_pay_cut4, color=bonus_pay_cut4)) +
+  #ggplot(aes(x=manning_proportion, y=satisfaction_rank, fill=bonus_pay_cut4, color=bonus_pay_cut4)) +
   # geom_smooth(method="loess", span=2, alpha=.2, na.rm=T) +
   # # geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA) +
   # # stat_summary(fun.y="mean", geom="point", shape=23, size=10, fill="white", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
@@ -495,8 +495,8 @@ ds %>%
   # geom_point(position=position_jitter(w = 0.3, h = .2), size=2, shape=1, na.rm=T) +
   # theme_report
 
-# summary(lm(satistfaction_rank ~ 1 + billet_current * critical_war, data=ds))
-summary(lm(satistfaction_rank ~ 1 + billet_current + critical_war, data=ds))
+# summary(lm(satisfaction_rank ~ 1 + billet_current * critical_war, data=ds))
+summary(lm(satisfaction_rank ~ 1 + billet_current + critical_war, data=ds))
 
 # # ---- model-results-table  -----------------------------------------------
 #

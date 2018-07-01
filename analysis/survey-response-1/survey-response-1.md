@@ -69,12 +69,12 @@ Relationships between Outcomes
 ============================================
 
 
-                             satistfaction_rank   transparency_rank   favoritism_rank   assignment_current_choice
---------------------------  -------------------  ------------------  ----------------  --------------------------
-satistfaction_rank                    1.0000000           0.7711209         0.4859620                  -0.5189457
-transparency_rank                     0.7711209           1.0000000         0.4877154                  -0.4053583
-favoritism_rank                       0.4859620           0.4877154         1.0000000                  -0.3245715
-assignment_current_choice            -0.5189457          -0.4053583        -0.3245715                   1.0000000
+                             satisfaction_rank   transparency_rank   favoritism_rank   assignment_current_choice
+--------------------------  ------------------  ------------------  ----------------  --------------------------
+satisfaction_rank                    1.0000000           0.7711209         0.4859620                  -0.5189457
+transparency_rank                    0.7711209           1.0000000         0.4877154                  -0.4053583
+favoritism_rank                      0.4859620           0.4877154         1.0000000                  -0.3245715
+assignment_current_choice           -0.5189457          -0.4053583        -0.3245715                   1.0000000
 
 ![](figure-png/outcome-correlations-1.png)<!-- -->![](figure-png/outcome-correlations-2.png)<!-- -->
 
@@ -87,7 +87,7 @@ By Rank
 
 
 ```
-### satistfaction_rank
+### satisfaction_rank
 ```
 
 ![](figure-png/by-rank-1.png)<!-- -->
@@ -95,7 +95,7 @@ By Rank
 ```
 
 Call:
-lm(formula = satistfaction_rank ~ 1 + officer_rate_f, data = ds)
+lm(formula = satisfaction_rank ~ 1 + officer_rate_f, data = ds)
 
 Residuals:
     Min      1Q  Median      3Q     Max 
@@ -204,7 +204,7 @@ By Specialty Type
 
 
 ```
-### satistfaction_rank
+### satisfaction_rank
 ```
 
 ![](figure-png/by-specialty-type-1.png)<!-- -->
@@ -212,7 +212,7 @@ By Specialty Type
 ```
 
 Call:
-lm(formula = satistfaction_rank ~ 1 + specialty_type, data = ds[ds$specialty_type != 
+lm(formula = satisfaction_rank ~ 1 + specialty_type, data = ds[ds$specialty_type != 
     "unknown", ])
 
 Residuals:
@@ -328,7 +328,7 @@ By Bonus Pay
 
 
 ```
-### satistfaction_rank
+### satisfaction_rank
 ```
 
 ![](figure-png/by-bonus-pay-1.png)<!-- -->
@@ -336,7 +336,7 @@ By Bonus Pay
 ```
 
 Call:
-lm(formula = satistfaction_rank ~ 1 + bonus_pay_cut4, data = ds)
+lm(formula = satisfaction_rank ~ 1 + bonus_pay_cut4, data = ds)
 
 Residuals:
     Min      1Q  Median      3Q     Max 
@@ -445,7 +445,7 @@ By Assignment Current Choice
 
 
 ```
-### satistfaction_rank
+### satisfaction_rank
 ```
 
 ![](figure-png/by-assignment-current-choice-1.png)<!-- -->
@@ -453,7 +453,7 @@ By Assignment Current Choice
 ```
 
 Call:
-lm(formula = satistfaction_rank ~ 1 + assignment_current_choice, 
+lm(formula = satisfaction_rank ~ 1 + assignment_current_choice, 
     data = ds)
 
 Residuals:
@@ -531,7 +531,7 @@ By Year
 
 
 ```
-### satistfaction_rank
+### satisfaction_rank
 ```
 
 ![](figure-png/by-year-1.png)<!-- -->
@@ -542,7 +542,7 @@ By Survey Lag
 
 
 ```
-### satistfaction_rank
+### satisfaction_rank
 ```
 
 ![](figure-png/by-survey_lag-1.png)<!-- -->
@@ -572,7 +572,7 @@ By Billet Current
 ```
 
 Call:
-lm(formula = satistfaction_rank ~ 1 + billet_current, data = ds)
+lm(formula = satisfaction_rank ~ 1 + billet_current, data = ds)
 
 Residuals:
     Min      1Q  Median      3Q     Max 
@@ -602,8 +602,7 @@ By Geographic Preference
 ```
 
 Call:
-lm(formula = satistfaction_rank ~ 1 + geographic_preference, 
-    data = ds)
+lm(formula = satisfaction_rank ~ 1 + geographic_preference, data = ds)
 
 Residuals:
     Min      1Q  Median      3Q     Max 
@@ -639,7 +638,7 @@ By Rank and Specialty Type
 
 
 ```
-### satistfaction_rank
+### satisfaction_rank
 ```
 
 ![](figure-png/by-rank-and-specialty-type-1.png)<!-- -->
@@ -647,7 +646,7 @@ By Rank and Specialty Type
 ```
 
 Call:
-lm(formula = satistfaction_rank ~ 1 + officer_rate_f * specialty_type, 
+lm(formula = satisfaction_rank ~ 1 + officer_rate_f * specialty_type, 
     data = ds[ds$specialty_type != "unknown", ])
 
 Residuals:
@@ -686,7 +685,7 @@ F-statistic: 7.124 on 17 and 848 DF,  p-value: < 2.2e-16
 ```
 
 Call:
-lm(formula = satistfaction_rank ~ 1 + officer_rate_f + specialty_type, 
+lm(formula = satisfaction_rank ~ 1 + officer_rate_f + specialty_type, 
     data = ds[ds$specialty_type != "unknown", ])
 
 Residuals:
@@ -810,7 +809,7 @@ By Rank and Assignment Current Choice
 
 
 ```
-### satistfaction_rank
+### satisfaction_rank
 ```
 
 ![](figure-png/by-rank-and-assignment-current-choice-1.png)<!-- -->
@@ -818,7 +817,7 @@ By Rank and Assignment Current Choice
 ```
 
 Call:
-lm(formula = satistfaction_rank ~ 1 + officer_rate_f + assignment_current_choice, 
+lm(formula = satisfaction_rank ~ 1 + officer_rate_f + assignment_current_choice, 
     data = ds)
 
 Residuals:
@@ -842,7 +841,7 @@ F-statistic:  82.8 on 4 and 754 DF,  p-value: < 2.2e-16
 ```
 
 Call:
-lm(formula = satistfaction_rank ~ 1 + officer_rate_f * assignment_current_choice, 
+lm(formula = satisfaction_rank ~ 1 + officer_rate_f * assignment_current_choice, 
     data = ds)
 
 Residuals:
@@ -869,8 +868,8 @@ F-statistic: 47.28 on 7 and 751 DF,  p-value: < 2.2e-16
 ```
 Analysis of Variance Table
 
-Model 1: satistfaction_rank ~ 1 + officer_rate_f + assignment_current_choice
-Model 2: satistfaction_rank ~ 1 + officer_rate_f * assignment_current_choice
+Model 1: satisfaction_rank ~ 1 + officer_rate_f + assignment_current_choice
+Model 2: satisfaction_rank ~ 1 + officer_rate_f * assignment_current_choice
   Res.Df    RSS Df Sum of Sq      F Pr(>F)
 1    754 828.44                           
 2    751 827.64  3   0.80396 0.2432 0.8662
@@ -947,7 +946,7 @@ By Rank and Bonus Pay
 
 
 ```
-### satistfaction_rank
+### satisfaction_rank
 ```
 
 ![](figure-png/by-rank-and-bonus_pay-1.png)<!-- -->
@@ -955,7 +954,7 @@ By Rank and Bonus Pay
 ```
 
 Call:
-lm(formula = satistfaction_rank ~ 1 + officer_rate_f + bonus_pay, 
+lm(formula = satisfaction_rank ~ 1 + officer_rate_f + bonus_pay, 
     data = ds)
 
 Residuals:
@@ -979,7 +978,7 @@ F-statistic: 16.79 on 4 and 865 DF,  p-value: 2.919e-13
 ```
 
 Call:
-lm(formula = satistfaction_rank ~ 1 + officer_rate_f * bonus_pay, 
+lm(formula = satisfaction_rank ~ 1 + officer_rate_f * bonus_pay, 
     data = ds)
 
 Residuals:
@@ -1006,8 +1005,8 @@ F-statistic: 11.19 on 7 and 862 DF,  p-value: 1.323e-13
 ```
 Analysis of Variance Table
 
-Model 1: satistfaction_rank ~ 1 + officer_rate_f + bonus_pay
-Model 2: satistfaction_rank ~ 1 + officer_rate_f * bonus_pay
+Model 1: satisfaction_rank ~ 1 + officer_rate_f + bonus_pay
+Model 2: satisfaction_rank ~ 1 + officer_rate_f * bonus_pay
   Res.Df    RSS Df Sum of Sq      F  Pr(>F)
 1    865 1488.7                            
 2    862 1470.7  3    18.052 3.5268 0.01461
@@ -1085,7 +1084,7 @@ By Billet Current and Critical War
 
 
 ```
-### satistfaction_rank
+### satisfaction_rank
 ```
 
 ![](figure-png/by-billet_current-and-critical_war-1.png)<!-- -->
@@ -1093,7 +1092,7 @@ By Billet Current and Critical War
 ```
 
 Call:
-lm(formula = satistfaction_rank ~ 1 + billet_current + critical_war, 
+lm(formula = satisfaction_rank ~ 1 + billet_current + critical_war, 
     data = ds)
 
 Residuals:
@@ -1122,7 +1121,7 @@ By Bonus_pay and Manning_proportion
 
 
 ```
-### satistfaction_rank
+### satisfaction_rank
 ```
 
 ![](figure-png/by-bonus_pay-and-manning_proportion-1.png)<!-- -->
@@ -1130,7 +1129,7 @@ By Bonus_pay and Manning_proportion
 ```
 
 Call:
-lm(formula = satistfaction_rank ~ 1 + manning_proportion_cut3 + 
+lm(formula = satisfaction_rank ~ 1 + manning_proportion_cut3 + 
     bonus_pay_cut3, data = ds)
 
 Residuals:
@@ -1158,8 +1157,8 @@ No interaction between manning_proportion_cut3 & bonus_pay_cut3
 ```
 Analysis of Variance Table
 
-Model 1: satistfaction_rank ~ 1 + manning_proportion_cut3 * bonus_pay_cut3
-Model 2: satistfaction_rank ~ 1 + manning_proportion_cut3 + bonus_pay_cut3
+Model 1: satisfaction_rank ~ 1 + manning_proportion_cut3 * bonus_pay_cut3
+Model 2: satisfaction_rank ~ 1 + manning_proportion_cut3 + bonus_pay_cut3
   Res.Df    RSS Df Sum of Sq      F Pr(>F)
 1    863 1499.7                           
 2    867 1507.9 -4   -8.1779 1.1765 0.3197
@@ -1168,7 +1167,7 @@ Model 2: satistfaction_rank ~ 1 + manning_proportion_cut3 + bonus_pay_cut3
 ```
 
 Call:
-lm(formula = satistfaction_rank ~ 1 + billet_current + critical_war, 
+lm(formula = satisfaction_rank ~ 1 + billet_current + critical_war, 
     data = ds)
 
 Residuals:
@@ -1279,4 +1278,4 @@ Packages -----------------------------------------------------------------------
 
 
 
-Report rendered by wibeasley at 2018-06-30, 22:37 -0500 in 57 seconds.
+Report rendered by wibeasley at 2018-06-30, 22:42 -0500 in 55 seconds.
