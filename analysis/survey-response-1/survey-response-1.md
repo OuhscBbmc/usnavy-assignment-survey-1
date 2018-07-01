@@ -104,7 +104,7 @@ By Rank
 
 ### satisfaction_rank
 
-![](figure-png/by-rank-1.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-rank-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -181,7 +181,7 @@ By Rank
 </table>
 ### transparency_rank
 
-![](figure-png/by-rank-2.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-rank-2.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ transparency_rank 1 + officer_rate_f </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -258,7 +258,7 @@ By Rank
 </table>
 ### favoritism_rank
 
-![](figure-png/by-rank-3.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-rank-3.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ favoritism_rank 1 + officer_rate_f </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -335,7 +335,7 @@ By Rank
 </table>
 ### assignment_current_choice
 
-![](figure-png/by-rank-4.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-rank-4.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ assignment_current_choice 1 + officer_rate_f </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -416,7 +416,7 @@ By Specialty Type
 
 ### satisfaction_rank
 
-![](figure-png/by-specialty-type-1.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-specialty-type-1.png)<!-- --><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ satisfaction_rank 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -500,7 +500,7 @@ By Specialty Type
 </table>
 ### transparency_rank
 
-![](figure-png/by-specialty-type-2.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-specialty-type-2.png)<!-- --><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ transparency_rank 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -584,7 +584,7 @@ By Specialty Type
 </table>
 ### favoritism_rank
 
-![](figure-png/by-specialty-type-3.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-specialty-type-3.png)<!-- --><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ favoritism_rank 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -668,7 +668,7 @@ By Specialty Type
 </table>
 ### assignment_current_choice
 
-![](figure-png/by-specialty-type-4.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-specialty-type-4.png)<!-- --><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ assignment_current_choice 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -756,7 +756,7 @@ By Bonus Pay
 
 ### satisfaction_rank
 
-![](figure-png/by-bonus-pay-1.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-bonus-pay-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + bonus_pay_cut4 </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -833,7 +833,7 @@ By Bonus Pay
 </table>
 ### transparency_rank
 
-![](figure-png/by-bonus-pay-2.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-bonus-pay-2.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ transparency_rank 1 + bonus_pay_cut4 </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -910,7 +910,7 @@ By Bonus Pay
 </table>
 ### favoritism_rank
 
-![](figure-png/by-bonus-pay-3.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-bonus-pay-3.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ favoritism_rank 1 + bonus_pay_cut4 </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -987,7 +987,7 @@ By Bonus Pay
 </table>
 ### assignment_current_choice
 
-![](figure-png/by-bonus-pay-4.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-bonus-pay-4.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ assignment_current_choice 1 + bonus_pay_cut4 </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -1068,7 +1068,7 @@ By Assignment Current Choice
 
 ### satisfaction_rank
 
-![](figure-png/by-assignment-current-choice-1.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-assignment-current-choice-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + assignment_current_choice </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -1131,7 +1131,7 @@ By Assignment Current Choice
 </table>
 ### transparency_rank
 
-![](figure-png/by-assignment-current-choice-2.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-assignment-current-choice-2.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ transparency_rank 1 + assignment_current_choice </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -1194,7 +1194,7 @@ By Assignment Current Choice
 </table>
 ### favoritism_rank
 
-![](figure-png/by-assignment-current-choice-3.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-assignment-current-choice-3.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ favoritism_rank 1 + assignment_current_choice </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -1289,7 +1289,7 @@ By Crtical War
 By Billet Current
 -----------------------------------
 
-![](figure-png/by-billet_current-1.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-billet_current-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -1389,7 +1389,7 @@ By Billet Current
 By Geographic Preference
 -----------------------------------
 
-![](figure-png/by-geographic_preference-1.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-geographic_preference-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + geographic_preference </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -1518,7 +1518,7 @@ By Rank and Specialty Type
 
 ### satisfaction_rank
 
-![](figure-png/by-rank-and-specialty-type-1.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-rank-and-specialty-type-1.png)<!-- --><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f * specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -1691,7 +1691,7 @@ By Rank and Specialty Type
   </tr>
 </tbody>
 </table>
-<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -1796,7 +1796,7 @@ By Rank and Specialty Type
 </table>
 TODO: examine if the interaction term significantly improves fit.### transparency_rank
 
-![](figure-png/by-rank-and-specialty-type-2.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-rank-and-specialty-type-2.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ transparency_rank 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -1887,7 +1887,7 @@ TODO: examine if the interaction term significantly improves fit.### transparenc
 </table>
 ### favoritism_rank
 
-![](figure-png/by-rank-and-specialty-type-3.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-rank-and-specialty-type-3.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ favoritism_rank 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -1978,7 +1978,7 @@ TODO: examine if the interaction term significantly improves fit.### transparenc
 </table>
 ### assignment_current_choice
 
-![](figure-png/by-rank-and-specialty-type-4.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-rank-and-specialty-type-4.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ assignment_current_choice 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -2073,7 +2073,7 @@ By Rank and Assignment Current Choice
 
 ### satisfaction_rank
 
-![](figure-png/by-rank-and-assignment-current-choice-1.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-rank-and-assignment-current-choice-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f + assignment_current_choice </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -2155,7 +2155,7 @@ By Rank and Assignment Current Choice
   </tr>
 </tbody>
 </table>
-<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f * assignment_current_choice </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -2267,7 +2267,7 @@ Model 2: satisfaction_rank ~ 1 + officer_rate_f * assignment_current_choice
 2    751 827.64  3   0.80396 0.2432 0.8662
 ### transparency_rank
 
-![](figure-png/by-rank-and-assignment-current-choice-2.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-rank-and-assignment-current-choice-2.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ transparency_rank 1 + officer_rate_f * assignment_current_choice </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -2372,7 +2372,7 @@ Model 2: satisfaction_rank ~ 1 + officer_rate_f * assignment_current_choice
 </table>
 ### favoritism_rank
 
-![](figure-png/by-rank-and-assignment-current-choice-3.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-rank-and-assignment-current-choice-3.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ favoritism_rank 1 + officer_rate_f * assignment_current_choice </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -2481,7 +2481,7 @@ By Rank and Bonus Pay
 
 ### satisfaction_rank
 
-![](figure-png/by-rank-and-bonus_pay-1.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-rank-and-bonus_pay-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f + bonus_pay </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -2563,7 +2563,7 @@ By Rank and Bonus Pay
   </tr>
 </tbody>
 </table>
-<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f * bonus_pay </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -2675,7 +2675,7 @@ Model 2: satisfaction_rank ~ 1 + officer_rate_f * bonus_pay
 2    862 1470.7  3    18.052 3.5268 0.01461
 ### transparency_rank
 
-![](figure-png/by-rank-and-bonus_pay-2.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-rank-and-bonus_pay-2.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ transparency_rank 1 + officer_rate_f * bonus_pay </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -2780,7 +2780,7 @@ Model 2: satisfaction_rank ~ 1 + officer_rate_f * bonus_pay
 </table>
 ### favoritism_rank
 
-![](figure-png/by-rank-and-bonus_pay-3.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-rank-and-bonus_pay-3.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ favoritism_rank 1 + officer_rate_f * bonus_pay </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -2890,7 +2890,7 @@ By Billet Current and Critical War
 
 ### satisfaction_rank
 
-![](figure-png/by-billet_current-and-critical_war-1.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-billet_current-and-critical_war-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current + critical_war </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -2999,7 +2999,7 @@ By Bonus_pay and Manning_proportion
 
 ### satisfaction_rank
 
-![](figure-png/by-bonus_pay-and-manning_proportion-1.png)<!-- --><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/by-bonus_pay-and-manning_proportion-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + manning_proportion_cut3 + bonus_pay_cut3 </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -3088,7 +3088,7 @@ Model 2: satisfaction_rank ~ 1 + manning_proportion_cut3 + bonus_pay_cut3
   Res.Df    RSS Df Sum of Sq      F Pr(>F)
 1    863 1499.7                           
 2    867 1507.9 -4   -8.1779 1.1765 0.3197
-<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current + critical_war </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -3293,4 +3293,4 @@ Packages -----------------------------------------------------------------------
 
 
 
-Report rendered by wibeasley at 2018-07-01, 00:31 -0500 in 39 seconds.
+Report rendered by wibeasley at 2018-07-01, 01:05 -0500 in 39 seconds.

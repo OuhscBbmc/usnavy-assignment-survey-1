@@ -29,6 +29,10 @@ theme_report <- theme_bw() +
   theme(axis.ticks            = element_line(colour="gray80"))
 
 prettify_lm <- function( x ) {
+  # cat("\n\n<code>", as.character(print(x$call)), "</code>\n\n")
+  cat("<br/>Data:<code>", as.character(x$call$data), "</code>")
+  cat("<br/>Formula:<code>", as.character(x$call$formula), "</code>")
+
   broom::tidy(x) %>%
     knitr::kable(
       format = "html"
@@ -230,6 +234,15 @@ ds %>%
 
 prettify_lm(lm(satisfaction_rank ~ 1 + officer_rate_f, data=ds))
 
+# a <- lm(satisfaction_rank ~ 1 + officer_rate_f, data=ds)
+#
+# cat("<code>", as.character(print(a$call)), "</code>")
+# cat("Data:<code>", as.character(a$call$data), "</code>")
+# cat("Formula:<code>", as.character(a$call$formula), "</code>")
+# # str(a)
+# names(a$call)
+# a$call$formula
+# names(a$call$formula)
 
 
 cat("### transparency_rank\n\n")
