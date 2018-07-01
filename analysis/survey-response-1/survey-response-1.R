@@ -76,8 +76,6 @@ TabularManifest::histogram_discrete(d_observed=ds, variable_name="specialty_type
 
 TabularManifest::histogram_continuous(d_observed=ds, variable_name="manning_proportion" , bin_width=.05, rounded_digits=2)
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="manning_proportion_cut3")
-TabularManifest::histogram_discrete(d_observed=ds, variable_name="critical_war")
-TabularManifest::histogram_discrete(d_observed=ds, variable_name="billet_current")
 
 
 # This helps start the code for graphing each variable.
