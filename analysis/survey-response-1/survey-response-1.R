@@ -165,15 +165,24 @@ ds %>%
   theme_light() +
   theme(axis.ticks = element_blank())
 
-
-
 ######## Outcome Relationships ##########################################################
-
 
 # ---- outcome-correlations ----------------------------------------------------
 outcomes <- c("satisfaction_rank", "transparency_rank", "favoritism_rank", "assignment_current_choice")
-knitr::kable(corHyp1 <- cor(ds[, outcomes], use = "pairwise.complete.obs"))
-corrplot::corrplot(corHyp1, method="ellipse", addCoef.col="gray30", tl.col="gray20", diag=F, order="AOE")
+cor_hyp_1 <- cor(ds[, outcomes], use = "pairwise.complete.obs")
+
+cor_hyp_1 %>%
+  # dplyr::mutate_all(~sprintf("%0.3f", .)) %>%
+  # purrr::map_df(~sprintf("%0.3f", .)) %>%
+  knitr::kable(
+    digits = 3,
+    col.names = gsub("_", " ", colnames(.))
+  )
+
+colnames(cor_hyp_1) <- gsub("_", "\n", colnames(cor_hyp_1))
+rownames(cor_hyp_1) <- gsub("_", "\n", colnames(cor_hyp_1))
+corrplot::corrplot(cor_hyp_1, method="ellipse", addCoef.col="gray30", tl.col="gray20", diag=F, order="AOE")
+
 pairs(x=ds[, outcomes], lower.panel=panel.smooth, upper.panel=panel.smooth)
 
 ######## Univariate ##########################################################

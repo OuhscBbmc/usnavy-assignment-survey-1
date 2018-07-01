@@ -86,12 +86,12 @@ Relationships between Outcomes
 ============================================
 
 
-                             satisfaction_rank   transparency_rank   favoritism_rank   assignment_current_choice
+                             satisfaction rank   transparency rank   favoritism rank   assignment current choice
 --------------------------  ------------------  ------------------  ----------------  --------------------------
-satisfaction_rank                    1.0000000           0.7711209         0.4859620                  -0.5189457
-transparency_rank                    0.7711209           1.0000000         0.4877154                  -0.4053583
-favoritism_rank                      0.4859620           0.4877154         1.0000000                  -0.3245715
-assignment_current_choice           -0.5189457          -0.4053583        -0.3245715                   1.0000000
+satisfaction_rank                        1.000               0.771             0.486                      -0.519
+transparency_rank                        0.771               1.000             0.488                      -0.405
+favoritism_rank                          0.486               0.488             1.000                      -0.325
+assignment_current_choice               -0.519              -0.405            -0.325                       1.000
 
 ![](figure-png/outcome-correlations-1.png)<!-- -->![](figure-png/outcome-correlations-2.png)<!-- -->
 
@@ -1295,4 +1295,4 @@ Packages -----------------------------------------------------------------------
 
 
 
-Report rendered by wibeasley at 2018-06-30, 23:23 -0500 in 57 seconds.
+Report rendered by wibeasley at 2018-06-30, 23:44 -0500 in 39 seconds.
