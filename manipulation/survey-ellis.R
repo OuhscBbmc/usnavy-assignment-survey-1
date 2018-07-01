@@ -132,7 +132,7 @@ ds <- ds %>%
     , "order_lead_time"             = "`For your last set of orders, how many months prior to your move were your orders released-? That is, how many months did you have to prepare for your PCS-`"
     , "order_lead_time_other"       = "`For your last set of orders, how many months prior to your move were your orders released-? That is, how many months did you have to prepare for your PCS- [Other]`"
     , "transparency_rank"           = "`On a scale of 1 to 5, with 1 being not transparent and 5 being very transparent, how would you rate the transparency of your detailing experience for your last set of orders-`"
-    , "satisfaction_rank"          = "`On a scale of 1 to 5, with 1 being unsatisfied and 5 being very satisfied, how would you rate your overall?detailing experience for your last set of orders-`"
+    , "satisfaction_rank"           = "`On a scale of 1 to 5, with 1 being unsatisfied and 5 being very satisfied, how would you rate your overall?detailing experience for your last set of orders-`"
     , "favoritism_rank"             = "`On a scale of 1 to 5, with 1 representing a significant problem and 5 being not a problem at all, how would you rank the problem of favoritism in the billet assignment process-`"
     , "assignment_current_choice"   = "`Describe your current assignment:`"
     , "geographic_preference"       = "`Please rank your desired billet locations with the top level being the most desireable, and the bottom being the least desireable. [Ranking 1]` "
@@ -148,7 +148,10 @@ ds <- ds %>%
   ) %>%
   dplyr::filter(include_exclude == "I") %>%
   dplyr::mutate(
-    primary_specialty   = dplyr::coalesce(primary_specialty, "Unknown")
+    primary_specialty           = dplyr::coalesce(primary_specialty        , "Unknown"),
+    geographic_preference       = dplyr::coalesce(geographic_preference    , "Unknown"),
+    homestead_length_in_years   = dplyr::coalesce(homestead_length_in_years, "Unknown"),
+    homestead_problem           = dplyr::coalesce(homestead_problem        , "Unknown")
   ) %>%
   dplyr::mutate(
     year_executed_order_other       = dplyr::recode(
@@ -278,9 +281,6 @@ ds <- ds %>%
       include.lowest  = TRUE,
       right           = FALSE
     )
-  ) %>%
-  dplyr::mutate(
-    geographic_preference = dplyr::coalesce(geographic_preference, "Unknown")
   )
 
 # table(ds$bonus_pay_cut3)
@@ -314,7 +314,7 @@ checkmate::assert_character(ds$geographic_preference     , any.missing=F , patte
 checkmate::assert_character(ds$career_path               , any.missing=T , pattern="^.{5,24}$"    )
 checkmate::assert_character(ds$doctor_as_detailer        , any.missing=T , pattern="^.{2,11}$"    )
 checkmate::assert_character(ds$homestead_length_in_years , any.missing=T , pattern="^.{5,19}$"    )
-checkmate::assert_character(ds$homestead_problem         , any.missing=T , pattern="^.{2,5}$"     )
+checkmate::assert_character(ds$homestead_problem         , any.missing=T , pattern="^.{2,10}$"     )
 checkmate::assert_character(ds$match_desirability        , any.missing=T , pattern="^.{5,57}$"    )
 checkmate::assert_character(ds$match_month               , any.missing=T , pattern="^.{5,6}$"     )
 checkmate::assert_character(ds$assignment_preference     , any.missing=T , pattern="^.{2,3}$"     )
@@ -340,9 +340,9 @@ columns_to_write <- c(
   "transparency_rank", "satisfaction_rank", "favoritism_rank", "assignment_current_choice",
   "bonus_pay", "bonus_pay_cut3", "bonus_pay_cut4",
   "critical_war", "specialty_type", "manning_proportion", "manning_proportion_cut3",
-  "geographic_preference"
+  "geographic_preference", "homestead_length_in_years", "homestead_problem"
   #"career_path", "doctor_as_detailer",
-  # "homestead_length_in_years", "homestead_problem", "match_desirability",
+  #  "match_desirability",
   # "match_month", "assignment_preference", "officer_rank_preference"
 )
 ds_slim <- ds %>%

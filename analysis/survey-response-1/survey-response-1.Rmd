@@ -81,21 +81,42 @@ Unanswered Questions
 Answered Questions
 -----------------------------------
 
-Graphs
+Histograms
 ============================================
 
-Marginals
-
-
+Univariate
 -----------------------------------
 
 ```{r marginals, echo=echo_chunks, message=message_chunks}
 ```
 
-Scatterplots
+Frequency: homestead_length_in_years by officer_rank
 -----------------------------------
 
-```{r scatterplots, echo=echo_chunks, message=message_chunks, fig.width=7}
+```{r freq-homestead_length_in_years-by-officer_rank, echo=echo_chunks, message=message_chunks}
+```
+
+Frequency: homestead_length_in_years by specialty_type
+-----------------------------------
+
+```{r freq-homestead_length_in_years-by-specialty_type, echo=echo_chunks, message=message_chunks}
+```
+Frequency: homestead_problem by officer_rank
+-----------------------------------
+
+```{r freq-homestead_problem-by-officer_rank, echo=echo_chunks, message=message_chunks}
+```
+
+Frequency: homestead_problem by specialty_type
+-----------------------------------
+
+```{r freq-homestead_problem-by-specialty_type, echo=echo_chunks, message=message_chunks}
+```
+
+Multivariate
+-----------------------------------
+
+```{r freq-homestead_length_in_years-by-officer_rank, echo=echo_chunks, message=message_chunks}
 ```
 
 Relationships between Outcomes

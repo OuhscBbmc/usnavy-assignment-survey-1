@@ -50,20 +50,37 @@ Unanswered Questions
 Answered Questions
 -----------------------------------
 
-Graphs
+Histograms
 ============================================
 
-Marginals
-
-
+Univariate
 -----------------------------------
 
-![](figure-png/marginals-1.png)<!-- -->![](figure-png/marginals-2.png)<!-- -->![](figure-png/marginals-3.png)<!-- -->![](figure-png/marginals-4.png)<!-- -->![](figure-png/marginals-5.png)<!-- -->![](figure-png/marginals-6.png)<!-- -->![](figure-png/marginals-7.png)<!-- -->![](figure-png/marginals-8.png)<!-- -->![](figure-png/marginals-9.png)<!-- -->![](figure-png/marginals-10.png)<!-- -->![](figure-png/marginals-11.png)<!-- -->![](figure-png/marginals-12.png)<!-- -->![](figure-png/marginals-13.png)<!-- -->![](figure-png/marginals-14.png)<!-- -->![](figure-png/marginals-15.png)<!-- -->![](figure-png/marginals-16.png)<!-- -->![](figure-png/marginals-17.png)<!-- -->![](figure-png/marginals-18.png)<!-- -->![](figure-png/marginals-19.png)<!-- -->
+![](figure-png/marginals-1.png)<!-- -->![](figure-png/marginals-2.png)<!-- -->![](figure-png/marginals-3.png)<!-- -->![](figure-png/marginals-4.png)<!-- -->![](figure-png/marginals-5.png)<!-- -->![](figure-png/marginals-6.png)<!-- -->![](figure-png/marginals-7.png)<!-- -->![](figure-png/marginals-8.png)<!-- -->![](figure-png/marginals-9.png)<!-- -->![](figure-png/marginals-10.png)<!-- -->![](figure-png/marginals-11.png)<!-- -->![](figure-png/marginals-12.png)<!-- -->![](figure-png/marginals-13.png)<!-- -->![](figure-png/marginals-14.png)<!-- -->![](figure-png/marginals-15.png)<!-- -->![](figure-png/marginals-16.png)<!-- -->![](figure-png/marginals-17.png)<!-- -->![](figure-png/marginals-18.png)<!-- -->![](figure-png/marginals-19.png)<!-- -->![](figure-png/marginals-20.png)<!-- -->![](figure-png/marginals-21.png)<!-- -->
 
-Scatterplots
+Frequency: homestead_length_in_years by officer_rank
 -----------------------------------
 
+![](figure-png/freq-homestead_length_in_years-by-officer_rank-1.png)<!-- -->
 
+Frequency: homestead_length_in_years by specialty_type
+-----------------------------------
+
+![](figure-png/freq-homestead_length_in_years-by-specialty_type-1.png)<!-- -->
+Frequency: homestead_problem by officer_rank
+-----------------------------------
+
+![](figure-png/freq-homestead_problem-by-officer_rank-1.png)<!-- -->
+
+Frequency: homestead_problem by specialty_type
+-----------------------------------
+
+![](figure-png/freq-homestead_problem-by-specialty_type-1.png)<!-- -->
+
+Multivariate
+-----------------------------------
+
+![](figure-png/freq-homestead_length_in_years-by-officer_rank-1.png)<!-- -->
 
 Relationships between Outcomes
 ============================================
@@ -1278,4 +1295,4 @@ Packages -----------------------------------------------------------------------
 
 
 
-Report rendered by wibeasley at 2018-06-30, 22:42 -0500 in 55 seconds.
+Report rendered by wibeasley at 2018-06-30, 23:23 -0500 in 57 seconds.

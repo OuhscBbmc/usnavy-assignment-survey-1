@@ -78,6 +78,8 @@ TabularManifest::histogram_continuous(d_observed=ds, variable_name="manning_prop
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="manning_proportion_cut3")
 
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="geographic_preference")
+TabularManifest::histogram_discrete(d_observed=ds, variable_name="homestead_length_in_years")
+TabularManifest::histogram_discrete(d_observed=ds, variable_name="homestead_problem")
 
 
 # This helps start the code for graphing each variable.
@@ -87,6 +89,83 @@ TabularManifest::histogram_discrete(d_observed=ds, variable_name="geographic_pre
 # for(column in colnames(ds)) {
 #   cat('TabularManifest::histogram_discrete(ds, variable_name="', column,'")\n', sep="")
 # }
+
+
+# ---- freq-homestead_length_in_years-by-officer_rank ------------------------------------------------------------
+set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
+ds %>%
+  dplyr::filter(officer_rank != "Unknown") %>%
+  dplyr::count(homestead_length_in_years, officer_rank) %>%
+  dplyr::group_by(officer_rank) %>%
+  dplyr::mutate(
+    proportion   = n / sum(n)
+  ) %>%
+  dplyr::ungroup() %>%
+  ggplot(aes(x=homestead_length_in_years, y=proportion, group=officer_rank, color=officer_rank, fill=officer_rank)) +
+  geom_line(size=2) +
+  geom_area(position=position_identity(), alpha=.3) +
+  scale_y_continuous(labels=scales::percent_format()) +
+  theme_light() +
+  theme(axis.ticks = element_blank()) #+
+
+# ---- freq-homestead_length_in_years-by-specialty_type ------------------------------------------------------------
+set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
+ds %>%
+  dplyr::filter(specialty_type != "unknown") %>%
+  dplyr::count(homestead_length_in_years, specialty_type) %>%
+  dplyr::group_by(specialty_type) %>%
+  dplyr::mutate(
+    proportion   = n / sum(n)
+  ) %>%
+  dplyr::ungroup() %>%
+  ggplot(aes(x=homestead_length_in_years, y=proportion, group=specialty_type, color=specialty_type, fill=specialty_type)) +
+  geom_line(size=2) +
+  geom_area(position=position_identity(), alpha=.3) +
+  scale_y_continuous(labels=scales::percent_format()) +
+  theme_light() +
+  theme(axis.ticks = element_blank())
+
+
+# ---- freq-homestead_problem-by-officer_rank ------------------------------------------------------------
+set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
+# ds %>%
+#   dplyr::filter(officer_rank != "Unknown") %>%
+#   dplyr::count(officer_rank)
+
+ds %>%
+  dplyr::filter(officer_rank != "Unknown") %>%
+  dplyr::count(homestead_problem, officer_rank) %>%
+  dplyr::group_by(officer_rank) %>%
+  dplyr::mutate(
+    proportion   = n / sum(n)
+  ) %>%
+  dplyr::ungroup() %>%
+  ggplot(aes(x=homestead_problem, y=proportion, group=officer_rank, color=officer_rank, fill=officer_rank)) +
+  geom_line(size=2) +
+  geom_area(position=position_identity(), alpha=.3) +
+  scale_y_continuous(labels=scales::percent_format()) +
+  theme_light() +
+  theme(axis.ticks = element_blank()) #+
+
+# ---- freq-homestead_problem-by-specialty_type ------------------------------------------------------------
+set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
+ds %>%
+  dplyr::filter(homestead_problem != "Unknown") %>%
+  dplyr::filter(specialty_type != "unknown") %>%
+  dplyr::count(homestead_problem, specialty_type) %>%
+  dplyr::group_by(specialty_type) %>%
+  dplyr::mutate(
+    proportion   = n / sum(n)
+  ) %>%
+  dplyr::ungroup() %>%
+  ggplot(aes(x=homestead_problem, y=proportion, group=specialty_type, color=specialty_type, fill=specialty_type)) +
+  geom_line(size=2) +
+  geom_area(position=position_identity(), alpha=.3) +
+  scale_y_continuous(labels=scales::percent_format()) +
+  theme_light() +
+  theme(axis.ticks = element_blank())
+
+
 
 ######## Outcome Relationships ##########################################################
 
@@ -322,6 +401,7 @@ ggplot(ds, aes(x=geographic_preference, y=satisfaction_rank, color=geographic_pr
 
 # forcats::fct_reorder(ds$billet_current, ds$satisfaction_rank, .fun=mean)
 summary(lm(satisfaction_rank ~ 1 + geographic_preference, data=ds))
+
 
 
 
