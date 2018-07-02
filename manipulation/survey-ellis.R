@@ -151,7 +151,18 @@ ds <- ds %>%
     primary_specialty           = dplyr::coalesce(primary_specialty        , "Unknown"),
     geographic_preference       = dplyr::coalesce(geographic_preference    , "Unknown"),
     homestead_length_in_years   = dplyr::coalesce(homestead_length_in_years, "Unknown"),
-    homestead_problem           = dplyr::coalesce(homestead_problem        , "Unknown")
+    homestead_problem           = dplyr::coalesce(homestead_problem        , "Unknown"),
+
+    doctor_as_detailer          = factor(dplyr::coalesce(doctor_as_detailer, "Unknown"), levels=c("Yes", "No", "Do not care", "Other", "Unknown")),
+    career_path                 = dplyr::coalesce(career_path              , "Unknown"),
+    # match_desirability          = dplyr::coalesce(match_desirability       , "Unknown")
+    match_desirability          = dplyr::recode_factor(
+      match_desirability,
+      "Something similar to the National Residency Match Program" = "match",
+      "Status Quo: Detailer and Specialty Leader decide"          = "status_quo",
+      "Other"                                                     = "other/unknown",
+      .missing                                                    = "other/unknown"
+    )
   ) %>%
   dplyr::mutate(
     year_executed_order_other       = dplyr::recode(
@@ -234,9 +245,52 @@ ds <- ds %>%
     assignment_priority                = dplyr::recode(assignment_priority  , "Yes"=TRUE, "No"=FALSE, .missing=as.logical(NA_integer_)),
     officer_rank_priority              = dplyr::recode(officer_rank_priority, "Yes"=TRUE, "No"=FALSE, .missing=as.logical(NA_integer_))
   ) %>%
+  dplyr::mutate(
+    order_lead_time_preferred_cut3 = dplyr::recode_factor(
+      match_month,
+      "Jun-17"   = "< 2 months",    #This didn't actually appear in the dataset.  I'm doing it for balance w/ the `order_lead_time` variable
+
+      "Mar-17"   = "2-4 months",
+
+      "Jun-16"   = "> 4 months",
+      "Jul-16"   = "> 4 months",
+      "Aug-16"   = "> 4 months",
+      "Sep-16"   = "> 4 months",
+      "Oct-16"   = "> 4 months",
+      "Nov-16"   = "> 4 months",
+      "Dec-16"   = "> 4 months",
+      "Jan-17"   = "> 4 months",
+      "Feb-17"   = "> 4 months",
+      "17-Feb"   = "> 4 months",
+      "Other"    = "Other/Unknown",
+      .missing   = "Other/Unknown"
+    )
+  ) %>%
+  dplyr::mutate(
+    order_lead_time_preferred_months = dplyr::recode(
+      match_month,
+      "Jun-16"   = 13L,
+      "Jul-16"   = 12L,
+      "Aug-16"   = 11L,
+      "Sep-16"   = 10L,
+      "Oct-16"   =  9L,
+      "Nov-16"   =  8L,
+      "Dec-16"   =  7L,
+      "Jan-17"   =  6L,
+      "Feb-17"   =  5L,
+      "17-Feb"   =  4L,
+      "Mar-17"   =  4L,
+      "Jun-17"   =  1L,    #This didn't actually appear in the dataset.  I'm doing it for balance w/ the `order_lead_time` variable
+      .default   = NA_integer_,
+      .missing   = NA_integer_
+    )
+  ) %>%
   dplyr::select(-include_exclude, -year_executed_order_other, -order_lead_time_other)
 
-summary(ds$survey_lag)
+table(ds$order_lead_time_preferred_months, useNA="always")
+table(ds$order_lead_time_preferred_cut3, useNA="always")
+table(ds$order_lead_time, useNA="always")
+dput(unique(ds$match_month))
 # as.Date(ISOdate(ds$year_executed_order, 7, 15))
 # strptime(ds$year_executed_order, "%Y-07-15")
 
@@ -248,7 +302,7 @@ summary(ds$survey_lag)
 # table(ds$year_executed_order, ds$year_executed_order_other)
 # table(dplyr::na_if(ds$officer_rank, "Unknown"), useNA = "always")
 # table(dplyr::coalesce(ds$officer_rank, "Unknown"), useNA = "always")
-table(ds$officer_rank, useNA = "always")
+# table(ds$officer_rank, useNA = "always")
 # table(ds$order_lead_time_other)
 # class(ds$order_lead_time)
 # class(ds$order_lead_time_other)
@@ -316,10 +370,10 @@ checkmate::assert_integer(  ds$favoritism_rank           , any.missing=T , lower
 checkmate::assert_integer(  ds$assignment_current_choice , any.missing=T , lower=1, upper=5       )
 checkmate::assert_character(ds$geographic_preference     , any.missing=F , pattern="^.{6,38}$"    )
 checkmate::assert_character(ds$career_path               , any.missing=T , pattern="^.{5,24}$"    )
-checkmate::assert_character(ds$doctor_as_detailer        , any.missing=T , pattern="^.{2,11}$"    )
+checkmate::assert_factor(   ds$doctor_as_detailer        , any.missing=T                          )
 checkmate::assert_character(ds$homestead_length_in_years , any.missing=T , pattern="^.{5,19}$"    )
 checkmate::assert_character(ds$homestead_problem         , any.missing=T , pattern="^.{2,10}$"     )
-checkmate::assert_character(ds$match_desirability        , any.missing=T , pattern="^.{5,57}$"    )
+checkmate::assert_factor(   ds$match_desirability        , any.missing=T                          )
 checkmate::assert_character(ds$match_month               , any.missing=T , pattern="^.{5,6}$"     )
 
 checkmate::assert_logical(  ds$assignment_priority          , any.missing=T )
@@ -348,10 +402,12 @@ columns_to_write <- c(
   "bonus_pay", "bonus_pay_cut3", "bonus_pay_cut4",
   "critical_war", "specialty_type", "manning_proportion", "manning_proportion_cut3",
   "geographic_preference", "homestead_length_in_years", "homestead_problem",
-  #"career_path", "doctor_as_detailer",
-  #  "match_desirability",
+  "career_path",
+  "doctor_as_detailer",
+  "match_desirability",
   # "match_month",
-  "assignment_priority", "assignment_priority_pretty", "officer_rank_priority", "officer_rank_priority_pretty"
+  "assignment_priority", "assignment_priority_pretty", "officer_rank_priority", "officer_rank_priority_pretty",
+  "order_lead_time_preferred_cut3", "order_lead_time_preferred_months"
 )
 ds_slim <- ds %>%
   # dplyr::slice(1:100) %>%

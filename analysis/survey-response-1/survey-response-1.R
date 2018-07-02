@@ -109,6 +109,15 @@ TabularManifest::histogram_discrete(d_observed=ds, variable_name="homestead_prob
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="assignment_priority_pretty")
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="officer_rank_priority_pretty")
 
+TabularManifest::histogram_discrete(d_observed=ds, variable_name="career_path", main_title="Which career path do you want to pursue in the next 5-10?")
+TabularManifest::histogram_discrete(d_observed=ds, variable_name="doctor_as_detailer", main_title="Would you approve if the detailer position was filled by a non-physician?")
+TabularManifest::histogram_discrete(d_observed=ds, variable_name="match_desirability", main_title="Which would you prefer for your military billet assignment?")
+
+TabularManifest::histogram_discrete(d_observed=ds, variable_name="order_lead_time_preferred_cut3", main_title="How many months' warning do you want,\nassuming your were scheduled to execute new orders in July of 2017...?")
+TabularManifest::histogram_discrete(d_observed=ds, variable_name="order_lead_time_preferred_months" , main_title="How many months' warning do you want,\nassuming your were scheduled to execute new orders in July of 2017...?")
+TabularManifest::histogram_continuous(d_observed=ds, variable_name="order_lead_time_preferred_months" , bin_width=1, rounded_digits=2, main_title="How many months' warning do you want,\nassuming your were scheduled to execute new orders in July of 2017...?")
+
+
 # This helps start the code for graphing each variable.
 #   - Make sure you change it to `histogram_continuous()` for the appropriate variables.
 #   - Make sure the graph doesn't reveal PHI.
