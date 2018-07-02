@@ -55,7 +55,7 @@ Histograms
 
 Univariate
 -----------------------------------
-![](figure-png/marginals-1.png)<!-- -->![](figure-png/marginals-2.png)<!-- -->![](figure-png/marginals-3.png)<!-- -->![](figure-png/marginals-4.png)<!-- -->![](figure-png/marginals-5.png)<!-- -->![](figure-png/marginals-6.png)<!-- -->![](figure-png/marginals-7.png)<!-- -->![](figure-png/marginals-8.png)<!-- -->![](figure-png/marginals-9.png)<!-- -->![](figure-png/marginals-10.png)<!-- -->![](figure-png/marginals-11.png)<!-- -->![](figure-png/marginals-12.png)<!-- -->![](figure-png/marginals-13.png)<!-- -->![](figure-png/marginals-14.png)<!-- -->![](figure-png/marginals-15.png)<!-- -->![](figure-png/marginals-16.png)<!-- -->![](figure-png/marginals-17.png)<!-- -->![](figure-png/marginals-18.png)<!-- -->![](figure-png/marginals-19.png)<!-- -->![](figure-png/marginals-20.png)<!-- -->![](figure-png/marginals-21.png)<!-- -->
+![](figure-png/marginals-1.png)<!-- -->![](figure-png/marginals-2.png)<!-- -->![](figure-png/marginals-3.png)<!-- -->![](figure-png/marginals-4.png)<!-- -->![](figure-png/marginals-5.png)<!-- -->![](figure-png/marginals-6.png)<!-- -->![](figure-png/marginals-7.png)<!-- -->![](figure-png/marginals-8.png)<!-- -->![](figure-png/marginals-9.png)<!-- -->![](figure-png/marginals-10.png)<!-- -->![](figure-png/marginals-11.png)<!-- -->![](figure-png/marginals-12.png)<!-- -->![](figure-png/marginals-13.png)<!-- -->![](figure-png/marginals-14.png)<!-- -->![](figure-png/marginals-15.png)<!-- -->![](figure-png/marginals-16.png)<!-- -->![](figure-png/marginals-17.png)<!-- -->![](figure-png/marginals-18.png)<!-- -->![](figure-png/marginals-19.png)<!-- -->![](figure-png/marginals-20.png)<!-- -->![](figure-png/marginals-21.png)<!-- -->![](figure-png/marginals-22.png)<!-- -->![](figure-png/marginals-23.png)<!-- -->
 
 Frequency: homestead_length_in_years by officer_rank
 -----------------------------------
@@ -73,19 +73,209 @@ Frequency: homestead_problem by specialty_type
 -----------------------------------
 ![](figure-png/freq-homestead_problem-by-specialty_type-1.png)<!-- -->
 
+Frequency: Assignment_priority by Specialty_type
+-----------------------------------
+![](figure-png/freq-assignment_priority-by-specialty_type-1.png)<!-- -->
+
+```
+<br/>Data:<code> ds </code><br/>Formula:<code> ~ assignment_priority 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> term </th>
+   <th style="text-align:right;"> estimate </th>
+   <th style="text-align:right;"> std.error </th>
+   <th style="text-align:right;"> statistic </th>
+   <th style="text-align:right;"> p.value </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> (Intercept) </td>
+   <td style="text-align:right;"> 1.3588117 </td>
+   <td style="text-align:right;"> 0.1230616 </td>
+   <td style="text-align:right;"> 11.0417196 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> specialty_typesurgical </td>
+   <td style="text-align:right;"> 0.2241929 </td>
+   <td style="text-align:right;"> 0.2599057 </td>
+   <td style="text-align:right;"> 0.8625933 </td>
+   <td style="text-align:right;"> 0.3883611 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> specialty_typefamily </td>
+   <td style="text-align:right;"> 0.6780702 </td>
+   <td style="text-align:right;"> 0.2791850 </td>
+   <td style="text-align:right;"> 2.4287484 </td>
+   <td style="text-align:right;"> 0.0151510 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> specialty_typeoperational </td>
+   <td style="text-align:right;"> 0.6290626 </td>
+   <td style="text-align:right;"> 0.3589444 </td>
+   <td style="text-align:right;"> 1.7525349 </td>
+   <td style="text-align:right;"> 0.0796819 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> specialty_typeresident </td>
+   <td style="text-align:right;"> -0.1060487 </td>
+   <td style="text-align:right;"> 0.4193546 </td>
+   <td style="text-align:right;"> -0.2528856 </td>
+   <td style="text-align:right;"> 0.8003566 </td>
+  </tr>
+</tbody>
+</table>
+
+
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> null.deviance </th>
+   <th style="text-align:right;"> df.null </th>
+   <th style="text-align:right;"> logLik </th>
+   <th style="text-align:right;"> AIC </th>
+   <th style="text-align:right;"> BIC </th>
+   <th style="text-align:right;"> deviance </th>
+   <th style="text-align:right;"> df.residual </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 754.3152 </td>
+   <td style="text-align:right;"> 815 </td>
+   <td style="text-align:right;"> -372.6514 </td>
+   <td style="text-align:right;"> 755.3028 </td>
+   <td style="text-align:right;"> 778.8249 </td>
+   <td style="text-align:right;"> 745.3028 </td>
+   <td style="text-align:right;"> 811 </td>
+  </tr>
+</tbody>
+</table>
+```
+
+Frequency: officer_rank_priority by Officer_rank
+-----------------------------------
+![](figure-png/freq-officer_rank_priority-by-officer_rank-1.png)<!-- -->
+
+```
+<br/>Data:<code> ds </code><br/>Formula:<code> ~ officer_rank_priority 1 + officer_rank </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> term </th>
+   <th style="text-align:right;"> estimate </th>
+   <th style="text-align:right;"> std.error </th>
+   <th style="text-align:right;"> statistic </th>
+   <th style="text-align:right;"> p.value </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> (Intercept) </td>
+   <td style="text-align:right;"> 1.1526795 </td>
+   <td style="text-align:right;"> 0.1655664 </td>
+   <td style="text-align:right;"> 6.9620373 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> officer_rankLCDR </td>
+   <td style="text-align:right;"> -0.2043494 </td>
+   <td style="text-align:right;"> 0.2086735 </td>
+   <td style="text-align:right;"> -0.9792783 </td>
+   <td style="text-align:right;"> 0.3274425 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> officer_rankCDR </td>
+   <td style="text-align:right;"> 0.4159364 </td>
+   <td style="text-align:right;"> 0.2488695 </td>
+   <td style="text-align:right;"> 1.6713030 </td>
+   <td style="text-align:right;"> 0.0946618 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> officer_rankCAPT or Flag </td>
+   <td style="text-align:right;"> -0.3671590 </td>
+   <td style="text-align:right;"> 0.2727199 </td>
+   <td style="text-align:right;"> -1.3462860 </td>
+   <td style="text-align:right;"> 0.1782103 </td>
+  </tr>
+</tbody>
+</table>
+
+
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> null.deviance </th>
+   <th style="text-align:right;"> df.null </th>
+   <th style="text-align:right;"> logLik </th>
+   <th style="text-align:right;"> AIC </th>
+   <th style="text-align:right;"> BIC </th>
+   <th style="text-align:right;"> deviance </th>
+   <th style="text-align:right;"> df.residual </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 905.4486 </td>
+   <td style="text-align:right;"> 809 </td>
+   <td style="text-align:right;"> -447.4729 </td>
+   <td style="text-align:right;"> 902.9458 </td>
+   <td style="text-align:right;"> 921.7339 </td>
+   <td style="text-align:right;"> 894.9458 </td>
+   <td style="text-align:right;"> 806 </td>
+  </tr>
+</tbody>
+</table>
+```
+
+
 Multivariate
 -----------------------------------
 ![](figure-png/freq-homestead_length_in_years-by-officer_rank-1.png)<!-- -->
 
 Relationships between Outcomes
 ============================================
-
-                             satisfaction rank   transparency rank   favoritism rank   assignment current choice
---------------------------  ------------------  ------------------  ----------------  --------------------------
-satisfaction_rank                        1.000               0.771             0.486                      -0.519
-transparency_rank                        0.771               1.000             0.488                      -0.405
-favoritism_rank                          0.486               0.488             1.000                      -0.325
-assignment_current_choice               -0.519              -0.405            -0.325                       1.000
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:right;"> satisfaction rank </th>
+   <th style="text-align:right;"> transparency rank </th>
+   <th style="text-align:right;"> favoritism rank </th>
+   <th style="text-align:right;"> assignment current choice </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> satisfaction_rank </td>
+   <td style="text-align:right;"> 1.000 </td>
+   <td style="text-align:right;"> 0.771 </td>
+   <td style="text-align:right;"> 0.486 </td>
+   <td style="text-align:right;"> -0.519 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> transparency_rank </td>
+   <td style="text-align:right;"> 0.771 </td>
+   <td style="text-align:right;"> 1.000 </td>
+   <td style="text-align:right;"> 0.488 </td>
+   <td style="text-align:right;"> -0.405 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> favoritism_rank </td>
+   <td style="text-align:right;"> 0.486 </td>
+   <td style="text-align:right;"> 0.488 </td>
+   <td style="text-align:right;"> 1.000 </td>
+   <td style="text-align:right;"> -0.325 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> assignment_current_choice </td>
+   <td style="text-align:right;"> -0.519 </td>
+   <td style="text-align:right;"> -0.405 </td>
+   <td style="text-align:right;"> -0.325 </td>
+   <td style="text-align:right;"> 1.000 </td>
+  </tr>
+</tbody>
+</table>
 
 ![](figure-png/outcome-correlations-1.png)<!-- -->![](figure-png/outcome-correlations-2.png)<!-- -->
 
@@ -3181,14 +3371,14 @@ Session info -------------------------------------------------------------------
 ```
 
 ```
- setting  value                       
- version  R version 3.4.4 (2018-03-15)
- system   x86_64, linux-gnu           
- ui       X11                         
- language (EN)                        
- collate  en_US.UTF-8                 
- tz       America/Chicago             
- date     2018-07-01                  
+ setting  value                                      
+ version  R version 3.5.0 Patched (2018-05-14 r74725)
+ system   x86_64, mingw32                            
+ ui       RTerm                                      
+ language (EN)                                       
+ collate  English_United States.1252                 
+ tz       America/Chicago                            
+ date     2018-07-01                                 
 ```
 
 ```
@@ -3197,74 +3387,74 @@ Packages -----------------------------------------------------------------------
 
 ```
  package         * version     date       source                                  
- assertthat        0.2.0       2017-04-11 cran (@0.2.0)                           
- backports         1.1.2       2017-12-13 cran (@1.1.2)                           
- base            * 3.4.4       2018-04-21 local                                   
- bindr             0.1.1       2018-03-13 CRAN (R 3.4.3)                          
- bindrcpp        * 0.2.2       2018-03-29 CRAN (R 3.4.3)                          
- broom             0.4.4       2018-03-29 CRAN (R 3.4.3)                          
- colorspace        1.3-2       2016-12-14 CRAN (R 3.4.3)                          
- compiler          3.4.4       2018-04-21 local                                   
- corrplot          0.84        2017-10-16 CRAN (R 3.4.3)                          
- datasets        * 3.4.4       2018-04-21 local                                   
- devtools          1.13.5      2018-02-18 CRAN (R 3.4.3)                          
- digest            0.6.15      2018-01-28 CRAN (R 3.4.3)                          
- dplyr             0.7.5       2018-05-19 CRAN (R 3.4.4)                          
- evaluate          0.10.1      2017-06-24 CRAN (R 3.4.3)                          
- foreign           0.8-69      2017-06-21 CRAN (R 3.4.2)                          
- ggplot2         * 2.2.1       2016-12-30 CRAN (R 3.4.4)                          
- glue              1.2.0       2017-10-29 cran (@1.2.0)                           
- graphics        * 3.4.4       2018-04-21 local                                   
- grDevices       * 3.4.4       2018-04-21 local                                   
- grid              3.4.4       2018-04-21 local                                   
- gtable            0.2.0       2016-02-26 CRAN (R 3.4.3)                          
- highr             0.7         2018-06-09 CRAN (R 3.4.4)                          
- hms               0.4.2.9000  2018-05-26 Github (tidyverse/hms@14e74ab)          
- htmltools         0.3.6       2017-04-28 CRAN (R 3.4.3)                          
- httr              1.3.1       2017-08-20 CRAN (R 3.4.3)                          
- kableExtra        0.9.0       2018-05-21 CRAN (R 3.4.4)                          
- knitr           * 1.20        2018-02-20 CRAN (R 3.4.3)                          
- labeling          0.3         2014-08-23 CRAN (R 3.4.3)                          
- lattice           0.20-35     2017-03-25 CRAN (R 3.4.2)                          
- lazyeval          0.2.1       2017-10-29 CRAN (R 3.4.3)                          
- magrittr        * 1.5         2014-11-22 cran (@1.5)                             
- memoise           1.1.0       2017-04-21 CRAN (R 3.4.3)                          
- methods         * 3.4.4       2018-04-21 local                                   
- mnormt            1.5-5       2016-10-15 CRAN (R 3.4.3)                          
- munsell           0.5.0       2018-06-12 CRAN (R 3.4.4)                          
- nlme              3.1-137     2018-04-07 CRAN (R 3.4.2)                          
- parallel          3.4.4       2018-04-21 local                                   
- pillar            1.2.3       2018-05-25 CRAN (R 3.4.4)                          
- pkgconfig         2.0.1       2017-03-21 cran (@2.0.1)                           
- plyr              1.8.4       2016-06-08 CRAN (R 3.4.3)                          
- psych             1.8.4       2018-05-06 CRAN (R 3.4.4)                          
- purrr             0.2.5       2018-05-29 CRAN (R 3.4.4)                          
- R6                2.2.2       2017-06-17 CRAN (R 3.4.3)                          
- Rcpp              0.12.17     2018-05-18 CRAN (R 3.4.4)                          
- readr             1.2.0       2018-05-26 Github (tidyverse/readr@d6d622b)        
- reshape2          1.4.3       2017-12-11 CRAN (R 3.4.3)                          
- rlang             0.2.1       2018-05-30 CRAN (R 3.4.4)                          
- rmarkdown         1.10        2018-06-11 CRAN (R 3.4.4)                          
- rprojroot         1.3-2       2018-01-03 CRAN (R 3.4.3)                          
- rstudioapi        0.7         2017-09-07 CRAN (R 3.4.3)                          
- rvest             0.3.2       2016-06-17 CRAN (R 3.4.3)                          
- scales            0.5.0.9000  2018-03-29 Github (hadley/scales@d767915)          
- stats           * 3.4.4       2018-04-21 local                                   
- stringi           1.2.3       2018-06-12 CRAN (R 3.4.4)                          
- stringr           1.3.1       2018-05-10 CRAN (R 3.4.4)                          
- TabularManifest   0.1-16.9003 2018-03-29 Github (Melinae/TabularManifest@c2bdddb)
- tibble            1.4.2       2018-01-22 CRAN (R 3.4.3)                          
- tidyr             0.8.1       2018-05-18 CRAN (R 3.4.4)                          
- tidyselect        0.2.4       2018-02-26 CRAN (R 3.4.3)                          
- tools             3.4.4       2018-04-21 local                                   
- utils           * 3.4.4       2018-04-21 local                                   
- viridisLite       0.3.0       2018-02-01 CRAN (R 3.4.3)                          
- withr             2.1.2       2018-03-29 Github (jimhester/withr@79d7b0d)        
- xml2              1.2.0       2018-01-24 CRAN (R 3.4.3)                          
- yaml              2.1.19      2018-05-01 CRAN (R 3.4.4)                          
+ assertthat        0.2.0       2017-04-11 CRAN (R 3.5.0)                          
+ backports         1.1.2       2017-12-13 CRAN (R 3.5.0)                          
+ base            * 3.5.0       2018-05-15 local                                   
+ bindr             0.1.1       2018-03-13 CRAN (R 3.5.0)                          
+ bindrcpp        * 0.2.2       2018-03-29 CRAN (R 3.5.0)                          
+ broom             0.4.4       2018-03-29 CRAN (R 3.5.0)                          
+ colorspace        1.3-2       2016-12-14 CRAN (R 3.5.0)                          
+ compiler          3.5.0       2018-05-15 local                                   
+ corrplot          0.84        2017-10-16 CRAN (R 3.5.0)                          
+ datasets        * 3.5.0       2018-05-15 local                                   
+ devtools          1.13.6      2018-06-27 CRAN (R 3.5.0)                          
+ digest            0.6.15      2018-01-28 CRAN (R 3.5.0)                          
+ dplyr             0.7.5       2018-05-19 CRAN (R 3.5.0)                          
+ evaluate          0.10.1      2017-06-24 CRAN (R 3.5.0)                          
+ foreign           0.8-70      2017-11-28 CRAN (R 3.5.0)                          
+ ggplot2         * 2.2.1       2016-12-30 CRAN (R 3.5.0)                          
+ glue              1.2.0       2017-10-29 CRAN (R 3.5.0)                          
+ graphics        * 3.5.0       2018-05-15 local                                   
+ grDevices       * 3.5.0       2018-05-15 local                                   
+ grid              3.5.0       2018-05-15 local                                   
+ gtable            0.2.0       2016-02-26 CRAN (R 3.5.0)                          
+ highr             0.7         2018-06-09 CRAN (R 3.5.0)                          
+ hms               0.4.2.9000  2018-06-28 Github (tidyverse/hms@2e0a39a)          
+ htmltools         0.3.6       2017-04-28 CRAN (R 3.5.0)                          
+ httr              1.3.1       2017-08-20 CRAN (R 3.5.0)                          
+ kableExtra        0.9.0       2018-05-21 CRAN (R 3.5.0)                          
+ knitr           * 1.20        2018-02-20 CRAN (R 3.5.0)                          
+ labeling          0.3         2014-08-23 CRAN (R 3.5.0)                          
+ lattice           0.20-35     2017-03-25 CRAN (R 3.5.0)                          
+ lazyeval          0.2.1       2017-10-29 CRAN (R 3.5.0)                          
+ magrittr        * 1.5         2014-11-22 CRAN (R 3.5.0)                          
+ memoise           1.1.0       2017-04-21 CRAN (R 3.5.0)                          
+ methods         * 3.5.0       2018-05-15 local                                   
+ mnormt            1.5-5       2016-10-15 CRAN (R 3.5.0)                          
+ munsell           0.5.0       2018-06-12 CRAN (R 3.5.0)                          
+ nlme              3.1-137     2018-04-07 CRAN (R 3.5.0)                          
+ parallel          3.5.0       2018-05-15 local                                   
+ pillar            1.2.3       2018-05-25 CRAN (R 3.5.0)                          
+ pkgconfig         2.0.1       2017-03-21 CRAN (R 3.5.0)                          
+ plyr              1.8.4       2016-06-08 CRAN (R 3.5.0)                          
+ psych             1.8.4       2018-05-06 CRAN (R 3.5.0)                          
+ purrr             0.2.5       2018-05-29 CRAN (R 3.5.0)                          
+ R6                2.2.2       2017-06-17 CRAN (R 3.5.0)                          
+ Rcpp              0.12.17     2018-05-18 CRAN (R 3.5.0)                          
+ readr             1.2.0       2018-06-28 Github (tidyverse/readr@05890c3)        
+ reshape2          1.4.3       2017-12-11 CRAN (R 3.5.0)                          
+ rlang             0.2.1       2018-05-30 CRAN (R 3.5.0)                          
+ rmarkdown         1.10        2018-06-11 CRAN (R 3.5.0)                          
+ rprojroot         1.3-2       2018-01-03 CRAN (R 3.5.0)                          
+ rstudioapi        0.7         2017-09-07 CRAN (R 3.5.0)                          
+ rvest             0.3.2       2016-06-17 CRAN (R 3.5.0)                          
+ scales            0.5.0       2017-08-24 CRAN (R 3.5.0)                          
+ stats           * 3.5.0       2018-05-15 local                                   
+ stringi           1.2.3       2018-06-12 CRAN (R 3.5.0)                          
+ stringr           1.3.1       2018-05-10 CRAN (R 3.5.0)                          
+ TabularManifest   0.1-16.9003 2018-06-28 Github (Melinae/TabularManifest@c2bdddb)
+ tibble            1.4.2       2018-01-22 CRAN (R 3.5.0)                          
+ tidyr             0.8.1       2018-05-18 CRAN (R 3.5.0)                          
+ tidyselect        0.2.4       2018-02-26 CRAN (R 3.5.0)                          
+ tools             3.5.0       2018-05-15 local                                   
+ utils           * 3.5.0       2018-05-15 local                                   
+ viridisLite       0.3.0       2018-02-01 CRAN (R 3.5.0)                          
+ withr             2.1.2       2018-03-15 CRAN (R 3.5.0)                          
+ xml2              1.2.0       2018-01-24 CRAN (R 3.5.0)                          
+ yaml              2.1.19      2018-05-01 CRAN (R 3.5.0)                          
 ```
 </details>
 
 
 
-Report rendered by wibeasley at 2018-07-01, 01:14 -0500 in 40 seconds.
+Report rendered by Will at 2018-07-01, 20:22 -0500 in 51 seconds.

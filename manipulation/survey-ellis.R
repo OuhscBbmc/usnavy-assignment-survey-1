@@ -143,8 +143,8 @@ ds <- ds %>%
     , "homestead_problem"           = "`Do you think that there is a problem in the Medical Corps with members not moving-? That is, are there too many physicians who get to stay in one place too long-`"
     , "match_desirability"          = "`Civilian medical residency positions are assigned using the National Residency Match Program where members submit a preference list, residency directors submit a preference list, and a computer algorithm optimizes a match.? This is different from the current Navy Medical Corps billet assignment process where the detailer and specialty leader take input from medical officers and then make a decision.? Of these two options, which would you prefer for your military billet assignment-`"
     , "match_month"                 = "`The later the match day, the more information one has before creating their rank list.? The earlier the match day, the sooner one can have certainty and prepare.? Assuming your were scheduled to?execute new orders in July of 2017, what month would you want the match to occur in-`"
-    , "assignment_preference"       = "`Do you think members who are coming from operational or OCONUS assignments should be given preference in billet assignment-`"
-    , "officer_rank_preference"     = "`Do you think members with more seniority (as defined by time in service or rank)?should be given preference in billet assignment-`"
+    , "assignment_priority"         = "`Do you think members who are coming from operational or OCONUS assignments should be given preference in billet assignment-`"
+    , "officer_rank_priority"       = "`Do you think members with more seniority (as defined by time in service or rank)?should be given preference in billet assignment-`"
   ) %>%
   dplyr::filter(include_exclude == "I") %>%
   dplyr::mutate(
@@ -171,7 +171,7 @@ ds <- ds %>%
   ) %>%
   dplyr::mutate(
     officer_rank                    = dplyr::coalesce(officer_rank, "Unknown"),
-    officer_rank                    = factor(officer_rank, levels=c("LT", "LCDR", "CDR", "CAPT or Flag", "Unknown"), ordered = T),
+    officer_rank                    = factor(officer_rank, levels=c("LT", "LCDR", "CDR", "CAPT or Flag", "Unknown"), ordered = F),
     officer_rate                    = dplyr::recode(
       officer_rank,
       "LT"                = 3L,
@@ -227,12 +227,18 @@ ds <- ds %>%
       )
     )
   ) %>%
+  dplyr::mutate(
+    assignment_priority_pretty         = factor(dplyr::coalesce(assignment_priority      , "Unknown"), levels=c("Yes", "No", "Unknown")),
+    officer_rank_priority_pretty       = factor(dplyr::coalesce(officer_rank_priority    , "Unknown"), levels=c("Yes", "No", "Unknown")),
+
+    assignment_priority                = dplyr::recode(assignment_priority  , "Yes"=TRUE, "No"=FALSE, .missing=as.logical(NA_integer_)),
+    officer_rank_priority              = dplyr::recode(officer_rank_priority, "Yes"=TRUE, "No"=FALSE, .missing=as.logical(NA_integer_))
+  ) %>%
   dplyr::select(-include_exclude, -year_executed_order_other, -order_lead_time_other)
 
 summary(ds$survey_lag)
 # as.Date(ISOdate(ds$year_executed_order, 7, 15))
 # strptime(ds$year_executed_order, "%Y-07-15")
-
 
 # as.Date(ds$datetime_submitted)
 # strftime("9/20/16 11:17", "%m/%d/%y %H:%M")
@@ -248,8 +254,6 @@ table(ds$officer_rank, useNA = "always")
 # class(ds$order_lead_time_other)
 
 # ---- join-with-specialty -----------------------------------------------------
-
-
 ds <- ds %>%
   dplyr::left_join(
     ds_lu_specialty,
@@ -317,8 +321,11 @@ checkmate::assert_character(ds$homestead_length_in_years , any.missing=T , patte
 checkmate::assert_character(ds$homestead_problem         , any.missing=T , pattern="^.{2,10}$"     )
 checkmate::assert_character(ds$match_desirability        , any.missing=T , pattern="^.{5,57}$"    )
 checkmate::assert_character(ds$match_month               , any.missing=T , pattern="^.{5,6}$"     )
-checkmate::assert_character(ds$assignment_preference     , any.missing=T , pattern="^.{2,3}$"     )
-checkmate::assert_character(ds$officer_rank_preference   , any.missing=T , pattern="^.{2,3}$"     )
+
+checkmate::assert_logical(  ds$assignment_priority          , any.missing=T )
+checkmate::assert_factor(   ds$assignment_priority_pretty   , any.missing=F)# , pattern="^(Yes|No|Unknown)$"   )
+checkmate::assert_logical(  ds$officer_rank_priority        , any.missing=T )
+checkmate::assert_factor(   ds$officer_rank_priority_pretty , any.missing=F )#, pattern="^(Yes|No|Unknown)$"   )
 
 checkmate::assert_numeric(  ds$bonus_pay                 , any.missing=F , lower=0, upper=36000   )
 checkmate::assert_factor(   ds$bonus_pay_cut3            , any.missing=F                          )
@@ -327,7 +334,7 @@ checkmate::assert_factor(   ds$bonus_pay_cut4            , any.missing=F        
 checkmate::assert_character(ds$critical_war              , any.missing=F                          )
 checkmate::assert_factor(   ds$specialty_type            , any.missing=F)# , pattern="^.{6,11}$"    )
 checkmate::assert_numeric(  ds$manning_proportion        , any.missing=F , lower=0, upper=3      )
-checkmate::assert_factor(   ds$manning_proportion_cut3   , any.missing=F                                                            )
+checkmate::assert_factor(   ds$manning_proportion_cut3   , any.missing=F                          )
 
 
 # ---- specify-columns-to-upload -----------------------------------------------
@@ -340,10 +347,11 @@ columns_to_write <- c(
   "transparency_rank", "satisfaction_rank", "favoritism_rank", "assignment_current_choice",
   "bonus_pay", "bonus_pay_cut3", "bonus_pay_cut4",
   "critical_war", "specialty_type", "manning_proportion", "manning_proportion_cut3",
-  "geographic_preference", "homestead_length_in_years", "homestead_problem"
+  "geographic_preference", "homestead_length_in_years", "homestead_problem",
   #"career_path", "doctor_as_detailer",
   #  "match_desirability",
-  # "match_month", "assignment_preference", "officer_rank_preference"
+  # "match_month",
+  "assignment_priority", "assignment_priority_pretty", "officer_rank_priority", "officer_rank_priority_pretty"
 )
 ds_slim <- ds %>%
   # dplyr::slice(1:100) %>%

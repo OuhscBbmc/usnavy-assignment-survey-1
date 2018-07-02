@@ -106,6 +106,9 @@ TabularManifest::histogram_discrete(d_observed=ds, variable_name="geographic_pre
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="homestead_length_in_years")
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="homestead_problem")
 
+TabularManifest::histogram_discrete(d_observed=ds, variable_name="assignment_priority_pretty")
+TabularManifest::histogram_discrete(d_observed=ds, variable_name="officer_rank_priority_pretty")
+
 # This helps start the code for graphing each variable.
 #   - Make sure you change it to `histogram_continuous()` for the appropriate variables.
 #   - Make sure the graph doesn't reveal PHI.
@@ -149,7 +152,6 @@ ds %>%
   theme_light() +
   theme(axis.ticks = element_blank())
 
-
 # ---- freq-homestead_problem-by-officer_rank ------------------------------------------------------------
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
 # ds %>%
@@ -188,6 +190,67 @@ ds %>%
   scale_y_continuous(labels=scales::percent_format()) +
   theme_light() +
   theme(axis.ticks = element_blank())
+
+
+
+# ---- freq-assignment_priority-by-specialty_type ------------------------------------------------------------
+set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
+ds %>%
+  dplyr::filter(specialty_type != "unknown") %>%
+  dplyr::filter(assignment_priority_pretty != "Unknown") %>%
+  dplyr::count(assignment_priority_pretty, specialty_type) %>%
+  dplyr::group_by(specialty_type) %>%
+  dplyr::mutate(
+    proportion   = n / sum(n)
+  ) %>%
+  dplyr::ungroup() %>%
+  dplyr::filter(assignment_priority_pretty == "Yes") %>%
+  ggplot(aes(x=specialty_type, y=proportion,  color=specialty_type, fill=specialty_type)) +
+  geom_bar(stat="identity", position=position_dodge(), alpha=.3) +
+  # geom_line(size=2) +
+  # geom_area(position=position_identity(), alpha=.3) +
+  scale_y_continuous(labels=scales::percent_format()) +
+  coord_flip() +
+  theme_light() +
+  theme(axis.ticks = element_blank()) +
+  theme(legend.position="none") +
+  labs(
+    title="Do you think members who are coming from\noperational or OCONUS assignments should be given\npreference in billet assignment?",
+    y = "Proportion who said 'Yes'"
+  )
+
+prettify_lm(glm(assignment_priority ~ 1 + specialty_type, data=ds, family=binomial(link='logit'), subset=specialty_type != "unknown"))
+
+# ---- freq-officer_rank_priority-by-officer_rank ------------------------------------------------------------
+set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
+ds %>%
+  dplyr::filter(officer_rank != "Unknown") %>%
+  dplyr::filter(officer_rank_priority_pretty != "Unknown") %>%
+  dplyr::count(officer_rank_priority_pretty, officer_rank) %>%
+  dplyr::group_by(officer_rank) %>%
+  dplyr::mutate(
+    proportion   = n / sum(n)
+  ) %>%
+  dplyr::ungroup() %>%
+  dplyr::filter(officer_rank_priority_pretty == "Yes") %>%
+  ggplot(aes(x=officer_rank, y=proportion,  color=officer_rank, fill=officer_rank)) +
+  geom_bar(stat="identity", position=position_dodge(), alpha=.3) +
+  # geom_line(size=2) +
+  # geom_area(position=position_identity(), alpha=.3) +
+  scale_y_continuous(labels=scales::percent_format()) +
+  coord_flip() +
+  theme_light() +
+  theme(axis.ticks = element_blank()) +
+  theme(legend.position="none") +
+  labs(
+    title="Do you think members with\nmore seniority (as defined by time in service or rank)\nshould be given preference in billet assignment?",
+    y = "Proportion who said 'Yes'"
+  )
+
+prettify_lm(glm(officer_rank_priority ~ 1 + officer_rank, data=ds, family=binomial(link='logit'), subset=officer_rank != "Unknown"))
+# summary(glm(officer_rank_priority ~ 1 + officer_rank, data=ds, family=binomial(link='logit'), subset=officer_rank != "Unknown"))
+# ds$officer_rank
+
 
 ######## Outcome Relationships ##########################################################
 

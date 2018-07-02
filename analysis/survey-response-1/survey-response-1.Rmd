@@ -109,6 +109,17 @@ Frequency: homestead_problem by specialty_type
 ```{r freq-homestead_problem-by-specialty_type, echo=echo_chunks, message=message_chunks}
 ```
 
+Frequency: Assignment_priority by Specialty_type
+-----------------------------------
+```{r freq-assignment_priority-by-specialty_type, echo=echo_chunks, message=message_chunks}
+```
+
+Frequency: Officer_rank_priority by Officer_rank
+-----------------------------------
+```{r freq-officer_rank_priority-by-officer_rank, echo=echo_chunks, message=message_chunks}
+```
+
+
 Multivariate
 -----------------------------------
 ```{r freq-homestead_length_in_years-by-officer_rank, echo=echo_chunks, message=message_chunks}
