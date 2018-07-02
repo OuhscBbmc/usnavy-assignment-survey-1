@@ -75,10 +75,7 @@ Frequency: homestead_problem by specialty_type
 
 Frequency: Assignment_priority by Specialty_type
 -----------------------------------
-![](figure-png/freq-assignment_priority-by-specialty_type-1.png)<!-- -->
-
-```
-<br/>Data:<code> ds </code><br/>Formula:<code> ~ assignment_priority 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/freq-assignment_priority-by-specialty_type-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ assignment_priority 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -152,14 +149,10 @@ Frequency: Assignment_priority by Specialty_type
   </tr>
 </tbody>
 </table>
-```
 
-Frequency: officer_rank_priority by Officer_rank
+Frequency: Officer_rank_priority by Officer_rank
 -----------------------------------
-![](figure-png/freq-officer_rank_priority-by-officer_rank-1.png)<!-- -->
-
-```
-<br/>Data:<code> ds </code><br/>Formula:<code> ~ officer_rank_priority 1 + officer_rank </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+![](figure-png/freq-officer_rank_priority-by-officer_rank-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ officer_rank_priority 1 + officer_rank </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -226,7 +219,6 @@ Frequency: officer_rank_priority by Officer_rank
   </tr>
 </tbody>
 </table>
-```
 
 
 Multivariate
@@ -3457,4 +3449,4 @@ Packages -----------------------------------------------------------------------
 
 
 
-Report rendered by Will at 2018-07-01, 20:22 -0500 in 51 seconds.
+Report rendered by Will at 2018-07-01, 20:25 -0500 in 36 seconds.

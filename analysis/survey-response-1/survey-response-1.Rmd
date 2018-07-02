@@ -111,12 +111,12 @@ Frequency: homestead_problem by specialty_type
 
 Frequency: Assignment_priority by Specialty_type
 -----------------------------------
-```{r freq-assignment_priority-by-specialty_type, echo=echo_chunks, message=message_chunks}
+```{r freq-assignment_priority-by-specialty_type, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
 
 Frequency: Officer_rank_priority by Officer_rank
 -----------------------------------
-```{r freq-officer_rank_priority-by-officer_rank, echo=echo_chunks, message=message_chunks}
+```{r freq-officer_rank_priority-by-officer_rank, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
 
 
