@@ -23,6 +23,8 @@ requireNamespace("OuhscMunge"   ) # remotes::install_github(repo="OuhscBbmc/Ouhs
 # Constant values that won't change.
 path_in                        <- "data-public/raw/survey-response.csv"
 path_in_lu_specialty           <- "data-public/raw/specialty-bonus-manning.csv"
+path_in_lu_manning             <- "data-public/derived/specialty-manning-by-rank.csv"
+
 path_out_csv                   <- "data-public/derived/survey-response.csv"
 path_out_rds                   <- "data-public/derived/survey-response.rds"
 
@@ -83,12 +85,19 @@ col_types_lu_specialty  <- readr::cols_only(
   specialty_type            = readr::col_character()
 )
 
+col_types_lu_manning  <- readr::cols_only(
+  specialty       = readr::col_character(),
+  # specialty_type  = readr::col_character(),
+  rate            = readr::col_integer(),
+  count           = readr::col_integer()
+)
 # ---- load-data ---------------------------------------------------------------
 # Read the CSVs
 # readr::spec_csv(path_in)
-# readr::spec_csv(path_in_lu_specialty)
+# readr::spec_csv(path_in_lu_manning)
 ds <- readr::read_csv(path_in   , col_types=col_types)
 ds_lu_specialty <- readr::read_csv(path_in_lu_specialty   , col_types=col_types_lu_specialty)
+ds_lu_manning   <- readr::read_csv(path_in_lu_manning     , col_types=col_types_lu_manning)
 rm(path_in, col_types)
 
 # ---- tweak-data --------------------------------------------------------------
@@ -115,6 +124,11 @@ ds_lu_specialty <- ds_lu_specialty %>%
   ) %>%
   dplyr::ungroup() %>%
   dplyr::select(-manning_proportion_2013, -manning_proportion_2014, -manning_proportion_2015, -manning_proportion_2016)
+
+ds_lu_manning <- ds_lu_manning %>%
+  dplyr::rename(
+    population_count   = count
+  )
 
 ds <- ds %>%
   dplyr::select_( #`select()` implicitly drops the other columns not mentioned.
@@ -313,6 +327,10 @@ ds <- ds %>%
     ds_lu_specialty,
     by = c("primary_specialty" = "specialty")
   ) %>%
+  dplyr::left_join(
+    ds_lu_manning,
+    by = c("primary_specialty" = "specialty", "officer_rate" = "rate")
+  ) %>%
   dplyr::mutate(
     bonus_pay_cut3 = cut(
       x               = bonus_pay,
@@ -390,6 +408,11 @@ checkmate::assert_factor(   ds$specialty_type            , any.missing=F)# , pat
 checkmate::assert_numeric(  ds$manning_proportion        , any.missing=F , lower=0, upper=3      )
 checkmate::assert_factor(   ds$manning_proportion_cut3   , any.missing=F                          )
 
+checkmate::assert_integer(  ds$population_count           , any.missing=T , lower=0, upper=600)
+
+
+ds2 <- ds %>%
+  dplyr::filter(is.na(population_count))
 
 # ---- specify-columns-to-upload -----------------------------------------------
 # dput(colnames(ds)) # Print colnames for line below.
@@ -407,7 +430,8 @@ columns_to_write <- c(
   "match_desirability",
   # "match_month",
   "assignment_priority", "assignment_priority_pretty", "officer_rank_priority", "officer_rank_priority_pretty",
-  "order_lead_time_preferred_cut3", "order_lead_time_preferred_months"
+  "order_lead_time_preferred_cut3", "order_lead_time_preferred_months",
+  "population_count"
 )
 ds_slim <- ds %>%
   # dplyr::slice(1:100) %>%

@@ -24,14 +24,14 @@ requireNamespace("OuhscMunge"   ) # remotes::install_github(repo="OuhscBbmc/Ouhs
 path_in                        <- "data-public/raw/specialty-manning-by-rank.csv"
 path_in_lu_specialty           <- "data-public/raw/specialty-bonus-manning.csv"
 path_out_csv                   <- "data-public/derived/specialty-manning-by-rank.csv"
-path_out_rds                   <- "data-public/derived/specialty-manning-by-rank.rds"
+# path_out_rds                   <- "data-public/derived/specialty-manning-by-rank.rds"
 
 col_types <- readr::cols_only( # readr::spec_csv(path_in)
   specialty  = readr::col_character(),
-  rank_6      = readr::col_integer(),
-  rank_5      = readr::col_integer(),
-  rank_4      = readr::col_integer(),
-  rank_3      = readr::col_integer()
+  rate_6      = readr::col_integer(),
+  rate_5      = readr::col_integer(),
+  rate_4      = readr::col_integer(),
+  rate_3      = readr::col_integer()
 )
 
 col_types_lu_specialty  <- readr::cols_only(
@@ -60,19 +60,19 @@ ds_lu_specialty <- ds_lu_specialty %>%
 
 ds <- ds %>%
   dplyr::select_( #`select()` implicitly drops the other columns not mentioned.
-    "specialty"               = "`specialty`"
-    , "rank_6"                = "`rank_6`"
-    , "rank_5"                = "`rank_5`"
-    , "rank_4"                = "`rank_4`"
-    , "rank_3"                = "`rank_3`"
+    "specialty"
+    , "rate_6"
+    , "rate_5"
+    , "rate_4"
+    , "rate_3"
   ) %>%
   tidyr::gather(
-    key   = rank,
+    key   = rate,
     value = count,
     -specialty
   ) %>%
   dplyr::mutate(
-    rank   = as.integer(sub("^rank_(\\d)$", "\\1", rank))
+    rate   = as.integer(sub("^rate_(\\d)$", "\\1", rate))
   ) %>%
   dplyr::left_join(ds_lu_specialty, by="specialty")
 
@@ -80,17 +80,17 @@ ds <- ds %>%
 # ---- inspect -----------------------------------------------------------------
 library(ggplot2)
 
-ggplot(ds, aes(x=rank, y=count, color=specialty)) +
+ggplot(ds, aes(x=rate, y=count, color=specialty)) +
   geom_line() +
   theme_light()
 
 ds %>%
-  dplyr::group_by(rank, specialty_type) %>%
+  dplyr::group_by(rate, specialty_type) %>%
   dplyr::summarize(
     count   = sum(count)
   ) %>%
   dplyr::ungroup() %>%
-  ggplot( aes(x=rank, y=count, color=specialty_type)) +
+  ggplot( aes(x=rate, y=count, color=specialty_type)) +
   geom_line() +
   theme_light()
 
@@ -99,13 +99,13 @@ ds %>%
 # Sniff out problems
 # OuhscMunge::verify_value_headstart(ds)
 checkmate::assert_character(ds$specialty      , any.missing=F , pattern="^.{6,45}$" )
-checkmate::assert_integer(  ds$rank           , any.missing=F , lower=3, upper=6    )
+checkmate::assert_integer(  ds$rate           , any.missing=F , lower=3, upper=6    )
 checkmate::assert_integer(  ds$count          , any.missing=F , lower=0, upper=578  )
 checkmate::assert_factor(   ds$specialty_type , any.missing=F                       )
 
 # ---- specify-columns-to-upload -----------------------------------------------
 # dput(colnames(ds)) # Print colnames for line below.
-columns_to_write <- c("specialty", "specialty_type", "rank", "count")
+columns_to_write <- c("specialty", "specialty_type", "rate", "count")
 ds_slim <- ds %>%
   # dplyr::slice(1:100) %>%
   dplyr::select(!!columns_to_write)
@@ -116,4 +116,4 @@ rm(columns_to_write)
 # ---- save-to-disk ------------------------------------------------------------
 # If there's no PHI, a rectangular CSV is usually adequate, and it's portable to other machines and software.
 readr::write_csv(ds_slim, path_out_csv)
-readr::write_rds(ds_slim, path_out_rds, compress="gz") # Save as a compressed R-binary file if it's large or has a lot of factors.
+# readr::write_rds(ds_slim, path_out_rds, compress="gz") # Save as a compressed R-binary file if it's large or has a lot of factors.
