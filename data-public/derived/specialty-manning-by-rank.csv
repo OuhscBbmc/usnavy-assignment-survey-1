@@ -1,153 +1,153 @@
-specialty,rank,count
-Aerospace Medicine (Residency Trained Flight),6,21
-Allergy/Immunology,6,2
-Anesthesiology,6,38
-Aviation Medicine (Flight Surgery GMO),6,4
-Cardiology (IM),6,7
-Cardiothoracic Surgery,6,4
-Dermatology,6,2
-Emergency Medicine,6,13
-Endocrinology (IM),6,2
-Family Medicine,6,40
-Gastroenterology (IM),6,4
-General Medical Officer,6,0
-General Surgery,6,25
-Heme/Onc (IM),6,2
-Infectious Disease (IM),6,7
-Internal Medicine (General),6,15
-Neonatology,6,1
-Nephrology (IM),6,2
-Neurology,6,2
-Neurosurgery,6,2
-OB/GYN,6,13
-Occupational Medicine,6,5
-Ophthalmology,6,9
-Orthopedic Surgery,6,11
-Otolaryngology,6,9
-Pathology,6,11
-Pediatrics,6,23
-Physical Medicine and Rehabilitation,6,1
-Plastic Surgery,6,3
-Preventive Medicine,6,13
-Psychiatry,6,17
-Pulmonary Critical Care (IM),6,8
-Radiation Oncology,6,0
-Radiology,6,13
-Resident,6,7
-Rheumatology (IM),6,2
-Undersea Medicine,6,33
-Urology,6,4
-Aerospace Medicine (Residency Trained Flight),5,23
-Allergy/Immunology,5,5
-Anesthesiology,5,70
-Aviation Medicine (Flight Surgery GMO),5,15
-Cardiology (IM),5,18
-Cardiothoracic Surgery,5,5
-Dermatology,5,8
-Emergency Medicine,5,40
-Endocrinology (IM),5,4
-Family Medicine,5,71
-Gastroenterology (IM),5,8
-General Medical Officer,5,3
-General Surgery,5,31
-Heme/Onc (IM),5,5
-Infectious Disease (IM),5,15
-Internal Medicine (General),5,24
-Neonatology,5,5
-Nephrology (IM),5,5
-Neurology,5,7
-Neurosurgery,5,5
-OB/GYN,5,25
-Occupational Medicine,5,11
-Ophthalmology,5,17
-Orthopedic Surgery,5,31
-Otolaryngology,5,17
-Pathology,5,17
-Pediatrics,5,31
-Physical Medicine and Rehabilitation,5,2
-Plastic Surgery,5,4
-Preventive Medicine,5,14
-Psychiatry,5,21
-Pulmonary Critical Care (IM),5,15
-Radiation Oncology,5,2
-Radiology,5,47
-Resident,5,37
-Rheumatology (IM),5,3
-Undersea Medicine,5,20
-Urology,5,11
-Aerospace Medicine (Residency Trained Flight),4,23
-Allergy/Immunology,4,3
-Anesthesiology,4,67
-Aviation Medicine (Flight Surgery GMO),4,100
-Cardiology (IM),4,12
-Cardiothoracic Surgery,4,2
-Dermatology,4,17
-Emergency Medicine,4,70
-Endocrinology (IM),4,5
-Family Medicine,4,109
-Gastroenterology (IM),4,11
-General Medical Officer,4,225
-General Surgery,4,70
-Heme/Onc (IM),4,6
-Infectious Disease (IM),4,15
-Internal Medicine (General),4,33
-Neonatology,4,7
-Nephrology (IM),4,4
-Neurology,4,8
-Neurosurgery,4,14
-OB/GYN,4,33
-Occupational Medicine,4,15
-Ophthalmology,4,13
-Orthopedic Surgery,4,42
-Otolaryngology,4,15
-Pathology,4,21
-Pediatrics,4,35
-Physical Medicine and Rehabilitation,4,3
-Plastic Surgery,4,3
-Preventive Medicine,4,16
-Psychiatry,4,37
-Pulmonary Critical Care (IM),4,8
-Radiation Oncology,4,4
-Radiology,4,62
-Resident,4,177
-Rheumatology (IM),4,2
-Undersea Medicine,4,23
-Urology,4,9
-Aerospace Medicine (Residency Trained Flight),3,0
-Allergy/Immunology,3,0
-Anesthesiology,3,35
-Aviation Medicine (Flight Surgery GMO),3,103
-Cardiology (IM),3,5
-Cardiothoracic Surgery,3,0
-Dermatology,3,5
-Emergency Medicine,3,40
-Endocrinology (IM),3,0
-Family Medicine,3,145
-Gastroenterology (IM),3,0
-General Medical Officer,3,366
-General Surgery,3,35
-Heme/Onc (IM),3,0
-Infectious Disease (IM),3,0
-Internal Medicine (General),3,43
-Neonatology,3,4
-Nephrology (IM),3,0
-Neurology,3,7
-Neurosurgery,3,0
-OB/GYN,3,45
-Occupational Medicine,3,7
-Ophthalmology,3,7
-Orthopedic Surgery,3,37
-Otolaryngology,3,11
-Pathology,3,12
-Pediatrics,3,51
-Physical Medicine and Rehabilitation,3,2
-Plastic Surgery,3,0
-Preventive Medicine,3,9
-Psychiatry,3,33
-Pulmonary Critical Care (IM),3,2
-Radiation Oncology,3,1
-Radiology,3,13
-Resident,3,578
-Rheumatology (IM),3,0
-Undersea Medicine,3,20
-Urology,3,8
+specialty,specialty_type,rank,count
+Aerospace Medicine (Residency Trained Flight),operational,6,21
+Allergy/Immunology,nonsurgical,6,2
+Anesthesiology,surgical,6,38
+Aviation Medicine (Flight Surgery GMO),operational,6,4
+Cardiology (IM),nonsurgical,6,7
+Cardiothoracic Surgery,surgical,6,4
+Dermatology,nonsurgical,6,2
+Emergency Medicine,nonsurgical,6,13
+Endocrinology (IM),nonsurgical,6,2
+Family Medicine,family,6,40
+Gastroenterology (IM),nonsurgical,6,4
+General Medical Officer,operational,6,0
+General Surgery,surgical,6,25
+Heme/Onc (IM),nonsurgical,6,2
+Infectious Disease (IM),nonsurgical,6,7
+Internal Medicine (General),nonsurgical,6,15
+Neonatology,nonsurgical,6,1
+Nephrology (IM),nonsurgical,6,2
+Neurology,nonsurgical,6,2
+Neurosurgery,surgical,6,2
+OB/GYN,surgical,6,13
+Occupational Medicine,nonsurgical,6,5
+Ophthalmology,surgical,6,9
+Orthopedic Surgery,surgical,6,11
+Otolaryngology,surgical,6,9
+Pathology,nonsurgical,6,11
+Pediatrics,nonsurgical,6,23
+Physical Medicine and Rehabilitation,nonsurgical,6,1
+Plastic Surgery,surgical,6,3
+Preventive Medicine,nonsurgical,6,13
+Psychiatry,nonsurgical,6,17
+Pulmonary Critical Care (IM),nonsurgical,6,8
+Radiation Oncology,nonsurgical,6,0
+Radiology,nonsurgical,6,13
+Resident,resident,6,7
+Rheumatology (IM),nonsurgical,6,2
+Undersea Medicine,operational,6,33
+Urology,surgical,6,4
+Aerospace Medicine (Residency Trained Flight),operational,5,23
+Allergy/Immunology,nonsurgical,5,5
+Anesthesiology,surgical,5,70
+Aviation Medicine (Flight Surgery GMO),operational,5,15
+Cardiology (IM),nonsurgical,5,18
+Cardiothoracic Surgery,surgical,5,5
+Dermatology,nonsurgical,5,8
+Emergency Medicine,nonsurgical,5,40
+Endocrinology (IM),nonsurgical,5,4
+Family Medicine,family,5,71
+Gastroenterology (IM),nonsurgical,5,8
+General Medical Officer,operational,5,3
+General Surgery,surgical,5,31
+Heme/Onc (IM),nonsurgical,5,5
+Infectious Disease (IM),nonsurgical,5,15
+Internal Medicine (General),nonsurgical,5,24
+Neonatology,nonsurgical,5,5
+Nephrology (IM),nonsurgical,5,5
+Neurology,nonsurgical,5,7
+Neurosurgery,surgical,5,5
+OB/GYN,surgical,5,25
+Occupational Medicine,nonsurgical,5,11
+Ophthalmology,surgical,5,17
+Orthopedic Surgery,surgical,5,31
+Otolaryngology,surgical,5,17
+Pathology,nonsurgical,5,17
+Pediatrics,nonsurgical,5,31
+Physical Medicine and Rehabilitation,nonsurgical,5,2
+Plastic Surgery,surgical,5,4
+Preventive Medicine,nonsurgical,5,14
+Psychiatry,nonsurgical,5,21
+Pulmonary Critical Care (IM),nonsurgical,5,15
+Radiation Oncology,nonsurgical,5,2
+Radiology,nonsurgical,5,47
+Resident,resident,5,37
+Rheumatology (IM),nonsurgical,5,3
+Undersea Medicine,operational,5,20
+Urology,surgical,5,11
+Aerospace Medicine (Residency Trained Flight),operational,4,23
+Allergy/Immunology,nonsurgical,4,3
+Anesthesiology,surgical,4,67
+Aviation Medicine (Flight Surgery GMO),operational,4,100
+Cardiology (IM),nonsurgical,4,12
+Cardiothoracic Surgery,surgical,4,2
+Dermatology,nonsurgical,4,17
+Emergency Medicine,nonsurgical,4,70
+Endocrinology (IM),nonsurgical,4,5
+Family Medicine,family,4,109
+Gastroenterology (IM),nonsurgical,4,11
+General Medical Officer,operational,4,225
+General Surgery,surgical,4,70
+Heme/Onc (IM),nonsurgical,4,6
+Infectious Disease (IM),nonsurgical,4,15
+Internal Medicine (General),nonsurgical,4,33
+Neonatology,nonsurgical,4,7
+Nephrology (IM),nonsurgical,4,4
+Neurology,nonsurgical,4,8
+Neurosurgery,surgical,4,14
+OB/GYN,surgical,4,33
+Occupational Medicine,nonsurgical,4,15
+Ophthalmology,surgical,4,13
+Orthopedic Surgery,surgical,4,42
+Otolaryngology,surgical,4,15
+Pathology,nonsurgical,4,21
+Pediatrics,nonsurgical,4,35
+Physical Medicine and Rehabilitation,nonsurgical,4,3
+Plastic Surgery,surgical,4,3
+Preventive Medicine,nonsurgical,4,16
+Psychiatry,nonsurgical,4,37
+Pulmonary Critical Care (IM),nonsurgical,4,8
+Radiation Oncology,nonsurgical,4,4
+Radiology,nonsurgical,4,62
+Resident,resident,4,177
+Rheumatology (IM),nonsurgical,4,2
+Undersea Medicine,operational,4,23
+Urology,surgical,4,9
+Aerospace Medicine (Residency Trained Flight),operational,3,0
+Allergy/Immunology,nonsurgical,3,0
+Anesthesiology,surgical,3,35
+Aviation Medicine (Flight Surgery GMO),operational,3,103
+Cardiology (IM),nonsurgical,3,5
+Cardiothoracic Surgery,surgical,3,0
+Dermatology,nonsurgical,3,5
+Emergency Medicine,nonsurgical,3,40
+Endocrinology (IM),nonsurgical,3,0
+Family Medicine,family,3,145
+Gastroenterology (IM),nonsurgical,3,0
+General Medical Officer,operational,3,366
+General Surgery,surgical,3,35
+Heme/Onc (IM),nonsurgical,3,0
+Infectious Disease (IM),nonsurgical,3,0
+Internal Medicine (General),nonsurgical,3,43
+Neonatology,nonsurgical,3,4
+Nephrology (IM),nonsurgical,3,0
+Neurology,nonsurgical,3,7
+Neurosurgery,surgical,3,0
+OB/GYN,surgical,3,45
+Occupational Medicine,nonsurgical,3,7
+Ophthalmology,surgical,3,7
+Orthopedic Surgery,surgical,3,37
+Otolaryngology,surgical,3,11
+Pathology,nonsurgical,3,12
+Pediatrics,nonsurgical,3,51
+Physical Medicine and Rehabilitation,nonsurgical,3,2
+Plastic Surgery,surgical,3,0
+Preventive Medicine,nonsurgical,3,9
+Psychiatry,nonsurgical,3,33
+Pulmonary Critical Care (IM),nonsurgical,3,2
+Radiation Oncology,nonsurgical,3,1
+Radiology,nonsurgical,3,13
+Resident,resident,3,578
+Rheumatology (IM),nonsurgical,3,0
+Undersea Medicine,operational,3,20
+Urology,surgical,3,8

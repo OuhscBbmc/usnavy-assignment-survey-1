@@ -22,6 +22,7 @@ requireNamespace("OuhscMunge"   ) # remotes::install_github(repo="OuhscBbmc/Ouhs
 # ---- declare-globals ---------------------------------------------------------
 # Constant values that won't change.
 path_in                        <- "data-public/raw/specialty-manning-by-rank.csv"
+path_in_lu_specialty           <- "data-public/raw/specialty-bonus-manning.csv"
 path_out_csv                   <- "data-public/derived/specialty-manning-by-rank.csv"
 path_out_rds                   <- "data-public/derived/specialty-manning-by-rank.rds"
 
@@ -33,14 +34,29 @@ col_types <- readr::cols_only( # readr::spec_csv(path_in)
   rank_3      = readr::col_integer()
 )
 
+col_types_lu_specialty  <- readr::cols_only(
+  specialty                 = readr::col_character(),
+  specialty_type            = readr::col_character()
+)
+
 # ---- load-data ---------------------------------------------------------------
 # Read the CSVs
 # readr::spec_csv(path_in)
 ds <- readr::read_csv(path_in   , col_types=col_types)
+ds_lu_specialty <- readr::read_csv(path_in_lu_specialty   , col_types=col_types_lu_specialty)
 rm(path_in, col_types)
+rm(path_in_lu_specialty, col_types_lu_specialty)
 
 # ---- tweak-data --------------------------------------------------------------
 # OuhscMunge::column_rename_headstart(ds) #Spit out columns to help write call ato `dplyr::rename()`.
+ds_lu_specialty <- ds_lu_specialty %>%
+  dplyr::select(
+    "specialty"
+    , "specialty_type"
+  ) %>%
+  dplyr::mutate(
+    specialty_type      = factor(specialty_type, levels=c("nonsurgical", "surgical", "family", "operational",  "resident", "unknown"))
+  )
 
 ds <- ds %>%
   dplyr::select_( #`select()` implicitly drops the other columns not mentioned.
@@ -57,26 +73,39 @@ ds <- ds %>%
   ) %>%
   dplyr::mutate(
     rank   = as.integer(sub("^rank_(\\d)$", "\\1", rank))
-  )
+  ) %>%
+  dplyr::left_join(ds_lu_specialty, by="specialty")
 
 
 # ---- inspect -----------------------------------------------------------------
 library(ggplot2)
 
-# ggplot(ds, aes(x))
+ggplot(ds, aes(x=rank, y=count, color=specialty)) +
+  geom_line() +
+  theme_light()
+
+ds %>%
+  dplyr::group_by(rank, specialty_type) %>%
+  dplyr::summarize(
+    count   = sum(count)
+  ) %>%
+  dplyr::ungroup() %>%
+  ggplot( aes(x=rank, y=count, color=specialty_type)) +
+  geom_line() +
+  theme_light()
 
 
 # ---- verify-values -----------------------------------------------------------
 # Sniff out problems
 # OuhscMunge::verify_value_headstart(ds)
-checkmate::assert_character(ds$specialty , any.missing=F , pattern="^.{6,45}$" )
-checkmate::assert_integer(  ds$rank      , any.missing=F , lower=3, upper=6    )
-checkmate::assert_integer(  ds$count     , any.missing=F , lower=0, upper=578  )
-
+checkmate::assert_character(ds$specialty      , any.missing=F , pattern="^.{6,45}$" )
+checkmate::assert_integer(  ds$rank           , any.missing=F , lower=3, upper=6    )
+checkmate::assert_integer(  ds$count          , any.missing=F , lower=0, upper=578  )
+checkmate::assert_factor(   ds$specialty_type , any.missing=F                       )
 
 # ---- specify-columns-to-upload -----------------------------------------------
 # dput(colnames(ds)) # Print colnames for line below.
-columns_to_write <- c("specialty", "rank", "count")
+columns_to_write <- c("specialty", "specialty_type", "rank", "count")
 ds_slim <- ds %>%
   # dplyr::slice(1:100) %>%
   dplyr::select(!!columns_to_write)
