@@ -534,8 +534,8 @@ ds %>%
     officer_rate    = factor(officer_rate)
   ) %>%
   ggplot(aes(x=specialty_type, y=satisfaction_rank, fill=officer_rate, color=officer_rate)) +
-  geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA) +
-  stat_summary(fun.y="mean", geom="point", position = position_dodge(width=.75), shape=23, size=10, fill="white", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
+  geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA, position=position_dodge2(preserve = "single", padding = 0)) +
+  stat_summary(fun.y="mean", geom="point", position = position_dodge2(preserve = "single", width=.75), shape=23, size=10, fill="white", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
   # stat_summary(fun.data=TukeyBoxplot, geom='boxplot', na.rm=T, outlier.shape=NULL, outlier.colour=NA) +
   geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), size=2, shape=1, na.rm=T) +
   scale_color_manual(values=palette_rank, guide = guide_legend(reverse = TRUE)) +
@@ -544,6 +544,8 @@ ds %>%
   # scale_fill_brewer( palette = "Set2", guide = guide_legend(reverse = TRUE)) +
   coord_flip() +
   theme_report +
+  theme(panel.grid.major.y = element_blank()) +
+  theme(panel.grid.minor.y = element_blank()) +
   # theme(legend.position="none") +
   labs(x=NULL, y="Overall Satisfaction\n(unhappiest to happiest)", color="Officer\nRank", fill="Officer\nRank")
 
@@ -643,13 +645,15 @@ ds %>%
     critical_war    = factor(critical_war, levels=c("Low\nDeployer", "High\nDeployer"))
   ) %>%
   ggplot(aes(x=billet_current, y=satisfaction_rank, fill=critical_war, color=critical_war)) +
-  geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA) +
-  stat_summary(fun.y="mean", geom="point", position = position_dodge(width=.75), shape=23, size=10, fill="white", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
+  geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA, position=position_dodge2(preserve = "single", padding = 0)) +
+  stat_summary(fun.y="mean", geom="point", position = position_dodge2(preserve = "single", width=.75), shape=23, size=10, fill="white", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
   geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), size=2, shape=1, na.rm=T) +
   scale_color_manual(values=palette_critical_war, guide = guide_legend(reverse = TRUE)) +
   scale_fill_manual(values=palette_critical_war , guide = guide_legend(reverse = TRUE)) +
   coord_flip() +
   theme_report +
+  theme(panel.grid.major.y = element_blank()) +
+  theme(panel.grid.minor.y = element_blank()) +
   # theme(legend.position="none") +
   labs(x=NULL, y="Overall Satisfaction\n(unhappiest to happiest)", color=NULL, fill=NULL)
 
@@ -673,6 +677,8 @@ ds %>%
   scale_fill_manual(values=palette_manning_proportion , guide = guide_legend(reverse = TRUE)) +
   coord_flip() +
   theme_report +
+  theme(panel.grid.major.y = element_blank()) +
+  theme(panel.grid.minor.y = element_blank()) +
   # theme(legend.position="none") +
   labs(x=NULL, y="Overall Satisfaction\n(unhappiest to happiest)", color="Bonus\nAmount", fill="Bonus\nAmount")
 
