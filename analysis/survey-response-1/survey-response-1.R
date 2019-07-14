@@ -516,6 +516,12 @@ cat("### satisfaction_rank\n\n")
 #   "CDR"           = "#c30205",
 #   "CAPT or Flag"  = "#6c3c54"
 # )
+palette_rank <- c(
+  "3"     = "#999385",
+  "4"     = "#00A8E8",
+  "5"     = "#00477A", #003459
+  "6"     = "#00171F"
+)
 
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
 ds %>%
@@ -532,10 +538,10 @@ ds %>%
   stat_summary(fun.y="mean", geom="point", position = position_dodge(width=.75), shape=23, size=10, fill="white", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
   # stat_summary(fun.data=TukeyBoxplot, geom='boxplot', na.rm=T, outlier.shape=NULL, outlier.colour=NA) +
   geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), size=2, shape=1, na.rm=T) +
-  # scale_color_manual(values=palette_rank) +
-  # scale_fill_manual(values=palette_rank) +
-  scale_color_brewer(palette = "Set2") +
-  scale_fill_brewer(palette = "Set2") +
+  scale_color_manual(values=palette_rank, guide = guide_legend(reverse = TRUE)) +
+  scale_fill_manual( values=palette_rank, guide = guide_legend(reverse = TRUE)) +
+  # scale_color_brewer(palette = "Set2", guide = guide_legend(reverse = TRUE)) +
+  # scale_fill_brewer( palette = "Set2", guide = guide_legend(reverse = TRUE)) +
   coord_flip() +
   theme_report +
   # theme(legend.position="none") +
@@ -628,36 +634,47 @@ prettify_lm(lm(favoritism_rank ~ 1 + officer_rate_f * bonus_pay, data=ds))
 
 # ---- by-billet_current-and-critical_war ------------------------------------------------------------
 cat("### satisfaction_rank\n\n")
+palette_critical_war <- c("High\nDeployer"="#e81818", "Low\nDeployer"="#409fa1") # http://colrd.com/image-dna/50548/
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
 ds %>%
+  dplyr::mutate(
+    billet_current  = gsub("[ /]", "\n", billet_current),
+    critical_war    = gsub("[ ]" , "\n", critical_war),
+    critical_war    = factor(critical_war, levels=c("Low\nDeployer", "High\nDeployer"))
+  ) %>%
   ggplot(aes(x=billet_current, y=satisfaction_rank, fill=critical_war, color=critical_war)) +
   geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA) +
   stat_summary(fun.y="mean", geom="point", position = position_dodge(width=.75), shape=23, size=10, fill="white", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
   geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), size=2, shape=1, na.rm=T) +
-  # scale_color_manual(values=PalettePregancyGroup) +
-  # scale_fill_manual(values=PalettePregancyGroupLight) +
-  # coord_flip(ylim = c(0, 1.05*max(dsPregnancy$T1Lifts, na.rm=T))) +
+  scale_color_manual(values=palette_critical_war, guide = guide_legend(reverse = TRUE)) +
+  scale_fill_manual(values=palette_critical_war , guide = guide_legend(reverse = TRUE)) +
+  coord_flip() +
   theme_report +
   # theme(legend.position="none") +
-  labs(x=NULL) #y="Satisfaction"
+  labs(x=NULL, y="Overall Satisfaction\n(unhappiest to happiest)", color=NULL, fill=NULL)
 
 # prettify_lm(lm(satisfaction_rank ~ 1 + billet_current * critical_war, data=ds))
 prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + critical_war, data=ds))
 
 # ---- by-bonus_pay-and-manning_proportion ------------------------------------------------------------
 cat("### satisfaction_rank\n\n")
+palette_manning_proportion <- c("$0"="#999385", "$20-24k"="#84b0bb", "$24k+"="#15274d") # http://colrd.com/image-dna/36525/
+
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
 ds %>%
+  dplyr::mutate(
+    manning_proportion_cut3  = dplyr::recode(manning_proportion_cut3, `Over`="over\nmanned", `Balanced`="balanced", `under`="under\nmanned")
+  ) %>%
   ggplot(aes(x=manning_proportion_cut3, y=satisfaction_rank, fill=bonus_pay_cut3, color=bonus_pay_cut3)) +
   geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA) +
   stat_summary(fun.y="mean", geom="point", position = position_dodge(width=.75), shape=23, size=10, fill="white", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
   geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), size=2, shape=1, na.rm=T) +
-  # scale_color_manual(values=PalettePregancyGroup) +
-  # scale_fill_manual(values=PalettePregancyGroupLight) +
-  # coord_flip(ylim = c(0, 1.05*max(dsPregnancy$T1Lifts, na.rm=T))) +
+  scale_color_manual(values=palette_manning_proportion, guide = guide_legend(reverse = TRUE)) +
+  scale_fill_manual(values=palette_manning_proportion , guide = guide_legend(reverse = TRUE)) +
+  coord_flip() +
   theme_report +
   # theme(legend.position="none") +
-  labs(x=NULL) #y="Satisfaction"
+  labs(x=NULL, y="Overall Satisfaction\n(unhappiest to happiest)", color="Bonus\nAmount", fill="Bonus\nAmount")
 
   # prettify_lm(lm(satisfaction_rank ~ 1 + manning_proportion_cut3 * bonus_pay_cut3, data=ds))
   prettify_lm(lm(satisfaction_rank ~ 1 + manning_proportion_cut3 + bonus_pay_cut3, data=ds))

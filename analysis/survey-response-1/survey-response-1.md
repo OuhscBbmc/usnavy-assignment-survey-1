@@ -411,7 +411,6 @@ For the sake of documentation and reproducibility, the current report was render
  ps                1.3.0       2018-12-21 [1] CRAN (R 3.6.0)                          
  purrr             0.3.2       2019-03-15 [1] CRAN (R 3.6.0)                          
  R6                2.4.0       2019-02-14 [1] CRAN (R 3.6.0)                          
- RColorBrewer      1.1-2       2014-12-07 [1] CRAN (R 3.6.0)                          
  Rcpp              1.0.1       2019-03-17 [1] CRAN (R 3.6.0)                          
  readr             1.3.1       2018-12-21 [1] CRAN (R 3.6.0)                          
  remotes           2.1.0       2019-06-24 [1] CRAN (R 3.6.0)                          
@@ -448,4 +447,4 @@ For the sake of documentation and reproducibility, the current report was render
 
 
 
-Report rendered by wibeasley at 2019-07-13, 22:37 -0500 in 238 seconds.
+Report rendered by wibeasley at 2019-07-13, 23:26 -0500 in 114 seconds.
