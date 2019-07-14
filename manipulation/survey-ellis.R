@@ -168,7 +168,7 @@ ds <- ds %>%
     homestead_problem           = dplyr::coalesce(homestead_problem        , "Unknown"),
 
     doctor_as_detailer          = factor(dplyr::coalesce(doctor_as_detailer, "Unknown"), levels=c("Yes", "No", "Do not care", "Other", "Unknown")),
-    career_path                 = dplyr::coalesce(career_path              , "Unknown"),
+    career_path                 = dplyr::coalesce(career_path              , "No Response"),
     # match_desirability          = dplyr::coalesce(match_desirability       , "Unknown")
     match_desirability          = dplyr::recode_factor(
       match_desirability,

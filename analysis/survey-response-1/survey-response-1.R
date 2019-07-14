@@ -510,23 +510,36 @@ prettify_lm(lm(satisfaction_rank ~ 1 + geographic_preference, data=ds))
 
 # ---- by-rank-and-specialty-type ------------------------------------------------------------
 cat("### satisfaction_rank\n\n")
+# palette_rank <- c(
+#   "LT"            = "#a2aa67",
+#   "LCDR"          = "#ff9a05",
+#   "CDR"           = "#c30205",
+#   "CAPT or Flag"  = "#6c3c54"
+# )
+
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
 ds %>%
   tidyr::drop_na(specialty_type) %>%
   tidyr::drop_na(officer_rank) %>%
   dplyr::filter(specialty_type != "unknown") %>%
   dplyr::filter(officer_rank != "Unknown") %>%
-  ggplot(aes(x=specialty_type, y=satisfaction_rank, fill=officer_rank, color=officer_rank)) +
+  dplyr::mutate(
+    specialty_type  = dplyr::recode(specialty_type, `family` = "family\nmedicine"),
+    officer_rate    = factor(officer_rate)
+  ) %>%
+  ggplot(aes(x=specialty_type, y=satisfaction_rank, fill=officer_rate, color=officer_rate)) +
   geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA) +
   stat_summary(fun.y="mean", geom="point", position = position_dodge(width=.75), shape=23, size=10, fill="white", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
   # stat_summary(fun.data=TukeyBoxplot, geom='boxplot', na.rm=T, outlier.shape=NULL, outlier.colour=NA) +
   geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), size=2, shape=1, na.rm=T) +
-  # scale_color_manual(values=PalettePregancyGroup) +
-  # scale_fill_manual(values=PalettePregancyGroupLight) +
-  # coord_flip(ylim = c(0, 1.05*max(dsPregnancy$T1Lifts, na.rm=T))) +
+  # scale_color_manual(values=palette_rank) +
+  # scale_fill_manual(values=palette_rank) +
+  scale_color_brewer(palette = "Set2") +
+  scale_fill_brewer(palette = "Set2") +
+  coord_flip() +
   theme_report +
   # theme(legend.position="none") +
-  labs(x=NULL) #y="Satisfaction"
+  labs(x=NULL, y="Overall Satisfaction\n(unhappiest to happiest)", color="Officer\nRank", fill="Officer\nRank")
 
 prettify_lm(lm(satisfaction_rank ~ 1 + officer_rate_f * specialty_type, data=ds[ds$specialty_type != "unknown", ]))
 prettify_lm(lm(satisfaction_rank ~ 1 + officer_rate_f + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
