@@ -34,6 +34,8 @@ prettify_lm <- function( x ) {
   cat("<br/>Data:<code>", as.character(x$call$data), "</code>")
   cat("<br/>Formula:<code>", as.character(x$call$formula), "</code>")
 
+  # browser()
+
   broom::tidy(x) %>%
     knitr::kable(
       format = "html"
@@ -43,8 +45,10 @@ prettify_lm <- function( x ) {
       full_width         = F,
       position           = "left"
     ) %>%
-    print()
+    cat()
+
   cat("\n\n")
+
   broom::glance(x) %>%
     knitr::kable() %>%
     kableExtra::kable_styling(
@@ -52,7 +56,7 @@ prettify_lm <- function( x ) {
       full_width         = F,
       position           = "left"
     ) %>%
-    print()
+    cat()
 }
 
 # ---- load-data ---------------------------------------------------------------
@@ -590,11 +594,12 @@ ds %>%
 prettify_lm(lm(satisfaction_rank ~ 1 + officer_rate_f + assignment_current_choice, data=ds))
 prettify_lm(lm(satisfaction_rank ~ 1 + officer_rate_f * assignment_current_choice, data=ds))
 
+cat("<br/><code>")
 anova(
   lm(satisfaction_rank ~ 1 + officer_rate_f + assignment_current_choice, data=ds),
   lm(satisfaction_rank ~ 1 + officer_rate_f * assignment_current_choice, data=ds)
 )
-
+cat("</code>")
 
 cat("### transparency_rank\n\n")
 last_plot() %+% aes(y=transparency_rank)
@@ -622,10 +627,12 @@ ds %>%
 prettify_lm(lm(satisfaction_rank ~ 1 + officer_rate_f + bonus_pay, data=ds))
 prettify_lm(lm(satisfaction_rank ~ 1 + officer_rate_f * bonus_pay, data=ds))
 
+cat("<br/><code>")
 anova(
   lm(satisfaction_rank ~ 1 + officer_rate_f + bonus_pay, data=ds),
   lm(satisfaction_rank ~ 1 + officer_rate_f * bonus_pay, data=ds)
 )
+cat("</code>")
 
 cat("### transparency_rank\n\n")
 last_plot() %+% aes(y=transparency_rank)
@@ -687,12 +694,14 @@ ds %>%
   prettify_lm(lm(satisfaction_rank ~ 1 + manning_proportion_cut3 + bonus_pay_cut3, data=ds))
 
   cat("No interaction between manning_proportion_cut3 & bonus_pay_cut3")
+  cat("<br/><code>")
   anova(
     lm(satisfaction_rank ~ 1 + manning_proportion_cut3 * bonus_pay_cut3, data=ds),
     lm(satisfaction_rank ~ 1 + manning_proportion_cut3 + bonus_pay_cut3, data=ds)
     # lm(satisfaction_rank ~ 1 + manning_proportion * bonus_pay, data=ds),
     # lm(satisfaction_rank ~ 1 + manning_proportion + bonus_pay, data=ds)
   )
+  cat("</code>")
 
   #ggplot(aes(x=manning_proportion, y=satisfaction_rank, fill=bonus_pay_cut4, color=bonus_pay_cut4)) +
   # geom_smooth(method="loess", span=2, alpha=.2, na.rm=T) +
