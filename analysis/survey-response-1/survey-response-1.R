@@ -539,19 +539,17 @@ ds %>%
     officer_rate    = factor(officer_rate)
   ) %>%
   ggplot(aes(x=specialty_type, y=satisfaction_rank, fill=officer_rate, color=officer_rate)) +
-  geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA, position=position_dodge2(preserve = "single", padding = 0)) +
+  geom_boxplot(na.rm=T, alpha=.2, outlier.shape=NULL, outlier.colour=NA, position=position_dodge2(preserve = "single", padding = 0)) +
   stat_summary(fun.y="mean", geom="point", position = position_dodge2(preserve = "single", width=.75), shape=23, size=size_mean_diamond, fill="white", alpha=.9, na.rm=T, show.legend = F) + #See Chang (2013), Recipe 6.8.
   # stat_summary(fun.data=TukeyBoxplot, geom='boxplot', na.rm=T, outlier.shape=NULL, outlier.colour=NA) +
-  geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), size=2, shape=1, na.rm=T, show.legend = F) +
-  scale_color_manual(values=palette_rank, guide = guide_legend(reverse = TRUE)) +
-  scale_fill_manual( values=palette_rank, guide = guide_legend(reverse = TRUE)) +
-  # scale_color_brewer(palette = "Set2", guide = guide_legend(reverse = TRUE)) +
-  # scale_fill_brewer( palette = "Set2", guide = guide_legend(reverse = TRUE)) +
+  geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), alpha=.5, size=1.5, shape=1, na.rm=T, show.legend = F) +
+  scale_color_manual(values=palette_rank, guide = guide_legend(reverse = FALSE)) +
+  scale_fill_manual( values=palette_rank, guide = guide_legend(reverse = FALSE)) +
   coord_flip() +
   theme_report +
   theme(panel.grid.major.y = element_blank()) +
   theme(panel.grid.minor.y = element_blank()) +
-  # theme(legend.position="none") +
+  theme(legend.position="bottom") +
   labs(x=NULL, y="Overall Satisfaction\n(unhappiest to happiest)", color="Officer\nRank", fill="Officer\nRank")
 
 prettify_lm(lm(satisfaction_rank ~ 1 + officer_rate_f * specialty_type, data=ds[ds$specialty_type != "unknown", ]))
@@ -653,16 +651,16 @@ ds %>%
     critical_war    = factor(critical_war, levels=c("Low\nDeployer", "High\nDeployer"))
   ) %>%
   ggplot(aes(x=billet_current, y=satisfaction_rank, fill=critical_war, color=critical_war)) +
-  geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA, position=position_dodge2(preserve = "single", padding = 0)) +
+  geom_boxplot(na.rm=T, alpha=.2, outlier.shape=NULL, outlier.colour=NA, position=position_dodge2(preserve = "single", padding = 0)) +
   stat_summary(fun.y="mean", geom="point", position = position_dodge2(preserve = "single", width=.75), shape=23, size=size_mean_diamond, fill="white", alpha=.9, na.rm=T, show.legend = F) + #See Chang (2013), Recipe 6.8.
-  geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), size=2, shape=1, na.rm=T, show.legend = F) +
-  scale_color_manual(values=palette_critical_war, guide = guide_legend(reverse = TRUE)) +
-  scale_fill_manual(values=palette_critical_war , guide = guide_legend(reverse = TRUE)) +
+  geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), alpha=.5, size=1.5, shape=1, na.rm=T, show.legend = F) +
+  scale_color_manual(values=palette_critical_war, guide = guide_legend(reverse = FALSE)) +
+  scale_fill_manual(values=palette_critical_war , guide = guide_legend(reverse = FALSE)) +
   coord_flip() +
   theme_report +
   theme(panel.grid.major.y = element_blank()) +
   theme(panel.grid.minor.y = element_blank()) +
-  # theme(legend.position="none") +
+  theme(legend.position="bottom") +
   labs(x=NULL, y="Overall Satisfaction\n(unhappiest to happiest)", color=NULL, fill=NULL)
 
 # prettify_lm(lm(satisfaction_rank ~ 1 + billet_current * critical_war, data=ds))
@@ -675,19 +673,19 @@ palette_manning_proportion <- c("$0"="#999385", "$20-24k"="#84b0bb", "$24k+"="#1
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
 ds %>%
   dplyr::mutate(
-    manning_proportion_cut3  = dplyr::recode(manning_proportion_cut3, `Over`="over\nmanned", `Balanced`="balanced", `under`="under\nmanned")
+    manning_proportion_cut3  = dplyr::recode(manning_proportion_cut3, `Over`="over\nmanned", `Balanced`="balanced", `Under`="under\nmanned")
   ) %>%
   ggplot(aes(x=manning_proportion_cut3, y=satisfaction_rank, fill=bonus_pay_cut3, color=bonus_pay_cut3)) +
-  geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA) +
+  geom_boxplot(na.rm=T, alpha=.2, outlier.shape=NULL, outlier.colour=NA) +
   stat_summary(fun.y="mean", geom="point", position = position_dodge(width=.75), shape=23, size=size_mean_diamond, fill="white", alpha=.9, na.rm=T, show.legend = F) + #See Chang (2013), Recipe 6.8.
-  geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), size=2, shape=1, na.rm=T, show.legend = F) +
-  scale_color_manual(values=palette_manning_proportion, guide = guide_legend(reverse = TRUE)) +
-  scale_fill_manual(values=palette_manning_proportion , guide = guide_legend(reverse = TRUE)) +
+  geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), alpha=.5, size=1.5, shape=1, na.rm=T, show.legend = F) +
+  scale_color_manual(values=palette_manning_proportion, guide = guide_legend(reverse = FALSE)) +
+  scale_fill_manual(values=palette_manning_proportion , guide = guide_legend(reverse = FALSE)) +
   coord_flip() +
   theme_report +
   theme(panel.grid.major.y = element_blank()) +
   theme(panel.grid.minor.y = element_blank()) +
-  # theme(legend.position="none") +
+  theme(legend.position="bottom") +
   labs(x=NULL, y="Overall Satisfaction\n(unhappiest to happiest)", color="Bonus\nAmount", fill="Bonus\nAmount")
 
   # prettify_lm(lm(satisfaction_rank ~ 1 + manning_proportion_cut3 * bonus_pay_cut3, data=ds))
