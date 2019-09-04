@@ -521,11 +521,11 @@ cat("### satisfaction_rank\n\n")
 #   "CDR"           = "#c30205",
 #   "CAPT or Flag"  = "#6c3c54"
 # )
-palette_rank <- c(
-  "3"     = "#999385",
-  "4"     = "#00A8E8",
-  "5"     = "#00477A", #003459
-  "6"     = "#00171F"
+palette_rate <- c(
+  "O3"    = "#999385",
+  "O4"    = "#00A8E8",
+  "O5"    = "#00477A", #003459
+  "O6"    = "#00171F"
 )
 
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
@@ -536,15 +536,15 @@ ds %>%
   dplyr::filter(officer_rank != "Unknown") %>%
   dplyr::mutate(
     specialty_type  = dplyr::recode(specialty_type, `family` = "family\nmedicine"),
-    officer_rate    = factor(officer_rate)
+    officer_rate    = factor(officer_rate, levels=3:6, labels=c("O3", "O4", "O5", "O6"))
   ) %>%
   ggplot(aes(x=specialty_type, y=satisfaction_rank, fill=officer_rate, color=officer_rate)) +
   geom_boxplot(na.rm=T, alpha=.2, outlier.shape=NULL, outlier.colour=NA, position=position_dodge2(preserve = "single", padding = 0)) +
   stat_summary(fun.y="mean", geom="point", position = position_dodge2(preserve = "single", width=.75), shape=23, size=size_mean_diamond, fill="white", alpha=.9, na.rm=T, show.legend = F) + #See Chang (2013), Recipe 6.8.
   # stat_summary(fun.data=TukeyBoxplot, geom='boxplot', na.rm=T, outlier.shape=NULL, outlier.colour=NA) +
   geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), alpha=.5, size=1.5, shape=1, na.rm=T, show.legend = F) +
-  scale_color_manual(values=palette_rank, guide = guide_legend(reverse = FALSE)) +
-  scale_fill_manual( values=palette_rank, guide = guide_legend(reverse = FALSE)) +
+  scale_color_manual(values=palette_rate, guide = guide_legend(reverse = FALSE)) +
+  scale_fill_manual( values=palette_rate, guide = guide_legend(reverse = FALSE)) +
   coord_flip() +
   theme_report +
   theme(panel.grid.major.y = element_blank()) +
