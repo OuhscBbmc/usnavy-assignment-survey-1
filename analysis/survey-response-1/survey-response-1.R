@@ -542,7 +542,7 @@ ds %>%
   geom_boxplot(na.rm=T, alpha=.2, outlier.shape=NULL, outlier.colour=NA, position=position_dodge2(preserve = "single", padding = 0)) +
   stat_summary(fun.y="mean", geom="point", position = position_dodge2(preserve = "single", width=.75), shape=23, size=size_mean_diamond, fill="white", alpha=.9, na.rm=T, show.legend = F) + #See Chang (2013), Recipe 6.8.
   # stat_summary(fun.data=TukeyBoxplot, geom='boxplot', na.rm=T, outlier.shape=NULL, outlier.colour=NA) +
-  geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), alpha=.5, size=1.5, shape=1, na.rm=T, show.legend = F) +
+  geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), alpha=.25, size=1.5, shape=1, na.rm=T, show.legend = F) +
   scale_color_manual(values=palette_rate, guide = guide_legend(reverse = FALSE)) +
   scale_fill_manual( values=palette_rate, guide = guide_legend(reverse = FALSE)) +
   coord_flip() +
@@ -653,7 +653,7 @@ ds %>%
   ggplot(aes(x=billet_current, y=satisfaction_rank, fill=critical_war, color=critical_war)) +
   geom_boxplot(na.rm=T, alpha=.2, outlier.shape=NULL, outlier.colour=NA, position=position_dodge2(preserve = "single", padding = 0)) +
   stat_summary(fun.y="mean", geom="point", position = position_dodge2(preserve = "single", width=.75), shape=23, size=size_mean_diamond, fill="white", alpha=.9, na.rm=T, show.legend = F) + #See Chang (2013), Recipe 6.8.
-  geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), alpha=.5, size=1.5, shape=1, na.rm=T, show.legend = F) +
+  geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), alpha=.25, size=1.5, shape=1, na.rm=T, show.legend = F) +
   scale_color_manual(values=palette_critical_war, guide = guide_legend(reverse = FALSE)) +
   scale_fill_manual(values=palette_critical_war , guide = guide_legend(reverse = FALSE)) +
   coord_flip() +
@@ -678,7 +678,7 @@ ds %>%
   ggplot(aes(x=manning_proportion_cut3, y=satisfaction_rank, fill=bonus_pay_cut3, color=bonus_pay_cut3)) +
   geom_boxplot(na.rm=T, alpha=.2, outlier.shape=NULL, outlier.colour=NA) +
   stat_summary(fun.y="mean", geom="point", position = position_dodge(width=.75), shape=23, size=size_mean_diamond, fill="white", alpha=.9, na.rm=T, show.legend = F) + #See Chang (2013), Recipe 6.8.
-  geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), alpha=.5, size=1.5, shape=1, na.rm=T, show.legend = F) +
+  geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), alpha=.25, size=1.5, shape=1, na.rm=T, show.legend = F) +
   scale_color_manual(values=palette_manning_proportion, guide = guide_legend(reverse = FALSE)) +
   scale_fill_manual(values=palette_manning_proportion , guide = guide_legend(reverse = FALSE)) +
   coord_flip() +
