@@ -20,7 +20,7 @@ options(show.signif.stars=F) #Turn off the annotations on p-values
 
 path_input <- "data-public/derived/survey-response.rds"
 include_year_first     <- 2012L
-size_mean_diamond      <- 5
+size_mean_diamond      <- 3
 
 theme_report <- theme_bw() +
   theme(axis.ticks.length     = grid::unit(0, "cm")) +
