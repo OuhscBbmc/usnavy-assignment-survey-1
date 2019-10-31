@@ -217,6 +217,12 @@ By Bonus_pay and Manning_proportion
 ```
 
 
+Experimental
+-----------------------------------
+```{r graph-equal-slopes, echo=echo_chunks, message=message_chunks, results="asis"}
+```
+
+
 Session Information
 ============================================
 

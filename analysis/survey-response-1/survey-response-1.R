@@ -712,6 +712,37 @@ ds %>%
 # prettify_lm(lm(satisfaction_rank ~ 1 + billet_current * critical_war, data=ds))
 prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + critical_war, data=ds))
 
+# ---- graph-equal-slopes ------------------------------------------------------
+a <- lm(satisfaction_rank ~ 1 + billet_current + officer_rate, data=ds)
+# a
+pattern_billet <- "^billet_current"
+
+# ds_trajectory <-
+#   tibble::tibble(
+#     intercept = 1:5,
+#     slope = 1.2
+#   )
+ds_trajectory <-
+  a %>%
+  broom::tidy() %>%
+  dplyr::filter(grepl(pattern_billet, term)) %>%
+  # dplyr::select(term, estimate) %>%
+  dplyr::mutate(
+    term        = sub(pattern_billet, "", term),
+    intercept   = estimate + coef(a)[["(Intercept)"]],
+    slope       = coef(a)[["officer_rate"]]
+  ) %>%
+  dplyr::select(
+    billet_current    = term,
+    intercept,
+    slope
+  )
+ggplot(ds, aes(x=officer_rate, y=satisfaction_rank, color=billet_current, group=billet_current)) +
+  geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), alpha=1, size=1.5, shape=1, na.rm=T, show.legend = F) +
+  # geom_smooth(method = lm, se=F, formula = y~ x + 1) +
+  geom_abline(data=ds_trajectory, aes(intercept=intercept, slope=slope, color=billet_current)) +
+  theme_report
+
 # # ---- model-results-table  -----------------------------------------------
 #
 # summary(m2)$coef %>%
