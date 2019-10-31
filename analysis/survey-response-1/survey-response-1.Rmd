@@ -216,6 +216,11 @@ By Bonus_pay and Manning_proportion
 ```{r by-bonus_pay-and-manning_proportion, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
 
+By Rank and Billet Type
+-----------------------------------
+```{r by-billet-and-rate, echo=echo_chunks, message=message_chunks, results="asis"}
+```
+
 
 Experimental
 -----------------------------------

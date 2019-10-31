@@ -1,6 +1,6 @@
 ---
 title: Attitudes Regarding the Assignment Process Among Navy Medical Corps Officers
-date: "Date: 2019-09-05"
+date: "Date: 2019-10-29"
 output:
   html_document:
     keep_md: yes
@@ -3310,6 +3310,336 @@ Model 2: satisfaction_rank ~ 1 + manning_proportion_cut3 + bonus_pay_cut3
 </tbody>
 </table>
 
+By Rank and Billet Type
+-----------------------------------
+### satisfaction_rank
+
+**Conculsion**: `officer_rate` has a significant positive slope --sig predicting beyond `billet_current`.  But the billet levels have the same slope.<br/>Data:<code> ds_no_other </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> term </th>
+   <th style="text-align:right;"> estimate </th>
+   <th style="text-align:right;"> std.error </th>
+   <th style="text-align:right;"> statistic </th>
+   <th style="text-align:right;"> p.value </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> (Intercept) </td>
+   <td style="text-align:right;"> 3.8565121 </td>
+   <td style="text-align:right;"> 0.0616020 </td>
+   <td style="text-align:right;"> 62.6036649 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentGME </td>
+   <td style="text-align:right;"> -0.0474212 </td>
+   <td style="text-align:right;"> 0.1393647 </td>
+   <td style="text-align:right;"> -0.3402672 </td>
+   <td style="text-align:right;"> 0.7337387 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentNon-Operational/Non-Clinical </td>
+   <td style="text-align:right;"> -0.2106788 </td>
+   <td style="text-align:right;"> 0.1990184 </td>
+   <td style="text-align:right;"> -1.0585897 </td>
+   <td style="text-align:right;"> 0.2900850 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentOCONUS MTF </td>
+   <td style="text-align:right;"> -0.4465121 </td>
+   <td style="text-align:right;"> 0.1448630 </td>
+   <td style="text-align:right;"> -3.0823061 </td>
+   <td style="text-align:right;"> 0.0021198 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentCONUS Operational </td>
+   <td style="text-align:right;"> -0.7404407 </td>
+   <td style="text-align:right;"> 0.1383599 </td>
+   <td style="text-align:right;"> -5.3515567 </td>
+   <td style="text-align:right;"> 0.0000001 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentOCONUS Operational </td>
+   <td style="text-align:right;"> -1.4065121 </td>
+   <td style="text-align:right;"> 0.2162661 </td>
+   <td style="text-align:right;"> -6.5036188 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+  </tr>
+</tbody>
+</table>
+
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> r.squared </th>
+   <th style="text-align:right;"> adj.r.squared </th>
+   <th style="text-align:right;"> sigma </th>
+   <th style="text-align:right;"> statistic </th>
+   <th style="text-align:right;"> p.value </th>
+   <th style="text-align:right;"> df </th>
+   <th style="text-align:right;"> logLik </th>
+   <th style="text-align:right;"> AIC </th>
+   <th style="text-align:right;"> BIC </th>
+   <th style="text-align:right;"> deviance </th>
+   <th style="text-align:right;"> df.residual </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 0.0735072 </td>
+   <td style="text-align:right;"> 0.0681018 </td>
+   <td style="text-align:right;"> 1.311125 </td>
+   <td style="text-align:right;"> 13.59874 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> -1455.308 </td>
+   <td style="text-align:right;"> 2924.615 </td>
+   <td style="text-align:right;"> 2957.938 </td>
+   <td style="text-align:right;"> 1473.224 </td>
+   <td style="text-align:right;"> 857 </td>
+  </tr>
+</tbody>
+</table><br/>Data:<code> ds_no_other </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current + officer_rate </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> term </th>
+   <th style="text-align:right;"> estimate </th>
+   <th style="text-align:right;"> std.error </th>
+   <th style="text-align:right;"> statistic </th>
+   <th style="text-align:right;"> p.value </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> (Intercept) </td>
+   <td style="text-align:right;"> 2.2806025 </td>
+   <td style="text-align:right;"> 0.2152925 </td>
+   <td style="text-align:right;"> 10.593044 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentGME </td>
+   <td style="text-align:right;"> 0.2017814 </td>
+   <td style="text-align:right;"> 0.1387897 </td>
+   <td style="text-align:right;"> 1.453865 </td>
+   <td style="text-align:right;"> 0.1463512 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentNon-Operational/Non-Clinical </td>
+   <td style="text-align:right;"> -0.5037952 </td>
+   <td style="text-align:right;"> 0.1975918 </td>
+   <td style="text-align:right;"> -2.549676 </td>
+   <td style="text-align:right;"> 0.0109560 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentOCONUS MTF </td>
+   <td style="text-align:right;"> -0.4207375 </td>
+   <td style="text-align:right;"> 0.1400836 </td>
+   <td style="text-align:right;"> -3.003475 </td>
+   <td style="text-align:right;"> 0.0027470 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentCONUS Operational </td>
+   <td style="text-align:right;"> -0.6360962 </td>
+   <td style="text-align:right;"> 0.1345180 </td>
+   <td style="text-align:right;"> -4.728707 </td>
+   <td style="text-align:right;"> 0.0000026 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentOCONUS Operational </td>
+   <td style="text-align:right;"> -1.3371740 </td>
+   <td style="text-align:right;"> 0.2092479 </td>
+   <td style="text-align:right;"> -6.390381 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> officer_rate </td>
+   <td style="text-align:right;"> 0.3630293 </td>
+   <td style="text-align:right;"> 0.0474667 </td>
+   <td style="text-align:right;"> 7.648078 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+  </tr>
+</tbody>
+</table>
+
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> r.squared </th>
+   <th style="text-align:right;"> adj.r.squared </th>
+   <th style="text-align:right;"> sigma </th>
+   <th style="text-align:right;"> statistic </th>
+   <th style="text-align:right;"> p.value </th>
+   <th style="text-align:right;"> df </th>
+   <th style="text-align:right;"> logLik </th>
+   <th style="text-align:right;"> AIC </th>
+   <th style="text-align:right;"> BIC </th>
+   <th style="text-align:right;"> deviance </th>
+   <th style="text-align:right;"> df.residual </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 0.1339518 </td>
+   <td style="text-align:right;"> 0.1278671 </td>
+   <td style="text-align:right;"> 1.267045 </td>
+   <td style="text-align:right;"> 22.01471 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> -1421.979 </td>
+   <td style="text-align:right;"> 2859.959 </td>
+   <td style="text-align:right;"> 2898.024 </td>
+   <td style="text-align:right;"> 1371.014 </td>
+   <td style="text-align:right;"> 854 </td>
+  </tr>
+</tbody>
+</table><br/>Data:<code> ds_no_other </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current * officer_rate </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> term </th>
+   <th style="text-align:right;"> estimate </th>
+   <th style="text-align:right;"> std.error </th>
+   <th style="text-align:right;"> statistic </th>
+   <th style="text-align:right;"> p.value </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> (Intercept) </td>
+   <td style="text-align:right;"> 2.4067750 </td>
+   <td style="text-align:right;"> 0.3123826 </td>
+   <td style="text-align:right;"> 7.7045743 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentGME </td>
+   <td style="text-align:right;"> 0.9865551 </td>
+   <td style="text-align:right;"> 0.6251139 </td>
+   <td style="text-align:right;"> 1.5782007 </td>
+   <td style="text-align:right;"> 0.1148920 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentNon-Operational/Non-Clinical </td>
+   <td style="text-align:right;"> -1.4046058 </td>
+   <td style="text-align:right;"> 1.0983458 </td>
+   <td style="text-align:right;"> -1.2788375 </td>
+   <td style="text-align:right;"> 0.2013037 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentOCONUS MTF </td>
+   <td style="text-align:right;"> -1.4257684 </td>
+   <td style="text-align:right;"> 0.7143428 </td>
+   <td style="text-align:right;"> -1.9959163 </td>
+   <td style="text-align:right;"> 0.0462621 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentCONUS Operational </td>
+   <td style="text-align:right;"> -0.8361583 </td>
+   <td style="text-align:right;"> 0.5388184 </td>
+   <td style="text-align:right;"> -1.5518370 </td>
+   <td style="text-align:right;"> 0.1210739 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentOCONUS Operational </td>
+   <td style="text-align:right;"> -1.8490451 </td>
+   <td style="text-align:right;"> 0.8234944 </td>
+   <td style="text-align:right;"> -2.2453645 </td>
+   <td style="text-align:right;"> 0.0250013 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> officer_rate </td>
+   <td style="text-align:right;"> 0.3340800 </td>
+   <td style="text-align:right;"> 0.0703586 </td>
+   <td style="text-align:right;"> 4.7482472 </td>
+   <td style="text-align:right;"> 0.0000024 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentGME:officer_rate </td>
+   <td style="text-align:right;"> -0.2203147 </td>
+   <td style="text-align:right;"> 0.1606574 </td>
+   <td style="text-align:right;"> -1.3713321 </td>
+   <td style="text-align:right;"> 0.1706338 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentNon-Operational/Non-Clinical:officer_rate </td>
+   <td style="text-align:right;"> 0.1800197 </td>
+   <td style="text-align:right;"> 0.2140632 </td>
+   <td style="text-align:right;"> 0.8409656 </td>
+   <td style="text-align:right;"> 0.4006040 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentOCONUS MTF:officer_rate </td>
+   <td style="text-align:right;"> 0.2347709 </td>
+   <td style="text-align:right;"> 0.1634193 </td>
+   <td style="text-align:right;"> 1.4366162 </td>
+   <td style="text-align:right;"> 0.1511955 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentCONUS Operational:officer_rate </td>
+   <td style="text-align:right;"> 0.0471775 </td>
+   <td style="text-align:right;"> 0.1257341 </td>
+   <td style="text-align:right;"> 0.3752166 </td>
+   <td style="text-align:right;"> 0.7075931 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentOCONUS Operational:officer_rate </td>
+   <td style="text-align:right;"> 0.1218886 </td>
+   <td style="text-align:right;"> 0.1906095 </td>
+   <td style="text-align:right;"> 0.6394680 </td>
+   <td style="text-align:right;"> 0.5226910 </td>
+  </tr>
+</tbody>
+</table>
+
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> r.squared </th>
+   <th style="text-align:right;"> adj.r.squared </th>
+   <th style="text-align:right;"> sigma </th>
+   <th style="text-align:right;"> statistic </th>
+   <th style="text-align:right;"> p.value </th>
+   <th style="text-align:right;"> df </th>
+   <th style="text-align:right;"> logLik </th>
+   <th style="text-align:right;"> AIC </th>
+   <th style="text-align:right;"> BIC </th>
+   <th style="text-align:right;"> deviance </th>
+   <th style="text-align:right;"> df.residual </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 0.1399883 </td>
+   <td style="text-align:right;"> 0.1288456 </td>
+   <td style="text-align:right;"> 1.266334 </td>
+   <td style="text-align:right;"> 12.56326 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:right;"> -1418.968 </td>
+   <td style="text-align:right;"> 2863.937 </td>
+   <td style="text-align:right;"> 2925.792 </td>
+   <td style="text-align:right;"> 1361.457 </td>
+   <td style="text-align:right;"> 849 </td>
+  </tr>
+</tbody>
+</table>Analysis of Variance Table
+
+Model 1: satisfaction_rank ~ 1 + billet_current
+Model 2: satisfaction_rank ~ 1 + billet_current + officer_rate
+  Res.Df    RSS Df Sum of Sq      F    Pr(>F)
+1    855 1464.9                              
+2    854 1371.0  1    93.905 58.493 5.496e-14
+Analysis of Variance Table
+
+Model 1: satisfaction_rank ~ 1 + billet_current + officer_rate
+Model 2: satisfaction_rank ~ 1 + billet_current * officer_rate
+  Res.Df    RSS Df Sum of Sq      F Pr(>F)
+1    854 1371.0                           
+2    849 1361.5  5    9.5562 1.1918 0.3112
+![](figure-png/by-billet-and-rate-1.png)<!-- -->
+
 
 Session Information
 ============================================
@@ -3320,33 +3650,33 @@ For the sake of documentation and reproducibility, the current report was render
   <summary>Environment <span class="glyphicon glyphicon-plus-sign"></span></summary>
 
 ```
-─ Session info ───────────────────────────────────────────────────────────────────────────────────
- setting  value                       
- version  R version 3.6.1 (2019-07-05)
- os       Ubuntu 18.04.3 LTS          
- system   x86_64, linux-gnu           
- ui       X11                         
- language (EN)                        
- collate  en_US.UTF-8                 
- ctype    en_US.UTF-8                 
- tz       America/Chicago             
- date     2019-09-05                  
+- Session info -----------------------------------------------------------------------------------
+ setting  value                                      
+ version  R version 3.6.1 Patched (2019-08-12 r76979)
+ os       Windows >= 8 x64                           
+ system   x86_64, mingw32                            
+ ui       RTerm                                      
+ language (EN)                                       
+ collate  English_United States.1252                 
+ ctype    English_United States.1252                 
+ tz       America/Chicago                            
+ date     2019-10-29                                 
 
-─ Packages ───────────────────────────────────────────────────────────────────────────────────────
+- Packages ---------------------------------------------------------------------------------------
  package         * version     date       lib source                                  
  assertthat        0.2.1       2019-03-21 [1] CRAN (R 3.6.0)                          
- backports         1.1.4       2019-04-10 [1] CRAN (R 3.6.0)                          
+ backports         1.1.5       2019-10-02 [1] CRAN (R 3.6.1)                          
  broom             0.5.2       2019-04-07 [1] CRAN (R 3.6.0)                          
- callr             3.3.1       2019-07-18 [1] CRAN (R 3.6.1)                          
+ callr             3.3.2       2019-09-22 [1] CRAN (R 3.6.1)                          
  cli               1.1.0       2019-03-19 [1] CRAN (R 3.6.0)                          
  colorspace        1.4-1       2019-03-18 [1] CRAN (R 3.6.0)                          
  corrplot          0.84        2017-10-16 [1] CRAN (R 3.6.0)                          
  crayon            1.3.4       2017-09-16 [1] CRAN (R 3.6.0)                          
  desc              1.2.0       2018-05-01 [1] CRAN (R 3.6.0)                          
- devtools          2.1.0       2019-07-06 [1] CRAN (R 3.6.0)                          
- digest            0.6.20      2019-07-04 [1] CRAN (R 3.6.0)                          
- dplyr             0.8.3       2019-07-04 [1] CRAN (R 3.6.0)                          
- ellipsis          0.2.0.1     2019-07-02 [1] CRAN (R 3.6.0)                          
+ devtools          2.2.1       2019-09-24 [1] CRAN (R 3.6.1)                          
+ digest            0.6.22      2019-10-21 [1] CRAN (R 3.6.1)                          
+ dplyr             0.8.3       2019-07-04 [1] CRAN (R 3.6.1)                          
+ ellipsis          0.3.0       2019-09-20 [1] CRAN (R 3.6.1)                          
  evaluate          0.14        2019-05-28 [1] CRAN (R 3.6.0)                          
  fs                1.3.1       2019-05-06 [1] CRAN (R 3.6.0)                          
  generics          0.0.2       2018-11-29 [1] CRAN (R 3.6.0)                          
@@ -3354,32 +3684,33 @@ For the sake of documentation and reproducibility, the current report was render
  glue              1.3.1       2019-03-12 [1] CRAN (R 3.6.0)                          
  gtable            0.3.0       2019-03-25 [1] CRAN (R 3.6.0)                          
  highr             0.8         2019-03-20 [1] CRAN (R 3.6.0)                          
- hms               0.5.0       2019-07-09 [1] CRAN (R 3.6.0)                          
- htmltools         0.3.6       2017-04-28 [1] CRAN (R 3.6.0)                          
+ hms               0.5.1       2019-08-23 [1] CRAN (R 3.6.1)                          
+ htmltools         0.4.0       2019-10-04 [1] CRAN (R 3.6.1)                          
  httr              1.4.1       2019-08-05 [1] CRAN (R 3.6.1)                          
- kableExtra        1.1.0.9001  2019-05-18 [1] local                                   
- knitr           * 1.24        2019-08-08 [1] CRAN (R 3.6.1)                          
+ kableExtra        1.1.0       2019-03-16 [1] CRAN (R 3.6.0)                          
+ knitr           * 1.25        2019-09-18 [1] CRAN (R 3.6.1)                          
  labeling          0.3         2014-08-23 [1] CRAN (R 3.6.0)                          
- lattice           0.20-38     2018-11-04 [1] CRAN (R 3.6.0)                          
+ lattice           0.20-38     2018-11-04 [3] CRAN (R 3.6.1)                          
  lazyeval          0.2.2       2019-03-15 [1] CRAN (R 3.6.0)                          
+ lifecycle         0.1.0       2019-08-01 [1] CRAN (R 3.6.1)                          
  magrittr        * 1.5         2014-11-22 [1] CRAN (R 3.6.0)                          
  memoise           1.1.0       2017-04-21 [1] CRAN (R 3.6.0)                          
  munsell           0.5.0       2018-06-12 [1] CRAN (R 3.6.0)                          
  nlme              3.1-141     2019-08-01 [1] CRAN (R 3.6.1)                          
- pillar            1.4.2       2019-06-29 [1] CRAN (R 3.6.0)                          
- pkgbuild          1.0.4       2019-08-05 [1] CRAN (R 3.6.1)                          
- pkgconfig         2.0.2       2018-08-16 [1] CRAN (R 3.6.0)                          
+ pillar            1.4.2       2019-06-29 [1] CRAN (R 3.6.1)                          
+ pkgbuild          1.0.6       2019-10-09 [1] CRAN (R 3.6.1)                          
+ pkgconfig         2.0.3       2019-09-22 [1] CRAN (R 3.6.1)                          
  pkgload           1.0.2       2018-10-29 [1] CRAN (R 3.6.0)                          
  prettyunits       1.0.2       2015-07-13 [1] CRAN (R 3.6.0)                          
  processx          3.4.1       2019-07-18 [1] CRAN (R 3.6.1)                          
  ps                1.3.0       2018-12-21 [1] CRAN (R 3.6.0)                          
- purrr             0.3.2       2019-03-15 [1] CRAN (R 3.6.0)                          
+ purrr             0.3.3       2019-10-18 [1] CRAN (R 3.6.1)                          
  R6                2.4.0       2019-02-14 [1] CRAN (R 3.6.0)                          
  Rcpp              1.0.2       2019-07-25 [1] CRAN (R 3.6.1)                          
  readr             1.3.1       2018-12-21 [1] CRAN (R 3.6.0)                          
- remotes           2.1.0       2019-06-24 [1] CRAN (R 3.6.0)                          
- rlang             0.4.0       2019-06-25 [1] CRAN (R 3.6.0)                          
- rmarkdown         1.15        2019-08-21 [1] CRAN (R 3.6.1)                          
+ remotes           2.1.0       2019-06-24 [1] CRAN (R 3.6.1)                          
+ rlang             0.4.1       2019-10-24 [1] CRAN (R 3.6.1)                          
+ rmarkdown         1.16        2019-10-01 [1] CRAN (R 3.6.1)                          
  rprojroot         1.3-2       2018-01-03 [1] CRAN (R 3.6.0)                          
  rstudioapi        0.10        2019-03-19 [1] CRAN (R 3.6.0)                          
  rvest             0.3.4       2019-05-15 [1] CRAN (R 3.6.0)                          
@@ -3387,28 +3718,27 @@ For the sake of documentation and reproducibility, the current report was render
  sessioninfo       1.1.1       2018-11-05 [1] CRAN (R 3.6.0)                          
  stringi           1.4.3       2019-03-12 [1] CRAN (R 3.6.0)                          
  stringr           1.4.0       2019-02-10 [1] CRAN (R 3.6.0)                          
- TabularManifest   0.1-16.9003 2019-05-02 [1] Github (Melinae/TabularManifest@4cbc21c)
+ TabularManifest   0.1-16.9003 2018-06-28 [1] Github (Melinae/TabularManifest@c2bdddb)
  testthat          2.2.1       2019-07-25 [1] CRAN (R 3.6.1)                          
  tibble            2.1.3       2019-06-06 [1] CRAN (R 3.6.0)                          
- tidyr             0.8.3.9000  2019-07-10 [1] Github (tidyverse/tidyr@c6e291c)        
+ tidyr             1.0.0       2019-09-11 [1] CRAN (R 3.6.1)                          
  tidyselect        0.2.5       2018-10-11 [1] CRAN (R 3.6.0)                          
- usethis           1.5.1       2019-07-04 [1] CRAN (R 3.6.0)                          
- vctrs             0.2.0       2019-07-05 [1] CRAN (R 3.6.0)                          
+ usethis           1.5.1       2019-07-04 [1] CRAN (R 3.6.1)                          
+ vctrs             0.2.0       2019-07-05 [1] CRAN (R 3.6.1)                          
  viridisLite       0.3.0       2018-02-01 [1] CRAN (R 3.6.0)                          
  webshot           0.5.1       2018-09-28 [1] CRAN (R 3.6.0)                          
  withr             2.1.2       2018-03-15 [1] CRAN (R 3.6.0)                          
- xfun              0.9         2019-08-21 [1] CRAN (R 3.6.1)                          
+ xfun              0.10        2019-10-01 [1] CRAN (R 3.6.1)                          
  xml2              1.2.2       2019-08-09 [1] CRAN (R 3.6.1)                          
  yaml              2.2.0       2018-07-25 [1] CRAN (R 3.6.0)                          
  zeallot           0.1.0       2018-01-28 [1] CRAN (R 3.6.0)                          
 
-[1] /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6
-[2] /usr/local/lib/R/site-library
-[3] /usr/lib/R/site-library
-[4] /usr/lib/R/library
+[1] D:/Projects/RLibraries
+[2] D:/Users/Will/Documents/R/win-library/3.6
+[3] C:/Program Files/R/R-3.6.1patched/library
 ```
 </details>
 
 
 
-Report rendered by wibeasley at 2019-09-05, 09:58 -0500 in 46 seconds.
+Report rendered by Will at 2019-10-29, 17:29 -0500 in 43 seconds.
