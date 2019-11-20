@@ -327,7 +327,19 @@ By Bonus Pay
    <td style="text-align:right;"> 868 </td>
   </tr>
 </tbody>
-</table>
+</table># A tibble: 10 x 3
+   bonus_pay_cut4 specialty_type     n
+   <fct>          <fct>          <int>
+ 1 $0             operational       78
+ 2 $0             resident          50
+ 3 $20-24k        nonsurgical      322
+ 4 $20-24k        family           177
+ 5 $20-24k        operational       12
+ 6 $24-32k        nonsurgical       70
+ 7 $24-32k        surgical         109
+ 8 $24-32k        unknown            6
+ 9 32k+           nonsurgical       79
+10 32k+           surgical          48
 
 By Assignment Current Choice
 -----------------------------------
@@ -394,14 +406,6 @@ By Assignment Current Choice
 </tbody>
 </table>
 
-By Year
------------------------------------
-
-
-By Survey Lag
------------------------------------
-
-
 
 By Manning Proportion
 -----------------------------------
@@ -409,7 +413,7 @@ By Manning Proportion
 
 ![](figure-png/by-manning_proportion-1.png)<!-- -->![](figure-png/by-manning_proportion-2.png)<!-- -->
 
-By Crtical War
+By Critical War
 -----------------------------------
 ![](figure-png/by-critical_war-1.png)<!-- -->
 
@@ -510,11 +514,6 @@ By Billet Current
   </tr>
 </tbody>
 </table>
-
-By Geographic Preference
------------------------------------
-
-
 
 
 Analyses - 2 Predictors
@@ -1455,6 +1454,7 @@ For the sake of documentation and reproducibility, the current report was render
  dplyr             0.8.3       2019-07-04 [1] CRAN (R 3.6.1)                          
  ellipsis          0.3.0       2019-09-20 [1] CRAN (R 3.6.1)                          
  evaluate          0.14        2019-05-28 [1] CRAN (R 3.6.1)                          
+ fansi             0.4.0       2018-10-05 [1] CRAN (R 3.6.1)                          
  farver            2.0.1       2019-11-13 [1] CRAN (R 3.6.1)                          
  fs                1.3.1       2019-05-06 [1] CRAN (R 3.6.1)                          
  generics          0.0.2       2018-11-29 [1] CRAN (R 3.6.1)                          
@@ -1502,6 +1502,7 @@ For the sake of documentation and reproducibility, the current report was render
  tidyr             1.0.0       2019-09-11 [1] CRAN (R 3.6.1)                          
  tidyselect        0.2.5       2018-10-11 [1] CRAN (R 3.6.1)                          
  usethis           1.5.1       2019-07-04 [1] CRAN (R 3.6.1)                          
+ utf8              1.1.4       2018-05-24 [1] CRAN (R 3.6.1)                          
  vctrs             0.2.0       2019-07-05 [1] CRAN (R 3.6.1)                          
  viridisLite       0.3.0       2018-02-01 [1] CRAN (R 3.6.1)                          
  webshot           0.5.1       2018-09-28 [1] CRAN (R 3.6.1)                          
@@ -1520,4 +1521,4 @@ For the sake of documentation and reproducibility, the current report was render
 
 
 
-Report rendered by wibeasley at 2019-11-20, 16:50 -0600 in 71 seconds.
+Report rendered by wibeasley at 2019-11-20, 17:11 -0600 in 64 seconds.

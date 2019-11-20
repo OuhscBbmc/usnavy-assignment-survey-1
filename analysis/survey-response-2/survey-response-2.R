@@ -186,6 +186,9 @@ ds %>%
 
 prettify_lm(lm(satisfaction_rank ~ 1 + bonus_pay_cut4, data=ds))
 
+ds %>%
+  dplyr::count(bonus_pay_cut4, specialty_type)
+
 # ---- by-assignment-current-choice ------------------------------------------------------------
 cat("### satisfaction_rank\n\n")
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.

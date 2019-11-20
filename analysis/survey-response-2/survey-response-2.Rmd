@@ -118,23 +118,13 @@ By Assignment Current Choice
 ```{r by-assignment-current-choice, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
 
-By Year
------------------------------------
-```{r by-year, echo=echo_chunks, message=message_chunks, results="asis"}
-```
-
-By Survey Lag
------------------------------------
-```{r by-survey_lag, echo=echo_chunks, message=message_chunks, results="asis"}
-```
-
 
 By Manning Proportion
 -----------------------------------
 ```{r by-manning_proportion, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
 
-By Crtical War
+By Critical War
 -----------------------------------
 ```{r by-critical_war, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
@@ -143,12 +133,6 @@ By Billet Current
 -----------------------------------
 ```{r by-billet_current, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
-
-By Geographic Preference
------------------------------------
-```{r by-geographic_preference, echo=echo_chunks, message=message_chunks, results="asis"}
-```
-
 
 
 Analyses - 2 Predictors
