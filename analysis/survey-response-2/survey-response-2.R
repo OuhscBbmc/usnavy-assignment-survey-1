@@ -434,17 +434,20 @@ ds_no_other_or_unknown %>%
 
 # ---- graph-equal-slopes ------------------------------------------------------
 palette_billet <- c(
-  "CONUS Operational"             = "", # The reference group
-  "CONUS MTF"                     = "",
-  "GME"                           = "",
-  "Non-Operational/Non-Clinical"  = "",
-  "OCONUS MTF"                    = "",
-  "OCONUS Operational"            = "",
-  "Other"                         = ""
+  "GME"                           = "#EDAE49",
+  "CONUS MTF"                     = "#304bce", # dark blue
+  "CONUS Operational"             = "#009dee", # light blue; The reference group
+  "OCONUS MTF"                    = "#cc5555", # darkish red
+  "Non-Operational/Non-Clinical"  = "#3acc85", # green
+  "OCONUS Operational"            = "#ff5500"  # lighter red
+  # "Other"                         = ""
 )
-a <- lm(satisfaction_rank ~ 0 + billet_current + officer_rate, data=ds)
+palette_billet_light <- scales::alpha(palette_billet, alpha=.4)
+
+a <- lm(satisfaction_rank ~ 0 + billet_current + officer_rate + specialty_type, data=ds_no_other_or_unknown)
 
 pattern_billet <- "^billet_current"
+pattern_specialty <- "^specialty_type"
 
 # ds_trajectory <-
 #   tibble::tibble(
@@ -461,18 +464,37 @@ ds_trajectory <-
     intercept   = estimate, #+ coef(a)[["(Intercept)"]],
     slope       = coef(a)[["officer_rate"]],
 
-    billet_current    = factor(term, levels=sort(levels(ds$billet_current)))
+    billet_current    = factor(
+      term,
+      levels  = term #levels(ds_no_other_or_unknown$billet_current),
+      # labels  = sprintf("%2.2f %s", intercept, term)
+    ),
+    billet_current    = reorder(billet_current, -intercept)
   ) %>%
   dplyr::select(
     billet_current,
     intercept,
     slope
   )
-ggplot(ds, aes(x=officer_rate, y=satisfaction_rank, color=billet_current, group=billet_current)) +
-  geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), alpha=1, size=1.5, shape=1, na.rm=T, show.legend = T) +
+
+ds_no_other_or_unknown %>%
+  dplyr::mutate(
+    billet_current  = factor(billet_current, levels=levels(ds_trajectory$billet_current)),
+  ) %>%
+  ggplot(aes(x=officer_rate, y=satisfaction_rank, color=billet_current, fill=billet_current, group=billet_current)) +
+  geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), size=1.5, shape=21, na.rm=T, show.legend = T) +
   # geom_smooth(method = lm, se=F, formula = y~ x + 1) +
-  geom_abline(data=ds_trajectory, aes(intercept=intercept, slope=slope, color=billet_current)) +
-  theme_report
+  geom_abline(data=ds_trajectory, aes(intercept=intercept, slope=slope, color=billet_current), size=1, alpha=.5) +
+  scale_color_manual(values = palette_billet) +
+  scale_fill_manual(values = palette_billet_light) +
+  guides(color = guide_legend(override.aes = list(size = 3))) +
+  theme_report +
+  labs(
+    x     = "Officer Rate",
+    y     = "Satisfaction",
+    color = "Current Billet",
+    fill  = "Current Billet"
+  )
 
 # ---- 3-predictor --------------------------------------------------------------
 
