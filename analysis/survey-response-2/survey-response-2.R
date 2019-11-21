@@ -510,13 +510,18 @@ ds_no_other_or_unknown %>%
   )
 
 # ---- specialty-intercept ------------------------------------------------------
+#c13600
+#df7605
+#eeca52
+#9baa65
+#0b9f89
+#030736
 palette_specialty <- c(
-  "nonsurgical"     = "#EDAE49",
-  # ""              = "#304bce", # dark blue
-  "surgical"        = "#009dee", # light blue; The reference group
-  "resident"        = "#cc5555", # darkish red
-  "family"          = "#3acc85", # green
-  "operational"     = "#ff5500"  # lighter red
+  "nonsurgical"     = "#9baa65", # olive
+  "surgical"        = "#030736", # blue
+  "resident"        = "#c13600", # red
+  "family"          = "#0b9f89", # green
+  "operational"     = "#df7605"  # orange
   # "Other"                         = ""
 )
 palette_specialty_light <- scales::alpha(palette_specialty, alpha=.4)

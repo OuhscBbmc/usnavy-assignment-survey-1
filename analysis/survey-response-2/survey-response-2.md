@@ -1,6 +1,6 @@
 ---
 title: Attitudes Regarding the Assignment Process Among Navy Medical Corps Officers
-date: "Date: 2019-11-20"
+date: "Date: 2019-11-21"
 output:
   html_document:
     keep_md: yes
@@ -1637,7 +1637,7 @@ For the sake of documentation and reproducibility, the current report was render
  collate  en_US.UTF-8                 
  ctype    en_US.UTF-8                 
  tz       America/Chicago             
- date     2019-11-20                  
+ date     2019-11-21                  
 
 ─ Packages ───────────────────────────────────────────────────────────────────────────────────────
  package         * version     date       lib source                                  
@@ -1722,4 +1722,4 @@ For the sake of documentation and reproducibility, the current report was render
 
 
 
-Report rendered by wibeasley at 2019-11-20, 23:41 -0600 in 32 seconds.
+Report rendered by wibeasley at 2019-11-21, 00:02 -0600 in 34 seconds.
