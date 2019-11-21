@@ -169,10 +169,23 @@ By Rank and Billet Type
 ```{r by-billet-and-rate, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
 
+Models to Publish
+===================================
+
 
 Experimental
 -----------------------------------
 ```{r graph-equal-slopes, echo=echo_chunks, message=message_chunks, results="asis"}
+```
+
+3-predictor (and final) model
+-----------------------------------
+```{r 3-predictor, echo=echo_chunks, message=message_chunks, results="asis"}
+```
+
+Nonsignificant Additions
+-----------------------------------
+```{r nonsignificant-additions, echo=echo_chunks, message=message_chunks}
 ```
 
 

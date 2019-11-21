@@ -393,32 +393,33 @@ prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + critical_war, data=ds))
 
 # ---- by-billet-and-rate ----------------------------------------------------------
 cat("### satisfaction_rank\n\n")
-ds_no_other <-
+ds_no_other_or_unknown <-
   ds %>%
-  dplyr::filter(billet_current != "Other")
+  dplyr::filter(billet_current != "Other") %>%
+  dplyr::filter(specialty_type != "unknown")
 
 cat("**Conculsion**: `officer_rate` has a significant positive slope --sig predicting beyond `billet_current`.  But the billet levels have the same slope.")
-# prettify_lm(lm(satisfaction_rank ~ 1 + billet_current               , data=ds_no_other))
+# prettify_lm(lm(satisfaction_rank ~ 1 + billet_current               , data=ds_no_other_or_unknown))
 
-prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + officer_rate, data=ds_no_other))
+prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + officer_rate, data=ds_no_other_or_unknown))
 
-# prettify_lm(lm(satisfaction_rank ~ 1 + billet_current * officer_rate, data=ds_no_other))
+# prettify_lm(lm(satisfaction_rank ~ 1 + billet_current * officer_rate, data=ds_no_other_or_unknown))
 
 anova(
-  lm(satisfaction_rank ~ 1 + billet_current               , data=ds_no_other, subset=!is.na(officer_rate)),
-  lm(satisfaction_rank ~ 1 + billet_current + officer_rate, data=ds_no_other)
+  lm(satisfaction_rank ~ 1 + billet_current               , data=ds_no_other_or_unknown, subset=!is.na(officer_rate)),
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate, data=ds_no_other_or_unknown)
 )
 
 anova(
-  lm(satisfaction_rank ~ 1 + billet_current + officer_rate, data=ds_no_other),
-  lm(satisfaction_rank ~ 1 + billet_current * officer_rate, data=ds_no_other)
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate, data=ds_no_other_or_unknown),
+  lm(satisfaction_rank ~ 1 + billet_current * officer_rate, data=ds_no_other_or_unknown)
 )
 
 # ggplot(mpg, aes(displ, hwy)) +
 #   geom_point() +
 #   geom_smooth(method = lm, se = FALSE)
 
-ds_no_other %>%
+ds_no_other_or_unknown %>%
   tidyr::drop_na(satisfaction_rank) %>%
   tidyr::drop_na(officer_rate) %>%
   # ggplot(., aes(x=officer_rate, y=satisfaction_rank)) +
@@ -442,7 +443,7 @@ palette_billet <- c(
   "Other"                         = ""
 )
 a <- lm(satisfaction_rank ~ 0 + billet_current + officer_rate, data=ds)
-# a
+
 pattern_billet <- "^billet_current"
 
 # ds_trajectory <-
@@ -473,3 +474,32 @@ ggplot(ds, aes(x=officer_rate, y=satisfaction_rank, color=billet_current, group=
   geom_abline(data=ds_trajectory, aes(intercept=intercept, slope=slope, color=billet_current)) +
   theme_report
 
+# ---- 3-predictor --------------------------------------------------------------
+
+prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + manning_proportion_cut3 + specialty_type, data=ds_no_other_or_unknown))
+
+anova(
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate                 , data = ds_no_other_or_unknown),
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data = ds_no_other_or_unknown)
+)
+
+
+# ---- nonsignificant-additions ------------------------------------------------
+
+cat("`manning_proportion_cut3` doesn't sig improve the fit of the model")
+anova(
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data=ds_no_other_or_unknown),
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate * specialty_type, data=ds_no_other_or_unknown)
+)
+
+cat("`manning_proportion_cut3` doesn't sig improve the fit of the model")
+anova(
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type                 , data=ds_no_other_or_unknown),
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type + manning_proportion_cut3 , data=ds_no_other_or_unknown)
+)
+
+cat("`bonus_pay_cut4` doesn't sig improve the fit of the model")
+anova(
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type                 , data=ds_no_other_or_unknown),
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type + bonus_pay_cut4 , data=ds_no_other_or_unknown)
+)

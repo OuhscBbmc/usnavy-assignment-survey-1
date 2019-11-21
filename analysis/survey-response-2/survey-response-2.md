@@ -1301,7 +1301,7 @@ By Rank and Billet Type
 -----------------------------------
 ### satisfaction_rank
 
-**Conculsion**: `officer_rate` has a significant positive slope --sig predicting beyond `billet_current`.  But the billet levels have the same slope.<br/>Data:<code> ds_no_other </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current + officer_rate </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+**Conculsion**: `officer_rate` has a significant positive slope --sig predicting beyond `billet_current`.  But the billet levels have the same slope.<br/>Data:<code> ds_no_other_or_unknown </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current + officer_rate </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -1314,51 +1314,51 @@ By Rank and Billet Type
 <tbody>
   <tr>
    <td style="text-align:left;"> (Intercept) </td>
-   <td style="text-align:right;"> 2.2806025 </td>
-   <td style="text-align:right;"> 0.2152925 </td>
-   <td style="text-align:right;"> 10.593044 </td>
+   <td style="text-align:right;"> 2.2896658 </td>
+   <td style="text-align:right;"> 0.2158662 </td>
+   <td style="text-align:right;"> 10.606874 </td>
    <td style="text-align:right;"> 0.0000000 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentGME </td>
-   <td style="text-align:right;"> 0.2017814 </td>
-   <td style="text-align:right;"> 0.1387897 </td>
-   <td style="text-align:right;"> 1.453865 </td>
-   <td style="text-align:right;"> 0.1463512 </td>
+   <td style="text-align:right;"> 0.2013312 </td>
+   <td style="text-align:right;"> 0.1389182 </td>
+   <td style="text-align:right;"> 1.449278 </td>
+   <td style="text-align:right;"> 0.1476278 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentNon-Operational/Non-Clinical </td>
-   <td style="text-align:right;"> -0.5037952 </td>
-   <td style="text-align:right;"> 0.1975918 </td>
-   <td style="text-align:right;"> -2.549676 </td>
-   <td style="text-align:right;"> 0.0109560 </td>
+   <td style="text-align:right;"> -0.5007736 </td>
+   <td style="text-align:right;"> 0.1978333 </td>
+   <td style="text-align:right;"> -2.531290 </td>
+   <td style="text-align:right;"> 0.0115432 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentOCONUS MTF </td>
-   <td style="text-align:right;"> -0.4207375 </td>
-   <td style="text-align:right;"> 0.1400836 </td>
-   <td style="text-align:right;"> -3.003475 </td>
-   <td style="text-align:right;"> 0.0027470 </td>
+   <td style="text-align:right;"> -0.4197372 </td>
+   <td style="text-align:right;"> 0.1402283 </td>
+   <td style="text-align:right;"> -2.993243 </td>
+   <td style="text-align:right;"> 0.0028400 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentCONUS Operational </td>
-   <td style="text-align:right;"> -0.6360962 </td>
-   <td style="text-align:right;"> 0.1345180 </td>
-   <td style="text-align:right;"> -4.728707 </td>
-   <td style="text-align:right;"> 0.0000026 </td>
+   <td style="text-align:right;"> -0.6289746 </td>
+   <td style="text-align:right;"> 0.1350817 </td>
+   <td style="text-align:right;"> -4.656255 </td>
+   <td style="text-align:right;"> 0.0000037 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentOCONUS Operational </td>
-   <td style="text-align:right;"> -1.3371740 </td>
-   <td style="text-align:right;"> 0.2092479 </td>
-   <td style="text-align:right;"> -6.390381 </td>
+   <td style="text-align:right;"> -1.3364565 </td>
+   <td style="text-align:right;"> 0.2094411 </td>
+   <td style="text-align:right;"> -6.381061 </td>
    <td style="text-align:right;"> 0.0000000 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> officer_rate </td>
-   <td style="text-align:right;"> 0.3630293 </td>
-   <td style="text-align:right;"> 0.0474667 </td>
-   <td style="text-align:right;"> 7.648078 </td>
+   <td style="text-align:right;"> 0.3606725 </td>
+   <td style="text-align:right;"> 0.0476357 </td>
+   <td style="text-align:right;"> 7.571469 </td>
    <td style="text-align:right;"> 0.0000000 </td>
   </tr>
 </tbody>
@@ -1382,17 +1382,17 @@ By Rank and Billet Type
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:right;"> 0.1339518 </td>
-   <td style="text-align:right;"> 0.1278671 </td>
-   <td style="text-align:right;"> 1.267045 </td>
-   <td style="text-align:right;"> 22.01471 </td>
+   <td style="text-align:right;"> 0.1319973 </td>
+   <td style="text-align:right;"> 0.1258846 </td>
+   <td style="text-align:right;"> 1.268142 </td>
+   <td style="text-align:right;"> 21.59395 </td>
    <td style="text-align:right;"> 0 </td>
    <td style="text-align:right;"> 7 </td>
-   <td style="text-align:right;"> -1421.979 </td>
-   <td style="text-align:right;"> 2859.959 </td>
-   <td style="text-align:right;"> 2898.024 </td>
-   <td style="text-align:right;"> 1371.014 </td>
-   <td style="text-align:right;"> 854 </td>
+   <td style="text-align:right;"> -1419.412 </td>
+   <td style="text-align:right;"> 2854.824 </td>
+   <td style="text-align:right;"> 2892.87 </td>
+   <td style="text-align:right;"> 1370.173 </td>
+   <td style="text-align:right;"> 852 </td>
   </tr>
 </tbody>
 </table>Analysis of Variance Table
@@ -1400,21 +1400,217 @@ By Rank and Billet Type
 Model 1: satisfaction_rank ~ 1 + billet_current
 Model 2: satisfaction_rank ~ 1 + billet_current + officer_rate
   Res.Df    RSS Df Sum of Sq      F    Pr(>F)
-1    855 1464.9                              
-2    854 1371.0  1    93.905 58.493 5.496e-14
+1    853 1462.4                              
+2    852 1370.2  1    92.193 57.327 9.594e-14
 Analysis of Variance Table
 
 Model 1: satisfaction_rank ~ 1 + billet_current + officer_rate
 Model 2: satisfaction_rank ~ 1 + billet_current * officer_rate
   Res.Df    RSS Df Sum of Sq      F Pr(>F)
-1    854 1371.0                           
-2    849 1361.5  5    9.5562 1.1918 0.3112
+1    852 1370.2                           
+2    847 1360.6  5    9.5849 1.1934 0.3105
 ![](figure-png/by-billet-and-rate-1.png)<!-- -->
+
+Models to Publish
+===================================
 
 
 Experimental
 -----------------------------------
 ![](figure-png/graph-equal-slopes-1.png)<!-- -->
+
+3-predictor (and final) model
+-----------------------------------
+<br/>Data:<code> ds_no_other_or_unknown </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current + officer_rate + manning_proportion_cut3 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> term </th>
+   <th style="text-align:right;"> estimate </th>
+   <th style="text-align:right;"> std.error </th>
+   <th style="text-align:right;"> statistic </th>
+   <th style="text-align:right;"> p.value </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> (Intercept) </td>
+   <td style="text-align:right;"> 2.6851976 </td>
+   <td style="text-align:right;"> 0.2854502 </td>
+   <td style="text-align:right;"> 9.4068857 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentGME </td>
+   <td style="text-align:right;"> 0.2458152 </td>
+   <td style="text-align:right;"> 0.1459436 </td>
+   <td style="text-align:right;"> 1.6843164 </td>
+   <td style="text-align:right;"> 0.0924894 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentNon-Operational/Non-Clinical </td>
+   <td style="text-align:right;"> -0.4127666 </td>
+   <td style="text-align:right;"> 0.2000036 </td>
+   <td style="text-align:right;"> -2.0637963 </td>
+   <td style="text-align:right;"> 0.0393415 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentOCONUS MTF </td>
+   <td style="text-align:right;"> -0.3566324 </td>
+   <td style="text-align:right;"> 0.1405126 </td>
+   <td style="text-align:right;"> -2.5380813 </td>
+   <td style="text-align:right;"> 0.0113245 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentCONUS Operational </td>
+   <td style="text-align:right;"> -0.3437994 </td>
+   <td style="text-align:right;"> 0.1579410 </td>
+   <td style="text-align:right;"> -2.1767587 </td>
+   <td style="text-align:right;"> 0.0297744 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentOCONUS Operational </td>
+   <td style="text-align:right;"> -1.1004536 </td>
+   <td style="text-align:right;"> 0.2170624 </td>
+   <td style="text-align:right;"> -5.0697575 </td>
+   <td style="text-align:right;"> 0.0000005 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> officer_rate </td>
+   <td style="text-align:right;"> 0.3114947 </td>
+   <td style="text-align:right;"> 0.0502808 </td>
+   <td style="text-align:right;"> 6.1951067 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> manning_proportion_cut3Balanced </td>
+   <td style="text-align:right;"> -0.0953558 </td>
+   <td style="text-align:right;"> 0.1704935 </td>
+   <td style="text-align:right;"> -0.5592928 </td>
+   <td style="text-align:right;"> 0.5761099 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> manning_proportion_cut3Over </td>
+   <td style="text-align:right;"> -0.0350102 </td>
+   <td style="text-align:right;"> 0.1678913 </td>
+   <td style="text-align:right;"> -0.2085290 </td>
+   <td style="text-align:right;"> 0.8348662 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> specialty_typesurgical </td>
+   <td style="text-align:right;"> -0.2452708 </td>
+   <td style="text-align:right;"> 0.1256172 </td>
+   <td style="text-align:right;"> -1.9525250 </td>
+   <td style="text-align:right;"> 0.0512054 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> specialty_typefamily </td>
+   <td style="text-align:right;"> -0.4753381 </td>
+   <td style="text-align:right;"> 0.1872759 </td>
+   <td style="text-align:right;"> -2.5381695 </td>
+   <td style="text-align:right;"> 0.0113217 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> specialty_typeoperational </td>
+   <td style="text-align:right;"> -0.6574151 </td>
+   <td style="text-align:right;"> 0.1887946 </td>
+   <td style="text-align:right;"> -3.4821702 </td>
+   <td style="text-align:right;"> 0.0005229 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> specialty_typeresident </td>
+   <td style="text-align:right;"> -0.2681406 </td>
+   <td style="text-align:right;"> 0.2576730 </td>
+   <td style="text-align:right;"> -1.0406238 </td>
+   <td style="text-align:right;"> 0.2983475 </td>
+  </tr>
+</tbody>
+</table>
+
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> r.squared </th>
+   <th style="text-align:right;"> adj.r.squared </th>
+   <th style="text-align:right;"> sigma </th>
+   <th style="text-align:right;"> statistic </th>
+   <th style="text-align:right;"> p.value </th>
+   <th style="text-align:right;"> df </th>
+   <th style="text-align:right;"> logLik </th>
+   <th style="text-align:right;"> AIC </th>
+   <th style="text-align:right;"> BIC </th>
+   <th style="text-align:right;"> deviance </th>
+   <th style="text-align:right;"> df.residual </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 0.1540242 </td>
+   <td style="text-align:right;"> 0.1420246 </td>
+   <td style="text-align:right;"> 1.25638 </td>
+   <td style="text-align:right;"> 12.83572 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 13 </td>
+   <td style="text-align:right;"> -1408.372 </td>
+   <td style="text-align:right;"> 2844.744 </td>
+   <td style="text-align:right;"> 2911.325 </td>
+   <td style="text-align:right;"> 1335.403 </td>
+   <td style="text-align:right;"> 846 </td>
+  </tr>
+</tbody>
+</table>Analysis of Variance Table
+
+Model 1: satisfaction_rank ~ 1 + billet_current + officer_rate
+Model 2: satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type
+  Res.Df    RSS Df Sum of Sq     F    Pr(>F)
+1    852 1370.2                             
+2    848 1336.1  4    34.065 5.405 0.0002669
+
+Nonsignificant Additions
+-----------------------------------
+
+```
+`manning_proportion_cut3` doesn't sig improve the fit of the model
+```
+
+```
+Analysis of Variance Table
+
+Model 1: satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type
+Model 2: satisfaction_rank ~ 1 + billet_current + officer_rate * specialty_type
+  Res.Df    RSS Df Sum of Sq      F Pr(>F)
+1    848 1336.1                           
+2    844 1332.7  4    3.4601 0.5478 0.7007
+```
+
+```
+`manning_proportion_cut3` doesn't sig improve the fit of the model
+```
+
+```
+Analysis of Variance Table
+
+Model 1: satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type
+Model 2: satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type + 
+    manning_proportion_cut3
+  Res.Df    RSS Df Sum of Sq      F Pr(>F)
+1    848 1336.1                           
+2    846 1335.4  2   0.70583 0.2236 0.7997
+```
+
+```
+`bonus_pay_cut4` doesn't sig improve the fit of the model
+```
+
+```
+Analysis of Variance Table
+
+Model 1: satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type
+Model 2: satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type + 
+    bonus_pay_cut4
+  Res.Df    RSS Df Sum of Sq      F Pr(>F)
+1    848 1336.1                           
+2    845 1332.8  3    3.3317 0.7041 0.5497
+```
 
 
 Session Information
@@ -1521,4 +1717,4 @@ For the sake of documentation and reproducibility, the current report was render
 
 
 
-Report rendered by wibeasley at 2019-11-20, 17:11 -0600 in 64 seconds.
+Report rendered by wibeasley at 2019-11-20, 18:02 -0600 in 23 seconds.
