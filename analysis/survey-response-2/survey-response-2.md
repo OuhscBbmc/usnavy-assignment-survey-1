@@ -1415,10 +1415,6 @@ Models to Publish
 ===================================
 
 
-Experimental
------------------------------------
-![](figure-png/graph-equal-slopes-1.png)<!-- -->
-
 3-predictor (and final) model
 -----------------------------------
 <br/>Data:<code> ds_no_other_or_unknown </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current + officer_rate + manning_proportion_cut3 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
@@ -1564,6 +1560,11 @@ Model 2: satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type
   Res.Df    RSS Df Sum of Sq     F    Pr(>F)
 1    852 1370.2                             
 2    848 1336.1  4    34.065 5.405 0.0002669
+
+Billet Intercepts
+-----------------------------------
+![](figure-png/billet-intercept-1.png)<!-- -->
+
 
 Nonsignificant Additions
 -----------------------------------
@@ -1717,4 +1718,4 @@ For the sake of documentation and reproducibility, the current report was render
 
 
 
-Report rendered by wibeasley at 2019-11-20, 19:07 -0600 in 23 seconds.
+Report rendered by wibeasley at 2019-11-20, 22:39 -0600 in 25 seconds.

@@ -432,7 +432,17 @@ ds_no_other_or_unknown %>%
   theme(panel.grid.minor.y = element_blank()) +
   theme(legend.position="bottom")
 
-# ---- graph-equal-slopes ------------------------------------------------------
+
+# ---- 3-predictor --------------------------------------------------------------
+
+prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + manning_proportion_cut3 + specialty_type, data=ds_no_other_or_unknown))
+
+anova(
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate                 , data = ds_no_other_or_unknown),
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data = ds_no_other_or_unknown)
+)
+
+# ---- billet-intercept ------------------------------------------------------
 palette_billet <- c(
   "GME"                           = "#EDAE49",
   "CONUS MTF"                     = "#304bce", # dark blue
@@ -495,16 +505,6 @@ ds_no_other_or_unknown %>%
     color = "Current Billet",
     fill  = "Current Billet"
   )
-
-# ---- 3-predictor --------------------------------------------------------------
-
-prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + manning_proportion_cut3 + specialty_type, data=ds_no_other_or_unknown))
-
-anova(
-  lm(satisfaction_rank ~ 1 + billet_current + officer_rate                 , data = ds_no_other_or_unknown),
-  lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data = ds_no_other_or_unknown)
-)
-
 
 # ---- nonsignificant-additions ------------------------------------------------
 

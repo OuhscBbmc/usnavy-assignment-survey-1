@@ -173,15 +173,16 @@ Models to Publish
 ===================================
 
 
-Experimental
------------------------------------
-```{r graph-equal-slopes, echo=echo_chunks, message=message_chunks, results="asis"}
-```
-
 3-predictor (and final) model
 -----------------------------------
 ```{r 3-predictor, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
+
+Billet Intercepts
+-----------------------------------
+```{r billet-intercept, echo=echo_chunks, message=message_chunks, results="asis"}
+```
+
 
 Nonsignificant Additions
 -----------------------------------
