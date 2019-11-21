@@ -442,6 +442,9 @@ anova(
   lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data = ds_no_other_or_unknown)
 )
 
+lm_no_int_billet    <- lm(satisfaction_rank ~ 0 + billet_current + officer_rate + specialty_type, data=ds_no_other_or_unknown)
+lm_no_int_specialty <- lm(satisfaction_rank ~ 0 + specialty_type + officer_rate + billet_current, data=ds_no_other_or_unknown)
+
 # ---- billet-intercept ------------------------------------------------------
 palette_billet <- c(
   "GME"                           = "#EDAE49",
@@ -454,7 +457,6 @@ palette_billet <- c(
 )
 palette_billet_light <- scales::alpha(palette_billet, alpha=.4)
 
-a <- lm(satisfaction_rank ~ 0 + billet_current + officer_rate + specialty_type, data=ds_no_other_or_unknown)
 
 pattern_billet <- "^billet_current"
 pattern_specialty <- "^specialty_type"
@@ -465,14 +467,15 @@ pattern_specialty <- "^specialty_type"
 #     slope = 1.2
 #   )
 ds_trajectory <-
-  a %>%
+  lm_no_int_billet %>%
   broom::tidy() %>%
   dplyr::filter(grepl(pattern_billet, term)) %>%
   # dplyr::select(term, estimate) %>%
   dplyr::mutate(
     term        = sub(pattern_billet, "", term),
     intercept   = estimate, #+ coef(a)[["(Intercept)"]],
-    slope       = coef(a)[["officer_rate"]],
+    slope       = coef(lm_no_int_billet)[["officer_rate"]],
+    # slope       = coef(a)[["I(officer_rate - 3)"]],
 
     billet_current    = factor(
       term,
@@ -504,6 +507,64 @@ ds_no_other_or_unknown %>%
     y     = "Satisfaction",
     color = "Current Billet",
     fill  = "Current Billet"
+  )
+
+# ---- specialty-intercept ------------------------------------------------------
+palette_specialty <- c(
+  "nonsurgical"     = "#EDAE49",
+  # ""              = "#304bce", # dark blue
+  "surgical"        = "#009dee", # light blue; The reference group
+  "resident"        = "#cc5555", # darkish red
+  "family"          = "#3acc85", # green
+  "operational"     = "#ff5500"  # lighter red
+  # "Other"                         = ""
+)
+palette_specialty_light <- scales::alpha(palette_specialty, alpha=.4)
+pattern_specialty <- "^specialty_type"
+
+lm_no_int_specialty   <- lm(satisfaction_rank ~ 0 + specialty_type + officer_rate + billet_current, data=ds_no_other_or_unknown)
+
+ds_trajectory_specialty <-
+  lm_no_int_specialty %>%
+  broom::tidy() %>%
+  dplyr::filter(grepl(pattern_specialty, term)) %>%
+  # dplyr::select(term, estimate) %>%
+  dplyr::mutate(
+    term        = sub(pattern_specialty, "", term),
+    intercept   = estimate, #+ coef(a)[["(Intercept)"]],
+    slope       = coef(lm_no_int_specialty)[["officer_rate"]],
+    # slope       = coef(a)[["I(officer_rate - 3)"]],
+
+    specialty_type    = factor(
+      term,
+      levels  = term #levels(ds_no_other_or_unknown$billet_current),
+      # labels  = sprintf("%2.2f %s", intercept, term)
+    ),
+    specialty_type    = reorder(specialty_type, -intercept)
+  ) %>%
+  dplyr::select(
+    specialty_type,
+    intercept,
+    slope
+  )
+
+ds_no_other_or_unknown %>%
+  dplyr::mutate(
+    specialty_type  = factor(specialty_type, levels=levels(ds_trajectory_specialty$specialty_type)),
+  ) %>%
+  ggplot(aes(x=officer_rate, y=satisfaction_rank, color=specialty_type, fill=specialty_type, group=specialty_type)) +
+  geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), size=1.5, shape=21, na.rm=T, show.legend = T) +
+  # geom_smooth(method = lm, se=F, formula = y~ x + 1) +
+  geom_abline(data=ds_trajectory_specialty, aes(intercept=intercept, slope=slope, color=specialty_type), size=1, alpha=.5) +
+  scale_color_manual(values = palette_specialty) +
+  scale_fill_manual(values = palette_specialty_light) +
+  guides(color = guide_legend(override.aes = list(size = 3))) +
+  theme_report +
+  labs(
+    x     = "Officer Rate",
+    y     = "Satisfaction",
+    color = "Specialty Type",
+    fill  = "Specialty Type"
   )
 
 # ---- nonsignificant-additions ------------------------------------------------

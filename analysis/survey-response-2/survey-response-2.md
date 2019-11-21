@@ -1565,6 +1565,10 @@ Billet Intercepts
 -----------------------------------
 ![](figure-png/billet-intercept-1.png)<!-- -->
 
+Specialty Intercepts
+-----------------------------------
+![](figure-png/specialty-intercept-1.png)<!-- -->
+
 
 Nonsignificant Additions
 -----------------------------------
@@ -1718,4 +1722,4 @@ For the sake of documentation and reproducibility, the current report was render
 
 
 
-Report rendered by wibeasley at 2019-11-20, 22:39 -0600 in 25 seconds.
+Report rendered by wibeasley at 2019-11-20, 23:41 -0600 in 32 seconds.

@@ -183,6 +183,11 @@ Billet Intercepts
 ```{r billet-intercept, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
 
+Specialty Intercepts
+-----------------------------------
+```{r specialty-intercept, echo=echo_chunks, message=message_chunks, results="asis"}
+```
+
 
 Nonsignificant Additions
 -----------------------------------
