@@ -756,6 +756,23 @@ ds_no_other %>%
   theme(panel.grid.minor.y = element_blank()) +
   theme(legend.position="bottom")
 
+# ---- by-billet-and-rate ----------------------------------------------------------
+cat("### satisfaction_rank\n\n")
+ds_no_other_or_unknosn <-
+  ds %>%
+  dplyr::filter(billet_current != "Other") %>%
+  dplyr::filter(specialty_type != "unknown")
+
+# cat("**Conculsion**: `officer_rate` has a significant positive slope --sig predicting beyond `billet_current`.  But the billet levels have the same slope.")
+summary(lm(satisfaction_rank ~ 1 + billet_current + officer_rate                 , data=ds_no_other))
+summary(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data=ds_no_other))
+prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data=ds_no_other))
+
+
+anova(
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate                 , data=ds_no_other, subset=!is.na(officer_rate)),
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data=ds_no_other)
+)
 # # ---- model-results-table  -----------------------------------------------
 #
 # summary(m2)$coef %>%
