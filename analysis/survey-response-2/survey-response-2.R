@@ -87,183 +87,22 @@ ds <- ds_everyone %>%
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="primary_specialty")
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="officer_rank")
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="officer_rate")
-TabularManifest::histogram_continuous(d_observed=ds, variable_name="year_executed_order", bin_width=1, rounded_digits=1)
 
-TabularManifest::histogram_continuous(d_observed=ds, variable_name="survey_lag", bin_width = .5,  rounded_digits = 1)
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="billet_current")
-TabularManifest::histogram_discrete(d_observed=ds, variable_name="order_lead_time")
 
-TabularManifest::histogram_continuous(d_observed=ds, variable_name="transparency_rank"         , bin_width=1, rounded_digits=1)
 TabularManifest::histogram_continuous(d_observed=ds, variable_name="satisfaction_rank"        , bin_width=1, rounded_digits=1)
-TabularManifest::histogram_continuous(d_observed=ds, variable_name="favoritism_rank"           , bin_width=1, rounded_digits=1)
-TabularManifest::histogram_continuous(d_observed=ds, variable_name="assignment_current_choice" , bin_width=1, rounded_digits=1)
+# TabularManifest::histogram_continuous(d_observed=ds, variable_name="assignment_current_choice" , bin_width=1, rounded_digits=1)
+TabularManifest::histogram_discrete(d_observed=ds, variable_name="assignment_current_choice")
 
-TabularManifest::histogram_continuous(d_observed=ds, variable_name="bonus_pay" , bin_width=5000, rounded_digits=1)
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="bonus_pay_cut3")
-TabularManifest::histogram_discrete(d_observed=ds, variable_name="bonus_pay_cut4")
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="critical_war")
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="specialty_type")
 
 TabularManifest::histogram_continuous(d_observed=ds, variable_name="manning_proportion" , bin_width=.05, rounded_digits=2)
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="manning_proportion_cut3")
 
-TabularManifest::histogram_discrete(d_observed=ds, variable_name="geographic_preference")
-TabularManifest::histogram_discrete(d_observed=ds, variable_name="homestead_length_in_years")
-TabularManifest::histogram_discrete(d_observed=ds, variable_name="homestead_problem")
-
-TabularManifest::histogram_discrete(d_observed=ds, variable_name="assignment_priority_pretty")
-TabularManifest::histogram_discrete(d_observed=ds, variable_name="officer_rank_priority_pretty")
-
-TabularManifest::histogram_discrete(d_observed=ds, variable_name="career_path", main_title="Which career path do you want to pursue in the next 5-10?")
-TabularManifest::histogram_discrete(d_observed=ds, variable_name="doctor_as_detailer", main_title="Would you approve if the detailer position was filled by a non-physician?")
-TabularManifest::histogram_discrete(d_observed=ds, variable_name="match_desirability", main_title="Which would you prefer for your military billet assignment?")
-
-TabularManifest::histogram_discrete(d_observed=ds, variable_name="order_lead_time_preferred_cut3", main_title="How many months' warning do you want,\nassuming your were scheduled to execute new orders in July of 2017...?")
-TabularManifest::histogram_discrete(d_observed=ds, variable_name="order_lead_time_preferred_months" , main_title="How many months' warning do you want,\nassuming your were scheduled to execute new orders in July of 2017...?")
-TabularManifest::histogram_continuous(d_observed=ds, variable_name="order_lead_time_preferred_months" , bin_width=1, rounded_digits=2, main_title="How many months' warning do you want,\nassuming your were scheduled to execute new orders in July of 2017...?")
 
 
-# This helps start the code for graphing each variable.
-#   - Make sure you change it to `histogram_continuous()` for the appropriate variables.
-#   - Make sure the graph doesn't reveal PHI.
-#   - Don't graph the IDs (or other uinque values) of large datasets.  The graph will be worth and could take a long time on large datasets.
-# for(column in colnames(ds)) {
-#   cat('TabularManifest::histogram_discrete(ds, variable_name="', column,'")\n', sep="")
-# }
-
-
-# ---- freq-homestead_length_in_years-by-officer_rank ------------------------------------------------------------
-set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
-ds %>%
-  dplyr::filter(officer_rank != "Unknown") %>%
-  dplyr::count(homestead_length_in_years, officer_rank) %>%
-  dplyr::group_by(officer_rank) %>%
-  dplyr::mutate(
-    proportion   = n / sum(n)
-  ) %>%
-  dplyr::ungroup() %>%
-  ggplot(aes(x=homestead_length_in_years, y=proportion, group=officer_rank, color=officer_rank, fill=officer_rank)) +
-  geom_line(size=2) +
-  geom_area(position=position_identity(), alpha=.3) +
-  scale_y_continuous(labels=scales::percent_format()) +
-  theme_light() +
-  theme(axis.ticks = element_blank()) #+
-
-# ---- freq-homestead_length_in_years-by-specialty_type ------------------------------------------------------------
-set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
-ds %>%
-  dplyr::filter(specialty_type != "unknown") %>%
-  dplyr::count(homestead_length_in_years, specialty_type) %>%
-  dplyr::group_by(specialty_type) %>%
-  dplyr::mutate(
-    proportion   = n / sum(n)
-  ) %>%
-  dplyr::ungroup() %>%
-  ggplot(aes(x=homestead_length_in_years, y=proportion, group=specialty_type, color=specialty_type, fill=specialty_type)) +
-  geom_line(size=2) +
-  geom_area(position=position_identity(), alpha=.3) +
-  scale_y_continuous(labels=scales::percent_format()) +
-  theme_light() +
-  theme(axis.ticks = element_blank())
-
-# ---- freq-homestead_problem-by-officer_rank ------------------------------------------------------------
-set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
-# ds %>%
-#   dplyr::filter(officer_rank != "Unknown") %>%
-#   dplyr::count(officer_rank)
-
-ds %>%
-  dplyr::filter(officer_rank != "Unknown") %>%
-  dplyr::count(homestead_problem, officer_rank) %>%
-  dplyr::group_by(officer_rank) %>%
-  dplyr::mutate(
-    proportion   = n / sum(n)
-  ) %>%
-  dplyr::ungroup() %>%
-  ggplot(aes(x=homestead_problem, y=proportion, group=officer_rank, color=officer_rank, fill=officer_rank)) +
-  geom_line(size=2) +
-  geom_area(position=position_identity(), alpha=.3) +
-  scale_y_continuous(labels=scales::percent_format()) +
-  theme_light() +
-  theme(axis.ticks = element_blank()) #+
-
-# ---- freq-homestead_problem-by-specialty_type ------------------------------------------------------------
-set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
-ds %>%
-  dplyr::filter(homestead_problem != "Unknown") %>%
-  dplyr::filter(specialty_type != "unknown") %>%
-  dplyr::count(homestead_problem, specialty_type) %>%
-  dplyr::group_by(specialty_type) %>%
-  dplyr::mutate(
-    proportion   = n / sum(n)
-  ) %>%
-  dplyr::ungroup() %>%
-  ggplot(aes(x=homestead_problem, y=proportion, group=specialty_type, color=specialty_type, fill=specialty_type)) +
-  geom_line(size=2) +
-  geom_area(position=position_identity(), alpha=.3) +
-  scale_y_continuous(labels=scales::percent_format()) +
-  theme_light() +
-  theme(axis.ticks = element_blank())
-
-
-
-# ---- freq-assignment_priority-by-specialty_type ------------------------------------------------------------
-set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
-ds %>%
-  dplyr::filter(specialty_type != "unknown") %>%
-  dplyr::filter(assignment_priority_pretty != "Unknown") %>%
-  dplyr::count(assignment_priority_pretty, specialty_type) %>%
-  dplyr::group_by(specialty_type) %>%
-  dplyr::mutate(
-    proportion   = n / sum(n)
-  ) %>%
-  dplyr::ungroup() %>%
-  dplyr::filter(assignment_priority_pretty == "Yes") %>%
-  ggplot(aes(x=specialty_type, y=proportion,  color=specialty_type, fill=specialty_type)) +
-  geom_bar(stat="identity", position=position_dodge(), alpha=.3) +
-  # geom_line(size=2) +
-  # geom_area(position=position_identity(), alpha=.3) +
-  scale_y_continuous(labels=scales::percent_format()) +
-  coord_flip() +
-  theme_light() +
-  theme(axis.ticks = element_blank()) +
-  theme(legend.position="none") +
-  labs(
-    title="Do you think members who are coming from\noperational or OCONUS assignments should be given\npreference in billet assignment?",
-    y = "Proportion who said 'Yes'"
-  )
-
-prettify_lm(glm(assignment_priority ~ 1 + specialty_type, data=ds, family=binomial(link='logit'), subset=specialty_type != "unknown"))
-
-# ---- freq-officer_rank_priority-by-officer_rank ------------------------------------------------------------
-set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
-ds %>%
-  dplyr::filter(officer_rank != "Unknown") %>%
-  dplyr::filter(officer_rank_priority_pretty != "Unknown") %>%
-  dplyr::count(officer_rank_priority_pretty, officer_rank) %>%
-  dplyr::group_by(officer_rank) %>%
-  dplyr::mutate(
-    proportion   = n / sum(n)
-  ) %>%
-  dplyr::ungroup() %>%
-  dplyr::filter(officer_rank_priority_pretty == "Yes") %>%
-  ggplot(aes(x=officer_rank, y=proportion,  color=officer_rank, fill=officer_rank)) +
-  geom_bar(stat="identity", position=position_dodge(), alpha=.3) +
-  # geom_line(size=2) +
-  # geom_area(position=position_identity(), alpha=.3) +
-  scale_y_continuous(labels=scales::percent_format()) +
-  coord_flip() +
-  theme_light() +
-  theme(axis.ticks = element_blank()) +
-  theme(legend.position="none") +
-  labs(
-    title="Do you think members with\nmore seniority (as defined by time in service or rank)\nshould be given preference in billet assignment?",
-    y = "Proportion who said 'Yes'"
-  )
-
-prettify_lm(glm(officer_rank_priority ~ 1 + officer_rank, data=ds, family=binomial(link='logit'), subset=officer_rank != "Unknown"))
-# summary(glm(officer_rank_priority ~ 1 + officer_rank, data=ds, family=binomial(link='logit'), subset=officer_rank != "Unknown"))
-# ds$officer_rank
 
 
 ######## Outcome Relationships ##########################################################
@@ -308,30 +147,6 @@ ds %>%
 
 prettify_lm(lm(satisfaction_rank ~ 1 + officer_rate_f, data=ds))
 
-# a <- lm(satisfaction_rank ~ 1 + officer_rate_f, data=ds)
-#
-# cat("<code>", as.character(print(a$call)), "</code>")
-# cat("Data:<code>", as.character(a$call$data), "</code>")
-# cat("Formula:<code>", as.character(a$call$formula), "</code>")
-# # str(a)
-# names(a$call)
-# a$call$formula
-# names(a$call$formula)
-
-
-cat("### transparency_rank\n\n")
-last_plot() %+% aes(y=transparency_rank)
-prettify_lm(lm(transparency_rank ~ 1 + officer_rate_f, data=ds))
-
-cat("### favoritism_rank\n\n")
-last_plot() %+% aes(y=favoritism_rank)
-prettify_lm(lm(favoritism_rank ~ 1 + officer_rate_f, data=ds))
-
-cat("### assignment_current_choice\n\n")
-last_plot() %+% aes(y=assignment_current_choice) +
-  scale_y_reverse()
-prettify_lm(lm(assignment_current_choice ~ 1 + officer_rate_f, data=ds))
-
 # ---- by-specialty-type ------------------------------------------------------------
 cat("### satisfaction_rank\n\n")
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
@@ -350,23 +165,6 @@ ds %>%
   theme(legend.position="none") +
   labs(x=NULL) #y="Satisfaction"
 prettify_lm(lm(satisfaction_rank ~ 1 + specialty_type, data=ds[ds$specialty_type != "unknown", ]) )
-
-
-cat("### transparency_rank\n\n")
-last_plot() %+% aes(y=transparency_rank)
-prettify_lm(lm(transparency_rank ~ 1 + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
-
-
-cat("### favoritism_rank\n\n")
-last_plot() %+% aes(y=favoritism_rank)
-prettify_lm(lm(favoritism_rank ~ 1 + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
-
-
-cat("### assignment_current_choice\n\n")
-last_plot() %+% aes(y=assignment_current_choice) +
-  scale_y_reverse()
-prettify_lm(lm(assignment_current_choice ~ 1 + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
-
 
 # ---- by-bonus-pay ------------------------------------------------------------
 cat("### satisfaction_rank\n\n")
@@ -388,18 +186,8 @@ ds %>%
 
 prettify_lm(lm(satisfaction_rank ~ 1 + bonus_pay_cut4, data=ds))
 
-cat("### transparency_rank\n\n")
-last_plot() %+% aes(y=transparency_rank)
-prettify_lm(lm(transparency_rank ~ 1 + bonus_pay_cut4, data=ds))
-
-cat("### favoritism_rank\n\n")
-last_plot() %+% aes(y=favoritism_rank)
-prettify_lm(lm(favoritism_rank ~ 1 + bonus_pay_cut4, data=ds))
-
-cat("### assignment_current_choice\n\n")
-last_plot() %+% aes(y=assignment_current_choice) +
-  scale_y_reverse()
-prettify_lm(lm(assignment_current_choice ~ 1 + bonus_pay_cut4, data=ds))
+ds %>%
+  dplyr::count(bonus_pay_cut4, specialty_type)
 
 # ---- by-assignment-current-choice ------------------------------------------------------------
 cat("### satisfaction_rank\n\n")
@@ -413,37 +201,6 @@ ds %>%
   geom_point(position=position_jitter(w = 0.3, h = .2), size=2, shape=1, na.rm=T) +
   theme_report
 prettify_lm(lm(satisfaction_rank ~ 1 + assignment_current_choice, data=ds))
-
-
-cat("### transparency_rank\n\n")
-last_plot() %+% aes(y=transparency_rank)
-prettify_lm(lm(transparency_rank ~ 1 + assignment_current_choice, data=ds))
-
-cat("### favoritism_rank\n\n")
-last_plot() %+% aes(y=favoritism_rank)
-prettify_lm(lm(favoritism_rank ~ 1 + assignment_current_choice, data=ds))
-
-# ---- by-year ------------------------------------------------------------
-cat("### satisfaction_rank\n\n")
-set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
-ggplot(ds, aes(x=year_executed_order, y=satisfaction_rank)) + #, color=officer_rank)) +
-  geom_smooth(method="loess", span=2, na.rm=T) +
-  geom_smooth(data=ds[ds$year_executed_order >=2014L, ], method="loess", span=2, na.rm=T) +
-  geom_point(shape=1, position = position_jitter(width=.3, height=.3), na.rm=T) +
-  coord_cartesian(ylim=c(0.5,5.5)) +
-  theme_light() +
-  theme(axis.ticks = element_blank())
-
-# ---- by-survey_lag ------------------------------------------------------------
-cat("### satisfaction_rank\n\n")
-set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
-ggplot(ds, aes(x=survey_lag, y=satisfaction_rank)) + #, color=officer_rank)) +
-  geom_smooth(method="loess", span=2, na.rm=T) +
-  geom_smooth(data=ds[ds$survey_lag >=2014L, ], method="loess", span=2, na.rm=T) +
-  geom_point(shape=1, position = position_jitter(width=.3, height=.3), na.rm=T) +
-  coord_cartesian(ylim=c(0.5,5.5)) +
-  theme_light() +
-  theme(axis.ticks = element_blank())
 
 # ---- by-manning_proportion ------------------------------------------------------------
 cat("### manning_proportion\n\n")
@@ -493,23 +250,6 @@ ggplot(ds, aes(x=billet_current, y=satisfaction_rank, color=billet_current)) +
 prettify_lm(lm(satisfaction_rank ~ 1 + billet_current, data=ds))
 # forcats::fct_reorder(ds$billet_current, ds$satisfaction_rank, .fun=mean)
 
-# ---- by-geographic_preference ------------------------------------------------------------
-set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
-# billet_current = forcats::fct_reorder(billet_current, satisfaction_rank, .fun=mean)
-
-ggplot(ds, aes(x=geographic_preference, y=satisfaction_rank, color=geographic_preference)) +
-  geom_boxplot(na.rm=T) +
-  stat_summary(fun.y="mean", geom="point", position = position_dodge(width=.75), shape=23, size=size_mean_diamond, fill="gray80", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
-  geom_point(shape=1, position = position_jitter(width=.3, height=.25), na.rm=T) +
-  # scale_x_discrete(limits = rev(levels(ds$geographic_preference))) +
-  coord_flip(ylim=c(0.5,5.5)) +
-  theme_light() +
-  theme(axis.ticks = element_blank()) +
-  theme(legend.position = "none")
-
-# forcats::fct_reorder(ds$billet_current, ds$satisfaction_rank, .fun=mean)
-prettify_lm(lm(satisfaction_rank ~ 1 + geographic_preference, data=ds))
-
 
 ######## Multivariate ##########################################################
 
@@ -555,59 +295,6 @@ ds %>%
 prettify_lm(lm(satisfaction_rank ~ 1 + officer_rate_f * specialty_type, data=ds[ds$specialty_type != "unknown", ]))
 prettify_lm(lm(satisfaction_rank ~ 1 + officer_rate_f + specialty_type, data=ds[ds$specialty_type != "unknown", ]))
 
-cat("### transparency_rank\n\n")
-last_plot() %+% aes(y=transparency_rank)
-prettify_lm(lm(transparency_rank ~ 1 + specialty_type, data=ds))
-
-cat("### favoritism_rank\n\n")
-last_plot() %+% aes(y=favoritism_rank)
-prettify_lm(lm(favoritism_rank ~ 1 + specialty_type, data=ds))
-
-cat("### assignment_current_choice\n\n")
-last_plot() %+% aes(y=assignment_current_choice) +
-  scale_y_reverse()
-prettify_lm(lm(assignment_current_choice ~ 1 + specialty_type, data=ds))
-
-
-# ---- by-rank-and-assignment-current-choice ------------------------------------------------------------
-cat("### satisfaction_rank\n\n")
-set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
-ds %>%
-  tidyr::drop_na(assignment_current_choice) %>%
-  tidyr::drop_na(officer_rank) %>%
-  dplyr::filter(officer_rank != "Unknown") %>%
-  ggplot(aes(x=assignment_current_choice, y=satisfaction_rank, fill=officer_rank, color=officer_rank)) +
-  geom_smooth(method="loess", span=2, alpha=.2, na.rm=T) +
-  # geom_boxplot(na.rm=T, alpha=.05, outlier.shape=NULL, outlier.colour=NA) +
-  # stat_summary(fun.y="mean", geom="point", shape=23, size=size_mean_diamond, fill="white", alpha=.9, na.rm=T) + #See Chang (2013), Recipe 6.8.
-  # stat_summary(fun.data=TukeyBoxplot, geom='boxplot', na.rm=T, outlier.shape=NULL, outlier.colour=NA) +
-  geom_point(position=position_jitter(w = 0.3, h = .2), size=2, shape=1, na.rm=T) +
-  # scale_color_manual(values=PalettePregancyGroup) +
-  # scale_fill_manual(values=PalettePregancyGroupLight) +
-  # coord_flip(ylim = c(0, 1.05*max(dsPregnancy$T1Lifts, na.rm=T))) +
-  theme_report# +
-# theme(legend.position="none") +
-# labs(x=NULL) #y="Satisfaction"
-
-prettify_lm(lm(satisfaction_rank ~ 1 + officer_rate_f + assignment_current_choice, data=ds))
-prettify_lm(lm(satisfaction_rank ~ 1 + officer_rate_f * assignment_current_choice, data=ds))
-
-cat("<br/><code>")
-anova(
-  lm(satisfaction_rank ~ 1 + officer_rate_f + assignment_current_choice, data=ds),
-  lm(satisfaction_rank ~ 1 + officer_rate_f * assignment_current_choice, data=ds)
-)
-cat("</code>")
-
-cat("### transparency_rank\n\n")
-last_plot() %+% aes(y=transparency_rank)
-prettify_lm(lm(transparency_rank ~ 1 + officer_rate_f * assignment_current_choice, data=ds))
-
-cat("### favoritism_rank\n\n")
-last_plot() %+% aes(y=favoritism_rank)
-prettify_lm(lm(favoritism_rank ~ 1 + officer_rate_f * assignment_current_choice, data=ds))
-
-
 # ---- by-rank-and-bonus_pay ------------------------------------------------------------
 cat("### satisfaction_rank\n\n")
 set.seed(seed=789) #Set a seed so the jittered graphs are consistent across renders.
@@ -631,14 +318,6 @@ anova(
   lm(satisfaction_rank ~ 1 + officer_rate_f * bonus_pay, data=ds)
 )
 cat("</code>")
-
-cat("### transparency_rank\n\n")
-last_plot() %+% aes(y=transparency_rank)
-prettify_lm(lm(transparency_rank ~ 1 + officer_rate_f * bonus_pay, data=ds))
-
-cat("### favoritism_rank\n\n")
-last_plot() %+% aes(y=favoritism_rank)
-prettify_lm(lm(favoritism_rank ~ 1 + officer_rate_f * bonus_pay, data=ds))
 
 # ---- by-billet_current-and-critical_war ------------------------------------------------------------
 cat("### satisfaction_rank\n\n")
@@ -714,32 +393,33 @@ prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + critical_war, data=ds))
 
 # ---- by-billet-and-rate ----------------------------------------------------------
 cat("### satisfaction_rank\n\n")
-ds_no_other <-
+ds_no_other_or_unknown <-
   ds %>%
-  dplyr::filter(billet_current != "Other")
+  dplyr::filter(billet_current != "Other") %>%
+  dplyr::filter(specialty_type != "unknown")
 
 cat("**Conculsion**: `officer_rate` has a significant positive slope --sig predicting beyond `billet_current`.  But the billet levels have the same slope.")
-# prettify_lm(lm(satisfaction_rank ~ 1 + billet_current               , data=ds_no_other))
+# prettify_lm(lm(satisfaction_rank ~ 1 + billet_current               , data=ds_no_other_or_unknown))
 
-prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + officer_rate, data=ds_no_other))
+prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + officer_rate, data=ds_no_other_or_unknown))
 
-# prettify_lm(lm(satisfaction_rank ~ 1 + billet_current * officer_rate, data=ds_no_other))
+# prettify_lm(lm(satisfaction_rank ~ 1 + billet_current * officer_rate, data=ds_no_other_or_unknown))
 
 anova(
-  lm(satisfaction_rank ~ 1 + billet_current               , data=ds_no_other, subset=!is.na(officer_rate)),
-  lm(satisfaction_rank ~ 1 + billet_current + officer_rate, data=ds_no_other)
+  lm(satisfaction_rank ~ 1 + billet_current               , data=ds_no_other_or_unknown, subset=!is.na(officer_rate)),
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate, data=ds_no_other_or_unknown)
 )
 
 anova(
-  lm(satisfaction_rank ~ 1 + billet_current + officer_rate, data=ds_no_other),
-  lm(satisfaction_rank ~ 1 + billet_current * officer_rate, data=ds_no_other)
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate, data=ds_no_other_or_unknown),
+  lm(satisfaction_rank ~ 1 + billet_current * officer_rate, data=ds_no_other_or_unknown)
 )
 
 # ggplot(mpg, aes(displ, hwy)) +
 #   geom_point() +
 #   geom_smooth(method = lm, se = FALSE)
 
-ds_no_other %>%
+ds_no_other_or_unknown %>%
   tidyr::drop_na(satisfaction_rank) %>%
   tidyr::drop_na(officer_rate) %>%
   # ggplot(., aes(x=officer_rate, y=satisfaction_rank)) +
@@ -752,36 +432,34 @@ ds_no_other %>%
   theme(panel.grid.minor.y = element_blank()) +
   theme(legend.position="bottom")
 
-# ---- by-billet-and-rate ----------------------------------------------------------
-cat("### satisfaction_rank\n\n")
-ds_no_other_or_unknosn <-
-  ds %>%
-  dplyr::filter(billet_current != "Other") %>%
-  dplyr::filter(specialty_type != "unknown")
 
-# cat("**Conculsion**: `officer_rate` has a significant positive slope --sig predicting beyond `billet_current`.  But the billet levels have the same slope.")
-summary(lm(satisfaction_rank ~ 1 + billet_current + officer_rate                 , data=ds_no_other))
-summary(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data=ds_no_other))
-prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data=ds_no_other))
+# ---- 3-predictor --------------------------------------------------------------
 
+prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + manning_proportion_cut3 + specialty_type, data=ds_no_other_or_unknown))
 
 anova(
-  lm(satisfaction_rank ~ 1 + billet_current + officer_rate                 , data=ds_no_other, subset=!is.na(officer_rate)),
-  lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data=ds_no_other)
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate                 , data = ds_no_other_or_unknown),
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data = ds_no_other_or_unknown)
 )
-# ---- graph-equal-slopes ------------------------------------------------------
+
+lm_no_int_billet    <- lm(satisfaction_rank ~ 0 + billet_current + officer_rate + specialty_type, data=ds_no_other_or_unknown)
+lm_no_int_specialty <- lm(satisfaction_rank ~ 0 + specialty_type + officer_rate + billet_current, data=ds_no_other_or_unknown)
+
+# ---- billet-intercept ------------------------------------------------------
 palette_billet <- c(
-  "CONUS Operational"             = "", # The reference group
-  "CONUS MTF"                     = "",
-  "GME"                           = "",
-  "Non-Operational/Non-Clinical"  = "",
-  "OCONUS MTF"                    = "",
-  "OCONUS Operational"            = "",
-  "Other"                         = "",
+  "GME"                           = "#EDAE49",
+  "CONUS MTF"                     = "#304bce", # dark blue
+  "CONUS Operational"             = "#009dee", # light blue; The reference group
+  "OCONUS MTF"                    = "#cc5555", # darkish red
+  "Non-Operational/Non-Clinical"  = "#3acc85", # green
+  "OCONUS Operational"            = "#ff5500"  # lighter red
+  # "Other"                         = ""
 )
-a <- lm(satisfaction_rank ~ 0 + billet_current + officer_rate, data=ds)
-# a
+palette_billet_light <- scales::alpha(palette_billet, alpha=.4)
+
+
 pattern_billet <- "^billet_current"
+pattern_specialty <- "^specialty_type"
 
 # ds_trajectory <-
 #   tibble::tibble(
@@ -789,35 +467,127 @@ pattern_billet <- "^billet_current"
 #     slope = 1.2
 #   )
 ds_trajectory <-
-  a %>%
+  lm_no_int_billet %>%
   broom::tidy() %>%
   dplyr::filter(grepl(pattern_billet, term)) %>%
   # dplyr::select(term, estimate) %>%
   dplyr::mutate(
     term        = sub(pattern_billet, "", term),
     intercept   = estimate, #+ coef(a)[["(Intercept)"]],
-    slope       = coef(a)[["officer_rate"]],
+    slope       = coef(lm_no_int_billet)[["officer_rate"]],
+    # slope       = coef(a)[["I(officer_rate - 3)"]],
 
-    billet_current    = factor(term, levels=sort(levels(ds$billet_current)))
+    billet_current    = factor(
+      term,
+      levels  = term #levels(ds_no_other_or_unknown$billet_current),
+      # labels  = sprintf("%2.2f %s", intercept, term)
+    ),
+    billet_current    = reorder(billet_current, -intercept)
   ) %>%
   dplyr::select(
     billet_current,
     intercept,
     slope
   )
-ggplot(ds, aes(x=officer_rate, y=satisfaction_rank, color=billet_current, group=billet_current)) +
-  geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), alpha=1, size=1.5, shape=1, na.rm=T, show.legend = T) +
+
+ds_no_other_or_unknown %>%
+  dplyr::mutate(
+    billet_current  = factor(billet_current, levels=levels(ds_trajectory$billet_current)),
+  ) %>%
+  ggplot(aes(x=officer_rate, y=satisfaction_rank, color=billet_current, fill=billet_current, group=billet_current)) +
+  geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), size=1.5, shape=21, na.rm=T, show.legend = T) +
   # geom_smooth(method = lm, se=F, formula = y~ x + 1) +
-  geom_abline(data=ds_trajectory, aes(intercept=intercept, slope=slope, color=billet_current)) +
-  theme_report
+  geom_abline(data=ds_trajectory, aes(intercept=intercept, slope=slope, color=billet_current), size=1, alpha=.5) +
+  scale_color_manual(values = palette_billet) +
+  scale_fill_manual(values = palette_billet_light) +
+  guides(color = guide_legend(override.aes = list(size = 3))) +
+  theme_report +
+  labs(
+    x     = "Officer Rate",
+    y     = "Satisfaction",
+    color = "Current Billet",
+    fill  = "Current Billet"
+  )
 
-# # ---- model-results-table  -----------------------------------------------
-#
-# summary(m2)$coef %>%
-#   knitr::kable(
-#     digits      = 2,
-#     format      = "markdown"
-#   )
+# ---- specialty-intercept ------------------------------------------------------
+#c13600
+#df7605
+#eeca52
+#9baa65
+#0b9f89
+#030736
+palette_specialty <- c(
+  "nonsurgical"     = "#9baa65", # olive
+  "surgical"        = "#030736", # blue
+  "resident"        = "#c13600", # red
+  "family"          = "#0b9f89", # green
+  "operational"     = "#df7605"  # orange
+  # "Other"                         = ""
+)
+palette_specialty_light <- scales::alpha(palette_specialty, alpha=.4)
+pattern_specialty <- "^specialty_type"
 
-# Uncomment the next line for a dynamic, JavaScript [DataTables](https://datatables.net/) table.
-# DT::datatable(round(summary(m2)$coef, digits = 2), options = list(pageLength = 2))
+lm_no_int_specialty   <- lm(satisfaction_rank ~ 0 + specialty_type + officer_rate + billet_current, data=ds_no_other_or_unknown)
+
+ds_trajectory_specialty <-
+  lm_no_int_specialty %>%
+  broom::tidy() %>%
+  dplyr::filter(grepl(pattern_specialty, term)) %>%
+  # dplyr::select(term, estimate) %>%
+  dplyr::mutate(
+    term        = sub(pattern_specialty, "", term),
+    intercept   = estimate, #+ coef(a)[["(Intercept)"]],
+    slope       = coef(lm_no_int_specialty)[["officer_rate"]],
+    # slope       = coef(a)[["I(officer_rate - 3)"]],
+
+    specialty_type    = factor(
+      term,
+      levels  = term #levels(ds_no_other_or_unknown$billet_current),
+      # labels  = sprintf("%2.2f %s", intercept, term)
+    ),
+    specialty_type    = reorder(specialty_type, -intercept)
+  ) %>%
+  dplyr::select(
+    specialty_type,
+    intercept,
+    slope
+  )
+
+ds_no_other_or_unknown %>%
+  dplyr::mutate(
+    specialty_type  = factor(specialty_type, levels=levels(ds_trajectory_specialty$specialty_type)),
+  ) %>%
+  ggplot(aes(x=officer_rate, y=satisfaction_rank, color=specialty_type, fill=specialty_type, group=specialty_type)) +
+  geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), size=1.5, shape=21, na.rm=T, show.legend = T) +
+  # geom_smooth(method = lm, se=F, formula = y~ x + 1) +
+  geom_abline(data=ds_trajectory_specialty, aes(intercept=intercept, slope=slope, color=specialty_type), size=1, alpha=.5) +
+  scale_color_manual(values = palette_specialty) +
+  scale_fill_manual(values = palette_specialty_light) +
+  guides(color = guide_legend(override.aes = list(size = 3))) +
+  theme_report +
+  labs(
+    x     = "Officer Rate",
+    y     = "Satisfaction",
+    color = "Specialty Type",
+    fill  = "Specialty Type"
+  )
+
+# ---- nonsignificant-additions ------------------------------------------------
+
+cat("`manning_proportion_cut3` doesn't sig improve the fit of the model")
+anova(
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data=ds_no_other_or_unknown),
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate * specialty_type, data=ds_no_other_or_unknown)
+)
+
+cat("`manning_proportion_cut3` doesn't sig improve the fit of the model")
+anova(
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type                 , data=ds_no_other_or_unknown),
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type + manning_proportion_cut3 , data=ds_no_other_or_unknown)
+)
+
+cat("`bonus_pay_cut4` doesn't sig improve the fit of the model")
+anova(
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type                 , data=ds_no_other_or_unknown),
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type + bonus_pay_cut4 , data=ds_no_other_or_unknown)
+)

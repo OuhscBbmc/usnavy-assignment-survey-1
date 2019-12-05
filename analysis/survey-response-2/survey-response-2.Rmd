@@ -36,7 +36,7 @@ opts_chunk$set(
 echo_chunks    <- FALSE #Toggle for debugging.
 message_chunks <- FALSE #Toggle for debugging.
 options(width=100) #So the output is 25% wider than the default.
-read_chunk("./analysis/survey-response-1/survey-response-1.R") #This allows knitr to call chunks tagged in the underlying *.R file.
+read_chunk("./analysis/survey-response-2/survey-response-2.R") #This allows knitr to call chunks tagged in the underlying *.R file.
 ```
 
 <!-- Load 'sourced' R files.  Suppress the output when loading sources. --> 
@@ -89,42 +89,6 @@ Univariate
 ```{r marginals, echo=echo_chunks, message=message_chunks}
 ```
 
-Frequency: homestead_length_in_years by officer_rank
------------------------------------
-```{r freq-homestead_length_in_years-by-officer_rank, echo=echo_chunks, message=message_chunks}
-```
-
-Frequency: homestead_length_in_years by specialty_type
------------------------------------
-```{r freq-homestead_length_in_years-by-specialty_type, echo=echo_chunks, message=message_chunks}
-```
-
-Frequency: homestead_problem by officer_rank
------------------------------------
-```{r freq-homestead_problem-by-officer_rank, echo=echo_chunks, message=message_chunks}
-```
-
-Frequency: homestead_problem by specialty_type
------------------------------------
-```{r freq-homestead_problem-by-specialty_type, echo=echo_chunks, message=message_chunks}
-```
-
-Frequency: Assignment_priority by Specialty_type
------------------------------------
-```{r freq-assignment_priority-by-specialty_type, echo=echo_chunks, message=message_chunks, results="asis"}
-```
-
-Frequency: Officer_rank_priority by Officer_rank
------------------------------------
-```{r freq-officer_rank_priority-by-officer_rank, echo=echo_chunks, message=message_chunks, results="asis"}
-```
-
-
-Multivariate
------------------------------------
-```{r freq-homestead_length_in_years-by-officer_rank, echo=echo_chunks, message=message_chunks}
-```
-
 Relationships between Outcomes
 ============================================
 ```{r outcome-correlations, echo=echo_chunks, message=message_chunks}
@@ -154,23 +118,13 @@ By Assignment Current Choice
 ```{r by-assignment-current-choice, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
 
-By Year
------------------------------------
-```{r by-year, echo=echo_chunks, message=message_chunks, results="asis"}
-```
-
-By Survey Lag
------------------------------------
-```{r by-survey_lag, echo=echo_chunks, message=message_chunks, results="asis"}
-```
-
 
 By Manning Proportion
 -----------------------------------
 ```{r by-manning_proportion, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
 
-By Crtical War
+By Critical War
 -----------------------------------
 ```{r by-critical_war, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
@@ -179,12 +133,6 @@ By Billet Current
 -----------------------------------
 ```{r by-billet_current, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
-
-By Geographic Preference
------------------------------------
-```{r by-geographic_preference, echo=echo_chunks, message=message_chunks, results="asis"}
-```
-
 
 
 Analyses - 2 Predictors
@@ -221,10 +169,29 @@ By Rank and Billet Type
 ```{r by-billet-and-rate, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
 
+Models to Publish
+===================================
 
-Experimental
+
+3-predictor (and final) model
 -----------------------------------
-```{r graph-equal-slopes, echo=echo_chunks, message=message_chunks, results="asis"}
+```{r 3-predictor, echo=echo_chunks, message=message_chunks, results="asis"}
+```
+
+Billet Intercepts
+-----------------------------------
+```{r billet-intercept, echo=echo_chunks, message=message_chunks, results="asis"}
+```
+
+Specialty Intercepts
+-----------------------------------
+```{r specialty-intercept, echo=echo_chunks, message=message_chunks, results="asis"}
+```
+
+
+Nonsignificant Additions
+-----------------------------------
+```{r nonsignificant-additions, echo=echo_chunks, message=message_chunks}
 ```
 
 
