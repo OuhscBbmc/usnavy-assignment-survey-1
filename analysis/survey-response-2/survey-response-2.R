@@ -101,8 +101,11 @@ TabularManifest::histogram_discrete(d_observed=ds, variable_name="specialty_type
 TabularManifest::histogram_continuous(d_observed=ds, variable_name="manning_proportion" , bin_width=.05, rounded_digits=2)
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="manning_proportion_cut3")
 
+cat("Satisfaction summary")
+summary(ds$satisfaction_rank)
 
-
+cat("Satisfaction summary (emergency medicine only")
+summary(ds$satisfaction_rank[ds$primary_specialty=="Emergency Medicine"])
 
 
 ######## Outcome Relationships ##########################################################
@@ -444,6 +447,8 @@ anova(
 
 lm_no_int_billet    <- lm(satisfaction_rank ~ 0 + billet_current + officer_rate + specialty_type, data=ds_no_other_or_unknown)
 lm_no_int_specialty <- lm(satisfaction_rank ~ 0 + specialty_type + officer_rate + billet_current, data=ds_no_other_or_unknown)
+
+plot(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data = ds_no_other_or_unknown))
 
 # ---- billet-intercept ------------------------------------------------------
 palette_billet <- c(

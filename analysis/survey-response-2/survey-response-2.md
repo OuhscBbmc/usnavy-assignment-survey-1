@@ -1,6 +1,6 @@
 ---
 title: Attitudes Regarding the Assignment Process Among Navy Medical Corps Officers
-date: "Date: 2019-11-21"
+date: "Date: 2019-12-05"
 output:
   html_document:
     keep_md: yes
@@ -68,6 +68,24 @@ Warning: Factor `iv` contains implicit NA, consider using `forcats::fct_explicit
 ```
 
 ![](figure-png/marginals-6.png)<!-- -->![](figure-png/marginals-7.png)<!-- -->![](figure-png/marginals-8.png)<!-- -->![](figure-png/marginals-9.png)<!-- -->![](figure-png/marginals-10.png)<!-- -->![](figure-png/marginals-11.png)<!-- -->
+
+```
+Satisfaction summary
+```
+
+```
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+   1.00    3.00    4.00    3.63    5.00    5.00      79 
+```
+
+```
+Satisfaction summary (emergency medicine only
+```
+
+```
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+  1.000   3.000   4.000   3.759   5.000   5.000       5 
+```
 
 Relationships between Outcomes
 ============================================
@@ -1560,6 +1578,7 @@ Model 2: satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type
   Res.Df    RSS Df Sum of Sq     F    Pr(>F)
 1    852 1370.2                             
 2    848 1336.1  4    34.065 5.405 0.0002669
+![](figure-png/3-predictor-1.png)<!-- -->![](figure-png/3-predictor-2.png)<!-- -->![](figure-png/3-predictor-3.png)<!-- -->![](figure-png/3-predictor-4.png)<!-- -->
 
 Billet Intercepts
 -----------------------------------
@@ -1627,99 +1646,98 @@ For the sake of documentation and reproducibility, the current report was render
   <summary>Environment <span class="glyphicon glyphicon-plus-sign"></span></summary>
 
 ```
-─ Session info ───────────────────────────────────────────────────────────────────────────────────
- setting  value                       
- version  R version 3.6.1 (2019-07-05)
- os       Ubuntu 19.10                
- system   x86_64, linux-gnu           
- ui       X11                         
- language (EN)                        
- collate  en_US.UTF-8                 
- ctype    en_US.UTF-8                 
- tz       America/Chicago             
- date     2019-11-21                  
+- Session info -----------------------------------------------------------------------------------
+ setting  value                                      
+ version  R version 3.6.1 Patched (2019-08-12 r76979)
+ os       Windows >= 8 x64                           
+ system   x86_64, mingw32                            
+ ui       RTerm                                      
+ language (EN)                                       
+ collate  English_United States.1252                 
+ ctype    English_United States.1252                 
+ tz       America/Chicago                            
+ date     2019-12-05                                 
 
-─ Packages ───────────────────────────────────────────────────────────────────────────────────────
+- Packages ---------------------------------------------------------------------------------------
  package         * version     date       lib source                                  
- assertthat        0.2.1       2019-03-21 [1] CRAN (R 3.6.1)                          
+ assertthat        0.2.1       2019-03-21 [1] CRAN (R 3.6.0)                          
  backports         1.1.5       2019-10-02 [1] CRAN (R 3.6.1)                          
- broom             0.5.2       2019-04-07 [1] CRAN (R 3.6.1)                          
+ broom             0.5.2       2019-04-07 [1] CRAN (R 3.6.0)                          
  callr             3.3.2       2019-09-22 [1] CRAN (R 3.6.1)                          
- cli               1.1.0       2019-03-19 [1] CRAN (R 3.6.1)                          
- colorspace        1.4-1       2019-03-18 [1] CRAN (R 3.6.1)                          
- corrplot          0.84        2017-10-16 [1] CRAN (R 3.6.1)                          
- crayon            1.3.4       2017-09-16 [1] CRAN (R 3.6.1)                          
- desc              1.2.0       2018-05-01 [1] CRAN (R 3.6.1)                          
+ cli               1.1.0       2019-03-19 [1] CRAN (R 3.6.0)                          
+ colorspace        1.4-1       2019-03-18 [1] CRAN (R 3.6.0)                          
+ corrplot          0.84        2017-10-16 [1] CRAN (R 3.6.0)                          
+ crayon            1.3.4       2017-09-16 [1] CRAN (R 3.6.0)                          
+ desc              1.2.0       2018-05-01 [1] CRAN (R 3.6.0)                          
  devtools          2.2.1       2019-09-24 [1] CRAN (R 3.6.1)                          
- digest            0.6.22      2019-10-21 [1] CRAN (R 3.6.1)                          
+ digest            0.6.23      2019-11-23 [1] CRAN (R 3.6.1)                          
  dplyr             0.8.3       2019-07-04 [1] CRAN (R 3.6.1)                          
  ellipsis          0.3.0       2019-09-20 [1] CRAN (R 3.6.1)                          
- evaluate          0.14        2019-05-28 [1] CRAN (R 3.6.1)                          
- fansi             0.4.0       2018-10-05 [1] CRAN (R 3.6.1)                          
+ evaluate          0.14        2019-05-28 [1] CRAN (R 3.6.0)                          
+ fansi             0.4.0       2018-10-05 [1] CRAN (R 3.6.0)                          
  farver            2.0.1       2019-11-13 [1] CRAN (R 3.6.1)                          
- fs                1.3.1       2019-05-06 [1] CRAN (R 3.6.1)                          
- generics          0.0.2       2018-11-29 [1] CRAN (R 3.6.1)                          
+ fs                1.3.1       2019-05-06 [1] CRAN (R 3.6.0)                          
+ generics          0.0.2       2018-11-29 [1] CRAN (R 3.6.0)                          
  ggplot2         * 3.2.1       2019-08-10 [1] CRAN (R 3.6.1)                          
- glue              1.3.1       2019-03-12 [1] CRAN (R 3.6.1)                          
- gtable            0.3.0       2019-03-25 [1] CRAN (R 3.6.1)                          
- highr             0.8         2019-03-20 [1] CRAN (R 3.6.1)                          
+ glue              1.3.1       2019-03-12 [1] CRAN (R 3.6.0)                          
+ gtable            0.3.0       2019-03-25 [1] CRAN (R 3.6.0)                          
+ highr             0.8         2019-03-20 [1] CRAN (R 3.6.0)                          
  hms               0.5.2       2019-10-30 [1] CRAN (R 3.6.1)                          
  htmltools         0.4.0       2019-10-04 [1] CRAN (R 3.6.1)                          
  httr              1.4.1       2019-08-05 [1] CRAN (R 3.6.1)                          
- kableExtra        1.1.0       2019-03-16 [1] CRAN (R 3.6.1)                          
+ kableExtra        1.1.0       2019-03-16 [1] CRAN (R 3.6.0)                          
  knitr           * 1.26        2019-11-12 [1] CRAN (R 3.6.1)                          
- labeling          0.3         2014-08-23 [1] CRAN (R 3.6.1)                          
- lattice           0.20-38     2018-11-04 [1] CRAN (R 3.6.1)                          
- lazyeval          0.2.2       2019-03-15 [1] CRAN (R 3.6.1)                          
+ labeling          0.3         2014-08-23 [1] CRAN (R 3.6.0)                          
+ lattice           0.20-38     2018-11-04 [3] CRAN (R 3.6.1)                          
+ lazyeval          0.2.2       2019-03-15 [1] CRAN (R 3.6.0)                          
  lifecycle         0.1.0       2019-08-01 [1] CRAN (R 3.6.1)                          
- magrittr        * 1.5         2014-11-22 [1] CRAN (R 3.6.1)                          
- memoise           1.1.0       2017-04-21 [1] CRAN (R 3.6.1)                          
- munsell           0.5.0       2018-06-12 [1] CRAN (R 3.6.1)                          
+ magrittr        * 1.5         2014-11-22 [1] CRAN (R 3.6.0)                          
+ memoise           1.1.0       2017-04-21 [1] CRAN (R 3.6.0)                          
+ munsell           0.5.0       2018-06-12 [1] CRAN (R 3.6.0)                          
  nlme              3.1-142     2019-11-07 [1] CRAN (R 3.6.1)                          
  pillar            1.4.2       2019-06-29 [1] CRAN (R 3.6.1)                          
  pkgbuild          1.0.6       2019-10-09 [1] CRAN (R 3.6.1)                          
  pkgconfig         2.0.3       2019-09-22 [1] CRAN (R 3.6.1)                          
- pkgload           1.0.2       2018-10-29 [1] CRAN (R 3.6.1)                          
- prettyunits       1.0.2       2015-07-13 [1] CRAN (R 3.6.1)                          
+ pkgload           1.0.2       2018-10-29 [1] CRAN (R 3.6.0)                          
+ prettyunits       1.0.2       2015-07-13 [1] CRAN (R 3.6.0)                          
  processx          3.4.1       2019-07-18 [1] CRAN (R 3.6.1)                          
- ps                1.3.0       2018-12-21 [1] CRAN (R 3.6.1)                          
+ ps                1.3.0       2018-12-21 [1] CRAN (R 3.6.0)                          
  purrr             0.3.3       2019-10-18 [1] CRAN (R 3.6.1)                          
  R6                2.4.1       2019-11-12 [1] CRAN (R 3.6.1)                          
  Rcpp              1.0.3       2019-11-08 [1] CRAN (R 3.6.1)                          
- readr             1.3.1       2018-12-21 [1] CRAN (R 3.6.1)                          
+ readr             1.3.1       2018-12-21 [1] CRAN (R 3.6.0)                          
  remotes           2.1.0       2019-06-24 [1] CRAN (R 3.6.1)                          
- rlang             0.4.1       2019-10-24 [1] CRAN (R 3.6.1)                          
- rmarkdown         1.17        2019-11-13 [1] CRAN (R 3.6.1)                          
- rprojroot         1.3-2       2018-01-03 [1] CRAN (R 3.6.1)                          
- rstudioapi        0.10        2019-03-19 [1] CRAN (R 3.6.1)                          
+ rlang             0.4.2       2019-11-23 [1] CRAN (R 3.6.1)                          
+ rmarkdown         1.18        2019-11-27 [1] CRAN (R 3.6.1)                          
+ rprojroot         1.3-2       2018-01-03 [1] CRAN (R 3.6.0)                          
+ rstudioapi        0.10        2019-03-19 [1] CRAN (R 3.6.0)                          
  rvest             0.3.5       2019-11-08 [1] CRAN (R 3.6.1)                          
  scales            1.1.0       2019-11-18 [1] CRAN (R 3.6.1)                          
- sessioninfo       1.1.1       2018-11-05 [1] CRAN (R 3.6.1)                          
- stringi           1.4.3       2019-03-12 [1] CRAN (R 3.6.1)                          
- stringr           1.4.0       2019-02-10 [1] CRAN (R 3.6.1)                          
- TabularManifest   0.1-16.9003 2019-11-16 [1] Github (Melinae/TabularManifest@4cbc21c)
- testthat          2.3.0       2019-11-05 [1] CRAN (R 3.6.1)                          
- tibble            2.1.3       2019-06-06 [1] CRAN (R 3.6.1)                          
+ sessioninfo       1.1.1       2018-11-05 [1] CRAN (R 3.6.0)                          
+ stringi           1.4.3       2019-03-12 [1] CRAN (R 3.6.0)                          
+ stringr           1.4.0       2019-02-10 [1] CRAN (R 3.6.0)                          
+ TabularManifest   0.1-16.9003 2018-06-28 [1] Github (Melinae/TabularManifest@c2bdddb)
+ testthat          2.3.1       2019-12-01 [1] CRAN (R 3.6.1)                          
+ tibble            2.1.3       2019-06-06 [1] CRAN (R 3.6.0)                          
  tidyr             1.0.0       2019-09-11 [1] CRAN (R 3.6.1)                          
- tidyselect        0.2.5       2018-10-11 [1] CRAN (R 3.6.1)                          
+ tidyselect        0.2.5       2018-10-11 [1] CRAN (R 3.6.0)                          
  usethis           1.5.1       2019-07-04 [1] CRAN (R 3.6.1)                          
- utf8              1.1.4       2018-05-24 [1] CRAN (R 3.6.1)                          
+ utf8              1.1.4       2018-05-24 [1] CRAN (R 3.6.0)                          
  vctrs             0.2.0       2019-07-05 [1] CRAN (R 3.6.1)                          
- viridisLite       0.3.0       2018-02-01 [1] CRAN (R 3.6.1)                          
- webshot           0.5.1       2018-09-28 [1] CRAN (R 3.6.1)                          
- withr             2.1.2       2018-03-15 [1] CRAN (R 3.6.1)                          
+ viridisLite       0.3.0       2018-02-01 [1] CRAN (R 3.6.0)                          
+ webshot           0.5.2       2019-11-22 [1] CRAN (R 3.6.1)                          
+ withr             2.1.2       2018-03-15 [1] CRAN (R 3.6.0)                          
  xfun              0.11        2019-11-12 [1] CRAN (R 3.6.1)                          
  xml2              1.2.2       2019-08-09 [1] CRAN (R 3.6.1)                          
- yaml              2.2.0       2018-07-25 [1] CRAN (R 3.6.1)                          
- zeallot           0.1.0       2018-01-28 [1] CRAN (R 3.6.1)                          
+ yaml              2.2.0       2018-07-25 [1] CRAN (R 3.6.0)                          
+ zeallot           0.1.0       2018-01-28 [1] CRAN (R 3.6.0)                          
 
-[1] /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6
-[2] /usr/local/lib/R/site-library
-[3] /usr/lib/R/site-library
-[4] /usr/lib/R/library
+[1] D:/Projects/RLibraries
+[2] D:/Users/Will/Documents/R/win-library/3.6
+[3] C:/Program Files/R/R-3.6.1patched/library
 ```
 </details>
 
 
 
-Report rendered by wibeasley at 2019-11-21, 00:02 -0600 in 34 seconds.
+Report rendered by Will at 2019-12-05, 13:10 -0600 in 29 seconds.
