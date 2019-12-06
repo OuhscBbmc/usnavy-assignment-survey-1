@@ -101,6 +101,8 @@ TabularManifest::histogram_discrete(d_observed=ds, variable_name="specialty_type
 TabularManifest::histogram_continuous(d_observed=ds, variable_name="manning_proportion" , bin_width=.05, rounded_digits=2)
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="manning_proportion_cut3")
 
+TabularManifest::histogram_continuous(d_observed=ds, variable_name="survey_weight_specialty_type" , bin_width=.05, rounded_digits=2)
+
 cat("Satisfaction summary")
 summary(ds$satisfaction_rank)
 
@@ -449,6 +451,10 @@ lm_no_int_billet    <- lm(satisfaction_rank ~ 0 + billet_current + officer_rate 
 lm_no_int_specialty <- lm(satisfaction_rank ~ 0 + specialty_type + officer_rate + billet_current, data=ds_no_other_or_unknown)
 
 plot(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data = ds_no_other_or_unknown))
+
+# ---- 3-predictor-with-weights --------------------------------------------------------------
+
+prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + manning_proportion_cut3 + specialty_type, data=ds_no_other_or_unknown, weights = survey_weight_specialty_type))
 
 # ---- billet-intercept ------------------------------------------------------
 palette_billet <- c(

@@ -1,6 +1,6 @@
 ---
 title: Attitudes Regarding the Assignment Process Among Navy Medical Corps Officers
-date: "Date: 2019-12-05"
+date: "Date: 2019-12-06"
 output:
   html_document:
     keep_md: yes
@@ -67,7 +67,7 @@ Warning: Factor `iv` contains implicit NA, consider using `forcats::fct_explicit
 Warning: Factor `iv` contains implicit NA, consider using `forcats::fct_explicit_na`
 ```
 
-![](figure-png/marginals-6.png)<!-- -->![](figure-png/marginals-7.png)<!-- -->![](figure-png/marginals-8.png)<!-- -->![](figure-png/marginals-9.png)<!-- -->![](figure-png/marginals-10.png)<!-- -->![](figure-png/marginals-11.png)<!-- -->
+![](figure-png/marginals-6.png)<!-- -->![](figure-png/marginals-7.png)<!-- -->![](figure-png/marginals-8.png)<!-- -->![](figure-png/marginals-9.png)<!-- -->![](figure-png/marginals-10.png)<!-- -->![](figure-png/marginals-11.png)<!-- -->![](figure-png/marginals-12.png)<!-- -->
 
 ```
 Satisfaction summary
@@ -1580,6 +1580,147 @@ Model 2: satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type
 2    848 1336.1  4    34.065 5.405 0.0002669
 ![](figure-png/3-predictor-1.png)<!-- -->![](figure-png/3-predictor-2.png)<!-- -->![](figure-png/3-predictor-3.png)<!-- -->![](figure-png/3-predictor-4.png)<!-- -->
 
+3-predictor model wieght sampling weights
+-----------------------------------
+<br/>Data:<code> ds_no_other_or_unknown </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current + officer_rate + manning_proportion_cut3 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> term </th>
+   <th style="text-align:right;"> estimate </th>
+   <th style="text-align:right;"> std.error </th>
+   <th style="text-align:right;"> statistic </th>
+   <th style="text-align:right;"> p.value </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> (Intercept) </td>
+   <td style="text-align:right;"> 2.6308577 </td>
+   <td style="text-align:right;"> 0.3242023 </td>
+   <td style="text-align:right;"> 8.1148654 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentGME </td>
+   <td style="text-align:right;"> 0.2155353 </td>
+   <td style="text-align:right;"> 0.1479001 </td>
+   <td style="text-align:right;"> 1.4573036 </td>
+   <td style="text-align:right;"> 0.1454037 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentNon-Operational/Non-Clinical </td>
+   <td style="text-align:right;"> -0.4326277 </td>
+   <td style="text-align:right;"> 0.2208153 </td>
+   <td style="text-align:right;"> -1.9592286 </td>
+   <td style="text-align:right;"> 0.0504141 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentOCONUS MTF </td>
+   <td style="text-align:right;"> -0.2116536 </td>
+   <td style="text-align:right;"> 0.1680705 </td>
+   <td style="text-align:right;"> -1.2593146 </td>
+   <td style="text-align:right;"> 0.2082641 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentCONUS Operational </td>
+   <td style="text-align:right;"> -0.1304595 </td>
+   <td style="text-align:right;"> 0.1540665 </td>
+   <td style="text-align:right;"> -0.8467740 </td>
+   <td style="text-align:right;"> 0.3973605 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentOCONUS Operational </td>
+   <td style="text-align:right;"> -1.0205781 </td>
+   <td style="text-align:right;"> 0.2144327 </td>
+   <td style="text-align:right;"> -4.7594333 </td>
+   <td style="text-align:right;"> 0.0000023 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> officer_rate </td>
+   <td style="text-align:right;"> 0.3276407 </td>
+   <td style="text-align:right;"> 0.0549575 </td>
+   <td style="text-align:right;"> 5.9617133 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> manning_proportion_cut3Balanced </td>
+   <td style="text-align:right;"> -0.2445906 </td>
+   <td style="text-align:right;"> 0.1609539 </td>
+   <td style="text-align:right;"> -1.5196318 </td>
+   <td style="text-align:right;"> 0.1289772 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> manning_proportion_cut3Over </td>
+   <td style="text-align:right;"> -0.0381291 </td>
+   <td style="text-align:right;"> 0.1645675 </td>
+   <td style="text-align:right;"> -0.2316924 </td>
+   <td style="text-align:right;"> 0.8168329 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> specialty_typesurgical </td>
+   <td style="text-align:right;"> -0.2096901 </td>
+   <td style="text-align:right;"> 0.1335309 </td>
+   <td style="text-align:right;"> -1.5703490 </td>
+   <td style="text-align:right;"> 0.1167079 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> specialty_typefamily </td>
+   <td style="text-align:right;"> -0.5466936 </td>
+   <td style="text-align:right;"> 0.2181097 </td>
+   <td style="text-align:right;"> -2.5065078 </td>
+   <td style="text-align:right;"> 0.0123796 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> specialty_typeoperational </td>
+   <td style="text-align:right;"> -0.7344349 </td>
+   <td style="text-align:right;"> 0.1683679 </td>
+   <td style="text-align:right;"> -4.3620831 </td>
+   <td style="text-align:right;"> 0.0000145 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> specialty_typeresident </td>
+   <td style="text-align:right;"> -0.1049081 </td>
+   <td style="text-align:right;"> 0.1852736 </td>
+   <td style="text-align:right;"> -0.5662335 </td>
+   <td style="text-align:right;"> 0.5713853 </td>
+  </tr>
+</tbody>
+</table>
+
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> r.squared </th>
+   <th style="text-align:right;"> adj.r.squared </th>
+   <th style="text-align:right;"> sigma </th>
+   <th style="text-align:right;"> statistic </th>
+   <th style="text-align:right;"> p.value </th>
+   <th style="text-align:right;"> df </th>
+   <th style="text-align:right;"> logLik </th>
+   <th style="text-align:right;"> AIC </th>
+   <th style="text-align:right;"> BIC </th>
+   <th style="text-align:right;"> deviance </th>
+   <th style="text-align:right;"> df.residual </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 0.1914977 </td>
+   <td style="text-align:right;"> 0.1800296 </td>
+   <td style="text-align:right;"> 2.539857 </td>
+   <td style="text-align:right;"> 16.69827 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 13 </td>
+   <td style="text-align:right;"> -1525.705 </td>
+   <td style="text-align:right;"> 3079.41 </td>
+   <td style="text-align:right;"> 3145.991 </td>
+   <td style="text-align:right;"> 5457.438 </td>
+   <td style="text-align:right;"> 846 </td>
+  </tr>
+</tbody>
+</table>
+
+
 Billet Intercepts
 -----------------------------------
 ![](figure-png/billet-intercept-1.png)<!-- -->
@@ -1646,98 +1787,99 @@ For the sake of documentation and reproducibility, the current report was render
   <summary>Environment <span class="glyphicon glyphicon-plus-sign"></span></summary>
 
 ```
-- Session info -----------------------------------------------------------------------------------
- setting  value                                      
- version  R version 3.6.1 Patched (2019-08-12 r76979)
- os       Windows >= 8 x64                           
- system   x86_64, mingw32                            
- ui       RTerm                                      
- language (EN)                                       
- collate  English_United States.1252                 
- ctype    English_United States.1252                 
- tz       America/Chicago                            
- date     2019-12-05                                 
+─ Session info ───────────────────────────────────────────────────────────────────────────────────
+ setting  value                       
+ version  R version 3.6.1 (2019-07-05)
+ os       Ubuntu 19.10                
+ system   x86_64, linux-gnu           
+ ui       X11                         
+ language (EN)                        
+ collate  en_US.UTF-8                 
+ ctype    en_US.UTF-8                 
+ tz       America/Chicago             
+ date     2019-12-06                  
 
-- Packages ---------------------------------------------------------------------------------------
+─ Packages ───────────────────────────────────────────────────────────────────────────────────────
  package         * version     date       lib source                                  
- assertthat        0.2.1       2019-03-21 [1] CRAN (R 3.6.0)                          
+ assertthat        0.2.1       2019-03-21 [1] CRAN (R 3.6.1)                          
  backports         1.1.5       2019-10-02 [1] CRAN (R 3.6.1)                          
- broom             0.5.2       2019-04-07 [1] CRAN (R 3.6.0)                          
+ broom             0.5.2       2019-04-07 [1] CRAN (R 3.6.1)                          
  callr             3.3.2       2019-09-22 [1] CRAN (R 3.6.1)                          
- cli               1.1.0       2019-03-19 [1] CRAN (R 3.6.0)                          
- colorspace        1.4-1       2019-03-18 [1] CRAN (R 3.6.0)                          
- corrplot          0.84        2017-10-16 [1] CRAN (R 3.6.0)                          
- crayon            1.3.4       2017-09-16 [1] CRAN (R 3.6.0)                          
- desc              1.2.0       2018-05-01 [1] CRAN (R 3.6.0)                          
+ cli               1.1.0       2019-03-19 [1] CRAN (R 3.6.1)                          
+ colorspace        1.4-1       2019-03-18 [1] CRAN (R 3.6.1)                          
+ corrplot          0.84        2017-10-16 [1] CRAN (R 3.6.1)                          
+ crayon            1.3.4       2017-09-16 [1] CRAN (R 3.6.1)                          
+ desc              1.2.0       2018-05-01 [1] CRAN (R 3.6.1)                          
  devtools          2.2.1       2019-09-24 [1] CRAN (R 3.6.1)                          
  digest            0.6.23      2019-11-23 [1] CRAN (R 3.6.1)                          
  dplyr             0.8.3       2019-07-04 [1] CRAN (R 3.6.1)                          
  ellipsis          0.3.0       2019-09-20 [1] CRAN (R 3.6.1)                          
- evaluate          0.14        2019-05-28 [1] CRAN (R 3.6.0)                          
- fansi             0.4.0       2018-10-05 [1] CRAN (R 3.6.0)                          
+ evaluate          0.14        2019-05-28 [1] CRAN (R 3.6.1)                          
+ fansi             0.4.0       2018-10-05 [1] CRAN (R 3.6.1)                          
  farver            2.0.1       2019-11-13 [1] CRAN (R 3.6.1)                          
- fs                1.3.1       2019-05-06 [1] CRAN (R 3.6.0)                          
- generics          0.0.2       2018-11-29 [1] CRAN (R 3.6.0)                          
+ fs                1.3.1       2019-05-06 [1] CRAN (R 3.6.1)                          
+ generics          0.0.2       2018-11-29 [1] CRAN (R 3.6.1)                          
  ggplot2         * 3.2.1       2019-08-10 [1] CRAN (R 3.6.1)                          
- glue              1.3.1       2019-03-12 [1] CRAN (R 3.6.0)                          
- gtable            0.3.0       2019-03-25 [1] CRAN (R 3.6.0)                          
- highr             0.8         2019-03-20 [1] CRAN (R 3.6.0)                          
+ glue              1.3.1       2019-03-12 [1] CRAN (R 3.6.1)                          
+ gtable            0.3.0       2019-03-25 [1] CRAN (R 3.6.1)                          
+ highr             0.8         2019-03-20 [1] CRAN (R 3.6.1)                          
  hms               0.5.2       2019-10-30 [1] CRAN (R 3.6.1)                          
  htmltools         0.4.0       2019-10-04 [1] CRAN (R 3.6.1)                          
  httr              1.4.1       2019-08-05 [1] CRAN (R 3.6.1)                          
- kableExtra        1.1.0       2019-03-16 [1] CRAN (R 3.6.0)                          
+ kableExtra        1.1.0       2019-03-16 [1] CRAN (R 3.6.1)                          
  knitr           * 1.26        2019-11-12 [1] CRAN (R 3.6.1)                          
- labeling          0.3         2014-08-23 [1] CRAN (R 3.6.0)                          
- lattice           0.20-38     2018-11-04 [3] CRAN (R 3.6.1)                          
- lazyeval          0.2.2       2019-03-15 [1] CRAN (R 3.6.0)                          
+ labeling          0.3         2014-08-23 [1] CRAN (R 3.6.1)                          
+ lattice           0.20-38     2018-11-04 [1] CRAN (R 3.6.1)                          
+ lazyeval          0.2.2       2019-03-15 [1] CRAN (R 3.6.1)                          
  lifecycle         0.1.0       2019-08-01 [1] CRAN (R 3.6.1)                          
- magrittr        * 1.5         2014-11-22 [1] CRAN (R 3.6.0)                          
- memoise           1.1.0       2017-04-21 [1] CRAN (R 3.6.0)                          
- munsell           0.5.0       2018-06-12 [1] CRAN (R 3.6.0)                          
+ magrittr        * 1.5         2014-11-22 [1] CRAN (R 3.6.1)                          
+ memoise           1.1.0       2017-04-21 [1] CRAN (R 3.6.1)                          
+ munsell           0.5.0       2018-06-12 [1] CRAN (R 3.6.1)                          
  nlme              3.1-142     2019-11-07 [1] CRAN (R 3.6.1)                          
  pillar            1.4.2       2019-06-29 [1] CRAN (R 3.6.1)                          
  pkgbuild          1.0.6       2019-10-09 [1] CRAN (R 3.6.1)                          
  pkgconfig         2.0.3       2019-09-22 [1] CRAN (R 3.6.1)                          
- pkgload           1.0.2       2018-10-29 [1] CRAN (R 3.6.0)                          
- prettyunits       1.0.2       2015-07-13 [1] CRAN (R 3.6.0)                          
+ pkgload           1.0.2       2018-10-29 [1] CRAN (R 3.6.1)                          
+ prettyunits       1.0.2       2015-07-13 [1] CRAN (R 3.6.1)                          
  processx          3.4.1       2019-07-18 [1] CRAN (R 3.6.1)                          
- ps                1.3.0       2018-12-21 [1] CRAN (R 3.6.0)                          
+ ps                1.3.0       2018-12-21 [1] CRAN (R 3.6.1)                          
  purrr             0.3.3       2019-10-18 [1] CRAN (R 3.6.1)                          
  R6                2.4.1       2019-11-12 [1] CRAN (R 3.6.1)                          
  Rcpp              1.0.3       2019-11-08 [1] CRAN (R 3.6.1)                          
- readr             1.3.1       2018-12-21 [1] CRAN (R 3.6.0)                          
+ readr             1.3.1       2018-12-21 [1] CRAN (R 3.6.1)                          
  remotes           2.1.0       2019-06-24 [1] CRAN (R 3.6.1)                          
  rlang             0.4.2       2019-11-23 [1] CRAN (R 3.6.1)                          
  rmarkdown         1.18        2019-11-27 [1] CRAN (R 3.6.1)                          
- rprojroot         1.3-2       2018-01-03 [1] CRAN (R 3.6.0)                          
- rstudioapi        0.10        2019-03-19 [1] CRAN (R 3.6.0)                          
+ rprojroot         1.3-2       2018-01-03 [1] CRAN (R 3.6.1)                          
+ rstudioapi        0.10        2019-03-19 [1] CRAN (R 3.6.1)                          
  rvest             0.3.5       2019-11-08 [1] CRAN (R 3.6.1)                          
  scales            1.1.0       2019-11-18 [1] CRAN (R 3.6.1)                          
- sessioninfo       1.1.1       2018-11-05 [1] CRAN (R 3.6.0)                          
- stringi           1.4.3       2019-03-12 [1] CRAN (R 3.6.0)                          
- stringr           1.4.0       2019-02-10 [1] CRAN (R 3.6.0)                          
- TabularManifest   0.1-16.9003 2018-06-28 [1] Github (Melinae/TabularManifest@c2bdddb)
+ sessioninfo       1.1.1       2018-11-05 [1] CRAN (R 3.6.1)                          
+ stringi           1.4.3       2019-03-12 [1] CRAN (R 3.6.1)                          
+ stringr           1.4.0       2019-02-10 [1] CRAN (R 3.6.1)                          
+ TabularManifest   0.1-16.9003 2019-11-16 [1] Github (Melinae/TabularManifest@4cbc21c)
  testthat          2.3.1       2019-12-01 [1] CRAN (R 3.6.1)                          
- tibble            2.1.3       2019-06-06 [1] CRAN (R 3.6.0)                          
+ tibble            2.1.3       2019-06-06 [1] CRAN (R 3.6.1)                          
  tidyr             1.0.0       2019-09-11 [1] CRAN (R 3.6.1)                          
- tidyselect        0.2.5       2018-10-11 [1] CRAN (R 3.6.0)                          
+ tidyselect        0.2.5       2018-10-11 [1] CRAN (R 3.6.1)                          
  usethis           1.5.1       2019-07-04 [1] CRAN (R 3.6.1)                          
- utf8              1.1.4       2018-05-24 [1] CRAN (R 3.6.0)                          
+ utf8              1.1.4       2018-05-24 [1] CRAN (R 3.6.1)                          
  vctrs             0.2.0       2019-07-05 [1] CRAN (R 3.6.1)                          
- viridisLite       0.3.0       2018-02-01 [1] CRAN (R 3.6.0)                          
+ viridisLite       0.3.0       2018-02-01 [1] CRAN (R 3.6.1)                          
  webshot           0.5.2       2019-11-22 [1] CRAN (R 3.6.1)                          
- withr             2.1.2       2018-03-15 [1] CRAN (R 3.6.0)                          
+ withr             2.1.2       2018-03-15 [1] CRAN (R 3.6.1)                          
  xfun              0.11        2019-11-12 [1] CRAN (R 3.6.1)                          
  xml2              1.2.2       2019-08-09 [1] CRAN (R 3.6.1)                          
- yaml              2.2.0       2018-07-25 [1] CRAN (R 3.6.0)                          
- zeallot           0.1.0       2018-01-28 [1] CRAN (R 3.6.0)                          
+ yaml              2.2.0       2018-07-25 [1] CRAN (R 3.6.1)                          
+ zeallot           0.1.0       2018-01-28 [1] CRAN (R 3.6.1)                          
 
-[1] D:/Projects/RLibraries
-[2] D:/Users/Will/Documents/R/win-library/3.6
-[3] C:/Program Files/R/R-3.6.1patched/library
+[1] /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6
+[2] /usr/local/lib/R/site-library
+[3] /usr/lib/R/site-library
+[4] /usr/lib/R/library
 ```
 </details>
 
 
 
-Report rendered by Will at 2019-12-05, 13:10 -0600 in 29 seconds.
+Report rendered by wibeasley at 2019-12-06, 10:10 -0600 in 24 seconds.

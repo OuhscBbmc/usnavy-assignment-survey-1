@@ -1,4 +1,4 @@
-specialty,bonus_pay,net_manning_2013,manning_percent_2013,net_manning_2014,manning_percent_2014,net_manning_2015,manning_percent_2015,net_manning_2016,manning_percent_2016,critical_war,specialty_type,specialty total
+specialty,bonus_pay,net_manning_2013,manning_percent_2013,net_manning_2014,manning_percent_2014,net_manning_2015,manning_percent_2015,net_manning_2016,manning_percent_2016,critical_war,specialty_type,officer_count_population
 Aerospace Medicine (Residency Trained Flight),20000,-18,0.71,-23,0.62,-21,0.66,-22,0.64,FALSE,operational,67
 Allergy/Immunology,23000,23,1.09,27,1.11,37,1.15,36,1.14,FALSE,nonsurgical,10
 Anesthesiology,36000,39,1.29,33,1.25,19,1.14,-10,0.93,TRUE,surgical,210

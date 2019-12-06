@@ -82,7 +82,8 @@ col_types_lu_specialty  <- readr::cols_only(
   net_manning_2016          = readr::col_integer(),
   manning_percent_2016      = readr::col_double(),
   critical_war              = readr::col_logical(),
-  specialty_type            = readr::col_character()
+  specialty_type            = readr::col_character(),
+  officer_count_population  = readr::col_integer()
 )
 
 col_types_lu_manning  <- readr::cols_only(
@@ -112,6 +113,7 @@ ds_lu_specialty <- ds_lu_specialty %>%
     , "manning_proportion_2016"       = "manning_percent_2016"
     , "critical_war"
     , "specialty_type"
+    , "officer_count_population"
   ) %>%
   dplyr::mutate(
     specialty_type      = factor(specialty_type, levels=c("nonsurgical", "surgical", "family", "operational",  "resident", "unknown")),
@@ -359,6 +361,7 @@ ds <- ds %>%
     )
   )
 
+
 # table(ds$bonus_pay_cut3)
 # TabularManifest::histogram_continuous(d_observed=ds, variable_name="manning_proportion" , bin_width=.05, rounded_digits=2) +
 #   geom_vline(xintercept = .9, size=3) +
@@ -368,6 +371,50 @@ ds <- ds %>%
 #   dplyr::filter(is.na(critical_war)) %>%
 #   dplyr::count(primary_specialty)
 
+# ---- calculate-weights -------------------------------------------------------
+
+ds_specialty_type_population <-
+  ds_lu_specialty %>%
+  dplyr::group_by(specialty_type) %>%
+  dplyr::summarize(
+    officer_count_population   = sum(officer_count_population, na.rm=T)
+  ) %>%
+  dplyr::ungroup()
+
+ds_specialty_type_sample <-
+  ds %>%
+  dplyr::group_by(specialty_type) %>%
+  dplyr::summarize(
+    officer_count_sample   = dplyr::n()
+  ) %>%
+  dplyr::ungroup()
+
+ds_specialty_type <-
+  ds_specialty_type_population %>%
+  dplyr::left_join(ds_specialty_type_sample, by="specialty_type") %>%
+  dplyr::mutate(
+    survey_weight_specialty_type  = officer_count_population / officer_count_sample,
+    survey_weight_specialty_type  = dplyr::if_else(officer_count_population == 0L, NA_real_, survey_weight_specialty_type),
+    survey_weight_label           = sprintf("%4i of %4i", officer_count_sample, officer_count_population)
+  ) #%>%
+  # dplyr::select(
+  #   specialty_type,
+  #   survey_weight_specialty_type
+  # )
+ggplot(ds_specialty_type, aes(x=specialty_type, y=survey_weight_specialty_type)) +
+  geom_bar(stat="identity", color=NA, fill="#99999955") +
+  geom_text(aes(y=.1, label=survey_weight_label), hjust=0, family="mono") +
+  coord_flip(ylim = c(.5, max(ds_specialty_type$survey_weight_specialty_type, na.rm=T))) +
+  theme_minimal() +
+  theme(axis.ticks=element_blank()) +
+  theme(panel.grid.major.y = element_blank()) +
+  theme(panel.grid.minor.y = element_blank()) +
+  # theme(axis.ticks.length.y = element_blank()) +
+  labs(x="Specialty Type", y="Sampling Weight\n(a value of '5' means 1/5th responded)")
+
+ds <-
+  ds %>%
+  dplyr::left_join(ds_specialty_type, by = "specialty_type")
 
 # ---- verify-values -----------------------------------------------------------
 # Sniff out problems
@@ -409,7 +456,7 @@ checkmate::assert_numeric(  ds$manning_proportion        , any.missing=F , lower
 checkmate::assert_factor(   ds$manning_proportion_cut3   , any.missing=F                          )
 
 checkmate::assert_integer(  ds$population_count           , any.missing=T , lower=0, upper=600)
-
+checkmate::assert_numeric(  ds$survey_weight_specialty_type  , any.missing=T , lower=1, upper=20)
 
 ds2 <- ds %>%
   dplyr::filter(is.na(population_count))
@@ -431,7 +478,8 @@ columns_to_write <- c(
   # "match_month",
   "assignment_priority", "assignment_priority_pretty", "officer_rank_priority", "officer_rank_priority_pretty",
   "order_lead_time_preferred_cut3", "order_lead_time_preferred_months",
-  "population_count"
+  "population_count",
+  "survey_weight_specialty_type"
 )
 ds_slim <- ds %>%
   # dplyr::slice(1:100) %>%
