@@ -177,7 +177,6 @@ By Rank and Billet Type
 Models to Publish
 ===================================
 
-
 3-predictor (and final) model
 -----------------------------------
 ```{r 3-predictor, echo=echo_chunks, message=message_chunks, results="asis"}

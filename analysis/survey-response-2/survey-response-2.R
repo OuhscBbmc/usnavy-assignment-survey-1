@@ -522,12 +522,12 @@ prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty
 
 # ---- billet-intercept ------------------------------------------------------
 palette_billet <- c(
-  "GME"                           = "#EDAE49",
   "CONUS MTF"                     = "#304bce", # dark blue
   "CONUS Operational"             = "#009dee", # light blue; The reference group
   "OCONUS MTF"                    = "#cc5555", # darkish red
-  "Non-Operational/Non-Clinical"  = "#3acc85", # green
+  "Non-Operational/Clinical"      = "#3acc85", # green
   "OCONUS Operational"            = "#ff5500"  # lighter red
+  # "GME"                           = "#EDAE49",  # combined with CONUS MTF
   # "Other"                         = ""
 )
 palette_billet_light <- scales::alpha(palette_billet, alpha=.4)

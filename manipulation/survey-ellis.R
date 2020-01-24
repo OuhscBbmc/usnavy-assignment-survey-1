@@ -245,13 +245,15 @@ ds <- ds %>%
   ) %>%
   dplyr::mutate(
     billet_current  = dplyr::coalesce(billet_current, "Other"),
-    billet_current  = factor(
+    billet_current  = dplyr::recode_factor(
       billet_current,
-      levels = c(
-        "CONUS MTF", "GME", "Non-Operational/Non-Clinical", "OCONUS MTF",
-        "CONUS Operational",
-        "OCONUS Operational", "Other"
-      )
+      "CONUS MTF"                     = "CONUS MTF",
+      "GME"                           = "CONUS MTF",                  # Combine GME w/ CONUS MTF
+      "Non-Operational/Non-Clinical"  = "Non-Operational/Clinical",
+      "OCONUS MTF"                    = "OCONUS MTF",
+      "CONUS Operational"             = "CONUS Operational",
+      "OCONUS Operational"            = "OCONUS Operational",
+      "Other"                         = "Other",
     )
   ) %>%
   dplyr::mutate(
