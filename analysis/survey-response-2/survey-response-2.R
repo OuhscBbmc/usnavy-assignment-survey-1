@@ -440,7 +440,7 @@ ds_no_other_or_unknown %>%
 
 # ---- 3-predictor --------------------------------------------------------------
 
-prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + manning_proportion_cut3 + specialty_type, data=ds_no_other_or_unknown))
+prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data=ds_no_other_or_unknown))
 
 anova(
   lm(satisfaction_rank ~ 1 + billet_current + officer_rate                 , data = ds_no_other_or_unknown),
@@ -454,7 +454,7 @@ plot(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, 
 
 # ---- 3-predictor-with-weights --------------------------------------------------------------
 
-prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + manning_proportion_cut3 + specialty_type, data=ds_no_other_or_unknown, weights = survey_weight_specialty_type))
+prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data=ds_no_other_or_unknown, weights = survey_weight_specialty_type))
 
 # ---- billet-intercept ------------------------------------------------------
 palette_billet <- c(
@@ -585,7 +585,7 @@ ds_no_other_or_unknown %>%
 
 # ---- nonsignificant-additions ------------------------------------------------
 
-cat("`manning_proportion_cut3` doesn't sig improve the fit of the model")
+cat("The `officer_rate * specialty_type`  interaction doesn't sig improve the fit of the model")
 anova(
   lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data=ds_no_other_or_unknown),
   lm(satisfaction_rank ~ 1 + billet_current + officer_rate * specialty_type, data=ds_no_other_or_unknown)
@@ -593,12 +593,12 @@ anova(
 
 cat("`manning_proportion_cut3` doesn't sig improve the fit of the model")
 anova(
-  lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type                 , data=ds_no_other_or_unknown),
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type                           , data=ds_no_other_or_unknown),
   lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type + manning_proportion_cut3 , data=ds_no_other_or_unknown)
 )
 
 cat("`bonus_pay_cut4` doesn't sig improve the fit of the model")
 anova(
-  lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type                 , data=ds_no_other_or_unknown),
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type                  , data=ds_no_other_or_unknown),
   lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type + bonus_pay_cut4 , data=ds_no_other_or_unknown)
 )

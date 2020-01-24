@@ -1,6 +1,6 @@
 ---
 title: Attitudes Regarding the Assignment Process Among Navy Medical Corps Officers
-date: "Date: 2019-12-06"
+date: "Date: 2020-01-24"
 output:
   html_document:
     keep_md: yes
@@ -1435,7 +1435,7 @@ Models to Publish
 
 3-predictor (and final) model
 -----------------------------------
-<br/>Data:<code> ds_no_other_or_unknown </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current + officer_rate + manning_proportion_cut3 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<br/>Data:<code> ds_no_other_or_unknown </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current + officer_rate + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -1448,94 +1448,80 @@ Models to Publish
 <tbody>
   <tr>
    <td style="text-align:left;"> (Intercept) </td>
-   <td style="text-align:right;"> 2.6851976 </td>
-   <td style="text-align:right;"> 0.2854502 </td>
-   <td style="text-align:right;"> 9.4068857 </td>
+   <td style="text-align:right;"> 2.6362370 </td>
+   <td style="text-align:right;"> 0.2302728 </td>
+   <td style="text-align:right;"> 11.448321 </td>
    <td style="text-align:right;"> 0.0000000 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentGME </td>
-   <td style="text-align:right;"> 0.2458152 </td>
-   <td style="text-align:right;"> 0.1459436 </td>
-   <td style="text-align:right;"> 1.6843164 </td>
-   <td style="text-align:right;"> 0.0924894 </td>
+   <td style="text-align:right;"> 0.2471071 </td>
+   <td style="text-align:right;"> 0.1437860 </td>
+   <td style="text-align:right;"> 1.718575 </td>
+   <td style="text-align:right;"> 0.0860568 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentNon-Operational/Non-Clinical </td>
-   <td style="text-align:right;"> -0.4127666 </td>
-   <td style="text-align:right;"> 0.2000036 </td>
-   <td style="text-align:right;"> -2.0637963 </td>
-   <td style="text-align:right;"> 0.0393415 </td>
+   <td style="text-align:right;"> -0.4179531 </td>
+   <td style="text-align:right;"> 0.1988930 </td>
+   <td style="text-align:right;"> -2.101397 </td>
+   <td style="text-align:right;"> 0.0359007 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentOCONUS MTF </td>
-   <td style="text-align:right;"> -0.3566324 </td>
-   <td style="text-align:right;"> 0.1405126 </td>
-   <td style="text-align:right;"> -2.5380813 </td>
-   <td style="text-align:right;"> 0.0113245 </td>
+   <td style="text-align:right;"> -0.3599271 </td>
+   <td style="text-align:right;"> 0.1402292 </td>
+   <td style="text-align:right;"> -2.566707 </td>
+   <td style="text-align:right;"> 0.0104375 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentCONUS Operational </td>
-   <td style="text-align:right;"> -0.3437994 </td>
-   <td style="text-align:right;"> 0.1579410 </td>
-   <td style="text-align:right;"> -2.1767587 </td>
-   <td style="text-align:right;"> 0.0297744 </td>
+   <td style="text-align:right;"> -0.3488765 </td>
+   <td style="text-align:right;"> 0.1569621 </td>
+   <td style="text-align:right;"> -2.222680 </td>
+   <td style="text-align:right;"> 0.0265004 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentOCONUS Operational </td>
-   <td style="text-align:right;"> -1.1004536 </td>
-   <td style="text-align:right;"> 0.2170624 </td>
-   <td style="text-align:right;"> -5.0697575 </td>
+   <td style="text-align:right;"> -1.0986587 </td>
+   <td style="text-align:right;"> 0.2164013 </td>
+   <td style="text-align:right;"> -5.076951 </td>
    <td style="text-align:right;"> 0.0000005 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> officer_rate </td>
-   <td style="text-align:right;"> 0.3114947 </td>
-   <td style="text-align:right;"> 0.0502808 </td>
-   <td style="text-align:right;"> 6.1951067 </td>
+   <td style="text-align:right;"> 0.3119414 </td>
+   <td style="text-align:right;"> 0.0500511 </td>
+   <td style="text-align:right;"> 6.232463 </td>
    <td style="text-align:right;"> 0.0000000 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> manning_proportion_cut3Balanced </td>
-   <td style="text-align:right;"> -0.0953558 </td>
-   <td style="text-align:right;"> 0.1704935 </td>
-   <td style="text-align:right;"> -0.5592928 </td>
-   <td style="text-align:right;"> 0.5761099 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> manning_proportion_cut3Over </td>
-   <td style="text-align:right;"> -0.0350102 </td>
-   <td style="text-align:right;"> 0.1678913 </td>
-   <td style="text-align:right;"> -0.2085290 </td>
-   <td style="text-align:right;"> 0.8348662 </td>
-  </tr>
-  <tr>
    <td style="text-align:left;"> specialty_typesurgical </td>
-   <td style="text-align:right;"> -0.2452708 </td>
-   <td style="text-align:right;"> 0.1256172 </td>
-   <td style="text-align:right;"> -1.9525250 </td>
-   <td style="text-align:right;"> 0.0512054 </td>
+   <td style="text-align:right;"> -0.2648363 </td>
+   <td style="text-align:right;"> 0.1201526 </td>
+   <td style="text-align:right;"> -2.204167 </td>
+   <td style="text-align:right;"> 0.0277806 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> specialty_typefamily </td>
-   <td style="text-align:right;"> -0.4753381 </td>
-   <td style="text-align:right;"> 0.1872759 </td>
-   <td style="text-align:right;"> -2.5381695 </td>
-   <td style="text-align:right;"> 0.0113217 </td>
+   <td style="text-align:right;"> -0.4271241 </td>
+   <td style="text-align:right;"> 0.1191680 </td>
+   <td style="text-align:right;"> -3.584220 </td>
+   <td style="text-align:right;"> 0.0003574 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> specialty_typeoperational </td>
-   <td style="text-align:right;"> -0.6574151 </td>
-   <td style="text-align:right;"> 0.1887946 </td>
-   <td style="text-align:right;"> -3.4821702 </td>
-   <td style="text-align:right;"> 0.0005229 </td>
+   <td style="text-align:right;"> -0.6601447 </td>
+   <td style="text-align:right;"> 0.1853348 </td>
+   <td style="text-align:right;"> -3.561904 </td>
+   <td style="text-align:right;"> 0.0003887 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> specialty_typeresident </td>
-   <td style="text-align:right;"> -0.2681406 </td>
-   <td style="text-align:right;"> 0.2576730 </td>
-   <td style="text-align:right;"> -1.0406238 </td>
-   <td style="text-align:right;"> 0.2983475 </td>
+   <td style="text-align:right;"> -0.3167727 </td>
+   <td style="text-align:right;"> 0.2455119 </td>
+   <td style="text-align:right;"> -1.290254 </td>
+   <td style="text-align:right;"> 0.1973141 </td>
   </tr>
 </tbody>
 </table>
@@ -1558,17 +1544,17 @@ Models to Publish
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:right;"> 0.1540242 </td>
-   <td style="text-align:right;"> 0.1420246 </td>
-   <td style="text-align:right;"> 1.25638 </td>
-   <td style="text-align:right;"> 12.83572 </td>
+   <td style="text-align:right;"> 0.1535771 </td>
+   <td style="text-align:right;"> 0.1435957 </td>
+   <td style="text-align:right;"> 1.255229 </td>
+   <td style="text-align:right;"> 15.38633 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 13 </td>
-   <td style="text-align:right;"> -1408.372 </td>
-   <td style="text-align:right;"> 2844.744 </td>
-   <td style="text-align:right;"> 2911.325 </td>
-   <td style="text-align:right;"> 1335.403 </td>
-   <td style="text-align:right;"> 846 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> -1408.599 </td>
+   <td style="text-align:right;"> 2841.198 </td>
+   <td style="text-align:right;"> 2898.267 </td>
+   <td style="text-align:right;"> 1336.109 </td>
+   <td style="text-align:right;"> 848 </td>
   </tr>
 </tbody>
 </table>Analysis of Variance Table
@@ -1582,7 +1568,7 @@ Model 2: satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type
 
 3-predictor model wieght sampling weights
 -----------------------------------
-<br/>Data:<code> ds_no_other_or_unknown </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current + officer_rate + manning_proportion_cut3 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<br/>Data:<code> ds_no_other_or_unknown </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current + officer_rate + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -1595,94 +1581,80 @@ Model 2: satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type
 <tbody>
   <tr>
    <td style="text-align:left;"> (Intercept) </td>
-   <td style="text-align:right;"> 2.6308577 </td>
-   <td style="text-align:right;"> 0.3242023 </td>
-   <td style="text-align:right;"> 8.1148654 </td>
+   <td style="text-align:right;"> 2.4882960 </td>
+   <td style="text-align:right;"> 0.2480533 </td>
+   <td style="text-align:right;"> 10.031296 </td>
    <td style="text-align:right;"> 0.0000000 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentGME </td>
-   <td style="text-align:right;"> 0.2155353 </td>
-   <td style="text-align:right;"> 0.1479001 </td>
-   <td style="text-align:right;"> 1.4573036 </td>
-   <td style="text-align:right;"> 0.1454037 </td>
+   <td style="text-align:right;"> 0.2209029 </td>
+   <td style="text-align:right;"> 0.1454480 </td>
+   <td style="text-align:right;"> 1.518776 </td>
+   <td style="text-align:right;"> 0.1291916 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentNon-Operational/Non-Clinical </td>
-   <td style="text-align:right;"> -0.4326277 </td>
-   <td style="text-align:right;"> 0.2208153 </td>
-   <td style="text-align:right;"> -1.9592286 </td>
-   <td style="text-align:right;"> 0.0504141 </td>
+   <td style="text-align:right;"> -0.4507499 </td>
+   <td style="text-align:right;"> 0.2206854 </td>
+   <td style="text-align:right;"> -2.042499 </td>
+   <td style="text-align:right;"> 0.0414108 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentOCONUS MTF </td>
-   <td style="text-align:right;"> -0.2116536 </td>
-   <td style="text-align:right;"> 0.1680705 </td>
-   <td style="text-align:right;"> -1.2593146 </td>
-   <td style="text-align:right;"> 0.2082641 </td>
+   <td style="text-align:right;"> -0.2260175 </td>
+   <td style="text-align:right;"> 0.1681358 </td>
+   <td style="text-align:right;"> -1.344256 </td>
+   <td style="text-align:right;"> 0.1792251 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentCONUS Operational </td>
-   <td style="text-align:right;"> -0.1304595 </td>
-   <td style="text-align:right;"> 0.1540665 </td>
-   <td style="text-align:right;"> -0.8467740 </td>
-   <td style="text-align:right;"> 0.3973605 </td>
+   <td style="text-align:right;"> -0.1751430 </td>
+   <td style="text-align:right;"> 0.1526552 </td>
+   <td style="text-align:right;"> -1.147311 </td>
+   <td style="text-align:right;"> 0.2515766 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentOCONUS Operational </td>
-   <td style="text-align:right;"> -1.0205781 </td>
-   <td style="text-align:right;"> 0.2144327 </td>
-   <td style="text-align:right;"> -4.7594333 </td>
-   <td style="text-align:right;"> 0.0000023 </td>
+   <td style="text-align:right;"> -1.0338541 </td>
+   <td style="text-align:right;"> 0.2140185 </td>
+   <td style="text-align:right;"> -4.830676 </td>
+   <td style="text-align:right;"> 0.0000016 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> officer_rate </td>
-   <td style="text-align:right;"> 0.3276407 </td>
-   <td style="text-align:right;"> 0.0549575 </td>
-   <td style="text-align:right;"> 5.9617133 </td>
+   <td style="text-align:right;"> 0.3408980 </td>
+   <td style="text-align:right;"> 0.0529716 </td>
+   <td style="text-align:right;"> 6.435491 </td>
    <td style="text-align:right;"> 0.0000000 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> manning_proportion_cut3Balanced </td>
-   <td style="text-align:right;"> -0.2445906 </td>
-   <td style="text-align:right;"> 0.1609539 </td>
-   <td style="text-align:right;"> -1.5196318 </td>
-   <td style="text-align:right;"> 0.1289772 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> manning_proportion_cut3Over </td>
-   <td style="text-align:right;"> -0.0381291 </td>
-   <td style="text-align:right;"> 0.1645675 </td>
-   <td style="text-align:right;"> -0.2316924 </td>
-   <td style="text-align:right;"> 0.8168329 </td>
-  </tr>
-  <tr>
    <td style="text-align:left;"> specialty_typesurgical </td>
-   <td style="text-align:right;"> -0.2096901 </td>
-   <td style="text-align:right;"> 0.1335309 </td>
-   <td style="text-align:right;"> -1.5703490 </td>
-   <td style="text-align:right;"> 0.1167079 </td>
+   <td style="text-align:right;"> -0.2767949 </td>
+   <td style="text-align:right;"> 0.1283647 </td>
+   <td style="text-align:right;"> -2.156316 </td>
+   <td style="text-align:right;"> 0.0313396 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> specialty_typefamily </td>
-   <td style="text-align:right;"> -0.5466936 </td>
-   <td style="text-align:right;"> 0.2181097 </td>
-   <td style="text-align:right;"> -2.5065078 </td>
-   <td style="text-align:right;"> 0.0123796 </td>
+   <td style="text-align:right;"> -0.4507347 </td>
+   <td style="text-align:right;"> 0.1663497 </td>
+   <td style="text-align:right;"> -2.709561 </td>
+   <td style="text-align:right;"> 0.0068732 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> specialty_typeoperational </td>
-   <td style="text-align:right;"> -0.7344349 </td>
-   <td style="text-align:right;"> 0.1683679 </td>
-   <td style="text-align:right;"> -4.3620831 </td>
-   <td style="text-align:right;"> 0.0000145 </td>
+   <td style="text-align:right;"> -0.7287229 </td>
+   <td style="text-align:right;"> 0.1615969 </td>
+   <td style="text-align:right;"> -4.509510 </td>
+   <td style="text-align:right;"> 0.0000074 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> specialty_typeresident </td>
-   <td style="text-align:right;"> -0.1049081 </td>
-   <td style="text-align:right;"> 0.1852736 </td>
-   <td style="text-align:right;"> -0.5662335 </td>
-   <td style="text-align:right;"> 0.5713853 </td>
+   <td style="text-align:right;"> -0.2539742 </td>
+   <td style="text-align:right;"> 0.1686224 </td>
+   <td style="text-align:right;"> -1.506171 </td>
+   <td style="text-align:right;"> 0.1323958 </td>
   </tr>
 </tbody>
 </table>
@@ -1705,17 +1677,17 @@ Model 2: satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:right;"> 0.1914977 </td>
-   <td style="text-align:right;"> 0.1800296 </td>
-   <td style="text-align:right;"> 2.539857 </td>
-   <td style="text-align:right;"> 16.69827 </td>
+   <td style="text-align:right;"> 0.1875118 </td>
+   <td style="text-align:right;"> 0.1779306 </td>
+   <td style="text-align:right;"> 2.543105 </td>
+   <td style="text-align:right;"> 19.57074 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 13 </td>
-   <td style="text-align:right;"> -1525.705 </td>
-   <td style="text-align:right;"> 3079.41 </td>
-   <td style="text-align:right;"> 3145.991 </td>
-   <td style="text-align:right;"> 5457.438 </td>
-   <td style="text-align:right;"> 846 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> -1527.817 </td>
+   <td style="text-align:right;"> 3079.635 </td>
+   <td style="text-align:right;"> 3136.704 </td>
+   <td style="text-align:right;"> 5484.343 </td>
+   <td style="text-align:right;"> 848 </td>
   </tr>
 </tbody>
 </table>
@@ -1734,7 +1706,7 @@ Nonsignificant Additions
 -----------------------------------
 
 ```
-`manning_proportion_cut3` doesn't sig improve the fit of the model
+The `officer_rate * specialty_type`  interaction doesn't sig improve the fit of the model
 ```
 
 ```
@@ -1789,7 +1761,7 @@ For the sake of documentation and reproducibility, the current report was render
 ```
 ─ Session info ───────────────────────────────────────────────────────────────────────────────────
  setting  value                       
- version  R version 3.6.1 (2019-07-05)
+ version  R version 3.6.2 (2019-12-12)
  os       Ubuntu 19.10                
  system   x86_64, linux-gnu           
  ui       X11                         
@@ -1797,15 +1769,15 @@ For the sake of documentation and reproducibility, the current report was render
  collate  en_US.UTF-8                 
  ctype    en_US.UTF-8                 
  tz       America/Chicago             
- date     2019-12-06                  
+ date     2020-01-24                  
 
 ─ Packages ───────────────────────────────────────────────────────────────────────────────────────
  package         * version     date       lib source                                  
  assertthat        0.2.1       2019-03-21 [1] CRAN (R 3.6.1)                          
  backports         1.1.5       2019-10-02 [1] CRAN (R 3.6.1)                          
- broom             0.5.2       2019-04-07 [1] CRAN (R 3.6.1)                          
- callr             3.3.2       2019-09-22 [1] CRAN (R 3.6.1)                          
- cli               1.1.0       2019-03-19 [1] CRAN (R 3.6.1)                          
+ broom             0.5.3       2019-12-14 [1] CRAN (R 3.6.1)                          
+ callr             3.4.0       2019-12-09 [1] CRAN (R 3.6.1)                          
+ cli               2.0.1       2020-01-08 [1] CRAN (R 3.6.1)                          
  colorspace        1.4-1       2019-03-18 [1] CRAN (R 3.6.1)                          
  corrplot          0.84        2017-10-16 [1] CRAN (R 3.6.1)                          
  crayon            1.3.4       2017-09-16 [1] CRAN (R 3.6.1)                          
@@ -1815,19 +1787,19 @@ For the sake of documentation and reproducibility, the current report was render
  dplyr             0.8.3       2019-07-04 [1] CRAN (R 3.6.1)                          
  ellipsis          0.3.0       2019-09-20 [1] CRAN (R 3.6.1)                          
  evaluate          0.14        2019-05-28 [1] CRAN (R 3.6.1)                          
- fansi             0.4.0       2018-10-05 [1] CRAN (R 3.6.1)                          
- farver            2.0.1       2019-11-13 [1] CRAN (R 3.6.1)                          
+ fansi             0.4.1       2020-01-08 [1] CRAN (R 3.6.1)                          
+ farver            2.0.3       2020-01-16 [1] CRAN (R 3.6.1)                          
  fs                1.3.1       2019-05-06 [1] CRAN (R 3.6.1)                          
  generics          0.0.2       2018-11-29 [1] CRAN (R 3.6.1)                          
  ggplot2         * 3.2.1       2019-08-10 [1] CRAN (R 3.6.1)                          
  glue              1.3.1       2019-03-12 [1] CRAN (R 3.6.1)                          
  gtable            0.3.0       2019-03-25 [1] CRAN (R 3.6.1)                          
  highr             0.8         2019-03-20 [1] CRAN (R 3.6.1)                          
- hms               0.5.2       2019-10-30 [1] CRAN (R 3.6.1)                          
+ hms               0.5.3       2020-01-08 [1] CRAN (R 3.6.1)                          
  htmltools         0.4.0       2019-10-04 [1] CRAN (R 3.6.1)                          
  httr              1.4.1       2019-08-05 [1] CRAN (R 3.6.1)                          
  kableExtra        1.1.0       2019-03-16 [1] CRAN (R 3.6.1)                          
- knitr           * 1.26        2019-11-12 [1] CRAN (R 3.6.1)                          
+ knitr           * 1.27        2020-01-16 [1] CRAN (R 3.6.1)                          
  labeling          0.3         2014-08-23 [1] CRAN (R 3.6.1)                          
  lattice           0.20-38     2018-11-04 [1] CRAN (R 3.6.1)                          
  lazyeval          0.2.2       2019-03-15 [1] CRAN (R 3.6.1)                          
@@ -1835,12 +1807,12 @@ For the sake of documentation and reproducibility, the current report was render
  magrittr        * 1.5         2014-11-22 [1] CRAN (R 3.6.1)                          
  memoise           1.1.0       2017-04-21 [1] CRAN (R 3.6.1)                          
  munsell           0.5.0       2018-06-12 [1] CRAN (R 3.6.1)                          
- nlme              3.1-142     2019-11-07 [1] CRAN (R 3.6.1)                          
- pillar            1.4.2       2019-06-29 [1] CRAN (R 3.6.1)                          
+ nlme              3.1-143     2019-12-10 [1] CRAN (R 3.6.1)                          
+ pillar            1.4.3       2019-12-20 [1] CRAN (R 3.6.1)                          
  pkgbuild          1.0.6       2019-10-09 [1] CRAN (R 3.6.1)                          
  pkgconfig         2.0.3       2019-09-22 [1] CRAN (R 3.6.1)                          
  pkgload           1.0.2       2018-10-29 [1] CRAN (R 3.6.1)                          
- prettyunits       1.0.2       2015-07-13 [1] CRAN (R 3.6.1)                          
+ prettyunits       1.1.0       2020-01-09 [1] CRAN (R 3.6.1)                          
  processx          3.4.1       2019-07-18 [1] CRAN (R 3.6.1)                          
  ps                1.3.0       2018-12-21 [1] CRAN (R 3.6.1)                          
  purrr             0.3.3       2019-10-18 [1] CRAN (R 3.6.1)                          
@@ -1849,13 +1821,13 @@ For the sake of documentation and reproducibility, the current report was render
  readr             1.3.1       2018-12-21 [1] CRAN (R 3.6.1)                          
  remotes           2.1.0       2019-06-24 [1] CRAN (R 3.6.1)                          
  rlang             0.4.2       2019-11-23 [1] CRAN (R 3.6.1)                          
- rmarkdown         1.18        2019-11-27 [1] CRAN (R 3.6.1)                          
+ rmarkdown         2.1         2020-01-20 [1] CRAN (R 3.6.2)                          
  rprojroot         1.3-2       2018-01-03 [1] CRAN (R 3.6.1)                          
  rstudioapi        0.10        2019-03-19 [1] CRAN (R 3.6.1)                          
  rvest             0.3.5       2019-11-08 [1] CRAN (R 3.6.1)                          
  scales            1.1.0       2019-11-18 [1] CRAN (R 3.6.1)                          
  sessioninfo       1.1.1       2018-11-05 [1] CRAN (R 3.6.1)                          
- stringi           1.4.3       2019-03-12 [1] CRAN (R 3.6.1)                          
+ stringi           1.4.5       2020-01-11 [1] CRAN (R 3.6.1)                          
  stringr           1.4.0       2019-02-10 [1] CRAN (R 3.6.1)                          
  TabularManifest   0.1-16.9003 2019-11-16 [1] Github (Melinae/TabularManifest@4cbc21c)
  testthat          2.3.1       2019-12-01 [1] CRAN (R 3.6.1)                          
@@ -1864,11 +1836,11 @@ For the sake of documentation and reproducibility, the current report was render
  tidyselect        0.2.5       2018-10-11 [1] CRAN (R 3.6.1)                          
  usethis           1.5.1       2019-07-04 [1] CRAN (R 3.6.1)                          
  utf8              1.1.4       2018-05-24 [1] CRAN (R 3.6.1)                          
- vctrs             0.2.0       2019-07-05 [1] CRAN (R 3.6.1)                          
+ vctrs             0.2.1       2019-12-17 [1] CRAN (R 3.6.1)                          
  viridisLite       0.3.0       2018-02-01 [1] CRAN (R 3.6.1)                          
  webshot           0.5.2       2019-11-22 [1] CRAN (R 3.6.1)                          
  withr             2.1.2       2018-03-15 [1] CRAN (R 3.6.1)                          
- xfun              0.11        2019-11-12 [1] CRAN (R 3.6.1)                          
+ xfun              0.12        2020-01-13 [1] CRAN (R 3.6.1)                          
  xml2              1.2.2       2019-08-09 [1] CRAN (R 3.6.1)                          
  yaml              2.2.0       2018-07-25 [1] CRAN (R 3.6.1)                          
  zeallot           0.1.0       2018-01-28 [1] CRAN (R 3.6.1)                          
@@ -1882,4 +1854,4 @@ For the sake of documentation and reproducibility, the current report was render
 
 
 
-Report rendered by wibeasley at 2019-12-06, 10:10 -0600 in 24 seconds.
+Report rendered by wibeasley at 2020-01-24, 14:20 -0600 in 38 seconds.
