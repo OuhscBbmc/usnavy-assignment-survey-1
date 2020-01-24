@@ -106,6 +106,91 @@ Counts by bonus pay & specialty
 |32k+           |nonsurgical    |  79|
 |32k+           |surgical       |  48|
 
+Survey Response
+============================================
+
+```
+Overall unweighted mean satisfaction:
+```
+
+```
+[1] 3.629587
+```
+
+```
+Overall weighted mean satisfaction:
+```
+
+```
+                    mean     SE
+satisfaction_rank 3.4141 0.0645
+```
+
+```
+`specialty_type` unweighted mean satisfaction:
+```
+
+```
+# A tibble: 6 x 2
+  specialty_type satisfaction_rank
+  <fct>                      <dbl>
+1 nonsurgical                 3.92
+2 surgical                    3.68
+3 family                      3.35
+4 operational                 2.66
+5 resident                    3.52
+6 unknown                     3.4 
+```
+
+```
+`specialty_type` weighted mean satisfaction:
+```
+
+```
+# A tibble: 5 x 3
+  specialty_type satisfaction_rank     se
+  <fct>                      <dbl>  <dbl>
+1 nonsurgical                 3.92 0.0587
+2 surgical                    3.68 0.107 
+3 family                      3.35 0.111 
+4 operational                 2.66 0.162 
+5 resident                    3.52 0.192 
+```
+
+```
+`billet_current` unweighted mean satisfaction:
+```
+
+```
+# A tibble: 7 x 2
+  billet_current               satisfaction_rank
+  <fct>                                    <dbl>
+1 CONUS MTF                                 3.86
+2 GME                                       3.81
+3 Non-Operational/Non-Clinical              3.65
+4 OCONUS MTF                                3.41
+5 CONUS Operational                         3.12
+6 OCONUS Operational                        2.45
+7 Other                                     4   
+```
+
+```
+`billet_current` weighted mean satisfaction:
+```
+
+```
+# A tibble: 7 x 3
+  billet_current               satisfaction_rank     se
+  <fct>                                    <dbl>  <dbl>
+1 CONUS MTF                                 3.73 0.0811
+2 GME                                       3.64 0.149 
+3 Non-Operational/Non-Clinical              3.33 0.317 
+4 OCONUS MTF                                3.50 0.154 
+5 CONUS Operational                         2.94 0.167 
+6 OCONUS Operational                        2.16 0.266 
+7 Other                                     3.78 0.482 
+```
+
 Relationships between Outcomes
 ============================================
 
@@ -1788,6 +1873,7 @@ For the sake of documentation and reproducibility, the current report was render
  colorspace        1.4-1       2019-03-18 [1] CRAN (R 3.6.1)                          
  corrplot          0.84        2017-10-16 [1] CRAN (R 3.6.1)                          
  crayon            1.3.4       2017-09-16 [1] CRAN (R 3.6.1)                          
+ DBI               1.1.0       2019-12-15 [1] CRAN (R 3.6.1)                          
  desc              1.2.0       2018-05-01 [1] CRAN (R 3.6.1)                          
  devtools          2.2.1       2019-09-24 [1] CRAN (R 3.6.1)                          
  digest            0.6.23      2019-11-23 [1] CRAN (R 3.6.1)                          
@@ -1812,7 +1898,9 @@ For the sake of documentation and reproducibility, the current report was render
  lazyeval          0.2.2       2019-03-15 [1] CRAN (R 3.6.1)                          
  lifecycle         0.1.0       2019-08-01 [1] CRAN (R 3.6.1)                          
  magrittr        * 1.5         2014-11-22 [1] CRAN (R 3.6.1)                          
+ Matrix          * 1.2-18      2019-11-27 [4] CRAN (R 3.6.1)                          
  memoise           1.1.0       2017-04-21 [1] CRAN (R 3.6.1)                          
+ mitools           2.4         2019-04-26 [1] CRAN (R 3.6.1)                          
  munsell           0.5.0       2018-06-12 [1] CRAN (R 3.6.1)                          
  nlme              3.1-143     2019-12-10 [1] CRAN (R 3.6.1)                          
  pillar            1.4.3       2019-12-20 [1] CRAN (R 3.6.1)                          
@@ -1836,12 +1924,15 @@ For the sake of documentation and reproducibility, the current report was render
  sessioninfo       1.1.1       2018-11-05 [1] CRAN (R 3.6.1)                          
  stringi           1.4.5       2020-01-11 [1] CRAN (R 3.6.1)                          
  stringr           1.4.0       2019-02-10 [1] CRAN (R 3.6.1)                          
+ survey          * 3.37        2020-01-21 [1] CRAN (R 3.6.2)                          
+ survival        * 3.1-8       2019-12-03 [1] CRAN (R 3.6.1)                          
  TabularManifest   0.1-16.9003 2019-11-16 [1] Github (Melinae/TabularManifest@4cbc21c)
  testthat          2.3.1       2019-12-01 [1] CRAN (R 3.6.1)                          
  tibble            2.1.3       2019-06-06 [1] CRAN (R 3.6.1)                          
  tidyr             1.0.0       2019-09-11 [1] CRAN (R 3.6.1)                          
  tidyselect        0.2.5       2018-10-11 [1] CRAN (R 3.6.1)                          
  usethis           1.5.1       2019-07-04 [1] CRAN (R 3.6.1)                          
+ utf8              1.1.4       2018-05-24 [1] CRAN (R 3.6.1)                          
  vctrs             0.2.1       2019-12-17 [1] CRAN (R 3.6.1)                          
  viridisLite       0.3.0       2018-02-01 [1] CRAN (R 3.6.1)                          
  webshot           0.5.2       2019-11-22 [1] CRAN (R 3.6.1)                          
@@ -1860,4 +1951,4 @@ For the sake of documentation and reproducibility, the current report was render
 
 
 
-Report rendered by wibeasley at 2020-01-24, 14:49 -0600 in 55 seconds.
+Report rendered by wibeasley at 2020-01-24, 15:11 -0600 in 58 seconds.
