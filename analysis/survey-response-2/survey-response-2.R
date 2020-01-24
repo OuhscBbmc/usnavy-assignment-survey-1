@@ -8,6 +8,8 @@ rm(list=ls(all=TRUE)) #Clear the memory of variables from previous run. This is 
 # ---- load-packages -----------------------------------------------------------
 library(magrittr) #Pipes
 library(ggplot2) #For graphing
+library(survey)
+
 requireNamespace("dplyr")
 # requireNamespace("tidyr") #For converting wide to long
 # requireNamespace("RColorBrewer")
@@ -106,9 +108,74 @@ TabularManifest::histogram_continuous(d_observed=ds, variable_name="survey_weigh
 cat("Satisfaction summary")
 summary(ds$satisfaction_rank)
 
-cat("Satisfaction summary (emergency medicine only")
+cat("Satisfaction summary (emergency medicine only)")
 summary(ds$satisfaction_rank[ds$primary_specialty=="Emergency Medicine"])
 
+
+cat("Counts by bonus pay & specialty")
+ds %>%
+  dplyr::count(bonus_pay_cut4, specialty_type) %>%
+  knitr::kable(
+    format = "markdown"
+  )
+
+
+######## Survey Response ##########################################################
+
+# ---- survey-response ----------------------------------------------------
+
+sd <- svydesign(
+  weights   = ~survey_weight_specialty_type,         # Weighted by specialty
+  variables = ~satisfaction_rank + specialty_type + billet_current,
+  ids       = ~0,                                    # No clusters
+  strata    = NULL,                                 # No strata
+
+  data      = ds[!is.na(ds$survey_weight_specialty_type), ]
+)
+
+cat("Overall unweighted mean satisfaction:")
+mean(ds$satisfaction_rank, na.rm=T)
+
+cat("Overall weighted mean satisfaction:")
+svymean(~satisfaction_rank, sd, na.rm=T)
+
+
+cat("`specialty_type` unweighted mean satisfaction:")
+ds %>%
+  dplyr::group_by(specialty_type) %>%
+  dplyr::summarize(
+    satisfaction_rank   = mean(satisfaction_rank, na.rm=T)
+  ) %>%
+  dplyr::ungroup()
+
+cat("`specialty_type` weighted mean satisfaction:")
+svyby(
+  formula = ~satisfaction_rank,
+  by      = ~specialty_type,
+  design  = sd,
+  FUN     = svymean,
+  na.rm   = TRUE
+) %>%
+tibble::as_tibble()
+
+
+cat("`billet_current` unweighted mean satisfaction:")
+ds %>%
+  dplyr::group_by(billet_current) %>%
+  dplyr::summarize(
+    satisfaction_rank   = mean(satisfaction_rank, na.rm=T)
+  ) %>%
+  dplyr::ungroup()
+
+cat("`billet_current` weighted mean satisfaction:")
+svyby(
+  formula = ~satisfaction_rank,
+  by      = ~billet_current,
+  design  = sd,
+  FUN     = svymean,
+  na.rm   = TRUE
+) %>%
+  tibble::as_tibble()
 
 ######## Outcome Relationships ##########################################################
 
@@ -190,9 +257,6 @@ ds %>%
   labs(x=NULL) #y="Satisfaction"
 
 prettify_lm(lm(satisfaction_rank ~ 1 + bonus_pay_cut4, data=ds))
-
-ds %>%
-  dplyr::count(bonus_pay_cut4, specialty_type)
 
 # ---- by-assignment-current-choice ------------------------------------------------------------
 cat("### satisfaction_rank\n\n")

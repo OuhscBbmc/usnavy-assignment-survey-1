@@ -79,13 +79,32 @@ Satisfaction summary
 ```
 
 ```
-Satisfaction summary (emergency medicine only
+Satisfaction summary (emergency medicine only)
 ```
 
 ```
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
   1.000   3.000   4.000   3.759   5.000   5.000       5 
 ```
+
+```
+Counts by bonus pay & specialty
+```
+
+
+
+|bonus_pay_cut4 |specialty_type |   n|
+|:--------------|:--------------|---:|
+|$0             |operational    |  78|
+|$0             |resident       |  50|
+|$20-24k        |nonsurgical    | 322|
+|$20-24k        |family         | 177|
+|$20-24k        |operational    |  12|
+|$24-32k        |nonsurgical    |  70|
+|$24-32k        |surgical       | 109|
+|$24-32k        |unknown        |   6|
+|32k+           |nonsurgical    |  79|
+|32k+           |surgical       |  48|
 
 Relationships between Outcomes
 ============================================
@@ -345,19 +364,7 @@ By Bonus Pay
    <td style="text-align:right;"> 868 </td>
   </tr>
 </tbody>
-</table># A tibble: 10 x 3
-   bonus_pay_cut4 specialty_type     n
-   <fct>          <fct>          <int>
- 1 $0             operational       78
- 2 $0             resident          50
- 3 $20-24k        nonsurgical      322
- 4 $20-24k        family           177
- 5 $20-24k        operational       12
- 6 $24-32k        nonsurgical       70
- 7 $24-32k        surgical         109
- 8 $24-32k        unknown            6
- 9 32k+           nonsurgical       79
-10 32k+           surgical          48
+</table>
 
 By Assignment Current Choice
 -----------------------------------
@@ -1835,7 +1842,6 @@ For the sake of documentation and reproducibility, the current report was render
  tidyr             1.0.0       2019-09-11 [1] CRAN (R 3.6.1)                          
  tidyselect        0.2.5       2018-10-11 [1] CRAN (R 3.6.1)                          
  usethis           1.5.1       2019-07-04 [1] CRAN (R 3.6.1)                          
- utf8              1.1.4       2018-05-24 [1] CRAN (R 3.6.1)                          
  vctrs             0.2.1       2019-12-17 [1] CRAN (R 3.6.1)                          
  viridisLite       0.3.0       2018-02-01 [1] CRAN (R 3.6.1)                          
  webshot           0.5.2       2019-11-22 [1] CRAN (R 3.6.1)                          
@@ -1854,4 +1860,4 @@ For the sake of documentation and reproducibility, the current report was render
 
 
 
-Report rendered by wibeasley at 2020-01-24, 14:20 -0600 in 38 seconds.
+Report rendered by wibeasley at 2020-01-24, 14:49 -0600 in 55 seconds.

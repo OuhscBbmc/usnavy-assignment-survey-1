@@ -89,6 +89,11 @@ Univariate
 ```{r marginals, echo=echo_chunks, message=message_chunks}
 ```
 
+Survey Response
+============================================
+```{r survey-response, echo=echo_chunks, message=message_chunks}
+```
+
 Relationships between Outcomes
 ============================================
 ```{r outcome-correlations, echo=echo_chunks, message=message_chunks}
