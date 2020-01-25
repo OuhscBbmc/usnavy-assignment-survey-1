@@ -1,0 +1,8 @@
+default:
+    # To be processed by Ellis lanes
+    # path_subject_1_raw:       "data-public/raw/subject-1.csv"
+
+    # Derived Rectangles (produced by Ellis lanes).
+    # path_car_derived:         "data-public/derived/car.rds" # Actually produced by an Ellis
+
+    path_log_flow:            !expr strftime(Sys.time(), "data-unshared/log/%Y/%Y-%m/flow-%Y-%m-%d--%H-%M-%S.log")
