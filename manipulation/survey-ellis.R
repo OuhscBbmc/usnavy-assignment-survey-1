@@ -100,15 +100,15 @@ rm(col_types)
 # OuhscMunge::column_rename_headstart(ds_lu_specialty) #Spit out columns to help write call ato `dplyr::rename()`.
 ds_lu_specialty <- ds_lu_specialty %>%
   dplyr::select(
-    "specialty"
-    , "bonus_pay"
-    , "manning_proportion_2013"       = "manning_percent_2013"
-    , "manning_proportion_2014"       = "manning_percent_2014"
-    , "manning_proportion_2015"       = "manning_percent_2015"
-    , "manning_proportion_2016"       = "manning_percent_2016"
-    , "critical_war"
-    , "specialty_type"
-    , "officer_count_population"
+    specialty
+    , bonus_pay
+    , manning_proportion_2013       = manning_percent_2013
+    , manning_proportion_2014       = manning_percent_2014
+    , manning_proportion_2015       = manning_percent_2015
+    , manning_proportion_2016       = manning_percent_2016
+    , critical_war
+    , specialty_type
+    , officer_count_population
   ) %>%
   dplyr::mutate(
     specialty_type      = factor(specialty_type, levels=c("nonsurgical", "surgical", "family", "operational",  "resident", "unknown")),
@@ -369,7 +369,6 @@ ds <- ds %>%
 #   dplyr::count(primary_specialty)
 
 # ---- calculate-weights -------------------------------------------------------
-
 ds_specialty_type_population <-
   ds_lu_specialty %>%
   dplyr::group_by(specialty_type) %>%
@@ -414,7 +413,10 @@ ds_specialty_type %>%
 
 ds <-
   ds %>%
-  dplyr::left_join(ds_specialty_type, by = "specialty_type")
+  dplyr::left_join(ds_specialty_type, by = "specialty_type") %>%
+  dplyr::mutate(
+    finite_population_correction  = dplyr::n() / sum(ds_specialty_type_population$officer_count_population)
+  )
 
 # ---- verify-values -----------------------------------------------------------
 # Sniff out problems
@@ -458,6 +460,8 @@ checkmate::assert_factor(   ds$manning_proportion_cut3   , any.missing=F        
 checkmate::assert_integer(  ds$population_count           , any.missing=T , lower=0, upper=600)
 checkmate::assert_numeric(  ds$survey_weight_specialty_type  , any.missing=T , lower=1, upper=20)
 
+checkmate::assert_numeric(  ds$finite_population_correction, any.missing=F , lower=0, upper=1)
+
 ds2 <- ds %>%
   dplyr::filter(is.na(population_count))
 
@@ -481,7 +485,8 @@ ds_slim <- ds %>%
     assignment_priority, assignment_priority_pretty, officer_rank_priority, officer_rank_priority_pretty,
     order_lead_time_preferred_cut3, order_lead_time_preferred_months,
     population_count,
-    survey_weight_specialty_type
+    survey_weight_specialty_type,
+    finite_population_correction
   )
 ds_slim
 

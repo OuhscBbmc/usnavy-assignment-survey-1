@@ -67,7 +67,7 @@ Warning: Factor `iv` contains implicit NA, consider using `forcats::fct_explicit
 Warning: Factor `iv` contains implicit NA, consider using `forcats::fct_explicit_na`
 ```
 
-<img src="figure-png/marginals-6.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-7.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-8.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-9.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-10.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-11.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-12.png" style="display: block; margin: auto;" />
+<img src="figure-png/marginals-6.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-7.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-8.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-9.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-10.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-11.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-12.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-13.png" style="display: block; margin: auto;" />
 
 ```
 Satisfaction summary
@@ -122,8 +122,8 @@ Overall weighted mean satisfaction:
 ```
 
 ```
-                    mean     SE
-satisfaction_rank 3.4141 0.0645
+                    mean    SE
+satisfaction_rank 3.4141 0.056
 ```
 
 ```
@@ -150,11 +150,11 @@ satisfaction_rank 3.4141 0.0645
 # A tibble: 5 x 3
   specialty_type satisfaction_rank     se
   <fct>                      <dbl>  <dbl>
-1 nonsurgical                 3.92 0.0587
-2 surgical                    3.68 0.107 
-3 family                      3.35 0.111 
-4 operational                 2.66 0.162 
-5 resident                    3.52 0.192 
+1 nonsurgical                 3.92 0.0509
+2 surgical                    3.68 0.0925
+3 family                      3.35 0.0963
+4 operational                 2.66 0.140 
+5 resident                    3.52 0.167 
 ```
 
 ```
@@ -181,12 +181,12 @@ satisfaction_rank 3.4141 0.0645
 # A tibble: 6 x 3
   billet_current           satisfaction_rank     se
   <fct>                                <dbl>  <dbl>
-1 CONUS MTF                             3.70 0.0721
-2 Non-Operational/Clinical              3.33 0.317 
-3 OCONUS MTF                            3.50 0.154 
-4 CONUS Operational                     2.94 0.167 
-5 OCONUS Operational                    2.16 0.266 
-6 Other                                 3.78 0.482 
+1 CONUS MTF                             3.70 0.0625
+2 Non-Operational/Clinical              3.33 0.275 
+3 OCONUS MTF                            3.50 0.133 
+4 CONUS Operational                     2.94 0.145 
+5 OCONUS Operational                    2.16 0.231 
+6 Other                                 3.78 0.418 
 ```
 
 Relationships between Outcomes
@@ -1889,9 +1889,8 @@ For the sake of documentation and reproducibility, the current report was render
  lattice           0.20-38     2018-11-04 [4] CRAN (R 3.6.1)                          
  lazyeval          0.2.2       2019-03-15 [1] CRAN (R 3.6.2)                          
  lifecycle         0.1.0       2019-08-01 [1] CRAN (R 3.6.2)                          
- magrittr        * 1.5         2014-11-22 [1] CRAN (R 3.6.2)                          
- markdown          1.1         2019-08-07 [1] CRAN (R 3.6.2)                          
- Matrix          * 1.2-18      2019-11-27 [4] CRAN (R 3.6.1)                          
+ magrittr          1.5         2014-11-22 [1] CRAN (R 3.6.2)                          
+ Matrix            1.2-18      2019-11-27 [4] CRAN (R 3.6.1)                          
  memoise           1.1.0       2017-04-21 [1] CRAN (R 3.6.2)                          
  mitools           2.4         2019-04-26 [1] CRAN (R 3.6.2)                          
  munsell           0.5.0       2018-06-12 [1] CRAN (R 3.6.2)                          
@@ -1919,8 +1918,8 @@ For the sake of documentation and reproducibility, the current report was render
  sessioninfo       1.1.1       2018-11-05 [1] CRAN (R 3.6.2)                          
  stringi           1.4.5       2020-01-11 [1] CRAN (R 3.6.2)                          
  stringr           1.4.0       2019-02-10 [1] CRAN (R 3.6.2)                          
- survey          * 3.37        2020-01-21 [1] CRAN (R 3.6.2)                          
- survival        * 3.1-8       2019-12-03 [1] CRAN (R 3.6.2)                          
+ survey            3.37        2020-01-21 [1] CRAN (R 3.6.2)                          
+ survival          3.1-8       2019-12-03 [1] CRAN (R 3.6.2)                          
  TabularManifest   0.1-16.9003 2019-12-15 [1] Github (Melinae/TabularManifest@4cbc21c)
  testit            0.11.1      2020-01-09 [1] Github (yihui/testit@c1c19f8)           
  testthat          2.3.1       2019-12-01 [1] CRAN (R 3.6.2)                          
@@ -1947,4 +1946,4 @@ For the sake of documentation and reproducibility, the current report was render
 
 
 
-Report rendered by wibeasley at 2020-01-25, 00:48 -0600 in 14 seconds.
+Report rendered by wibeasley at 2020-01-25, 01:32 -0600 in 12 seconds.

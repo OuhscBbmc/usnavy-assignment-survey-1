@@ -3505,7 +3505,6 @@ For the sake of documentation and reproducibility, the current report was render
  config            0.3         2018-03-27 [1] CRAN (R 3.6.2)                          
  corrplot          0.84        2017-10-16 [1] CRAN (R 3.6.2)                          
  crayon            1.3.4       2017-09-16 [1] CRAN (R 3.6.2)                          
- DBI               1.1.0       2019-12-15 [1] CRAN (R 3.6.2)                          
  desc              1.2.0       2018-05-01 [1] CRAN (R 3.6.2)                          
  devtools          2.2.1       2019-09-24 [1] CRAN (R 3.6.2)                          
  digest            0.6.23      2019-11-23 [1] CRAN (R 3.6.2)                          
@@ -3530,11 +3529,8 @@ For the sake of documentation and reproducibility, the current report was render
  lattice           0.20-38     2018-11-04 [4] CRAN (R 3.6.1)                          
  lazyeval          0.2.2       2019-03-15 [1] CRAN (R 3.6.2)                          
  lifecycle         0.1.0       2019-08-01 [1] CRAN (R 3.6.2)                          
- magrittr        * 1.5         2014-11-22 [1] CRAN (R 3.6.2)                          
- markdown          1.1         2019-08-07 [1] CRAN (R 3.6.2)                          
- Matrix          * 1.2-18      2019-11-27 [4] CRAN (R 3.6.1)                          
+ magrittr          1.5         2014-11-22 [1] CRAN (R 3.6.2)                          
  memoise           1.1.0       2017-04-21 [1] CRAN (R 3.6.2)                          
- mitools           2.4         2019-04-26 [1] CRAN (R 3.6.2)                          
  munsell           0.5.0       2018-06-12 [1] CRAN (R 3.6.2)                          
  nlme              3.1-143     2019-12-10 [1] CRAN (R 3.6.2)                          
  OuhscMunge        0.1.9.9012  2020-01-13 [1] local                                   
@@ -3560,8 +3556,6 @@ For the sake of documentation and reproducibility, the current report was render
  sessioninfo       1.1.1       2018-11-05 [1] CRAN (R 3.6.2)                          
  stringi           1.4.5       2020-01-11 [1] CRAN (R 3.6.2)                          
  stringr           1.4.0       2019-02-10 [1] CRAN (R 3.6.2)                          
- survey          * 3.37        2020-01-21 [1] CRAN (R 3.6.2)                          
- survival        * 3.1-8       2019-12-03 [1] CRAN (R 3.6.2)                          
  TabularManifest   0.1-16.9003 2019-12-15 [1] Github (Melinae/TabularManifest@4cbc21c)
  testit            0.11.1      2020-01-09 [1] Github (yihui/testit@c1c19f8)           
  testthat          2.3.1       2019-12-01 [1] CRAN (R 3.6.2)                          
@@ -3569,7 +3563,6 @@ For the sake of documentation and reproducibility, the current report was render
  tidyr             1.0.0       2019-09-11 [1] CRAN (R 3.6.2)                          
  tidyselect        0.2.5       2018-10-11 [1] CRAN (R 3.6.2)                          
  usethis           1.5.1       2019-07-04 [1] CRAN (R 3.6.2)                          
- utf8              1.1.4       2018-05-24 [1] CRAN (R 3.6.2)                          
  vctrs             0.2.1       2019-12-17 [1] CRAN (R 3.6.2)                          
  viridisLite       0.3.0       2018-02-01 [1] CRAN (R 3.6.2)                          
  webshot           0.5.2       2019-11-22 [1] CRAN (R 3.6.2)                          
@@ -3588,4 +3581,4 @@ For the sake of documentation and reproducibility, the current report was render
 
 
 
-Report rendered by wibeasley at 2020-01-25, 00:47 -0600 in 27 seconds.
+Report rendered by wibeasley at 2020-01-25, 01:31 -0600 in 28 seconds.

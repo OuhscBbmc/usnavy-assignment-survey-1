@@ -104,6 +104,7 @@ TabularManifest::histogram_continuous(d_observed=ds, variable_name="manning_prop
 TabularManifest::histogram_discrete(d_observed=ds, variable_name="manning_proportion_cut3")
 
 TabularManifest::histogram_continuous(d_observed=ds, variable_name="survey_weight_specialty_type" , bin_width=.05, rounded_digits=2)
+TabularManifest::histogram_continuous(d_observed=ds, variable_name="survey_weight_specialty_type" , bin_width=.05, rounded_digits=2)
 
 cat("Satisfaction summary")
 summary(ds$satisfaction_rank)
@@ -123,11 +124,12 @@ ds %>%
 ######## Survey Response ##########################################################
 
 # ---- survey-response ----------------------------------------------------
-
+# ds$finite_population_correction   <- .98
 sd <- survey::svydesign( # Stands for Survey Design
-  weights   = ~survey_weight_specialty_type,         # Weighted by specialty
+  weights   = ~survey_weight_specialty_type,        # Weighted by specialty
   variables = ~satisfaction_rank + specialty_type + billet_current,
-  ids       = ~0,                                    # No clusters
+  fpc       = ~finite_population_correction,
+  ids       = ~0,                                   # No clusters
   strata    = NULL,                                 # No strata
 
   data      = ds[!is.na(ds$survey_weight_specialty_type), ]
@@ -138,7 +140,6 @@ mean(ds$satisfaction_rank, na.rm=T)
 
 cat("Overall weighted mean satisfaction:")
 survey::svymean(~satisfaction_rank, sd, na.rm=T)
-
 
 cat("`specialty_type` unweighted mean satisfaction:")
 ds %>%
@@ -153,7 +154,7 @@ survey::svyby(
   formula = ~satisfaction_rank,
   by      = ~specialty_type,
   design  = sd,
-  FUN     = svymean,
+  FUN     = survey::svymean,
   na.rm   = TRUE
 ) %>%
 tibble::as_tibble()
@@ -172,7 +173,7 @@ survey::svyby(
   formula = ~satisfaction_rank,
   by      = ~billet_current,
   design  = sd,
-  FUN     = svymean,
+  FUN     = survey::svymean,
   na.rm   = TRUE
 ) %>%
 tibble::as_tibble()
