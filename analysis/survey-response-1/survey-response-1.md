@@ -1,6 +1,6 @@
 ---
 title: Attitudes Regarding the Assignment Process Among Navy Medical Corps Officers
-date: "Date: 2019-10-29"
+date: "Date: 2020-01-24"
 output:
   html_document:
     keep_md: yes
@@ -55,45 +55,45 @@ Histograms
 
 Univariate
 -----------------------------------
-![](figure-png/marginals-1.png)<!-- -->![](figure-png/marginals-2.png)<!-- -->
+<img src="figure-png/marginals-1.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-2.png" style="display: block; margin: auto;" />
 
 ```
 Warning: Factor `iv` contains implicit NA, consider using `forcats::fct_explicit_na`
 ```
 
-![](figure-png/marginals-3.png)<!-- -->![](figure-png/marginals-4.png)<!-- -->![](figure-png/marginals-5.png)<!-- -->![](figure-png/marginals-6.png)<!-- -->
+<img src="figure-png/marginals-3.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-4.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-5.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-6.png" style="display: block; margin: auto;" />
 
 ```
 Warning: Factor `iv` contains implicit NA, consider using `forcats::fct_explicit_na`
 ```
 
-![](figure-png/marginals-7.png)<!-- -->![](figure-png/marginals-8.png)<!-- -->![](figure-png/marginals-9.png)<!-- -->![](figure-png/marginals-10.png)<!-- -->![](figure-png/marginals-11.png)<!-- -->![](figure-png/marginals-12.png)<!-- -->![](figure-png/marginals-13.png)<!-- -->![](figure-png/marginals-14.png)<!-- -->![](figure-png/marginals-15.png)<!-- -->![](figure-png/marginals-16.png)<!-- -->![](figure-png/marginals-17.png)<!-- -->![](figure-png/marginals-18.png)<!-- -->![](figure-png/marginals-19.png)<!-- -->![](figure-png/marginals-20.png)<!-- -->![](figure-png/marginals-21.png)<!-- -->![](figure-png/marginals-22.png)<!-- -->![](figure-png/marginals-23.png)<!-- -->![](figure-png/marginals-24.png)<!-- -->![](figure-png/marginals-25.png)<!-- -->![](figure-png/marginals-26.png)<!-- -->![](figure-png/marginals-27.png)<!-- -->
+<img src="figure-png/marginals-7.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-8.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-9.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-10.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-11.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-12.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-13.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-14.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-15.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-16.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-17.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-18.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-19.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-20.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-21.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-22.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-23.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-24.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-25.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-26.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-27.png" style="display: block; margin: auto;" />
 
 ```
 Warning: Factor `iv` contains implicit NA, consider using `forcats::fct_explicit_na`
 ```
 
-![](figure-png/marginals-28.png)<!-- -->![](figure-png/marginals-29.png)<!-- -->
+<img src="figure-png/marginals-28.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-29.png" style="display: block; margin: auto;" />
 
 Frequency: homestead_length_in_years by officer_rank
 -----------------------------------
-![](figure-png/freq-homestead_length_in_years-by-officer_rank-1.png)<!-- -->
+<img src="figure-png/freq-homestead_length_in_years-by-officer_rank-1.png" style="display: block; margin: auto;" />
 
 Frequency: homestead_length_in_years by specialty_type
 -----------------------------------
-![](figure-png/freq-homestead_length_in_years-by-specialty_type-1.png)<!-- -->
+<img src="figure-png/freq-homestead_length_in_years-by-specialty_type-1.png" style="display: block; margin: auto;" />
 
 Frequency: homestead_problem by officer_rank
 -----------------------------------
-![](figure-png/freq-homestead_problem-by-officer_rank-1.png)<!-- -->
+<img src="figure-png/freq-homestead_problem-by-officer_rank-1.png" style="display: block; margin: auto;" />
 
 Frequency: homestead_problem by specialty_type
 -----------------------------------
-![](figure-png/freq-homestead_problem-by-specialty_type-1.png)<!-- -->
+<img src="figure-png/freq-homestead_problem-by-specialty_type-1.png" style="display: block; margin: auto;" />
 
 Frequency: Assignment_priority by Specialty_type
 -----------------------------------
-![](figure-png/freq-assignment_priority-by-specialty_type-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ assignment_priority 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/freq-assignment_priority-by-specialty_type-1.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ assignment_priority 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -169,7 +169,7 @@ Frequency: Assignment_priority by Specialty_type
 
 Frequency: Officer_rank_priority by Officer_rank
 -----------------------------------
-![](figure-png/freq-officer_rank_priority-by-officer_rank-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ officer_rank_priority 1 + officer_rank </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/freq-officer_rank_priority-by-officer_rank-1.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ officer_rank_priority 1 + officer_rank </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -239,7 +239,7 @@ Frequency: Officer_rank_priority by Officer_rank
 
 Multivariate
 -----------------------------------
-![](figure-png/freq-homestead_length_in_years-by-officer_rank-1.png)<!-- -->
+<img src="figure-png/freq-homestead_length_in_years-by-officer_rank-1.png" style="display: block; margin: auto;" />
 
 Relationships between Outcomes
 ============================================
@@ -285,7 +285,7 @@ Relationships between Outcomes
 </tbody>
 </table>
 
-![](figure-png/outcome-correlations-1.png)<!-- -->![](figure-png/outcome-correlations-2.png)<!-- -->
+<img src="figure-png/outcome-correlations-1.png" style="display: block; margin: auto;" /><img src="figure-png/outcome-correlations-2.png" style="display: block; margin: auto;" />
 
 
 Analyses - 1 Predictor
@@ -295,7 +295,7 @@ By Rank
 -----------------------------------
 ### satisfaction_rank
 
-![](figure-png/by-rank-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-rank-1.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -370,7 +370,7 @@ By Rank
 </tbody>
 </table>### transparency_rank
 
-![](figure-png/by-rank-2.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ transparency_rank 1 + officer_rate_f </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-rank-2.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ transparency_rank 1 + officer_rate_f </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -445,7 +445,7 @@ By Rank
 </tbody>
 </table>### favoritism_rank
 
-![](figure-png/by-rank-3.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ favoritism_rank 1 + officer_rate_f </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-rank-3.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ favoritism_rank 1 + officer_rate_f </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -520,7 +520,7 @@ By Rank
 </tbody>
 </table>### assignment_current_choice
 
-![](figure-png/by-rank-4.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ assignment_current_choice 1 + officer_rate_f </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-rank-4.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ assignment_current_choice 1 + officer_rate_f </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -599,7 +599,7 @@ By Specialty Type
 -----------------------------------
 ### satisfaction_rank
 
-![](figure-png/by-specialty-type-1.png)<!-- --><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ satisfaction_rank 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-specialty-type-1.png" style="display: block; margin: auto;" /><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ satisfaction_rank 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -681,7 +681,7 @@ By Specialty Type
 </tbody>
 </table>### transparency_rank
 
-![](figure-png/by-specialty-type-2.png)<!-- --><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ transparency_rank 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-specialty-type-2.png" style="display: block; margin: auto;" /><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ transparency_rank 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -763,7 +763,7 @@ By Specialty Type
 </tbody>
 </table>### favoritism_rank
 
-![](figure-png/by-specialty-type-3.png)<!-- --><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ favoritism_rank 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-specialty-type-3.png" style="display: block; margin: auto;" /><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ favoritism_rank 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -845,7 +845,7 @@ By Specialty Type
 </tbody>
 </table>### assignment_current_choice
 
-![](figure-png/by-specialty-type-4.png)<!-- --><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ assignment_current_choice 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-specialty-type-4.png" style="display: block; margin: auto;" /><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ assignment_current_choice 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -931,7 +931,7 @@ By Bonus Pay
 -----------------------------------
 ### satisfaction_rank
 
-![](figure-png/by-bonus-pay-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + bonus_pay_cut4 </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-bonus-pay-1.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + bonus_pay_cut4 </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -1006,7 +1006,7 @@ By Bonus Pay
 </tbody>
 </table>### transparency_rank
 
-![](figure-png/by-bonus-pay-2.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ transparency_rank 1 + bonus_pay_cut4 </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-bonus-pay-2.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ transparency_rank 1 + bonus_pay_cut4 </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -1081,7 +1081,7 @@ By Bonus Pay
 </tbody>
 </table>### favoritism_rank
 
-![](figure-png/by-bonus-pay-3.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ favoritism_rank 1 + bonus_pay_cut4 </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-bonus-pay-3.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ favoritism_rank 1 + bonus_pay_cut4 </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -1156,7 +1156,7 @@ By Bonus Pay
 </tbody>
 </table>### assignment_current_choice
 
-![](figure-png/by-bonus-pay-4.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ assignment_current_choice 1 + bonus_pay_cut4 </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-bonus-pay-4.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ assignment_current_choice 1 + bonus_pay_cut4 </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -1235,7 +1235,7 @@ By Assignment Current Choice
 -----------------------------------
 ### satisfaction_rank
 
-![](figure-png/by-assignment-current-choice-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + assignment_current_choice </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-assignment-current-choice-1.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + assignment_current_choice </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -1296,7 +1296,7 @@ By Assignment Current Choice
 </tbody>
 </table>### transparency_rank
 
-![](figure-png/by-assignment-current-choice-2.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ transparency_rank 1 + assignment_current_choice </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-assignment-current-choice-2.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ transparency_rank 1 + assignment_current_choice </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -1357,7 +1357,7 @@ By Assignment Current Choice
 </tbody>
 </table>### favoritism_rank
 
-![](figure-png/by-assignment-current-choice-3.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ favoritism_rank 1 + assignment_current_choice </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-assignment-current-choice-3.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ favoritism_rank 1 + assignment_current_choice </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -1422,28 +1422,28 @@ By Year
 -----------------------------------
 ### satisfaction_rank
 
-![](figure-png/by-year-1.png)<!-- -->
+<img src="figure-png/by-year-1.png" style="display: block; margin: auto;" />
 
 By Survey Lag
 -----------------------------------
 ### satisfaction_rank
 
-![](figure-png/by-survey_lag-1.png)<!-- -->
+<img src="figure-png/by-survey_lag-1.png" style="display: block; margin: auto;" />
 
 
 By Manning Proportion
 -----------------------------------
 ### manning_proportion
 
-![](figure-png/by-manning_proportion-1.png)<!-- -->![](figure-png/by-manning_proportion-2.png)<!-- -->
+<img src="figure-png/by-manning_proportion-1.png" style="display: block; margin: auto;" /><img src="figure-png/by-manning_proportion-2.png" style="display: block; margin: auto;" />
 
 By Crtical War
 -----------------------------------
-![](figure-png/by-critical_war-1.png)<!-- -->
+<img src="figure-png/by-critical_war-1.png" style="display: block; margin: auto;" />
 
 By Billet Current
 -----------------------------------
-![](figure-png/by-billet_current-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-billet_current-1.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -1456,52 +1456,45 @@ By Billet Current
 <tbody>
   <tr>
    <td style="text-align:left;"> (Intercept) </td>
-   <td style="text-align:right;"> 3.8565121 </td>
-   <td style="text-align:right;"> 0.0617313 </td>
-   <td style="text-align:right;"> 62.4725615 </td>
+   <td style="text-align:right;"> 3.8472469 </td>
+   <td style="text-align:right;"> 0.0553450 </td>
+   <td style="text-align:right;"> 69.5139096 </td>
    <td style="text-align:right;"> 0.0000000 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> billet_currentGME </td>
-   <td style="text-align:right;"> -0.0474212 </td>
-   <td style="text-align:right;"> 0.1396572 </td>
-   <td style="text-align:right;"> -0.3395546 </td>
-   <td style="text-align:right;"> 0.7342744 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> billet_currentNon-Operational/Non-Clinical </td>
-   <td style="text-align:right;"> -0.2106788 </td>
-   <td style="text-align:right;"> 0.1994360 </td>
-   <td style="text-align:right;"> -1.0563728 </td>
-   <td style="text-align:right;"> 0.2910929 </td>
+   <td style="text-align:left;"> billet_currentNon-Operational/Clinical </td>
+   <td style="text-align:right;"> -0.2014136 </td>
+   <td style="text-align:right;"> 0.1974596 </td>
+   <td style="text-align:right;"> -1.0200240 </td>
+   <td style="text-align:right;"> 0.3080020 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentOCONUS MTF </td>
-   <td style="text-align:right;"> -0.4465121 </td>
-   <td style="text-align:right;"> 0.1451670 </td>
-   <td style="text-align:right;"> -3.0758512 </td>
-   <td style="text-align:right;"> 0.0021651 </td>
+   <td style="text-align:right;"> -0.4372469 </td>
+   <td style="text-align:right;"> 0.1425066 </td>
+   <td style="text-align:right;"> -3.0682562 </td>
+   <td style="text-align:right;"> 0.0022201 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentCONUS Operational </td>
-   <td style="text-align:right;"> -0.7404407 </td>
-   <td style="text-align:right;"> 0.1386502 </td>
-   <td style="text-align:right;"> -5.3403496 </td>
+   <td style="text-align:right;"> -0.7311755 </td>
+   <td style="text-align:right;"> 0.1358693 </td>
+   <td style="text-align:right;"> -5.3814634 </td>
    <td style="text-align:right;"> 0.0000001 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentOCONUS Operational </td>
-   <td style="text-align:right;"> -1.4065121 </td>
-   <td style="text-align:right;"> 0.2167199 </td>
-   <td style="text-align:right;"> -6.4899990 </td>
+   <td style="text-align:right;"> -1.3972469 </td>
+   <td style="text-align:right;"> 0.2148854 </td>
+   <td style="text-align:right;"> -6.5022872 </td>
    <td style="text-align:right;"> 0.0000000 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentOther </td>
-   <td style="text-align:right;"> 0.1434879 </td>
-   <td style="text-align:right;"> 0.4422880 </td>
-   <td style="text-align:right;"> 0.3244218 </td>
-   <td style="text-align:right;"> 0.7456972 </td>
+   <td style="text-align:right;"> 0.1527531 </td>
+   <td style="text-align:right;"> 0.4412199 </td>
+   <td style="text-align:right;"> 0.3462063 </td>
+   <td style="text-align:right;"> 0.7292718 </td>
   </tr>
 </tbody>
 </table>
@@ -1524,24 +1517,24 @@ By Billet Current
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:right;"> 0.0733123 </td>
-   <td style="text-align:right;"> 0.0668844 </td>
-   <td style="text-align:right;"> 1.313876 </td>
-   <td style="text-align:right;"> 11.40534 </td>
+   <td style="text-align:right;"> 0.0731888 </td>
+   <td style="text-align:right;"> 0.0678376 </td>
+   <td style="text-align:right;"> 1.313205 </td>
+   <td style="text-align:right;"> 13.67732 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 7 </td>
-   <td style="text-align:right;"> -1471.84 </td>
-   <td style="text-align:right;"> 2959.681 </td>
-   <td style="text-align:right;"> 2997.847 </td>
-   <td style="text-align:right;"> 1493.224 </td>
-   <td style="text-align:right;"> 865 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> -1471.899 </td>
+   <td style="text-align:right;"> 2957.797 </td>
+   <td style="text-align:right;"> 2991.193 </td>
+   <td style="text-align:right;"> 1493.423 </td>
+   <td style="text-align:right;"> 866 </td>
   </tr>
 </tbody>
 </table>
 
 By Geographic Preference
 -----------------------------------
-![](figure-png/by-geographic_preference-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + geographic_preference </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-geographic_preference-1.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + geographic_preference </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -1668,7 +1661,7 @@ By Rank and Specialty Type
 -----------------------------------
 ### satisfaction_rank
 
-![](figure-png/by-rank-and-specialty-type-1.png)<!-- --><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f * specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-rank-and-specialty-type-1.png" style="display: block; margin: auto;" /><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f * specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -1942,7 +1935,7 @@ By Rank and Specialty Type
 </tbody>
 </table>### transparency_rank
 
-![](figure-png/by-rank-and-specialty-type-2.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ transparency_rank 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-rank-and-specialty-type-2.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ transparency_rank 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -2031,7 +2024,7 @@ By Rank and Specialty Type
 </tbody>
 </table>### favoritism_rank
 
-![](figure-png/by-rank-and-specialty-type-3.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ favoritism_rank 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-rank-and-specialty-type-3.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ favoritism_rank 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -2120,7 +2113,7 @@ By Rank and Specialty Type
 </tbody>
 </table>### assignment_current_choice
 
-![](figure-png/by-rank-and-specialty-type-4.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ assignment_current_choice 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-rank-and-specialty-type-4.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ assignment_current_choice 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -2213,7 +2206,7 @@ By Rank and Assignment Current Choice
 -----------------------------------
 ### satisfaction_rank
 
-![](figure-png/by-rank-and-assignment-current-choice-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f + assignment_current_choice </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-rank-and-assignment-current-choice-1.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f + assignment_current_choice </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -2403,7 +2396,7 @@ Model 2: satisfaction_rank ~ 1 + officer_rate_f * assignment_current_choice
 2    751 827.64  3   0.80396 0.2432 0.8662
 </code>### transparency_rank
 
-![](figure-png/by-rank-and-assignment-current-choice-2.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ transparency_rank 1 + officer_rate_f * assignment_current_choice </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-rank-and-assignment-current-choice-2.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ transparency_rank 1 + officer_rate_f * assignment_current_choice </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -2506,7 +2499,7 @@ Model 2: satisfaction_rank ~ 1 + officer_rate_f * assignment_current_choice
 </tbody>
 </table>### favoritism_rank
 
-![](figure-png/by-rank-and-assignment-current-choice-3.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ favoritism_rank 1 + officer_rate_f * assignment_current_choice </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-rank-and-assignment-current-choice-3.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ favoritism_rank 1 + officer_rate_f * assignment_current_choice </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -2613,7 +2606,7 @@ By Rank and Bonus Pay
 -----------------------------------
 ### satisfaction_rank
 
-![](figure-png/by-rank-and-bonus_pay-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f + bonus_pay </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-rank-and-bonus_pay-1.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f + bonus_pay </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -2803,7 +2796,7 @@ Model 2: satisfaction_rank ~ 1 + officer_rate_f * bonus_pay
 2    862 1470.7  3    18.052 3.5268 0.01461
 </code>### transparency_rank
 
-![](figure-png/by-rank-and-bonus_pay-2.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ transparency_rank 1 + officer_rate_f * bonus_pay </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-rank-and-bonus_pay-2.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ transparency_rank 1 + officer_rate_f * bonus_pay </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -2906,7 +2899,7 @@ Model 2: satisfaction_rank ~ 1 + officer_rate_f * bonus_pay
 </tbody>
 </table>### favoritism_rank
 
-![](figure-png/by-rank-and-bonus_pay-3.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ favoritism_rank 1 + officer_rate_f * bonus_pay </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-rank-and-bonus_pay-3.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ favoritism_rank 1 + officer_rate_f * bonus_pay </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -3013,7 +3006,7 @@ By Billet Current and Critical War
 -----------------------------------
 ### satisfaction_rank
 
-![](figure-png/by-billet_current-and-critical_war-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current + critical_war </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-billet_current-and-critical_war-1.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current + critical_war </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -3026,59 +3019,52 @@ By Billet Current and Critical War
 <tbody>
   <tr>
    <td style="text-align:left;"> (Intercept) </td>
-   <td style="text-align:right;"> 3.8482807 </td>
-   <td style="text-align:right;"> 0.1221609 </td>
-   <td style="text-align:right;"> 31.5017379 </td>
+   <td style="text-align:right;"> 3.8377622 </td>
+   <td style="text-align:right;"> 0.1180247 </td>
+   <td style="text-align:right;"> 32.5166107 </td>
    <td style="text-align:right;"> 0.0000000 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> billet_currentGME </td>
-   <td style="text-align:right;"> -0.0470058 </td>
-   <td style="text-align:right;"> 0.1398387 </td>
-   <td style="text-align:right;"> -0.3361429 </td>
-   <td style="text-align:right;"> 0.7368447 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> billet_currentNon-Operational/Non-Clinical </td>
-   <td style="text-align:right;"> -0.2106988 </td>
-   <td style="text-align:right;"> 0.1995509 </td>
-   <td style="text-align:right;"> -1.0558651 </td>
-   <td style="text-align:right;"> 0.2913250 </td>
+   <td style="text-align:left;"> billet_currentNon-Operational/Clinical </td>
+   <td style="text-align:right;"> -0.2015313 </td>
+   <td style="text-align:right;"> 0.1975770 </td>
+   <td style="text-align:right;"> -1.0200137 </td>
+   <td style="text-align:right;"> 0.3080071 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentOCONUS MTF </td>
-   <td style="text-align:right;"> -0.4462987 </td>
-   <td style="text-align:right;"> 0.1452762 </td>
-   <td style="text-align:right;"> -3.0720701 </td>
-   <td style="text-align:right;"> 0.0021924 </td>
+   <td style="text-align:right;"> -0.4370929 </td>
+   <td style="text-align:right;"> 0.1425983 </td>
+   <td style="text-align:right;"> -3.0652035 </td>
+   <td style="text-align:right;"> 0.0022428 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentCONUS Operational </td>
-   <td style="text-align:right;"> -0.7404032 </td>
-   <td style="text-align:right;"> 0.1387308 </td>
-   <td style="text-align:right;"> -5.3369783 </td>
+   <td style="text-align:right;"> -0.7312263 </td>
+   <td style="text-align:right;"> 0.1359483 </td>
+   <td style="text-align:right;"> -5.3787096 </td>
    <td style="text-align:right;"> 0.0000001 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentOCONUS Operational </td>
-   <td style="text-align:right;"> -1.4067334 </td>
-   <td style="text-align:right;"> 0.2168630 </td>
-   <td style="text-align:right;"> -6.4867362 </td>
+   <td style="text-align:right;"> -1.3975988 </td>
+   <td style="text-align:right;"> 0.2150434 </td>
+   <td style="text-align:right;"> -6.4991486 </td>
    <td style="text-align:right;"> 0.0000000 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentOther </td>
-   <td style="text-align:right;"> 0.1420591 </td>
-   <td style="text-align:right;"> 0.4429202 </td>
-   <td style="text-align:right;"> 0.3207329 </td>
-   <td style="text-align:right;"> 0.7484904 </td>
+   <td style="text-align:right;"> 0.1509960 </td>
+   <td style="text-align:right;"> 0.4418948 </td>
+   <td style="text-align:right;"> 0.3417011 </td>
+   <td style="text-align:right;"> 0.7326588 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> critical_warLow Deployer </td>
-   <td style="text-align:right;"> 0.0096602 </td>
-   <td style="text-align:right;"> 0.1236892 </td>
-   <td style="text-align:right;"> 0.0781008 </td>
-   <td style="text-align:right;"> 0.9377659 </td>
+   <td style="text-align:right;"> 0.0112418 </td>
+   <td style="text-align:right;"> 0.1235363 </td>
+   <td style="text-align:right;"> 0.0910001 </td>
+   <td style="text-align:right;"> 0.9275136 </td>
   </tr>
 </tbody>
 </table>
@@ -3101,17 +3087,17 @@ By Billet Current and Critical War
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:right;"> 0.0733188 </td>
-   <td style="text-align:right;"> 0.065811 </td>
-   <td style="text-align:right;"> 1.314632 </td>
-   <td style="text-align:right;"> 9.765642 </td>
+   <td style="text-align:right;"> 0.0731976 </td>
+   <td style="text-align:right;"> 0.0667689 </td>
+   <td style="text-align:right;"> 1.313958 </td>
+   <td style="text-align:right;"> 11.38609 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 8 </td>
-   <td style="text-align:right;"> -1471.837 </td>
-   <td style="text-align:right;"> 2961.675 </td>
-   <td style="text-align:right;"> 3004.612 </td>
-   <td style="text-align:right;"> 1493.214 </td>
-   <td style="text-align:right;"> 864 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> -1471.894 </td>
+   <td style="text-align:right;"> 2959.789 </td>
+   <td style="text-align:right;"> 2997.955 </td>
+   <td style="text-align:right;"> 1493.409 </td>
+   <td style="text-align:right;"> 865 </td>
   </tr>
 </tbody>
 </table>
@@ -3120,7 +3106,7 @@ By Bonus_pay and Manning_proportion
 -----------------------------------
 ### satisfaction_rank
 
-![](figure-png/by-bonus_pay-and-manning_proportion-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + manning_proportion_cut3 + bonus_pay_cut3 </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-bonus_pay-and-manning_proportion-1.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + manning_proportion_cut3 + bonus_pay_cut3 </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -3220,59 +3206,52 @@ Model 2: satisfaction_rank ~ 1 + manning_proportion_cut3 + bonus_pay_cut3
 <tbody>
   <tr>
    <td style="text-align:left;"> (Intercept) </td>
-   <td style="text-align:right;"> 3.8482807 </td>
-   <td style="text-align:right;"> 0.1221609 </td>
-   <td style="text-align:right;"> 31.5017379 </td>
+   <td style="text-align:right;"> 3.8377622 </td>
+   <td style="text-align:right;"> 0.1180247 </td>
+   <td style="text-align:right;"> 32.5166107 </td>
    <td style="text-align:right;"> 0.0000000 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> billet_currentGME </td>
-   <td style="text-align:right;"> -0.0470058 </td>
-   <td style="text-align:right;"> 0.1398387 </td>
-   <td style="text-align:right;"> -0.3361429 </td>
-   <td style="text-align:right;"> 0.7368447 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> billet_currentNon-Operational/Non-Clinical </td>
-   <td style="text-align:right;"> -0.2106988 </td>
-   <td style="text-align:right;"> 0.1995509 </td>
-   <td style="text-align:right;"> -1.0558651 </td>
-   <td style="text-align:right;"> 0.2913250 </td>
+   <td style="text-align:left;"> billet_currentNon-Operational/Clinical </td>
+   <td style="text-align:right;"> -0.2015313 </td>
+   <td style="text-align:right;"> 0.1975770 </td>
+   <td style="text-align:right;"> -1.0200137 </td>
+   <td style="text-align:right;"> 0.3080071 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentOCONUS MTF </td>
-   <td style="text-align:right;"> -0.4462987 </td>
-   <td style="text-align:right;"> 0.1452762 </td>
-   <td style="text-align:right;"> -3.0720701 </td>
-   <td style="text-align:right;"> 0.0021924 </td>
+   <td style="text-align:right;"> -0.4370929 </td>
+   <td style="text-align:right;"> 0.1425983 </td>
+   <td style="text-align:right;"> -3.0652035 </td>
+   <td style="text-align:right;"> 0.0022428 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentCONUS Operational </td>
-   <td style="text-align:right;"> -0.7404032 </td>
-   <td style="text-align:right;"> 0.1387308 </td>
-   <td style="text-align:right;"> -5.3369783 </td>
+   <td style="text-align:right;"> -0.7312263 </td>
+   <td style="text-align:right;"> 0.1359483 </td>
+   <td style="text-align:right;"> -5.3787096 </td>
    <td style="text-align:right;"> 0.0000001 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentOCONUS Operational </td>
-   <td style="text-align:right;"> -1.4067334 </td>
-   <td style="text-align:right;"> 0.2168630 </td>
-   <td style="text-align:right;"> -6.4867362 </td>
+   <td style="text-align:right;"> -1.3975988 </td>
+   <td style="text-align:right;"> 0.2150434 </td>
+   <td style="text-align:right;"> -6.4991486 </td>
    <td style="text-align:right;"> 0.0000000 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentOther </td>
-   <td style="text-align:right;"> 0.1420591 </td>
-   <td style="text-align:right;"> 0.4429202 </td>
-   <td style="text-align:right;"> 0.3207329 </td>
-   <td style="text-align:right;"> 0.7484904 </td>
+   <td style="text-align:right;"> 0.1509960 </td>
+   <td style="text-align:right;"> 0.4418948 </td>
+   <td style="text-align:right;"> 0.3417011 </td>
+   <td style="text-align:right;"> 0.7326588 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> critical_warLow Deployer </td>
-   <td style="text-align:right;"> 0.0096602 </td>
-   <td style="text-align:right;"> 0.1236892 </td>
-   <td style="text-align:right;"> 0.0781008 </td>
-   <td style="text-align:right;"> 0.9377659 </td>
+   <td style="text-align:right;"> 0.0112418 </td>
+   <td style="text-align:right;"> 0.1235363 </td>
+   <td style="text-align:right;"> 0.0910001 </td>
+   <td style="text-align:right;"> 0.9275136 </td>
   </tr>
 </tbody>
 </table>
@@ -3295,17 +3274,17 @@ Model 2: satisfaction_rank ~ 1 + manning_proportion_cut3 + bonus_pay_cut3
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:right;"> 0.0733188 </td>
-   <td style="text-align:right;"> 0.065811 </td>
-   <td style="text-align:right;"> 1.314632 </td>
-   <td style="text-align:right;"> 9.765642 </td>
+   <td style="text-align:right;"> 0.0731976 </td>
+   <td style="text-align:right;"> 0.0667689 </td>
+   <td style="text-align:right;"> 1.313958 </td>
+   <td style="text-align:right;"> 11.38609 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 8 </td>
-   <td style="text-align:right;"> -1471.837 </td>
-   <td style="text-align:right;"> 2961.675 </td>
-   <td style="text-align:right;"> 3004.612 </td>
-   <td style="text-align:right;"> 1493.214 </td>
-   <td style="text-align:right;"> 864 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> -1471.894 </td>
+   <td style="text-align:right;"> 2959.789 </td>
+   <td style="text-align:right;"> 2997.955 </td>
+   <td style="text-align:right;"> 1493.409 </td>
+   <td style="text-align:right;"> 865 </td>
   </tr>
 </tbody>
 </table>
@@ -3314,7 +3293,57 @@ By Rank and Billet Type
 -----------------------------------
 ### satisfaction_rank
 
-**Conculsion**: `officer_rate` has a significant positive slope --sig predicting beyond `billet_current`.  But the billet levels have the same slope.<br/>Data:<code> ds_no_other </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+
+Call:
+lm(formula = satisfaction_rank ~ 1 + billet_current + officer_rate, 
+    data = ds_no_other_or_unknown)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.4636 -0.7754  0.2246  0.9947  2.6016 
+
+Coefficients:
+                                       Estimate Std. Error t value Pr(>|t|)
+(Intercept)                             2.39905    0.20237  11.855  < 2e-16
+billet_currentNon-Operational/Clinical -0.52516    0.19724  -2.663 0.007902
+billet_currentOCONUS MTF               -0.45834    0.13776  -3.327 0.000915
+billet_currentCONUS Operational        -0.67101    0.13202  -5.083 4.57e-07
+billet_currentOCONUS Operational       -1.37705    0.20769  -6.630 5.94e-11
+officer_rate                            0.34410    0.04627   7.436 2.52e-13
+
+Residual standard error: 1.269 on 853 degrees of freedom
+  (77 observations deleted due to missingness)
+Multiple R-squared:  0.1299,	Adjusted R-squared:  0.1248 
+F-statistic: 25.46 on 5 and 853 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = satisfaction_rank ~ 1 + billet_current + officer_rate + 
+    specialty_type, data = ds_no_other_or_unknown)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.5180 -0.8131  0.1883  1.0431  2.8817 
+
+Coefficients:
+                                       Estimate Std. Error t value Pr(>|t|)
+(Intercept)                             2.74494    0.22167  12.383  < 2e-16
+billet_currentNon-Operational/Clinical -0.44492    0.19850  -2.241 0.025258
+billet_currentOCONUS MTF               -0.40357    0.13807  -2.923 0.003559
+billet_currentCONUS Operational        -0.39353    0.15497  -2.539 0.011283
+billet_currentOCONUS Operational       -1.14521    0.21495  -5.328 1.27e-07
+officer_rate                            0.29551    0.04919   6.008 2.78e-09
+specialty_typesurgical                 -0.26554    0.12029  -2.208 0.027545
+specialty_typefamily                   -0.40943    0.11886  -3.445 0.000600
+specialty_typeoperational              -0.66349    0.18554  -3.576 0.000369
+specialty_typeresident                 -0.19873    0.23598  -0.842 0.399932
+
+Residual standard error: 1.257 on 849 degrees of freedom
+  (77 observations deleted due to missingness)
+Multiple R-squared:  0.1506,	Adjusted R-squared:  0.1416 
+F-statistic: 16.73 on 9 and 849 DF,  p-value: < 2.2e-16
+
+<br/>Data:<code> ds_no_other_or_unknown </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current + officer_rate + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -3327,139 +3356,73 @@ By Rank and Billet Type
 <tbody>
   <tr>
    <td style="text-align:left;"> (Intercept) </td>
-   <td style="text-align:right;"> 3.8565121 </td>
-   <td style="text-align:right;"> 0.0616020 </td>
-   <td style="text-align:right;"> 62.6036649 </td>
+   <td style="text-align:right;"> 2.7449416 </td>
+   <td style="text-align:right;"> 0.2216697 </td>
+   <td style="text-align:right;"> 12.3830259 </td>
    <td style="text-align:right;"> 0.0000000 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> billet_currentGME </td>
-   <td style="text-align:right;"> -0.0474212 </td>
-   <td style="text-align:right;"> 0.1393647 </td>
-   <td style="text-align:right;"> -0.3402672 </td>
-   <td style="text-align:right;"> 0.7337387 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> billet_currentNon-Operational/Non-Clinical </td>
-   <td style="text-align:right;"> -0.2106788 </td>
-   <td style="text-align:right;"> 0.1990184 </td>
-   <td style="text-align:right;"> -1.0585897 </td>
-   <td style="text-align:right;"> 0.2900850 </td>
+   <td style="text-align:left;"> billet_currentNon-Operational/Clinical </td>
+   <td style="text-align:right;"> -0.4449198 </td>
+   <td style="text-align:right;"> 0.1985010 </td>
+   <td style="text-align:right;"> -2.2413979 </td>
+   <td style="text-align:right;"> 0.0252580 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentOCONUS MTF </td>
-   <td style="text-align:right;"> -0.4465121 </td>
-   <td style="text-align:right;"> 0.1448630 </td>
-   <td style="text-align:right;"> -3.0823061 </td>
-   <td style="text-align:right;"> 0.0021198 </td>
+   <td style="text-align:right;"> -0.4035686 </td>
+   <td style="text-align:right;"> 0.1380693 </td>
+   <td style="text-align:right;"> -2.9229432 </td>
+   <td style="text-align:right;"> 0.0035595 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentCONUS Operational </td>
-   <td style="text-align:right;"> -0.7404407 </td>
-   <td style="text-align:right;"> 0.1383599 </td>
-   <td style="text-align:right;"> -5.3515567 </td>
+   <td style="text-align:right;"> -0.3935332 </td>
+   <td style="text-align:right;"> 0.1549743 </td>
+   <td style="text-align:right;"> -2.5393446 </td>
+   <td style="text-align:right;"> 0.0112834 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentOCONUS Operational </td>
+   <td style="text-align:right;"> -1.1452059 </td>
+   <td style="text-align:right;"> 0.2149465 </td>
+   <td style="text-align:right;"> -5.3278645 </td>
    <td style="text-align:right;"> 0.0000001 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> billet_currentOCONUS Operational </td>
-   <td style="text-align:right;"> -1.4065121 </td>
-   <td style="text-align:right;"> 0.2162661 </td>
-   <td style="text-align:right;"> -6.5036188 </td>
-   <td style="text-align:right;"> 0.0000000 </td>
-  </tr>
-</tbody>
-</table>
-
-<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
- <thead>
-  <tr>
-   <th style="text-align:right;"> r.squared </th>
-   <th style="text-align:right;"> adj.r.squared </th>
-   <th style="text-align:right;"> sigma </th>
-   <th style="text-align:right;"> statistic </th>
-   <th style="text-align:right;"> p.value </th>
-   <th style="text-align:right;"> df </th>
-   <th style="text-align:right;"> logLik </th>
-   <th style="text-align:right;"> AIC </th>
-   <th style="text-align:right;"> BIC </th>
-   <th style="text-align:right;"> deviance </th>
-   <th style="text-align:right;"> df.residual </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:right;"> 0.0735072 </td>
-   <td style="text-align:right;"> 0.0681018 </td>
-   <td style="text-align:right;"> 1.311125 </td>
-   <td style="text-align:right;"> 13.59874 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 6 </td>
-   <td style="text-align:right;"> -1455.308 </td>
-   <td style="text-align:right;"> 2924.615 </td>
-   <td style="text-align:right;"> 2957.938 </td>
-   <td style="text-align:right;"> 1473.224 </td>
-   <td style="text-align:right;"> 857 </td>
-  </tr>
-</tbody>
-</table><br/>Data:<code> ds_no_other </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current + officer_rate </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
- <thead>
-  <tr>
-   <th style="text-align:left;"> term </th>
-   <th style="text-align:right;"> estimate </th>
-   <th style="text-align:right;"> std.error </th>
-   <th style="text-align:right;"> statistic </th>
-   <th style="text-align:right;"> p.value </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> (Intercept) </td>
-   <td style="text-align:right;"> 2.2806025 </td>
-   <td style="text-align:right;"> 0.2152925 </td>
-   <td style="text-align:right;"> 10.593044 </td>
-   <td style="text-align:right;"> 0.0000000 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> billet_currentGME </td>
-   <td style="text-align:right;"> 0.2017814 </td>
-   <td style="text-align:right;"> 0.1387897 </td>
-   <td style="text-align:right;"> 1.453865 </td>
-   <td style="text-align:right;"> 0.1463512 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> billet_currentNon-Operational/Non-Clinical </td>
-   <td style="text-align:right;"> -0.5037952 </td>
-   <td style="text-align:right;"> 0.1975918 </td>
-   <td style="text-align:right;"> -2.549676 </td>
-   <td style="text-align:right;"> 0.0109560 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> billet_currentOCONUS MTF </td>
-   <td style="text-align:right;"> -0.4207375 </td>
-   <td style="text-align:right;"> 0.1400836 </td>
-   <td style="text-align:right;"> -3.003475 </td>
-   <td style="text-align:right;"> 0.0027470 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> billet_currentCONUS Operational </td>
-   <td style="text-align:right;"> -0.6360962 </td>
-   <td style="text-align:right;"> 0.1345180 </td>
-   <td style="text-align:right;"> -4.728707 </td>
-   <td style="text-align:right;"> 0.0000026 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> billet_currentOCONUS Operational </td>
-   <td style="text-align:right;"> -1.3371740 </td>
-   <td style="text-align:right;"> 0.2092479 </td>
-   <td style="text-align:right;"> -6.390381 </td>
-   <td style="text-align:right;"> 0.0000000 </td>
-  </tr>
-  <tr>
    <td style="text-align:left;"> officer_rate </td>
-   <td style="text-align:right;"> 0.3630293 </td>
-   <td style="text-align:right;"> 0.0474667 </td>
-   <td style="text-align:right;"> 7.648078 </td>
+   <td style="text-align:right;"> 0.2955084 </td>
+   <td style="text-align:right;"> 0.0491857 </td>
+   <td style="text-align:right;"> 6.0080167 </td>
    <td style="text-align:right;"> 0.0000000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> specialty_typesurgical </td>
+   <td style="text-align:right;"> -0.2655425 </td>
+   <td style="text-align:right;"> 0.1202900 </td>
+   <td style="text-align:right;"> -2.2075190 </td>
+   <td style="text-align:right;"> 0.0275446 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> specialty_typefamily </td>
+   <td style="text-align:right;"> -0.4094283 </td>
+   <td style="text-align:right;"> 0.1188588 </td>
+   <td style="text-align:right;"> -3.4446620 </td>
+   <td style="text-align:right;"> 0.0005998 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> specialty_typeoperational </td>
+   <td style="text-align:right;"> -0.6634897 </td>
+   <td style="text-align:right;"> 0.1855377 </td>
+   <td style="text-align:right;"> -3.5760380 </td>
+   <td style="text-align:right;"> 0.0003686 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> specialty_typeresident </td>
+   <td style="text-align:right;"> -0.1987343 </td>
+   <td style="text-align:right;"> 0.2359798 </td>
+   <td style="text-align:right;"> -0.8421669 </td>
+   <td style="text-align:right;"> 0.3999317 </td>
   </tr>
 </tbody>
 </table>
@@ -3482,163 +3445,31 @@ By Rank and Billet Type
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:right;"> 0.1339518 </td>
-   <td style="text-align:right;"> 0.1278671 </td>
-   <td style="text-align:right;"> 1.267045 </td>
-   <td style="text-align:right;"> 22.01471 </td>
+   <td style="text-align:right;"> 0.1506291 </td>
+   <td style="text-align:right;"> 0.1416252 </td>
+   <td style="text-align:right;"> 1.256672 </td>
+   <td style="text-align:right;"> 16.72926 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 7 </td>
-   <td style="text-align:right;"> -1421.979 </td>
-   <td style="text-align:right;"> 2859.959 </td>
-   <td style="text-align:right;"> 2898.024 </td>
-   <td style="text-align:right;"> 1371.014 </td>
-   <td style="text-align:right;"> 854 </td>
-  </tr>
-</tbody>
-</table><br/>Data:<code> ds_no_other </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current * officer_rate </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
- <thead>
-  <tr>
-   <th style="text-align:left;"> term </th>
-   <th style="text-align:right;"> estimate </th>
-   <th style="text-align:right;"> std.error </th>
-   <th style="text-align:right;"> statistic </th>
-   <th style="text-align:right;"> p.value </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> (Intercept) </td>
-   <td style="text-align:right;"> 2.4067750 </td>
-   <td style="text-align:right;"> 0.3123826 </td>
-   <td style="text-align:right;"> 7.7045743 </td>
-   <td style="text-align:right;"> 0.0000000 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> billet_currentGME </td>
-   <td style="text-align:right;"> 0.9865551 </td>
-   <td style="text-align:right;"> 0.6251139 </td>
-   <td style="text-align:right;"> 1.5782007 </td>
-   <td style="text-align:right;"> 0.1148920 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> billet_currentNon-Operational/Non-Clinical </td>
-   <td style="text-align:right;"> -1.4046058 </td>
-   <td style="text-align:right;"> 1.0983458 </td>
-   <td style="text-align:right;"> -1.2788375 </td>
-   <td style="text-align:right;"> 0.2013037 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> billet_currentOCONUS MTF </td>
-   <td style="text-align:right;"> -1.4257684 </td>
-   <td style="text-align:right;"> 0.7143428 </td>
-   <td style="text-align:right;"> -1.9959163 </td>
-   <td style="text-align:right;"> 0.0462621 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> billet_currentCONUS Operational </td>
-   <td style="text-align:right;"> -0.8361583 </td>
-   <td style="text-align:right;"> 0.5388184 </td>
-   <td style="text-align:right;"> -1.5518370 </td>
-   <td style="text-align:right;"> 0.1210739 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> billet_currentOCONUS Operational </td>
-   <td style="text-align:right;"> -1.8490451 </td>
-   <td style="text-align:right;"> 0.8234944 </td>
-   <td style="text-align:right;"> -2.2453645 </td>
-   <td style="text-align:right;"> 0.0250013 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> officer_rate </td>
-   <td style="text-align:right;"> 0.3340800 </td>
-   <td style="text-align:right;"> 0.0703586 </td>
-   <td style="text-align:right;"> 4.7482472 </td>
-   <td style="text-align:right;"> 0.0000024 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> billet_currentGME:officer_rate </td>
-   <td style="text-align:right;"> -0.2203147 </td>
-   <td style="text-align:right;"> 0.1606574 </td>
-   <td style="text-align:right;"> -1.3713321 </td>
-   <td style="text-align:right;"> 0.1706338 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> billet_currentNon-Operational/Non-Clinical:officer_rate </td>
-   <td style="text-align:right;"> 0.1800197 </td>
-   <td style="text-align:right;"> 0.2140632 </td>
-   <td style="text-align:right;"> 0.8409656 </td>
-   <td style="text-align:right;"> 0.4006040 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> billet_currentOCONUS MTF:officer_rate </td>
-   <td style="text-align:right;"> 0.2347709 </td>
-   <td style="text-align:right;"> 0.1634193 </td>
-   <td style="text-align:right;"> 1.4366162 </td>
-   <td style="text-align:right;"> 0.1511955 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> billet_currentCONUS Operational:officer_rate </td>
-   <td style="text-align:right;"> 0.0471775 </td>
-   <td style="text-align:right;"> 0.1257341 </td>
-   <td style="text-align:right;"> 0.3752166 </td>
-   <td style="text-align:right;"> 0.7075931 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> billet_currentOCONUS Operational:officer_rate </td>
-   <td style="text-align:right;"> 0.1218886 </td>
-   <td style="text-align:right;"> 0.1906095 </td>
-   <td style="text-align:right;"> 0.6394680 </td>
-   <td style="text-align:right;"> 0.5226910 </td>
-  </tr>
-</tbody>
-</table>
-
-<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
- <thead>
-  <tr>
-   <th style="text-align:right;"> r.squared </th>
-   <th style="text-align:right;"> adj.r.squared </th>
-   <th style="text-align:right;"> sigma </th>
-   <th style="text-align:right;"> statistic </th>
-   <th style="text-align:right;"> p.value </th>
-   <th style="text-align:right;"> df </th>
-   <th style="text-align:right;"> logLik </th>
-   <th style="text-align:right;"> AIC </th>
-   <th style="text-align:right;"> BIC </th>
-   <th style="text-align:right;"> deviance </th>
-   <th style="text-align:right;"> df.residual </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:right;"> 0.1399883 </td>
-   <td style="text-align:right;"> 0.1288456 </td>
-   <td style="text-align:right;"> 1.266334 </td>
-   <td style="text-align:right;"> 12.56326 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 12 </td>
-   <td style="text-align:right;"> -1418.968 </td>
-   <td style="text-align:right;"> 2863.937 </td>
-   <td style="text-align:right;"> 2925.792 </td>
-   <td style="text-align:right;"> 1361.457 </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> -1410.092 </td>
+   <td style="text-align:right;"> 2842.184 </td>
+   <td style="text-align:right;"> 2894.498 </td>
+   <td style="text-align:right;"> 1340.762 </td>
    <td style="text-align:right;"> 849 </td>
   </tr>
 </tbody>
 </table>Analysis of Variance Table
 
-Model 1: satisfaction_rank ~ 1 + billet_current
-Model 2: satisfaction_rank ~ 1 + billet_current + officer_rate
-  Res.Df    RSS Df Sum of Sq      F    Pr(>F)
-1    855 1464.9                              
-2    854 1371.0  1    93.905 58.493 5.496e-14
-Analysis of Variance Table
-
 Model 1: satisfaction_rank ~ 1 + billet_current + officer_rate
-Model 2: satisfaction_rank ~ 1 + billet_current * officer_rate
-  Res.Df    RSS Df Sum of Sq      F Pr(>F)
-1    854 1371.0                           
-2    849 1361.5  5    9.5562 1.1918 0.3112
-![](figure-png/by-billet-and-rate-1.png)<!-- -->
+Model 2: satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type
+  Res.Df    RSS Df Sum of Sq      F    Pr(>F)
+1    853 1373.5                              
+2    849 1340.8  4    32.789 5.1907 0.0003911
+
+
+Experimental
+-----------------------------------
+<img src="figure-png/graph-equal-slopes-1.png" style="display: block; margin: auto;" />
 
 
 Session Information
@@ -3650,95 +3481,112 @@ For the sake of documentation and reproducibility, the current report was render
   <summary>Environment <span class="glyphicon glyphicon-plus-sign"></span></summary>
 
 ```
-- Session info -----------------------------------------------------------------------------------
- setting  value                                      
- version  R version 3.6.1 Patched (2019-08-12 r76979)
- os       Windows >= 8 x64                           
- system   x86_64, mingw32                            
- ui       RTerm                                      
- language (EN)                                       
- collate  English_United States.1252                 
- ctype    English_United States.1252                 
- tz       America/Chicago                            
- date     2019-10-29                                 
+─ Session info ───────────────────────────────────────────────────────────────────────────────────
+ setting  value                       
+ version  R version 3.6.2 (2019-12-12)
+ os       Ubuntu 19.10                
+ system   x86_64, linux-gnu           
+ ui       RStudio                     
+ language (EN)                        
+ collate  en_US.UTF-8                 
+ ctype    en_US.UTF-8                 
+ tz       America/Chicago             
+ date     2020-01-24                  
 
-- Packages ---------------------------------------------------------------------------------------
+─ Packages ───────────────────────────────────────────────────────────────────────────────────────
  package         * version     date       lib source                                  
- assertthat        0.2.1       2019-03-21 [1] CRAN (R 3.6.0)                          
- backports         1.1.5       2019-10-02 [1] CRAN (R 3.6.1)                          
- broom             0.5.2       2019-04-07 [1] CRAN (R 3.6.0)                          
- callr             3.3.2       2019-09-22 [1] CRAN (R 3.6.1)                          
- cli               1.1.0       2019-03-19 [1] CRAN (R 3.6.0)                          
- colorspace        1.4-1       2019-03-18 [1] CRAN (R 3.6.0)                          
- corrplot          0.84        2017-10-16 [1] CRAN (R 3.6.0)                          
- crayon            1.3.4       2017-09-16 [1] CRAN (R 3.6.0)                          
- desc              1.2.0       2018-05-01 [1] CRAN (R 3.6.0)                          
- devtools          2.2.1       2019-09-24 [1] CRAN (R 3.6.1)                          
- digest            0.6.22      2019-10-21 [1] CRAN (R 3.6.1)                          
- dplyr             0.8.3       2019-07-04 [1] CRAN (R 3.6.1)                          
- ellipsis          0.3.0       2019-09-20 [1] CRAN (R 3.6.1)                          
- evaluate          0.14        2019-05-28 [1] CRAN (R 3.6.0)                          
- fs                1.3.1       2019-05-06 [1] CRAN (R 3.6.0)                          
- generics          0.0.2       2018-11-29 [1] CRAN (R 3.6.0)                          
- ggplot2         * 3.2.1       2019-08-10 [1] CRAN (R 3.6.1)                          
- glue              1.3.1       2019-03-12 [1] CRAN (R 3.6.0)                          
- gtable            0.3.0       2019-03-25 [1] CRAN (R 3.6.0)                          
- highr             0.8         2019-03-20 [1] CRAN (R 3.6.0)                          
- hms               0.5.1       2019-08-23 [1] CRAN (R 3.6.1)                          
- htmltools         0.4.0       2019-10-04 [1] CRAN (R 3.6.1)                          
- httr              1.4.1       2019-08-05 [1] CRAN (R 3.6.1)                          
- kableExtra        1.1.0       2019-03-16 [1] CRAN (R 3.6.0)                          
- knitr           * 1.25        2019-09-18 [1] CRAN (R 3.6.1)                          
- labeling          0.3         2014-08-23 [1] CRAN (R 3.6.0)                          
- lattice           0.20-38     2018-11-04 [3] CRAN (R 3.6.1)                          
- lazyeval          0.2.2       2019-03-15 [1] CRAN (R 3.6.0)                          
- lifecycle         0.1.0       2019-08-01 [1] CRAN (R 3.6.1)                          
- magrittr        * 1.5         2014-11-22 [1] CRAN (R 3.6.0)                          
- memoise           1.1.0       2017-04-21 [1] CRAN (R 3.6.0)                          
- munsell           0.5.0       2018-06-12 [1] CRAN (R 3.6.0)                          
- nlme              3.1-141     2019-08-01 [1] CRAN (R 3.6.1)                          
- pillar            1.4.2       2019-06-29 [1] CRAN (R 3.6.1)                          
- pkgbuild          1.0.6       2019-10-09 [1] CRAN (R 3.6.1)                          
- pkgconfig         2.0.3       2019-09-22 [1] CRAN (R 3.6.1)                          
- pkgload           1.0.2       2018-10-29 [1] CRAN (R 3.6.0)                          
- prettyunits       1.0.2       2015-07-13 [1] CRAN (R 3.6.0)                          
- processx          3.4.1       2019-07-18 [1] CRAN (R 3.6.1)                          
- ps                1.3.0       2018-12-21 [1] CRAN (R 3.6.0)                          
- purrr             0.3.3       2019-10-18 [1] CRAN (R 3.6.1)                          
- R6                2.4.0       2019-02-14 [1] CRAN (R 3.6.0)                          
- Rcpp              1.0.2       2019-07-25 [1] CRAN (R 3.6.1)                          
- readr             1.3.1       2018-12-21 [1] CRAN (R 3.6.0)                          
- remotes           2.1.0       2019-06-24 [1] CRAN (R 3.6.1)                          
- rlang             0.4.1       2019-10-24 [1] CRAN (R 3.6.1)                          
- rmarkdown         1.16        2019-10-01 [1] CRAN (R 3.6.1)                          
- rprojroot         1.3-2       2018-01-03 [1] CRAN (R 3.6.0)                          
- rstudioapi        0.10        2019-03-19 [1] CRAN (R 3.6.0)                          
- rvest             0.3.4       2019-05-15 [1] CRAN (R 3.6.0)                          
- scales            1.0.0       2018-08-09 [1] CRAN (R 3.6.0)                          
- sessioninfo       1.1.1       2018-11-05 [1] CRAN (R 3.6.0)                          
- stringi           1.4.3       2019-03-12 [1] CRAN (R 3.6.0)                          
- stringr           1.4.0       2019-02-10 [1] CRAN (R 3.6.0)                          
- TabularManifest   0.1-16.9003 2018-06-28 [1] Github (Melinae/TabularManifest@c2bdddb)
- testthat          2.2.1       2019-07-25 [1] CRAN (R 3.6.1)                          
- tibble            2.1.3       2019-06-06 [1] CRAN (R 3.6.0)                          
- tidyr             1.0.0       2019-09-11 [1] CRAN (R 3.6.1)                          
- tidyselect        0.2.5       2018-10-11 [1] CRAN (R 3.6.0)                          
- usethis           1.5.1       2019-07-04 [1] CRAN (R 3.6.1)                          
- vctrs             0.2.0       2019-07-05 [1] CRAN (R 3.6.1)                          
- viridisLite       0.3.0       2018-02-01 [1] CRAN (R 3.6.0)                          
- webshot           0.5.1       2018-09-28 [1] CRAN (R 3.6.0)                          
- withr             2.1.2       2018-03-15 [1] CRAN (R 3.6.0)                          
- xfun              0.10        2019-10-01 [1] CRAN (R 3.6.1)                          
- xml2              1.2.2       2019-08-09 [1] CRAN (R 3.6.1)                          
- yaml              2.2.0       2018-07-25 [1] CRAN (R 3.6.0)                          
- zeallot           0.1.0       2018-01-28 [1] CRAN (R 3.6.0)                          
+ assertthat        0.2.1       2019-03-21 [1] CRAN (R 3.6.2)                          
+ backports         1.1.5       2019-10-02 [1] CRAN (R 3.6.2)                          
+ broom             0.5.3       2019-12-14 [1] CRAN (R 3.6.2)                          
+ callr             3.4.0       2019-12-09 [1] CRAN (R 3.6.2)                          
+ checkmate         1.9.4       2019-07-04 [1] CRAN (R 3.6.2)                          
+ cli               2.0.1       2020-01-08 [1] CRAN (R 3.6.2)                          
+ colorspace        1.4-1       2019-03-18 [1] CRAN (R 3.6.2)                          
+ config            0.3         2018-03-27 [1] CRAN (R 3.6.2)                          
+ corrplot          0.84        2017-10-16 [1] CRAN (R 3.6.2)                          
+ crayon            1.3.4       2017-09-16 [1] CRAN (R 3.6.2)                          
+ DBI               1.1.0       2019-12-15 [1] CRAN (R 3.6.2)                          
+ desc              1.2.0       2018-05-01 [1] CRAN (R 3.6.2)                          
+ devtools          2.2.1       2019-09-24 [1] CRAN (R 3.6.2)                          
+ digest            0.6.23      2019-11-23 [1] CRAN (R 3.6.2)                          
+ dplyr             0.8.3       2019-07-04 [1] CRAN (R 3.6.2)                          
+ ellipsis          0.3.0       2019-09-20 [1] CRAN (R 3.6.2)                          
+ evaluate          0.14        2019-05-28 [1] CRAN (R 3.6.2)                          
+ fansi             0.4.1       2020-01-08 [1] CRAN (R 3.6.2)                          
+ farver            2.0.3       2020-01-16 [1] CRAN (R 3.6.2)                          
+ fs                1.3.1       2019-05-06 [1] CRAN (R 3.6.2)                          
+ generics          0.0.2       2018-11-29 [1] CRAN (R 3.6.2)                          
+ ggplot2         * 3.2.1       2019-08-10 [1] CRAN (R 3.6.2)                          
+ glue              1.3.1       2019-03-12 [1] CRAN (R 3.6.2)                          
+ gtable            0.3.0       2019-03-25 [1] CRAN (R 3.6.2)                          
+ highr             0.8         2019-03-20 [1] CRAN (R 3.6.2)                          
+ hms               0.5.3       2020-01-08 [1] CRAN (R 3.6.2)                          
+ htmltools         0.4.0       2019-10-04 [1] CRAN (R 3.6.2)                          
+ httr              1.4.1       2019-08-05 [1] CRAN (R 3.6.2)                          
+ import            1.1.0       2015-06-22 [1] CRAN (R 3.6.2)                          
+ kableExtra        1.1.0       2019-03-16 [1] CRAN (R 3.6.2)                          
+ knitr           * 1.27        2020-01-16 [1] CRAN (R 3.6.2)                          
+ labeling          0.3         2014-08-23 [1] CRAN (R 3.6.2)                          
+ lattice           0.20-38     2018-11-04 [4] CRAN (R 3.6.1)                          
+ lazyeval          0.2.2       2019-03-15 [1] CRAN (R 3.6.2)                          
+ lifecycle         0.1.0       2019-08-01 [1] CRAN (R 3.6.2)                          
+ magrittr        * 1.5         2014-11-22 [1] CRAN (R 3.6.2)                          
+ markdown          1.1         2019-08-07 [1] CRAN (R 3.6.2)                          
+ Matrix          * 1.2-18      2019-11-27 [4] CRAN (R 3.6.1)                          
+ memoise           1.1.0       2017-04-21 [1] CRAN (R 3.6.2)                          
+ mitools           2.4         2019-04-26 [1] CRAN (R 3.6.2)                          
+ munsell           0.5.0       2018-06-12 [1] CRAN (R 3.6.2)                          
+ nlme              3.1-143     2019-12-10 [1] CRAN (R 3.6.2)                          
+ OuhscMunge        0.1.9.9012  2020-01-13 [1] local                                   
+ packrat           0.5.0       2018-11-14 [1] CRAN (R 3.6.2)                          
+ pillar            1.4.3       2019-12-20 [1] CRAN (R 3.6.2)                          
+ pkgbuild          1.0.6       2019-10-09 [1] CRAN (R 3.6.2)                          
+ pkgconfig         2.0.3       2019-09-22 [1] CRAN (R 3.6.2)                          
+ pkgload           1.0.2       2018-10-29 [1] CRAN (R 3.6.2)                          
+ prettyunits       1.1.0       2020-01-09 [1] CRAN (R 3.6.2)                          
+ processx          3.4.1       2019-07-18 [1] CRAN (R 3.6.2)                          
+ ps                1.3.0       2018-12-21 [1] CRAN (R 3.6.2)                          
+ purrr             0.3.3       2019-10-18 [1] CRAN (R 3.6.2)                          
+ R6                2.4.1       2019-11-12 [1] CRAN (R 3.6.2)                          
+ Rcpp              1.0.3       2019-11-08 [1] CRAN (R 3.6.2)                          
+ readr             1.3.1       2018-12-21 [1] CRAN (R 3.6.2)                          
+ remotes           2.1.0       2019-06-24 [1] CRAN (R 3.6.2)                          
+ rlang             0.4.2       2019-11-23 [1] CRAN (R 3.6.2)                          
+ rmarkdown         2.1         2020-01-20 [1] CRAN (R 3.6.2)                          
+ rprojroot         1.3-2       2018-01-03 [1] CRAN (R 3.6.2)                          
+ rsconnect         0.8.16      2019-12-13 [1] CRAN (R 3.6.2)                          
+ rstudioapi        0.10        2019-03-19 [1] CRAN (R 3.6.2)                          
+ rvest             0.3.5       2019-11-08 [1] CRAN (R 3.6.2)                          
+ scales            1.1.0       2019-11-18 [1] CRAN (R 3.6.2)                          
+ sessioninfo       1.1.1       2018-11-05 [1] CRAN (R 3.6.2)                          
+ stringi           1.4.5       2020-01-11 [1] CRAN (R 3.6.2)                          
+ stringr           1.4.0       2019-02-10 [1] CRAN (R 3.6.2)                          
+ survey          * 3.37        2020-01-21 [1] CRAN (R 3.6.2)                          
+ survival        * 3.1-8       2019-12-03 [1] CRAN (R 3.6.2)                          
+ TabularManifest   0.1-16.9003 2019-12-15 [1] Github (Melinae/TabularManifest@4cbc21c)
+ testit            0.11.1      2020-01-09 [1] Github (yihui/testit@c1c19f8)           
+ testthat          2.3.1       2019-12-01 [1] CRAN (R 3.6.2)                          
+ tibble            2.1.3       2019-06-06 [1] CRAN (R 3.6.2)                          
+ tidyr             1.0.0       2019-09-11 [1] CRAN (R 3.6.2)                          
+ tidyselect        0.2.5       2018-10-11 [1] CRAN (R 3.6.2)                          
+ usethis           1.5.1       2019-07-04 [1] CRAN (R 3.6.2)                          
+ utf8              1.1.4       2018-05-24 [1] CRAN (R 3.6.2)                          
+ vctrs             0.2.1       2019-12-17 [1] CRAN (R 3.6.2)                          
+ viridisLite       0.3.0       2018-02-01 [1] CRAN (R 3.6.2)                          
+ webshot           0.5.2       2019-11-22 [1] CRAN (R 3.6.2)                          
+ withr             2.1.2       2018-03-15 [1] CRAN (R 3.6.2)                          
+ xfun              0.12        2020-01-13 [1] CRAN (R 3.6.2)                          
+ xml2              1.2.2       2019-08-09 [1] CRAN (R 3.6.2)                          
+ yaml              2.2.0       2018-07-25 [1] CRAN (R 3.6.2)                          
+ zeallot           0.1.0       2018-01-28 [1] CRAN (R 3.6.2)                          
 
-[1] D:/Projects/RLibraries
-[2] D:/Users/Will/Documents/R/win-library/3.6
-[3] C:/Program Files/R/R-3.6.1patched/library
+[1] /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6
+[2] /usr/local/lib/R/site-library
+[3] /usr/lib/R/site-library
+[4] /usr/lib/R/library
 ```
 </details>
 
 
 
-Report rendered by Will at 2019-10-29, 17:29 -0500 in 43 seconds.
+Report rendered by wibeasley at 2020-01-24, 23:19 -0600 in 27 seconds.

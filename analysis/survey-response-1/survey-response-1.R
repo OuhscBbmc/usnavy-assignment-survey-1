@@ -712,72 +712,72 @@ ds %>%
 # prettify_lm(lm(satisfaction_rank ~ 1 + billet_current * critical_war, data=ds))
 prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + critical_war, data=ds))
 
+# # ---- by-billet-and-rate ----------------------------------------------------------
+# cat("### satisfaction_rank\n\n")
+# ds_no_other <-
+#   ds %>%
+#   dplyr::filter(billet_current != "Other")
+#
+# cat("**Conculsion**: `officer_rate` has a significant positive slope --sig predicting beyond `billet_current`.  But the billet levels have the same slope.")
+# # prettify_lm(lm(satisfaction_rank ~ 1 + billet_current               , data=ds_no_other))
+#
+# prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + officer_rate, data=ds_no_other))
+#
+# # prettify_lm(lm(satisfaction_rank ~ 1 + billet_current * officer_rate, data=ds_no_other))
+#
+# anova(
+#   lm(satisfaction_rank ~ 1 + billet_current               , data=ds_no_other, subset=!is.na(officer_rate)),
+#   lm(satisfaction_rank ~ 1 + billet_current + officer_rate, data=ds_no_other)
+# )
+#
+# anova(
+#   lm(satisfaction_rank ~ 1 + billet_current + officer_rate, data=ds_no_other),
+#   lm(satisfaction_rank ~ 1 + billet_current * officer_rate, data=ds_no_other)
+# )
+#
+# # ggplot(mpg, aes(displ, hwy)) +
+# #   geom_point() +
+# #   geom_smooth(method = lm, se = FALSE)
+#
+# ds_no_other %>%
+#   tidyr::drop_na(satisfaction_rank) %>%
+#   tidyr::drop_na(officer_rate) %>%
+#   # ggplot(., aes(x=officer_rate, y=satisfaction_rank)) +
+#   ggplot(aes(x=officer_rate, y=satisfaction_rank, color=billet_current)) +
+#   # geom_smooth(method=lm, se=F) +
+#   geom_smooth(aes(group=billet_current), method=lm,  formula = y ~ x, se=F) +
+#   geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), alpha=1, size=1.5, shape=1, na.rm=T, show.legend = T) +
+#   theme_report +
+#   theme(panel.grid.major.y = element_blank()) +
+#   theme(panel.grid.minor.y = element_blank()) +
+#   theme(legend.position="bottom")
+
 # ---- by-billet-and-rate ----------------------------------------------------------
 cat("### satisfaction_rank\n\n")
-ds_no_other <-
-  ds %>%
-  dplyr::filter(billet_current != "Other")
-
-cat("**Conculsion**: `officer_rate` has a significant positive slope --sig predicting beyond `billet_current`.  But the billet levels have the same slope.")
-# prettify_lm(lm(satisfaction_rank ~ 1 + billet_current               , data=ds_no_other))
-
-prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + officer_rate, data=ds_no_other))
-
-# prettify_lm(lm(satisfaction_rank ~ 1 + billet_current * officer_rate, data=ds_no_other))
-
-anova(
-  lm(satisfaction_rank ~ 1 + billet_current               , data=ds_no_other, subset=!is.na(officer_rate)),
-  lm(satisfaction_rank ~ 1 + billet_current + officer_rate, data=ds_no_other)
-)
-
-anova(
-  lm(satisfaction_rank ~ 1 + billet_current + officer_rate, data=ds_no_other),
-  lm(satisfaction_rank ~ 1 + billet_current * officer_rate, data=ds_no_other)
-)
-
-# ggplot(mpg, aes(displ, hwy)) +
-#   geom_point() +
-#   geom_smooth(method = lm, se = FALSE)
-
-ds_no_other %>%
-  tidyr::drop_na(satisfaction_rank) %>%
-  tidyr::drop_na(officer_rate) %>%
-  # ggplot(., aes(x=officer_rate, y=satisfaction_rank)) +
-  ggplot(aes(x=officer_rate, y=satisfaction_rank, color=billet_current)) +
-  # geom_smooth(method=lm, se=F) +
-  geom_smooth(aes(group=billet_current), method=lm,  formula = y ~ x, se=F) +
-  geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), alpha=1, size=1.5, shape=1, na.rm=T, show.legend = T) +
-  theme_report +
-  theme(panel.grid.major.y = element_blank()) +
-  theme(panel.grid.minor.y = element_blank()) +
-  theme(legend.position="bottom")
-
-# ---- by-billet-and-rate ----------------------------------------------------------
-cat("### satisfaction_rank\n\n")
-ds_no_other_or_unknosn <-
+ds_no_other_or_unknown <-
   ds %>%
   dplyr::filter(billet_current != "Other") %>%
   dplyr::filter(specialty_type != "unknown")
 
 # cat("**Conculsion**: `officer_rate` has a significant positive slope --sig predicting beyond `billet_current`.  But the billet levels have the same slope.")
-summary(lm(satisfaction_rank ~ 1 + billet_current + officer_rate                 , data=ds_no_other))
-summary(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data=ds_no_other))
-prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data=ds_no_other))
+summary(lm(satisfaction_rank ~ 1 + billet_current + officer_rate                 , data=ds_no_other_or_unknown))
+summary(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data=ds_no_other_or_unknown))
+prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data=ds_no_other_or_unknown))
 
 
 anova(
-  lm(satisfaction_rank ~ 1 + billet_current + officer_rate                 , data=ds_no_other, subset=!is.na(officer_rate)),
-  lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data=ds_no_other)
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate                 , data=ds_no_other_or_unknown, subset=!is.na(officer_rate)),
+  lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data=ds_no_other_or_unknown)
 )
 # ---- graph-equal-slopes ------------------------------------------------------
 palette_billet <- c(
   "CONUS Operational"             = "", # The reference group
   "CONUS MTF"                     = "",
-  "GME"                           = "",
+  # "GME"                           = "",
   "Non-Operational/Non-Clinical"  = "",
   "OCONUS MTF"                    = "",
   "OCONUS Operational"            = "",
-  "Other"                         = "",
+  "Other"                         = ""
 )
 a <- lm(satisfaction_rank ~ 0 + billet_current + officer_rate, data=ds)
 # a
