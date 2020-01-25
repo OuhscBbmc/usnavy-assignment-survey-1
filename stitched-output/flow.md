@@ -27,13 +27,7 @@ requireNamespace("OuhscMunge") # remotes::install_github("OuhscBbmc/OuhscMunge")
 options(knitr.duplicate.label = "allow")
 
 config        <- config::get()
-```
 
-```
-## Error in config::get(): Config file config.yml not found in current working directory or parent directories
-```
-
-```r
 # open log
 if( interactive() ) {
   sink_log <- FALSE
@@ -59,7 +53,7 @@ ds_rail  <- tibble::tribble(
   ~fx               , ~path,
 
   # ETL (extract-transform-load) the data from the outside world.
-  "run_r"     , "manipulation/special-manning-by-rank-ellis.R",
+  "run_r"     , "manipulation/specialty-manning-by-rank-ellis.R",
   "run_r"     , "manipulation/survey-ellis.R",
 
   # Reports for human consumers.
@@ -91,7 +85,7 @@ run_rmd <- function( minion ) {
 ```
 
 ```
-## [1] FALSE  TRUE  TRUE  TRUE
+## [1] TRUE TRUE TRUE TRUE
 ```
 
 ```r
@@ -101,15 +95,6 @@ if( !all(file_found) ) {
 }
 ```
 
-```
-## Warning: --Missing files-- 
-## manipulation/special-manning-by-rank-ellis.R
-```
-
-```
-## Error in eval(expr, envir, enclos): All source files to be run should exist.
-```
-
 
 
 ```r
@@ -117,7 +102,7 @@ message("Starting flow of `", basename(base::getwd()), "` at ", Sys.time(), ".")
 ```
 
 ```
-## Starting flow of `usnavy-assignment-survey-1` at 2020-01-24 22:33:56.
+## Starting flow of `usnavy-assignment-survey-1` at 2020-01-24 22:49:46.
 ```
 
 ```r
@@ -136,21 +121,415 @@ elapsed_duration <- system.time({
 
 ```
 ## 
-## Starting `special-manning-by-rank-ellis.R` at 2020-01-24 22:33:56.
+## Starting `specialty-manning-by-rank-ellis.R` at 2020-01-24 22:49:46.
 ```
 
 ```
-## Warning in file(filename, "r", encoding = encoding): cannot
-## open file 'manipulation/special-manning-by-rank-ellis.R': No
-## such file or directory
+## Completed `specialty-manning-by-rank-ellis.R`.
 ```
 
 ```
-## Error in file(filename, "r", encoding = encoding): cannot open the connection
+## 
+## Starting `survey-ellis.R` at 2020-01-24 22:49:46.
 ```
 
 ```
-## Timing stopped at: 0.001 0 0.001
+## c("Jan-17", "Feb-17", NA, "Dec-16", "Aug-16", "Oct-16", "Jul-16", 
+## "Other", "Mar-17", "Sep-16", "Nov-16", "Jun-16", "17-Feb")
+```
+
+```
+## Completed `survey-ellis.R`.
+```
+
+```
+## 
+## Starting `survey-response-1.Rmd` at 2020-01-24 22:49:46.
+```
+
+```
+## 
+## 
+## processing file: survey-response-1.Rmd
+```
+
+```
+##   |                                                                                                  |                                                                                          |   0%  |                                                                                                  |.                                                                                         |   1%
+##    inline R code fragments
+## 
+##   |                                                                                                  |..                                                                                        |   3%
+## label: unnamed-chunk-2 (with options) 
+## List of 2
+##  $ echo   : symbol F
+##  $ message: symbol F
+## 
+##   |                                                                                                  |....                                                                                      |   4%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |.....                                                                                     |   5%
+## label: set-options (with options) 
+## List of 1
+##  $ echo: symbol F
+## 
+##   |                                                                                                  |......                                                                                    |   7%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |.......                                                                                   |   8%
+## label: load-sources (with options) 
+## List of 2
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+## 
+##   |                                                                                                  |.........                                                                                 |  10%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |..........                                                                                |  11%
+## label: load-packages (with options) 
+## List of 2
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+## 
+##   |                                                                                                  |...........                                                                               |  12%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |............                                                                              |  14%
+## label: declare-globals (with options) 
+## List of 3
+##  $ echo   : symbol echo_chunks
+##  $ results: chr "show"
+##  $ message: symbol message_chunks
+## 
+##   |                                                                                                  |..............                                                                            |  15%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |...............                                                                           |  16%
+## label: rmd-specific (with options) 
+## List of 2
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+## 
+##   |                                                                                                  |................                                                                          |  18%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |.................                                                                         |  19%
+## label: load-data (with options) 
+## List of 3
+##  $ echo   : symbol echo_chunks
+##  $ results: chr "show"
+##  $ message: symbol message_chunks
+## 
+##   |                                                                                                  |..................                                                                        |  21%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |....................                                                                      |  22%
+## label: tweak-data (with options) 
+## List of 3
+##  $ echo   : symbol echo_chunks
+##  $ results: chr "show"
+##  $ message: symbol message_chunks
+## 
+##   |                                                                                                  |.....................                                                                     |  23%
+##    inline R code fragments
+## 
+##   |                                                                                                  |......................                                                                    |  25%
+## label: marginals (with options) 
+## List of 2
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+```
+
+```
+##   |                                                                                                  |.......................                                                                   |  26%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |.........................                                                                 |  27%
+## label: freq-homestead_length_in_years-by-officer_rank (with options) 
+## List of 2
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+```
+
+```
+##   |                                                                                                  |..........................                                                                |  29%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |...........................                                                               |  30%
+## label: freq-homestead_length_in_years-by-specialty_type (with options) 
+## List of 2
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+```
+
+```
+##   |                                                                                                  |............................                                                              |  32%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |..............................                                                            |  33%
+## label: freq-homestead_problem-by-officer_rank (with options) 
+## List of 2
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+```
+
+```
+##   |                                                                                                  |...............................                                                           |  34%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |................................                                                          |  36%
+## label: freq-homestead_problem-by-specialty_type (with options) 
+## List of 2
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+```
+
+```
+##   |                                                                                                  |.................................                                                         |  37%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |...................................                                                       |  38%
+## label: freq-assignment_priority-by-specialty_type (with options) 
+## List of 3
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+##  $ results: chr "asis"
+```
+
+```
+##   |                                                                                                  |....................................                                                      |  40%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |.....................................                                                     |  41%
+## label: freq-officer_rank_priority-by-officer_rank (with options) 
+## List of 3
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+##  $ results: chr "asis"
+```
+
+```
+##   |                                                                                                  |......................................                                                    |  42%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |.......................................                                                   |  44%
+## label: freq-homestead_length_in_years-by-officer_rank (with options) 
+## List of 2
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+```
+
+```
+##   |                                                                                                  |.........................................                                                 |  45%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |..........................................                                                |  47%
+## label: outcome-correlations (with options) 
+## List of 2
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+```
+
+```
+##   |                                                                                                  |...........................................                                               |  48%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |............................................                                              |  49%
+## label: by-rank (with options) 
+## List of 3
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+##  $ results: chr "asis"
+```
+
+```
+##   |                                                                                                  |..............................................                                            |  51%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |...............................................                                           |  52%
+## label: by-specialty-type (with options) 
+## List of 3
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+##  $ results: chr "asis"
+```
+
+```
+##   |                                                                                                  |................................................                                          |  53%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |.................................................                                         |  55%
+## label: by-bonus-pay (with options) 
+## List of 3
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+##  $ results: chr "asis"
+```
+
+```
+##   |                                                                                                  |...................................................                                       |  56%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |....................................................                                      |  58%
+## label: by-assignment-current-choice (with options) 
+## List of 3
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+##  $ results: chr "asis"
+```
+
+```
+##   |                                                                                                  |.....................................................                                     |  59%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |......................................................                                    |  60%
+## label: by-year (with options) 
+## List of 3
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+##  $ results: chr "asis"
+```
+
+```
+##   |                                                                                                  |.......................................................                                   |  62%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |.........................................................                                 |  63%
+## label: by-survey_lag (with options) 
+## List of 3
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+##  $ results: chr "asis"
+```
+
+```
+##   |                                                                                                  |..........................................................                                |  64%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |...........................................................                               |  66%
+## label: by-manning_proportion (with options) 
+## List of 3
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+##  $ results: chr "asis"
+```
+
+```
+##   |                                                                                                  |............................................................                              |  67%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |..............................................................                            |  68%
+## label: by-critical_war (with options) 
+## List of 3
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+##  $ results: chr "asis"
+```
+
+```
+##   |                                                                                                  |...............................................................                           |  70%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |................................................................                          |  71%
+## label: by-billet_current (with options) 
+## List of 3
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+##  $ results: chr "asis"
+```
+
+```
+##   |                                                                                                  |.................................................................                         |  73%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |...................................................................                       |  74%
+## label: by-geographic_preference (with options) 
+## List of 3
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+##  $ results: chr "asis"
+```
+
+```
+##   |                                                                                                  |....................................................................                      |  75%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |.....................................................................                     |  77%
+## label: by-rank-and-specialty-type (with options) 
+## List of 3
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+##  $ results: chr "asis"
+```
+
+```
+##   |                                                                                                  |......................................................................                    |  78%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |........................................................................                  |  79%
+## label: by-rank-and-assignment-current-choice (with options) 
+## List of 3
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+##  $ results: chr "asis"
+```
+
+```
+##   |                                                                                                  |.........................................................................                 |  81%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |..........................................................................                |  82%
+## label: by-rank-and-bonus_pay (with options) 
+## List of 3
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+##  $ results: chr "asis"
+```
+
+```
+##   |                                                                                                  |...........................................................................               |  84%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |............................................................................              |  85%
+## label: by-billet_current-and-critical_war (with options) 
+## List of 3
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+##  $ results: chr "asis"
+```
+
+```
+##   |                                                                                                  |..............................................................................            |  86%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |...............................................................................           |  88%
+## label: by-bonus_pay-and-manning_proportion (with options) 
+## List of 3
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+##  $ results: chr "asis"
+```
+
+```
+##   |                                                                                                  |................................................................................          |  89%
+##   ordinary text without R code
+## 
+##   |                                                                                                  |.................................................................................         |  90%
+## label: by-billet-and-rate (with options) 
+## List of 3
+##  $ echo   : symbol echo_chunks
+##  $ message: symbol message_chunks
+##  $ results: chr "asis"
+```
+
+```
+## Quitting from lines 222-222 (survey-response-1.Rmd)
+```
+
+```
+## Error in is.data.frame(data): object 'ds_no_other' not found
+```
+
+```
+## Timing stopped at: 23.69 1.801 25.48
 ```
 
 ```r
@@ -158,8 +537,10 @@ message("Completed flow of `", basename(base::getwd()), "` at ", Sys.time(), "")
 ```
 
 ```
-## Completed flow of `usnavy-assignment-survey-1` at 2020-01-24 22:33:56
+## Completed flow of `usnavy-assignment-survey-1` at 2020-01-24 22:50:12
 ```
+
+<img src="figure/flow-Rmdrun-1.png" title="plot of chunk run" alt="plot of chunk run" style="display: block; margin: auto;" />
 
 ```r
 elapsed_duration
@@ -201,54 +582,40 @@ sessionInfo()
 ## LAPACK: /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3.8.0
 ## 
 ## locale:
-##  [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
-##  [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
-##  [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
-##  [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
-##  [9] LC_ADDRESS=C               LC_TELEPHONE=C            
-## [11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+##  [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C               LC_TIME=en_US.UTF-8       
+##  [4] LC_COLLATE=en_US.UTF-8     LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
+##  [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                  LC_ADDRESS=C              
+## [10] LC_TELEPHONE=C             LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
 ## 
 ## attached base packages:
-## [1] grid      stats     graphics  grDevices utils    
-## [6] datasets  methods   base     
+## [1] grid      stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-## [1] survey_3.37    survival_3.1-8 Matrix_1.2-18 
-## [4] ggplot2_3.2.1  magrittr_1.5  
+## [1] knitr_1.27     survey_3.37    survival_3.1-8 Matrix_1.2-18  ggplot2_3.2.1  magrittr_1.5  
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] tidyselect_0.2.5            xfun_0.12                  
-##  [3] purrr_0.3.3                 mitools_2.4                
-##  [5] corrplot_0.84               splines_3.6.2              
-##  [7] lattice_0.20-38             colorspace_1.4-1           
-##  [9] vctrs_0.2.1                 generics_0.0.2             
-## [11] htmltools_0.4.0             viridisLite_0.3.0          
-## [13] yaml_2.2.0                  utf8_1.1.4                 
-## [15] rlang_0.4.2                 pillar_1.4.3               
-## [17] glue_1.3.1                  withr_2.1.2                
-## [19] DBI_1.1.0                   lifecycle_0.1.0            
-## [21] stringr_1.4.0               munsell_0.5.0              
-## [23] gtable_0.3.0                rvest_0.3.5                
-## [25] kableExtra_1.1.0            evaluate_0.14              
-## [27] labeling_0.3                knitr_1.27                 
-## [29] import_1.1.0                OuhscMunge_0.1.9.9012      
-## [31] fansi_0.4.1                 highr_0.8                  
-## [33] broom_0.5.3                 Rcpp_1.0.3                 
-## [35] readr_1.3.1                 backports_1.1.5            
-## [37] scales_1.1.0                TabularManifest_0.1-16.9003
-## [39] webshot_0.5.2               config_0.3                 
-## [41] farver_2.0.3                hms_0.5.3                  
-## [43] packrat_0.5.0               digest_0.6.23              
-## [45] stringi_1.4.5               dplyr_0.8.3                
-## [47] cli_2.0.1                   tools_3.6.2                
-## [49] lazyeval_0.2.2              tibble_2.1.3               
-## [51] crayon_1.3.4                tidyr_1.0.0                
-## [53] pkgconfig_2.0.3             zeallot_0.1.0              
-## [55] ellipsis_0.3.0              xml2_1.2.2                 
-## [57] assertthat_0.2.1            rmarkdown_2.1              
-## [59] httr_1.4.1                  rstudioapi_0.10            
-## [61] R6_2.4.1                    nlme_3.1-143               
-## [63] compiler_3.6.2
+##  [1] tidyselect_0.2.5            xfun_0.12                   purrr_0.3.3                
+##  [4] mitools_2.4                 corrplot_0.84               splines_3.6.2              
+##  [7] lattice_0.20-38             colorspace_1.4-1            vctrs_0.2.1                
+## [10] generics_0.0.2              htmltools_0.4.0             viridisLite_0.3.0          
+## [13] yaml_2.2.0                  utf8_1.1.4                  rlang_0.4.2                
+## [16] pillar_1.4.3                glue_1.3.1                  withr_2.1.2                
+## [19] DBI_1.1.0                   lifecycle_0.1.0             stringr_1.4.0              
+## [22] munsell_0.5.0               gtable_0.3.0                rvest_0.3.5                
+## [25] kableExtra_1.1.0            evaluate_0.14               labeling_0.3               
+## [28] import_1.1.0                OuhscMunge_0.1.9.9012       markdown_1.1               
+## [31] fansi_0.4.1                 highr_0.8                   broom_0.5.3                
+## [34] Rcpp_1.0.3                  readr_1.3.1                 checkmate_1.9.4            
+## [37] backports_1.1.5             scales_1.1.0                TabularManifest_0.1-16.9003
+## [40] webshot_0.5.2               config_0.3                  farver_2.0.3               
+## [43] testit_0.11.1               hms_0.5.3                   packrat_0.5.0              
+## [46] digest_0.6.23               stringi_1.4.5               dplyr_0.8.3                
+## [49] cli_2.0.1                   tools_3.6.2                 lazyeval_0.2.2             
+## [52] tibble_2.1.3                crayon_1.3.4                tidyr_1.0.0                
+## [55] pkgconfig_2.0.3             zeallot_0.1.0               ellipsis_0.3.0             
+## [58] xml2_1.2.2                  assertthat_0.2.1            rmarkdown_2.1              
+## [61] httr_1.4.1                  rstudioapi_0.10             R6_2.4.1                   
+## [64] nlme_3.1-143                compiler_3.6.2
 ```
 
 ```r
@@ -256,6 +623,6 @@ Sys.time()
 ```
 
 ```
-## [1] "2020-01-24 22:33:56 CST"
+## [1] "2020-01-24 22:50:12 CST"
 ```
 
