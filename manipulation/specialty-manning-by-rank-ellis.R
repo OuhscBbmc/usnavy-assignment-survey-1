@@ -59,12 +59,12 @@ ds_lu_specialty <- ds_lu_specialty %>%
   )
 
 ds <- ds %>%
-  dplyr::select_( #`select()` implicitly drops the other columns not mentioned.
-    "specialty"
-    , "rate_6"
-    , "rate_5"
-    , "rate_4"
-    , "rate_3"
+  dplyr::select( #`select()` implicitly drops the other columns not mentioned.
+    specialty
+    , rate_6
+    , rate_5
+    , rate_4
+    , rate_3
   ) %>%
   tidyr::gather(
     key   = rate,

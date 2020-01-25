@@ -1890,7 +1890,6 @@ For the sake of documentation and reproducibility, the current report was render
  lazyeval          0.2.2       2019-03-15 [1] CRAN (R 3.6.2)                          
  lifecycle         0.1.0       2019-08-01 [1] CRAN (R 3.6.2)                          
  magrittr        * 1.5         2014-11-22 [1] CRAN (R 3.6.2)                          
- markdown          1.1         2019-08-07 [1] CRAN (R 3.6.2)                          
  Matrix          * 1.2-18      2019-11-27 [4] CRAN (R 3.6.1)                          
  memoise           1.1.0       2017-04-21 [1] CRAN (R 3.6.2)                          
  mitools           2.4         2019-04-26 [1] CRAN (R 3.6.2)                          
@@ -1913,7 +1912,6 @@ For the sake of documentation and reproducibility, the current report was render
  rlang             0.4.2       2019-11-23 [1] CRAN (R 3.6.2)                          
  rmarkdown         2.1         2020-01-20 [1] CRAN (R 3.6.2)                          
  rprojroot         1.3-2       2018-01-03 [1] CRAN (R 3.6.2)                          
- rsconnect         0.8.16      2019-12-13 [1] CRAN (R 3.6.2)                          
  rstudioapi        0.10        2019-03-19 [1] CRAN (R 3.6.2)                          
  rvest             0.3.5       2019-11-08 [1] CRAN (R 3.6.2)                          
  scales            1.1.0       2019-11-18 [1] CRAN (R 3.6.2)                          
@@ -1948,4 +1946,4 @@ For the sake of documentation and reproducibility, the current report was render
 
 
 
-Report rendered by wibeasley at 2020-01-24, 23:20 -0600 in 12 seconds.
+Report rendered by wibeasley at 2020-01-24, 23:45 -0600 in 13 seconds.

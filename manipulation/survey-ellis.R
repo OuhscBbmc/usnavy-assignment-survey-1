@@ -468,30 +468,27 @@ ds2 <- ds %>%
 
 # ---- specify-columns-to-upload -----------------------------------------------
 # dput(colnames(ds)) # Print colnames for line below.
-columns_to_write <- c(
-  "response_id", "primary_specialty",
-  "officer_rank", "officer_rate",
-  "year_executed_order", "survey_lag",
-  "billet_current", "order_lead_time",
-  "transparency_rank", "satisfaction_rank", "favoritism_rank", "assignment_current_choice",
-  "bonus_pay", "bonus_pay_cut3", "bonus_pay_cut4",
-  "critical_war", "specialty_type", "manning_proportion", "manning_proportion_cut3",
-  "geographic_preference", "homestead_length_in_years", "homestead_problem",
-  "career_path",
-  "doctor_as_detailer",
-  "match_desirability",
-  # "match_month",
-  "assignment_priority", "assignment_priority_pretty", "officer_rank_priority", "officer_rank_priority_pretty",
-  "order_lead_time_preferred_cut3", "order_lead_time_preferred_months",
-  "population_count",
-  "survey_weight_specialty_type"
-)
 ds_slim <- ds %>%
   # dplyr::slice(1:100) %>%
-  dplyr::select_(.dots=columns_to_write)
+  dplyr::select(
+    response_id, primary_specialty,
+    officer_rank, officer_rate,
+    year_executed_order, survey_lag,
+    billet_current, order_lead_time,
+    transparency_rank, satisfaction_rank, favoritism_rank, assignment_current_choice,
+    bonus_pay, bonus_pay_cut3, bonus_pay_cut4,
+    critical_war, specialty_type, manning_proportion, manning_proportion_cut3,
+    geographic_preference, homestead_length_in_years, homestead_problem,
+    career_path,
+    doctor_as_detailer,
+    match_desirability,
+    # match_month,
+    assignment_priority, assignment_priority_pretty, officer_rank_priority, officer_rank_priority_pretty,
+    order_lead_time_preferred_cut3, order_lead_time_preferred_months,
+    population_count,
+    survey_weight_specialty_type
+  )
 ds_slim
-
-rm(columns_to_write)
 
 # ---- save-to-disk ------------------------------------------------------------
 # If there's no PHI, a rectangular CSV is usually adequate, and it's portable to other machines and software.
