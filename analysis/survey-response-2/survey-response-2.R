@@ -124,7 +124,7 @@ ds %>%
 
 # ---- survey-response ----------------------------------------------------
 
-sd <- svydesign(
+sd <- svydesign( # Stands for Survey Design
   weights   = ~survey_weight_specialty_type,         # Weighted by specialty
   variables = ~satisfaction_rank + specialty_type + billet_current,
   ids       = ~0,                                    # No clusters
