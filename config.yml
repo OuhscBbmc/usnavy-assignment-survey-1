@@ -1,8 +1,13 @@
 default:
     # To be processed by Ellis lanes
-    # path_subject_1_raw:       "data-public/raw/subject-1.csv"
+    path_survey_response_raw            : "data-public/raw/survey-response.csv"
+    path_specialty_bonus_manning        : "data-public/raw/specialty-bonus-manning.csv"
+    path_specialty_manning_raw          : "data-public/raw/specialty-manning-by-rank.csv"
 
     # Derived Rectangles (produced by Ellis lanes).
-    # path_car_derived:         "data-public/derived/car.rds" # Actually produced by an Ellis
+    path_specialty_manning_derived      : "data-public/derived/specialty-manning-by-rank.csv"
+    path_survey_response_derived_csv    : "data-public/derived/survey-response.csv"
+    path_survey_response_derived_rds    : "data-public/derived/survey-response.rds"
 
+    # Flow
     path_log_flow:            !expr strftime(Sys.time(), "data-unshared/log/%Y/%Y-%m/flow-%Y-%m-%d--%H-%M-%S.log")

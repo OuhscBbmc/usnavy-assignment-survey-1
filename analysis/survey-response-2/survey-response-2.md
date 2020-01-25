@@ -1,6 +1,6 @@
 ---
 title: Attitudes Regarding the Assignment Process Among Navy Medical Corps Officers
-date: "Date: 2020-01-24"
+date: "Date: 2020-01-25"
 output:
   html_document:
     keep_md: yes
@@ -1850,7 +1850,7 @@ For the sake of documentation and reproducibility, the current report was render
  collate  en_US.UTF-8                 
  ctype    en_US.UTF-8                 
  tz       America/Chicago             
- date     2020-01-24                  
+ date     2020-01-25                  
 
 ─ Packages ───────────────────────────────────────────────────────────────────────────────────────
  package         * version     date       lib source                                  
@@ -1890,6 +1890,7 @@ For the sake of documentation and reproducibility, the current report was render
  lazyeval          0.2.2       2019-03-15 [1] CRAN (R 3.6.2)                          
  lifecycle         0.1.0       2019-08-01 [1] CRAN (R 3.6.2)                          
  magrittr        * 1.5         2014-11-22 [1] CRAN (R 3.6.2)                          
+ markdown          1.1         2019-08-07 [1] CRAN (R 3.6.2)                          
  Matrix          * 1.2-18      2019-11-27 [4] CRAN (R 3.6.1)                          
  memoise           1.1.0       2017-04-21 [1] CRAN (R 3.6.2)                          
  mitools           2.4         2019-04-26 [1] CRAN (R 3.6.2)                          
@@ -1946,4 +1947,4 @@ For the sake of documentation and reproducibility, the current report was render
 
 
 
-Report rendered by wibeasley at 2020-01-24, 23:45 -0600 in 13 seconds.
+Report rendered by wibeasley at 2020-01-25, 00:48 -0600 in 14 seconds.

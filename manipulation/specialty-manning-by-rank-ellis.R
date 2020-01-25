@@ -1,15 +1,11 @@
-# knitr::stitch_rmd(script="./manipulation/te-ellis.R", output="./stitched-output/manipulation/te-ellis.md") # dir.create("./stitched-output/manipulation/", recursive=T)
-# For a brief description of this file see the presentation at
-#   - slides: https://rawgit.com/wibeasley/RAnalysisSkeleton/master/documentation/time-and-effort-synthesis.html#/
-#   - code: https://github.com/wibeasley/RAnalysisSkeleton/blob/master/documentation/time-and-effort-synthesis.Rpres
-rm(list=ls(all=TRUE))  #Clear the variables from previous runs.
+rm(list = ls(all.names = TRUE)) # Clear the memory of variables from previous run. This is not called by knitr, because it's above the first chunk.
 
 # ---- load-sources ------------------------------------------------------------
 # Call `base::source()` on any repo file that defines functions needed below.  Ideally, no real operations are performed.
 
 # ---- load-packages -----------------------------------------------------------
 # Attach these package(s) so their functions don't need to be qualified: http://r-pkgs.had.co.nz/namespace.html#search-path
-library(magrittr            , quietly=TRUE)
+import::from("magrittr", "%>%")
 
 # Verify these packages are available on the machine, but their functions need to be qualified: http://r-pkgs.had.co.nz/namespace.html#search-path
 requireNamespace("readr"        )
@@ -21,12 +17,9 @@ requireNamespace("OuhscMunge"   ) # remotes::install_github(repo="OuhscBbmc/Ouhs
 
 # ---- declare-globals ---------------------------------------------------------
 # Constant values that won't change.
-path_in                        <- "data-public/raw/specialty-manning-by-rank.csv"
-path_in_lu_specialty           <- "data-public/raw/specialty-bonus-manning.csv"
-path_out_csv                   <- "data-public/derived/specialty-manning-by-rank.csv"
-# path_out_rds                   <- "data-public/derived/specialty-manning-by-rank.rds"
+config        <- config::get()
 
-col_types <- readr::cols_only( # readr::spec_csv(path_in)
+col_types <- readr::cols_only( # readr::spec_csv(config$path_specialty_manning_raw)
   specialty  = readr::col_character(),
   rate_6      = readr::col_integer(),
   rate_5      = readr::col_integer(),
@@ -41,11 +34,11 @@ col_types_lu_specialty  <- readr::cols_only(
 
 # ---- load-data ---------------------------------------------------------------
 # Read the CSVs
-# readr::spec_csv(path_in)
-ds <- readr::read_csv(path_in   , col_types=col_types)
-ds_lu_specialty <- readr::read_csv(path_in_lu_specialty   , col_types=col_types_lu_specialty)
-rm(path_in, col_types)
-rm(path_in_lu_specialty, col_types_lu_specialty)
+# readr::spec_csv(config$path_specialty_manning_raw)
+ds <- readr::read_csv(config$path_specialty_manning_raw   , col_types=col_types)
+ds_lu_specialty <- readr::read_csv(config$path_specialty_bonus_manning   , col_types=col_types_lu_specialty)
+rm(col_types)
+rm(col_types_lu_specialty)
 
 # ---- tweak-data --------------------------------------------------------------
 # OuhscMunge::column_rename_headstart(ds) #Spit out columns to help write call ato `dplyr::rename()`.
@@ -115,5 +108,4 @@ rm(columns_to_write)
 
 # ---- save-to-disk ------------------------------------------------------------
 # If there's no PHI, a rectangular CSV is usually adequate, and it's portable to other machines and software.
-readr::write_csv(ds_slim, path_out_csv)
-# readr::write_rds(ds_slim, path_out_rds, compress="gz") # Save as a compressed R-binary file if it's large or has a lot of factors.
+readr::write_csv(ds_slim, config$path_specialty_manning_derived)

@@ -2,14 +2,14 @@
 # For a brief description of this file see the presentation at
 #   - slides: https://rawgit.com/wibeasley/RAnalysisSkeleton/master/documentation/time-and-effort-synthesis.html#/
 #   - code: https://github.com/wibeasley/RAnalysisSkeleton/blob/master/documentation/time-and-effort-synthesis.Rpres
-rm(list=ls(all=TRUE))  #Clear the variables from previous runs.
+rm(list = ls(all.names = TRUE)) # Clear the memory of variables from previous run. This is not called by knitr, because it's above the first chunk.
 
 # ---- load-sources ------------------------------------------------------------
 # Call `base::source()` on any repo file that defines functions needed below.  Ideally, no real operations are performed.
 
 # ---- load-packages -----------------------------------------------------------
 # Attach these package(s) so their functions don't need to be qualified: http://r-pkgs.had.co.nz/namespace.html#search-path
-library(magrittr            , quietly=TRUE)
+import::from("magrittr", "%>%")
 
 # Verify these packages are available on the machine, but their functions need to be qualified: http://r-pkgs.had.co.nz/namespace.html#search-path
 requireNamespace("readr"        )
@@ -21,14 +21,9 @@ requireNamespace("OuhscMunge"   ) # remotes::install_github(repo="OuhscBbmc/Ouhs
 
 # ---- declare-globals ---------------------------------------------------------
 # Constant values that won't change.
-path_in                        <- "data-public/raw/survey-response.csv"
-path_in_lu_specialty           <- "data-public/raw/specialty-bonus-manning.csv"
-path_in_lu_manning             <- "data-public/derived/specialty-manning-by-rank.csv"
+config        <- config::get()
 
-path_out_csv                   <- "data-public/derived/survey-response.csv"
-path_out_rds                   <- "data-public/derived/survey-response.rds"
-
-col_types <- readr::cols_only( # readr::spec_csv(path_in)
+col_types <- readr::cols_only( # readr::spec_csv(config$path_survey_response_raw)
   `Response ID`                                                                                                                                                                               = readr::col_integer(),
   `Include/Exclude`                                                                                                                                                                           = readr::col_character(),
   # `Date submitted`                                                                                                                                                                            = readr::col_character(),
@@ -94,12 +89,12 @@ col_types_lu_manning  <- readr::cols_only(
 )
 # ---- load-data ---------------------------------------------------------------
 # Read the CSVs
-# readr::spec_csv(path_in)
-# readr::spec_csv(path_in_lu_manning)
-ds <- readr::read_csv(path_in   , col_types=col_types)
-ds_lu_specialty <- readr::read_csv(path_in_lu_specialty   , col_types=col_types_lu_specialty)
-ds_lu_manning   <- readr::read_csv(path_in_lu_manning     , col_types=col_types_lu_manning)
-rm(path_in, col_types)
+# readr::spec_csv(config$path_survey_response_raw)
+# readr::spec_csv(config$path_specialty_manning_derived)
+ds              <- readr::read_csv(config$path_survey_response_raw        , col_types=col_types)
+ds_lu_specialty <- readr::read_csv(config$path_specialty_bonus_manning    , col_types=col_types_lu_specialty)
+ds_lu_manning   <- readr::read_csv(config$path_specialty_manning_derived  , col_types=col_types_lu_manning)
+rm(col_types)
 
 # ---- tweak-data --------------------------------------------------------------
 # OuhscMunge::column_rename_headstart(ds_lu_specialty) #Spit out columns to help write call ato `dplyr::rename()`.
@@ -492,5 +487,5 @@ ds_slim
 
 # ---- save-to-disk ------------------------------------------------------------
 # If there's no PHI, a rectangular CSV is usually adequate, and it's portable to other machines and software.
-readr::write_csv(ds_slim, path_out_csv)
-readr::write_rds(ds_slim, path_out_rds, compress="gz") # Save as a compressed R-binary file if it's large or has a lot of factors.
+readr::write_csv(ds_slim, config$path_survey_response_derived_csv)
+readr::write_rds(ds_slim, config$path_survey_response_derived_rds, compress="gz") # Save as a compressed R-binary file if it's large or has a lot of factors.

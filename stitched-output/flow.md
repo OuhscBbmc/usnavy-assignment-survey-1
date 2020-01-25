@@ -16,20 +16,9 @@ rm(list = ls(all.names = TRUE)) # Clear the memory of variables from previous ru
 import::from("magrittr", "%>%")
 
 requireNamespace("purrr")
-```
-
-```
-## Loading required namespace: purrr
-```
-
-```r
 requireNamespace("rlang")
 # requireNamespace("checkmate")
 requireNamespace("OuhscMunge") # remotes::install_github("OuhscBbmc/OuhscMunge")
-```
-
-```
-## Loading required namespace: OuhscMunge
 ```
 
 ```r
@@ -113,7 +102,7 @@ message("Starting flow of `", basename(base::getwd()), "` at ", Sys.time(), ".")
 ```
 
 ```
-## Starting flow of `usnavy-assignment-survey-1` at 2020-01-24 23:44:19.
+## Starting flow of `usnavy-assignment-survey-1` at 2020-01-25 00:47:02.
 ```
 
 ```r
@@ -132,23 +121,7 @@ elapsed_duration <- system.time({
 
 ```
 ## 
-## Starting `specialty-manning-by-rank-ellis.R` at 2020-01-24 23:44:19.
-```
-
-```
-## Loading required namespace: readr
-```
-
-```
-## Loading required namespace: tidyr
-```
-
-```
-## Loading required namespace: testit
-```
-
-```
-## Loading required namespace: checkmate
+## Starting `specialty-manning-by-rank-ellis.R` at 2020-01-25 00:47:02.
 ```
 
 ```
@@ -157,7 +130,7 @@ elapsed_duration <- system.time({
 
 ```
 ## 
-## Starting `survey-ellis.R` at 2020-01-24 23:44:19.
+## Starting `survey-ellis.R` at 2020-01-25 00:47:02.
 ```
 
 ```
@@ -171,7 +144,7 @@ elapsed_duration <- system.time({
 
 ```
 ## 
-## Starting `survey-response-1.Rmd` at 2020-01-24 23:44:19.
+## Starting `survey-response-1.Rmd` at 2020-01-25 00:47:02.
 ```
 
 ```
@@ -215,13 +188,7 @@ elapsed_duration <- system.time({
 ## List of 2
 ##  $ echo   : symbol echo_chunks
 ##  $ message: symbol message_chunks
-```
-
-```
-## Loading required namespace: TabularManifest
-```
-
-```
+## 
 ##   |                                                          |......                                            |  12%
 ##   ordinary text without R code
 ## 
@@ -589,7 +556,7 @@ elapsed_duration <- system.time({
 ```
 
 ```
-## /usr/bin/pandoc +RTS -K512m -RTS survey-response-1.utf8.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash+smart --output survey-response-1.html --email-obfuscation none --self-contained --standalone --section-divs --table-of-contents --toc-depth 3 --variable toc_float=1 --variable toc_selectors=h1,h2,h3 --variable toc_collapsed=1 --variable toc_smooth_scroll=1 --variable toc_print=1 --template /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --number-sections --variable 'theme:bootstrap' --include-in-header /tmp/RtmpJdvRXq/rmarkdown-strb046e8eac5a.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --lua-filter /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/lua/latex-div.lua
+## /usr/bin/pandoc +RTS -K512m -RTS survey-response-1.utf8.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash+smart --output survey-response-1.html --email-obfuscation none --self-contained --standalone --section-divs --table-of-contents --toc-depth 3 --variable toc_float=1 --variable toc_selectors=h1,h2,h3 --variable toc_collapsed=1 --variable toc_smooth_scroll=1 --variable toc_print=1 --template /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --number-sections --variable 'theme:bootstrap' --include-in-header /tmp/RtmpJdvRXq/rmarkdown-strb049fc1de2.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --lua-filter /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/lua/latex-div.lua
 ```
 
 ```
@@ -603,7 +570,7 @@ elapsed_duration <- system.time({
 
 ```
 ## 
-## Starting `survey-response-2.Rmd` at 2020-01-24 23:45:44.
+## Starting `survey-response-2.Rmd` at 2020-01-25 00:48:30.
 ```
 
 ```
@@ -647,32 +614,7 @@ elapsed_duration <- system.time({
 ## List of 2
 ##  $ echo   : symbol echo_chunks
 ##  $ message: symbol message_chunks
-```
-
-```
-## Loading required package: grid
-```
-
-```
-## Loading required package: Matrix
-```
-
-```
-## Loading required package: survival
-```
-
-```
 ## 
-## Attaching package: 'survey'
-```
-
-```
-## The following object is masked from 'package:graphics':
-## 
-##     dotchart
-```
-
-```
 ##   |                                                                                                  |.............                                                                             |  14%
 ##   ordinary text without R code
 ## 
@@ -977,7 +919,7 @@ elapsed_duration <- system.time({
 ```
 
 ```
-## /usr/bin/pandoc +RTS -K512m -RTS survey-response-2.utf8.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash+smart --output survey-response-2.html --email-obfuscation none --self-contained --standalone --section-divs --table-of-contents --toc-depth 3 --variable toc_float=1 --variable toc_selectors=h1,h2,h3 --variable toc_collapsed=1 --variable toc_smooth_scroll=1 --variable toc_print=1 --template /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --number-sections --variable 'theme:bootstrap' --include-in-header /tmp/RtmpJdvRXq/rmarkdown-strb04c4bcff8.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --lua-filter /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/lua/latex-div.lua
+## /usr/bin/pandoc +RTS -K512m -RTS survey-response-2.utf8.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash+smart --output survey-response-2.html --email-obfuscation none --self-contained --standalone --section-divs --table-of-contents --toc-depth 3 --variable toc_float=1 --variable toc_selectors=h1,h2,h3 --variable toc_collapsed=1 --variable toc_smooth_scroll=1 --variable toc_print=1 --template /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --number-sections --variable 'theme:bootstrap' --include-in-header /tmp/RtmpJdvRXq/rmarkdown-strb046d82310a.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --lua-filter /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/lua/latex-div.lua
 ```
 
 ```
@@ -994,8 +936,10 @@ message("Completed flow of `", basename(base::getwd()), "` at ", Sys.time(), "")
 ```
 
 ```
-## Completed flow of `usnavy-assignment-survey-1` at 2020-01-24 23:46:11
+## Completed flow of `usnavy-assignment-survey-1` at 2020-01-25 00:48:57
 ```
+
+<img src="figure/flow-Rmdrun-1.png" title="plot of chunk run" alt="plot of chunk run" style="display: block; margin: auto;" />
 
 ```r
 elapsed_duration
@@ -1003,7 +947,7 @@ elapsed_duration
 
 ```
 ##    user  system elapsed 
-##  97.247   8.712 111.979
+## 102.863   8.248 115.042
 ```
 
 ```r
@@ -1072,11 +1016,11 @@ sessionInfo()
 ## [58] kableExtra_1.1.0            compiler_3.6.2              rlang_0.4.2                
 ## [61] rstudioapi_0.10             labeling_0.3                rmarkdown_2.1              
 ## [64] testthat_2.3.1              gtable_0.3.0                DBI_1.1.0                  
-## [67] R6_2.4.1                    dplyr_0.8.3                 utf8_1.1.4                 
-## [70] zeallot_0.1.0               rprojroot_1.3-2             readr_1.3.1                
-## [73] desc_1.2.0                  stringi_1.4.5               Rcpp_1.0.3                 
-## [76] import_1.1.0                vctrs_0.2.1                 tidyselect_0.2.5           
-## [79] xfun_0.12
+## [67] markdown_1.1                R6_2.4.1                    dplyr_0.8.3                
+## [70] utf8_1.1.4                  zeallot_0.1.0               rprojroot_1.3-2            
+## [73] readr_1.3.1                 desc_1.2.0                  stringi_1.4.5              
+## [76] Rcpp_1.0.3                  import_1.1.0                vctrs_0.2.1                
+## [79] tidyselect_0.2.5            xfun_0.12
 ```
 
 ```r
@@ -1084,6 +1028,6 @@ Sys.time()
 ```
 
 ```
-## [1] "2020-01-24 23:46:11 CST"
+## [1] "2020-01-25 00:48:58 CST"
 ```
 

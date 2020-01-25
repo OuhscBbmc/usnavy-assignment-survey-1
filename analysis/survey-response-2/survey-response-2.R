@@ -1,4 +1,4 @@
-rm(list=ls(all=TRUE)) #Clear the memory of variables from previous run. This is not called by knitr, because it's above the first chunk.
+rm(list = ls(all.names = TRUE)) # Clear the memory of variables from previous run. This is not called by knitr, because it's above the first chunk.
 
 # ---- load-sources ------------------------------------------------------------
 #Load any source files that contain/define functions, but that don't load any other types of variables
@@ -6,11 +6,11 @@ rm(list=ls(all=TRUE)) #Clear the memory of variables from previous run. This is 
 # source("./SomethingSomething.R")
 
 # ---- load-packages -----------------------------------------------------------
-library(magrittr) #Pipes
 library(ggplot2) #For graphing
-library(survey)
+import::from("magrittr", "%>%")
 
 requireNamespace("dplyr")
+requireNamespace("survey")
 # requireNamespace("tidyr") #For converting wide to long
 # requireNamespace("RColorBrewer")
 # requireNamespace("scales") #For formating values in graphs
@@ -19,8 +19,8 @@ requireNamespace("TabularManifest") # devtools::install_github("Melinae/TabularM
 
 # ---- declare-globals ---------------------------------------------------------
 options(show.signif.stars=F) #Turn off the annotations on p-values
+config        <- config::get()
 
-path_input <- "data-public/derived/survey-response.rds"
 include_year_first     <- 2012L
 size_mean_diamond      <- 3
 
@@ -62,7 +62,7 @@ prettify_lm <- function( x ) {
 }
 
 # ---- load-data ---------------------------------------------------------------
-ds_everyone <- readr::read_rds(path_input) # 'ds' stands for 'datasets'
+ds_everyone <- readr::read_rds(config$path_survey_response_derived_rds) # 'ds' stands for 'datasets'
 
 # ---- tweak-data --------------------------------------------------------------
 ds_everyone <- ds_everyone %>%
@@ -124,7 +124,7 @@ ds %>%
 
 # ---- survey-response ----------------------------------------------------
 
-sd <- svydesign( # Stands for Survey Design
+sd <- survey::svydesign( # Stands for Survey Design
   weights   = ~survey_weight_specialty_type,         # Weighted by specialty
   variables = ~satisfaction_rank + specialty_type + billet_current,
   ids       = ~0,                                    # No clusters
@@ -137,7 +137,7 @@ cat("Overall unweighted mean satisfaction:")
 mean(ds$satisfaction_rank, na.rm=T)
 
 cat("Overall weighted mean satisfaction:")
-svymean(~satisfaction_rank, sd, na.rm=T)
+survey::svymean(~satisfaction_rank, sd, na.rm=T)
 
 
 cat("`specialty_type` unweighted mean satisfaction:")
@@ -149,7 +149,7 @@ ds %>%
   dplyr::ungroup()
 
 cat("`specialty_type` weighted mean satisfaction:")
-svyby(
+survey::svyby(
   formula = ~satisfaction_rank,
   by      = ~specialty_type,
   design  = sd,
@@ -168,14 +168,14 @@ ds %>%
   dplyr::ungroup()
 
 cat("`billet_current` weighted mean satisfaction:")
-svyby(
+survey::svyby(
   formula = ~satisfaction_rank,
   by      = ~billet_current,
   design  = sd,
   FUN     = svymean,
   na.rm   = TRUE
 ) %>%
-  tibble::as_tibble()
+tibble::as_tibble()
 
 ######## Outcome Relationships ##########################################################
 
