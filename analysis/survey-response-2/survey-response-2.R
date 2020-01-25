@@ -127,7 +127,7 @@ ds %>%
 # ds$finite_population_correction   <- .98
 sd <- survey::svydesign( # Stands for Survey Design
   weights   = ~survey_weight_specialty_type,        # Weighted by specialty
-  variables = ~satisfaction_rank + specialty_type + billet_current,
+  variables = ~satisfaction_rank + specialty_type + officer_rank + billet_current,
   fpc       = ~finite_population_correction,
   ids       = ~0,                                   # No clusters
   strata    = NULL,                                 # No strata
@@ -135,12 +135,15 @@ sd <- survey::svydesign( # Stands for Survey Design
   data      = ds[!is.na(ds$survey_weight_specialty_type), ]
 )
 
+
+### Overall
 cat("Overall unweighted mean satisfaction:")
 mean(ds$satisfaction_rank, na.rm=T)
 
 cat("Overall weighted mean satisfaction:")
 survey::svymean(~satisfaction_rank, sd, na.rm=T)
 
+### Specialty Type
 cat("`specialty_type` unweighted mean satisfaction:")
 ds %>%
   dplyr::group_by(specialty_type) %>%
@@ -159,7 +162,26 @@ survey::svyby(
 ) %>%
 tibble::as_tibble()
 
+### Rank
+cat("`officer_rank` unweighted mean satisfaction:")
+ds %>%
+  dplyr::group_by(officer_rank) %>%
+  dplyr::summarize(
+    satisfaction_rank   = mean(satisfaction_rank, na.rm=T)
+  ) %>%
+  dplyr::ungroup()
 
+cat("`officer_rank` weighted mean satisfaction:")
+survey::svyby(
+  formula = ~satisfaction_rank,
+  by      = ~officer_rank,
+  design  = sd,
+  FUN     = survey::svymean,
+  na.rm   = TRUE
+) %>%
+  tibble::as_tibble()
+
+### Billet Current
 cat("`billet_current` unweighted mean satisfaction:")
 ds %>%
   dplyr::group_by(billet_current) %>%
