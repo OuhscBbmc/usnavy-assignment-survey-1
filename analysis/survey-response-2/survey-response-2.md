@@ -55,19 +55,19 @@ Histograms
 
 Univariate
 -----------------------------------
-![](figure-png/marginals-1.png)<!-- -->![](figure-png/marginals-2.png)<!-- -->
+<img src="figure-png/marginals-1.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-2.png" style="display: block; margin: auto;" />
 
 ```
 Warning: Factor `iv` contains implicit NA, consider using `forcats::fct_explicit_na`
 ```
 
-![](figure-png/marginals-3.png)<!-- -->![](figure-png/marginals-4.png)<!-- -->![](figure-png/marginals-5.png)<!-- -->
+<img src="figure-png/marginals-3.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-4.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-5.png" style="display: block; margin: auto;" />
 
 ```
 Warning: Factor `iv` contains implicit NA, consider using `forcats::fct_explicit_na`
 ```
 
-![](figure-png/marginals-6.png)<!-- -->![](figure-png/marginals-7.png)<!-- -->![](figure-png/marginals-8.png)<!-- -->![](figure-png/marginals-9.png)<!-- -->![](figure-png/marginals-10.png)<!-- -->![](figure-png/marginals-11.png)<!-- -->![](figure-png/marginals-12.png)<!-- -->![](figure-png/marginals-13.png)<!-- -->
+<img src="figure-png/marginals-6.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-7.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-8.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-9.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-10.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-11.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-12.png" style="display: block; margin: auto;" /><img src="figure-png/marginals-13.png" style="display: block; margin: auto;" />
 
 ```
 Satisfaction summary
@@ -221,15 +221,49 @@ satisfaction_rank 3.4141 0.056
 
 Relationships between Outcomes
 ============================================
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:right;"> satisfaction rank </th>
+   <th style="text-align:right;"> transparency rank </th>
+   <th style="text-align:right;"> favoritism rank </th>
+   <th style="text-align:right;"> assignment current choice </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> satisfaction_rank </td>
+   <td style="text-align:right;"> 1.000 </td>
+   <td style="text-align:right;"> 0.771 </td>
+   <td style="text-align:right;"> 0.486 </td>
+   <td style="text-align:right;"> -0.519 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> transparency_rank </td>
+   <td style="text-align:right;"> 0.771 </td>
+   <td style="text-align:right;"> 1.000 </td>
+   <td style="text-align:right;"> 0.488 </td>
+   <td style="text-align:right;"> -0.405 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> favoritism_rank </td>
+   <td style="text-align:right;"> 0.486 </td>
+   <td style="text-align:right;"> 0.488 </td>
+   <td style="text-align:right;"> 1.000 </td>
+   <td style="text-align:right;"> -0.325 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> assignment_current_choice </td>
+   <td style="text-align:right;"> -0.519 </td>
+   <td style="text-align:right;"> -0.405 </td>
+   <td style="text-align:right;"> -0.325 </td>
+   <td style="text-align:right;"> 1.000 </td>
+  </tr>
+</tbody>
+</table>
 
-                             satisfaction rank   transparency rank   favoritism rank   assignment current choice
---------------------------  ------------------  ------------------  ----------------  --------------------------
-satisfaction_rank                        1.000               0.771             0.486                      -0.519
-transparency_rank                        0.771               1.000             0.488                      -0.405
-favoritism_rank                          0.486               0.488             1.000                      -0.325
-assignment_current_choice               -0.519              -0.405            -0.325                       1.000
-
-![](figure-png/outcome-correlations-1.png)<!-- -->![](figure-png/outcome-correlations-2.png)<!-- -->
+<img src="figure-png/outcome-correlations-1.png" style="display: block; margin: auto;" /><img src="figure-png/outcome-correlations-2.png" style="display: block; margin: auto;" />
 
 
 Analyses - 1 Predictor
@@ -239,7 +273,7 @@ By Rank
 -----------------------------------
 ### satisfaction_rank
 
-![](figure-png/by-rank-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-rank-1.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -318,7 +352,7 @@ By Specialty Type
 -----------------------------------
 ### satisfaction_rank
 
-![](figure-png/by-specialty-type-1.png)<!-- --><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ satisfaction_rank 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-specialty-type-1.png" style="display: block; margin: auto;" /><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ satisfaction_rank 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -404,7 +438,7 @@ By Bonus Pay
 -----------------------------------
 ### satisfaction_rank
 
-![](figure-png/by-bonus-pay-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + bonus_pay_cut4 </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-bonus-pay-1.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + bonus_pay_cut4 </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -483,7 +517,7 @@ By Assignment Current Choice
 -----------------------------------
 ### satisfaction_rank
 
-![](figure-png/by-assignment-current-choice-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + assignment_current_choice </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-assignment-current-choice-1.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + assignment_current_choice </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -549,15 +583,15 @@ By Manning Proportion
 -----------------------------------
 ### manning_proportion
 
-![](figure-png/by-manning_proportion-1.png)<!-- -->![](figure-png/by-manning_proportion-2.png)<!-- -->
+<img src="figure-png/by-manning_proportion-1.png" style="display: block; margin: auto;" /><img src="figure-png/by-manning_proportion-2.png" style="display: block; margin: auto;" />
 
 By Critical War
 -----------------------------------
-![](figure-png/by-critical_war-1.png)<!-- -->
+<img src="figure-png/by-critical_war-1.png" style="display: block; margin: auto;" />
 
 By Billet Current
 -----------------------------------
-![](figure-png/by-billet_current-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-billet_current-1.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -655,7 +689,7 @@ By Rank and Specialty Type
 -----------------------------------
 ### satisfaction_rank
 
-![](figure-png/by-rank-and-specialty-type-1.png)<!-- --><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f * specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-rank-and-specialty-type-1.png" style="display: block; margin: auto;" /><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f * specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -937,7 +971,7 @@ By Rank and Bonus Pay
 -----------------------------------
 ### satisfaction_rank
 
-![](figure-png/by-rank-and-bonus_pay-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f + bonus_pay </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-rank-and-bonus_pay-1.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f + bonus_pay </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -1131,7 +1165,7 @@ By Billet Current and Critical War
 -----------------------------------
 ### satisfaction_rank
 
-![](figure-png/by-billet_current-and-critical_war-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current + critical_war </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-billet_current-and-critical_war-1.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current + critical_war </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -1231,7 +1265,7 @@ By Bonus_pay and Manning_proportion
 -----------------------------------
 ### satisfaction_rank
 
-![](figure-png/by-bonus_pay-and-manning_proportion-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + manning_proportion_cut3 + bonus_pay_cut3 </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+<img src="figure-png/by-bonus_pay-and-manning_proportion-1.png" style="display: block; margin: auto;" /><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + manning_proportion_cut3 + bonus_pay_cut3 </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
    <th style="text-align:left;"> term </th>
@@ -1519,7 +1553,7 @@ Model 2: satisfaction_rank ~ 1 + billet_current * officer_rate
   Res.Df    RSS Df Sum of Sq      F Pr(>F)
 1    853 1373.5                           
 2    849 1365.3  4    8.2102 1.2763 0.2776
-![](figure-png/by-billet-and-rate-1.png)<!-- -->
+<img src="figure-png/by-billet-and-rate-1.png" style="display: block; margin: auto;" />
 
 Models to Publish
 ===================================
@@ -1648,7 +1682,7 @@ Model 2: satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type
   Res.Df    RSS Df Sum of Sq      F    Pr(>F)
 1    853 1373.5                              
 2    849 1340.8  4    32.789 5.1907 0.0003911
-![](figure-png/3-predictor-1.png)<!-- -->![](figure-png/3-predictor-2.png)<!-- -->![](figure-png/3-predictor-3.png)<!-- -->![](figure-png/3-predictor-4.png)<!-- -->
+<img src="figure-png/3-predictor-1.png" style="display: block; margin: auto;" /><img src="figure-png/3-predictor-2.png" style="display: block; margin: auto;" /><img src="figure-png/3-predictor-3.png" style="display: block; margin: auto;" /><img src="figure-png/3-predictor-4.png" style="display: block; margin: auto;" />
 
 3-predictor model wieght sampling weights
 -----------------------------------
@@ -1772,11 +1806,11 @@ Model 2: satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type
 
 Billet Intercepts
 -----------------------------------
-![](figure-png/billet-intercept-1.png)<!-- -->
+<img src="figure-png/billet-intercept-1.png" style="display: block; margin: auto;" />
 
 Specialty Intercepts
 -----------------------------------
-![](figure-png/specialty-intercept-1.png)<!-- -->
+<img src="figure-png/specialty-intercept-1.png" style="display: block; margin: auto;" />
 
 
 Nonsignificant Additions
@@ -1841,7 +1875,7 @@ For the sake of documentation and reproducibility, the current report was render
  version  R version 3.6.2 (2019-12-12)
  os       Ubuntu 19.10                
  system   x86_64, linux-gnu           
- ui       X11                         
+ ui       RStudio                     
  language (EN)                        
  collate  en_US.UTF-8                 
  ctype    en_US.UTF-8                 
@@ -1854,6 +1888,7 @@ For the sake of documentation and reproducibility, the current report was render
  backports         1.1.5       2019-10-02 [1] CRAN (R 3.6.2)                          
  broom             0.5.3       2019-12-14 [1] CRAN (R 3.6.2)                          
  callr             3.4.0       2019-12-09 [1] CRAN (R 3.6.2)                          
+ checkmate         1.9.4       2019-07-04 [1] CRAN (R 3.6.2)                          
  cli               2.0.1       2020-01-08 [1] CRAN (R 3.6.2)                          
  colorspace        1.4-1       2019-03-18 [1] CRAN (R 3.6.2)                          
  config            0.3         2018-03-27 [1] CRAN (R 3.6.2)                          
@@ -1885,11 +1920,14 @@ For the sake of documentation and reproducibility, the current report was render
  lazyeval          0.2.2       2019-03-15 [1] CRAN (R 3.6.2)                          
  lifecycle         0.1.0       2019-08-01 [1] CRAN (R 3.6.2)                          
  magrittr          1.5         2014-11-22 [1] CRAN (R 3.6.2)                          
+ markdown          1.1         2019-08-07 [1] CRAN (R 3.6.2)                          
  Matrix            1.2-18      2019-11-27 [4] CRAN (R 3.6.1)                          
  memoise           1.1.0       2017-04-21 [1] CRAN (R 3.6.2)                          
  mitools           2.4         2019-04-26 [1] CRAN (R 3.6.2)                          
  munsell           0.5.0       2018-06-12 [1] CRAN (R 3.6.2)                          
  nlme              3.1-143     2019-12-10 [1] CRAN (R 3.6.2)                          
+ OuhscMunge        0.1.9.9012  2020-01-13 [1] local                                   
+ packrat           0.5.0       2018-11-14 [1] CRAN (R 3.6.2)                          
  pillar            1.4.3       2019-12-20 [1] CRAN (R 3.6.2)                          
  pkgbuild          1.0.6       2019-10-09 [1] CRAN (R 3.6.2)                          
  pkgconfig         2.0.3       2019-09-22 [1] CRAN (R 3.6.2)                          
@@ -1905,6 +1943,7 @@ For the sake of documentation and reproducibility, the current report was render
  rlang             0.4.2       2019-11-23 [1] CRAN (R 3.6.2)                          
  rmarkdown         2.1         2020-01-20 [1] CRAN (R 3.6.2)                          
  rprojroot         1.3-2       2018-01-03 [1] CRAN (R 3.6.2)                          
+ rsconnect         0.8.16      2019-12-13 [1] CRAN (R 3.6.2)                          
  rstudioapi        0.10        2019-03-19 [1] CRAN (R 3.6.2)                          
  rvest             0.3.5       2019-11-08 [1] CRAN (R 3.6.2)                          
  scales            1.1.0       2019-11-18 [1] CRAN (R 3.6.2)                          
@@ -1914,6 +1953,7 @@ For the sake of documentation and reproducibility, the current report was render
  survey            3.37        2020-01-21 [1] CRAN (R 3.6.2)                          
  survival          3.1-8       2019-12-03 [1] CRAN (R 3.6.2)                          
  TabularManifest   0.1-16.9003 2019-12-15 [1] Github (Melinae/TabularManifest@4cbc21c)
+ testit            0.11.1      2020-01-09 [1] Github (yihui/testit@c1c19f8)           
  testthat          2.3.1       2019-12-01 [1] CRAN (R 3.6.2)                          
  tibble            2.1.3       2019-06-06 [1] CRAN (R 3.6.2)                          
  tidyr             1.0.0       2019-09-11 [1] CRAN (R 3.6.2)                          
@@ -1938,4 +1978,4 @@ For the sake of documentation and reproducibility, the current report was render
 
 
 
-Report rendered by wibeasley at 2020-01-25, 01:43 -0600 in 13 seconds.
+Report rendered by wibeasley at 2020-01-25, 01:50 -0600 in 12 seconds.

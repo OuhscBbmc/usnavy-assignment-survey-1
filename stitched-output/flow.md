@@ -16,20 +16,9 @@ rm(list = ls(all.names = TRUE)) # Clear the memory of variables from previous ru
 import::from("magrittr", "%>%")
 
 requireNamespace("purrr")
-```
-
-```
-## Loading required namespace: purrr
-```
-
-```r
 requireNamespace("rlang")
 # requireNamespace("checkmate")
 requireNamespace("OuhscMunge") # remotes::install_github("OuhscBbmc/OuhscMunge")
-```
-
-```
-## Loading required namespace: OuhscMunge
 ```
 
 ```r
@@ -113,7 +102,7 @@ message("Starting flow of `", basename(base::getwd()), "` at ", Sys.time(), ".")
 ```
 
 ```
-## Starting flow of `usnavy-assignment-survey-1` at 2020-01-25 01:31:17.
+## Starting flow of `usnavy-assignment-survey-1` at 2020-01-25 01:49:19.
 ```
 
 ```r
@@ -132,23 +121,7 @@ elapsed_duration <- system.time({
 
 ```
 ## 
-## Starting `specialty-manning-by-rank-ellis.R` at 2020-01-25 01:31:17.
-```
-
-```
-## Loading required namespace: readr
-```
-
-```
-## Loading required namespace: tidyr
-```
-
-```
-## Loading required namespace: testit
-```
-
-```
-## Loading required namespace: checkmate
+## Starting `specialty-manning-by-rank-ellis.R` at 2020-01-25 01:49:19.
 ```
 
 ```
@@ -157,7 +130,7 @@ elapsed_duration <- system.time({
 
 ```
 ## 
-## Starting `survey-ellis.R` at 2020-01-25 01:31:17.
+## Starting `survey-ellis.R` at 2020-01-25 01:49:19.
 ```
 
 ```
@@ -171,7 +144,7 @@ elapsed_duration <- system.time({
 
 ```
 ## 
-## Starting `survey-response-1.Rmd` at 2020-01-25 01:31:17.
+## Starting `survey-response-1.Rmd` at 2020-01-25 01:49:19.
 ```
 
 ```
@@ -181,90 +154,84 @@ elapsed_duration <- system.time({
 ```
 
 ```
-##   |                                                                                                  |                                                                                          |   0%  |                                                                                                  |.                                                                                         |   1%
+##   |                                                          |                                                  |   0%  |                                                          |.                                                 |   1%
 ##    inline R code fragments
 ## 
-##   |                                                                                                  |..                                                                                        |   3%
+##   |                                                          |.                                                 |   3%
 ## label: unnamed-chunk-2 (with options) 
 ## List of 2
 ##  $ echo   : symbol F
 ##  $ message: symbol F
 ## 
-##   |                                                                                                  |....                                                                                      |   4%
+##   |                                                          |..                                                |   4%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |.....                                                                                     |   5%
+##   |                                                          |...                                               |   5%
 ## label: set-options (with options) 
 ## List of 1
 ##  $ echo: symbol F
 ## 
-##   |                                                                                                  |......                                                                                    |   7%
+##   |                                                          |...                                               |   7%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |.......                                                                                   |   8%
+##   |                                                          |....                                              |   8%
 ## label: load-sources (with options) 
 ## List of 2
 ##  $ echo   : symbol echo_chunks
 ##  $ message: symbol message_chunks
 ## 
-##   |                                                                                                  |.........                                                                                 |  10%
+##   |                                                          |.....                                             |  10%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |..........                                                                                |  11%
+##   |                                                          |.....                                             |  11%
 ## label: load-packages (with options) 
 ## List of 2
 ##  $ echo   : symbol echo_chunks
 ##  $ message: symbol message_chunks
-```
-
-```
-## Loading required namespace: TabularManifest
-```
-
-```
-##   |                                                                                                  |...........                                                                               |  12%
+## 
+##   |                                                          |......                                            |  12%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |............                                                                              |  14%
+##   |                                                          |.......                                           |  14%
 ## label: declare-globals (with options) 
 ## List of 3
 ##  $ echo   : symbol echo_chunks
 ##  $ results: chr "show"
 ##  $ message: symbol message_chunks
 ## 
-##   |                                                                                                  |..............                                                                            |  15%
+##   |                                                          |........                                          |  15%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |...............                                                                           |  16%
+##   |                                                          |........                                          |  16%
 ## label: rmd-specific (with options) 
 ## List of 2
 ##  $ echo   : symbol echo_chunks
 ##  $ message: symbol message_chunks
 ## 
-##   |                                                                                                  |................                                                                          |  18%
+##   |                                                          |.........                                         |  18%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |.................                                                                         |  19%
+##   |                                                          |..........                                        |  19%
 ## label: load-data (with options) 
 ## List of 3
 ##  $ echo   : symbol echo_chunks
 ##  $ results: chr "show"
 ##  $ message: symbol message_chunks
 ## 
-##   |                                                                                                  |..................                                                                        |  21%
+##   |                                                          |..........                                        |  21%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |....................                                                                      |  22%
+##   |                                                          |...........                                       |  22%
 ## label: tweak-data (with options) 
 ## List of 3
 ##  $ echo   : symbol echo_chunks
 ##  $ results: chr "show"
 ##  $ message: symbol message_chunks
 ## 
-##   |                                                                                                  |.....................                                                                     |  23%
+##   |                                                          |............                                      |  23%
 ##    inline R code fragments
 ## 
-##   |                                                                                                  |......................                                                                    |  25%
+##   |                                                          |............                                      |  25%
 ## label: marginals (with options) 
 ## List of 2
 ##  $ echo   : symbol echo_chunks
@@ -272,10 +239,10 @@ elapsed_duration <- system.time({
 ```
 
 ```
-##   |                                                                                                  |.......................                                                                   |  26%
+##   |                                                          |.............                                     |  26%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |.........................                                                                 |  27%
+##   |                                                          |..............                                    |  27%
 ## label: freq-homestead_length_in_years-by-officer_rank (with options) 
 ## List of 2
 ##  $ echo   : symbol echo_chunks
@@ -283,10 +250,10 @@ elapsed_duration <- system.time({
 ```
 
 ```
-##   |                                                                                                  |..........................                                                                |  29%
+##   |                                                          |..............                                    |  29%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |...........................                                                               |  30%
+##   |                                                          |...............                                   |  30%
 ## label: freq-homestead_length_in_years-by-specialty_type (with options) 
 ## List of 2
 ##  $ echo   : symbol echo_chunks
@@ -294,10 +261,10 @@ elapsed_duration <- system.time({
 ```
 
 ```
-##   |                                                                                                  |............................                                                              |  32%
+##   |                                                          |................                                  |  32%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |..............................                                                            |  33%
+##   |                                                          |................                                  |  33%
 ## label: freq-homestead_problem-by-officer_rank (with options) 
 ## List of 2
 ##  $ echo   : symbol echo_chunks
@@ -305,10 +272,10 @@ elapsed_duration <- system.time({
 ```
 
 ```
-##   |                                                                                                  |...............................                                                           |  34%
+##   |                                                          |.................                                 |  34%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |................................                                                          |  36%
+##   |                                                          |..................                                |  36%
 ## label: freq-homestead_problem-by-specialty_type (with options) 
 ## List of 2
 ##  $ echo   : symbol echo_chunks
@@ -316,10 +283,10 @@ elapsed_duration <- system.time({
 ```
 
 ```
-##   |                                                                                                  |.................................                                                         |  37%
+##   |                                                          |..................                                |  37%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |...................................                                                       |  38%
+##   |                                                          |...................                               |  38%
 ## label: freq-assignment_priority-by-specialty_type (with options) 
 ## List of 3
 ##  $ echo   : symbol echo_chunks
@@ -328,10 +295,10 @@ elapsed_duration <- system.time({
 ```
 
 ```
-##   |                                                                                                  |....................................                                                      |  40%
+##   |                                                          |....................                              |  40%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |.....................................                                                     |  41%
+##   |                                                          |.....................                             |  41%
 ## label: freq-officer_rank_priority-by-officer_rank (with options) 
 ## List of 3
 ##  $ echo   : symbol echo_chunks
@@ -340,10 +307,10 @@ elapsed_duration <- system.time({
 ```
 
 ```
-##   |                                                                                                  |......................................                                                    |  42%
+##   |                                                          |.....................                             |  42%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |.......................................                                                   |  44%
+##   |                                                          |......................                            |  44%
 ## label: freq-homestead_length_in_years-by-officer_rank (with options) 
 ## List of 2
 ##  $ echo   : symbol echo_chunks
@@ -351,10 +318,10 @@ elapsed_duration <- system.time({
 ```
 
 ```
-##   |                                                                                                  |.........................................                                                 |  45%
+##   |                                                          |.......................                           |  45%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |..........................................                                                |  47%
+##   |                                                          |.......................                           |  47%
 ## label: outcome-correlations (with options) 
 ## List of 2
 ##  $ echo   : symbol echo_chunks
@@ -362,10 +329,10 @@ elapsed_duration <- system.time({
 ```
 
 ```
-##   |                                                                                                  |...........................................                                               |  48%
+##   |                                                          |........................                          |  48%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |............................................                                              |  49%
+##   |                                                          |.........................                         |  49%
 ## label: by-rank (with options) 
 ## List of 3
 ##  $ echo   : symbol echo_chunks
@@ -374,10 +341,10 @@ elapsed_duration <- system.time({
 ```
 
 ```
-##   |                                                                                                  |..............................................                                            |  51%
+##   |                                                          |.........................                         |  51%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |...............................................                                           |  52%
+##   |                                                          |..........................                        |  52%
 ## label: by-specialty-type (with options) 
 ## List of 3
 ##  $ echo   : symbol echo_chunks
@@ -386,10 +353,10 @@ elapsed_duration <- system.time({
 ```
 
 ```
-##   |                                                                                                  |................................................                                          |  53%
+##   |                                                          |...........................                       |  53%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |.................................................                                         |  55%
+##   |                                                          |...........................                       |  55%
 ## label: by-bonus-pay (with options) 
 ## List of 3
 ##  $ echo   : symbol echo_chunks
@@ -398,10 +365,10 @@ elapsed_duration <- system.time({
 ```
 
 ```
-##   |                                                                                                  |...................................................                                       |  56%
+##   |                                                          |............................                      |  56%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |....................................................                                      |  58%
+##   |                                                          |.............................                     |  58%
 ## label: by-assignment-current-choice (with options) 
 ## List of 3
 ##  $ echo   : symbol echo_chunks
@@ -410,10 +377,10 @@ elapsed_duration <- system.time({
 ```
 
 ```
-##   |                                                                                                  |.....................................................                                     |  59%
+##   |                                                          |.............................                     |  59%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |......................................................                                    |  60%
+##   |                                                          |..............................                    |  60%
 ## label: by-year (with options) 
 ## List of 3
 ##  $ echo   : symbol echo_chunks
@@ -422,10 +389,10 @@ elapsed_duration <- system.time({
 ```
 
 ```
-##   |                                                                                                  |.......................................................                                   |  62%
+##   |                                                          |...............................                   |  62%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |.........................................................                                 |  63%
+##   |                                                          |................................                  |  63%
 ## label: by-survey_lag (with options) 
 ## List of 3
 ##  $ echo   : symbol echo_chunks
@@ -434,10 +401,10 @@ elapsed_duration <- system.time({
 ```
 
 ```
-##   |                                                                                                  |..........................................................                                |  64%
+##   |                                                          |................................                  |  64%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |...........................................................                               |  66%
+##   |                                                          |.................................                 |  66%
 ## label: by-manning_proportion (with options) 
 ## List of 3
 ##  $ echo   : symbol echo_chunks
@@ -446,10 +413,10 @@ elapsed_duration <- system.time({
 ```
 
 ```
-##   |                                                                                                  |............................................................                              |  67%
+##   |                                                          |..................................                |  67%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |..............................................................                            |  68%
+##   |                                                          |..................................                |  68%
 ## label: by-critical_war (with options) 
 ## List of 3
 ##  $ echo   : symbol echo_chunks
@@ -458,10 +425,10 @@ elapsed_duration <- system.time({
 ```
 
 ```
-##   |                                                                                                  |...............................................................                           |  70%
+##   |                                                          |...................................               |  70%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |................................................................                          |  71%
+##   |                                                          |....................................              |  71%
 ## label: by-billet_current (with options) 
 ## List of 3
 ##  $ echo   : symbol echo_chunks
@@ -470,10 +437,10 @@ elapsed_duration <- system.time({
 ```
 
 ```
-##   |                                                                                                  |.................................................................                         |  73%
+##   |                                                          |....................................              |  73%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |...................................................................                       |  74%
+##   |                                                          |.....................................             |  74%
 ## label: by-geographic_preference (with options) 
 ## List of 3
 ##  $ echo   : symbol echo_chunks
@@ -482,10 +449,10 @@ elapsed_duration <- system.time({
 ```
 
 ```
-##   |                                                                                                  |....................................................................                      |  75%
+##   |                                                          |......................................            |  75%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |.....................................................................                     |  77%
+##   |                                                          |......................................            |  77%
 ## label: by-rank-and-specialty-type (with options) 
 ## List of 3
 ##  $ echo   : symbol echo_chunks
@@ -494,10 +461,10 @@ elapsed_duration <- system.time({
 ```
 
 ```
-##   |                                                                                                  |......................................................................                    |  78%
+##   |                                                          |.......................................           |  78%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |........................................................................                  |  79%
+##   |                                                          |........................................          |  79%
 ## label: by-rank-and-assignment-current-choice (with options) 
 ## List of 3
 ##  $ echo   : symbol echo_chunks
@@ -506,10 +473,10 @@ elapsed_duration <- system.time({
 ```
 
 ```
-##   |                                                                                                  |.........................................................................                 |  81%
+##   |                                                          |........................................          |  81%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |..........................................................................                |  82%
+##   |                                                          |.........................................         |  82%
 ## label: by-rank-and-bonus_pay (with options) 
 ## List of 3
 ##  $ echo   : symbol echo_chunks
@@ -518,10 +485,10 @@ elapsed_duration <- system.time({
 ```
 
 ```
-##   |                                                                                                  |...........................................................................               |  84%
+##   |                                                          |..........................................        |  84%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |............................................................................              |  85%
+##   |                                                          |..........................................        |  85%
 ## label: by-billet_current-and-critical_war (with options) 
 ## List of 3
 ##  $ echo   : symbol echo_chunks
@@ -530,10 +497,10 @@ elapsed_duration <- system.time({
 ```
 
 ```
-##   |                                                                                                  |..............................................................................            |  86%
+##   |                                                          |...........................................       |  86%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |...............................................................................           |  88%
+##   |                                                          |............................................      |  88%
 ## label: by-bonus_pay-and-manning_proportion (with options) 
 ## List of 3
 ##  $ echo   : symbol echo_chunks
@@ -542,20 +509,20 @@ elapsed_duration <- system.time({
 ```
 
 ```
-##   |                                                                                                  |................................................................................          |  89%
+##   |                                                          |.............................................     |  89%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |.................................................................................         |  90%
+##   |                                                          |.............................................     |  90%
 ## label: by-billet-and-rate (with options) 
 ## List of 3
 ##  $ echo   : symbol echo_chunks
 ##  $ message: symbol message_chunks
 ##  $ results: chr "asis"
 ## 
-##   |                                                                                                  |...................................................................................       |  92%
+##   |                                                          |..............................................    |  92%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |....................................................................................      |  93%
+##   |                                                          |...............................................   |  93%
 ## label: graph-equal-slopes (with options) 
 ## List of 3
 ##  $ echo   : symbol echo_chunks
@@ -564,23 +531,23 @@ elapsed_duration <- system.time({
 ```
 
 ```
-##   |                                                                                                  |.....................................................................................     |  95%
+##   |                                                          |...............................................   |  95%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |......................................................................................    |  96%
+##   |                                                          |................................................  |  96%
 ## label: session-info-3 (with options) 
 ## List of 1
 ##  $ echo: logi FALSE
 ## 
-##   |                                                                                                  |........................................................................................  |  97%
+##   |                                                          |................................................. |  97%
 ##   ordinary text without R code
 ## 
-##   |                                                                                                  |......................................................................................... |  99%
+##   |                                                          |................................................. |  99%
 ## label: session-duration (with options) 
 ## List of 1
 ##  $ echo: logi FALSE
 ## 
-##   |                                                                                                  |..........................................................................................| 100%
+##   |                                                          |..................................................| 100%
 ##    inline R code fragments
 ```
 
@@ -589,7 +556,7 @@ elapsed_duration <- system.time({
 ```
 
 ```
-## /usr/bin/pandoc +RTS -K512m -RTS survey-response-1.utf8.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash+smart --output survey-response-1.html --email-obfuscation none --self-contained --standalone --section-divs --table-of-contents --toc-depth 3 --variable toc_float=1 --variable toc_selectors=h1,h2,h3 --variable toc_collapsed=1 --variable toc_smooth_scroll=1 --variable toc_print=1 --template /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --number-sections --variable 'theme:bootstrap' --include-in-header /tmp/RtmpGNsUfL/rmarkdown-str257b71c6a332.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --lua-filter /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/lua/latex-div.lua
+## /usr/bin/pandoc +RTS -K512m -RTS survey-response-1.utf8.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash+smart --output survey-response-1.html --email-obfuscation none --self-contained --standalone --section-divs --table-of-contents --toc-depth 3 --variable toc_float=1 --variable toc_selectors=h1,h2,h3 --variable toc_collapsed=1 --variable toc_smooth_scroll=1 --variable toc_print=1 --template /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --number-sections --variable 'theme:bootstrap' --include-in-header /tmp/RtmpGNsUfL/rmarkdown-str257b5759f7de.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --lua-filter /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/lua/latex-div.lua
 ```
 
 ```
@@ -603,7 +570,7 @@ elapsed_duration <- system.time({
 
 ```
 ## 
-## Starting `survey-response-2.Rmd` at 2020-01-25 01:32:46.
+## Starting `survey-response-2.Rmd` at 2020-01-25 01:50:46.
 ```
 
 ```
@@ -647,13 +614,7 @@ elapsed_duration <- system.time({
 ## List of 2
 ##  $ echo   : symbol echo_chunks
 ##  $ message: symbol message_chunks
-```
-
-```
-## Loading required namespace: survey
-```
-
-```
+## 
 ##   |                                                                                                  |.............                                                                             |  14%
 ##   ordinary text without R code
 ## 
@@ -958,7 +919,7 @@ elapsed_duration <- system.time({
 ```
 
 ```
-## /usr/bin/pandoc +RTS -K512m -RTS survey-response-2.utf8.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash+smart --output survey-response-2.html --email-obfuscation none --self-contained --standalone --section-divs --table-of-contents --toc-depth 3 --variable toc_float=1 --variable toc_selectors=h1,h2,h3 --variable toc_collapsed=1 --variable toc_smooth_scroll=1 --variable toc_print=1 --template /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --number-sections --variable 'theme:bootstrap' --include-in-header /tmp/RtmpGNsUfL/rmarkdown-str257b6c41dade.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --lua-filter /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/lua/latex-div.lua
+## /usr/bin/pandoc +RTS -K512m -RTS survey-response-2.utf8.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash+smart --output survey-response-2.html --email-obfuscation none --self-contained --standalone --section-divs --table-of-contents --toc-depth 3 --variable toc_float=1 --variable toc_selectors=h1,h2,h3 --variable toc_collapsed=1 --variable toc_smooth_scroll=1 --variable toc_print=1 --template /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --number-sections --variable 'theme:bootstrap' --include-in-header /tmp/RtmpGNsUfL/rmarkdown-str257b7d324d2d.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --lua-filter /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/lua/latex-div.lua
 ```
 
 ```
@@ -975,8 +936,10 @@ message("Completed flow of `", basename(base::getwd()), "` at ", Sys.time(), "")
 ```
 
 ```
-## Completed flow of `usnavy-assignment-survey-1` at 2020-01-25 01:33:13
+## Completed flow of `usnavy-assignment-survey-1` at 2020-01-25 01:51:12
 ```
+
+<img src="figure/flow-Rmdrun-1.png" title="plot of chunk run" alt="plot of chunk run" style="display: block; margin: auto;" />
 
 ```r
 elapsed_duration
@@ -984,7 +947,7 @@ elapsed_duration
 
 ```
 ##    user  system elapsed 
-## 104.323   5.993 115.854
+## 100.657   6.289 112.729
 ```
 
 ```r
@@ -1048,17 +1011,18 @@ sessionInfo()
 ## [43] crayon_1.3.4                memoise_1.1.0               evaluate_0.14              
 ## [46] ps_1.3.0                    fs_1.3.1                    fansi_0.4.1                
 ## [49] TabularManifest_0.1-16.9003 nlme_3.1-143                xml2_1.2.2                 
-## [52] pkgbuild_1.0.6              tools_3.6.2                 prettyunits_1.1.0          
-## [55] mitools_2.4                 hms_0.5.3                   lifecycle_0.1.0            
-## [58] stringr_1.4.0               munsell_0.5.0               callr_3.4.0                
-## [61] packrat_0.5.0               kableExtra_1.1.0            compiler_3.6.2             
-## [64] rlang_0.4.2                 grid_3.6.2                  rstudioapi_0.10            
-## [67] labeling_0.3                rmarkdown_2.1               testthat_2.3.1             
-## [70] gtable_0.3.0                DBI_1.1.0                   R6_2.4.1                   
-## [73] dplyr_0.8.3                 utf8_1.1.4                  zeallot_0.1.0              
-## [76] rprojroot_1.3-2             readr_1.3.1                 desc_1.2.0                 
-## [79] stringi_1.4.5               Rcpp_1.0.3                  import_1.1.0               
-## [82] vctrs_0.2.1                 tidyselect_0.2.5            xfun_0.12
+## [52] pkgbuild_1.0.6              rsconnect_0.8.16            tools_3.6.2                
+## [55] prettyunits_1.1.0           mitools_2.4                 hms_0.5.3                  
+## [58] lifecycle_0.1.0             stringr_1.4.0               munsell_0.5.0              
+## [61] callr_3.4.0                 packrat_0.5.0               kableExtra_1.1.0           
+## [64] compiler_3.6.2              rlang_0.4.2                 grid_3.6.2                 
+## [67] rstudioapi_0.10             labeling_0.3                rmarkdown_2.1              
+## [70] testthat_2.3.1              gtable_0.3.0                DBI_1.1.0                  
+## [73] markdown_1.1                R6_2.4.1                    dplyr_0.8.3                
+## [76] utf8_1.1.4                  zeallot_0.1.0               rprojroot_1.3-2            
+## [79] readr_1.3.1                 desc_1.2.0                  stringi_1.4.5              
+## [82] Rcpp_1.0.3                  import_1.1.0                vctrs_0.2.1                
+## [85] tidyselect_0.2.5            xfun_0.12
 ```
 
 ```r
@@ -1066,6 +1030,6 @@ Sys.time()
 ```
 
 ```
-## [1] "2020-01-25 01:33:13 CST"
+## [1] "2020-01-25 01:51:12 CST"
 ```
 
