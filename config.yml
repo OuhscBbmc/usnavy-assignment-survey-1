@@ -3,6 +3,7 @@ default:
     path_survey_response_raw            : "data-public/raw/survey-response.csv"
     path_specialty_bonus_manning        : "data-public/raw/specialty-bonus-manning.csv"
     path_specialty_manning_raw          : "data-public/raw/specialty-manning-by-rank.csv"
+    path_officer_rate                   : "data-public/raw/officer-rate.csv"
 
     # Derived Rectangles (produced by Ellis lanes).
     path_specialty_manning_derived      : "data-public/derived/specialty-manning-by-rank.csv"

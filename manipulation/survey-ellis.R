@@ -9,6 +9,7 @@ rm(list = ls(all.names = TRUE)) # Clear the memory of variables from previous ru
 
 # ---- load-packages -----------------------------------------------------------
 # Attach these package(s) so their functions don't need to be qualified: http://r-pkgs.had.co.nz/namespace.html#search-path
+library(ggplot2)  # This is kinda cheating to be graphing inside an ellis
 import::from("magrittr", "%>%")
 
 # Verify these packages are available on the machine, but their functions need to be qualified: http://r-pkgs.had.co.nz/namespace.html#search-path
@@ -87,6 +88,13 @@ col_types_lu_manning  <- readr::cols_only(
   rate            = readr::col_integer(),
   count           = readr::col_integer()
 )
+
+# OuhscMunge::readr_spec_aligned(config$path_rate)
+col_types_rate <- readr::cols_only(
+  `officer_rate`                  = readr::col_integer(),
+  `officer_count_population_rate` = readr::col_integer()
+)
+
 # ---- load-data ---------------------------------------------------------------
 # Read the CSVs
 # readr::spec_csv(config$path_survey_response_raw)
@@ -94,7 +102,10 @@ col_types_lu_manning  <- readr::cols_only(
 ds              <- readr::read_csv(config$path_survey_response_raw        , col_types=col_types)
 ds_lu_specialty <- readr::read_csv(config$path_specialty_bonus_manning    , col_types=col_types_lu_specialty)
 ds_lu_manning   <- readr::read_csv(config$path_specialty_manning_derived  , col_types=col_types_lu_manning)
+ds_lu_rate_population      <- readr::read_csv(config$path_officer_rate               , col_types=col_types_rate)
+
 rm(col_types)
+rm(col_types_lu_specialty, col_types_rate, col_types_lu_manning)
 
 # ---- tweak-data --------------------------------------------------------------
 # OuhscMunge::column_rename_headstart(ds_lu_specialty) #Spit out columns to help write call ato `dplyr::rename()`.
@@ -203,6 +214,7 @@ ds <- ds %>%
       "Unknown"           = NA_integer_
     )
   ) %>%
+  # dplyr::left_join(ds_lu_rate, by = "officer_rate") %>%
   dplyr::mutate(
     datetime_submitted        = as.Date(datetime_submitted),
 
@@ -368,7 +380,7 @@ ds <- ds %>%
 #   dplyr::filter(is.na(critical_war)) %>%
 #   dplyr::count(primary_specialty)
 
-# ---- calculate-weights -------------------------------------------------------
+# ---- calculate-weights-specialty -------------------------------------------------------
 ds_specialty_type_population <-
   ds_lu_specialty %>%
   dplyr::group_by(specialty_type) %>%
@@ -381,7 +393,7 @@ ds_specialty_type_sample <-
   ds %>%
   dplyr::group_by(specialty_type) %>%
   dplyr::summarize(
-    officer_count_sample   = dplyr::n()
+    officer_count_sample_specialty   = dplyr::n()
   ) %>%
   dplyr::ungroup()
 
@@ -389,14 +401,15 @@ ds_specialty_type <-
   ds_specialty_type_population %>%
   dplyr::left_join(ds_specialty_type_sample, by="specialty_type") %>%
   dplyr::mutate(
-    survey_weight_specialty_type  = officer_count_population / officer_count_sample,
+    survey_weight_specialty_type  = officer_count_population / officer_count_sample_specialty,
     survey_weight_specialty_type  = dplyr::if_else(officer_count_population == 0L, NA_real_, survey_weight_specialty_type),
-    survey_weight_label           = sprintf("%4i of %4i", officer_count_sample, officer_count_population)
+    survey_weight_label           = sprintf("%4i of %4i", officer_count_sample_specialty, officer_count_population)
   ) #%>%
   # dplyr::select(
   #   specialty_type,
   #   survey_weight_specialty_type
   # )
+
 ds_specialty_type %>%
   tidyr::drop_na(specialty_type) %>%
   tidyr::drop_na(survey_weight_specialty_type) %>%
@@ -415,7 +428,49 @@ ds <-
   ds %>%
   dplyr::left_join(ds_specialty_type, by = "specialty_type") %>%
   dplyr::mutate(
-    finite_population_correction  = dplyr::n() / sum(ds_specialty_type_population$officer_count_population)
+    # fpc: finite_population_correction
+    fpc_specialty_type  = dplyr::n() / sum(ds_specialty_type_population$officer_count_population)
+  )
+
+# ---- calculate-weights-rate -------------------------------------------------------
+ds_rate_sample <-
+  ds %>%
+  dplyr::group_by(officer_rate) %>%
+  dplyr::summarize(
+    officer_count_sample_rate   = dplyr::n()
+  ) %>%
+  dplyr::ungroup()
+
+ds_lu_rate_population <-
+  ds_lu_rate_population %>%
+  dplyr::left_join(ds_rate_sample, by = "officer_rate") %>%
+  dplyr::mutate(
+    survey_weight_rate  = officer_count_population_rate / officer_count_sample_rate,
+    survey_weight_rate  = dplyr::if_else(officer_count_population_rate == 0L, NA_real_, survey_weight_rate),
+    survey_weight_label_rate           = sprintf("%4i of %4i", officer_count_sample_rate, officer_count_population_rate)
+  )
+
+ds_lu_rate_population %>%
+  tidyr::drop_na(officer_rate) %>%
+  tidyr::drop_na(survey_weight_rate) %>%
+  ggplot(aes(x=officer_rate, y=survey_weight_rate)) +
+  geom_bar(stat="identity", color=NA, fill="#99999955") +
+  geom_text(aes(y=.1, label=survey_weight_label_rate), hjust=0, family="mono") +
+  coord_flip(ylim = c(0, max(ds_lu_rate_population$survey_weight_rate, na.rm=T))) +
+  theme_minimal() +
+  theme(axis.ticks=element_blank()) +
+  theme(panel.grid.major.y = element_blank()) +
+  theme(panel.grid.minor.y = element_blank()) +
+  # theme(axis.ticks.length.y = element_blank()) +
+  labs(x="Officer Rate", y="Sampling Weight\n(a value of '5' means 1/5th responded)")
+
+
+ds <-
+  ds %>%
+  dplyr::left_join(ds_lu_rate_population, by = "officer_rate") %>%
+  dplyr::mutate(
+    # fpc: finite_population_correction
+    fpc_rate  = dplyr::n() / sum(ds_lu_rate_population$officer_count_population_rate)
   )
 
 # ---- verify-values -----------------------------------------------------------
@@ -459,11 +514,17 @@ checkmate::assert_factor(   ds$manning_proportion_cut3   , any.missing=F        
 
 checkmate::assert_integer(  ds$population_count           , any.missing=T , lower=0, upper=600)
 checkmate::assert_numeric(  ds$survey_weight_specialty_type  , any.missing=T , lower=1, upper=20)
+checkmate::assert_numeric(  ds$fpc_specialty_type         , any.missing=F , lower=0, upper=1)
 
-checkmate::assert_numeric(  ds$finite_population_correction, any.missing=F , lower=0, upper=1)
+# checkmate::assert_integer(  ds$officer_count_population_rate      , any.missing=T , lower=421, upper=1483                                    )
+# checkmate::assert_integer(  ds$officer_count_sample_rate          , any.missing=T , lower=127, upper=361                                     )
+checkmate::assert_numeric(  ds$survey_weight_rate                   , any.missing=T , lower=3, upper=6                                         )
+# checkmate::assert_character(ds$survey_weight_label_rate           , any.missing=T , pattern="^.{12,12}$"                                     )
+checkmate::assert_numeric(  ds$fpc_rate    , any.missing=F , lower=0, upper=1                                         )
 
-ds2 <- ds %>%
-  dplyr::filter(is.na(population_count))
+
+# ds2 <- ds %>%
+#   dplyr::filter(is.na(population_count))
 
 # ---- specify-columns-to-upload -----------------------------------------------
 # dput(colnames(ds)) # Print colnames for line below.
@@ -486,7 +547,9 @@ ds_slim <- ds %>%
     order_lead_time_preferred_cut3, order_lead_time_preferred_months,
     population_count,
     survey_weight_specialty_type,
-    finite_population_correction
+    fpc_specialty_type,
+    survey_weight_rate,
+    fpc_rate,
   )
 ds_slim
 

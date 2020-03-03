@@ -128,7 +128,7 @@ ds %>%
 sd <- survey::svydesign( # Stands for Survey Design
   weights   = ~survey_weight_specialty_type,        # Weighted by specialty
   variables = ~satisfaction_rank + specialty_type + officer_rank + billet_current,
-  fpc       = ~finite_population_correction,
+  fpc       = ~fpc_specialty_type,
   ids       = ~0,                                   # No clusters
   strata    = NULL,                                 # No strata
 
