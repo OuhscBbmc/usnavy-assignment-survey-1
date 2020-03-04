@@ -1,6 +1,6 @@
 ---
 title: Attitudes Regarding the Assignment Process Among Navy Medical Corps Officers
-date: "Date: 2020-03-03"
+date: "Date: 2020-03-04"
 output:
   html_document:
     keep_md: yes
@@ -122,8 +122,8 @@ Overall weighted mean satisfaction:
 ```
 
 ```
-                    mean     SE
-satisfaction_rank 3.5545 0.0421
+                    mean    SE
+satisfaction_rank 3.4141 0.056
 ```
 
 ```
@@ -147,15 +147,14 @@ satisfaction_rank 3.5545 0.0421
 ```
 
 ```
-# A tibble: 6 x 3
+# A tibble: 5 x 3
   specialty_type satisfaction_rank     se
   <fct>                      <dbl>  <dbl>
-1 nonsurgical                 3.91 0.0517
-2 surgical                    3.67 0.0921
-3 family                      3.27 0.0989
-4 operational                 2.58 0.135 
-5 resident                    3.52 0.168 
-6 unknown                     3.02 0.713 
+1 nonsurgical                 3.92 0.0509
+2 surgical                    3.68 0.0925
+3 family                      3.35 0.0963
+4 operational                 2.66 0.140 
+5 resident                    3.52 0.167 
 ```
 
 ```
@@ -178,13 +177,14 @@ satisfaction_rank 3.5545 0.0421
 ```
 
 ```
-# A tibble: 4 x 3
+# A tibble: 5 x 3
   officer_rank satisfaction_rank     se
   <fct>                    <dbl>  <dbl>
-1 LT                        3.14 0.0810
-2 LCDR                      3.59 0.0651
-3 CDR                       3.93 0.0726
-4 CAPT or Flag              4.13 0.102 
+1 LT                        2.93 0.103 
+2 LCDR                      3.50 0.0868
+3 CDR                       3.96 0.0771
+4 CAPT or Flag              4.02 0.151 
+5 Unknown                   1    0     
 ```
 
 ```
@@ -211,23 +211,57 @@ satisfaction_rank 3.5545 0.0421
 # A tibble: 6 x 3
   billet_current           satisfaction_rank     se
   <fct>                                <dbl>  <dbl>
-1 CONUS MTF                             3.80 0.0471
-2 Non-Operational/Clinical              3.60 0.193 
-3 OCONUS MTF                            3.33 0.126 
-4 CONUS Operational                     3.02 0.120 
-5 OCONUS Operational                    2.31 0.184 
-6 Other                                 4.06 0.421 
+1 CONUS MTF                             3.70 0.0625
+2 Non-Operational/Clinical              3.33 0.275 
+3 OCONUS MTF                            3.50 0.133 
+4 CONUS Operational                     2.94 0.145 
+5 OCONUS Operational                    2.16 0.231 
+6 Other                                 3.78 0.418 
 ```
 
 Relationships between Outcomes
 ============================================
-
-                             satisfaction rank   transparency rank   favoritism rank   assignment current choice
---------------------------  ------------------  ------------------  ----------------  --------------------------
-satisfaction_rank                        1.000               0.771             0.486                      -0.519
-transparency_rank                        0.771               1.000             0.488                      -0.405
-favoritism_rank                          0.486               0.488             1.000                      -0.325
-assignment_current_choice               -0.519              -0.405            -0.325                       1.000
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:right;"> satisfaction rank </th>
+   <th style="text-align:right;"> transparency rank </th>
+   <th style="text-align:right;"> favoritism rank </th>
+   <th style="text-align:right;"> assignment current choice </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> satisfaction_rank </td>
+   <td style="text-align:right;"> 1.000 </td>
+   <td style="text-align:right;"> 0.771 </td>
+   <td style="text-align:right;"> 0.486 </td>
+   <td style="text-align:right;"> -0.519 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> transparency_rank </td>
+   <td style="text-align:right;"> 0.771 </td>
+   <td style="text-align:right;"> 1.000 </td>
+   <td style="text-align:right;"> 0.488 </td>
+   <td style="text-align:right;"> -0.405 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> favoritism_rank </td>
+   <td style="text-align:right;"> 0.486 </td>
+   <td style="text-align:right;"> 0.488 </td>
+   <td style="text-align:right;"> 1.000 </td>
+   <td style="text-align:right;"> -0.325 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> assignment_current_choice </td>
+   <td style="text-align:right;"> -0.519 </td>
+   <td style="text-align:right;"> -0.405 </td>
+   <td style="text-align:right;"> -0.325 </td>
+   <td style="text-align:right;"> 1.000 </td>
+  </tr>
+</tbody>
+</table>
 
 ![](figure-png/outcome-correlations-1.png)<!-- -->![](figure-png/outcome-correlations-2.png)<!-- -->
 
@@ -1665,73 +1699,73 @@ Model 2: satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type
 <tbody>
   <tr>
    <td style="text-align:left;"> (Intercept) </td>
-   <td style="text-align:right;"> 2.8363259 </td>
-   <td style="text-align:right;"> 0.2107547 </td>
-   <td style="text-align:right;"> 13.4579486 </td>
+   <td style="text-align:right;"> 2.5672108 </td>
+   <td style="text-align:right;"> 0.2427369 </td>
+   <td style="text-align:right;"> 10.5761050 </td>
    <td style="text-align:right;"> 0.0000000 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentNon-Operational/Clinical </td>
-   <td style="text-align:right;"> -0.4076622 </td>
-   <td style="text-align:right;"> 0.2108012 </td>
-   <td style="text-align:right;"> -1.9338703 </td>
-   <td style="text-align:right;"> 0.0534612 </td>
+   <td style="text-align:right;"> -0.4852311 </td>
+   <td style="text-align:right;"> 0.2196834 </td>
+   <td style="text-align:right;"> -2.2087744 </td>
+   <td style="text-align:right;"> 0.0274568 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentOCONUS MTF </td>
-   <td style="text-align:right;"> -0.4427515 </td>
-   <td style="text-align:right;"> 0.1404970 </td>
-   <td style="text-align:right;"> -3.1513238 </td>
-   <td style="text-align:right;"> 0.0016823 </td>
+   <td style="text-align:right;"> -0.2645507 </td>
+   <td style="text-align:right;"> 0.1663384 </td>
+   <td style="text-align:right;"> -1.5904370 </td>
+   <td style="text-align:right;"> 0.1121086 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentCONUS Operational </td>
-   <td style="text-align:right;"> -0.3101480 </td>
-   <td style="text-align:right;"> 0.1554279 </td>
-   <td style="text-align:right;"> -1.9954460 </td>
-   <td style="text-align:right;"> 0.0463134 </td>
+   <td style="text-align:right;"> -0.2267988 </td>
+   <td style="text-align:right;"> 0.1489326 </td>
+   <td style="text-align:right;"> -1.5228285 </td>
+   <td style="text-align:right;"> 0.1281740 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> billet_currentOCONUS Operational </td>
-   <td style="text-align:right;"> -1.1359854 </td>
-   <td style="text-align:right;"> 0.2083202 </td>
-   <td style="text-align:right;"> -5.4530746 </td>
-   <td style="text-align:right;"> 0.0000001 </td>
+   <td style="text-align:right;"> -1.0832312 </td>
+   <td style="text-align:right;"> 0.2116975 </td>
+   <td style="text-align:right;"> -5.1168828 </td>
+   <td style="text-align:right;"> 0.0000004 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> officer_rate </td>
-   <td style="text-align:right;"> 0.2786306 </td>
-   <td style="text-align:right;"> 0.0482187 </td>
-   <td style="text-align:right;"> 5.7784789 </td>
+   <td style="text-align:right;"> 0.3307020 </td>
+   <td style="text-align:right;"> 0.0525848 </td>
+   <td style="text-align:right;"> 6.2889212 </td>
    <td style="text-align:right;"> 0.0000000 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> specialty_typesurgical </td>
-   <td style="text-align:right;"> -0.2762552 </td>
-   <td style="text-align:right;"> 0.1249852 </td>
-   <td style="text-align:right;"> -2.2103038 </td>
-   <td style="text-align:right;"> 0.0273501 </td>
+   <td style="text-align:right;"> -0.2780756 </td>
+   <td style="text-align:right;"> 0.1284607 </td>
+   <td style="text-align:right;"> -2.1646746 </td>
+   <td style="text-align:right;"> 0.0306907 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> specialty_typefamily </td>
-   <td style="text-align:right;"> -0.4521841 </td>
-   <td style="text-align:right;"> 0.1189442 </td>
-   <td style="text-align:right;"> -3.8016503 </td>
-   <td style="text-align:right;"> 0.0001540 </td>
+   <td style="text-align:right;"> -0.4330843 </td>
+   <td style="text-align:right;"> 0.1660709 </td>
+   <td style="text-align:right;"> -2.6078272 </td>
+   <td style="text-align:right;"> 0.0092719 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> specialty_typeoperational </td>
-   <td style="text-align:right;"> -0.7888126 </td>
-   <td style="text-align:right;"> 0.1768492 </td>
-   <td style="text-align:right;"> -4.4603696 </td>
-   <td style="text-align:right;"> 0.0000093 </td>
+   <td style="text-align:right;"> -0.7198543 </td>
+   <td style="text-align:right;"> 0.1616156 </td>
+   <td style="text-align:right;"> -4.4541130 </td>
+   <td style="text-align:right;"> 0.0000096 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> specialty_typeresident </td>
-   <td style="text-align:right;"> -0.2033391 </td>
-   <td style="text-align:right;"> 0.2137834 </td>
-   <td style="text-align:right;"> -0.9511454 </td>
-   <td style="text-align:right;"> 0.3418013 </td>
+   <td style="text-align:right;"> -0.1449924 </td>
+   <td style="text-align:right;"> 0.1527102 </td>
+   <td style="text-align:right;"> -0.9494615 </td>
+   <td style="text-align:right;"> 0.3426561 </td>
   </tr>
 </tbody>
 </table>
@@ -1754,16 +1788,16 @@ Model 2: satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:right;"> 0.171627 </td>
-   <td style="text-align:right;"> 0.1628456 </td>
-   <td style="text-align:right;"> 2.447635 </td>
-   <td style="text-align:right;"> 19.54451 </td>
+   <td style="text-align:right;"> 0.1853017 </td>
+   <td style="text-align:right;"> 0.1766653 </td>
+   <td style="text-align:right;"> 2.545062 </td>
+   <td style="text-align:right;"> 21.45595 </td>
    <td style="text-align:right;"> 0 </td>
    <td style="text-align:right;"> 10 </td>
-   <td style="text-align:right;"> -1420.483 </td>
-   <td style="text-align:right;"> 2862.966 </td>
-   <td style="text-align:right;"> 2915.279 </td>
-   <td style="text-align:right;"> 5086.29 </td>
+   <td style="text-align:right;"> -1528.984 </td>
+   <td style="text-align:right;"> 3079.968 </td>
+   <td style="text-align:right;"> 3132.282 </td>
+   <td style="text-align:right;"> 5499.261 </td>
    <td style="text-align:right;"> 849 </td>
   </tr>
 </tbody>
@@ -1841,12 +1875,12 @@ For the sake of documentation and reproducibility, the current report was render
  version  R version 3.6.3 (2020-02-29)
  os       Ubuntu 19.10                
  system   x86_64, linux-gnu           
- ui       X11                         
+ ui       RStudio                     
  language (EN)                        
  collate  en_US.UTF-8                 
  ctype    en_US.UTF-8                 
  tz       America/Chicago             
- date     2020-03-03                  
+ date     2020-03-04                  
 
 ─ Packages ───────────────────────────────────────────────────────────────────────────────────────
  package         * version     date       lib source                                  
@@ -1854,6 +1888,7 @@ For the sake of documentation and reproducibility, the current report was render
  backports         1.1.5       2019-10-02 [1] CRAN (R 3.6.2)                          
  broom             0.5.5       2020-02-29 [1] CRAN (R 3.6.3)                          
  callr             3.4.2       2020-02-12 [1] CRAN (R 3.6.2)                          
+ checkmate         2.0.0       2020-02-06 [1] CRAN (R 3.6.2)                          
  cli               2.0.2       2020-02-28 [1] CRAN (R 3.6.3)                          
  colorspace        1.4-1       2019-03-18 [1] CRAN (R 3.6.2)                          
  config            0.3         2018-03-27 [1] CRAN (R 3.6.2)                          
@@ -1890,6 +1925,8 @@ For the sake of documentation and reproducibility, the current report was render
  mitools           2.4         2019-04-26 [1] CRAN (R 3.6.2)                          
  munsell           0.5.0       2018-06-12 [1] CRAN (R 3.6.2)                          
  nlme              3.1-144     2020-02-06 [1] CRAN (R 3.6.2)                          
+ OuhscMunge        0.1.9.9012  2020-01-13 [1] local                                   
+ packrat           0.5.0       2018-11-14 [1] CRAN (R 3.6.2)                          
  pillar            1.4.3       2019-12-20 [1] CRAN (R 3.6.2)                          
  pkgbuild          1.0.6       2019-10-09 [1] CRAN (R 3.6.2)                          
  pkgconfig         2.0.3       2019-09-22 [1] CRAN (R 3.6.2)                          
@@ -1905,6 +1942,7 @@ For the sake of documentation and reproducibility, the current report was render
  rlang             0.4.5       2020-03-01 [1] CRAN (R 3.6.3)                          
  rmarkdown         2.1         2020-01-20 [1] CRAN (R 3.6.2)                          
  rprojroot         1.3-2       2018-01-03 [1] CRAN (R 3.6.2)                          
+ rsconnect         0.8.16      2019-12-13 [1] CRAN (R 3.6.2)                          
  rstudioapi        0.11        2020-02-07 [1] CRAN (R 3.6.2)                          
  rvest             0.3.5       2019-11-08 [1] CRAN (R 3.6.2)                          
  scales            1.1.0       2019-11-18 [1] CRAN (R 3.6.2)                          
@@ -1914,6 +1952,7 @@ For the sake of documentation and reproducibility, the current report was render
  survey            3.37        2020-01-21 [1] CRAN (R 3.6.2)                          
  survival          3.1-8       2019-12-03 [1] CRAN (R 3.6.2)                          
  TabularManifest   0.1-16.9003 2019-12-15 [1] Github (Melinae/TabularManifest@4cbc21c)
+ testit            0.11.1      2020-01-09 [1] Github (yihui/testit@c1c19f8)           
  testthat          2.3.2       2020-03-02 [1] CRAN (R 3.6.3)                          
  tibble            2.1.3       2019-06-06 [1] CRAN (R 3.6.2)                          
  tidyr             1.0.2       2020-01-24 [1] CRAN (R 3.6.2)                          
@@ -1937,4 +1976,4 @@ For the sake of documentation and reproducibility, the current report was render
 
 
 
-Report rendered by wibeasley at 2020-03-03, 23:58 -0600 in 14 seconds.
+Report rendered by wibeasley at 2020-03-04, 00:20 -0600 in 11 seconds.

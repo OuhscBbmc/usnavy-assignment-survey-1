@@ -126,15 +126,15 @@ ds %>%
 # ---- survey-response ----------------------------------------------------
 # ds$finite_population_correction   <- .98
 sd <- survey::svydesign( # Stands for Survey Design
-  # weights   = ~survey_weight_specialty_type,        # Weighted by specialty
-  weights   = ~survey_weight_rate,        # Weighted by rate
+  weights   = ~survey_weight_specialty_type,        # Weighted by specialty
+  # weights   = ~survey_weight_rate,        # Weighted by rate
   variables = ~satisfaction_rank + specialty_type + officer_rank + billet_current,
   fpc       = ~fpc_specialty_type,
   ids       = ~0,                                   # No clusters
   strata    = NULL,                                 # No strata
 
-  # data      = ds[!is.na(ds$survey_weight_specialty_type), ]
-  data      = ds[!is.na(ds$survey_weight_rate), ]
+  data      = ds[!is.na(ds$survey_weight_specialty_type), ]
+  # data      = ds[!is.na(ds$survey_weight_rate), ]
 )
 
 
@@ -543,8 +543,8 @@ plot(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, 
 
 # ---- 3-predictor-with-weights --------------------------------------------------------------
 
-# prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data=ds_no_other_or_unknown, weights = survey_weight_specialty_type))
-prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data=ds_no_other_or_unknown, weights = survey_weight_rate))
+prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data=ds_no_other_or_unknown, weights = survey_weight_specialty_type))
+# prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data=ds_no_other_or_unknown, weights = survey_weight_rate))
 
 # ---- billet-intercept ------------------------------------------------------
 palette_billet <- c(
