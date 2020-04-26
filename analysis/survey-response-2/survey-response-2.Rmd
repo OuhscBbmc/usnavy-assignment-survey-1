@@ -11,6 +11,15 @@ output:
 
 This report covers the survey about attitudes collected by Richard Childers, MD and Joel Schofer, MD.
 
+
+Overall satisfaction was treated as a continuous response variable in a multiple regression.  The best fitting model included the three predictor variables of (a) specialty type, (b) officer rank, and (c) billet category, and no interaction terms.  Additional variables such as (d) bonus pay, (e) deployment rate, and (f) staffing status did not improve the model fit significantly, and therefore were removed.
+
+Among the five levels in billet category, CONUS MTF had the highest values of satisfaction, and served as the reference group.  The CONUS Operational, OCONUS MTF, and Non-operational/non-clinical types were roughly .4 units less satisfied than CONUS MTF (after holding the other two predictors constant).  Similarly, physicians currently assigned to OCONUS operational were 1.1 units less satisfied than CONUS MTF.
+
+Among the five levels in specialty type, the non-surgical physicians were most satisfied, and served as the reference group.  Residents were .2 units less satisfied, which was not significantly different.  However, the difference was significant between the nonsurgical type and the surgical (.3 units), family practice (.4 units) and operational (.7 units) types.
+
+Officer rank was a continuous variable and had a significant positive slope: satisfaction increased with seniority.  Note that this does not necessarily mean an officer is expected to grow more satisfied as seniority increases; an alternate explanation is that less-satisfied officers leave the Navy while the more-satisfied officer remain and are promoted.  Longitudinal studies are needed to evaluate these competing explanations.
+
 <!--  Set the working directory to the repository's base directory; this assumes the report is nested inside of two directories.-->
 ```{r, echo=F, message=F} 
 # cat("Working directory: ", getwd())
@@ -26,7 +35,7 @@ opts_chunk$set(
   results      = 'show', 
   comment      = NA, 
   tidy         = FALSE,
-  # dpi        = 400,
+  # dpi        = 1200,
   # out.width  = "650px", #This affects only the markdown, not the underlying png file.  The height will be scaled appropriately.
   fig.width    = 7, 
   fig.height   = 4, 

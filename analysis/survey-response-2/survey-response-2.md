@@ -1,6 +1,6 @@
 ---
 title: Attitudes Regarding the Assignment Process Among Navy Medical Corps Officers
-date: "Date: 2020-03-04"
+date: "Date: 2020-04-26"
 output:
   html_document:
     keep_md: yes
@@ -10,6 +10,15 @@ output:
 ---
 
 This report covers the survey about attitudes collected by Richard Childers, MD and Joel Schofer, MD.
+
+
+Overall satisfaction was treated as a continuous response variable in a multiple regression.  The best fitting model included the three predictor variables of (a) specialty type, (b) officer rank, and (c) billet category, and no interaction terms.  Additional variables such as (d) bonus pay, (e) deployment rate, and (f) staffing status did not improve the model fit significantly, and therefore were removed.
+
+Among the five levels in billet category, CONUS MTF had the highest values of satisfaction, and served as the reference group.  The CONUS Operational, OCONUS MTF, and Non-operational/non-clinical types were roughly .4 units less satisfied than CONUS MTF (after holding the other two predictors constant).  Similarly, physicians currently assigned to OCONUS operational were 1.1 units less satisfied than CONUS MTF.
+
+Among the five levels in specialty type, the non-surgical physicians were most satisfied, and served as the reference group.  Residents were .2 units less satisfied, which was not significantly different.  However, the difference was significant between the nonsurgical type and the surgical (.3 units), family practice (.4 units) and operational (.7 units) types.
+
+Officer rank was a continuous variable and had a significant positive slope: satisfaction increased with seniority.  Note that this does not necessarily mean an officer is expected to grow more satisfied as seniority increases; an alternate explanation is that less-satisfied officers leave the Navy while the more-satisfied officer remain and are promoted.  Longitudinal studies are needed to evaluate these competing explanations.
 
 <!--  Set the working directory to the repository's base directory; this assumes the report is nested inside of two directories.-->
 
@@ -221,47 +230,13 @@ satisfaction_rank 3.4141 0.056
 
 Relationships between Outcomes
 ============================================
-<table>
- <thead>
-  <tr>
-   <th style="text-align:left;">   </th>
-   <th style="text-align:right;"> satisfaction rank </th>
-   <th style="text-align:right;"> transparency rank </th>
-   <th style="text-align:right;"> favoritism rank </th>
-   <th style="text-align:right;"> assignment current choice </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> satisfaction_rank </td>
-   <td style="text-align:right;"> 1.000 </td>
-   <td style="text-align:right;"> 0.771 </td>
-   <td style="text-align:right;"> 0.486 </td>
-   <td style="text-align:right;"> -0.519 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> transparency_rank </td>
-   <td style="text-align:right;"> 0.771 </td>
-   <td style="text-align:right;"> 1.000 </td>
-   <td style="text-align:right;"> 0.488 </td>
-   <td style="text-align:right;"> -0.405 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> favoritism_rank </td>
-   <td style="text-align:right;"> 0.486 </td>
-   <td style="text-align:right;"> 0.488 </td>
-   <td style="text-align:right;"> 1.000 </td>
-   <td style="text-align:right;"> -0.325 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> assignment_current_choice </td>
-   <td style="text-align:right;"> -0.519 </td>
-   <td style="text-align:right;"> -0.405 </td>
-   <td style="text-align:right;"> -0.325 </td>
-   <td style="text-align:right;"> 1.000 </td>
-  </tr>
-</tbody>
-</table>
+
+                             satisfaction rank   transparency rank   favoritism rank   assignment current choice
+--------------------------  ------------------  ------------------  ----------------  --------------------------
+satisfaction_rank                        1.000               0.771             0.486                      -0.519
+transparency_rank                        0.771               1.000             0.488                      -0.405
+favoritism_rank                          0.486               0.488             1.000                      -0.325
+assignment_current_choice               -0.519              -0.405            -0.325                       1.000
 
 ![](figure-png/outcome-correlations-1.png)<!-- -->![](figure-png/outcome-correlations-2.png)<!-- -->
 
@@ -272,6 +247,10 @@ Analyses - 1 Predictor
 By Rank
 -----------------------------------
 ### satisfaction_rank
+
+```
+Warning: `fun.y` is deprecated. Use `fun` instead.
+```
 
 ![](figure-png/by-rank-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
@@ -351,6 +330,10 @@ By Rank
 By Specialty Type
 -----------------------------------
 ### satisfaction_rank
+
+```
+Warning: `fun.y` is deprecated. Use `fun` instead.
+```
 
 ![](figure-png/by-specialty-type-1.png)<!-- --><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ satisfaction_rank 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
@@ -437,6 +420,10 @@ By Specialty Type
 By Bonus Pay
 -----------------------------------
 ### satisfaction_rank
+
+```
+Warning: `fun.y` is deprecated. Use `fun` instead.
+```
 
 ![](figure-png/by-bonus-pay-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + bonus_pay_cut4 </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
@@ -583,14 +570,30 @@ By Manning Proportion
 -----------------------------------
 ### manning_proportion
 
-![](figure-png/by-manning_proportion-1.png)<!-- -->![](figure-png/by-manning_proportion-2.png)<!-- -->
+![](figure-png/by-manning_proportion-1.png)<!-- -->
+
+```
+Warning: `fun.y` is deprecated. Use `fun` instead.
+```
+
+![](figure-png/by-manning_proportion-2.png)<!-- -->
 
 By Critical War
 -----------------------------------
+
+```
+Warning: `fun.y` is deprecated. Use `fun` instead.
+```
+
 ![](figure-png/by-critical_war-1.png)<!-- -->
 
 By Billet Current
 -----------------------------------
+
+```
+Warning: `fun.y` is deprecated. Use `fun` instead.
+```
+
 ![](figure-png/by-billet_current-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
@@ -688,6 +691,10 @@ Analyses - 2 Predictors
 By Rank and Specialty Type
 -----------------------------------
 ### satisfaction_rank
+
+```
+Warning: `fun.y` is deprecated. Use `fun` instead.
+```
 
 ![](figure-png/by-rank-and-specialty-type-1.png)<!-- --><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f * specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
@@ -1165,6 +1172,10 @@ By Billet Current and Critical War
 -----------------------------------
 ### satisfaction_rank
 
+```
+Warning: `fun.y` is deprecated. Use `fun` instead.
+```
+
 ![](figure-png/by-billet_current-and-critical_war-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current + critical_war </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
@@ -1264,6 +1275,10 @@ By Billet Current and Critical War
 By Bonus_pay and Manning_proportion
 -----------------------------------
 ### satisfaction_rank
+
+```
+Warning: `fun.y` is deprecated. Use `fun` instead.
+```
 
 ![](figure-png/by-bonus_pay-and-manning_proportion-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + manning_proportion_cut3 + bonus_pay_cut3 </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
@@ -1870,110 +1885,103 @@ For the sake of documentation and reproducibility, the current report was render
   <summary>Environment <span class="glyphicon glyphicon-plus-sign"></span></summary>
 
 ```
-─ Session info ───────────────────────────────────────────────────────────────────────────────────
- setting  value                       
- version  R version 3.6.3 (2020-02-29)
- os       Ubuntu 19.10                
- system   x86_64, linux-gnu           
- ui       RStudio                     
- language (EN)                        
- collate  en_US.UTF-8                 
- ctype    en_US.UTF-8                 
- tz       America/Chicago             
- date     2020-03-04                  
+- Session info -----------------------------------------------------------------------------------
+ setting  value                                      
+ version  R version 3.6.3 Patched (2020-02-29 r77888)
+ os       Windows 10 x64                             
+ system   x86_64, mingw32                            
+ ui       RTerm                                      
+ language (EN)                                       
+ collate  English_United States.1252                 
+ ctype    English_United States.1252                 
+ tz       America/Chicago                            
+ date     2020-04-26                                 
 
-─ Packages ───────────────────────────────────────────────────────────────────────────────────────
+- Packages ---------------------------------------------------------------------------------------
  package         * version     date       lib source                                  
- assertthat        0.2.1       2019-03-21 [1] CRAN (R 3.6.2)                          
- backports         1.1.5       2019-10-02 [1] CRAN (R 3.6.2)                          
- broom             0.5.5       2020-02-29 [1] CRAN (R 3.6.3)                          
- callr             3.4.2       2020-02-12 [1] CRAN (R 3.6.2)                          
- checkmate         2.0.0       2020-02-06 [1] CRAN (R 3.6.2)                          
+ assertthat        0.2.1       2019-03-21 [1] CRAN (R 3.6.0)                          
+ backports         1.1.6       2020-04-05 [1] CRAN (R 3.6.3)                          
+ broom             0.5.6       2020-04-20 [1] CRAN (R 3.6.3)                          
+ callr             3.4.3       2020-03-28 [1] CRAN (R 3.6.3)                          
  cli               2.0.2       2020-02-28 [1] CRAN (R 3.6.3)                          
- colorspace        1.4-1       2019-03-18 [1] CRAN (R 3.6.2)                          
- config            0.3         2018-03-27 [1] CRAN (R 3.6.2)                          
- corrplot          0.84        2017-10-16 [1] CRAN (R 3.6.2)                          
- crayon            1.3.4       2017-09-16 [1] CRAN (R 3.6.2)                          
+ colorspace        1.4-1       2019-03-18 [1] CRAN (R 3.6.0)                          
+ config            0.3         2018-03-27 [1] CRAN (R 3.6.0)                          
+ corrplot          0.84        2017-10-16 [1] CRAN (R 3.6.0)                          
+ crayon            1.3.4       2017-09-16 [1] CRAN (R 3.6.0)                          
  DBI               1.1.0       2019-12-15 [1] CRAN (R 3.6.2)                          
- desc              1.2.0       2018-05-01 [1] CRAN (R 3.6.2)                          
- devtools          2.2.2       2020-02-17 [1] CRAN (R 3.6.2)                          
- digest            0.6.25      2020-02-23 [1] CRAN (R 3.6.2)                          
- dplyr             0.8.4       2020-01-31 [1] CRAN (R 3.6.2)                          
- ellipsis          0.3.0       2019-09-20 [1] CRAN (R 3.6.2)                          
- evaluate          0.14        2019-05-28 [1] CRAN (R 3.6.2)                          
+ desc              1.2.0       2018-05-01 [1] CRAN (R 3.6.0)                          
+ devtools          2.3.0       2020-04-10 [1] CRAN (R 3.6.3)                          
+ digest            0.6.25      2020-02-23 [1] CRAN (R 3.6.3)                          
+ dplyr             0.8.5       2020-03-07 [1] CRAN (R 3.6.3)                          
+ ellipsis          0.3.0       2019-09-20 [1] CRAN (R 3.6.1)                          
+ evaluate          0.14        2019-05-28 [1] CRAN (R 3.6.0)                          
  fansi             0.4.1       2020-01-08 [1] CRAN (R 3.6.2)                          
  farver            2.0.3       2020-01-16 [1] CRAN (R 3.6.2)                          
- fs                1.3.1       2019-05-06 [1] CRAN (R 3.6.2)                          
- generics          0.0.2       2018-11-29 [1] CRAN (R 3.6.2)                          
- ggplot2         * 3.2.1       2019-08-10 [1] CRAN (R 3.6.2)                          
- glue              1.3.1       2019-03-12 [1] CRAN (R 3.6.2)                          
- gtable            0.3.0       2019-03-25 [1] CRAN (R 3.6.2)                          
- highr             0.8         2019-03-20 [1] CRAN (R 3.6.2)                          
+ fs                1.4.1       2020-04-04 [1] CRAN (R 3.6.3)                          
+ generics          0.0.2       2018-11-29 [1] CRAN (R 3.6.0)                          
+ ggplot2         * 3.3.0       2020-03-05 [1] CRAN (R 3.6.3)                          
+ glue              1.3.2       2020-03-12 [1] CRAN (R 3.6.3)                          
+ gtable            0.3.0       2019-03-25 [1] CRAN (R 3.6.0)                          
+ highr             0.8         2019-03-20 [1] CRAN (R 3.6.0)                          
  hms               0.5.3       2020-01-08 [1] CRAN (R 3.6.2)                          
- htmltools         0.4.0       2019-10-04 [1] CRAN (R 3.6.2)                          
- httr              1.4.1       2019-08-05 [1] CRAN (R 3.6.2)                          
- import            1.1.0       2015-06-22 [1] CRAN (R 3.6.2)                          
- kableExtra        1.1.0       2019-03-16 [1] CRAN (R 3.6.2)                          
+ htmltools         0.4.0       2019-10-04 [1] CRAN (R 3.6.1)                          
+ httr              1.4.1       2019-08-05 [1] CRAN (R 3.6.1)                          
+ import            1.1.0       2015-06-22 [1] CRAN (R 3.6.1)                          
+ kableExtra        1.1.0       2019-03-16 [1] CRAN (R 3.6.0)                          
  knitr           * 1.28        2020-02-06 [1] CRAN (R 3.6.2)                          
- labeling          0.3         2014-08-23 [1] CRAN (R 3.6.2)                          
- lattice           0.20-40     2020-02-19 [4] CRAN (R 3.6.2)                          
- lazyeval          0.2.2       2019-03-15 [1] CRAN (R 3.6.2)                          
- lifecycle         0.1.0       2019-08-01 [1] CRAN (R 3.6.2)                          
- magrittr          1.5         2014-11-22 [1] CRAN (R 3.6.2)                          
- Matrix            1.2-18      2019-11-27 [4] CRAN (R 3.6.1)                          
- memoise           1.1.0       2017-04-21 [1] CRAN (R 3.6.2)                          
- mitools           2.4         2019-04-26 [1] CRAN (R 3.6.2)                          
- munsell           0.5.0       2018-06-12 [1] CRAN (R 3.6.2)                          
- nlme              3.1-144     2020-02-06 [1] CRAN (R 3.6.2)                          
- OuhscMunge        0.1.9.9012  2020-01-13 [1] local                                   
- packrat           0.5.0       2018-11-14 [1] CRAN (R 3.6.2)                          
+ labeling          0.3         2014-08-23 [1] CRAN (R 3.6.0)                          
+ lattice           0.20-38     2018-11-04 [2] CRAN (R 3.6.3)                          
+ lifecycle         0.2.0       2020-03-06 [1] CRAN (R 3.6.3)                          
+ magrittr          1.5         2014-11-22 [1] CRAN (R 3.6.0)                          
+ Matrix            1.2-18      2019-11-27 [2] CRAN (R 3.6.3)                          
+ memoise           1.1.0       2017-04-21 [1] CRAN (R 3.6.0)                          
+ mgcv              1.8-31      2019-11-09 [2] CRAN (R 3.6.3)                          
+ mitools           2.4         2019-04-26 [1] CRAN (R 3.6.0)                          
+ munsell           0.5.0       2018-06-12 [1] CRAN (R 3.6.0)                          
+ nlme              3.1-147     2020-04-13 [1] CRAN (R 3.6.3)                          
  pillar            1.4.3       2019-12-20 [1] CRAN (R 3.6.2)                          
- pkgbuild          1.0.6       2019-10-09 [1] CRAN (R 3.6.2)                          
- pkgconfig         2.0.3       2019-09-22 [1] CRAN (R 3.6.2)                          
- pkgload           1.0.2       2018-10-29 [1] CRAN (R 3.6.2)                          
+ pkgbuild          1.0.6       2019-10-09 [1] CRAN (R 3.6.1)                          
+ pkgconfig         2.0.3       2019-09-22 [1] CRAN (R 3.6.1)                          
+ pkgload           1.0.2       2018-10-29 [1] CRAN (R 3.6.0)                          
  prettyunits       1.1.1       2020-01-24 [1] CRAN (R 3.6.2)                          
  processx          3.4.2       2020-02-09 [1] CRAN (R 3.6.2)                          
  ps                1.3.2       2020-02-13 [1] CRAN (R 3.6.2)                          
- purrr             0.3.3       2019-10-18 [1] CRAN (R 3.6.2)                          
- R6                2.4.1       2019-11-12 [1] CRAN (R 3.6.2)                          
- Rcpp              1.0.3       2019-11-08 [1] CRAN (R 3.6.2)                          
- readr             1.3.1       2018-12-21 [1] CRAN (R 3.6.2)                          
- remotes           2.1.1       2020-02-15 [1] CRAN (R 3.6.2)                          
+ purrr             0.3.3       2019-10-18 [1] CRAN (R 3.6.1)                          
+ R6                2.4.1       2019-11-12 [1] CRAN (R 3.6.1)                          
+ Rcpp              1.0.4       2020-03-17 [1] CRAN (R 3.6.3)                          
+ readr             1.3.1       2018-12-21 [1] CRAN (R 3.6.0)                          
+ remotes           2.1.1       2020-02-15 [1] CRAN (R 3.6.3)                          
  rlang             0.4.5       2020-03-01 [1] CRAN (R 3.6.3)                          
  rmarkdown         2.1         2020-01-20 [1] CRAN (R 3.6.2)                          
- rprojroot         1.3-2       2018-01-03 [1] CRAN (R 3.6.2)                          
- rsconnect         0.8.16      2019-12-13 [1] CRAN (R 3.6.2)                          
+ rprojroot         1.3-2       2018-01-03 [1] CRAN (R 3.6.0)                          
  rstudioapi        0.11        2020-02-07 [1] CRAN (R 3.6.2)                          
- rvest             0.3.5       2019-11-08 [1] CRAN (R 3.6.2)                          
- scales            1.1.0       2019-11-18 [1] CRAN (R 3.6.2)                          
- sessioninfo       1.1.1       2018-11-05 [1] CRAN (R 3.6.2)                          
+ rvest             0.3.5       2019-11-08 [1] CRAN (R 3.6.1)                          
+ scales            1.1.0       2019-11-18 [1] CRAN (R 3.6.1)                          
+ sessioninfo       1.1.1       2018-11-05 [1] CRAN (R 3.6.0)                          
  stringi           1.4.6       2020-02-17 [1] CRAN (R 3.6.2)                          
- stringr           1.4.0       2019-02-10 [1] CRAN (R 3.6.2)                          
- survey            3.37        2020-01-21 [1] CRAN (R 3.6.2)                          
- survival          3.1-8       2019-12-03 [1] CRAN (R 3.6.2)                          
- TabularManifest   0.1-16.9003 2019-12-15 [1] Github (Melinae/TabularManifest@4cbc21c)
- testit            0.11.1      2020-01-09 [1] Github (yihui/testit@c1c19f8)           
+ stringr           1.4.0       2019-02-10 [1] CRAN (R 3.6.0)                          
+ survey            4.0         2020-04-03 [1] CRAN (R 3.6.3)                          
+ survival          3.1-12      2020-04-10 [1] CRAN (R 3.6.3)                          
+ TabularManifest   0.1-16.9003 2019-05-13 [1] Github (Melinae/TabularManifest@4cbc21c)
  testthat          2.3.2       2020-03-02 [1] CRAN (R 3.6.3)                          
- tibble            2.1.3       2019-06-06 [1] CRAN (R 3.6.2)                          
+ tibble            3.0.0       2020-03-30 [1] CRAN (R 3.6.3)                          
  tidyr             1.0.2       2020-01-24 [1] CRAN (R 3.6.2)                          
  tidyselect        1.0.0       2020-01-27 [1] CRAN (R 3.6.2)                          
- usethis           1.5.1       2019-07-04 [1] CRAN (R 3.6.2)                          
- utf8              1.1.4       2018-05-24 [1] CRAN (R 3.6.2)                          
- vctrs             0.2.3       2020-02-20 [1] CRAN (R 3.6.2)                          
- viridisLite       0.3.0       2018-02-01 [1] CRAN (R 3.6.2)                          
- webshot           0.5.2       2019-11-22 [1] CRAN (R 3.6.2)                          
- withr             2.1.2       2018-03-15 [1] CRAN (R 3.6.2)                          
- xfun              0.12        2020-01-13 [1] CRAN (R 3.6.2)                          
- xml2              1.2.2       2019-08-09 [1] CRAN (R 3.6.2)                          
+ usethis           1.6.0       2020-04-09 [1] CRAN (R 3.6.3)                          
+ utf8              1.1.4       2018-05-24 [1] CRAN (R 3.6.0)                          
+ vctrs             0.2.4       2020-03-10 [1] CRAN (R 3.6.3)                          
+ viridisLite       0.3.0       2018-02-01 [1] CRAN (R 3.6.0)                          
+ webshot           0.5.2       2019-11-22 [1] CRAN (R 3.6.1)                          
+ withr             2.2.0       2020-04-20 [1] CRAN (R 3.6.3)                          
+ xfun              0.13        2020-04-13 [1] CRAN (R 3.6.3)                          
+ xml2              1.3.2       2020-04-23 [1] CRAN (R 3.6.3)                          
  yaml              2.2.1       2020-02-01 [1] CRAN (R 3.6.2)                          
 
-[1] /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6
-[2] /usr/local/lib/R/site-library
-[3] /usr/lib/R/site-library
-[4] /usr/lib/R/library
+[1] C:/Users/wbeasley/Documents/R/win-library/3.6
+[2] C:/Program Files/R/R-3.6.3patched/library
 ```
 </details>
 
 
 
-Report rendered by wibeasley at 2020-03-04, 00:20 -0600 in 11 seconds.
+Report rendered by WBEASLEY at 2020-04-26, 15:09 -0500 in 10 seconds.

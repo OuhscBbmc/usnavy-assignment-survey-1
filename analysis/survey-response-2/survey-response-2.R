@@ -24,6 +24,13 @@ config        <- config::get()
 include_year_first     <- 2012L
 size_mean_diamond      <- 3
 
+labels_officer_rate <- c(
+  `3` = "LT (3)",
+  `4` = "LCDR (4)",
+  `5` = "CDR (5)",
+  `6` = "CAPT (6)"
+)
+
 theme_report <- theme_bw() +
   theme(axis.ticks.length     = grid::unit(0, "cm")) +
   theme(axis.text             = element_text(colour="gray40")) +
@@ -599,15 +606,16 @@ ds_no_other_or_unknown %>%
   geom_point(position=position_jitterdodge(jitter.width=0.4, jitter.height =.2, dodge.width=.75), size=1.5, shape=21, na.rm=T, show.legend = T) +
   # geom_smooth(method = lm, se=F, formula = y~ x + 1) +
   geom_abline(data=ds_trajectory, aes(intercept=intercept, slope=slope, color=billet_current), size=1, alpha=.5) +
+  scale_x_continuous(labels = labels_officer_rate, breaks = as.integer(names(labels_officer_rate))) +
   scale_color_manual(values = palette_billet) +
   scale_fill_manual(values = palette_billet_light) +
   guides(color = guide_legend(override.aes = list(size = 3))) +
   theme_report +
   labs(
-    x     = "Officer Rate",
+    x     = "Officer Rank",
     y     = "Satisfaction",
-    color = "Current Billet",
-    fill  = "Current Billet"
+    color = "Current Billet\nCategory",
+    fill  = "Current Billet\nCategory"
   )
 
 # ---- specialty-intercept ------------------------------------------------------
@@ -663,11 +671,12 @@ ds_no_other_or_unknown %>%
   # geom_smooth(method = lm, se=F, formula = y~ x + 1) +
   geom_abline(data=ds_trajectory_specialty, aes(intercept=intercept, slope=slope, color=specialty_type), size=1, alpha=.5) +
   scale_color_manual(values = palette_specialty) +
+  scale_x_continuous(labels = labels_officer_rate, breaks = as.integer(names(labels_officer_rate))) +
   scale_fill_manual(values = palette_specialty_light) +
   guides(color = guide_legend(override.aes = list(size = 3))) +
   theme_report +
   labs(
-    x     = "Officer Rate",
+    x     = "Officer Rank",
     y     = "Satisfaction",
     color = "Specialty Type",
     fill  = "Specialty Type"
