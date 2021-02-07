@@ -497,7 +497,11 @@ cat("### satisfaction_rank\n\n")
 ds_no_other_or_unknown <-
   ds %>%
   dplyr::filter(billet_current != "Other") %>%
-  dplyr::filter(specialty_type != "unknown")
+  dplyr::filter(specialty_type != "unknown") %>%
+  dplyr::mutate(
+    billet_current  = droplevels(billet_current),
+    specialty_type  = droplevels(specialty_type),
+  )
 
 cat("**Conculsion**: `officer_rate` has a significant positive slope --sig predicting beyond `billet_current`.  But the billet levels have the same slope.")
 # prettify_lm(lm(satisfaction_rank ~ 1 + billet_current               , data=ds_no_other_or_unknown))
@@ -535,7 +539,6 @@ ds_no_other_or_unknown %>%
 
 
 # ---- 3-predictor --------------------------------------------------------------
-
 prettify_lm(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data=ds_no_other_or_unknown))
 
 anova(
@@ -546,7 +549,33 @@ anova(
 lm_no_int_billet    <- lm(satisfaction_rank ~ 0 + billet_current + officer_rate + specialty_type, data=ds_no_other_or_unknown)
 lm_no_int_specialty <- lm(satisfaction_rank ~ 0 + specialty_type + officer_rate + billet_current, data=ds_no_other_or_unknown)
 
-plot(lm(satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type, data = ds_no_other_or_unknown))
+plot(lm(satisfaction_rank ~ 0 + billet_current + officer_rate + specialty_type, data = ds_no_other_or_unknown))
+
+# ---- 3-predictor-ordinal --------------------------------------------------------------
+# ds_no_other_or_unknown %>%
+#   dplyr::count(billet_current, officer_rate, specialty_type) %>%
+#   tidyr::complete(billet_current, officer_rate, specialty_type) %>%
+#   kableExtra::kable()
+
+# ds_no_other_or_unknown %>%
+#   dplyr::count(billet_current) %>%
+#   tidyr::complete(billet_current) %>%
+#   kableExtra::kable()
+
+cat("\n\n## 1-predictor ordinal model: billet\n\n")
+prettify_lm(MASS::polr(ordered(satisfaction_rank) ~ billet_current, data=ds_no_other_or_unknown))
+
+cat("\n\n## 1-predictor ordinal model: offier rate\n\n")
+prettify_lm(MASS::polr(ordered(satisfaction_rank) ~ officer_rate, data=ds_no_other_or_unknown))
+
+cat("\n\n## 1-predictor ordinal model: specialty\n\n")
+prettify_lm(MASS::polr(ordered(satisfaction_rank) ~ specialty_type, data=ds_no_other_or_unknown))
+
+cat("\n\n## 3-predictor ordinal model\n\n")
+cat("<pre>")
+summary(MASS::polr(ordered(satisfaction_rank) ~ billet_current + officer_rate + specialty_type, data=ds_no_other_or_unknown))
+cat("</pre>")
+prettify_lm(MASS::polr(ordered(satisfaction_rank) ~ billet_current + officer_rate + specialty_type, data=ds_no_other_or_unknown))
 
 # ---- 3-predictor-with-weights --------------------------------------------------------------
 

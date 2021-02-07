@@ -20,6 +20,9 @@ Among the five levels in specialty type, the non-surgical physicians were most s
 
 Officer rank was a continuous variable and had a significant positive slope: satisfaction increased with seniority.  Note that this does not necessarily mean an officer is expected to grow more satisfied as seniority increases; an alternate explanation is that less-satisfied officers leave the Navy while the more-satisfied officer remain and are promoted.  Longitudinal studies are needed to evaluate these competing explanations.
 
+We were comfortable treating the 5-point Likert outcome as a continuous variable in the linear regression, after inspecting the graphs of frequencies and model diagnostics.  Thus we are making the assumption that the perceived distance between values 1 and 2 are roughly equivalent to the distance between values 4 and 5.  We performed ordered logistic regression that treats the outcome as an ordinal variable, which supported similar conclusions about the roles of the three predictors.  We chose to report the conventional regression for ease of interpretability.
+
+
 <!--  Set the working directory to the repository's base directory; this assumes the report is nested inside of two directories.-->
 ```{r, echo=F, message=F} 
 # cat("Working directory: ", getwd())
@@ -181,6 +184,13 @@ By Bonus_pay and Manning_proportion
 By Rank and Billet Type
 -----------------------------------
 ```{r by-billet-and-rate, echo=echo_chunks, message=message_chunks, results="asis"}
+```
+
+Ordinal Models
+===================================
+
+-----------------------------------
+```{r 3-predictor-ordinal, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
 
 Models to Publish

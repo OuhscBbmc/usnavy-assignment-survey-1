@@ -1,6 +1,6 @@
 ---
 title: Attitudes Regarding the Assignment Process Among Navy Medical Corps Officers
-date: "Date: 2020-04-26"
+date: "Date: 2021-02-07"
 output:
   html_document:
     keep_md: yes
@@ -19,6 +19,9 @@ Among the five levels in billet category, CONUS MTF had the highest values of sa
 Among the five levels in specialty type, the non-surgical physicians were most satisfied, and served as the reference group.  Residents were .2 units less satisfied, which was not significantly different.  However, the difference was significant between the nonsurgical type and the surgical (.3 units), family practice (.4 units) and operational (.7 units) types.
 
 Officer rank was a continuous variable and had a significant positive slope: satisfaction increased with seniority.  Note that this does not necessarily mean an officer is expected to grow more satisfied as seniority increases; an alternate explanation is that less-satisfied officers leave the Navy while the more-satisfied officer remain and are promoted.  Longitudinal studies are needed to evaluate these competing explanations.
+
+We were comfortable treating the 5-point Likert outcome as a continuous variable in the linear regression, after inspecting the graphs of frequencies and model diagnostics.  Thus we are making the assumption that the perceived distance between values 1 and 2 are roughly equivalent to the distance between values 4 and 5.  We performed ordered logistic regression that treats the outcome as an ordinal variable, which supported similar conclusions about the roles of the three predictors.  We chose to report the conventional regression for ease of interpretability.
+
 
 <!--  Set the working directory to the repository's base directory; this assumes the report is nested inside of two directories.-->
 
@@ -64,19 +67,24 @@ Histograms
 
 Univariate
 -----------------------------------
-![](figure-png/marginals-1.png)<!-- -->![](figure-png/marginals-2.png)<!-- -->
 
 ```
-Warning: Factor `iv` contains implicit NA, consider using `forcats::fct_explicit_na`
+Warning: `mutate_()` is deprecated as of dplyr 0.7.0.
+Please use `mutate()` instead.
+See vignette('programming') for more help
+This warning is displayed once every 8 hours.
+Call `lifecycle::last_warnings()` to see where this warning was generated.
 ```
 
-![](figure-png/marginals-3.png)<!-- -->![](figure-png/marginals-4.png)<!-- -->![](figure-png/marginals-5.png)<!-- -->
-
 ```
-Warning: Factor `iv` contains implicit NA, consider using `forcats::fct_explicit_na`
+Warning: `count_()` is deprecated as of dplyr 0.7.0.
+Please use `count()` instead.
+See vignette('programming') for more help
+This warning is displayed once every 8 hours.
+Call `lifecycle::last_warnings()` to see where this warning was generated.
 ```
 
-![](figure-png/marginals-6.png)<!-- -->![](figure-png/marginals-7.png)<!-- -->![](figure-png/marginals-8.png)<!-- -->![](figure-png/marginals-9.png)<!-- -->![](figure-png/marginals-10.png)<!-- -->![](figure-png/marginals-11.png)<!-- -->![](figure-png/marginals-12.png)<!-- -->![](figure-png/marginals-13.png)<!-- -->
+![](figure-png/marginals-1.png)<!-- -->![](figure-png/marginals-2.png)<!-- -->![](figure-png/marginals-3.png)<!-- -->![](figure-png/marginals-4.png)<!-- -->![](figure-png/marginals-5.png)<!-- -->![](figure-png/marginals-6.png)<!-- -->![](figure-png/marginals-7.png)<!-- -->![](figure-png/marginals-8.png)<!-- -->![](figure-png/marginals-9.png)<!-- -->![](figure-png/marginals-10.png)<!-- -->![](figure-png/marginals-11.png)<!-- -->![](figure-png/marginals-12.png)<!-- -->![](figure-png/marginals-13.png)<!-- -->
 
 ```
 Satisfaction summary
@@ -142,7 +150,7 @@ satisfaction_rank 3.4141 0.056
 ```
 # A tibble: 6 x 2
   specialty_type satisfaction_rank
-  <fct>                      <dbl>
+* <fct>                      <dbl>
 1 nonsurgical                 3.92
 2 surgical                    3.68
 3 family                      3.35
@@ -173,7 +181,7 @@ satisfaction_rank 3.4141 0.056
 ```
 # A tibble: 5 x 2
   officer_rank satisfaction_rank
-  <fct>                    <dbl>
+* <fct>                    <dbl>
 1 LT                        3.14
 2 LCDR                      3.59
 3 CDR                       3.93
@@ -203,7 +211,7 @@ satisfaction_rank 3.4141 0.056
 ```
 # A tibble: 6 x 2
   billet_current           satisfaction_rank
-  <fct>                                <dbl>
+* <fct>                                <dbl>
 1 CONUS MTF                             3.85
 2 Non-Operational/Clinical              3.65
 3 OCONUS MTF                            3.41
@@ -231,12 +239,12 @@ satisfaction_rank 3.4141 0.056
 Relationships between Outcomes
 ============================================
 
-                             satisfaction rank   transparency rank   favoritism rank   assignment current choice
---------------------------  ------------------  ------------------  ----------------  --------------------------
-satisfaction_rank                        1.000               0.771             0.486                      -0.519
-transparency_rank                        0.771               1.000             0.488                      -0.405
-favoritism_rank                          0.486               0.488             1.000                      -0.325
-assignment_current_choice               -0.519              -0.405            -0.325                       1.000
+|                          | satisfaction rank| transparency rank| favoritism rank| assignment current choice|
+|:-------------------------|-----------------:|-----------------:|---------------:|-------------------------:|
+|satisfaction_rank         |             1.000|             0.771|           0.486|                    -0.519|
+|transparency_rank         |             0.771|             1.000|           0.488|                    -0.405|
+|favoritism_rank           |             0.486|             0.488|           1.000|                    -0.325|
+|assignment_current_choice |            -0.519|            -0.405|          -0.325|                     1.000|
 
 ![](figure-png/outcome-correlations-1.png)<!-- -->![](figure-png/outcome-correlations-2.png)<!-- -->
 
@@ -308,6 +316,7 @@ Warning: `fun.y` is deprecated. Use `fun` instead.
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -317,12 +326,13 @@ Warning: `fun.y` is deprecated. Use `fun` instead.
    <td style="text-align:right;"> 1.318277 </td>
    <td style="text-align:right;"> 19.04967 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> -1472.875 </td>
    <td style="text-align:right;"> 2955.751 </td>
    <td style="text-align:right;"> 2979.593 </td>
    <td style="text-align:right;"> 1504.982 </td>
    <td style="text-align:right;"> 866 </td>
+   <td style="text-align:right;"> 870 </td>
   </tr>
 </tbody>
 </table>
@@ -398,6 +408,7 @@ Warning: `fun.y` is deprecated. Use `fun` instead.
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -407,12 +418,13 @@ Warning: `fun.y` is deprecated. Use `fun` instead.
    <td style="text-align:right;"> 1.305062 </td>
    <td style="text-align:right;"> 19.04449 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 4 </td>
    <td style="text-align:right;"> -1458.551 </td>
    <td style="text-align:right;"> 2929.103 </td>
    <td style="text-align:right;"> 2957.693 </td>
    <td style="text-align:right;"> 1468.146 </td>
    <td style="text-align:right;"> 862 </td>
+   <td style="text-align:right;"> 867 </td>
   </tr>
 </tbody>
 </table>
@@ -481,6 +493,7 @@ Warning: `fun.y` is deprecated. Use `fun` instead.
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -490,12 +503,13 @@ Warning: `fun.y` is deprecated. Use `fun` instead.
    <td style="text-align:right;"> 1.329938 </td>
    <td style="text-align:right;"> 14.34077 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> -1483.945 </td>
    <td style="text-align:right;"> 2977.89 </td>
    <td style="text-align:right;"> 3001.744 </td>
    <td style="text-align:right;"> 1535.262 </td>
    <td style="text-align:right;"> 868 </td>
+   <td style="text-align:right;"> 872 </td>
   </tr>
 </tbody>
 </table>
@@ -546,6 +560,7 @@ By Assignment Current Choice
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -555,12 +570,13 @@ By Assignment Current Choice
    <td style="text-align:right;"> 1.074932 </td>
    <td style="text-align:right;"> 279.7366 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 1 </td>
    <td style="text-align:right;"> -1133.799 </td>
    <td style="text-align:right;"> 2273.598 </td>
    <td style="text-align:right;"> 2287.502 </td>
    <td style="text-align:right;"> 877.0091 </td>
    <td style="text-align:right;"> 759 </td>
+   <td style="text-align:right;"> 761 </td>
   </tr>
 </tbody>
 </table>
@@ -664,6 +680,7 @@ Warning: `fun.y` is deprecated. Use `fun` instead.
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -673,12 +690,13 @@ Warning: `fun.y` is deprecated. Use `fun` instead.
    <td style="text-align:right;"> 1.313205 </td>
    <td style="text-align:right;"> 13.67732 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 5 </td>
    <td style="text-align:right;"> -1471.899 </td>
    <td style="text-align:right;"> 2957.797 </td>
    <td style="text-align:right;"> 2991.193 </td>
    <td style="text-align:right;"> 1493.423 </td>
    <td style="text-align:right;"> 866 </td>
+   <td style="text-align:right;"> 872 </td>
   </tr>
 </tbody>
 </table>
@@ -833,6 +851,20 @@ Warning: `fun.y` is deprecated. Use `fun` instead.
    <td style="text-align:right;"> -0.1609436 </td>
    <td style="text-align:right;"> 0.8721761 </td>
   </tr>
+  <tr>
+   <td style="text-align:left;"> officer_rate_f5:specialty_typeresident </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> officer_rate_f6:specialty_typeresident </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
 </tbody>
 </table>
 
@@ -850,6 +882,7 @@ Warning: `fun.y` is deprecated. Use `fun` instead.
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -859,12 +892,13 @@ Warning: `fun.y` is deprecated. Use `fun` instead.
    <td style="text-align:right;"> 1.281281 </td>
    <td style="text-align:right;"> 7.123859 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> 17 </td>
    <td style="text-align:right;"> -1434.353 </td>
    <td style="text-align:right;"> 2906.706 </td>
    <td style="text-align:right;"> 2997.22 </td>
    <td style="text-align:right;"> 1392.145 </td>
    <td style="text-align:right;"> 848 </td>
+   <td style="text-align:right;"> 866 </td>
   </tr>
 </tbody>
 </table><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
@@ -951,6 +985,7 @@ Warning: `fun.y` is deprecated. Use `fun` instead.
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -960,12 +995,13 @@ Warning: `fun.y` is deprecated. Use `fun` instead.
    <td style="text-align:right;"> 1.282431 </td>
    <td style="text-align:right;"> 15.62411 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 7 </td>
    <td style="text-align:right;"> -1440.206 </td>
    <td style="text-align:right;"> 2898.412 </td>
    <td style="text-align:right;"> 2941.287 </td>
    <td style="text-align:right;"> 1411.091 </td>
    <td style="text-align:right;"> 858 </td>
+   <td style="text-align:right;"> 866 </td>
   </tr>
 </tbody>
 </table>
@@ -1041,6 +1077,7 @@ By Rank and Bonus Pay
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -1050,12 +1087,13 @@ By Rank and Bonus Pay
    <td style="text-align:right;"> 1.311901 </td>
    <td style="text-align:right;"> 16.786 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 4 </td>
    <td style="text-align:right;"> -1468.155 </td>
    <td style="text-align:right;"> 2948.309 </td>
    <td style="text-align:right;"> 2976.92 </td>
    <td style="text-align:right;"> 1488.738 </td>
    <td style="text-align:right;"> 865 </td>
+   <td style="text-align:right;"> 870 </td>
   </tr>
 </tbody>
 </table><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f * bonus_pay </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
@@ -1142,6 +1180,7 @@ By Rank and Bonus Pay
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -1151,12 +1190,13 @@ By Rank and Bonus Pay
    <td style="text-align:right;"> 1.30619 </td>
    <td style="text-align:right;"> 11.18754 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 7 </td>
    <td style="text-align:right;"> -1462.848 </td>
    <td style="text-align:right;"> 2943.696 </td>
    <td style="text-align:right;"> 2986.612 </td>
    <td style="text-align:right;"> 1470.687 </td>
    <td style="text-align:right;"> 862 </td>
+   <td style="text-align:right;"> 870 </td>
   </tr>
 </tbody>
 </table><br/><code>Analysis of Variance Table
@@ -1253,6 +1293,7 @@ Warning: `fun.y` is deprecated. Use `fun` instead.
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -1262,12 +1303,13 @@ Warning: `fun.y` is deprecated. Use `fun` instead.
    <td style="text-align:right;"> 1.313958 </td>
    <td style="text-align:right;"> 11.38609 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 6 </td>
    <td style="text-align:right;"> -1471.894 </td>
    <td style="text-align:right;"> 2959.789 </td>
    <td style="text-align:right;"> 2997.955 </td>
    <td style="text-align:right;"> 1493.409 </td>
    <td style="text-align:right;"> 865 </td>
+   <td style="text-align:right;"> 872 </td>
   </tr>
 </tbody>
 </table>
@@ -1343,6 +1385,7 @@ Warning: `fun.y` is deprecated. Use `fun` instead.
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -1352,12 +1395,13 @@ Warning: `fun.y` is deprecated. Use `fun` instead.
    <td style="text-align:right;"> 1.318796 </td>
    <td style="text-align:right;"> 14.87015 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 4 </td>
    <td style="text-align:right;"> -1476.106 </td>
    <td style="text-align:right;"> 2964.213 </td>
    <td style="text-align:right;"> 2992.838 </td>
    <td style="text-align:right;"> 1507.907 </td>
    <td style="text-align:right;"> 867 </td>
+   <td style="text-align:right;"> 872 </td>
   </tr>
 </tbody>
 </table>No interaction between manning_proportion_cut3 & bonus_pay_cut3<br/><code>Analysis of Variance Table
@@ -1444,6 +1488,7 @@ Model 2: satisfaction_rank ~ 1 + manning_proportion_cut3 + bonus_pay_cut3
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -1453,12 +1498,13 @@ Model 2: satisfaction_rank ~ 1 + manning_proportion_cut3 + bonus_pay_cut3
    <td style="text-align:right;"> 1.313958 </td>
    <td style="text-align:right;"> 11.38609 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 6 </td>
    <td style="text-align:right;"> -1471.894 </td>
    <td style="text-align:right;"> 2959.789 </td>
    <td style="text-align:right;"> 2997.955 </td>
    <td style="text-align:right;"> 1493.409 </td>
    <td style="text-align:right;"> 865 </td>
+   <td style="text-align:right;"> 872 </td>
   </tr>
 </tbody>
 </table>
@@ -1537,6 +1583,7 @@ By Rank and Billet Type
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -1546,12 +1593,13 @@ By Rank and Billet Type
    <td style="text-align:right;"> 1.26896 </td>
    <td style="text-align:right;"> 25.45982 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 5 </td>
    <td style="text-align:right;"> -1420.469 </td>
    <td style="text-align:right;"> 2854.939 </td>
    <td style="text-align:right;"> 2888.229 </td>
    <td style="text-align:right;"> 1373.551 </td>
    <td style="text-align:right;"> 853 </td>
+   <td style="text-align:right;"> 859 </td>
   </tr>
 </tbody>
 </table>Analysis of Variance Table
@@ -1569,6 +1617,439 @@ Model 2: satisfaction_rank ~ 1 + billet_current * officer_rate
 1    853 1373.5                           
 2    849 1365.3  4    8.2102 1.2763 0.2776
 ![](figure-png/by-billet-and-rate-1.png)<!-- -->
+
+Ordinal Models
+===================================
+
+-----------------------------------
+
+## 1-predictor ordinal model: billet
+
+<br/>Data:<code> ds_no_other_or_unknown </code><br/>Formula:<code> ~ ordered(satisfaction_rank) billet_current </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> term </th>
+   <th style="text-align:right;"> estimate </th>
+   <th style="text-align:right;"> std.error </th>
+   <th style="text-align:right;"> statistic </th>
+   <th style="text-align:left;"> coef.type </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> billet_currentNon-Operational/Clinical </td>
+   <td style="text-align:right;"> -0.1598301 </td>
+   <td style="text-align:right;"> 0.2847549 </td>
+   <td style="text-align:right;"> -0.5612903 </td>
+   <td style="text-align:left;"> coefficient </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentOCONUS MTF </td>
+   <td style="text-align:right;"> -0.5408170 </td>
+   <td style="text-align:right;"> 0.1975592 </td>
+   <td style="text-align:right;"> -2.7374939 </td>
+   <td style="text-align:left;"> coefficient </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentCONUS Operational </td>
+   <td style="text-align:right;"> -0.9174521 </td>
+   <td style="text-align:right;"> 0.1903276 </td>
+   <td style="text-align:right;"> -4.8203829 </td>
+   <td style="text-align:left;"> coefficient </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentOCONUS Operational </td>
+   <td style="text-align:right;"> -1.8141170 </td>
+   <td style="text-align:right;"> 0.3021047 </td>
+   <td style="text-align:right;"> -6.0049280 </td>
+   <td style="text-align:left;"> coefficient </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1|2 </td>
+   <td style="text-align:right;"> -2.3551770 </td>
+   <td style="text-align:right;"> 0.1224293 </td>
+   <td style="text-align:right;"> -19.2370433 </td>
+   <td style="text-align:left;"> scale </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2|3 </td>
+   <td style="text-align:right;"> -1.6150921 </td>
+   <td style="text-align:right;"> 0.1001752 </td>
+   <td style="text-align:right;"> -16.1226674 </td>
+   <td style="text-align:left;"> scale </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 3|4 </td>
+   <td style="text-align:right;"> -0.7152669 </td>
+   <td style="text-align:right;"> 0.0844094 </td>
+   <td style="text-align:right;"> -8.4737827 </td>
+   <td style="text-align:left;"> scale </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 4|5 </td>
+   <td style="text-align:right;"> 0.3971137 </td>
+   <td style="text-align:right;"> 0.0821859 </td>
+   <td style="text-align:right;"> 4.8318944 </td>
+   <td style="text-align:left;"> scale </td>
+  </tr>
+</tbody>
+</table>
+
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> edf </th>
+   <th style="text-align:right;"> logLik </th>
+   <th style="text-align:right;"> AIC </th>
+   <th style="text-align:right;"> BIC </th>
+   <th style="text-align:right;"> deviance </th>
+   <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> -1262.722 </td>
+   <td style="text-align:right;"> 2541.445 </td>
+   <td style="text-align:right;"> 2579.5 </td>
+   <td style="text-align:right;"> 2525.445 </td>
+   <td style="text-align:right;"> 852 </td>
+   <td style="text-align:right;"> 860 </td>
+  </tr>
+</tbody>
+</table>
+
+## 1-predictor ordinal model: offier rate
+
+<br/>Data:<code> ds_no_other_or_unknown </code><br/>Formula:<code> ~ ordered(satisfaction_rank) officer_rate </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> term </th>
+   <th style="text-align:right;"> estimate </th>
+   <th style="text-align:right;"> std.error </th>
+   <th style="text-align:right;"> statistic </th>
+   <th style="text-align:left;"> coef.type </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> officer_rate </td>
+   <td style="text-align:right;"> 0.4972550 </td>
+   <td style="text-align:right;"> 0.0666400 </td>
+   <td style="text-align:right;"> 7.4618072 </td>
+   <td style="text-align:left;"> coefficient </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1|2 </td>
+   <td style="text-align:right;"> 0.0181495 </td>
+   <td style="text-align:right;"> 0.2869621 </td>
+   <td style="text-align:right;"> 0.0632469 </td>
+   <td style="text-align:left;"> scale </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2|3 </td>
+   <td style="text-align:right;"> 0.7415462 </td>
+   <td style="text-align:right;"> 0.2826536 </td>
+   <td style="text-align:right;"> 2.6235159 </td>
+   <td style="text-align:left;"> scale </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 3|4 </td>
+   <td style="text-align:right;"> 1.6279511 </td>
+   <td style="text-align:right;"> 0.2856359 </td>
+   <td style="text-align:right;"> 5.6993933 </td>
+   <td style="text-align:left;"> scale </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 4|5 </td>
+   <td style="text-align:right;"> 2.7581936 </td>
+   <td style="text-align:right;"> 0.2963643 </td>
+   <td style="text-align:right;"> 9.3067684 </td>
+   <td style="text-align:left;"> scale </td>
+  </tr>
+</tbody>
+</table>
+
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> edf </th>
+   <th style="text-align:right;"> logLik </th>
+   <th style="text-align:right;"> AIC </th>
+   <th style="text-align:right;"> BIC </th>
+   <th style="text-align:right;"> deviance </th>
+   <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> -1259.639 </td>
+   <td style="text-align:right;"> 2529.279 </td>
+   <td style="text-align:right;"> 2553.058 </td>
+   <td style="text-align:right;"> 2519.279 </td>
+   <td style="text-align:right;"> 854 </td>
+   <td style="text-align:right;"> 859 </td>
+  </tr>
+</tbody>
+</table>
+
+## 1-predictor ordinal model: specialty
+
+<br/>Data:<code> ds_no_other_or_unknown </code><br/>Formula:<code> ~ ordered(satisfaction_rank) specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> term </th>
+   <th style="text-align:right;"> estimate </th>
+   <th style="text-align:right;"> std.error </th>
+   <th style="text-align:right;"> statistic </th>
+   <th style="text-align:left;"> coef.type </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> specialty_typesurgical </td>
+   <td style="text-align:right;"> -0.3465013 </td>
+   <td style="text-align:right;"> 0.1714193 </td>
+   <td style="text-align:right;"> -2.021366 </td>
+   <td style="text-align:left;"> coefficient </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> specialty_typefamily </td>
+   <td style="text-align:right;"> -0.7839712 </td>
+   <td style="text-align:right;"> 0.1673401 </td>
+   <td style="text-align:right;"> -4.684897 </td>
+   <td style="text-align:left;"> coefficient </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> specialty_typeoperational </td>
+   <td style="text-align:right;"> -1.6647223 </td>
+   <td style="text-align:right;"> 0.2223020 </td>
+   <td style="text-align:right;"> -7.488563 </td>
+   <td style="text-align:left;"> coefficient </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> specialty_typeresident </td>
+   <td style="text-align:right;"> -0.6376696 </td>
+   <td style="text-align:right;"> 0.3092219 </td>
+   <td style="text-align:right;"> -2.062175 </td>
+   <td style="text-align:left;"> coefficient </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1|2 </td>
+   <td style="text-align:right;"> -2.4995064 </td>
+   <td style="text-align:right;"> 0.1323535 </td>
+   <td style="text-align:right;"> -18.885079 </td>
+   <td style="text-align:left;"> scale </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2|3 </td>
+   <td style="text-align:right;"> -1.7510557 </td>
+   <td style="text-align:right;"> 0.1114135 </td>
+   <td style="text-align:right;"> -15.716735 </td>
+   <td style="text-align:left;"> scale </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 3|4 </td>
+   <td style="text-align:right;"> -0.8437125 </td>
+   <td style="text-align:right;"> 0.0965107 </td>
+   <td style="text-align:right;"> -8.742168 </td>
+   <td style="text-align:left;"> scale </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 4|5 </td>
+   <td style="text-align:right;"> 0.2778043 </td>
+   <td style="text-align:right;"> 0.0924397 </td>
+   <td style="text-align:right;"> 3.005250 </td>
+   <td style="text-align:left;"> scale </td>
+  </tr>
+</tbody>
+</table>
+
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> edf </th>
+   <th style="text-align:right;"> logLik </th>
+   <th style="text-align:right;"> AIC </th>
+   <th style="text-align:right;"> BIC </th>
+   <th style="text-align:right;"> deviance </th>
+   <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> -1257.197 </td>
+   <td style="text-align:right;"> 2530.395 </td>
+   <td style="text-align:right;"> 2568.45 </td>
+   <td style="text-align:right;"> 2514.395 </td>
+   <td style="text-align:right;"> 852 </td>
+   <td style="text-align:right;"> 860 </td>
+  </tr>
+</tbody>
+</table>
+
+## 3-predictor ordinal model
+
+<pre>Call:
+MASS::polr(formula = ordered(satisfaction_rank) ~ billet_current + 
+    officer_rate + specialty_type, data = ds_no_other_or_unknown)
+
+Coefficients:
+                                         Value Std. Error t value
+billet_currentNon-Operational/Clinical -0.6155    0.29779  -2.067
+billet_currentOCONUS MTF               -0.5507    0.20021  -2.751
+billet_currentCONUS Operational        -0.5241    0.23051  -2.274
+billet_currentOCONUS Operational       -1.6041    0.31659  -5.067
+officer_rate                            0.4628    0.07274   6.363
+specialty_typesurgical                 -0.3982    0.17324  -2.299
+specialty_typefamily                   -0.5966    0.17200  -3.469
+specialty_typeoperational              -0.8514    0.27879  -3.054
+specialty_typeresident                 -0.3633    0.32237  -1.127
+
+Intercepts:
+    Value   Std. Error t value
+1|2 -0.7832  0.3277    -2.3899
+2|3  0.0048  0.3214     0.0149
+3|4  0.9711  0.3213     3.0225
+4|5  2.1614  0.3285     6.5795
+
+Residual Deviance: 2442.231 
+AIC: 2468.231 
+(77 observations deleted due to missingness)
+</pre><br/>Data:<code> ds_no_other_or_unknown </code><br/>Formula:<code> ~ ordered(satisfaction_rank) billet_current + officer_rate + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> term </th>
+   <th style="text-align:right;"> estimate </th>
+   <th style="text-align:right;"> std.error </th>
+   <th style="text-align:right;"> statistic </th>
+   <th style="text-align:left;"> coef.type </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> billet_currentNon-Operational/Clinical </td>
+   <td style="text-align:right;"> -0.6155252 </td>
+   <td style="text-align:right;"> 0.2977934 </td>
+   <td style="text-align:right;"> -2.0669541 </td>
+   <td style="text-align:left;"> coefficient </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentOCONUS MTF </td>
+   <td style="text-align:right;"> -0.5507024 </td>
+   <td style="text-align:right;"> 0.2002124 </td>
+   <td style="text-align:right;"> -2.7505908 </td>
+   <td style="text-align:left;"> coefficient </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentCONUS Operational </td>
+   <td style="text-align:right;"> -0.5240958 </td>
+   <td style="text-align:right;"> 0.2305119 </td>
+   <td style="text-align:right;"> -2.2736173 </td>
+   <td style="text-align:left;"> coefficient </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> billet_currentOCONUS Operational </td>
+   <td style="text-align:right;"> -1.6041125 </td>
+   <td style="text-align:right;"> 0.3165904 </td>
+   <td style="text-align:right;"> -5.0668382 </td>
+   <td style="text-align:left;"> coefficient </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> officer_rate </td>
+   <td style="text-align:right;"> 0.4628157 </td>
+   <td style="text-align:right;"> 0.0727351 </td>
+   <td style="text-align:right;"> 6.3630323 </td>
+   <td style="text-align:left;"> coefficient </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> specialty_typesurgical </td>
+   <td style="text-align:right;"> -0.3982413 </td>
+   <td style="text-align:right;"> 0.1732421 </td>
+   <td style="text-align:right;"> -2.2987560 </td>
+   <td style="text-align:left;"> coefficient </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> specialty_typefamily </td>
+   <td style="text-align:right;"> -0.5965928 </td>
+   <td style="text-align:right;"> 0.1719977 </td>
+   <td style="text-align:right;"> -3.4686098 </td>
+   <td style="text-align:left;"> coefficient </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> specialty_typeoperational </td>
+   <td style="text-align:right;"> -0.8513858 </td>
+   <td style="text-align:right;"> 0.2787879 </td>
+   <td style="text-align:right;"> -3.0538833 </td>
+   <td style="text-align:left;"> coefficient </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> specialty_typeresident </td>
+   <td style="text-align:right;"> -0.3633346 </td>
+   <td style="text-align:right;"> 0.3223665 </td>
+   <td style="text-align:right;"> -1.1270854 </td>
+   <td style="text-align:left;"> coefficient </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1|2 </td>
+   <td style="text-align:right;"> -0.7831514 </td>
+   <td style="text-align:right;"> 0.3276899 </td>
+   <td style="text-align:right;"> -2.3899166 </td>
+   <td style="text-align:left;"> scale </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2|3 </td>
+   <td style="text-align:right;"> 0.0047825 </td>
+   <td style="text-align:right;"> 0.3214328 </td>
+   <td style="text-align:right;"> 0.0148786 </td>
+   <td style="text-align:left;"> scale </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 3|4 </td>
+   <td style="text-align:right;"> 0.9710647 </td>
+   <td style="text-align:right;"> 0.3212775 </td>
+   <td style="text-align:right;"> 3.0225112 </td>
+   <td style="text-align:left;"> scale </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 4|5 </td>
+   <td style="text-align:right;"> 2.1613841 </td>
+   <td style="text-align:right;"> 0.3285025 </td>
+   <td style="text-align:right;"> 6.5795063 </td>
+   <td style="text-align:left;"> scale </td>
+  </tr>
+</tbody>
+</table>
+
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> edf </th>
+   <th style="text-align:right;"> logLik </th>
+   <th style="text-align:right;"> AIC </th>
+   <th style="text-align:right;"> BIC </th>
+   <th style="text-align:right;"> deviance </th>
+   <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 13 </td>
+   <td style="text-align:right;"> -1221.116 </td>
+   <td style="text-align:right;"> 2468.231 </td>
+   <td style="text-align:right;"> 2530.056 </td>
+   <td style="text-align:right;"> 2442.231 </td>
+   <td style="text-align:right;"> 846 </td>
+   <td style="text-align:right;"> 859 </td>
+  </tr>
+</tbody>
+</table>
 
 Models to Publish
 ===================================
@@ -1673,6 +2154,7 @@ Models to Publish
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -1682,12 +2164,13 @@ Models to Publish
    <td style="text-align:right;"> 1.256672 </td>
    <td style="text-align:right;"> 16.72926 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 9 </td>
    <td style="text-align:right;"> -1410.092 </td>
    <td style="text-align:right;"> 2842.184 </td>
    <td style="text-align:right;"> 2894.498 </td>
    <td style="text-align:right;"> 1340.762 </td>
    <td style="text-align:right;"> 849 </td>
+   <td style="text-align:right;"> 859 </td>
   </tr>
 </tbody>
 </table>Analysis of Variance Table
@@ -1799,6 +2282,7 @@ Model 2: satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -1808,12 +2292,13 @@ Model 2: satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type
    <td style="text-align:right;"> 2.545062 </td>
    <td style="text-align:right;"> 21.45595 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 9 </td>
    <td style="text-align:right;"> -1528.984 </td>
    <td style="text-align:right;"> 3079.968 </td>
    <td style="text-align:right;"> 3132.282 </td>
    <td style="text-align:right;"> 5499.261 </td>
    <td style="text-align:right;"> 849 </td>
+   <td style="text-align:right;"> 859 </td>
   </tr>
 </tbody>
 </table>
@@ -1885,103 +2370,107 @@ For the sake of documentation and reproducibility, the current report was render
   <summary>Environment <span class="glyphicon glyphicon-plus-sign"></span></summary>
 
 ```
-- Session info -----------------------------------------------------------------------------------
- setting  value                                      
- version  R version 3.6.3 Patched (2020-02-29 r77888)
- os       Windows 10 x64                             
- system   x86_64, mingw32                            
- ui       RTerm                                      
- language (EN)                                       
- collate  English_United States.1252                 
- ctype    English_United States.1252                 
- tz       America/Chicago                            
- date     2020-04-26                                 
+─ Session info ───────────────────────────────────────────────────────────────────────────────────
+ setting  value                       
+ version  R version 4.0.3 (2020-10-10)
+ os       Ubuntu 20.04.2 LTS          
+ system   x86_64, linux-gnu           
+ ui       X11                         
+ language (EN)                        
+ collate  en_US.UTF-8                 
+ ctype    en_US.UTF-8                 
+ tz       America/Chicago             
+ date     2021-02-07                  
 
-- Packages ---------------------------------------------------------------------------------------
+─ Packages ───────────────────────────────────────────────────────────────────────────────────────
  package         * version     date       lib source                                  
- assertthat        0.2.1       2019-03-21 [1] CRAN (R 3.6.0)                          
- backports         1.1.6       2020-04-05 [1] CRAN (R 3.6.3)                          
- broom             0.5.6       2020-04-20 [1] CRAN (R 3.6.3)                          
- callr             3.4.3       2020-03-28 [1] CRAN (R 3.6.3)                          
- cli               2.0.2       2020-02-28 [1] CRAN (R 3.6.3)                          
- colorspace        1.4-1       2019-03-18 [1] CRAN (R 3.6.0)                          
- config            0.3         2018-03-27 [1] CRAN (R 3.6.0)                          
- corrplot          0.84        2017-10-16 [1] CRAN (R 3.6.0)                          
- crayon            1.3.4       2017-09-16 [1] CRAN (R 3.6.0)                          
- DBI               1.1.0       2019-12-15 [1] CRAN (R 3.6.2)                          
- desc              1.2.0       2018-05-01 [1] CRAN (R 3.6.0)                          
- devtools          2.3.0       2020-04-10 [1] CRAN (R 3.6.3)                          
- digest            0.6.25      2020-02-23 [1] CRAN (R 3.6.3)                          
- dplyr             0.8.5       2020-03-07 [1] CRAN (R 3.6.3)                          
- ellipsis          0.3.0       2019-09-20 [1] CRAN (R 3.6.1)                          
- evaluate          0.14        2019-05-28 [1] CRAN (R 3.6.0)                          
- fansi             0.4.1       2020-01-08 [1] CRAN (R 3.6.2)                          
- farver            2.0.3       2020-01-16 [1] CRAN (R 3.6.2)                          
- fs                1.4.1       2020-04-04 [1] CRAN (R 3.6.3)                          
- generics          0.0.2       2018-11-29 [1] CRAN (R 3.6.0)                          
- ggplot2         * 3.3.0       2020-03-05 [1] CRAN (R 3.6.3)                          
- glue              1.3.2       2020-03-12 [1] CRAN (R 3.6.3)                          
- gtable            0.3.0       2019-03-25 [1] CRAN (R 3.6.0)                          
- highr             0.8         2019-03-20 [1] CRAN (R 3.6.0)                          
- hms               0.5.3       2020-01-08 [1] CRAN (R 3.6.2)                          
- htmltools         0.4.0       2019-10-04 [1] CRAN (R 3.6.1)                          
- httr              1.4.1       2019-08-05 [1] CRAN (R 3.6.1)                          
- import            1.1.0       2015-06-22 [1] CRAN (R 3.6.1)                          
- kableExtra        1.1.0       2019-03-16 [1] CRAN (R 3.6.0)                          
- knitr           * 1.28        2020-02-06 [1] CRAN (R 3.6.2)                          
- labeling          0.3         2014-08-23 [1] CRAN (R 3.6.0)                          
- lattice           0.20-38     2018-11-04 [2] CRAN (R 3.6.3)                          
- lifecycle         0.2.0       2020-03-06 [1] CRAN (R 3.6.3)                          
- magrittr          1.5         2014-11-22 [1] CRAN (R 3.6.0)                          
- Matrix            1.2-18      2019-11-27 [2] CRAN (R 3.6.3)                          
- memoise           1.1.0       2017-04-21 [1] CRAN (R 3.6.0)                          
- mgcv              1.8-31      2019-11-09 [2] CRAN (R 3.6.3)                          
- mitools           2.4         2019-04-26 [1] CRAN (R 3.6.0)                          
- munsell           0.5.0       2018-06-12 [1] CRAN (R 3.6.0)                          
- nlme              3.1-147     2020-04-13 [1] CRAN (R 3.6.3)                          
- pillar            1.4.3       2019-12-20 [1] CRAN (R 3.6.2)                          
- pkgbuild          1.0.6       2019-10-09 [1] CRAN (R 3.6.1)                          
- pkgconfig         2.0.3       2019-09-22 [1] CRAN (R 3.6.1)                          
- pkgload           1.0.2       2018-10-29 [1] CRAN (R 3.6.0)                          
- prettyunits       1.1.1       2020-01-24 [1] CRAN (R 3.6.2)                          
- processx          3.4.2       2020-02-09 [1] CRAN (R 3.6.2)                          
- ps                1.3.2       2020-02-13 [1] CRAN (R 3.6.2)                          
- purrr             0.3.3       2019-10-18 [1] CRAN (R 3.6.1)                          
- R6                2.4.1       2019-11-12 [1] CRAN (R 3.6.1)                          
- Rcpp              1.0.4       2020-03-17 [1] CRAN (R 3.6.3)                          
- readr             1.3.1       2018-12-21 [1] CRAN (R 3.6.0)                          
- remotes           2.1.1       2020-02-15 [1] CRAN (R 3.6.3)                          
- rlang             0.4.5       2020-03-01 [1] CRAN (R 3.6.3)                          
- rmarkdown         2.1         2020-01-20 [1] CRAN (R 3.6.2)                          
- rprojroot         1.3-2       2018-01-03 [1] CRAN (R 3.6.0)                          
- rstudioapi        0.11        2020-02-07 [1] CRAN (R 3.6.2)                          
- rvest             0.3.5       2019-11-08 [1] CRAN (R 3.6.1)                          
- scales            1.1.0       2019-11-18 [1] CRAN (R 3.6.1)                          
- sessioninfo       1.1.1       2018-11-05 [1] CRAN (R 3.6.0)                          
- stringi           1.4.6       2020-02-17 [1] CRAN (R 3.6.2)                          
- stringr           1.4.0       2019-02-10 [1] CRAN (R 3.6.0)                          
- survey            4.0         2020-04-03 [1] CRAN (R 3.6.3)                          
- survival          3.1-12      2020-04-10 [1] CRAN (R 3.6.3)                          
- TabularManifest   0.1-16.9003 2019-05-13 [1] Github (Melinae/TabularManifest@4cbc21c)
- testthat          2.3.2       2020-03-02 [1] CRAN (R 3.6.3)                          
- tibble            3.0.0       2020-03-30 [1] CRAN (R 3.6.3)                          
- tidyr             1.0.2       2020-01-24 [1] CRAN (R 3.6.2)                          
- tidyselect        1.0.0       2020-01-27 [1] CRAN (R 3.6.2)                          
- usethis           1.6.0       2020-04-09 [1] CRAN (R 3.6.3)                          
- utf8              1.1.4       2018-05-24 [1] CRAN (R 3.6.0)                          
- vctrs             0.2.4       2020-03-10 [1] CRAN (R 3.6.3)                          
- viridisLite       0.3.0       2018-02-01 [1] CRAN (R 3.6.0)                          
- webshot           0.5.2       2019-11-22 [1] CRAN (R 3.6.1)                          
- withr             2.2.0       2020-04-20 [1] CRAN (R 3.6.3)                          
- xfun              0.13        2020-04-13 [1] CRAN (R 3.6.3)                          
- xml2              1.3.2       2020-04-23 [1] CRAN (R 3.6.3)                          
- yaml              2.2.1       2020-02-01 [1] CRAN (R 3.6.2)                          
+ assertthat        0.2.1       2019-03-21 [1] CRAN (R 4.0.0)                          
+ backports         1.2.1       2020-12-09 [1] CRAN (R 4.0.3)                          
+ broom             0.7.4       2021-01-29 [1] CRAN (R 4.0.3)                          
+ cachem            1.0.1       2021-01-21 [1] CRAN (R 4.0.3)                          
+ callr             3.5.1       2020-10-13 [1] CRAN (R 4.0.3)                          
+ cli               2.2.0       2020-11-20 [1] CRAN (R 4.0.3)                          
+ colorspace        2.0-0       2020-11-11 [1] CRAN (R 4.0.3)                          
+ config            0.3.1       2020-12-17 [1] CRAN (R 4.0.3)                          
+ corrplot          0.84        2017-10-16 [1] CRAN (R 4.0.0)                          
+ crayon            1.4.0       2021-01-30 [1] CRAN (R 4.0.3)                          
+ DBI               1.1.1       2021-01-15 [1] CRAN (R 4.0.3)                          
+ desc              1.2.0       2018-05-01 [1] CRAN (R 4.0.0)                          
+ devtools          2.3.2       2020-09-18 [1] CRAN (R 4.0.2)                          
+ digest            0.6.27      2020-10-24 [1] CRAN (R 4.0.3)                          
+ dplyr             1.0.3       2021-01-15 [1] CRAN (R 4.0.3)                          
+ ellipsis          0.3.1       2020-05-15 [1] CRAN (R 4.0.0)                          
+ evaluate          0.14        2019-05-28 [1] CRAN (R 4.0.0)                          
+ fansi             0.4.2       2021-01-15 [1] CRAN (R 4.0.3)                          
+ farver            2.0.3       2020-01-16 [1] CRAN (R 4.0.0)                          
+ fastmap           1.1.0       2021-01-25 [1] CRAN (R 4.0.3)                          
+ fs                1.5.0       2020-07-31 [1] CRAN (R 4.0.2)                          
+ generics          0.1.0       2020-10-31 [1] CRAN (R 4.0.3)                          
+ ggplot2         * 3.3.3       2020-12-30 [1] CRAN (R 4.0.3)                          
+ glue              1.4.2       2020-08-27 [1] CRAN (R 4.0.2)                          
+ gtable            0.3.0       2019-03-25 [1] CRAN (R 4.0.0)                          
+ highr             0.8         2019-03-20 [1] CRAN (R 4.0.0)                          
+ hms               1.0.0       2021-01-13 [1] CRAN (R 4.0.3)                          
+ htmltools         0.5.1.1     2021-01-22 [1] CRAN (R 4.0.3)                          
+ httr              1.4.2       2020-07-20 [1] CRAN (R 4.0.2)                          
+ import            1.2.0       2020-09-24 [1] CRAN (R 4.0.2)                          
+ kableExtra        1.3.1       2020-10-22 [1] CRAN (R 4.0.3)                          
+ knitr           * 1.31        2021-01-27 [1] CRAN (R 4.0.3)                          
+ labeling          0.4.2       2020-10-20 [1] CRAN (R 4.0.3)                          
+ lattice           0.20-41     2020-04-02 [4] CRAN (R 4.0.0)                          
+ lifecycle         0.2.0       2020-03-06 [1] CRAN (R 4.0.0)                          
+ magrittr          2.0.1       2020-11-17 [1] CRAN (R 4.0.3)                          
+ MASS              7.3-53      2020-09-09 [4] CRAN (R 4.0.2)                          
+ Matrix            1.3-2       2021-01-06 [4] CRAN (R 4.0.3)                          
+ memoise           2.0.0       2021-01-26 [1] CRAN (R 4.0.3)                          
+ mgcv              1.8-33      2020-08-27 [4] CRAN (R 4.0.2)                          
+ mitools           2.4         2019-04-26 [1] CRAN (R 4.0.0)                          
+ munsell           0.5.0       2018-06-12 [1] CRAN (R 4.0.0)                          
+ nlme              3.1-151     2020-12-10 [1] CRAN (R 4.0.3)                          
+ pillar            1.4.7       2020-11-20 [1] CRAN (R 4.0.3)                          
+ pkgbuild          1.2.0       2020-12-15 [1] CRAN (R 4.0.3)                          
+ pkgconfig         2.0.3       2019-09-22 [1] CRAN (R 4.0.0)                          
+ pkgload           1.1.0       2020-05-29 [1] CRAN (R 4.0.0)                          
+ prettyunits       1.1.1       2020-01-24 [1] CRAN (R 4.0.0)                          
+ processx          3.4.5       2020-11-30 [1] CRAN (R 4.0.3)                          
+ ps                1.5.0       2020-12-05 [1] CRAN (R 4.0.3)                          
+ purrr             0.3.4       2020-04-17 [1] CRAN (R 4.0.0)                          
+ R6                2.5.0       2020-10-28 [1] CRAN (R 4.0.3)                          
+ readr             1.4.0       2020-10-05 [1] CRAN (R 4.0.3)                          
+ remotes           2.2.0       2020-07-21 [1] CRAN (R 4.0.2)                          
+ rlang             0.4.10      2020-12-30 [1] CRAN (R 4.0.3)                          
+ rmarkdown         2.6         2020-12-14 [1] CRAN (R 4.0.3)                          
+ rprojroot         2.0.2       2020-11-15 [1] CRAN (R 4.0.3)                          
+ rstudioapi        0.13        2020-11-12 [1] CRAN (R 4.0.3)                          
+ rvest             0.3.6       2020-07-25 [1] CRAN (R 4.0.2)                          
+ scales            1.1.1       2020-05-11 [1] CRAN (R 4.0.0)                          
+ sessioninfo       1.1.1       2018-11-05 [1] CRAN (R 4.0.0)                          
+ stringi           1.5.3       2020-09-09 [1] CRAN (R 4.0.2)                          
+ stringr           1.4.0       2019-02-10 [1] CRAN (R 4.0.0)                          
+ survey            4.0         2020-04-03 [1] CRAN (R 4.0.0)                          
+ survival          3.2-7       2020-09-28 [1] CRAN (R 4.0.2)                          
+ TabularManifest   0.1-16.9003 2020-05-25 [1] Github (Melinae/TabularManifest@4cbc21c)
+ testthat          3.0.1       2020-12-17 [1] CRAN (R 4.0.3)                          
+ tibble            3.0.6       2021-01-29 [1] CRAN (R 4.0.3)                          
+ tidyr             1.1.2       2020-08-27 [1] CRAN (R 4.0.2)                          
+ tidyselect        1.1.0       2020-05-11 [1] CRAN (R 4.0.0)                          
+ usethis           2.0.0       2020-12-10 [1] CRAN (R 4.0.3)                          
+ utf8              1.1.4       2018-05-24 [1] CRAN (R 4.0.0)                          
+ vctrs             0.3.6       2020-12-17 [1] CRAN (R 4.0.3)                          
+ viridisLite       0.3.0       2018-02-01 [1] CRAN (R 4.0.0)                          
+ webshot           0.5.2       2019-11-22 [1] CRAN (R 4.0.0)                          
+ withr             2.4.1       2021-01-26 [1] CRAN (R 4.0.3)                          
+ xfun              0.20        2021-01-06 [1] CRAN (R 4.0.3)                          
+ xml2              1.3.2       2020-04-23 [1] CRAN (R 4.0.0)                          
+ yaml              2.2.1       2020-02-01 [1] CRAN (R 4.0.0)                          
 
-[1] C:/Users/wbeasley/Documents/R/win-library/3.6
-[2] C:/Program Files/R/R-3.6.3patched/library
+[1] /home/wibeasley/R/x86_64-pc-linux-gnu-library/4.0
+[2] /usr/local/lib/R/site-library
+[3] /usr/lib/R/site-library
+[4] /usr/lib/R/library
 ```
 </details>
 
 
 
-Report rendered by WBEASLEY at 2020-04-26, 15:09 -0500 in 10 seconds.
+Report rendered by wibeasley at 2021-02-07, 17:24 -0600 in 30 seconds.
