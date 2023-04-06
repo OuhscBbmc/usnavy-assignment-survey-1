@@ -1,6 +1,6 @@
 ---
 title: Attitudes Regarding the Assignment Process Among Navy Medical Corps Officers
-date: "Date: 2020-03-04"
+date: "Date: 2023-04-06"
 output:
   html_document:
     keep_md: yes
@@ -55,25 +55,7 @@ Histograms
 
 Univariate
 -----------------------------------
-![](figure-png/marginals-1.png)<!-- -->![](figure-png/marginals-2.png)<!-- -->
-
-```
-Warning: Factor `iv` contains implicit NA, consider using `forcats::fct_explicit_na`
-```
-
-![](figure-png/marginals-3.png)<!-- -->![](figure-png/marginals-4.png)<!-- -->![](figure-png/marginals-5.png)<!-- -->![](figure-png/marginals-6.png)<!-- -->
-
-```
-Warning: Factor `iv` contains implicit NA, consider using `forcats::fct_explicit_na`
-```
-
-![](figure-png/marginals-7.png)<!-- -->![](figure-png/marginals-8.png)<!-- -->![](figure-png/marginals-9.png)<!-- -->![](figure-png/marginals-10.png)<!-- -->![](figure-png/marginals-11.png)<!-- -->![](figure-png/marginals-12.png)<!-- -->![](figure-png/marginals-13.png)<!-- -->![](figure-png/marginals-14.png)<!-- -->![](figure-png/marginals-15.png)<!-- -->![](figure-png/marginals-16.png)<!-- -->![](figure-png/marginals-17.png)<!-- -->![](figure-png/marginals-18.png)<!-- -->![](figure-png/marginals-19.png)<!-- -->![](figure-png/marginals-20.png)<!-- -->![](figure-png/marginals-21.png)<!-- -->![](figure-png/marginals-22.png)<!-- -->![](figure-png/marginals-23.png)<!-- -->![](figure-png/marginals-24.png)<!-- -->![](figure-png/marginals-25.png)<!-- -->![](figure-png/marginals-26.png)<!-- -->![](figure-png/marginals-27.png)<!-- -->
-
-```
-Warning: Factor `iv` contains implicit NA, consider using `forcats::fct_explicit_na`
-```
-
-![](figure-png/marginals-28.png)<!-- -->![](figure-png/marginals-29.png)<!-- -->
+![](figure-png/marginals-1.png)<!-- -->![](figure-png/marginals-2.png)<!-- -->![](figure-png/marginals-3.png)<!-- -->![](figure-png/marginals-4.png)<!-- -->![](figure-png/marginals-5.png)<!-- -->![](figure-png/marginals-6.png)<!-- -->![](figure-png/marginals-7.png)<!-- -->![](figure-png/marginals-8.png)<!-- -->![](figure-png/marginals-9.png)<!-- -->![](figure-png/marginals-10.png)<!-- -->![](figure-png/marginals-11.png)<!-- -->![](figure-png/marginals-12.png)<!-- -->![](figure-png/marginals-13.png)<!-- -->![](figure-png/marginals-14.png)<!-- -->![](figure-png/marginals-15.png)<!-- -->![](figure-png/marginals-16.png)<!-- -->![](figure-png/marginals-17.png)<!-- -->![](figure-png/marginals-18.png)<!-- -->![](figure-png/marginals-19.png)<!-- -->![](figure-png/marginals-20.png)<!-- -->![](figure-png/marginals-21.png)<!-- -->![](figure-png/marginals-22.png)<!-- -->![](figure-png/marginals-23.png)<!-- -->![](figure-png/marginals-24.png)<!-- -->![](figure-png/marginals-25.png)<!-- -->![](figure-png/marginals-26.png)<!-- -->![](figure-png/marginals-27.png)<!-- -->![](figure-png/marginals-28.png)<!-- -->![](figure-png/marginals-29.png)<!-- -->
 
 Frequency: homestead_length_in_years by officer_rank
 -----------------------------------
@@ -152,6 +134,7 @@ Frequency: Assignment_priority by Specialty_type
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -163,6 +146,7 @@ Frequency: Assignment_priority by Specialty_type
    <td style="text-align:right;"> 778.8249 </td>
    <td style="text-align:right;"> 745.3028 </td>
    <td style="text-align:right;"> 811 </td>
+   <td style="text-align:right;"> 816 </td>
   </tr>
 </tbody>
 </table>
@@ -221,6 +205,7 @@ Frequency: Officer_rank_priority by Officer_rank
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -232,6 +217,7 @@ Frequency: Officer_rank_priority by Officer_rank
    <td style="text-align:right;"> 921.7339 </td>
    <td style="text-align:right;"> 894.9458 </td>
    <td style="text-align:right;"> 806 </td>
+   <td style="text-align:right;"> 810 </td>
   </tr>
 </tbody>
 </table>
@@ -351,6 +337,7 @@ By Rank
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -360,12 +347,13 @@ By Rank
    <td style="text-align:right;"> 1.318277 </td>
    <td style="text-align:right;"> 19.04967 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> -1472.875 </td>
    <td style="text-align:right;"> 2955.751 </td>
    <td style="text-align:right;"> 2979.593 </td>
    <td style="text-align:right;"> 1504.982 </td>
    <td style="text-align:right;"> 866 </td>
+   <td style="text-align:right;"> 870 </td>
   </tr>
 </tbody>
 </table>### transparency_rank
@@ -426,6 +414,7 @@ By Rank
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -435,12 +424,13 @@ By Rank
    <td style="text-align:right;"> 1.351639 </td>
    <td style="text-align:right;"> 21.38109 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> -1503.22 </td>
    <td style="text-align:right;"> 3016.439 </td>
    <td style="text-align:right;"> 3040.31 </td>
    <td style="text-align:right;"> 1591.254 </td>
    <td style="text-align:right;"> 871 </td>
+   <td style="text-align:right;"> 875 </td>
   </tr>
 </tbody>
 </table>### favoritism_rank
@@ -501,6 +491,7 @@ By Rank
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -510,12 +501,13 @@ By Rank
    <td style="text-align:right;"> 1.328995 </td>
    <td style="text-align:right;"> 1.428604 </td>
    <td style="text-align:right;"> 0.2331066 </td>
-   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> -1297.66 </td>
    <td style="text-align:right;"> 2605.319 </td>
    <td style="text-align:right;"> 2628.505 </td>
    <td style="text-align:right;"> 1340.567 </td>
    <td style="text-align:right;"> 759 </td>
+   <td style="text-align:right;"> 763 </td>
   </tr>
 </tbody>
 </table>### assignment_current_choice
@@ -576,6 +568,7 @@ By Rank
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -585,12 +578,13 @@ By Rank
    <td style="text-align:right;"> 1.120191 </td>
    <td style="text-align:right;"> 5.908457 </td>
    <td style="text-align:right;"> 0.0005478 </td>
-   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> -1196.361 </td>
    <td style="text-align:right;"> 2402.722 </td>
    <td style="text-align:right;"> 2426.031 </td>
    <td style="text-align:right;"> 976.2552 </td>
    <td style="text-align:right;"> 778 </td>
+   <td style="text-align:right;"> 782 </td>
   </tr>
 </tbody>
 </table>
@@ -662,6 +656,7 @@ By Specialty Type
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -671,12 +666,13 @@ By Specialty Type
    <td style="text-align:right;"> 1.305062 </td>
    <td style="text-align:right;"> 19.04449 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 4 </td>
    <td style="text-align:right;"> -1458.551 </td>
    <td style="text-align:right;"> 2929.103 </td>
    <td style="text-align:right;"> 2957.693 </td>
    <td style="text-align:right;"> 1468.146 </td>
    <td style="text-align:right;"> 862 </td>
+   <td style="text-align:right;"> 867 </td>
   </tr>
 </tbody>
 </table>### transparency_rank
@@ -744,6 +740,7 @@ By Specialty Type
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -753,12 +750,13 @@ By Specialty Type
    <td style="text-align:right;"> 1.352773 </td>
    <td style="text-align:right;"> 14.63123 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 4 </td>
    <td style="text-align:right;"> -1498.288 </td>
    <td style="text-align:right;"> 3008.576 </td>
    <td style="text-align:right;"> 3037.201 </td>
    <td style="text-align:right;"> 1586.606 </td>
    <td style="text-align:right;"> 867 </td>
+   <td style="text-align:right;"> 872 </td>
   </tr>
 </tbody>
 </table>### favoritism_rank
@@ -826,6 +824,7 @@ By Specialty Type
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -835,12 +834,13 @@ By Specialty Type
    <td style="text-align:right;"> 1.308746 </td>
    <td style="text-align:right;"> 6.410944 </td>
    <td style="text-align:right;"> 4.48e-05 </td>
-   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 4 </td>
    <td style="text-align:right;"> -1282.066 </td>
    <td style="text-align:right;"> 2576.132 </td>
    <td style="text-align:right;"> 2603.939 </td>
    <td style="text-align:right;"> 1294.889 </td>
    <td style="text-align:right;"> 756 </td>
+   <td style="text-align:right;"> 761 </td>
   </tr>
 </tbody>
 </table>### assignment_current_choice
@@ -908,6 +908,7 @@ By Specialty Type
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -917,12 +918,13 @@ By Specialty Type
    <td style="text-align:right;"> 1.12101 </td>
    <td style="text-align:right;"> 5.069921 </td>
    <td style="text-align:right;"> 0.0004894 </td>
-   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 4 </td>
    <td style="text-align:right;"> -1193.363 </td>
    <td style="text-align:right;"> 2398.727 </td>
    <td style="text-align:right;"> 2426.683 </td>
    <td style="text-align:right;"> 973.914 </td>
    <td style="text-align:right;"> 775 </td>
+   <td style="text-align:right;"> 780 </td>
   </tr>
 </tbody>
 </table>
@@ -987,6 +989,7 @@ By Bonus Pay
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -996,12 +999,13 @@ By Bonus Pay
    <td style="text-align:right;"> 1.329938 </td>
    <td style="text-align:right;"> 14.34077 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> -1483.945 </td>
    <td style="text-align:right;"> 2977.89 </td>
    <td style="text-align:right;"> 3001.744 </td>
    <td style="text-align:right;"> 1535.262 </td>
    <td style="text-align:right;"> 868 </td>
+   <td style="text-align:right;"> 872 </td>
   </tr>
 </tbody>
 </table>### transparency_rank
@@ -1062,6 +1066,7 @@ By Bonus Pay
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -1071,12 +1076,13 @@ By Bonus Pay
    <td style="text-align:right;"> 1.360206 </td>
    <td style="text-align:right;"> 17.23618 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> -1512.202 </td>
    <td style="text-align:right;"> 3034.403 </td>
    <td style="text-align:right;"> 3058.286 </td>
    <td style="text-align:right;"> 1615.191 </td>
    <td style="text-align:right;"> 873 </td>
+   <td style="text-align:right;"> 877 </td>
   </tr>
 </tbody>
 </table>### favoritism_rank
@@ -1137,6 +1143,7 @@ By Bonus Pay
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -1146,12 +1153,13 @@ By Bonus Pay
    <td style="text-align:right;"> 1.327677 </td>
    <td style="text-align:right;"> 1.917942 </td>
    <td style="text-align:right;"> 0.1251881 </td>
-   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> -1300.307 </td>
    <td style="text-align:right;"> 2610.614 </td>
    <td style="text-align:right;"> 2633.814 </td>
    <td style="text-align:right;"> 1341.434 </td>
    <td style="text-align:right;"> 761 </td>
+   <td style="text-align:right;"> 765 </td>
   </tr>
 </tbody>
 </table>### assignment_current_choice
@@ -1212,6 +1220,7 @@ By Bonus Pay
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -1221,12 +1230,13 @@ By Bonus Pay
    <td style="text-align:right;"> 1.128545 </td>
    <td style="text-align:right;"> 1.887914 </td>
    <td style="text-align:right;"> 0.1301122 </td>
-   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> -1205.251 </td>
    <td style="text-align:right;"> 2420.503 </td>
    <td style="text-align:right;"> 2443.825 </td>
    <td style="text-align:right;"> 993.4192 </td>
    <td style="text-align:right;"> 780 </td>
+   <td style="text-align:right;"> 784 </td>
   </tr>
 </tbody>
 </table>
@@ -1277,6 +1287,7 @@ By Assignment Current Choice
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -1286,12 +1297,13 @@ By Assignment Current Choice
    <td style="text-align:right;"> 1.074932 </td>
    <td style="text-align:right;"> 279.7366 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 1 </td>
    <td style="text-align:right;"> -1133.799 </td>
    <td style="text-align:right;"> 2273.598 </td>
    <td style="text-align:right;"> 2287.502 </td>
    <td style="text-align:right;"> 877.0091 </td>
    <td style="text-align:right;"> 759 </td>
+   <td style="text-align:right;"> 761 </td>
   </tr>
 </tbody>
 </table>### transparency_rank
@@ -1338,6 +1350,7 @@ By Assignment Current Choice
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -1347,12 +1360,13 @@ By Assignment Current Choice
    <td style="text-align:right;"> 1.209629 </td>
    <td style="text-align:right;"> 149.6306 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 1 </td>
    <td style="text-align:right;"> -1226.858 </td>
    <td style="text-align:right;"> 2459.717 </td>
    <td style="text-align:right;"> 2473.629 </td>
    <td style="text-align:right;"> 1113.498 </td>
    <td style="text-align:right;"> 761 </td>
+   <td style="text-align:right;"> 763 </td>
   </tr>
 </tbody>
 </table>### favoritism_rank
@@ -1399,6 +1413,7 @@ By Assignment Current Choice
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -1408,12 +1423,13 @@ By Assignment Current Choice
    <td style="text-align:right;"> 1.232284 </td>
    <td style="text-align:right;"> 79.24669 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 1 </td>
    <td style="text-align:right;"> -1097.769 </td>
    <td style="text-align:right;"> 2201.538 </td>
    <td style="text-align:right;"> 2215.082 </td>
    <td style="text-align:right;"> 1021.967 </td>
    <td style="text-align:right;"> 673 </td>
+   <td style="text-align:right;"> 675 </td>
   </tr>
 </tbody>
 </table>
@@ -1462,7 +1478,7 @@ By Billet Current
    <td style="text-align:right;"> 0.0000000 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> billet_currentNon-Operational/Clinical </td>
+   <td style="text-align:left;"> billet_currentAdministrative </td>
    <td style="text-align:right;"> -0.2014136 </td>
    <td style="text-align:right;"> 0.1974596 </td>
    <td style="text-align:right;"> -1.0200240 </td>
@@ -1513,6 +1529,7 @@ By Billet Current
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -1522,12 +1539,13 @@ By Billet Current
    <td style="text-align:right;"> 1.313205 </td>
    <td style="text-align:right;"> 13.67732 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 5 </td>
    <td style="text-align:right;"> -1471.899 </td>
    <td style="text-align:right;"> 2957.797 </td>
    <td style="text-align:right;"> 2991.193 </td>
    <td style="text-align:right;"> 1493.423 </td>
    <td style="text-align:right;"> 866 </td>
+   <td style="text-align:right;"> 872 </td>
   </tr>
 </tbody>
 </table>
@@ -1632,6 +1650,7 @@ By Geographic Preference
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -1641,12 +1660,13 @@ By Geographic Preference
    <td style="text-align:right;"> 1.354362 </td>
    <td style="text-align:right;"> 1.828979 </td>
    <td style="text-align:right;"> 0.0595147 </td>
-   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 9 </td>
    <td style="text-align:right;"> -1496.789 </td>
    <td style="text-align:right;"> 3015.579 </td>
    <td style="text-align:right;"> 3068.058 </td>
    <td style="text-align:right;"> 1581.163 </td>
    <td style="text-align:right;"> 862 </td>
+   <td style="text-align:right;"> 872 </td>
   </tr>
 </tbody>
 </table>
@@ -1798,6 +1818,20 @@ By Rank and Specialty Type
    <td style="text-align:right;"> -0.1609436 </td>
    <td style="text-align:right;"> 0.8721761 </td>
   </tr>
+  <tr>
+   <td style="text-align:left;"> officer_rate_f5:specialty_typeresident </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> officer_rate_f6:specialty_typeresident </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
 </tbody>
 </table>
 
@@ -1815,6 +1849,7 @@ By Rank and Specialty Type
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -1824,12 +1859,13 @@ By Rank and Specialty Type
    <td style="text-align:right;"> 1.281281 </td>
    <td style="text-align:right;"> 7.123859 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> 17 </td>
    <td style="text-align:right;"> -1434.353 </td>
    <td style="text-align:right;"> 2906.706 </td>
    <td style="text-align:right;"> 2997.22 </td>
    <td style="text-align:right;"> 1392.145 </td>
    <td style="text-align:right;"> 848 </td>
+   <td style="text-align:right;"> 866 </td>
   </tr>
 </tbody>
 </table><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
@@ -1916,6 +1952,7 @@ By Rank and Specialty Type
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -1925,12 +1962,13 @@ By Rank and Specialty Type
    <td style="text-align:right;"> 1.282431 </td>
    <td style="text-align:right;"> 15.62411 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 7 </td>
    <td style="text-align:right;"> -1440.206 </td>
    <td style="text-align:right;"> 2898.412 </td>
    <td style="text-align:right;"> 2941.287 </td>
    <td style="text-align:right;"> 1411.091 </td>
    <td style="text-align:right;"> 858 </td>
+   <td style="text-align:right;"> 866 </td>
   </tr>
 </tbody>
 </table>### transparency_rank
@@ -2005,6 +2043,7 @@ By Rank and Specialty Type
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -2014,12 +2053,13 @@ By Rank and Specialty Type
    <td style="text-align:right;"> 1.356452 </td>
    <td style="text-align:right;"> 11.76695 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 5 </td>
    <td style="text-align:right;"> -1508.772 </td>
    <td style="text-align:right;"> 3031.543 </td>
    <td style="text-align:right;"> 3064.979 </td>
    <td style="text-align:right;"> 1602.606 </td>
    <td style="text-align:right;"> 871 </td>
+   <td style="text-align:right;"> 877 </td>
   </tr>
 </tbody>
 </table>### favoritism_rank
@@ -2094,6 +2134,7 @@ By Rank and Specialty Type
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -2103,12 +2144,13 @@ By Rank and Specialty Type
    <td style="text-align:right;"> 1.312572 </td>
    <td style="text-align:right;"> 5.100571 </td>
    <td style="text-align:right;"> 0.0001313 </td>
-   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 5 </td>
    <td style="text-align:right;"> -1290.547 </td>
    <td style="text-align:right;"> 2595.095 </td>
    <td style="text-align:right;"> 2627.574 </td>
    <td style="text-align:right;"> 1307.639 </td>
    <td style="text-align:right;"> 759 </td>
+   <td style="text-align:right;"> 765 </td>
   </tr>
 </tbody>
 </table>### assignment_current_choice
@@ -2183,6 +2225,7 @@ By Rank and Specialty Type
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -2192,12 +2235,13 @@ By Rank and Specialty Type
    <td style="text-align:right;"> 1.119277 </td>
    <td style="text-align:right;"> 4.145762 </td>
    <td style="text-align:right;"> 0.0010079 </td>
-   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 5 </td>
    <td style="text-align:right;"> -1197.78 </td>
    <td style="text-align:right;"> 2409.56 </td>
    <td style="text-align:right;"> 2442.211 </td>
    <td style="text-align:right;"> 974.664 </td>
    <td style="text-align:right;"> 778 </td>
+   <td style="text-align:right;"> 784 </td>
   </tr>
 </tbody>
 </table>
@@ -2269,6 +2313,7 @@ By Rank and Assignment Current Choice
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -2278,12 +2323,13 @@ By Rank and Assignment Current Choice
    <td style="text-align:right;"> 1.048202 </td>
    <td style="text-align:right;"> 82.80361 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 4 </td>
    <td style="text-align:right;"> -1110.197 </td>
    <td style="text-align:right;"> 2232.395 </td>
    <td style="text-align:right;"> 2260.187 </td>
    <td style="text-align:right;"> 828.4411 </td>
    <td style="text-align:right;"> 754 </td>
+   <td style="text-align:right;"> 759 </td>
   </tr>
 </tbody>
 </table><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f * assignment_current_choice </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
@@ -2370,6 +2416,7 @@ By Rank and Assignment Current Choice
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -2379,12 +2426,13 @@ By Rank and Assignment Current Choice
    <td style="text-align:right;"> 1.049784 </td>
    <td style="text-align:right;"> 47.27809 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 7 </td>
    <td style="text-align:right;"> -1109.829 </td>
    <td style="text-align:right;"> 2237.658 </td>
    <td style="text-align:right;"> 2279.346 </td>
    <td style="text-align:right;"> 827.6371 </td>
    <td style="text-align:right;"> 751 </td>
+   <td style="text-align:right;"> 759 </td>
   </tr>
 </tbody>
 </table><br/><code>Analysis of Variance Table
@@ -2480,6 +2528,7 @@ Model 2: satisfaction_rank ~ 1 + officer_rate_f * assignment_current_choice
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -2489,12 +2538,13 @@ Model 2: satisfaction_rank ~ 1 + officer_rate_f * assignment_current_choice
    <td style="text-align:right;"> 1.18273 </td>
    <td style="text-align:right;"> 28.1876 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 7 </td>
    <td style="text-align:right;"> -1203.506 </td>
    <td style="text-align:right;"> 2425.012 </td>
    <td style="text-align:right;"> 2466.724 </td>
    <td style="text-align:right;"> 1053.334 </td>
    <td style="text-align:right;"> 753 </td>
+   <td style="text-align:right;"> 761 </td>
   </tr>
 </tbody>
 </table>### favoritism_rank
@@ -2583,6 +2633,7 @@ Model 2: satisfaction_rank ~ 1 + officer_rate_f * assignment_current_choice
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -2592,12 +2643,13 @@ Model 2: satisfaction_rank ~ 1 + officer_rate_f * assignment_current_choice
    <td style="text-align:right;"> 1.235585 </td>
    <td style="text-align:right;"> 11.52876 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 7 </td>
    <td style="text-align:right;"> -1093.291 </td>
    <td style="text-align:right;"> 2204.582 </td>
    <td style="text-align:right;"> 2245.188 </td>
    <td style="text-align:right;"> 1015.236 </td>
    <td style="text-align:right;"> 665 </td>
+   <td style="text-align:right;"> 673 </td>
   </tr>
 </tbody>
 </table>
@@ -2669,6 +2721,7 @@ By Rank and Bonus Pay
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -2678,12 +2731,13 @@ By Rank and Bonus Pay
    <td style="text-align:right;"> 1.311901 </td>
    <td style="text-align:right;"> 16.786 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 4 </td>
    <td style="text-align:right;"> -1468.155 </td>
    <td style="text-align:right;"> 2948.309 </td>
    <td style="text-align:right;"> 2976.92 </td>
    <td style="text-align:right;"> 1488.738 </td>
    <td style="text-align:right;"> 865 </td>
+   <td style="text-align:right;"> 870 </td>
   </tr>
 </tbody>
 </table><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f * bonus_pay </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
@@ -2770,6 +2824,7 @@ By Rank and Bonus Pay
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -2779,12 +2834,13 @@ By Rank and Bonus Pay
    <td style="text-align:right;"> 1.30619 </td>
    <td style="text-align:right;"> 11.18754 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 7 </td>
    <td style="text-align:right;"> -1462.848 </td>
    <td style="text-align:right;"> 2943.696 </td>
    <td style="text-align:right;"> 2986.612 </td>
    <td style="text-align:right;"> 1470.687 </td>
    <td style="text-align:right;"> 862 </td>
+   <td style="text-align:right;"> 870 </td>
   </tr>
 </tbody>
 </table><br/><code>Analysis of Variance Table
@@ -2880,6 +2936,7 @@ Model 2: satisfaction_rank ~ 1 + officer_rate_f * bonus_pay
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -2889,12 +2946,13 @@ Model 2: satisfaction_rank ~ 1 + officer_rate_f * bonus_pay
    <td style="text-align:right;"> 1.340582 </td>
    <td style="text-align:right;"> 11.94744 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 7 </td>
    <td style="text-align:right;"> -1494.019 </td>
    <td style="text-align:right;"> 3006.038 </td>
    <td style="text-align:right;"> 3049.006 </td>
    <td style="text-align:right;"> 1558.138 </td>
    <td style="text-align:right;"> 867 </td>
+   <td style="text-align:right;"> 875 </td>
   </tr>
 </tbody>
 </table>### favoritism_rank
@@ -2983,6 +3041,7 @@ Model 2: satisfaction_rank ~ 1 + officer_rate_f * bonus_pay
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -2992,12 +3051,13 @@ Model 2: satisfaction_rank ~ 1 + officer_rate_f * bonus_pay
    <td style="text-align:right;"> 1.327109 </td>
    <td style="text-align:right;"> 1.493731 </td>
    <td style="text-align:right;"> 0.1660622 </td>
-   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 7 </td>
    <td style="text-align:right;"> -1294.56 </td>
    <td style="text-align:right;"> 2607.121 </td>
    <td style="text-align:right;"> 2648.856 </td>
    <td style="text-align:right;"> 1329.721 </td>
    <td style="text-align:right;"> 755 </td>
+   <td style="text-align:right;"> 763 </td>
   </tr>
 </tbody>
 </table>
@@ -3025,7 +3085,7 @@ By Billet Current and Critical War
    <td style="text-align:right;"> 0.0000000 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> billet_currentNon-Operational/Clinical </td>
+   <td style="text-align:left;"> billet_currentAdministrative </td>
    <td style="text-align:right;"> -0.2015313 </td>
    <td style="text-align:right;"> 0.1975770 </td>
    <td style="text-align:right;"> -1.0200137 </td>
@@ -3083,6 +3143,7 @@ By Billet Current and Critical War
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -3092,12 +3153,13 @@ By Billet Current and Critical War
    <td style="text-align:right;"> 1.313958 </td>
    <td style="text-align:right;"> 11.38609 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 6 </td>
    <td style="text-align:right;"> -1471.894 </td>
    <td style="text-align:right;"> 2959.789 </td>
    <td style="text-align:right;"> 2997.955 </td>
    <td style="text-align:right;"> 1493.409 </td>
    <td style="text-align:right;"> 865 </td>
+   <td style="text-align:right;"> 872 </td>
   </tr>
 </tbody>
 </table>
@@ -3169,6 +3231,7 @@ By Bonus_pay and Manning_proportion
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -3178,12 +3241,13 @@ By Bonus_pay and Manning_proportion
    <td style="text-align:right;"> 1.318796 </td>
    <td style="text-align:right;"> 14.87015 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 4 </td>
    <td style="text-align:right;"> -1476.106 </td>
    <td style="text-align:right;"> 2964.213 </td>
    <td style="text-align:right;"> 2992.838 </td>
    <td style="text-align:right;"> 1507.907 </td>
    <td style="text-align:right;"> 867 </td>
+   <td style="text-align:right;"> 872 </td>
   </tr>
 </tbody>
 </table>No interaction between manning_proportion_cut3 & bonus_pay_cut3<br/><code>Analysis of Variance Table
@@ -3212,7 +3276,7 @@ Model 2: satisfaction_rank ~ 1 + manning_proportion_cut3 + bonus_pay_cut3
    <td style="text-align:right;"> 0.0000000 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> billet_currentNon-Operational/Clinical </td>
+   <td style="text-align:left;"> billet_currentAdministrative </td>
    <td style="text-align:right;"> -0.2015313 </td>
    <td style="text-align:right;"> 0.1975770 </td>
    <td style="text-align:right;"> -1.0200137 </td>
@@ -3270,6 +3334,7 @@ Model 2: satisfaction_rank ~ 1 + manning_proportion_cut3 + bonus_pay_cut3
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -3279,12 +3344,13 @@ Model 2: satisfaction_rank ~ 1 + manning_proportion_cut3 + bonus_pay_cut3
    <td style="text-align:right;"> 1.313958 </td>
    <td style="text-align:right;"> 11.38609 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 6 </td>
    <td style="text-align:right;"> -1471.894 </td>
    <td style="text-align:right;"> 2959.789 </td>
    <td style="text-align:right;"> 2997.955 </td>
    <td style="text-align:right;"> 1493.409 </td>
    <td style="text-align:right;"> 865 </td>
+   <td style="text-align:right;"> 872 </td>
   </tr>
 </tbody>
 </table>
@@ -3303,13 +3369,13 @@ Residuals:
 -3.4636 -0.7754  0.2246  0.9947  2.6016 
 
 Coefficients:
-                                       Estimate Std. Error t value Pr(>|t|)
-(Intercept)                             2.39905    0.20237  11.855  < 2e-16
-billet_currentNon-Operational/Clinical -0.52516    0.19724  -2.663 0.007902
-billet_currentOCONUS MTF               -0.45834    0.13776  -3.327 0.000915
-billet_currentCONUS Operational        -0.67101    0.13202  -5.083 4.57e-07
-billet_currentOCONUS Operational       -1.37705    0.20769  -6.630 5.94e-11
-officer_rate                            0.34410    0.04627   7.436 2.52e-13
+                                 Estimate Std. Error t value Pr(>|t|)
+(Intercept)                       2.39905    0.20237  11.855  < 2e-16
+billet_currentAdministrative     -0.52516    0.19724  -2.663 0.007902
+billet_currentOCONUS MTF         -0.45834    0.13776  -3.327 0.000915
+billet_currentCONUS Operational  -0.67101    0.13202  -5.083 4.57e-07
+billet_currentOCONUS Operational -1.37705    0.20769  -6.630 5.94e-11
+officer_rate                      0.34410    0.04627   7.436 2.52e-13
 
 Residual standard error: 1.269 on 853 degrees of freedom
   (77 observations deleted due to missingness)
@@ -3326,17 +3392,17 @@ Residuals:
 -3.5180 -0.8131  0.1883  1.0431  2.8817 
 
 Coefficients:
-                                       Estimate Std. Error t value Pr(>|t|)
-(Intercept)                             2.74494    0.22167  12.383  < 2e-16
-billet_currentNon-Operational/Clinical -0.44492    0.19850  -2.241 0.025258
-billet_currentOCONUS MTF               -0.40357    0.13807  -2.923 0.003559
-billet_currentCONUS Operational        -0.39353    0.15497  -2.539 0.011283
-billet_currentOCONUS Operational       -1.14521    0.21495  -5.328 1.27e-07
-officer_rate                            0.29551    0.04919   6.008 2.78e-09
-specialty_typesurgical                 -0.26554    0.12029  -2.208 0.027545
-specialty_typefamily                   -0.40943    0.11886  -3.445 0.000600
-specialty_typeoperational              -0.66349    0.18554  -3.576 0.000369
-specialty_typeresident                 -0.19873    0.23598  -0.842 0.399932
+                                 Estimate Std. Error t value Pr(>|t|)
+(Intercept)                       2.74494    0.22167  12.383  < 2e-16
+billet_currentAdministrative     -0.44492    0.19850  -2.241 0.025258
+billet_currentOCONUS MTF         -0.40357    0.13807  -2.923 0.003559
+billet_currentCONUS Operational  -0.39353    0.15497  -2.539 0.011283
+billet_currentOCONUS Operational -1.14521    0.21495  -5.328 1.27e-07
+officer_rate                      0.29551    0.04919   6.008 2.78e-09
+specialty_typesurgical           -0.26554    0.12029  -2.208 0.027545
+specialty_typefamily             -0.40943    0.11886  -3.445 0.000600
+specialty_typeoperational        -0.66349    0.18554  -3.576 0.000369
+specialty_typeresident           -0.19873    0.23598  -0.842 0.399932
 
 Residual standard error: 1.257 on 849 degrees of freedom
   (77 observations deleted due to missingness)
@@ -3362,7 +3428,7 @@ F-statistic: 16.73 on 9 and 849 DF,  p-value: < 2.2e-16
    <td style="text-align:right;"> 0.0000000 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> billet_currentNon-Operational/Clinical </td>
+   <td style="text-align:left;"> billet_currentAdministrative </td>
    <td style="text-align:right;"> -0.4449198 </td>
    <td style="text-align:right;"> 0.1985010 </td>
    <td style="text-align:right;"> -2.2413979 </td>
@@ -3441,6 +3507,7 @@ F-statistic: 16.73 on 9 and 849 DF,  p-value: < 2.2e-16
    <th style="text-align:right;"> BIC </th>
    <th style="text-align:right;"> deviance </th>
    <th style="text-align:right;"> df.residual </th>
+   <th style="text-align:right;"> nobs </th>
   </tr>
  </thead>
 <tbody>
@@ -3450,12 +3517,13 @@ F-statistic: 16.73 on 9 and 849 DF,  p-value: < 2.2e-16
    <td style="text-align:right;"> 1.256672 </td>
    <td style="text-align:right;"> 16.72926 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 9 </td>
    <td style="text-align:right;"> -1410.092 </td>
    <td style="text-align:right;"> 2842.184 </td>
    <td style="text-align:right;"> 2894.498 </td>
    <td style="text-align:right;"> 1340.762 </td>
    <td style="text-align:right;"> 849 </td>
+   <td style="text-align:right;"> 859 </td>
   </tr>
 </tbody>
 </table>Analysis of Variance Table
@@ -3481,110 +3549,134 @@ For the sake of documentation and reproducibility, the current report was render
   <summary>Environment <span class="glyphicon glyphicon-plus-sign"></span></summary>
 
 ```
-─ Session info ───────────────────────────────────────────────────────────────────────────────────
- setting  value                       
- version  R version 3.6.3 (2020-02-29)
- os       Ubuntu 19.10                
- system   x86_64, linux-gnu           
- ui       RStudio                     
- language (EN)                        
- collate  en_US.UTF-8                 
- ctype    en_US.UTF-8                 
- tz       America/Chicago             
- date     2020-03-04                  
+- Session info -----------------------------------------------------------------------------------
+ setting  value
+ version  R version 4.2.3 Patched (2023-03-29 r84127 ucrt)
+ os       Windows 10 x64 (build 22621)
+ system   x86_64, mingw32
+ ui       RStudio
+ language (EN)
+ collate  English_United States.utf8
+ ctype    C
+ tz       America/Chicago
+ date     2023-04-06
+ rstudio  2023.03.0+386 Cherry Blossom (desktop)
+ pandoc   2.19.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
-─ Packages ───────────────────────────────────────────────────────────────────────────────────────
- package         * version     date       lib source                                  
- assertthat        0.2.1       2019-03-21 [1] CRAN (R 3.6.2)                          
- backports         1.1.5       2019-10-02 [1] CRAN (R 3.6.2)                          
- broom             0.5.5       2020-02-29 [1] CRAN (R 3.6.3)                          
- callr             3.4.2       2020-02-12 [1] CRAN (R 3.6.2)                          
- checkmate         2.0.0       2020-02-06 [1] CRAN (R 3.6.2)                          
- cli               2.0.2       2020-02-28 [1] CRAN (R 3.6.3)                          
- colorspace        1.4-1       2019-03-18 [1] CRAN (R 3.6.2)                          
- config            0.3         2018-03-27 [1] CRAN (R 3.6.2)                          
- corrplot          0.84        2017-10-16 [1] CRAN (R 3.6.2)                          
- crayon            1.3.4       2017-09-16 [1] CRAN (R 3.6.2)                          
- DBI               1.1.0       2019-12-15 [1] CRAN (R 3.6.2)                          
- desc              1.2.0       2018-05-01 [1] CRAN (R 3.6.2)                          
- devtools          2.2.2       2020-02-17 [1] CRAN (R 3.6.2)                          
- digest            0.6.25      2020-02-23 [1] CRAN (R 3.6.2)                          
- dplyr             0.8.4       2020-01-31 [1] CRAN (R 3.6.2)                          
- ellipsis          0.3.0       2019-09-20 [1] CRAN (R 3.6.2)                          
- evaluate          0.14        2019-05-28 [1] CRAN (R 3.6.2)                          
- fansi             0.4.1       2020-01-08 [1] CRAN (R 3.6.2)                          
- farver            2.0.3       2020-01-16 [1] CRAN (R 3.6.2)                          
- fs                1.3.1       2019-05-06 [1] CRAN (R 3.6.2)                          
- generics          0.0.2       2018-11-29 [1] CRAN (R 3.6.2)                          
- ggplot2         * 3.2.1       2019-08-10 [1] CRAN (R 3.6.2)                          
- glue              1.3.1       2019-03-12 [1] CRAN (R 3.6.2)                          
- gtable            0.3.0       2019-03-25 [1] CRAN (R 3.6.2)                          
- highr             0.8         2019-03-20 [1] CRAN (R 3.6.2)                          
- hms               0.5.3       2020-01-08 [1] CRAN (R 3.6.2)                          
- htmltools         0.4.0       2019-10-04 [1] CRAN (R 3.6.2)                          
- httr              1.4.1       2019-08-05 [1] CRAN (R 3.6.2)                          
- import            1.1.0       2015-06-22 [1] CRAN (R 3.6.2)                          
- kableExtra        1.1.0       2019-03-16 [1] CRAN (R 3.6.2)                          
- knitr           * 1.28        2020-02-06 [1] CRAN (R 3.6.2)                          
- labeling          0.3         2014-08-23 [1] CRAN (R 3.6.2)                          
- lattice           0.20-40     2020-02-19 [4] CRAN (R 3.6.2)                          
- lazyeval          0.2.2       2019-03-15 [1] CRAN (R 3.6.2)                          
- lifecycle         0.1.0       2019-08-01 [1] CRAN (R 3.6.2)                          
- magrittr          1.5         2014-11-22 [1] CRAN (R 3.6.2)                          
- Matrix            1.2-18      2019-11-27 [4] CRAN (R 3.6.1)                          
- memoise           1.1.0       2017-04-21 [1] CRAN (R 3.6.2)                          
- mitools           2.4         2019-04-26 [1] CRAN (R 3.6.2)                          
- munsell           0.5.0       2018-06-12 [1] CRAN (R 3.6.2)                          
- nlme              3.1-144     2020-02-06 [1] CRAN (R 3.6.2)                          
- OuhscMunge        0.1.9.9012  2020-01-13 [1] local                                   
- packrat           0.5.0       2018-11-14 [1] CRAN (R 3.6.2)                          
- pillar            1.4.3       2019-12-20 [1] CRAN (R 3.6.2)                          
- pkgbuild          1.0.6       2019-10-09 [1] CRAN (R 3.6.2)                          
- pkgconfig         2.0.3       2019-09-22 [1] CRAN (R 3.6.2)                          
- pkgload           1.0.2       2018-10-29 [1] CRAN (R 3.6.2)                          
- prettyunits       1.1.1       2020-01-24 [1] CRAN (R 3.6.2)                          
- processx          3.4.2       2020-02-09 [1] CRAN (R 3.6.2)                          
- ps                1.3.2       2020-02-13 [1] CRAN (R 3.6.2)                          
- purrr             0.3.3       2019-10-18 [1] CRAN (R 3.6.2)                          
- R6                2.4.1       2019-11-12 [1] CRAN (R 3.6.2)                          
- Rcpp              1.0.3       2019-11-08 [1] CRAN (R 3.6.2)                          
- readr             1.3.1       2018-12-21 [1] CRAN (R 3.6.2)                          
- remotes           2.1.1       2020-02-15 [1] CRAN (R 3.6.2)                          
- rlang             0.4.5       2020-03-01 [1] CRAN (R 3.6.3)                          
- rmarkdown         2.1         2020-01-20 [1] CRAN (R 3.6.2)                          
- rprojroot         1.3-2       2018-01-03 [1] CRAN (R 3.6.2)                          
- rsconnect         0.8.16      2019-12-13 [1] CRAN (R 3.6.2)                          
- rstudioapi        0.11        2020-02-07 [1] CRAN (R 3.6.2)                          
- rvest             0.3.5       2019-11-08 [1] CRAN (R 3.6.2)                          
- scales            1.1.0       2019-11-18 [1] CRAN (R 3.6.2)                          
- sessioninfo       1.1.1       2018-11-05 [1] CRAN (R 3.6.2)                          
- stringi           1.4.6       2020-02-17 [1] CRAN (R 3.6.2)                          
- stringr           1.4.0       2019-02-10 [1] CRAN (R 3.6.2)                          
- survey            3.37        2020-01-21 [1] CRAN (R 3.6.2)                          
- survival          3.1-8       2019-12-03 [1] CRAN (R 3.6.2)                          
- TabularManifest   0.1-16.9003 2019-12-15 [1] Github (Melinae/TabularManifest@4cbc21c)
- testit            0.11.1      2020-01-09 [1] Github (yihui/testit@c1c19f8)           
- testthat          2.3.2       2020-03-02 [1] CRAN (R 3.6.3)                          
- tibble            2.1.3       2019-06-06 [1] CRAN (R 3.6.2)                          
- tidyr             1.0.2       2020-01-24 [1] CRAN (R 3.6.2)                          
- tidyselect        1.0.0       2020-01-27 [1] CRAN (R 3.6.2)                          
- usethis           1.5.1       2019-07-04 [1] CRAN (R 3.6.2)                          
- utf8              1.1.4       2018-05-24 [1] CRAN (R 3.6.2)                          
- vctrs             0.2.3       2020-02-20 [1] CRAN (R 3.6.2)                          
- viridisLite       0.3.0       2018-02-01 [1] CRAN (R 3.6.2)                          
- webshot           0.5.2       2019-11-22 [1] CRAN (R 3.6.2)                          
- withr             2.1.2       2018-03-15 [1] CRAN (R 3.6.2)                          
- xfun              0.12        2020-01-13 [1] CRAN (R 3.6.2)                          
- xml2              1.2.2       2019-08-09 [1] CRAN (R 3.6.2)                          
- yaml              2.2.1       2020-02-01 [1] CRAN (R 3.6.2)                          
+- Packages ---------------------------------------------------------------------------------------
+ ! package         * version     date (UTC) lib source
+ D archive           1.1.5       2022-05-06 [1] CRAN (R 4.2.2)
+   backports         1.4.1       2021-12-13 [1] CRAN (R 4.2.0)
+   bit               4.0.5       2022-11-15 [1] CRAN (R 4.2.2)
+   bit64             4.0.5       2020-08-30 [1] CRAN (R 4.2.2)
+   broom             1.0.4       2023-03-11 [1] CRAN (R 4.2.3)
+   bslib             0.4.2       2022-12-16 [1] CRAN (R 4.2.2)
+   cachem            1.0.7       2023-02-24 [1] CRAN (R 4.2.2)
+   callr             3.7.3       2022-11-02 [1] CRAN (R 4.2.2)
+   checkmate         2.1.0       2022-04-21 [1] CRAN (R 4.2.2)
+   cli               3.6.1       2023-03-23 [1] CRAN (R 4.2.2)
+   colorspace        2.1-0       2023-01-23 [1] CRAN (R 4.2.2)
+   config            0.3.1       2020-12-17 [1] CRAN (R 4.2.2)
+   corrplot          0.92        2021-11-18 [1] CRAN (R 4.2.2)
+   crayon            1.5.2       2022-09-29 [1] CRAN (R 4.2.2)
+   DBI               1.1.3       2022-06-18 [1] CRAN (R 4.2.2)
+   devtools          2.4.5       2022-10-11 [1] CRAN (R 4.2.2)
+   digest            0.6.31      2022-12-11 [1] CRAN (R 4.2.2)
+   dplyr             1.1.1       2023-03-22 [1] CRAN (R 4.2.3)
+   ellipsis          0.3.2       2021-04-29 [1] CRAN (R 4.2.2)
+   evaluate          0.20        2023-01-17 [1] CRAN (R 4.2.2)
+   fansi             1.0.4       2023-01-22 [1] CRAN (R 4.2.2)
+   farver            2.1.1       2022-07-06 [1] CRAN (R 4.2.2)
+   fastmap           1.1.1       2023-02-24 [1] CRAN (R 4.2.2)
+   forcats           1.0.0       2023-01-29 [1] CRAN (R 4.2.2)
+   fs                1.6.1       2023-02-06 [1] CRAN (R 4.2.2)
+   generics          0.1.3       2022-07-05 [1] CRAN (R 4.2.2)
+   ggplot2         * 3.4.2       2023-04-03 [1] CRAN (R 4.2.3)
+   glue              1.6.2       2022-02-24 [1] CRAN (R 4.2.2)
+   gtable            0.3.3       2023-03-21 [1] CRAN (R 4.2.2)
+   highr             0.10        2022-12-22 [1] CRAN (R 4.2.2)
+   hms               1.1.3       2023-03-21 [1] CRAN (R 4.2.3)
+   htmltools         0.5.5       2023-03-23 [1] CRAN (R 4.2.2)
+   htmlwidgets       1.6.2       2023-03-17 [1] CRAN (R 4.2.3)
+   httpuv            1.6.9       2023-02-14 [1] CRAN (R 4.2.2)
+   httr              1.4.5       2023-02-24 [1] CRAN (R 4.2.2)
+   import            1.3.0       2022-05-23 [1] CRAN (R 4.2.2)
+   jquerylib         0.1.4       2021-04-26 [1] CRAN (R 4.2.2)
+   jsonlite          1.8.4       2022-12-06 [1] CRAN (R 4.2.2)
+   kableExtra        1.3.4       2021-02-20 [1] CRAN (R 4.2.2)
+   knitr           * 1.42        2023-01-25 [1] CRAN (R 4.2.2)
+   labeling          0.4.2       2020-10-20 [1] CRAN (R 4.2.0)
+   later             1.3.0       2021-08-18 [1] CRAN (R 4.2.2)
+   lattice           0.20-45     2021-09-22 [2] CRAN (R 4.2.3)
+   lifecycle         1.0.3       2022-10-07 [1] CRAN (R 4.2.2)
+   magrittr          2.0.3       2022-03-30 [1] CRAN (R 4.2.2)
+   MASS              7.3-58.2    2023-01-23 [2] CRAN (R 4.2.3)
+   Matrix            1.5-3       2022-11-11 [2] CRAN (R 4.2.3)
+   memoise           2.0.1       2021-11-26 [1] CRAN (R 4.2.2)
+   mgcv              1.8-42      2023-03-02 [2] CRAN (R 4.2.3)
+   mime              0.12        2021-09-28 [1] CRAN (R 4.2.0)
+   miniUI            0.1.1.1     2018-05-18 [1] CRAN (R 4.2.2)
+   mitools           2.4         2019-04-26 [1] CRAN (R 4.2.2)
+   munsell           0.5.0       2018-06-12 [1] CRAN (R 4.2.2)
+   nlme              3.1-162     2023-01-31 [2] CRAN (R 4.2.3)
+   OuhscMunge        0.2.0.9015  2022-12-11 [1] Github (OuhscBbmc/OuhscMunge@4e04b6f)
+   pillar            1.9.0       2023-03-22 [1] CRAN (R 4.2.3)
+   pkgbuild          1.4.0       2022-11-27 [1] CRAN (R 4.2.2)
+   pkgconfig         2.0.3       2019-09-22 [1] CRAN (R 4.2.2)
+   pkgload           1.3.2       2022-11-16 [1] CRAN (R 4.2.2)
+   prettyunits       1.1.1       2020-01-24 [1] CRAN (R 4.2.2)
+   processx          3.8.0       2022-10-26 [1] CRAN (R 4.2.2)
+   profvis           0.3.7       2020-11-02 [1] CRAN (R 4.2.2)
+   promises          1.2.0.1     2021-02-11 [1] CRAN (R 4.2.2)
+   ps                1.7.4       2023-04-02 [1] CRAN (R 4.2.3)
+   purrr             1.0.1       2023-01-10 [1] CRAN (R 4.2.2)
+   R6                2.5.1       2021-08-19 [1] CRAN (R 4.2.2)
+   Rcpp              1.0.10      2023-01-22 [1] CRAN (R 4.2.2)
+   readr             2.1.4       2023-02-10 [1] CRAN (R 4.2.2)
+   remotes           2.4.2       2021-11-30 [1] CRAN (R 4.2.2)
+   rlang             1.1.0       2023-03-14 [1] CRAN (R 4.2.3)
+   rmarkdown         2.21        2023-03-26 [1] CRAN (R 4.2.3)
+   rsconnect         0.8.29      2023-01-09 [1] CRAN (R 4.2.2)
+   rstudioapi        0.14        2022-08-22 [1] CRAN (R 4.2.2)
+   rvest             1.0.3       2022-08-19 [1] CRAN (R 4.2.2)
+   sass              0.4.5       2023-01-24 [1] CRAN (R 4.2.2)
+   scales            1.2.1       2022-08-20 [1] CRAN (R 4.2.2)
+   sessioninfo       1.2.2       2021-12-06 [1] CRAN (R 4.2.2)
+   shiny             1.7.4       2022-12-15 [1] CRAN (R 4.2.2)
+   stringi           1.7.12      2023-01-11 [1] CRAN (R 4.2.2)
+   stringr           1.5.0       2022-12-02 [1] CRAN (R 4.2.2)
+   survey            4.1-1       2021-07-19 [1] CRAN (R 4.2.2)
+   survival          3.5-3       2023-02-12 [2] CRAN (R 4.2.3)
+   svglite           2.1.1       2023-01-10 [1] CRAN (R 4.2.2)
+   systemfonts       1.0.4       2022-02-11 [1] CRAN (R 4.2.2)
+   TabularManifest   0.1-16.9003 2022-12-11 [1] Github (Melinae/TabularManifest@b966a2b)
+   testit            0.13        2021-04-14 [1] CRAN (R 4.2.2)
+   tibble            3.2.1       2023-03-20 [1] CRAN (R 4.2.2)
+   tidyr             1.3.0       2023-01-24 [1] CRAN (R 4.2.2)
+   tidyselect        1.2.0       2022-10-10 [1] CRAN (R 4.2.2)
+   tzdb              0.3.0       2022-03-28 [1] CRAN (R 4.2.2)
+   urlchecker        1.0.1       2021-11-30 [1] CRAN (R 4.2.2)
+   usethis           2.1.6       2022-05-25 [1] CRAN (R 4.2.2)
+   utf8              1.2.3       2023-01-31 [1] CRAN (R 4.2.2)
+   vctrs             0.6.1       2023-03-22 [1] CRAN (R 4.2.3)
+   viridisLite       0.4.1       2022-08-22 [1] CRAN (R 4.2.2)
+   vroom             1.6.1       2023-01-22 [1] CRAN (R 4.2.2)
+   webshot           0.5.4       2022-09-26 [1] CRAN (R 4.2.2)
+   withr             2.5.0       2022-03-03 [1] CRAN (R 4.2.2)
+   xfun              0.38        2023-03-24 [1] CRAN (R 4.2.3)
+   xml2              1.3.3       2021-11-30 [1] CRAN (R 4.2.2)
+   xtable            1.8-4       2019-04-21 [1] CRAN (R 4.2.2)
+   yaml              2.3.7       2023-01-23 [1] CRAN (R 4.2.2)
 
-[1] /home/wibeasley/R/x86_64-pc-linux-gnu-library/3.6
-[2] /usr/local/lib/R/site-library
-[3] /usr/lib/R/site-library
-[4] /usr/lib/R/library
+ [1] C:/Users/wibea/AppData/Local/R/win-library/4.2
+ [2] C:/Program Files/R/R-4.2.3patched/library
+
+ D -- DLL MD5 mismatch, broken installation.
+
+--------------------------------------------------------------------------------------------------
 ```
 </details>
 
 
 
-Report rendered by wibeasley at 2020-03-04, 00:19 -0600 in 25 seconds.
+Report rendered by wibea at 2023-04-06, 18:03 -0500 in 13 seconds.

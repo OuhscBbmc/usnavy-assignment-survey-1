@@ -587,7 +587,7 @@ palette_billet <- c(
   "CONUS MTF"                     = "#304bce", # dark blue
   "CONUS Operational"             = "#009dee", # light blue; The reference group
   "OCONUS MTF"                    = "#cc5555", # darkish red
-  "Non-Operational/Clinical"      = "#3acc85", # green
+  "Administrative"                = "#3acc85", # green
   "OCONUS Operational"            = "#ff5500"  # lighter red
   # "GME"                           = "#EDAE49",  # combined with CONUS MTF
   # "Other"                         = ""

@@ -201,7 +201,7 @@ Models to Publish
 ```{r 3-predictor, echo=echo_chunks, message=message_chunks, results="asis"}
 ```
 
-3-predictor model wieght sampling weights
+3-predictor model weight sampling weights
 -----------------------------------
 ```{r 3-predictor-with-weights, echo=echo_chunks, message=message_chunks, results="asis"}
 ```

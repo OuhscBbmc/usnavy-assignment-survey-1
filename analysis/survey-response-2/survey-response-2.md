@@ -1,6 +1,6 @@
 ---
 title: Attitudes Regarding the Assignment Process Among Navy Medical Corps Officers
-date: "Date: 2021-02-07"
+date: "Date: 2023-04-06"
 output:
   html_document:
     keep_md: yes
@@ -69,19 +69,12 @@ Univariate
 -----------------------------------
 
 ```
-Warning: `mutate_()` is deprecated as of dplyr 0.7.0.
-Please use `mutate()` instead.
-See vignette('programming') for more help
+Warning: `fct_explicit_na()` was deprecated in forcats 1.0.0.
+ℹ Please use `fct_na_value_to_level()` instead.
+ℹ The deprecated feature was likely used in the TabularManifest package.
+  Please report the issue to the authors.
 This warning is displayed once every 8 hours.
-Call `lifecycle::last_warnings()` to see where this warning was generated.
-```
-
-```
-Warning: `count_()` is deprecated as of dplyr 0.7.0.
-Please use `count()` instead.
-See vignette('programming') for more help
-This warning is displayed once every 8 hours.
-Call `lifecycle::last_warnings()` to see where this warning was generated.
+Call `lifecycle::last_lifecycle_warnings()` to see where this warning was generated.
 ```
 
 ![](figure-png/marginals-1.png)<!-- -->![](figure-png/marginals-2.png)<!-- -->![](figure-png/marginals-3.png)<!-- -->![](figure-png/marginals-4.png)<!-- -->![](figure-png/marginals-5.png)<!-- -->![](figure-png/marginals-6.png)<!-- -->![](figure-png/marginals-7.png)<!-- -->![](figure-png/marginals-8.png)<!-- -->![](figure-png/marginals-9.png)<!-- -->![](figure-png/marginals-10.png)<!-- -->![](figure-png/marginals-11.png)<!-- -->![](figure-png/marginals-12.png)<!-- -->![](figure-png/marginals-13.png)<!-- -->
@@ -148,9 +141,9 @@ satisfaction_rank 3.4141 0.056
 ```
 
 ```
-# A tibble: 6 x 2
+# A tibble: 6 × 2
   specialty_type satisfaction_rank
-* <fct>                      <dbl>
+  <fct>                      <dbl>
 1 nonsurgical                 3.92
 2 surgical                    3.68
 3 family                      3.35
@@ -164,7 +157,7 @@ satisfaction_rank 3.4141 0.056
 ```
 
 ```
-# A tibble: 5 x 3
+# A tibble: 5 × 3
   specialty_type satisfaction_rank     se
   <fct>                      <dbl>  <dbl>
 1 nonsurgical                 3.92 0.0509
@@ -179,9 +172,9 @@ satisfaction_rank 3.4141 0.056
 ```
 
 ```
-# A tibble: 5 x 2
+# A tibble: 5 × 2
   officer_rank satisfaction_rank
-* <fct>                    <dbl>
+  <fct>                    <dbl>
 1 LT                        3.14
 2 LCDR                      3.59
 3 CDR                       3.93
@@ -194,7 +187,7 @@ satisfaction_rank 3.4141 0.056
 ```
 
 ```
-# A tibble: 5 x 3
+# A tibble: 5 × 3
   officer_rank satisfaction_rank     se
   <fct>                    <dbl>  <dbl>
 1 LT                        2.93 0.103 
@@ -209,15 +202,15 @@ satisfaction_rank 3.4141 0.056
 ```
 
 ```
-# A tibble: 6 x 2
-  billet_current           satisfaction_rank
-* <fct>                                <dbl>
-1 CONUS MTF                             3.85
-2 Non-Operational/Clinical              3.65
-3 OCONUS MTF                            3.41
-4 CONUS Operational                     3.12
-5 OCONUS Operational                    2.45
-6 Other                                 4   
+# A tibble: 6 × 2
+  billet_current     satisfaction_rank
+  <fct>                          <dbl>
+1 CONUS MTF                       3.85
+2 Administrative                  3.65
+3 OCONUS MTF                      3.41
+4 CONUS Operational               3.12
+5 OCONUS Operational              2.45
+6 Other                           4   
 ```
 
 ```
@@ -225,15 +218,15 @@ satisfaction_rank 3.4141 0.056
 ```
 
 ```
-# A tibble: 6 x 3
-  billet_current           satisfaction_rank     se
-  <fct>                                <dbl>  <dbl>
-1 CONUS MTF                             3.70 0.0625
-2 Non-Operational/Clinical              3.33 0.275 
-3 OCONUS MTF                            3.50 0.133 
-4 CONUS Operational                     2.94 0.145 
-5 OCONUS Operational                    2.16 0.231 
-6 Other                                 3.78 0.418 
+# A tibble: 6 × 3
+  billet_current     satisfaction_rank     se
+  <fct>                          <dbl>  <dbl>
+1 CONUS MTF                       3.70 0.0625
+2 Administrative                  3.33 0.275 
+3 OCONUS MTF                      3.50 0.133 
+4 CONUS Operational               2.94 0.145 
+5 OCONUS Operational              2.16 0.231 
+6 Other                           3.78 0.418 
 ```
 
 Relationships between Outcomes
@@ -257,7 +250,10 @@ By Rank
 ### satisfaction_rank
 
 ```
-Warning: `fun.y` is deprecated. Use `fun` instead.
+Warning: The `fun.y` argument of `stat_summary()` is deprecated as of ggplot2 3.3.0.
+ℹ Please use the `fun` argument instead.
+This warning is displayed once every 8 hours.
+Call `lifecycle::last_lifecycle_warnings()` to see where this warning was generated.
 ```
 
 ![](figure-png/by-rank-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
@@ -340,10 +336,6 @@ Warning: `fun.y` is deprecated. Use `fun` instead.
 By Specialty Type
 -----------------------------------
 ### satisfaction_rank
-
-```
-Warning: `fun.y` is deprecated. Use `fun` instead.
-```
 
 ![](figure-png/by-specialty-type-1.png)<!-- --><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ satisfaction_rank 1 + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
@@ -432,10 +424,6 @@ Warning: `fun.y` is deprecated. Use `fun` instead.
 By Bonus Pay
 -----------------------------------
 ### satisfaction_rank
-
-```
-Warning: `fun.y` is deprecated. Use `fun` instead.
-```
 
 ![](figure-png/by-bonus-pay-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + bonus_pay_cut4 </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
@@ -586,30 +574,14 @@ By Manning Proportion
 -----------------------------------
 ### manning_proportion
 
-![](figure-png/by-manning_proportion-1.png)<!-- -->
-
-```
-Warning: `fun.y` is deprecated. Use `fun` instead.
-```
-
-![](figure-png/by-manning_proportion-2.png)<!-- -->
+![](figure-png/by-manning_proportion-1.png)<!-- -->![](figure-png/by-manning_proportion-2.png)<!-- -->
 
 By Critical War
 -----------------------------------
-
-```
-Warning: `fun.y` is deprecated. Use `fun` instead.
-```
-
 ![](figure-png/by-critical_war-1.png)<!-- -->
 
 By Billet Current
 -----------------------------------
-
-```
-Warning: `fun.y` is deprecated. Use `fun` instead.
-```
-
 ![](figure-png/by-billet_current-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
@@ -629,7 +601,7 @@ Warning: `fun.y` is deprecated. Use `fun` instead.
    <td style="text-align:right;"> 0.0000000 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> billet_currentNon-Operational/Clinical </td>
+   <td style="text-align:left;"> billet_currentAdministrative </td>
    <td style="text-align:right;"> -0.2014136 </td>
    <td style="text-align:right;"> 0.1974596 </td>
    <td style="text-align:right;"> -1.0200240 </td>
@@ -709,10 +681,6 @@ Analyses - 2 Predictors
 By Rank and Specialty Type
 -----------------------------------
 ### satisfaction_rank
-
-```
-Warning: `fun.y` is deprecated. Use `fun` instead.
-```
 
 ![](figure-png/by-rank-and-specialty-type-1.png)<!-- --><br/>Data:<code> [ ds ds$specialty_type != "unknown"  </code><br/>Formula:<code> ~ satisfaction_rank 1 + officer_rate_f * specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
@@ -1212,10 +1180,6 @@ By Billet Current and Critical War
 -----------------------------------
 ### satisfaction_rank
 
-```
-Warning: `fun.y` is deprecated. Use `fun` instead.
-```
-
 ![](figure-png/by-billet_current-and-critical_war-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current + critical_war </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
   <tr>
@@ -1235,7 +1199,7 @@ Warning: `fun.y` is deprecated. Use `fun` instead.
    <td style="text-align:right;"> 0.0000000 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> billet_currentNon-Operational/Clinical </td>
+   <td style="text-align:left;"> billet_currentAdministrative </td>
    <td style="text-align:right;"> -0.2015313 </td>
    <td style="text-align:right;"> 0.1975770 </td>
    <td style="text-align:right;"> -1.0200137 </td>
@@ -1317,10 +1281,6 @@ Warning: `fun.y` is deprecated. Use `fun` instead.
 By Bonus_pay and Manning_proportion
 -----------------------------------
 ### satisfaction_rank
-
-```
-Warning: `fun.y` is deprecated. Use `fun` instead.
-```
 
 ![](figure-png/by-bonus_pay-and-manning_proportion-1.png)<!-- --><br/>Data:<code> ds </code><br/>Formula:<code> ~ satisfaction_rank 1 + manning_proportion_cut3 + bonus_pay_cut3 </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
@@ -1430,7 +1390,7 @@ Model 2: satisfaction_rank ~ 1 + manning_proportion_cut3 + bonus_pay_cut3
    <td style="text-align:right;"> 0.0000000 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> billet_currentNon-Operational/Clinical </td>
+   <td style="text-align:left;"> billet_currentAdministrative </td>
    <td style="text-align:right;"> -0.2015313 </td>
    <td style="text-align:right;"> 0.1975770 </td>
    <td style="text-align:right;"> -1.0200137 </td>
@@ -1532,7 +1492,7 @@ By Rank and Billet Type
    <td style="text-align:right;"> 0.0000000 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> billet_currentNon-Operational/Clinical </td>
+   <td style="text-align:left;"> billet_currentAdministrative </td>
    <td style="text-align:right;"> -0.5251624 </td>
    <td style="text-align:right;"> 0.1972434 </td>
    <td style="text-align:right;"> -2.662510 </td>
@@ -1637,7 +1597,7 @@ Ordinal Models
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> billet_currentNon-Operational/Clinical </td>
+   <td style="text-align:left;"> billet_currentAdministrative </td>
    <td style="text-align:right;"> -0.1598301 </td>
    <td style="text-align:right;"> 0.2847549 </td>
    <td style="text-align:right;"> -0.5612903 </td>
@@ -1900,16 +1860,16 @@ MASS::polr(formula = ordered(satisfaction_rank) ~ billet_current +
     officer_rate + specialty_type, data = ds_no_other_or_unknown)
 
 Coefficients:
-                                         Value Std. Error t value
-billet_currentNon-Operational/Clinical -0.6155    0.29779  -2.067
-billet_currentOCONUS MTF               -0.5507    0.20021  -2.751
-billet_currentCONUS Operational        -0.5241    0.23051  -2.274
-billet_currentOCONUS Operational       -1.6041    0.31659  -5.067
-officer_rate                            0.4628    0.07274   6.363
-specialty_typesurgical                 -0.3982    0.17324  -2.299
-specialty_typefamily                   -0.5966    0.17200  -3.469
-specialty_typeoperational              -0.8514    0.27879  -3.054
-specialty_typeresident                 -0.3633    0.32237  -1.127
+                                   Value Std. Error t value
+billet_currentAdministrative     -0.6155    0.29779  -2.067
+billet_currentOCONUS MTF         -0.5507    0.20021  -2.751
+billet_currentCONUS Operational  -0.5241    0.23051  -2.274
+billet_currentOCONUS Operational -1.6041    0.31659  -5.067
+officer_rate                      0.4628    0.07274   6.363
+specialty_typesurgical           -0.3982    0.17324  -2.299
+specialty_typefamily             -0.5966    0.17200  -3.469
+specialty_typeoperational        -0.8514    0.27879  -3.054
+specialty_typeresident           -0.3633    0.32237  -1.127
 
 Intercepts:
     Value   Std. Error t value
@@ -1933,7 +1893,7 @@ AIC: 2468.231
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> billet_currentNon-Operational/Clinical </td>
+   <td style="text-align:left;"> billet_currentAdministrative </td>
    <td style="text-align:right;"> -0.6155252 </td>
    <td style="text-align:right;"> 0.2977934 </td>
    <td style="text-align:right;"> -2.0669541 </td>
@@ -2075,7 +2035,7 @@ Models to Publish
    <td style="text-align:right;"> 0.0000000 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> billet_currentNon-Operational/Clinical </td>
+   <td style="text-align:left;"> billet_currentAdministrative </td>
    <td style="text-align:right;"> -0.4449198 </td>
    <td style="text-align:right;"> 0.1985010 </td>
    <td style="text-align:right;"> -2.2413979 </td>
@@ -2182,7 +2142,7 @@ Model 2: satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type
 2    849 1340.8  4    32.789 5.1907 0.0003911
 ![](figure-png/3-predictor-1.png)<!-- -->![](figure-png/3-predictor-2.png)<!-- -->![](figure-png/3-predictor-3.png)<!-- -->![](figure-png/3-predictor-4.png)<!-- -->
 
-3-predictor model wieght sampling weights
+3-predictor model weight sampling weights
 -----------------------------------
 <br/>Data:<code> ds_no_other_or_unknown </code><br/>Formula:<code> ~ satisfaction_rank 1 + billet_current + officer_rate + specialty_type </code><table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; ">
  <thead>
@@ -2203,7 +2163,7 @@ Model 2: satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type
    <td style="text-align:right;"> 0.0000000 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> billet_currentNon-Operational/Clinical </td>
+   <td style="text-align:left;"> billet_currentAdministrative </td>
    <td style="text-align:right;"> -0.4852311 </td>
    <td style="text-align:right;"> 0.2196834 </td>
    <td style="text-align:right;"> -2.2087744 </td>
@@ -2306,6 +2266,14 @@ Model 2: satisfaction_rank ~ 1 + billet_current + officer_rate + specialty_type
 
 Billet Intercepts
 -----------------------------------
+
+```
+Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+ℹ Please use `linewidth` instead.
+This warning is displayed once every 8 hours.
+Call `lifecycle::last_lifecycle_warnings()` to see where this warning was generated.
+```
+
 ![](figure-png/billet-intercept-1.png)<!-- -->
 
 Specialty Intercepts
@@ -2371,106 +2339,122 @@ For the sake of documentation and reproducibility, the current report was render
 
 ```
 ─ Session info ───────────────────────────────────────────────────────────────────────────────────
- setting  value                       
- version  R version 4.0.3 (2020-10-10)
- os       Ubuntu 20.04.2 LTS          
- system   x86_64, linux-gnu           
- ui       X11                         
- language (EN)                        
- collate  en_US.UTF-8                 
- ctype    en_US.UTF-8                 
- tz       America/Chicago             
- date     2021-02-07                  
+ setting  value
+ version  R version 4.2.3 Patched (2023-03-29 r84127 ucrt)
+ os       Windows 10 x64 (build 22621)
+ system   x86_64, mingw32
+ ui       RTerm
+ language (EN)
+ collate  English_United States.utf8
+ ctype    English_United States.utf8
+ tz       America/Chicago
+ date     2023-04-06
+ pandoc   2.19.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
 ─ Packages ───────────────────────────────────────────────────────────────────────────────────────
- package         * version     date       lib source                                  
- assertthat        0.2.1       2019-03-21 [1] CRAN (R 4.0.0)                          
- backports         1.2.1       2020-12-09 [1] CRAN (R 4.0.3)                          
- broom             0.7.4       2021-01-29 [1] CRAN (R 4.0.3)                          
- cachem            1.0.1       2021-01-21 [1] CRAN (R 4.0.3)                          
- callr             3.5.1       2020-10-13 [1] CRAN (R 4.0.3)                          
- cli               2.2.0       2020-11-20 [1] CRAN (R 4.0.3)                          
- colorspace        2.0-0       2020-11-11 [1] CRAN (R 4.0.3)                          
- config            0.3.1       2020-12-17 [1] CRAN (R 4.0.3)                          
- corrplot          0.84        2017-10-16 [1] CRAN (R 4.0.0)                          
- crayon            1.4.0       2021-01-30 [1] CRAN (R 4.0.3)                          
- DBI               1.1.1       2021-01-15 [1] CRAN (R 4.0.3)                          
- desc              1.2.0       2018-05-01 [1] CRAN (R 4.0.0)                          
- devtools          2.3.2       2020-09-18 [1] CRAN (R 4.0.2)                          
- digest            0.6.27      2020-10-24 [1] CRAN (R 4.0.3)                          
- dplyr             1.0.3       2021-01-15 [1] CRAN (R 4.0.3)                          
- ellipsis          0.3.1       2020-05-15 [1] CRAN (R 4.0.0)                          
- evaluate          0.14        2019-05-28 [1] CRAN (R 4.0.0)                          
- fansi             0.4.2       2021-01-15 [1] CRAN (R 4.0.3)                          
- farver            2.0.3       2020-01-16 [1] CRAN (R 4.0.0)                          
- fastmap           1.1.0       2021-01-25 [1] CRAN (R 4.0.3)                          
- fs                1.5.0       2020-07-31 [1] CRAN (R 4.0.2)                          
- generics          0.1.0       2020-10-31 [1] CRAN (R 4.0.3)                          
- ggplot2         * 3.3.3       2020-12-30 [1] CRAN (R 4.0.3)                          
- glue              1.4.2       2020-08-27 [1] CRAN (R 4.0.2)                          
- gtable            0.3.0       2019-03-25 [1] CRAN (R 4.0.0)                          
- highr             0.8         2019-03-20 [1] CRAN (R 4.0.0)                          
- hms               1.0.0       2021-01-13 [1] CRAN (R 4.0.3)                          
- htmltools         0.5.1.1     2021-01-22 [1] CRAN (R 4.0.3)                          
- httr              1.4.2       2020-07-20 [1] CRAN (R 4.0.2)                          
- import            1.2.0       2020-09-24 [1] CRAN (R 4.0.2)                          
- kableExtra        1.3.1       2020-10-22 [1] CRAN (R 4.0.3)                          
- knitr           * 1.31        2021-01-27 [1] CRAN (R 4.0.3)                          
- labeling          0.4.2       2020-10-20 [1] CRAN (R 4.0.3)                          
- lattice           0.20-41     2020-04-02 [4] CRAN (R 4.0.0)                          
- lifecycle         0.2.0       2020-03-06 [1] CRAN (R 4.0.0)                          
- magrittr          2.0.1       2020-11-17 [1] CRAN (R 4.0.3)                          
- MASS              7.3-53      2020-09-09 [4] CRAN (R 4.0.2)                          
- Matrix            1.3-2       2021-01-06 [4] CRAN (R 4.0.3)                          
- memoise           2.0.0       2021-01-26 [1] CRAN (R 4.0.3)                          
- mgcv              1.8-33      2020-08-27 [4] CRAN (R 4.0.2)                          
- mitools           2.4         2019-04-26 [1] CRAN (R 4.0.0)                          
- munsell           0.5.0       2018-06-12 [1] CRAN (R 4.0.0)                          
- nlme              3.1-151     2020-12-10 [1] CRAN (R 4.0.3)                          
- pillar            1.4.7       2020-11-20 [1] CRAN (R 4.0.3)                          
- pkgbuild          1.2.0       2020-12-15 [1] CRAN (R 4.0.3)                          
- pkgconfig         2.0.3       2019-09-22 [1] CRAN (R 4.0.0)                          
- pkgload           1.1.0       2020-05-29 [1] CRAN (R 4.0.0)                          
- prettyunits       1.1.1       2020-01-24 [1] CRAN (R 4.0.0)                          
- processx          3.4.5       2020-11-30 [1] CRAN (R 4.0.3)                          
- ps                1.5.0       2020-12-05 [1] CRAN (R 4.0.3)                          
- purrr             0.3.4       2020-04-17 [1] CRAN (R 4.0.0)                          
- R6                2.5.0       2020-10-28 [1] CRAN (R 4.0.3)                          
- readr             1.4.0       2020-10-05 [1] CRAN (R 4.0.3)                          
- remotes           2.2.0       2020-07-21 [1] CRAN (R 4.0.2)                          
- rlang             0.4.10      2020-12-30 [1] CRAN (R 4.0.3)                          
- rmarkdown         2.6         2020-12-14 [1] CRAN (R 4.0.3)                          
- rprojroot         2.0.2       2020-11-15 [1] CRAN (R 4.0.3)                          
- rstudioapi        0.13        2020-11-12 [1] CRAN (R 4.0.3)                          
- rvest             0.3.6       2020-07-25 [1] CRAN (R 4.0.2)                          
- scales            1.1.1       2020-05-11 [1] CRAN (R 4.0.0)                          
- sessioninfo       1.1.1       2018-11-05 [1] CRAN (R 4.0.0)                          
- stringi           1.5.3       2020-09-09 [1] CRAN (R 4.0.2)                          
- stringr           1.4.0       2019-02-10 [1] CRAN (R 4.0.0)                          
- survey            4.0         2020-04-03 [1] CRAN (R 4.0.0)                          
- survival          3.2-7       2020-09-28 [1] CRAN (R 4.0.2)                          
- TabularManifest   0.1-16.9003 2020-05-25 [1] Github (Melinae/TabularManifest@4cbc21c)
- testthat          3.0.1       2020-12-17 [1] CRAN (R 4.0.3)                          
- tibble            3.0.6       2021-01-29 [1] CRAN (R 4.0.3)                          
- tidyr             1.1.2       2020-08-27 [1] CRAN (R 4.0.2)                          
- tidyselect        1.1.0       2020-05-11 [1] CRAN (R 4.0.0)                          
- usethis           2.0.0       2020-12-10 [1] CRAN (R 4.0.3)                          
- utf8              1.1.4       2018-05-24 [1] CRAN (R 4.0.0)                          
- vctrs             0.3.6       2020-12-17 [1] CRAN (R 4.0.3)                          
- viridisLite       0.3.0       2018-02-01 [1] CRAN (R 4.0.0)                          
- webshot           0.5.2       2019-11-22 [1] CRAN (R 4.0.0)                          
- withr             2.4.1       2021-01-26 [1] CRAN (R 4.0.3)                          
- xfun              0.20        2021-01-06 [1] CRAN (R 4.0.3)                          
- xml2              1.3.2       2020-04-23 [1] CRAN (R 4.0.0)                          
- yaml              2.2.1       2020-02-01 [1] CRAN (R 4.0.0)                          
+ package         * version     date (UTC) lib source
+ backports         1.4.1       2021-12-13 [1] CRAN (R 4.2.0)
+ broom             1.0.4       2023-03-11 [1] CRAN (R 4.2.3)
+ bslib             0.4.2       2022-12-16 [1] CRAN (R 4.2.2)
+ cachem            1.0.7       2023-02-24 [1] CRAN (R 4.2.2)
+ callr             3.7.3       2022-11-02 [1] CRAN (R 4.2.2)
+ cli               3.6.1       2023-03-23 [1] CRAN (R 4.2.2)
+ colorspace        2.1-0       2023-01-23 [1] CRAN (R 4.2.2)
+ config            0.3.1       2020-12-17 [1] CRAN (R 4.2.2)
+ corrplot          0.92        2021-11-18 [1] CRAN (R 4.2.2)
+ crayon            1.5.2       2022-09-29 [1] CRAN (R 4.2.2)
+ DBI               1.1.3       2022-06-18 [1] CRAN (R 4.2.2)
+ devtools          2.4.5       2022-10-11 [1] CRAN (R 4.2.2)
+ digest            0.6.31      2022-12-11 [1] CRAN (R 4.2.2)
+ dplyr             1.1.1       2023-03-22 [1] CRAN (R 4.2.3)
+ ellipsis          0.3.2       2021-04-29 [1] CRAN (R 4.2.2)
+ evaluate          0.20        2023-01-17 [1] CRAN (R 4.2.2)
+ fansi             1.0.4       2023-01-22 [1] CRAN (R 4.2.2)
+ farver            2.1.1       2022-07-06 [1] CRAN (R 4.2.2)
+ fastmap           1.1.1       2023-02-24 [1] CRAN (R 4.2.2)
+ forcats           1.0.0       2023-01-29 [1] CRAN (R 4.2.2)
+ fs                1.6.1       2023-02-06 [1] CRAN (R 4.2.2)
+ generics          0.1.3       2022-07-05 [1] CRAN (R 4.2.2)
+ ggplot2         * 3.4.2       2023-04-03 [1] CRAN (R 4.2.3)
+ glue              1.6.2       2022-02-24 [1] CRAN (R 4.2.2)
+ gtable            0.3.3       2023-03-21 [1] CRAN (R 4.2.2)
+ highr             0.10        2022-12-22 [1] CRAN (R 4.2.2)
+ hms               1.1.3       2023-03-21 [1] CRAN (R 4.2.3)
+ htmltools         0.5.5       2023-03-23 [1] CRAN (R 4.2.2)
+ htmlwidgets       1.6.2       2023-03-17 [1] CRAN (R 4.2.3)
+ httpuv            1.6.9       2023-02-14 [1] CRAN (R 4.2.2)
+ httr              1.4.5       2023-02-24 [1] CRAN (R 4.2.2)
+ import            1.3.0       2022-05-23 [1] CRAN (R 4.2.2)
+ jquerylib         0.1.4       2021-04-26 [1] CRAN (R 4.2.2)
+ jsonlite          1.8.4       2022-12-06 [1] CRAN (R 4.2.2)
+ kableExtra        1.3.4       2021-02-20 [1] CRAN (R 4.2.2)
+ knitr           * 1.42        2023-01-25 [1] CRAN (R 4.2.2)
+ labeling          0.4.2       2020-10-20 [1] CRAN (R 4.2.0)
+ later             1.3.0       2021-08-18 [1] CRAN (R 4.2.2)
+ lattice           0.20-45     2021-09-22 [2] CRAN (R 4.2.3)
+ lifecycle         1.0.3       2022-10-07 [1] CRAN (R 4.2.2)
+ magrittr          2.0.3       2022-03-30 [1] CRAN (R 4.2.2)
+ MASS              7.3-58.2    2023-01-23 [2] CRAN (R 4.2.3)
+ Matrix            1.5-3       2022-11-11 [2] CRAN (R 4.2.3)
+ memoise           2.0.1       2021-11-26 [1] CRAN (R 4.2.2)
+ mgcv              1.8-42      2023-03-02 [2] CRAN (R 4.2.3)
+ mime              0.12        2021-09-28 [1] CRAN (R 4.2.0)
+ miniUI            0.1.1.1     2018-05-18 [1] CRAN (R 4.2.2)
+ mitools           2.4         2019-04-26 [1] CRAN (R 4.2.2)
+ munsell           0.5.0       2018-06-12 [1] CRAN (R 4.2.2)
+ nlme              3.1-162     2023-01-31 [2] CRAN (R 4.2.3)
+ pillar            1.9.0       2023-03-22 [1] CRAN (R 4.2.3)
+ pkgbuild          1.4.0       2022-11-27 [1] CRAN (R 4.2.2)
+ pkgconfig         2.0.3       2019-09-22 [1] CRAN (R 4.2.2)
+ pkgload           1.3.2       2022-11-16 [1] CRAN (R 4.2.2)
+ prettyunits       1.1.1       2020-01-24 [1] CRAN (R 4.2.2)
+ processx          3.8.0       2022-10-26 [1] CRAN (R 4.2.2)
+ profvis           0.3.7       2020-11-02 [1] CRAN (R 4.2.2)
+ promises          1.2.0.1     2021-02-11 [1] CRAN (R 4.2.2)
+ ps                1.7.4       2023-04-02 [1] CRAN (R 4.2.3)
+ purrr             1.0.1       2023-01-10 [1] CRAN (R 4.2.2)
+ R6                2.5.1       2021-08-19 [1] CRAN (R 4.2.2)
+ Rcpp              1.0.10      2023-01-22 [1] CRAN (R 4.2.2)
+ readr             2.1.4       2023-02-10 [1] CRAN (R 4.2.2)
+ remotes           2.4.2       2021-11-30 [1] CRAN (R 4.2.2)
+ rlang             1.1.0       2023-03-14 [1] CRAN (R 4.2.3)
+ rmarkdown         2.21        2023-03-26 [1] CRAN (R 4.2.3)
+ rstudioapi        0.14        2022-08-22 [1] CRAN (R 4.2.2)
+ rvest             1.0.3       2022-08-19 [1] CRAN (R 4.2.2)
+ sass              0.4.5       2023-01-24 [1] CRAN (R 4.2.2)
+ scales            1.2.1       2022-08-20 [1] CRAN (R 4.2.2)
+ sessioninfo       1.2.2       2021-12-06 [1] CRAN (R 4.2.2)
+ shiny             1.7.4       2022-12-15 [1] CRAN (R 4.2.2)
+ stringi           1.7.12      2023-01-11 [1] CRAN (R 4.2.2)
+ stringr           1.5.0       2022-12-02 [1] CRAN (R 4.2.2)
+ survey            4.1-1       2021-07-19 [1] CRAN (R 4.2.2)
+ survival          3.5-3       2023-02-12 [2] CRAN (R 4.2.3)
+ svglite           2.1.1       2023-01-10 [1] CRAN (R 4.2.2)
+ systemfonts       1.0.4       2022-02-11 [1] CRAN (R 4.2.2)
+ TabularManifest   0.1-16.9003 2022-12-11 [1] Github (Melinae/TabularManifest@b966a2b)
+ tibble            3.2.1       2023-03-20 [1] CRAN (R 4.2.2)
+ tidyr             1.3.0       2023-01-24 [1] CRAN (R 4.2.2)
+ tidyselect        1.2.0       2022-10-10 [1] CRAN (R 4.2.2)
+ tzdb              0.3.0       2022-03-28 [1] CRAN (R 4.2.2)
+ urlchecker        1.0.1       2021-11-30 [1] CRAN (R 4.2.2)
+ usethis           2.1.6       2022-05-25 [1] CRAN (R 4.2.2)
+ utf8              1.2.3       2023-01-31 [1] CRAN (R 4.2.2)
+ vctrs             0.6.1       2023-03-22 [1] CRAN (R 4.2.3)
+ viridisLite       0.4.1       2022-08-22 [1] CRAN (R 4.2.2)
+ webshot           0.5.4       2022-09-26 [1] CRAN (R 4.2.2)
+ withr             2.5.0       2022-03-03 [1] CRAN (R 4.2.2)
+ xfun              0.38        2023-03-24 [1] CRAN (R 4.2.3)
+ xml2              1.3.3       2021-11-30 [1] CRAN (R 4.2.2)
+ xtable            1.8-4       2019-04-21 [1] CRAN (R 4.2.2)
+ yaml              2.3.7       2023-01-23 [1] CRAN (R 4.2.2)
 
-[1] /home/wibeasley/R/x86_64-pc-linux-gnu-library/4.0
-[2] /usr/local/lib/R/site-library
-[3] /usr/lib/R/site-library
-[4] /usr/lib/R/library
+ [1] C:/Users/wibea/AppData/Local/R/win-library/4.2
+ [2] C:/Program Files/R/R-4.2.3patched/library
+
+──────────────────────────────────────────────────────────────────────────────────────────────────
 ```
 </details>
 
 
 
-Report rendered by wibeasley at 2021-02-07, 17:24 -0600 in 30 seconds.
+Report rendered by wibea at 2023-04-06, 18:04 -0500 in 7 seconds.

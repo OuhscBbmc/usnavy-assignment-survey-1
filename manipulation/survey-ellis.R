@@ -256,7 +256,7 @@ ds <- ds %>%
       billet_current,
       "CONUS MTF"                     = "CONUS MTF",
       "GME"                           = "CONUS MTF",                  # Combine GME w/ CONUS MTF
-      "Non-Operational/Non-Clinical"  = "Non-Operational/Clinical",
+      "Non-Operational/Non-Clinical"  = "Administrative",
       "OCONUS MTF"                    = "OCONUS MTF",
       "CONUS Operational"             = "CONUS Operational",
       "OCONUS Operational"            = "OCONUS Operational",

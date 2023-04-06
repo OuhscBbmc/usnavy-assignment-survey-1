@@ -48,7 +48,7 @@ ds_rail  <- tibble::tribble(
 
   # Reports for human consumers.
   "run_rmd"   , "analysis/survey-response-1/survey-response-1.Rmd",
-  "run_rmd"   , "analysis/survey-response-2/survey-response-2.Rmd"
+  "run_rmd"   , "analysis/survey-response-2/survey-response-2.Rmd" # This guy needs to be run manually maybe
 )
 
 run_r <- function( minion ) {
