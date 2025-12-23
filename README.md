@@ -2,22 +2,31 @@ Code repository for the article,
 
 ## Attitudes Regarding the Position Assignment Process Among Active-Duty Navy Physicians
 
-[Richard Childers](hhttps://www.researchgate.net/profile/Richard_Childers3), MD<sup>[1](https://emergencymed.ucsd.edu/faculty/index.html)</sup>,
-Joel Schofer, MD MBA, CAPT MC USN<sup>2</sup>,
-Nanette Rollene, MD, CAPT MC USN<sup>3</sup>,
-Alicea Mingo, MD MPH, CDR MC USN<sup>4</sup>,
-Gary M. Vilke, MD<sup>1</sup>, &
-[William H. Beasley](http://scholar.google.com/citations?user=ffsJTC0AAAAJ&hl=en), PhD<sup>[5](https://ouhsc.edu/bbmc/)</sup>
+Richard Childers <sup>1</sup>, 
+Alicea Mingo <sup>2</sup>, 
+Joel Schofer <sup>3</sup>, 
+Naomi Utgoff <sup>4</sup>, 
+[William Howard Beasley](https://orcid.org/0000-0002-5613-5006) <sup>5</sup>
 
-> *Abstract* The process of assigning positions to officers in the military is complex. While general guidance is available, there is no prescribed formalized decision-making process when making assignments. We completed a survey of the Navy Medical Corps to obtain baseline perceptions about the assignment process prior to initiating a quality improvement project. On a five-point Likert scale, with 5 being the most satisfied, the mean for overall satisfaction with the assignment process for the entire cohort, weighted for specialty, was 3.4. In regression analysis, physician specialty, current billet, and rank were found to predict overall satisfaction. The highest priority positions to fill in the Navy are overseas and with operational units, yet these are the least popular among Navy physicians. This survey provides a baseline measure which can be used for comparison after future interventions and provides descriptive insight into attitudes among officers into the assignment system.
+> *Abstract* The United States Navy (USN) assigns personnel to jobs via assignments officers;
+> placement guidance exists but the process is decentralized.
+> Participant attitudes towards and limited experience with market design are possible impediments to its incorporation into the assignment process.
+> We investigate the appetite for the use of the deferred acceptance during the assignment process.
+> We implemented a pilot project incorporating deferred acceptance into 231 assignments of 174 USN physicians to 23 commands.
+> Pre-intervention, we surveyed physicians to obtain baseline perceptions of the traditional assignment process;
+> post-intervention we surveyed pilot project participants.
+> Only 38.2% of pre-pilot survey respondents said they preferred assignment via deferred acceptance;
+> in the post-pilot survey 78.7% of participating physicians and 87.8% of participating commands reported a desire to keep using deferred acceptance.
+> Our study suggests that attitudes towards using market design in personnel assignment may improve with experience,
+> facilitating broader acceptance of its usage in the future.
 
 *Organizations*:
 
-1. [Department of Emergency Medicine](https://emergencymed.ucsd.edu/faculty/index.html), University of California, San Diego Health, San Diego, CA
-2. Bureau of Medicine and Surgery, United States Navy, Falls Church, VA
-3. Walter Reed National Military Medical Center, Bethesda, MD
-4. Bureau of Naval Personnel, Millington, TN
-5. [Biomedical & Behavioral Methodology Core](https://ouhsc.edu/bbmc/), [University of Oklahoma College of Medicine](https://medicine.ouhsc.edu/), Oklahoma City, OK.
+1. University of California, San Diego, USA <rchilders@health.ucsd.edu>
+2. Bureau of Medicine and Surgery, United States Navy, USA <aliceamingo@yahoo.com>
+3. US Navy Medicine Readiness and Training Command Guam Captain, Medical Corps, United States Navy <jschofer@gmail.com>
+4. United States Naval Academy, USA <utgoff@usna.edu>
+5. College of Medicine, University of Oklahoma Health Campus, USA <william-beasley@ou.edu>
 
 **Figure 1**
 
