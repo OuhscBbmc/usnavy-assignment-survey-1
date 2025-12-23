@@ -5,7 +5,6 @@ Code repository for the article <https://doi.org/10.22574/jmid.2025.12.005>:
 ```plain
 Journal of Mechanism and Institution Design
 ISSN: 2399-844X (Print), 2399-8458 (Online)
-DOI:10.22574/jmid.2025.12.005
 ```
 
 Richard Childers <sup>1</sup>, 
@@ -13,6 +12,9 @@ Alicea Mingo <sup>2</sup>,
 Joel Schofer <sup>3</sup>, 
 Naomi Utgoff <sup>4</sup>, 
 [William Howard Beasley](https://orcid.org/0000-0002-5613-5006) <sup>5</sup>
+
+* Code DOI: [![DOI](https://zenodo.org/badge/136741922.svg)](https://doi.org/10.5281/zenodo.18038617)
+* Article DOI: <https://doi.org/10.22574/jmid.2025.12.005>
 
 > *Abstract* The United States Navy (USN) assigns personnel to jobs via assignments officers;
 > placement guidance exists but the process is decentralized.
