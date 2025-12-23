@@ -1,6 +1,12 @@
-Code repository for the article,
+Code repository for the article <https://doi.org/10.22574/jmid.2025.12.005>:
 
-## Attitudes Regarding the Position Assignment Process Among Active-Duty Navy Physicians
+## A Position Assignment Experiment Among Active Duty United States Navy Physicians
+
+```plain
+Journal of Mechanism and Institution Design
+ISSN: 2399-844X (Print), 2399-8458 (Online)
+DOI:10.22574/jmid.2025.12.005
+```
 
 Richard Childers <sup>1</sup>, 
 Alicea Mingo <sup>2</sup>, 
